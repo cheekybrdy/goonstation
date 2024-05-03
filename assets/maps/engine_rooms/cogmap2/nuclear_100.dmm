@@ -1,0 +1,706 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ca" = (
+/turf/simulated/floor/engine/caution/north,
+/area/station/engine/inner)
+"cg" = (
+/obj/machinery/light/small/floor/warm,
+/obj/machinery/atmospherics/pipe/simple/insulated/cold,
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"ek" = (
+/obj/machinery/atmospherics/binary/valve{
+	desc = "hot radiator outlet valve";
+	name = "hot radiator outlet valve";
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/engine/caution/north,
+/area/station/engine/inner)
+"eF" = (
+/obj/machinery/atmospherics/binary/passive_gate,
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"fi" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0;
+	dir = 10
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"fV" = (
+/obj/machinery/atmospherics/binary/reactor_turbine,
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"hc" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 9
+	},
+/obj/cable/orange{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"hS" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 4
+	},
+/obj/cable/orange{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"jr" = (
+/obj/cable{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"jt" = (
+/obj/storage/closet/radiation,
+/obj/machinery/atmospherics/pipe/simple/insulated/cold,
+/turf/simulated/floor/engine/caution/corner{
+	dir = 1
+	},
+/area/station/engine/inner)
+"ju" = (
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	can_rupture = 0;
+	dir = 6
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"jC" = (
+/obj/storage/closet/radiation,
+/turf/simulated/floor/engine/caution/corner{
+	dir = 4
+	},
+/area/station/engine/inner)
+"lh" = (
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	dir = 4
+	},
+/turf/simulated/floor/engine/caution/south,
+/area/station/engine/inner)
+"ln" = (
+/obj/machinery/atmospherics/binary/passive_gate{
+	dir = 8;
+	target_pressure = 1e+031
+	},
+/obj/storage/secure/crate/eng,
+/obj/item/raw_material/cerenkite,
+/obj/item/raw_material/cerenkite,
+/obj/item/raw_material/cerenkite,
+/obj/item/raw_material/cerenkite,
+/obj/item/raw_material/cerenkite,
+/obj/item/raw_material/cerenkite,
+/turf/simulated/floor/engine/caution/east,
+/area/station/engine/inner)
+"mt" = (
+/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/simple/insulated,
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"mP" = (
+/obj/cable/orange{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"nb" = (
+/obj/cable/orange,
+/obj/cable/orange{
+	icon_state = "0-2"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "engine_observation";
+	name = "Observation Shutter";
+	opacity = 0
+	},
+/turf/simulated/floor/engine/caution/east,
+/area/station/engine/inner)
+"nk" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0;
+	dir = 5
+	},
+/turf/simulated/floor/engine/caution/corner,
+/area/station/engine/inner)
+"nx" = (
+/obj/cable/orange{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 4
+	},
+/obj/cable/orange{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"nM" = (
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	can_rupture = 0;
+	dir = 9
+	},
+/obj/machinery/power/stats_meter{
+	name = "Cold Loop Outlet Meter";
+	tag = "Cold Loop Outlet Meter"
+	},
+/turf/simulated/floor/engine/caution/south,
+/area/station/engine/inner)
+"ol" = (
+/obj/machinery/atmospherics/binary/pump/active{
+	dir = 4;
+	frequency = 1229;
+	id = "Chamber One Outlet";
+	target_pressure = 1000
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"pA" = (
+/obj/cable/orange{
+	icon_state = "0-4"
+	},
+/obj/cable/orange{
+	icon_state = "0-2"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "engine_observation";
+	name = "Observation Shutter";
+	opacity = 0
+	},
+/turf/simulated/floor/engine/caution/east,
+/area/station/engine/inner)
+"pC" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 9
+	},
+/obj/machinery/meter,
+/turf/simulated/floor/engine/caution/south,
+/area/station/engine/inner)
+"pO" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 9
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"qf" = (
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/station/engine/inner)
+"qO" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 5
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"qR" = (
+/obj/machinery/centrifuge_nuclear,
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 10
+	},
+/turf/simulated/floor/engine/caution/west,
+/area/station/engine/inner)
+"rk" = (
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"rs" = (
+/obj/decal/poster/wallsign/accident_sign{
+	pixel_y = 25
+	},
+/turf/simulated/floor/engine/caution/north,
+/area/station/engine/inner)
+"tS" = (
+/obj/cable/orange{
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"uc" = (
+/obj/cable/orange{
+	icon_state = "0-4"
+	},
+/obj/machinery/atmospherics/binary/nuclear_reactor/prefilled/normal,
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"up" = (
+/obj/machinery/light/small/floor/warm,
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 5
+	},
+/turf/simulated/floor/engine/caution/north,
+/area/station/engine/inner)
+"vu" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0;
+	dir = 6
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"vv" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0;
+	dir = 1
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"wt" = (
+/obj/machinery/nanofab/nuclear,
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	can_rupture = 0;
+	dir = 6
+	},
+/turf/simulated/floor/engine/caution/east,
+/area/station/engine/inner)
+"wF" = (
+/obj/storage/closet/radiation,
+/obj/machinery/firealarm/west,
+/turf/simulated/floor/engine/caution/corner{
+	dir = 8
+	},
+/area/station/engine/inner)
+"wX" = (
+/turf/simulated/floor/engine/caution/west,
+/area/station/engine/inner)
+"yp" = (
+/obj/machinery/light/small/floor/warm,
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 5
+	},
+/obj/cable/orange{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"zw" = (
+/obj/machinery/light/small/floor/warm,
+/obj/cable/orange{
+	icon_state = "4-8"
+	},
+/obj/cable/orange{
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"zA" = (
+/obj/cable/blue{
+	icon_state = "0-8"
+	},
+/obj/cable/orange{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"AH" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 4
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"AX" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 10
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/engine/caution/north,
+/area/station/engine/inner)
+"AZ" = (
+/obj/cable/orange{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"Bm" = (
+/obj/cable/orange{
+	icon_state = "0-4"
+	},
+/obj/cable/orange,
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "engine_observation";
+	name = "Observation Shutter";
+	opacity = 0
+	},
+/turf/simulated/floor/engine/caution/east,
+/area/station/engine/inner)
+"CE" = (
+/obj/machinery/atmospherics/pipe/simple/insulated/cold,
+/obj/cable/orange{
+	icon_state = "4-8"
+	},
+/obj/machinery/camera/television{
+	c_tag = "engine";
+	dir = 8;
+	name = "camera - engine"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"CX" = (
+/obj/machinery/light/incandescent{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/engine/caution/north,
+/area/station/engine/inner)
+"De" = (
+/obj/cable/orange{
+	icon_state = "0-2"
+	},
+/obj/cable/orange,
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "engine_observation";
+	name = "Observation Shutter";
+	opacity = 0
+	},
+/turf/simulated/floor/engine/caution/east,
+/area/station/engine/inner)
+"Dp" = (
+/obj/cable/orange{
+	icon_state = "4-8"
+	},
+/obj/cable/orange{
+	icon_state = "0-2"
+	},
+/obj/cable/orange,
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "engine_observation";
+	name = "Observation Shutter";
+	opacity = 0
+	},
+/turf/simulated/floor/engine/caution/east,
+/area/station/engine/inner)
+"DT" = (
+/obj/machinery/atmospherics/binary/valve{
+	name = "hot loop inlet valve"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"Fg" = (
+/obj/cable/orange{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0;
+	dir = 1
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"Hy" = (
+/obj/cable/orange{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 4
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"HS" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0;
+	dir = 1
+	},
+/obj/machinery/meter,
+/obj/cable/orange{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"IG" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0;
+	dir = 6
+	},
+/obj/machinery/power/stats_meter{
+	name = "Hot Loop Inlet Meter";
+	tag = "Hot Loop Inlet Meter"
+	},
+/turf/simulated/floor/engine/caution/north,
+/area/station/engine/inner)
+"Kv" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 9
+	},
+/turf/simulated/floor/engine/caution/north,
+/area/station/engine/inner)
+"Lh" = (
+/obj/machinery/light/small/floor/warm,
+/obj/machinery/power/stats_meter{
+	name = "Hot Loop Outlet Meter";
+	tag = "Hot Loop Outlet Meter"
+	},
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0;
+	dir = 1
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"Ma" = (
+/obj/cable/blue{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/engine/caution/west,
+/area/station/engine/inner)
+"MU" = (
+/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	dir = 4
+	},
+/turf/simulated/floor/engine/caution/south,
+/area/station/engine/inner)
+"MX" = (
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0;
+	dir = 1
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"Ot" = (
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	dir = 6
+	},
+/obj/machinery/power/stats_meter{
+	name = "Cold Loop Inlet Meter";
+	tag = "Cold Loop Inlet Meter"
+	},
+/obj/machinery/power/apc/autoname_north,
+/obj/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"OH" = (
+/obj/storage/closet/radiation,
+/turf/simulated/floor/engine/caution/west,
+/area/station/engine/inner)
+"PB" = (
+/obj/cable/orange{
+	icon_state = "1-8"
+	},
+/obj/cable/orange{
+	icon_state = "4-8"
+	},
+/obj/cable/orange{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"PX" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 4
+	},
+/turf/simulated/floor/engine/caution/west,
+/area/station/engine/inner)
+"SK" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0;
+	dir = 10
+	},
+/obj/cable/orange{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"Tp" = (
+/obj/machinery/atmospherics/pipe/manifold/overfloor{
+	dir = 4
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"TB" = (
+/obj/cable/orange{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"TC" = (
+/obj/machinery/atmospherics/pipe/manifold/overfloor{
+	dir = 1
+	},
+/turf/simulated/floor/engine/caution/south,
+/area/station/engine/inner)
+"TM" = (
+/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	dir = 5
+	},
+/turf/simulated/floor/engine/caution/south,
+/area/station/engine/inner)
+"Wj" = (
+/obj/cable/orange,
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+"WB" = (
+/obj/machinery/atmospherics/pipe/simple/insulated/cold,
+/turf/simulated/floor/engine,
+/area/station/engine/inner)
+
+(1,1,1) = {"
+wF
+PX
+wX
+wX
+wX
+Ma
+wX
+wX
+OH
+qR
+nk
+"}
+(2,1,1) = {"
+rs
+AH
+rk
+rk
+rk
+zA
+vu
+vv
+eF
+Lh
+pC
+"}
+(3,1,1) = {"
+ca
+fi
+vv
+vv
+vv
+yp
+AH
+rk
+rk
+ju
+TM
+"}
+(4,1,1) = {"
+IG
+DT
+eF
+mt
+qO
+hS
+AH
+rk
+rk
+rk
+MU
+"}
+(5,1,1) = {"
+Kv
+rk
+rk
+rk
+rk
+hS
+AH
+rk
+rk
+rk
+lh
+"}
+(6,1,1) = {"
+up
+rk
+tS
+Wj
+fV
+hS
+AH
+rk
+uc
+rk
+lh
+"}
+(7,1,1) = {"
+ek
+rk
+TB
+mP
+mP
+nx
+Hy
+mP
+PB
+rk
+lh
+"}
+(8,1,1) = {"
+AX
+vv
+vv
+vv
+MX
+hc
+AH
+rk
+AZ
+rk
+MU
+"}
+(9,1,1) = {"
+CX
+jr
+rk
+rk
+ol
+zw
+SK
+Fg
+HS
+pO
+TC
+"}
+(10,1,1) = {"
+qf
+Ot
+WB
+WB
+Tp
+CE
+WB
+WB
+eF
+cg
+nM
+"}
+(11,1,1) = {"
+jC
+ln
+qf
+pA
+nb
+Dp
+De
+Bm
+qf
+wt
+jt
+"}
