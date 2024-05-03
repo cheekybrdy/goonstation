@@ -17805,11 +17805,17 @@
 /turf/simulated/floor,
 /area/station/crew_quarters/quarters)
 "enu" = (
+/obj/mapping_helper/wingrille_spawn/auto/crystal,
+/obj/machinery/networked/secdetector{
+	area_access = 99;
+	detector_id = "AI Core";
+	dir = 1
+	},
 /obj/cable,
 /obj/cable{
 	icon_state = "0-8"
 	},
-/turf/simulated/wall/auto/reinforced/supernorn,
+/turf/simulated/floor/plating/airless,
 /area/station/turret_protected/ai_upload)
 "eol" = (
 /turf/simulated/wall/auto/supernorn,
@@ -24103,15 +24109,6 @@
 	dir = 1
 	},
 /area/station/hallway/primary/central)
-"kzJ" = (
-/obj/mapping_helper/wingrille_spawn/auto/crystal,
-/obj/cable,
-/obj/machinery/networked/secdetector{
-	area_access = 99;
-	detector_id = "AI Core"
-	},
-/turf/simulated/floor/plating/airless,
-/area/station/turret_protected/ai_upload)
 "kzP" = (
 /obj/lattice{
 	dir = 9;
@@ -26308,13 +26305,18 @@
 /turf/simulated/floor/plating/jen,
 /area/station/turret_protected/Zeta)
 "mQj" = (
+/obj/mapping_helper/wingrille_spawn/auto/crystal,
 /obj/cable{
 	icon_state = "0-8"
 	},
 /obj/cable{
 	icon_state = "0-2"
 	},
-/turf/simulated/wall/auto/reinforced/supernorn,
+/obj/machinery/networked/secdetector{
+	area_access = 99;
+	detector_id = "AI Core"
+	},
+/turf/simulated/floor/plating/airless,
 /area/station/turret_protected/ai_upload)
 "mQk" = (
 /obj/disposalpipe/switch_junction/left/east{
@@ -28138,16 +28140,6 @@
 	},
 /turf/simulated/floor/wood/two,
 /area/station/crew_quarters/cafeteria)
-"ovY" = (
-/obj/mapping_helper/wingrille_spawn/auto/crystal,
-/obj/cable,
-/obj/machinery/networked/secdetector{
-	area_access = 99;
-	detector_id = "AI Core";
-	dir = 1
-	},
-/turf/simulated/floor/plating/airless,
-/area/station/turret_protected/ai_upload)
 "oxh" = (
 /obj/cable{
 	icon_state = "0-2"
@@ -95571,13 +95563,13 @@ aaa
 aaa
 aaa
 mQj
-kzJ
 iIk
 iIk
 iIk
 iIk
 iIk
-ovY
+iIk
+iIk
 enu
 anA
 aaa
