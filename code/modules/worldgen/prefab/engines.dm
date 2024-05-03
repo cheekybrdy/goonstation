@@ -45,8 +45,10 @@ TYPEINFO(/datum/mapPrefab/engine_room)
 			showswirl(comp, TRUE)
 			if(istype(comp, /obj/landmark/engine_computer/one))
 				comp.replaceWith(comp1type)
+				comp.dir == comp_dir
 			else
 				comp.replaceWith(comp2type)
+				comp.dir == comp_dir
 
 		for(var/turf/T in block(target, locate(props.maxX, props.maxY, target.z)))
 			leaveresidual(T)
@@ -101,7 +103,7 @@ TYPEINFO(/datum/mapPrefab/engine_room)
 /obj/landmark/engine_computer
 	deleted_on_start = FALSE
 	add_to_landmarks = FALSE
-
+	var/comp_dir = src.dir
 	New()
 		..()
 		START_TRACKING
