@@ -18091,9 +18091,6 @@
 /turf/space/fluid/acid,
 /area/space)
 "hIM" = (
-/obj/machinery/door/airlock/pyro/security/alt{
-	dir = 4
-	},
 /obj/mapping_helper/access/hos,
 /obj/cable{
 	icon_state = "4-8"
@@ -18103,6 +18100,9 @@
 	dir = 8
 	},
 /obj/mapping_helper/firedoor_spawn,
+/obj/machinery/door/airlock/pyro/command{
+	dir = 4
+	},
 /turf/simulated/floor/black,
 /area/station/security/hos)
 "hJD" = (
@@ -19998,11 +19998,11 @@
 	},
 /area/station/hallway/secondary/exit)
 "iwp" = (
-/obj/machinery/door/airlock/pyro/security/alt,
 /obj/mapping_helper/access/hos,
 /obj/disposalpipe/segment/vertical,
 /obj/forcefield/energyshield/perma/doorlink,
 /obj/mapping_helper/firedoor_spawn,
+/obj/machinery/door/airlock/pyro/command,
 /turf/simulated/floor/black,
 /area/station/security/hos)
 "iws" = (
