@@ -6,10 +6,12 @@
 	icon = 'icons/obj/pantheon/brazier.dmi'
 	icon_state = "brazier-d-unlit"
 	event_handler_flags = USE_FLUID_ENTER // For bartender drink offerings.
+	var/brazier_id = null // In case someone orders more.
 	var/pantheon = null
 	var/pantheon_power = 0 // Math for this is in defines.
 	var/pantheon_level = 0
 	var/pantheon_owner = null
+	var/fire_colour
 
 // /obj/brazier/ui_interact(mob/user, datum/tgui/ui)
 //   ui = tgui_process.try_update_ui(user, src, ui)

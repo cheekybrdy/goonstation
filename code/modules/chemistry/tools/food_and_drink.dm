@@ -26,6 +26,8 @@ ABSTRACT_TYPE(/obj/item/reagent_containers/food)
 	var/did_stomach_react = 0					//! Has this already reacted when being digested
 	var/digest_count = 0						//! How digested is this while in stomach
 	var/dissolve_threshold = 20					//! How digested something needs to be before it dissolves
+	var/requires_botany = 0						//! If this typically needs botany ingredients, when used as a pantheon offering give bonus power multiplier
+	var/offering_points = 25					//! How much offering points this item gives raw to the pantheon system
 	rc_flags = 0
 
 	///Slowly dissolve in stomach, releasing reagents
