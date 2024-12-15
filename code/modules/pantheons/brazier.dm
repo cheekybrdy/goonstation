@@ -3,15 +3,16 @@
 /obj/brazier
 	name = "Offering Brazier"
 	desc = "A holy brazier for communicating and sending offerings to a pantheon of Gods."
-	icon = 'icons/obj/pantheon/brazier.dmi'
+	icon = 'icons/obj/pantheon/offerings/brazier.dmi'
 	icon_state = "brazier-d-unlit"
-	event_handler_flags = USE_FLUID_ENTER // For bartender drink offerings.
+	event_handler_flags = USE_FLUID_ENTER | TGUI_INTERACTIVE // For bartender drink offerings.
+	anchored = UNANCHORED
 	var/brazier_id = null // In case someone orders more.
 	var/pantheon = null
 	var/pantheon_power = 0 // Math for this is in defines.
 	var/pantheon_level = 0
 	var/pantheon_owner = null
-	var/fire_colour
+	var/image/fire_overlay = null
 
 // /obj/brazier/ui_interact(mob/user, datum/tgui/ui)
 //   ui = tgui_process.try_update_ui(user, src, ui)
