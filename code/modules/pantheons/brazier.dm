@@ -67,13 +67,6 @@
 		src.anchored = !src.anchored
 		logTheThing(LOG_STATION, user, "[src.anchored ? "unanchored" : "anchored"] [log_object(src)] at [log_loc(src)]")
 
-/obj/brazier/chaplain // Chapel brazier, gets faith bonuses and is locked to the chaplain so they have one to use as a latejoin if not sabotaged
-	chapel_locked = TRUE
-	anchored = ANCHORED
-	New()
-		..()
-		desc += " This one is the chaplain's personal brazier, blessed so only they can set it up."
-
 /obj/brazier/ui_interact(mob/user, datum/tgui/ui)
   ui = tgui_process.try_update_ui(user, src, ui)
   if(!ui)
@@ -99,6 +92,13 @@
 //     color = new_color
 //     . = TRUE
    update_icon()
+
+/obj/brazier/chaplain // Chapel brazier, gets faith bonuses and is locked to the chaplain so they have one to use as a latejoin if not sabotaged
+	chapel_locked = TRUE
+	anchored = ANCHORED
+	New()
+		..()
+		desc += " This one is the chaplain's personal brazier, blessed so only they can set it up."
 
 /datum/brazier_item // totally not stolen from the gang locker code.
 	var/name = "commodity"	// Name of the item
