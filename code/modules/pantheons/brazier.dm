@@ -25,7 +25,7 @@
 		if(!pantheon)
 			return
 		else // These aren't going to be set by default unless its a admin spawn type with the pantheon already decided
-			buyable_items = list(new/datum/brazier_item)
+			buyable_items = list()
 
 	disposing(var/uncapture = 1)
 		STOP_TRACKING
