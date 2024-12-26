@@ -3877,6 +3877,26 @@ datum
 					if(ishuman(N) && probmult(1))
 						N.say("[M.name] is an ocean of muscle.")
 				..()
+		divine_nutrient
+			name = "divine nutrient"
+			id = "divine_nutrient"
+			description = "A special plant food created from a divine ritual."
+			reagent_state = LIQUID
+			fluid_r = 101
+			fluid_g = 219
+			fluid_b = 101
+			transparency = 255
+			fluid_flags = FLUID_STACKING_BANNED
+
+			on_plant_life(var/obj/machinery/plantpot/P, var/datum/plantgrowth_tick/growth_tick)
+				growth_tick.health_change += 0.66
+				growth_tick.health_change += 0.66
+				growth_tick.growtime_bonus += 0.66
+				growth_tick.harvtime_bonus += 0.66
+				growth_tick.cropsize_bonus += 0.66
+				growth_tick.harvests_bonus += 0.66
+				growth_tick.potency_bonus += 0.66
+				growth_tick.endurance_bonus += 0.66
 
 		toxic_fart
 			name = "toxic fart"

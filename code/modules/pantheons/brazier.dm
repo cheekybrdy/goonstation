@@ -82,10 +82,10 @@
 	if (.)
     	return
 	if(action == "select_pantheon")
-		if(chapel_locked && src.mind.assigned_role != "Chaplain")
+		if (chapel_locked && src.mind.assigned_role != "Chaplain")
 			boutput(usr, SPAN_ALERT("This is the chaplain's brazier, only they can use it!"))
 			return
-		else if (pantheon_type)
+		else if (pantheon_owner)
 			logTheThing(LOG_ADMIN, src, "Someone is somehow trying and able to try and change a pantheon's type that's already setup.</b>")
 			logTheThing(LOG_STATION, src, "[src.user], attempted to create a pantheon using a already setup brazier.")
 		else
@@ -149,7 +149,11 @@
 	var/desc = "item"		//Description for item
 	var/pantheon = ""			//This should be general category: weapon, clothing/armor, misc
 	var/item_path = null 		// Type Path of the item
-	var/price = 100 			//
+	var/price = 100 			// Gee I wonder
 
 // Use 	src.UpdateOverlays(fire_overlay, "fire_sprite_go_here")
 //src.icon_state = "[mail.icon_state]-b"
+
+#define standard_offerings list(
+	/datum/brazier_item
+)
