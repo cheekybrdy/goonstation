@@ -114,7 +114,7 @@
 				src.pantheon.pantheon_points -= PI.price
 				flick(src.UpdateOverlays(fire_overlay, "[brazier.icon_state]-flaring"))
 				playsound(src.loc, 'sound/effects/spray.ogg', 50, 1)
-				boutput(usr, SPAN_NOTICE("You purchase [PI.name] for [PI.price]. Remaining divinity = [src.pantheon.pantheon_points] points."))
+				boutput(usr, SPAN_NOTICE("You purchase [PI.name] for [PI.price]. Remaining power = [src.pantheon.pantheon_points] points."))
 				logTheThing(LOG_STATION, src, "[src.user] got [PI.name] at their pantheon's brazier.")
 				if (!PI.on_purchase(src, usr))
 					new PI.item_path(src.loc)
