@@ -1,10 +1,6 @@
 /datum/pantheon
 	/// The chosen name of this pantheon.
 	var/pantheon_type = null
-	/// The chosen jumpsuit item of this pantheon.
-	var/obj/item/clothing/uniform = null
-	/// The chosen mask or hat item of this pantheon.
-	var/obj/item/clothing/headwear = null
 	/// The mind of this pantheon's leader.
 	var/datum/mind/leader = null
 	/// The minds of pantheon members associated with this pantheon. Does not include the pantheon leader.
