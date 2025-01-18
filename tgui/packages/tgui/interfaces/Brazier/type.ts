@@ -6,9 +6,8 @@
  */
 
 export interface BrazierData {
-  dialing: boolean;
-  inCall: boolean;
-  lastOffered: string;
+  sealed: boolean;
+  pantheon_selected: boolean;
   name: string;
   pantheons: Pantheons[];
 }

@@ -10,6 +10,7 @@
 	density = TRUE
 	var/datum/pantheon/pantheon = null
 	var/chapel_locked = FALSE
+	var/whitelist_mode = FALSE
 	var/pantheon_type = null
 	var/pantheon_power = 0 // Math for this is in defines.
 	var/image/fire_overlay = null
@@ -46,7 +47,7 @@
 					user.show_text("What exactly are you gunna secure [src] to?", "red")
 				return
 			playsound(src.loc, 'sound/items/Ratchet.ogg', 50, 1)
-			user.visible_message("<b>[user]</b> bePIns to [src.anchored ? "unbolt the [src.name] from" : "bolt the [src.name] to"] [get_turf(src)].")
+			user.visible_message("<b>[user]</b> begins to [src.anchored ? "unbolt the [src.name] from" : "bolt the [src.name] to"] [get_turf(src)].")
 			SETUP_GENERIC_ACTIONBAR(user, src, 5 SECONDS, /obj/brazier/proc/toggle_bolts, list(user), W.icon, W.icon_state,"", null)
 			return
 		add_fingerprint(user)
@@ -86,7 +87,7 @@
 			boutput(usr, SPAN_ALERT("This is the chaplain's brazier, only they can use it!"))
 			return
 		else if (pantheon_owner)
-			logTheThing(LOG_ADMIN, src, "Someone is somehow trying and able to try and change a pantheon's type that's already setup.</b>")
+			logTheThing(LOG_ADMIN, src, "Someone is somehow trying to change a pantheon's type that's already setup.</b>")
 			logTheThing(LOG_STATION, src, "[src.user], attempted to create a pantheon using a already setup brazier.")
 		else
 			pantheon.pantheon_type = params["pantheon"]
@@ -96,12 +97,12 @@
 			icon_state = "brazier-[pantheon_type]"
 			buyable_items = list(
 				list(standard_offerings)
-				list("[pantheon_type]_offerings"))
+				list(pantheon_type + "_offerings"))
 			playsound(src.loc, 'sound/effects/spray.ogg', 50, 1)
 			flick(src.UpdateOverlays(fire_overlay, "[brazier.icon_state]-flaring"))
 			src.UpdateOverlays(fire_overlay, "[brazier.icon_state]-resting")
 			boutput(usr, SPAN_ALERT("The brazier swirls to life in a eruption of divine fire!"))
-			logTheThing(LOG_STATION, src, "[src.user], setup a pantheon of [pantheon.pantheon_type]. ")
+			logTheThing(LOG_STATION, src, "[src.user], setup a pantheon of [pantheon.pantheon_type].")
 			. = TRUE
 	update_icon()
 	if(action == "buy_item")
@@ -135,6 +136,7 @@
 			flick(src.UpdateOverlays(fire_overlay, "[brazier.icon_state]-flaring"))
 			playsound(src.loc, 'sound/effects/spray.ogg', 50, 1)
 			boutput(usr, SPAN_ALERT("You are now a member of this pantheon! Praise be to the divine."))
+			logTheThing(LOG_STATION, src, "[src.user] joined [pantheon.leader]'s pantheon.")
 
 
 /obj/brazier/chaplain // Chapel brazier, gets faith bonuses and is locked to the chaplain so they have one to use as a latejoin if not sabotaged
@@ -144,16 +146,32 @@
 		..()
 		desc += " This one is the chaplain's personal brazier, blessed so only they can set it up."
 
-/datum/brazier_item // totally not stolen from the pantheon locker code.
+/datum/brazier_item // totally not stolen from the gang locker code.
 	var/name = "commodity"	// Name of the item
 	var/desc = "item"		//Description for item
 	var/pantheon = ""			//This should be general category: weapon, clothing/armor, misc
 	var/item_path = null 		// Type Path of the item
 	var/price = 100 			// Gee I wonder
 
-// Use 	src.UpdateOverlays(fire_overlay, "fire_sprite_go_here")
-//src.icon_state = "[mail.icon_state]-b"
 
 #define standard_offerings list(
+	/datum/brazier_item/rit_core
+)
+#define divine_offerings list(
+	/datum/brazier_item
+)
+#define drowned_offerings list(
+	/datum/brazier_item
+)
+#define light_offerings list(
+	/datum/brazier_item
+)
+#define nature_offerings list(
+	/datum/brazier_item
+)
+#define outlands_offerings list(
+	/datum/brazier_item
+)
+#define scorched_offerings list(
 	/datum/brazier_item
 )

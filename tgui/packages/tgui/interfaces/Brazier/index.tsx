@@ -31,10 +31,10 @@ const PantheonColors = [
 const categorySort = (a, b) => a.category.localeCompare(b.category);
 const idSort = (a, b) => a.id.localeCompare(b.id);
 
-export const Phone = () => {
+export const Brazier = () => {
   const { data } = useBackend<PhoneData>();
   const { dialing, inCall, lastCalled, name } = data;
-  const phonebook = data.phonebook.sort(categorySort) || [];
+  const pantheon = data.pantheon.sort(categorySort) || [];
 
   return (
     <Window title={name} width={250} height={350}>
@@ -47,7 +47,7 @@ export const Phone = () => {
         <Stack vertical fill>
           <Stack.Item grow={1}>
             <Section title="Pantheons" fill scrollable>
-              {phonebook.map((category) => (
+              {pantheon.map((category) => (
                 <AddressGroup key={category.category} phonebook={category} />
               ))}
             </Section>
