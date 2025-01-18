@@ -112,6 +112,7 @@
 		var/datum/pantheon_item/PI = buyable_items
 		if (locate(PI) in buyable_items)
 			if (PI.price <= src.pantheon.pantheon_points)
+				PI.pantheon = pantheon // Changes the item to a more specific type
 				src.pantheon.pantheon_points -= PI.price
 				flick(src.UpdateOverlays(fire_overlay, "[brazier.icon_state]-flaring"))
 				playsound(src.loc, 'sound/effects/spray.ogg', 50, 1)
@@ -153,8 +154,8 @@
 	var/item_path = null 		// Type Path of the item
 	var/price = 100 			// Gee I wonder
 
-
-#define standard_offerings list(
+// Pantheon Item Lists
+#define standard_offerings list( // General Items added regardless of pantheon.
 	/datum/brazier_item/rit_core
 )
 #define divine_offerings list(
@@ -175,3 +176,10 @@
 #define scorched_offerings list(
 	/datum/brazier_item
 )
+
+//Standard Item Datum Defines
+
+/datum/brazier_item/rit_core
+	name = "Ritual Core"
+	desc = "A centrepiece to enacct one of the pantheon's rituals."
+	var/item_path =
