@@ -14,9 +14,9 @@ export interface BrazierData {
 
 export interface Pantheons {
   category: string;
-  brazier: BrazierID[];
+  pantheon: PantheonID[];
 }
 
-export interface BrazierID {
+export interface PantheonIDID {
   id: string;
 }
