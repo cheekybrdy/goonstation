@@ -217,7 +217,7 @@
 
 /obj/shrub
 	name = "shrub"
-	desc = "A bush. Despite your best efforts, you can't tell if it's real or not."
+	desc = "A bush. Despite your best efforts, you can't tell if it's real or not. "
 	icon = 'icons/misc/worlds.dmi'
 	icon_state = "shrub"
 	anchored = ANCHORED
@@ -426,10 +426,17 @@ TYPEINFO(/obj/shrub/syndicateplant)
 /obj/shrub/syndicateplant
 	var/net_id
 	is_syndicate = TRUE
+
 	New()
 		. = ..()
 		src.net_id = generate_net_id(src)
 		MAKE_DEFAULT_RADIO_PACKET_COMPONENT(src.net_id, "control", FREQ_HYDRO)
+
+	get_desc(dist, mob/user)
+		if(istraitor(user) || isnukeop(user) || user.mind?.get_antagonist(ROLE_SLEEPER_AGENT)) //no issleeperagent() >:(
+			. += SPAN_ALERT("<b>The latest in syndicate spy technology. </b>")
+		else
+			. += "Is that an antenna? "
 
 	proc/fuck_up()
 		var/datum/effects/system/spark_spread/S = new
@@ -1984,12 +1991,12 @@ ADMIN_INTERACT_PROCS(/obj/lever, proc/toggle)
 		playsound(src.loc, 'sound/machines/button.ogg', 40, 0.5)
 		if (on)
 			on = FALSE
-			flick("wall-lever-up-anim", src)
+			FLICK("wall-lever-up-anim", src)
 			src.icon_state = "wall-lever-up"
 			src.off()
 		else
 			on = TRUE
-			flick("wall-lever-down-anim", src)
+			FLICK("wall-lever-down-anim", src)
 			src.icon_state = "wall-lever-down"
 			src.on()
 
