@@ -983,3 +983,12 @@ datum/fishing_spot/golden_toilet
 	/mob/living/critter/small_animal/pikaia = 5,
 	/mob/living/critter/small_animal/trilobite = 5,
 	/mob/living/critter/small_animal/hallucigenia = 5)
+
+//clothing booth
+/datum/fishing_spot/clothes_booth
+	fishing_atom_type = /obj/machinery/clothingbooth
+	rod_teir_required = 2
+	fish_available = (/obj/item/clothing/suit/warm_jacket = 7,
+	/obj/item/clothing/suit/rugged_jacket = 7,
+	/obj/item/clothing/glasses/sunglasses/tanning = 4,
+	/obj/item/clothing/jumpsuit/psych = 1,)
