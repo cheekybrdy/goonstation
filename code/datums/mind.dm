@@ -34,6 +34,8 @@ datum/mind
 	//Gang variables
 	var/obj/item/device/pda2/originalPDA //! The PDA that this crewmember started with - for gang PDA messages
 
+	var/pantheon = null // saved here so you can't be in multiple
+
 	// This used for dead/released/etc mindhacks and rogue robots we still want them to show up
 	// in the game over stats. It's a list because former mindhacks could also end up as an emagged
 	// cyborg or something. Use strings here, just like special_role (Convair880).
