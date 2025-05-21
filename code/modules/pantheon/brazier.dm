@@ -147,13 +147,6 @@
 		..()
 		desc += " This one is the chaplain's personal brazier, blessed so only they can set it up."
 
-/datum/brazier_item // totally not stolen from the gang locker code.
-	var/name = "commodity"	// Name of the item
-	var/desc = "item"		//Description for item
-	var/pantheon = ""			//This should be general category: weapon, clothing/armor, misc
-	var/item_path = null 		// Type Path of the item
-	var/price = 100 			// Gee I wonder
-
 // Pantheon Item Lists
 #define standard_offerings list( // General Items added regardless of pantheon.
 	/datum/brazier_item/rit_core
@@ -176,10 +169,3 @@
 #define scorched_offerings list(
 	/datum/brazier_item
 )
-
-//Standard Item Datum Defines
-
-/datum/brazier_item/rit_core
-	name = "Ritual Core"
-	desc = "A centrepiece to enacct one of the pantheon's rituals."
-	var/item_path =
