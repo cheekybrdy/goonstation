@@ -1,6 +1,6 @@
 /// Brazier
 /// Balance numbers are in defines/power.dm.
-/obj/brazier
+/obj/reagent_dispensers/brazier
 	name = "Offering Brazier"
 	desc = "A holy brazier for communicating and sending offerings to a pantheon of Gods."
 	icon = 'icons/obj/pantheon/offerings/brazier.dmi'
@@ -46,7 +46,7 @@
 				return
 			playsound(src.loc, 'sound/items/Ratchet.ogg', 50, 1)
 			user.visible_message("<b>[user]</b> begins to [src.anchored ? "unbolt the [src.name] from" : "bolt the [src.name] to"] [get_turf(src)].")
-			SETUP_GENERIC_ACTIONBAR(user, src, 5 SECONDS, /obj/brazier/proc/toggle_bolts, list(user), W.icon, W.icon_state,"", null)
+			SETUP_GENERIC_ACTIONBAR(user, src, 5 SECONDS, /obj/reagent_dispensers/brazier/proc/toggle_bolts, list(user), W.icon, W.icon_state,"", null)
 			return
 		add_fingerprint(user)
 
@@ -64,20 +64,20 @@
 		src.anchored = !src.anchored
 		logTheThing(LOG_STATION, user, "[src.anchored ? "unanchored" : "anchored"] [log_object(src)] at [log_loc(src)]")
 
-/obj/brazier/ui_interact(mob/user, datum/tgui/ui)
+/obj/reagent_dispensers/brazier/ui_interact(mob/user, datum/tgui/ui)
   ui = tgui_process.try_update_ui(user, src, ui)
   if(!ui)
     ui = new(user, src, "Brazier")
     ui.open()
 
-/obj/brazier/ui_data(mob/user)
+/obj/reagent_dispensers/brazier/ui_data(mob/user)
   . = list(
     "pantheon_power" = pantheon.pantheon_power,
     "set_pantheon" = pantheon_type,
 	"whitelisted" = whitelist_mode,
   )
 
-/obj/brazier/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
+/obj/reagent_dispensers/brazier/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
 	var/denied = TRUE
 	. = ..()
 	if (.)
@@ -99,7 +99,7 @@
 			buyable_items = list(
 				standard_offerings,
 				pantheon_type + "_offerings")
-			playsound(src.loc, 'sound/effects/spray.ogg', 50, 1)
+			playsound(src.loc, 'sound/effects/mag_fireballlaunch.ogg', 50, 1)
 			flick(src.UpdateOverlays(fire_overlay, "brazier-[pantheon_type]-flaring"), src)
 			src.UpdateOverlays(fire_overlay, "brazier-[pantheon_type]-resting")
 			boutput(usr, SPAN_ALERT("The brazier swirls to life in a eruption of divine fire!"))
@@ -119,7 +119,7 @@
 				PI.pantheon = pantheon // Changes the item to a more specific type
 				src.pantheon.pantheon_power -= PI.price
 				flick(src.UpdateOverlays(fire_overlay, "brazier-[pantheon_type]-flaring"), usr)
-				playsound(src.loc, 'sound/effects/spray.ogg', 50, 1)
+				playsound(src.loc, 'sound/effects/mag_fireballlaunch.ogg', 50, 1)
 				boutput(usr, SPAN_NOTICE("You purchase [PI.name] for [PI.price]. Remaining power = [src.pantheon.pantheon_power] points."))
 				logTheThing(LOG_STATION, src, "[usr] got [PI.name] at their pantheon's brazier.")
 				if (!PI.on_purchase(src, usr))
@@ -139,12 +139,12 @@
 		else
 			pantheon.members += usr.mind
 			flick(src.UpdateOverlays(fire_overlay, "brazier-[pantheon_type]-flaring"), src)
-			playsound(src.loc, 'sound/effects/spray.ogg', 50, 1)
+			playsound(src.loc, 'sound/effects/mag_fireballlaunch.ogg', 50, 1)
 			boutput(usr, SPAN_ALERT("You are now a member of this pantheon! Praise be to the divine."))
 			logTheThing(LOG_STATION, src, "[usr] joined [pantheon.leader]'s pantheon.")
 
 
-/obj/brazier/chaplain // Chapel brazier, gets faith bonuses and is locked to the chaplain so they have one to use as a latejoin if not sabotaged
+/obj/reagent_dispensers/brazier/chaplain // Chapel brazier, gets faith bonuses and is locked to the chaplain so they have one to use as a latejoin if not sabotaged
 	chapel_locked = TRUE
 	anchored = ANCHORED
 	New()
