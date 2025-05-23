@@ -49,6 +49,7 @@
 			SETUP_GENERIC_ACTIONBAR(user, src, 5 SECONDS, /obj/reagent_dispensers/brazier/proc/toggle_bolts, list(user), W.icon, W.icon_state,"", null)
 			return
 		add_fingerprint(user)
+		return ui_interact(user)
 
 	attack_hand(var/mob/user)
 		if(!isalive(user))
@@ -74,7 +75,7 @@
   . = list(
     "pantheon_power" = pantheon.pantheon_power,
     "set_pantheon" = pantheon_type,
-	"whitelisted" = whitelist_mode,
+	"is_whitelisted" = whitelist_mode,
   )
 
 /obj/reagent_dispensers/brazier/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
