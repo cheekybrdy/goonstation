@@ -1,6 +1,6 @@
 /// Brazier
 /// Balance numbers are in defines/power.dm.
-/obj/reagent_dispensers/brazier
+/obj/reagent_dispensers/brazier // Reagent dispenser to take bartender drinks
 	name = "Offering Brazier"
 	desc = "A holy brazier for communicating and sending offerings to a pantheon of Gods."
 	icon = 'icons/obj/pantheon/offerings/brazier.dmi'
@@ -147,6 +147,7 @@
 
 /obj/reagent_dispensers/brazier/chaplain // Chapel brazier, gets faith bonuses and is locked to the chaplain so they have one to use as a latejoin if not sabotaged
 	chapel_locked = TRUE
+	whitelist_mode = TRUE // So its not insta sus if a chaplain has it on.
 	anchored = ANCHORED
 	New()
 		..()
