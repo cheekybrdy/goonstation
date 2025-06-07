@@ -281,7 +281,8 @@ ADMIN_INTERACT_PROCS(/obj/storage/secure/closet, proc/break_open)
 	/obj/item/pet_carrier,
 	/obj/item/device/pda2/hop,
 	/obj/item/device/panicbutton/medicalalert/hop,
-	/obj/item/circuitboard/card)
+	/obj/item/circuitboard/card
+	/obj/item/instrument/whistle/janitor)
 
 /obj/storage/secure/closet/command/research_director
 	name = "\improper Research Director's locker"
@@ -899,7 +900,8 @@ ADMIN_INTERACT_PROCS(/obj/storage/secure/closet, proc/break_open)
 	/obj/item/reagent_containers/glass/bottle/ammonia/janitors = 1,\
 	/obj/item/device/light/flashlight,\
 	/obj/item/caution = 4,\
-	/obj/item/disk/data/floppy/manudrive/cleaner_grenade = 1)
+	/obj/item/disk/data/floppy/manudrive/cleaner_grenade = 1,
+	/obj/item/instrument/whistle/janitor = 1)
 
 /obj/storage/secure/closet/civilian/hydro
 	name = "\improper Botanical supplies locker"
