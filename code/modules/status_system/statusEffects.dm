@@ -1915,6 +1915,41 @@
 			else
 				. += " You will take toxic damage."
 
+/datum/statusEffect/void_gas_effect
+	id = "seeping_mind"
+	name = "Seeping Mind"
+	desc = "Your mind feels like its drifted away from you and become part of that weird gas."
+	icon_state = "mind_seep"
+
+	onAdd(var/optional=null)
+		var/mob/living/L = owner
+		if(!isalive(L))
+			return
+		if(!L.client)
+			return
+		playsound(L, 'sound/ambience/spooky/Void_Song.ogg', 50, TRUE)
+		boutput(L, pick("<font color=purple><b>The reality around you fades out..</b></font>","<font color=purple><b>Suddenly your mind feels extremely frail and vulnerable..</b></font>","<font color=purple><b>Your sanity starts to fail you...</b></font>"))
+		return ..(optional)
+
+	onUpdate(var/timePassed)
+		var/mob/living/L = owner
+		if(!isalive(L))
+			return
+		if(!L.client)
+			return
+		L.addOverlayComposition(/datum/overlayComposition/insanity)
+		L.updateOverlaysClient(L.client)
+
+	onRemove()
+		. = ..()
+		var/mob/living/L = owner
+		if(!isalive(L))
+			return
+		if(!L.client)
+			return
+		L.removeOverlayComposition(/datum/overlayComposition/insanity)
+		L.updateOverlaysClient(L.client)
+
 /datum/statusEffect/dripping_paint
 	id = "marker_painted"
 	name = "Dripping with Paint"

@@ -63,6 +63,7 @@ What are the archived variables for?
 	UPDATE_GAS_MIXTURE_GRAPHIC(graphic, GAS_IMG_PLASMA, toxins)
 	UPDATE_GAS_MIXTURE_GRAPHIC(graphic, GAS_IMG_RAD, radgas)
 	UPDATE_GAS_MIXTURE_GRAPHIC(graphic, GAS_IMG_N2O, nitrous_oxide)
+	UPDATE_GAS_MIXTURE_GRAPHIC(graphic, GAS_IMG_VOIDGAS, void_gas)
 
 	. = graphic != graphic_archived
 	graphic_archived = graphic

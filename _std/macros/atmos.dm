@@ -51,6 +51,8 @@
 #define GAS_IMG_N2O 1
 /// Rad Particles Tile Overlay Id
 #define GAS_IMG_RAD 2
+/// Void Gas Overlay Id
+#define GAS_IMG_VOIDGAS 3
 
 /// Enables gas overlays to have continuous opacity based on molarity
 #define ALPHA_GAS_OVERLAYS
@@ -164,6 +166,11 @@
 // threshold for neutrons reacting with gasses
 #define NEUTRON_PLASMA_REACT_MOLS_PER_LITRE 0.25
 #define NEUTRON_CO2_REACT_MOLS_PER_LITRE 0.40
+// Voidgas properties
+// Void gas moles needed to cause insanity effect
+#define VOIDGAS_MINIMUM_INSANITY_MOLES 3
+// Cooldown for insanity application
+#define VOIDGAS_INSANITY_COOLDOWN 3 SECONDS
 //Gas Reaction Flags
 #define REACTION_ACTIVE (1<<0) 	//! Reaction is Active
 #define COMBUSTION_ACTIVE (1<<1) //! Combustion is Active
@@ -235,6 +242,7 @@ What can break when adding new gases:
 #define SPECIFIC_HEAT_RADGAS 	5
 #define SPECIFIC_HEAT_N2O		60
 #define SPECIFIC_HEAT_AGENTB	300
+#define SPECIFIC_HEAT_VOIDGAS	-5
 
 #define _APPLY_TO_GASES(PREF, SUFF, MACRO, ARGS...) \
 	MACRO(PREF ## oxygen ## SUFF, SPECIFIC_HEAT_O2, "O2", ARGS) \
@@ -245,6 +253,7 @@ What can break when adding new gases:
 	MACRO(PREF ## radgas ## SUFF, SPECIFIC_HEAT_RADGAS, "Fallout", ARGS) \
 	MACRO(PREF ## nitrous_oxide ## SUFF, SPECIFIC_HEAT_N2O, "N2O", ARGS) \
 	MACRO(PREF ## oxygen_agent_b ## SUFF, SPECIFIC_HEAT_AGENTB, "Oxygen Agent B", ARGS) \
+	MACRO(PREF ## void_gas ## SUFF, SPECIFIC_HEAT_VOIDGAS, "Void Haze", ARGS) \
 
 #define APPLY_TO_GASES(MACRO, ARGS...) \
 	MACRO(oxygen, SPECIFIC_HEAT_O2, "O2", ARGS) \
@@ -255,6 +264,7 @@ What can break when adding new gases:
 	MACRO(radgas, SPECIFIC_HEAT_RADGAS, "Fallout", ARGS) \
 	MACRO(nitrous_oxide, SPECIFIC_HEAT_N2O, "N2O", ARGS) \
 	MACRO(oxygen_agent_b, SPECIFIC_HEAT_AGENTB, "Oxygen Agent B", ARGS) \
+	MACRO(void_gas, SPECIFIC_HEAT_VOIDGAS, "Void Haze", ARGS) \
 //	_APPLY_TO_GASES(,, MACRO, ARGS) // replace with this when the langserver gets fixed >:(
 // (the _APPLY_TO_GASES version compiles and works fine but the linter rejects it for now)
 
@@ -283,9 +293,11 @@ proc/gas_text_color(gas_id)
 		if("toxins")
 			return "red"
 		if("farts")
-			return "purple"
+			return "darkgreen"
 		if("radgas")
-			return "green"
+			return "lightgreen"
+		if("voidgas")
+			return "purple"
 	return "black"
 
 ////////////////////////////

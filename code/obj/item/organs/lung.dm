@@ -17,6 +17,7 @@
 	var/safe_oxygen_min = 16 // Minimum safe partial pressure of O2, in kPa
 	var/safe_co2_max = 9 // Yes it's an arbitrary value who cares?
 	var/safe_toxins_max = 0.4
+	var/safe_voidgas_max = 0.2
 	var/n2o_para_min = 1
 	var/n2o_sleep_min = 5
 	var/fart_smell_min = 0.69 // don't ask ~warc
@@ -64,6 +65,7 @@
 		var/CO2_pp = (breath.carbon_dioxide/breath_moles)*breath_pressure
 		var/FARD_pp = (breath.farts/breath_moles)*breath_pressure
 		var/Radgas_pp = (breath.radgas/breath_moles)*breath_pressure
+		var/voidgas_pp = (breath.void_gas/breath_moles)*breath_pressure
 		var/oxygen_used
 
 		if(breaths_oxygen)
@@ -109,6 +111,9 @@
 		if (Radgas_pp > 0) //any fallout is too much fallout
 			donor.take_radiation_dose(min(0.03 * Radgas_pp, 0.2) * mult/LUNG_COUNT, internal=TRUE) //not a lethal dose in one second tho
 			breath.radgas *= 0.5 //lets say you keep half of it in your lungs.
+
+		if (voidgas_pp > safe_voidgas_max)
+			donor.changeStatus("seeping_mind", 8 SECONDS * mult/LUNG_COUNT)
 
 		var/N2O_pp = (breath.nitrous_oxide/breath_moles)*breath_pressure
 		if (N2O_pp > n2o_para_min) // Enough to make us paralysed for a bit
