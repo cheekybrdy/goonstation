@@ -75,7 +75,7 @@
 	"We have a collection of alien artifacts you may be interested in.")
 
 /datum/commodity/trader/vurdalak/tsunami
-	comname = "Wavebender Spray Bottle"\
+	comname = "Wavebender Spray Bottle"
 	comtype = /obj/item/spraybottle/cleaner/tsunami
 	amount = 2
 	price_boundary = list(PAY_DONTBUYIT)
