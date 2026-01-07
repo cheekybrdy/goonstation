@@ -706,6 +706,16 @@
 		max_temperature = T0C + 100
 		mix_phrase = "The powder dissolves, turning the solution milky."
 
+	barbecue_sauce
+		name = "Barbecue Sauce"
+		id = "barbecue_sauce"
+		required_reagents = list("capsaicin" = 1, "lemonade" = 1, "pepper" = 1, "ketchup" = 1, "grease" = 1, "mustard" = 1)
+		result = "barbecue_sauce"
+		result_amount = 7
+		instant = 0
+		min_temperature = T0C + 50
+		mix_phrase = "The flavor ions attempt to pass through the transitory BBQ stage, but fail. Seems your sauce might be missing something that could make it even more delicious!"
+
 	powder_milk
 		name = "Milk powder"
 		id = "milk_powder"
@@ -2336,7 +2346,7 @@
 		result = "pumpkinspicelatte"
 		required_reagents = list("juice_pumpkin"=1, "milk"= 2, "espresso"=1, "cinnamon"=1)
 		result_amount = 5
-		mix_phrase = "The drink smells vaguely like artifical autumn."
+		mix_phrase = "The drink smells vaguely like artificial autumn."
 		mix_sound = 'sound/misc/drinkfizz.ogg'
 
 	lavenderlatte
@@ -3491,7 +3501,7 @@
 		instant = 0
 		reaction_speed = 1
 		max_temperature = T0C + 50
-		mix_phrase = "The solution bubbles as frost precipitates from the sorrounding air."
+		mix_phrase = "The solution bubbles as frost precipitates from the surrounding air."
 		mix_sound = 'sound/misc/drinkfizz.ogg'
 		reaction_icon_state = list("reaction_ice-1", "reaction_ice-2")
 		reaction_icon_color = "#24ccff"
@@ -4863,6 +4873,28 @@
 		mix_sound = 'sound/misc/drinkfizz.ogg'
 		hidden = TRUE
 
+	deageinium
+		name = "Deageinium"
+		id = "deageinium"
+		result = "deageinium"
+		required_reagents = list("sugar" = 1, "epinephrine" = 1, "juice_apple" = 1, "chickensoup" = 1, "milk_powder" = 1)
+		result_amount = 3
+		min_temperature = T0C + 21
+		mix_phrase = "The bubbling mixture gives off a scent of angst, sickeningly sweet soda and life."
+		mix_sound = 'sound/misc/drinkfizz.ogg'
+		hidden = TRUE
+
+	deageinium_alt
+		name = "Deageinium"
+		id = "deageinium_alt"
+		result = "deageinium"
+		required_reagents = list("ageinium" = 1, "reversium" = 1)
+		result_amount = 1
+		min_temperature = T0C + 21
+		mix_phrase = "The bubbling mixture gives off a scent of angst, sickeningly sweet soda and life."
+		mix_sound = 'sound/misc/drinkfizz.ogg'
+		hidden = TRUE
+
 	//Hello, here are some fake werewolf serum precursors
 	werewolf_serum_fake1
 		name = "Werewolf Serum Precursor Alpha"
@@ -5025,6 +5057,16 @@
 		mix_phrase = "The solution makes a little 'chirp' noise and settles."
 		hidden = TRUE
 
+	painbow_eggs
+		name = "painbow eggs"
+		id = "painbow_eggs"
+		result = "painbow_eggs"
+		required_reagents = list("painbow fluid" = 1, "spiders" = 2, "helium" = 1)
+		result_amount = 1
+		mix_phrase = "The painbow and the spider concoct into a horrific mix."
+		hidden = TRUE
+		mix_sound = 'sound/musical_instruments/Boathorn_1.ogg'
+
 	mewtini
 		name = "Mewtini"
 		id = "mewtini"
@@ -5164,7 +5206,7 @@
 			for(var/turf/T in range(1, get_turf(holder.my_atom)))
 				for(var/mob/mob in T)
 					if(!mob.is_heat_resistant())
-						mob.bodytemperature += 10
+						mob.changeBodyTemp(10 KELVIN)
 				T.hotspot_expose(1000, 100, holder.my_atom)
 				var/obj/particle/heat_swirl/swirl = new /obj/particle/heat_swirl
 				swirl.set_loc(T)
@@ -5216,7 +5258,7 @@
 			for(var/turf/T in range(1, get_turf(holder.my_atom)))
 				for(var/mob/mob in T)
 					if(!mob.is_cold_resistant() || ischangeling(mob))
-						mob.bodytemperature -= 10
+						mob.changeBodyTemp(-10 KELVIN)
 				T.hotspot_expose(0, 100, holder.my_atom)
 				var/obj/particle/cryo_sparkle/sparkle = new /obj/particle/cryo_sparkle
 				sparkle.set_loc(T)
@@ -5460,3 +5502,12 @@
 		mix_phrase = "The mixture emits a sudden whine of static and forms into swirling, many faceted shapes that hurt to look at."
 		result_amount = 2
 		mix_sound = 'sound/effects/radio_sweep1.ogg'
+
+	explodingheadjuice
+		name = "Juice That Makes Your Head Explode"
+		id = "explodingheadjuice"
+		result = "explodingheadjuice"
+		required_reagents = list("blackpowder" = 1, "hard_punch" = 1, "juice_raspberry" = 1, "prions" = 1, "sonicpowder" = 1)
+		mix_phrase = "The mixture coalesces into a dark red liquid."
+		result_amount = 5
+

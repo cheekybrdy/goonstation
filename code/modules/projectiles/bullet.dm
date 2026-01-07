@@ -534,6 +534,24 @@ toxic - poisons
 	armor_ignored = 0.66
 	hit_type = DAMAGE_STAB
 
+/datum/projectile/bullet/revolver_38/ricochet
+	damage = 35
+	implanted = /obj/item/implant/projectile/bullet_38ricochet
+	ricochets = FALSE // seems counter intuitive but prevents interference with our other bounces
+
+	on_hit(atom/hit, dirflag, obj/projectile/proj)
+		if(!ismob(hit))
+			shot_volume = 0
+			shoot_reflected_bounce(proj, hit, 4, PROJ_NO_HEADON_BOUNCE)
+			shot_volume = 100
+		else if (proj.reflectcount > 1)
+			var/mob/M = hit
+			var/turf/target = get_edge_target_turf(M, dirflag)
+			M.throw_at(target, 4, 2, throw_type = THROW_GUNIMPACT)
+
+	get_power(obj/projectile/P, atom/A)
+		return P.power + P.reflectcount * 7
+
 /datum/projectile/bullet/revolver_38/stunners//energy bullet things so he can actually stun something
 	name = "stun bullet"
 	damage = 0
@@ -1004,10 +1022,14 @@ toxic - poisons
 	name = "glass"
 	sname = "glass"
 	icon_state = "glass"
-	dissipation_delay = 2
-	dissipation_rate = 2
+	dissipation_delay = 4
+	dissipation_rate = 1
 	implanted = null
-	damage = 6
+	damage = 3
+	on_hit(atom/hit, dirflag, obj/projectile/proj)
+		var/mob/M = hit
+		take_bleeding_damage(M, proj.shooter, 2, DAMAGE_CUT, 1, override_bleed_level=2) //easily cause level 2 bleeds
+		..()
 
 /datum/projectile/bullet/improvscrap
 	name = "fragments"
@@ -1023,7 +1045,7 @@ toxic - poisons
 	sname = "bone"
 	icon_state = "boneproj"
 	dissipation_delay = 1
-	dissipation_rate = 3
+	dissipation_rate = 1
 	damage_type = D_KINETIC
 	hit_type = DAMAGE_BLUNT
 	implanted = null
@@ -1274,7 +1296,7 @@ toxic - poisons
 		if ((istype(hit, /mob/living) && !istype(hit, /mob/living/silicon)) && !istype(hit, /mob/living/critter/space_phoenix))
 			var/mob/living/L = hit
 			L.TakeDamage("All", 2.5, 5, damage_type = src.damage_type)
-			L.bodytemperature -= 3
+			L.changeBodyTemp(-3 KELVIN)
 			L.changeStatus("shivering", 3 SECONDS * (1 - 0.75 * L.get_cold_protection() / 100), TRUE)
 		else if (istype(hit, /mob/living/silicon/ai))
 			var/mob/living/L = hit
@@ -2142,8 +2164,18 @@ ABSTRACT_TYPE(/datum/projectile/bullet/homing/rocket)
 	on_hit(atom/hit, dirflag)
 		var/obj/machinery/the_singularity/S = hit
 		if(istype(S))
-			new /obj/whitehole(S.loc, 0 SECONDS, 30 SECONDS)
-			qdel(S)
+			if (S.radius > 3)
+				S.target_turf_counter = 0
+				S.shrink()
+				new /obj/effects/magicspark(S.loc)
+				SPAWN(3 SECONDS)
+					if(S)
+						S.target_turf_counter = 0
+						S.shrink()
+						new /obj/effects/magicspark(S.loc)
+			else
+				new /obj/whitehole(S.loc, 0 SECONDS, 30 SECONDS)
+				qdel(S)
 		else
 			new /obj/effects/rendersparks(hit.loc)
 			if(ishuman(hit))
@@ -2431,7 +2463,7 @@ ABSTRACT_TYPE(/datum/projectile/bullet/homing/rocket)
 	damage = 100
 
 	on_hit(atom/hit, angle, obj/projectile/O)
-		if(istype(hit, /obj/machinery/atmospherics/binary/nuclear_reactor))
+		if(istype(hit, /obj/machinery/nuclear_reactor))
 			return FALSE //the turbine blades sail gracefully over the reactor
 		if(istype(hit, /mob/living/carbon/human)) //run a chance to cut off a limb or head
 			var/mob/living/carbon/human/H = hit

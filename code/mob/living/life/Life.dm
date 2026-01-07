@@ -257,9 +257,6 @@
 				continue
 			L.Process(environment)
 
-		for (var/obj/item/implant/I in src.implant)
-			I.on_life(life_mult)
-
 		update_item_abilities()
 
 		if (!isdead(src)) //still breathing
@@ -329,7 +326,8 @@
 			var/obj/item/item1 = pick(juggled_items)
 			juggled_items -= item1
 			var/obj/item/item2 = pick(juggled_items)
-			item2.Attackby(item1, src, silent = TRUE)
+			if(!istype(item2, /obj/item/paper))
+				item2.Attackby(item1, src, silent = TRUE)
 
 	//Attaching a limb that didn't originally belong to you can do stuff
 	if(!isdead(src) && prob(2) && src.limbs)
@@ -395,8 +393,6 @@
 		if (src.health < 0)
 			death()
 
-	process_killswitch()
-	process_locks()
 	update_canmove()
 
 	for (var/obj/item/parts/robot_parts/part in src.contents)
@@ -420,9 +416,7 @@
 			// sure keep trying to use power i guess.
 			use_power()
 
-
 	hud.update()
-	process_killswitch()
 
 /mob/living/silicon/hivebot/Life(datum/controller/process/mobs/parent)
 	if (..(parent))

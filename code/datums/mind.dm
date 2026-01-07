@@ -47,7 +47,7 @@ datum/mind
 	var/list/intrinsic_verbs = list()
 
 	var/handwriting = null
-	var/color = null
+	var/datum/forensic_id/color = null // What color this player smells like to pugs.
 
 	var/obj/item/organ/brain/brain
 
@@ -71,7 +71,8 @@ datum/mind
 			ckey = M.ckey
 			displayed_key = M.key
 			src.handwriting = pick(handwriting_styles)
-			src.color = pick_string("colors.txt", "colors")
+			var/color_string = pick_string("colors.txt", "colors")
+			src.color = register_id(color_string)
 			SEND_SIGNAL(src, COMSIG_MIND_ATTACH_TO_MOB, M)
 
 	proc/transfer_to(mob/new_character)
@@ -108,7 +109,7 @@ datum/mind
 			old_mob = current
 			if(current.client)
 				current.removeOverlaysClient(current.client)
-				tgui_process.on_transfer(current, new_character)
+				tgui_process?.on_transfer(current, new_character)
 				new_character.lastKnownIP = current.client.address
 			current.oldmind = src
 			current.mind = null
@@ -183,7 +184,10 @@ datum/mind
 	proc/get_player()
 		RETURN_TYPE(/datum/player)
 		if(ckey)
-			. = make_player(ckey)
+			. = find_player(ckey)
+			if (!.)
+				stack_trace("find_player for mind with ckey [ckey] returned null, making a new player datum. This probably shouldn't happen!")
+				. = make_player(ckey)
 
 	proc/store_memory(new_text)
 		memory += "[new_text]<BR>"

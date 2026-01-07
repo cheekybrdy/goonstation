@@ -149,6 +149,11 @@ ABSTRACT_TYPE(/obj/item/clothing/gloves)
 
 		..()
 
+	on_forensic_scan(datum/forensic_scan/scan)
+		. = ..()
+		if(src.glove_ID)
+			scan.add_text("Glove ID: [src.glove_ID] [src.material_prints ? "([src.material_prints])" : null]")
+
 	proc/distort_prints(var/prints as text, var/get_glove_ID = 1) // Ditto (Convair880).
 
 		var/data = null
@@ -266,8 +271,10 @@ ABSTRACT_TYPE(/obj/item/clothing/gloves)
 		user.visible_message(SPAN_NOTICE("[user] cuts off the fingertips from [src]."))
 		if(src.loc == user)
 			user.u_equip(src)
+		var/newitem = new /obj/item/clothing/gloves/fingerless()
+		SEND_SIGNAL(src, COMSIG_ITEM_CONVERTED, newitem, user)
 		qdel(src)
-		user.put_in_hand_or_drop(new /obj/item/clothing/gloves/fingerless)
+		user.put_in_hand_or_drop(newitem)
 	else . = ..()
 /obj/item/clothing/gloves/cyborg
 	desc = "beep boop borp"
@@ -309,8 +316,8 @@ ABSTRACT_TYPE(/obj/item/clothing/gloves)
 
 /obj/item/clothing/gloves/crafted
 	name = "gloves"
-	icon_state = "latex"
-	item_state = "lgloves"
+	icon_state = "custom"
+	item_state = "custom_gloves"
 	desc = "Custom made gloves."
 	scramble_prints = 1
 
@@ -335,8 +342,8 @@ ABSTRACT_TYPE(/obj/item/clothing/gloves)
 				src.setProperty("heatprot", thermal_insul * 2)
 
 	armored
-		icon_state = "black"
-		item_state = "swat_gl"
+		icon_state = "custom_armored"
+		item_state = "custom_armored"
 
 		onMaterialChanged()
 			..()
@@ -509,7 +516,7 @@ ABSTRACT_TYPE(/obj/item/clothing/gloves)
 		boutput(user, "You slip the horseshoe inside one of the gloves.")
 		src.weighted = 1
 		src.punch_damage_modifier += 3
-		tooltip_rebuild = 1
+		tooltip_rebuild = TRUE
 		qdel(W)
 	else
 		return ..()
@@ -730,6 +737,7 @@ ABSTRACT_TYPE(/obj/item/clothing/gloves)
 						if("disarm")
 							logTheThing(LOG_COMBAT, user, "disarm-zaps [constructTarget(target_r,"combat")] with power gloves at [log_loc(user)], power = [PN.avail]")
 							target.changeStatus("knockdown", 3 SECONDS)
+							target.changeStatus("implants_disabled", 15 SECONDS)
 							break
 
 				var/list/next = new/list()

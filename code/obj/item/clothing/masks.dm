@@ -10,7 +10,7 @@
 	c_flags = COVERSMOUTH
 	compatible_species = list("human", "cow", "werewolf")
 	wear_layer = MOB_HEAD_LAYER1
-	var/is_muzzle = 0
+	var/is_muzzle = FALSE
 	var/use_bloodoverlay = 1
 	var/stapled = 0
 	var/allow_staple = 1
@@ -294,7 +294,21 @@ TYPEINFO(/obj/item/clothing/mask/monkey_translator)
 	w_class = W_CLASS_SMALL
 	c_flags = COVERSMOUTH	// NOT usable for internals.
 	compatible_species = list("human", "cow", "werewolf", "martian")
-	var/new_language = "english"	// idk maybe you can varedit one so that humans speak monkey instead. who knows
+	var/new_language = LANGUAGE_ENGLISH	// idk maybe you can varedit one so that humans speak monkey instead. who knows
+
+	equipped(mob/user, slot)
+		. = ..()
+
+		if (slot != SLOT_WEAR_MASK)
+			return
+
+		user.ensure_speech_tree().AddSpeechModifier(SPEECH_MODIFIER_TRANSLATOR, language_id = src.new_language)
+
+	unequipped(mob/user)
+		if (src.equipped_in_slot == SLOT_WEAR_MASK)
+			user.ensure_speech_tree().RemoveSpeechModifier(SPEECH_MODIFIER_TRANSLATOR)
+
+		. = ..()
 
 /obj/item/clothing/mask/breath
 	desc = "A close-fitting mask that can be connected to an air supply but does not work very well in hard vacuum without a helmet."
@@ -494,7 +508,22 @@ TYPEINFO(/obj/item/clothing/mask/monkey_translator)
 	c_flags = COVERSMOUTH
 	w_class = W_CLASS_SMALL
 	desc = "You'd probably say something like 'Hello Clarice.' if you could talk while wearing this."
-	is_muzzle = 1
+	is_muzzle = TRUE
+
+	equipped(mob/user, slot)
+		. = ..()
+
+		if (slot != SLOT_WEAR_MASK)
+			return
+
+		user.ensure_speech_tree().AddSpeechModifier(SPEECH_MODIFIER_MUZZLE)
+
+	unequipped(mob/user)
+		if (src.equipped_in_slot == SLOT_WEAR_MASK)
+			user.ensure_speech_tree().RemoveSpeechModifier(SPEECH_MODIFIER_MUZZLE)
+
+		. = ..()
+
 
 /obj/item/clothing/mask/surgical
 	name = "sterile mask"
@@ -584,6 +613,7 @@ TYPEINFO(/obj/item/clothing/mask/monkey_translator)
 			//M.set_loc(get_turf(src)) // otherwise they seem to just vanish into the aether at times
 			if (src.color)
 				M.color = src.color
+			SEND_SIGNAL(src, COMSIG_ITEM_CONVERTED, M, user)
 			qdel(src)
 
 /obj/item/clothing/mask/paper
@@ -757,6 +787,7 @@ ABSTRACT_TYPE(/obj/item/clothing/mask/bandana)
 	the_handkerchief.setMaterial(src.material)
 	the_handkerchief.color = src.color
 	src.copy_filters_to(the_handkerchief)
+	SEND_SIGNAL(src, COMSIG_ITEM_CONVERTED, the_handkerchief, user)
 	qdel(src)
 	user.put_in_hand_or_drop(the_handkerchief)
 	boutput(user, SPAN_NOTICE("You unfold \the [src] into \a [the_handkerchief]."))
@@ -829,7 +860,8 @@ ABSTRACT_TYPE(/obj/item/clothing/mask/bandana)
 /obj/item/clothing/mask/bandana/random/New()
 	..()
 	var/obj/item/clothing/mask/bandana/bandana_to_spawn = pick(possible_bandana)
-	new bandana_to_spawn(src.loc)
+	var/new_bandana = new bandana_to_spawn(src.loc)
+	SEND_SIGNAL(src, COMSIG_ITEM_CONVERTED, new_bandana)
 	qdel(src)
 
 /obj/item/clothing/mask/tengu

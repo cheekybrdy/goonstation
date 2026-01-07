@@ -395,9 +395,11 @@ ABSTRACT_TYPE(/datum/rc_entry/item/organ)
 		..()
 
 	proc/AddReward(var/probability)
+		src.item_rewarders += new /datum/rc_itemreward/large_satchel
+		src.item_rewarders += new /datum/rc_itemreward/phyto_upgrade
 		if(prob(probability))
 			src.item_rewarders += new /datum/rc_itemreward/strange_seed
-		else
+		else if (prob(probability))
 			src.item_rewarders += new /datum/rc_itemreward/tumbleweed
 
 /datum/rc_entry/item/mutated_produce
@@ -466,6 +468,7 @@ ABSTRACT_TYPE(/datum/rc_entry/item/organ)
 		if (typepath == /obj/item/reagent_containers/food/snacks/mushroom/cloak) name = "cloaked panellus mushroom"
 		else if (typepath == /obj/item/reagent_containers/food/snacks/mushroom/amanita) name = "amanita mushroom"
 		else if (typepath == /obj/item/reagent_containers/food/snacks/plant/tomato/incendiary) name = "volatile tomato"
+		else if (typepath == /obj/item/plant/herb/commol/burning) name = "warm commol root"
 
 
 
@@ -512,15 +515,6 @@ ABSTRACT_TYPE(/datum/rc_entry/item/organ)
 		..()*/
 
 
-
-
-/datum/rc_itemreward/plant_cartridge
-	name = "Hydroponics restock cartridge"
-
-	build_reward()
-		var/cart = new /obj/item/vending/restock_cartridge/hydroponics
-		return cart
-
 /datum/rc_itemreward/strange_seed
 	name = "strange seed"
 
@@ -533,6 +527,18 @@ ABSTRACT_TYPE(/datum/rc_entry/item/organ)
 		for (var/i in 1 to src.count)
 			seed_list += new /obj/item/seed/alien
 		return seed_list
+
+/datum/rc_itemreward/large_satchel
+	name = "large produce satchel"
+
+	build_reward()
+		return new /obj/item/satchel/hydro/large
+
+/datum/rc_itemreward/phyto_upgrade
+	name = "phytoscopic analyzer upgrade"
+
+	build_reward()
+		return new /obj/item/device/analyzer/phytoscopic_upgrade
 
 /datum/rc_itemreward/tumbleweed
 	name = "aggressive plant specimen"

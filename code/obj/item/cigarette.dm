@@ -293,8 +293,7 @@
 					if(H.traitHolder && H.traitHolder.hasTrait("smoker") || !((src in H.get_equipped_items()) || ((H.l_store==src||H.r_store==src) && !(H.wear_mask && (H.wear_mask.c_flags & BLOCKSMOKE || (H.wear_mask.c_flags & MASKINTERNALS && H.internal))))))
 						src.reagents.remove_any(puffrate)
 					else
-						if(H.bodytemperature < H.base_body_temp)
-							H.bodytemperature += 1
+						H.changeBodyTemp(1 KELVIN, max_temp = H.base_body_temp)
 						if (prob(1))
 							H.contract_disease(/datum/ailment/malady/heartdisease,null,null,1)
 						src.reagents.trans_to(M, puffrate)
@@ -554,6 +553,9 @@
 			new src.cigtype(src)
 
 	mouse_drop(atom/over_object, src_location, over_location, src_control, over_control, params)
+		if (!can_act(usr) || !in_interact_range(usr, src) || !in_interact_range(usr, over_location) || !in_interact_range(over_location, src) || usr.lying || isAIeye(usr) || isAI(usr) || isrobot(usr) || isghostcritter(usr) || (over_object && over_object.event_handler_flags & NO_MOUSEDROP_QOL) || isintangible(usr))
+			return ..()
+
 		if ((istype(over_object, /obj/table) || \
 					(isturf(over_object) && total_density(over_location) < 1)) && \
 					in_interact_range(over_object,src) && \
@@ -564,7 +566,8 @@
 			src.UpdateIcon()
 			if (!islist(params)) params = params2list(params)
 			if (params) params["dumped"] = 1
-		else ..()
+		else
+			return ..()
 
 	should_place_on(obj/target, params)
 		if (istype(target, /obj/table) && params && params["dumped"])
@@ -879,7 +882,7 @@
 				user.put_in_hand_or_drop(W)
 				if (src.match_amt != -1)
 					src.match_amt --
-					tooltip_rebuild = 1
+					tooltip_rebuild = TRUE
 			src.UpdateIcon()
 		else
 			return ..()

@@ -34,7 +34,6 @@
 	var/list/failed_purchase_dialogue = null
 	var/pickupdialogue = null
 	var/pickupdialoguefailure = null
-	var/list/trader_area = null
 	var/doing_a_thing = 0
 	var/log_trades = TRUE
 
@@ -71,7 +70,6 @@
 
 	New()
 		dialogue = new/datum/dialogueMaster/traderGeneric(src)
-		src.trader_area = get_area(src)
 		..()
 
 	anger()
@@ -153,7 +151,7 @@
 		var/list/goods_for_purchase = goods_sell.Copy()
 		// Illegal goods for syndicate traitors
 		if (illegal)
-			if(usr.mind && (istraitor(usr) || isspythief(usr) || isnukeop(usr) || usr.mind.special_role == ROLE_SLEEPER_AGENT || usr.mind.special_role == ROLE_OMNITRAITOR))
+			if(usr.mind && istrainedsyndie(usr))
 				goods_for_purchase += goods_illegal
 		if (href_list["purchase"])
 			src.temp =buy_dialogue + "<HR><BR>"
@@ -455,7 +453,7 @@
 		var/pickedloc = 0
 		var/found = 0
 
-		var/list/area_turfs = get_area_turfs(trader_area)
+		var/list/area_turfs = get_area_turfs(get_area(src))
 		if (!area_turfs || !length(area_turfs))
 			area_turfs = get_area_turfs( get_area(src) )
 
@@ -787,10 +785,16 @@ ABSTRACT_TYPE(/obj/npc/trader/random)
 /obj/npc/trader/random/contraband
 	commercetype = /datum/commodity/contraband
 	descriptions = list("legitimate goods", "perfectly legitimate goods", "extremely legitimate goods")
+	illegal = TRUE
 
 	New()
 		src.possible_icon_states = list("big_spide[pick("","-red","-blue","-green")]")
 		..()
+		// Prevent non-syndies from purchasing syndicate radio access.
+		for(var/datum/commodity/commodity in src.goods_sell)
+			if(istype(commodity, /datum/commodity/contraband/syndicate_headset))
+				src.goods_sell -= commodity
+				src.goods_illegal |= commodity
 
 //actually this just seems to be robotics upgrades and scrap metal?
 // /obj/npc/trader/random/salvage
@@ -1102,6 +1106,7 @@ ABSTRACT_TYPE(/obj/npc/trader/robot/robuddy)
 		src.goods_sell += new /datum/commodity/drugs/sell/krokodil(src)
 		src.goods_sell += new /datum/commodity/drugs/sell/lsd(src)
 		src.goods_sell += new /datum/commodity/drugs/sell/lsd_bee(src)
+		src.goods_sell += new /datum/commodity/drugs/sell/CBD(src)
 		src.goods_sell += new /datum/commodity/relics/bootlegfirework(src)
 		src.goods_sell += new /datum/commodity/pills/uranium(src)
 
@@ -1258,6 +1263,7 @@ ABSTRACT_TYPE(/obj/npc/trader/robot/robuddy)
 		src.goods_sell += new /datum/commodity/costume/mime/alt(src) //suspenders and such
 		src.goods_sell += new /datum/commodity/costume/jester(src)
 		src.goods_sell += new /datum/commodity/costume/blorbosuit(src)
+		src.goods_sell += new /datum/commodity/costume/chompskysuit(src)
 		src.goods_sell += new /datum/commodity/backpack/breadpack(src)
 		src.goods_sell += new /datum/commodity/backpack/bearpack(src)
 		src.goods_sell += new /datum/commodity/backpack/turtlebrown(src)
@@ -1452,6 +1458,7 @@ ABSTRACT_TYPE(/obj/npc/trader/robot/robuddy)
 		src.goods_sell += new /datum/commodity/drugs/sell/krokodil(src)
 		src.goods_sell += new /datum/commodity/drugs/sell/lsd(src)
 		src.goods_sell += new /datum/commodity/drugs/sell/lsd_bee(src)
+		src.goods_sell += new /datum/commodity/drugs/sell/CBD(src)
 		src.goods_sell += new /datum/commodity/medical/ether(src)
 		src.goods_sell += new /datum/commodity/medical/toxin(src)
 		src.goods_sell += new /datum/commodity/medical/cyanide(src)

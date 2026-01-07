@@ -124,6 +124,7 @@
 				F = new /obj/item/paper/folded/ball(user)
 			F.info = src.info
 			F.old_desc = src.desc
+			F.icon_old = src.icon
 			F.old_icon_state = src.icon_state
 			F.stamps = src.stamps
 			F.setMaterial(src.material)
@@ -288,7 +289,7 @@
 		var/obj/item/pen/PEN = O
 		. += list(
 			"penFont" = PEN.font,
-			"penColor" = PEN.color,
+			"penColor" = PEN.font_color, // PEN.color uses the color of the object, this uses the font color set by object
 			"editMode" = PAPER_MODE_WRITING,
 			"isCrayon" = FALSE,
 			"stampClass" = "FAKE",
@@ -318,9 +319,6 @@
 	if(istype(P, /obj/item/pen) || istype(P, /obj/item/pen/crayon))
 		if(src.sealed)
 			boutput(user, SPAN_ALERT("You can't write on [src]."))
-			return
-		if(length(info) >= PAPER_MAX_LENGTH) // Sheet must have less than 1000 charaters
-			boutput(user, SPAN_ALERT("This sheet of paper is full!"))
 			return
 		ui_interact(user)
 		return
@@ -607,16 +605,18 @@
 	bin_type = /obj/item/sticker/postit/artifact_paper
 
 	update()
-		tooltip_rebuild = 1
+		tooltip_rebuild = TRUE
 
 /obj/item/paper_bin/proc/update()
-	tooltip_rebuild = 1
+	tooltip_rebuild = TRUE
 	src.icon_state = "paper_bin[(src.amount_left || locate(bin_type, src)) ? "1" : null]"
 	return
 
 /obj/item/paper_bin/mouse_drop(mob/user as mob)
 	if (user == usr && !user.restrained() && !user.stat && (user.contents.Find(src) || in_interact_range(src, user)))
-		if (!user.put_in_hand(src))
+		if(src.loc == user)
+			user.drop_item(src) // Drop because `put_in_hand(src)` will keep an invisible paper bin in offhand otherwise. I have no idea why.
+		if(!user.put_in_hand(src))
 			return ..()
 
 /obj/item/paper_bin/attack_hand(mob/user)
@@ -634,12 +634,13 @@
 					var/obj/item/paper/PA = P
 					PA.info = "Help me! I am being forced to code SS13 and It won't let me leave."
 			else
-				user.put_in_hand_or_drop(src)
+				return ..()
 	src.update()
 
 /obj/item/paper_bin/attack_self(mob/user as mob)
 	. = ..()
-	src.Attackhand(user)
+	if(src.amount_left > 0) // Dispenses paper when used in hand; something odd happens if there isn't any.
+		src.Attackhand(user)
 
 /obj/item/paper_bin/attackby(obj/item/P, mob/user) // finally you can write on all the paper AND put it back in the bin to mess with whoever shows up after you ha ha
 	if (istype(P, bin_type))
@@ -879,6 +880,8 @@
 			src.UpdateOverlays(stamp_overlay, "stamps_[i % PAPER_MAX_STAMPS_OVERLAYS]")
 			i++
 		if(src.old_icon_state)
+			if(src.icon_old)
+				src.icon = icon_old
 			src.icon_state = src.old_icon_state
 		else
 			if(src.info)

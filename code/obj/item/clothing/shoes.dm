@@ -58,13 +58,14 @@
 			var/obj/item/clothing/shoes/rocket/R = new/obj/item/clothing/shoes/rocket(T)
 			R.uses = uses
 			boutput(user, SPAN_NOTICE("You haphazardly kludge together some rocket shoes."))
+			SEND_SIGNAL(src, COMSIG_ITEM_CONVERTED, R, user)
 			qdel(W)
 			qdel(src)
 
 		if (src.laces == LACES_TIED && istool(W, TOOL_CUTTING | TOOL_SNIPPING))
 			boutput(user, "You neatly cut the knot and most of the laces away. Problem solved forever!")
 			src.laces = LACES_CUT
-			tooltip_rebuild = 1
+			tooltip_rebuild = TRUE
 
 /obj/item/clothing/shoes/rocket
 	name = "rocket shoes"
@@ -216,7 +217,7 @@ TYPEINFO(/obj/item/clothing/shoes/magnetic)
 
 	proc/check_move(mob/mover, turf/T, direction, quiet = FALSE)
 		//is the turf we're on solid?
-		if (!istype(T) || !(istype(T, /turf/space) || T.throw_unlimited))
+		if (!istype(T) || !(istype(T, /turf/space) && !istype(T, /turf/space/fluid) || T.throw_unlimited))
 			return FALSE
 		//this is kind of expensive to put on Move BUT in my defense it will only happen for magboots wearers standing on a space tile
 		//what are the chances they're also next to botany's server lag weed pile at the same time?
@@ -350,6 +351,7 @@ TYPEINFO(/obj/item/clothing/shoes/industrial)
 					I.set_loc(get_turf(src))
 				playsound(src, 'sound/items/graffitispray3.ogg', 100, TRUE)
 				boutput(user, SPAN_NOTICE("You spraypaint the clown shoes in a sleek black!"))
+				SEND_SIGNAL(src, COMSIG_ITEM_CONVERTED, I, user)
 				qdel(src)
 			else
 				boutput(user, SPAN_ALERT("You don't feel like insulting the clown like this."))
@@ -562,6 +564,7 @@ TYPEINFO(/obj/item/clothing/shoes/moon)
 				else
 					I.set_loc(get_turf(src))
 				boutput(user, SPAN_NOTICE("You cover the heavy boots in crayon!"))
+				SEND_SIGNAL(src, COMSIG_ITEM_CONVERTED, I, user)
 				qdel(src)
 			else
 				boutput(user, SPAN_ALERT("You don't feel brave enough to do this."))
@@ -745,7 +748,7 @@ TYPEINFO(/obj/item/clothing/shoes/moon)
 /obj/item/clothing/shoes/crafted
 	name = "shoes"
 	desc = "A custom pair of shoes"
-	icon_state = "white"
+	icon_state = "custom"
 
 	onMaterialChanged()
 		..()
