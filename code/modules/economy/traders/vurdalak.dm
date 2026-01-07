@@ -77,9 +77,9 @@
 /datum/commodity/trader/vurdalak/tsunami
 	comname = "Wavebender Spray Bottle"
 	comtype = /obj/item/spraybottle/cleaner/tsunami
-	amount = 2
+	amount = 1
 	price_boundary = list(PAY_DONTBUYIT)
-	possible_names = list("These bottles were the byproduct of a ritual. We have spares to sell.",
+	possible_names = list("This bottle was the byproduct of a ritual. We are willing to sell.",
 	"We have excess blood cleaning supplies. Inquiry onto the blood's origin will not be answered.")
 
 // Vurdalak wants these things
