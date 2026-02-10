@@ -67197,7 +67197,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "xvY" = (
-/obj/machinery/fluid_machinery/trinary/filter,
+/obj/machinery/fluid_machinery/trinary/filter/plumbing,
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "xwN" = (
