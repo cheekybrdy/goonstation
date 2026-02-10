@@ -123,6 +123,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 
 	active // For mapping
 		on = TRUE
+		icon_state = "inlet1"
 
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/proc/activate()
 
@@ -544,6 +545,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/binary)
 
 	active // For mapping
 		on = TRUE
+		icon_state = "valve1"
 
 
 /obj/machinery/fluid_machinery/binary/valve/attack_hand(mob/user)

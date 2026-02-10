@@ -4688,7 +4688,7 @@
 /obj/fluid_pipe/t_junction/waste{
 	dir = 8
 	},
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump,
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active,
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/bathroom)
 "atl" = (
@@ -28115,8 +28115,8 @@
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/crew_quarters/toilets)
 "caZ" = (
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump,
 /obj/fluid_pipe/straight/waste,
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active,
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/toilets)
 "cba" = (
@@ -29214,7 +29214,7 @@
 	dir = 8;
 	pixel_x = -8
 	},
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump{
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
 	dir = 4
 	},
 /turf/simulated/floor/sanitary,
@@ -36839,7 +36839,7 @@
 /turf/simulated/floor/specialroom/cafeteria,
 /area/station/crew_quarters/kitchen)
 "dpB" = (
-/obj/machinery/fluid_machinery/binary/pump{
+/obj/machinery/fluid_machinery/binary/pump/active{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -53709,7 +53709,7 @@
 	dir = 1
 	},
 /obj/machinery/door/window/eastleft,
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump{
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
 	dir = 4
 	},
 /turf/simulated/floor/sanitary,
@@ -54204,7 +54204,7 @@
 /obj/stool/chair{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/floor/neutral/side{
@@ -67650,7 +67650,7 @@
 	},
 /area/station/medical/staff)
 "xRh" = (
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/fluid_pipe/straight/see_fluid/supply/overfloor{
 	dir = 4
 	},
 /turf/simulated/wall/auto/supernorn,
