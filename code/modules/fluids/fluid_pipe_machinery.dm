@@ -659,6 +659,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/trinary)
 	icon_state = "filter1"
 
 	New()
+		..()
 		src.beaker.name = "Water Calibration Vial"
 		src.beaker.desc = "This one vial is the one thing holding a flood of shit coming through the water system."
 
