@@ -163,6 +163,10 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor
 	level = OVERFLOOR
 
+	active // For mapping
+		on = TRUE
+		icon_state = "inlet1"
+
 /obj/machinery/fluid_machinery/unary/hand_pump
 	name = "hand pump"
 	icon_state = "output0"
