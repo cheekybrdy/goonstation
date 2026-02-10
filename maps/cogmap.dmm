@@ -4222,10 +4222,6 @@
 	name = "astroturf"
 	},
 /area/station/hydroponics/bay)
-"aro" = (
-/obj/fluid_pipe/elbow/supply,
-/turf/simulated/floor/plating,
-/area/station/maintenance/northeast)
 "arp" = (
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/showers)
@@ -31189,7 +31185,9 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/black,
 /area/station/medical/robotics)
 "ckV" = (
@@ -35201,7 +35199,9 @@
 	icon_state = "2-8"
 	},
 /obj/landmark/gps_waypoint,
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/black,
 /area/station/medical/robotics)
 "cyz" = (
@@ -39045,7 +39045,9 @@
 	icon_state = "pipe-c";
 	name = "crematorium pipe"
 	},
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/black,
 /area/station/medical/robotics)
 "eCD" = (
@@ -40400,6 +40402,12 @@
 /obj/fluid_pipe/straight/supply/overfloor,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/science/chemistry)
+"fse" = (
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/northeast)
 "fsm" = (
 /obj/disposalpipe/segment/morgue,
 /obj/lattice{
@@ -41276,6 +41284,10 @@
 /area/station/engine/coldloop)
 "fVJ" = (
 /obj/machinery/space_heater,
+/turf/simulated/floor/plating,
+/area/station/maintenance/northeast)
+"fVS" = (
+/obj/storage/closet/fire,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "fWA" = (
@@ -42589,7 +42601,9 @@
 /area/station/hydroponics/bay)
 "gQI" = (
 /obj/landmark/start/job/roboticist,
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/black,
 /area/station/medical/robotics)
 "gQO" = (
@@ -42669,7 +42683,9 @@
 	icon_state = "pipe-c";
 	name = "crematorium pipe"
 	},
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/sanitary/white,
 /area/station/medical/morgue)
 "gUP" = (
@@ -43330,7 +43346,9 @@
 	icon_state = "4-8"
 	},
 /obj/landmark/start/job/cyborg,
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/black,
 /area/station/medical/robotics)
 "huk" = (
@@ -44187,6 +44205,10 @@
 /obj/machinery/status_display,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/turret_protected/ai_upload_foyer)
+"hWN" = (
+/obj/fluid_pipe/elbow/supply,
+/turf/simulated/floor/plating,
+/area/station/maintenance/northeast)
 "hWP" = (
 /obj/fluid_pipe/straight/waste,
 /turf/simulated/floor,
@@ -47668,12 +47690,6 @@
 	},
 /turf/simulated/floor/grime,
 /area/station/science/lab)
-"kod" = (
-/obj/fluid_pipe/t_junction/supply{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/northeast)
 "koE" = (
 /obj/disposalpipe/segment/mail,
 /turf/simulated/floor,
@@ -52592,10 +52608,6 @@
 	},
 /turf/simulated/floor,
 /area/station/engine/monitoring)
-"nJs" = (
-/obj/machinery/fluid_machinery/binary/pump,
-/turf/simulated/floor/plating,
-/area/station/maintenance/northeast)
 "nJu" = (
 /obj/cable{
 	icon_state = "0-8"
@@ -55936,7 +55948,7 @@
 /turf/simulated/floor,
 /area/station/engine/storage)
 "pTl" = (
-/obj/storage/closet/fire,
+/obj/machinery/fluid_machinery/binary/pump,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "pTo" = (
@@ -56144,7 +56156,9 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/sanitary/white,
 /area/station/medical/morgue)
 "qbc" = (
@@ -58176,6 +58190,9 @@
 /obj/machinery/optable{
 	id = "OR1"
 	},
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
+	dir = 8
+	},
 /turf/simulated/floor,
 /area/station/medical/medbay/surgery)
 "ryN" = (
@@ -59323,6 +59340,9 @@
 /obj/decal/stripe_caution,
 /obj/machinery/optable{
 	id = "OR2"
+	},
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
+	dir = 8
 	},
 /turf/simulated/floor,
 /area/station/medical/medbay/surgery)
@@ -63923,7 +63943,9 @@
 	dir = 4;
 	name = "crematorium pipe"
 	},
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/sanitary/white,
 /area/station/medical/morgue)
 "vhc" = (
@@ -64362,12 +64384,6 @@
 	icon_state = "fgreen2"
 	},
 /area/station/crew_quarters/hop)
-"vuT" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 1
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/northeast)
 "vuZ" = (
 /obj/table/auto,
 /obj/landmark/pest,
@@ -66055,6 +66071,12 @@
 	icon_state = "fblue2"
 	},
 /area/station/crew_quarters/stockex)
+"wys" = (
+/obj/fluid_pipe/t_junction/supply{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/northeast)
 "wyD" = (
 /obj/machinery/computer/chem_request_receiver{
 	dir = 4
@@ -122678,7 +122700,7 @@ lTS
 ajc
 xGR
 nzT
-pTl
+fVS
 kVG
 arq
 szn
@@ -123282,7 +123304,7 @@ aie
 onU
 vJA
 lwo
-kod
+wys
 qsJ
 fZT
 jJl
@@ -123582,9 +123604,9 @@ aie
 aie
 aie
 ajc
-aro
-nJs
-vuT
+hWN
+pTl
+fse
 kVG
 teI
 uep
