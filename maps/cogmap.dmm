@@ -3378,7 +3378,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/fluid_pipe/straight/see_fluid,
+/obj/fluid_pipe/straight/see_fluid/waste,
 /turf/simulated/floor/black,
 /area/station/crew_quarters/catering)
 "ane" = (
@@ -7398,7 +7398,7 @@
 /area/station/hallway/primary/central)
 "aCU" = (
 /obj/disposalpipe/segment/mail,
-/obj/fluid_pipe/straight/see_fluid,
+/obj/fluid_pipe/straight/see_fluid/waste,
 /turf/simulated/floor/neutral/side{
 	dir = 1
 	},
@@ -26504,7 +26504,7 @@
 	mail_tag = "medbay";
 	name = "medbay mail router"
 	},
-/obj/fluid_pipe/straight/see_fluid{
+/obj/fluid_pipe/straight/see_fluid/supply{
 	dir = 4
 	},
 /turf/simulated/floor/purple/side{
@@ -27330,7 +27330,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/obj/fluid_pipe/straight/see_fluid,
+/obj/fluid_pipe/straight/see_fluid/waste,
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "bYi" = (
@@ -32017,7 +32017,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/fluid_pipe/straight/see_fluid,
+/obj/fluid_pipe/straight/see_fluid/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/southwest)
 "cnP" = (
@@ -38352,7 +38352,7 @@
 	pixel_x = -20
 	},
 /obj/mapping_helper/firedoor_spawn,
-/obj/fluid_pipe/straight/see_fluid{
+/obj/fluid_pipe/straight/see_fluid/waste{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -42915,7 +42915,7 @@
 /turf/simulated/floor,
 /area/station/mining/staff_room)
 "heT" = (
-/obj/fluid_pipe/straight/see_fluid,
+/obj/fluid_pipe/straight/see_fluid/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/central)
 "hfb" = (
@@ -45277,7 +45277,7 @@
 	icon_state = "1-2"
 	},
 /obj/disposalpipe/segment/morgue,
-/obj/fluid_pipe/straight/see_fluid,
+/obj/fluid_pipe/straight/see_fluid/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
 "iLc" = (
@@ -55685,6 +55685,12 @@
 /obj/disposalpipe/segment,
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
+"pOK" = (
+/obj/fluid_pipe/straight/see_fluid/supply{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/northeast)
 "pOO" = (
 /obj/disposalpipe/segment{
 	dir = 8;
@@ -55806,7 +55812,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/fluid_pipe/straight/see_fluid{
+/obj/fluid_pipe/straight/see_fluid/supply{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -57587,7 +57593,7 @@
 /obj/disposalpipe/segment{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/see_fluid{
+/obj/fluid_pipe/straight/see_fluid/waste{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -58029,7 +58035,7 @@
 /turf/simulated/floor,
 /area/station/security/main)
 "rxT" = (
-/obj/fluid_pipe/straight/see_fluid{
+/obj/fluid_pipe/straight/see_fluid/waste{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -58372,7 +58378,7 @@
 	find_in_range = 0;
 	id = "lobby"
 	},
-/obj/fluid_pipe/straight/see_fluid,
+/obj/fluid_pipe/straight/see_fluid/waste,
 /turf/simulated/floor/bluewhite/corner,
 /area/station/medical/medbay/lobby)
 "rJL" = (
@@ -60123,7 +60129,7 @@
 /area/station/crew_quarters/supplylobby)
 "sMz" = (
 /obj/disposalpipe/segment,
-/obj/fluid_pipe/straight/see_fluid,
+/obj/fluid_pipe/straight/see_fluid/waste,
 /turf/simulated/floor/plating,
 /area/station/maintenance/central)
 "sMK" = (
@@ -64985,10 +64991,10 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/obj/fluid_pipe/straight/see_fluid{
+/obj/fluid_pipe/straight/supply,
+/obj/fluid_pipe/straight/see_fluid/waste{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "vXP" = (
@@ -120688,7 +120694,7 @@ aoN
 fVJ
 xvW
 apN
-rxT
+pOK
 qxv
 amj
 lED
