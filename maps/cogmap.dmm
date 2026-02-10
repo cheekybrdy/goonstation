@@ -45072,7 +45072,7 @@
 	dir = 1;
 	status = 2
 	},
-/obj/fluid_pipe/fluid_tank/see_fluid/supply,
+/obj/fluid_pipe/fluid_tank/see_fluid/water,
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "iCD" = (
@@ -53679,7 +53679,7 @@
 /turf/simulated/floor,
 /area/station/hydroponics/bay)
 "oyI" = (
-/obj/fluid_pipe/fluid_tank/see_fluid/supply,
+/obj/fluid_pipe/fluid_tank/see_fluid/water,
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "ozQ" = (
