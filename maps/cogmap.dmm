@@ -13924,6 +13924,9 @@
 /obj/machinery/fluid_machinery/binary/pump/active{
 	dir = 4
 	},
+/obj/fluid_pipe/straight/see_fluid/supply/overfloor{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/east)
 "aWC" = (
@@ -15245,6 +15248,8 @@
 	dir = 1;
 	status = 2
 	},
+/obj/table/auto,
+/obj/item/places_pipes/civilian,
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "baO" = (
@@ -28475,6 +28480,7 @@
 	icon_state = "1-2"
 	},
 /obj/disposalpipe/segment/mail,
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/southwest)
 "cbZ" = (
@@ -28508,6 +28514,9 @@
 /obj/disposalpipe/segment/mail,
 /obj/cable{
 	icon_state = "1-4"
+	},
+/obj/machinery/fluid_machinery/binary/pump{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southwest)
@@ -29606,6 +29615,7 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/southwest)
 "cfW" = (
@@ -30018,7 +30028,9 @@
 	icon_state = "0-2"
 	},
 /obj/disposalpipe/segment/morgue,
-/obj/fluid_pipe/straight/supply,
+/obj/fluid_pipe/t_junction/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
 "chn" = (
@@ -30028,6 +30040,9 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 6
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
 "cho" = (
@@ -30035,6 +30050,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple{
+	dir = 4
+	},
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -30049,6 +30067,9 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
 "chq" = (
@@ -30058,11 +30079,17 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 9
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
 "chr" = (
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
@@ -30073,6 +30100,9 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
 "cht" = (
@@ -30081,6 +30111,9 @@
 	},
 /obj/cable{
 	icon_state = "1-8"
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
@@ -30091,6 +30124,9 @@
 	},
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/fluid_pipe/elbow/supply{
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
@@ -30300,6 +30336,9 @@
 /obj/disposalpipe/segment/mail{
 	dir = 1;
 	icon_state = "pipe-c"
+	},
+/obj/fluid_pipe/fluid_tank/see_fluid/water{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southwest)
@@ -35003,6 +35042,10 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
 /area/station/medical/dome)
+"cxt" = (
+/obj/machinery/fluid_machinery/unary/dripper,
+/turf/simulated/floor/plating,
+/area/station/janitor/reservior)
 "cxw" = (
 /obj/blind_switch/area/east{
 	pixel_y = -6
@@ -35940,6 +35983,10 @@
 	},
 /turf/simulated/floor/grime,
 /area/station/hallway/primary/east)
+"cFu" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/black,
+/area/station/janitor/reservior)
 "cFE" = (
 /obj/machinery/conveyor/NS{
 	name = "cargo belt - south";
@@ -36847,7 +36894,7 @@
 /area/station/crew_quarters/kitchen)
 "dpB" = (
 /obj/machinery/fluid_machinery/binary/pump/active{
-	dir = 1
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
@@ -38195,6 +38242,15 @@
 	dir = 4
 	},
 /area/mining/magnet)
+"ecc" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/fluid_machinery/binary/pump{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/southeast)
 "edG" = (
 /obj/machinery/door/airlock/pyro/glass,
 /obj/disposalpipe/segment/transport,
@@ -38472,6 +38528,12 @@
 /obj/stool/chair/comfy/shuttle,
 /turf/unsimulated/floor/shuttle,
 /area/shuttle/arrival/station)
+"emy" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/station/janitor/plumbing)
 "emz" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4
@@ -39355,6 +39417,12 @@
 	},
 /turf/simulated/floor,
 /area/station/quartermaster/cargooffice)
+"eNX" = (
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/station/janitor/reservior)
 "eOb" = (
 /obj/decal/tile_edge/stripe/extra_big,
 /obj/machinery/light/small{
@@ -40890,6 +40958,10 @@
 /obj/item/device/microphone,
 /turf/simulated/floor/wood,
 /area/station/crew_quarters/fitness)
+"fLZ" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/janitor/reservior)
 "fMv" = (
 /obj/machinery/computer/cloning,
 /obj/item/paper/Cloning,
@@ -41023,6 +41095,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/routing/depot)
+"fQc" = (
+/obj/fluid_spawner{
+	amount = 90000
+	},
+/turf/simulated/floor/plating,
+/area/station/janitor/reservior)
 "fQF" = (
 /obj/machinery/door/poddoor/pyro/shutters{
 	dir = 4;
@@ -42014,6 +42092,10 @@
 /obj/machinery/light/traffic_light/mining_station/delay3,
 /turf/space,
 /area/space)
+"gCx" = (
+/obj/fluid_pipe/straight/waste,
+/turf/simulated/floor/plating,
+/area/station/janitor/plumbing)
 "gDx" = (
 /obj/cable,
 /obj/cable{
@@ -43055,14 +43137,14 @@
 /turf/simulated/floor/plating,
 /area/space)
 "hjS" = (
-/obj/cable{
-	icon_state = "1-2"
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
 	},
-/obj/fluid_pipe/t_junction/supply{
-	dir = 4
+/obj/cable{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
-/area/station/maintenance/central)
+/area/station/janitor/plumbing)
 "hku" = (
 /obj/disposalpipe/segment,
 /obj/fluid_pipe/straight/waste,
@@ -44136,7 +44218,7 @@
 /obj/decal/tile_edge{
 	icon_state = "hazard_delivery"
 	},
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump{
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -44319,6 +44401,12 @@
 	},
 /turf/simulated/floor/neutral/corner,
 /area/station/crew_quarters/market)
+"idl" = (
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
+/area/station/crew_quarters/pool)
 "idr" = (
 /obj/xmastree/ephemeral,
 /turf/simulated/floor/orangeblack/side,
@@ -44355,6 +44443,9 @@
 /area/station/turret_protected/Zeta)
 "ieU" = (
 /obj/disposalpipe/segment,
+/obj/fluid_pipe/fluid_tank/see_fluid/water{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
 "ifi" = (
@@ -45065,13 +45156,12 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/east)
 "iCw" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 1
+/obj/table/auto,
+/obj/item/reagent_containers/glass/plumbing/dispenser/plumbing{
+	pixel_y = 8
 	},
-/turf/simulated/floor/bluewhite/corner{
-	dir = 8
-	},
-/area/station/crew_quarters/pool)
+/turf/simulated/floor/plating,
+/area/station/janitor/plumbing)
 "iCD" = (
 /obj/landmark/engine_room,
 /turf/space,
@@ -45164,6 +45254,9 @@
 /obj/fluid_pipe/elbow/waste,
 /obj/cable{
 	icon_state = "1-4"
+	},
+/obj/cable{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
@@ -45475,10 +45568,14 @@
 	},
 /area/station/hallway/primary/south)
 "iUr" = (
-/obj/table/auto,
-/obj/item/places_pipes/civilian,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/fluid_pipe/t_junction/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
-/area/station/janitor/plumbing)
+/area/station/maintenance/central)
 "iUA" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 1
@@ -45757,10 +45854,6 @@
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
-"jdv" = (
-/obj/fluid_pipe/straight/waste,
-/turf/simulated/floor/plating,
-/area/station/janitor/plumbing)
 "jeh" = (
 /obj/disposalpipe/segment/transport{
 	dir = 4;
@@ -47986,8 +48079,8 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/solar/south)
 "kBc" = (
-/obj/fluid_pipe/t_junction/supply{
-	dir = 1
+/obj/machinery/fluid_machinery/binary/pump/active{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
@@ -50578,6 +50671,9 @@
 	icon_state = "4-8"
 	},
 /mob/living/critter/small_animal/mouse,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
 "mwb" = (
@@ -51372,6 +51468,10 @@
 	},
 /turf/simulated/floor/carpet/grime,
 /area/station/security/detectives_office)
+"mXx" = (
+/obj/fluid_pipe/straight/see_fluid/supply,
+/turf/simulated/floor/plating,
+/area/station/storage/warehouse)
 "mXK" = (
 /obj/machinery/light_switch{
 	name = "N light switch";
@@ -52320,6 +52420,10 @@
 	},
 /turf/simulated/floor/black,
 /area/station/engine/hotloop)
+"nCf" = (
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active,
+/turf/simulated/floor/plating,
+/area/station/janitor/reservior)
 "nEv" = (
 /obj/machinery/atmospherics/pipe/simple,
 /obj/machinery/door/airlock/pyro/maintenance,
@@ -53671,7 +53775,7 @@
 /turf/simulated/floor,
 /area/station/hydroponics/bay)
 "oyI" = (
-/obj/fluid_pipe/fluid_tank/see_fluid/water,
+/obj/machinery/fluid_machinery/unary/input,
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "ozQ" = (
@@ -54642,11 +54746,20 @@
 	},
 /area/station/turret_protected/ai_upload_foyer)
 "pcs" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 8
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
+/obj/machinery/door/airlock/pyro{
+	dir = 4;
+	name = "Plumbing Plant";
+	locked = 1
+	},
+/obj/mapping_helper/access/janitor,
+/obj/cable{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
-/area/station/janitor/plumbing)
+/area/station/janitor/reservior)
 "pcV" = (
 /obj/machinery/firealarm/directional/south,
 /turf/simulated/floor,
@@ -55993,6 +56106,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
+"qaC" = (
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
+	},
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
+/area/station/crew_quarters/pool)
 "qaJ" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -58644,12 +58765,12 @@
 /turf/simulated/floor/carpet/arcade,
 /area/station/crew_quarters/arcade)
 "rSv" = (
-/obj/fluid_pipe/elbow/waste{
-	dir = 4
-	},
 /obj/lattice{
 	dir = 6;
 	icon_state = "lattice-dir"
+	},
+/obj/fluid_pipe/elbow/waste{
+	dir = 4
 	},
 /turf/space,
 /area/space)
@@ -59311,15 +59432,15 @@
 /turf/space,
 /area/space)
 "slu" = (
-/obj/machinery/light{
-	dir = 8;
-	tag = ""
-	},
-/obj/fluid_pipe/straight/supply,
-/turf/simulated/floor/bluewhite/corner{
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
 	dir = 4
 	},
-/area/station/crew_quarters/pool)
+/obj/machinery/power/apc/autoname_west,
+/obj/cable{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating,
+/area/station/janitor/reservior)
 "slD" = (
 /obj/submachine/chef_sink/chem_sink{
 	dir = 4;
@@ -59417,9 +59538,6 @@
 /turf/simulated/floor/plating,
 /area/station/medical/medbay)
 "sow" = (
-/obj/machinery/fluid_machinery/unary/input{
-	dir = 1
-	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "spb" = (
@@ -61563,11 +61681,7 @@
 /turf/simulated/floor/yellow/side,
 /area/station/engine/storage)
 "tNE" = (
-/obj/table/auto,
-/obj/item/reagent_containers/glass/plumbing/dispenser/plumbing{
-	pixel_y = 8
-	},
-/obj/fluid_pipe/elbow/supply{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -63593,9 +63707,13 @@
 /turf/simulated/floor/red/side,
 /area/station/security/main)
 "vaj" = (
+/obj/machinery/light{
+	dir = 8;
+	tag = ""
+	},
 /obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/bluewhite/corner{
-	dir = 8
+	dir = 4
 	},
 /area/station/crew_quarters/pool)
 "vaq" = (
@@ -63737,6 +63855,13 @@
 /obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/bathroom)
+"vfF" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/janitor/reservior)
 "vgk" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -64803,6 +64928,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/security/brig)
+"vPt" = (
+/obj/fluid_pipe/t_junction/supply{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/southwest)
 "vPu" = (
 /obj/machinery/camera/ranch/directional/north{
 	pixel_x = -10
@@ -66496,10 +66627,12 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/solar/west)
 "wUF" = (
-/obj/fluid_pipe/straight/waste,
-/obj/lattice,
-/turf/space,
-/area/space)
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/janitor/reservior)
 "wVj" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/maintenance/storage{
@@ -67919,6 +68052,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/routing/catering)
+"xZL" = (
+/obj/fluid_pipe/quad/supply,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/station/janitor/reservior)
 "xZQ" = (
 /obj/lattice{
 	dir = 10;
@@ -107486,7 +107626,7 @@ bYl
 bLG
 caO
 nqt
-nqt
+vPt
 cdj
 nqt
 cip
@@ -109230,7 +109370,7 @@ rFd
 rFd
 heT
 aOn
-hjS
+iUr
 aQr
 aLd
 ujW
@@ -109832,9 +109972,9 @@ aIf
 aJu
 aKA
 mjB
+idl
 vaj
-slu
-iCw
+qaC
 aQs
 vmQ
 aSl
@@ -117095,8 +117235,8 @@ aZz
 aSq
 mfw
 mfw
-adC
-adC
+fLZ
+fLZ
 adC
 adC
 aag
@@ -117394,12 +117534,12 @@ aWc
 aXw
 aWc
 aWc
-aWc
+cFu
+fQc
+slu
+cxt
+vfF
 adC
-adC
-aaf
-aaw
-azt
 adC
 aag
 nne
@@ -117695,13 +117835,13 @@ aag
 aQy
 uQq
 aQy
-aaG
-adC
-adC
-adC
-aag
-vRY
+aap
+fLZ
+nCf
+xZL
+eNX
 wUF
+vRY
 rSv
 aap
 tit
@@ -117999,10 +118139,10 @@ aXy
 aYB
 aQy
 urn
-urn
-urn
-urn
-urn
+fLZ
+pcs
+wUF
+wUF
 urn
 nmo
 uzT
@@ -118302,9 +118442,9 @@ aYC
 aQy
 oyI
 kbF
-kbF
+hjS
 sow
-iUr
+dpB
 urn
 ejY
 urn
@@ -118602,10 +118742,10 @@ aSt
 aXy
 gkz
 aQy
-oyI
+iCw
 kBc
-pcs
-dpB
+emy
+sow
 tNE
 eTN
 bgY
@@ -118907,7 +119047,7 @@ aQy
 baM
 qOo
 iEY
-jdv
+gCx
 xvY
 gEt
 bgZ
@@ -122567,7 +122707,7 @@ bAT
 bDM
 hgU
 glp
-jba
+mXx
 jba
 veP
 jba
@@ -124099,7 +124239,7 @@ ceU
 ceU
 ceU
 cgf
-chr
+ecc
 vYg
 ciL
 ckb
