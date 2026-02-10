@@ -82,20 +82,8 @@ ABSTRACT_TYPE(/obj/fluid_pipe)
 /obj/fluid_pipe/straight
 	icon_state = "straight"
 
-	sewage
-		icon_state = "straight-sr"
-
-	water
-		icon_state = "straight-wt"
-
 /obj/fluid_pipe/straight/overfloor
 	level = OVERFLOOR
-
-	sewage
-		icon_state = "straight-sr"
-
-	water
-		icon_state = "straight-wt"
 
 /obj/fluid_pipe/straight/initialize_dir_vars()
 	switch(dir)
@@ -128,20 +116,8 @@ ABSTRACT_TYPE(/obj/fluid_pipe)
 /obj/fluid_pipe/t_junction
 	icon_state = "junction"
 
-	sewage
-		icon_state = "junction-sr"
-
-	water
-		icon_state = "junction-wt"
-
 /obj/fluid_pipe/t_junction/overfloor
 	level = OVERFLOOR
-
-	sewage
-		icon_state = "junction-sr"
-
-	water
-		icon_state = "junction-wt"
 
 /obj/fluid_pipe/t_junction/initialize_dir_vars()
 	switch(dir)
@@ -157,20 +133,8 @@ ABSTRACT_TYPE(/obj/fluid_pipe)
 /obj/fluid_pipe/elbow
 	icon_state = "elbow"
 
-	sewage
-		icon_state = "elbow-sr"
-
-	water
-		icon_state = "elbow-wt"
-
 /obj/fluid_pipe/elbow/overfloor
 	level = OVERFLOOR
-
-	sewage
-		icon_state = "elbow-sr"
-
-	water
-		icon_state = "elbow-wt"
 
 /obj/fluid_pipe/elbow/initialize_dir_vars()
 	switch(dir)
@@ -187,20 +151,9 @@ ABSTRACT_TYPE(/obj/fluid_pipe)
 	icon_state = "quad"
 	initialize_directions = NORTH|SOUTH|EAST|WEST
 
-	sewage
-		icon_state = "quad-sr"
-
-	water
-		icon_state = "quad-wt"
-
 /obj/fluid_pipe/quad/overfloor
 	level = OVERFLOOR
 
-	sewage
-		icon_state = "quad-sr"
-
-	water
-		icon_state = "quad-wt"
 #define DEFINE_PIPES_SUPPLY(PATH) \
 	PATH/supply{icon = 'icons/obj/fluidpipes/fluid_pipe_supply.dmi';};\
 	PATH/supply/overfloor{level = OVERFLOOR};
