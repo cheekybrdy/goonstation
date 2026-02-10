@@ -480,6 +480,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/binary)
 
 	active // For mapping
 		on = TRUE
+		icon_state = "pump1"
 
 
 /obj/machinery/fluid_machinery/binary/pump/New()
@@ -644,6 +645,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/trinary)
 		name = "water filter"
 		desc = "The one thing between the station and a flood of shit."
 		beaker = /obj/item/reagent_containers/glass/beaker/large/plumbing
+		icon_state = "filter1"
 
 /obj/machinery/fluid_machinery/trinary/filter/attackby(obj/item/reagent_containers/glass/B, mob/user)
 	..()

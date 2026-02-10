@@ -167,6 +167,7 @@
 /obj/item/reagent_containers/glass/beaker/large/plumbing
 	name = "water filter calibration tank"
 	desc = "FOR PLUMBING DO NOT REMOVE is labeled on its side."
+	initial_reagents = "water"
 	get_desc(dist, mob/user)
 		if(user.mind.assigned_role == "Janitor")
 			. += SPAN_ALERT("<b>OH SHIT</b> ")
