@@ -25308,9 +25308,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/obj/machinery/fluid_machinery/binary/pump/active{
-	dir = 1
-	},
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "bRp" = (
@@ -25756,9 +25754,7 @@
 	icon_state = "4-8"
 	},
 /obj/decal/stripe_caution,
-/obj/machinery/fluid_machinery/binary/pump/active{
-	dir = 1
-	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "bSR" = (
@@ -32270,12 +32266,10 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/fluid_machinery/binary/pump/active{
-	dir = 1
-	},
 /obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/bluewhite{
 	dir = 9
 	},
@@ -41314,11 +41308,6 @@
 /obj/decal/stripe_caution,
 /turf/simulated/floor,
 /area/station/maintenance/east)
-"gaC" = (
-/obj/disposalpipe/segment/mail,
-/obj/machinery/fluid_machinery/binary/pump/active,
-/turf/simulated/floor,
-/area/station/crew_quarters/locker)
 "gaE" = (
 /obj/table/reinforced/auto,
 /turf/simulated/floor,
@@ -48080,12 +48069,6 @@
 	icon_state = "fred6"
 	},
 /area/station/crew_quarters/jazz)
-"kEZ" = (
-/obj/machinery/fluid_machinery/binary/pump/active{
-	dir = 4
-	},
-/turf/simulated/floor/specialroom/bar,
-/area/station/security/secwing)
 "kFi" = (
 /obj/machinery/conveyor/EW{
 	name = "cargo belt - west";
@@ -55778,15 +55761,6 @@
 	icon_state = "red2"
 	},
 /area/station/security/main)
-"pSk" = (
-/obj/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/fluid_machinery/binary/pump/active{
-	dir = 8
-	},
-/turf/simulated/floor,
-/area/station/hallway/primary/south)
 "pSF" = (
 /obj/machinery/atmospherics/pipe/simple,
 /turf/simulated/floor,
@@ -67197,7 +67171,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "xvY" = (
-/obj/machinery/fluid_machinery/trinary/filter/plumbing,
+/obj/machinery/fluid_machinery/trinary/filter/water,
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "xwN" = (
@@ -103798,7 +103772,7 @@ ayy
 tKe
 aBA
 aCM
-kEZ
+sxt
 aFr
 yhj
 aHX
@@ -107419,7 +107393,7 @@ axh
 axg
 aBG
 nqc
-gaC
+nqc
 ddy
 aCU
 aEl
@@ -111722,7 +111696,7 @@ tXp
 bNj
 iTv
 bVO
-pSk
+tLU
 bYe
 bYe
 bYe

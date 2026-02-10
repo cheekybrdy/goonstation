@@ -640,12 +640,27 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/trinary)
 	flags = NOSPLASH
 	var/pullrate = 200
 	var/obj/item/reagent_containers/glass/beaker
+	var/default_reagent = null
 
-	plumbing
-		name = "water filter"
-		desc = "The one thing between the station and a flood of shit."
-		beaker = /obj/item/reagent_containers/glass/beaker/large/plumbing
-		icon_state = "filter1"
+/obj/machinery/fluid_machinery/trinary/filter/New()
+	..()
+	if(default_reagent)
+		src.beaker = new /obj/item/reagent_containers/glass/vial/plastic
+		src.beaker.reagents.add_reagent(default_reagent, 5)
+		src.UpdateIcon()
+
+/obj/machinery/fluid_machinery/trinary/filter/disposing()
+	src.beaker.set_loc(src.loc)
+	src.beaker = null
+	..()
+
+/obj/machinery/fluid_machinery/trinary/filter/water
+	default_reagent = "water"
+	icon_state = "filter1"
+
+	New()
+		src.beaker.name = "Water Calibration Vial"
+		src.beaker.desc = "This one vial is the one thing holding a flood of shit coming through the water system."
 
 /obj/machinery/fluid_machinery/trinary/filter/attackby(obj/item/reagent_containers/glass/B, mob/user)
 	..()
