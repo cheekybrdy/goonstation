@@ -3565,7 +3565,7 @@
 	dir = 1;
 	pixel_y = 21
 	},
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/floor/sanitary,
@@ -36840,7 +36840,7 @@
 /area/station/crew_quarters/kitchen)
 "dpB" = (
 /obj/machinery/fluid_machinery/binary/pump/active{
-	dir = 8
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
@@ -42671,6 +42671,10 @@
 /obj/fluid_pipe/straight/supply,
 /turf/simulated/wall/grass/leafy,
 /area/station/garden/owlery)
+"gXR" = (
+/obj/fluid_pipe/straight/waste,
+/turf/simulated/floor/plating,
+/area/station/janitor/plumbing)
 "gYc" = (
 /obj/machinery/firealarm/directional/east,
 /obj/disposalpipe/segment/mail,
@@ -43048,13 +43052,12 @@
 /turf/simulated/floor/plating,
 /area/space)
 "hjS" = (
-/obj/fluid_pipe/t_junction/supply{
-	dir = 4
+/obj/machinery/fluid_machinery/binary/valve/overfloor{
+	dir = 4;
+	name = "pool valve"
 	},
-/obj/table/auto,
-/obj/item/places_pipes/civilian,
-/turf/simulated/floor/plating,
-/area/station/janitor/plumbing)
+/turf/simulated/wall/auto/supernorn,
+/area/station/crew_quarters/pool)
 "hku" = (
 /obj/disposalpipe/segment,
 /obj/fluid_pipe/straight/waste,
@@ -45467,9 +45470,8 @@
 	},
 /area/station/hallway/primary/south)
 "iUr" = (
-/obj/fluid_pipe/fluid_tank/see_fluid{
-	dir = 4
-	},
+/obj/table/auto,
+/obj/item/places_pipes/civilian,
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "iUA" = (
@@ -50189,7 +50191,7 @@
 	},
 /area/station/medical/dome)
 "mjB" = (
-/obj/fluid_pipe/straight/supply{
+/obj/fluid_pipe/elbow/supply{
 	dir = 4
 	},
 /turf/simulated/floor/bluewhite/corner{
@@ -54633,7 +54635,7 @@
 	},
 /area/station/turret_protected/ai_upload_foyer)
 "pcs" = (
-/obj/machinery/fluid_machinery/unary/input{
+/obj/fluid_pipe/elbow/supply{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -59302,12 +59304,12 @@
 /turf/space,
 /area/space)
 "slu" = (
-/obj/mapping_helper/wingrille_spawn/auto,
-/obj/machinery/fluid_machinery/binary/valve/overfloor{
-	dir = 8;
-	name = "pool valve"
+/obj/fluid_pipe/elbow/supply{
+	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
 /area/station/crew_quarters/pool)
 "slD" = (
 /obj/submachine/chef_sink/chem_sink{
@@ -59406,14 +59408,8 @@
 /turf/simulated/floor/plating,
 /area/station/medical/medbay)
 "sow" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 4
-	},
-/obj/table/auto,
-/obj/item/reagent_containers/glass/plumbing/dispenser{
-	pixel_y = 7;
-	anchored = 1;
-	name = "backup water synthesizer"
+/obj/machinery/fluid_machinery/unary/input{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
@@ -61558,7 +61554,11 @@
 /turf/simulated/floor/yellow/side,
 /area/station/engine/storage)
 "tNE" = (
-/obj/fluid_pipe/straight/waste{
+/obj/table/auto,
+/obj/item/reagent_containers/glass/plumbing/dispenser/plumbing{
+	pixel_y = 8
+	},
+/obj/fluid_pipe/elbow/supply{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -109213,8 +109213,8 @@ aFC
 pCg
 rFd
 rFd
-rFd
 vaj
+rFd
 heT
 aOn
 cZe
@@ -109515,8 +109515,8 @@ aFD
 rMr
 aGZ
 aGZ
-aGZ
-slu
+hjS
+aGY
 aGY
 aGZ
 tXV
@@ -109817,7 +109817,7 @@ aFE
 aGX
 aIf
 aJu
-aKA
+slu
 mjB
 aKA
 aJu
@@ -118289,7 +118289,7 @@ aYC
 aQy
 oyI
 kbF
-hjS
+kbF
 sow
 iUr
 urn
@@ -118894,8 +118894,8 @@ aQy
 baM
 qOo
 iEY
+gXR
 xvY
-gEt
 gEt
 bgZ
 urn
