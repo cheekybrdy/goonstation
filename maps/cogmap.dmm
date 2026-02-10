@@ -15241,6 +15241,10 @@
 /area/station/chapel/sanctuary)
 "baM" = (
 /obj/fluid_pipe/elbow/supply,
+/obj/machinery/light/small{
+	dir = 1;
+	status = 2
+	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "baO" = (
@@ -17256,6 +17260,9 @@
 /area/station/janitor/office)
 "bin" = (
 /obj/mapping_helper/wingrille_spawn/auto,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/janitor/office)
 "bio" = (
@@ -42671,10 +42678,6 @@
 /obj/fluid_pipe/straight/supply,
 /turf/simulated/wall/grass/leafy,
 /area/station/garden/owlery)
-"gXR" = (
-/obj/fluid_pipe/straight/waste,
-/turf/simulated/floor/plating,
-/area/station/janitor/plumbing)
 "gYc" = (
 /obj/machinery/firealarm/directional/east,
 /obj/disposalpipe/segment/mail,
@@ -43052,12 +43055,14 @@
 /turf/simulated/floor/plating,
 /area/space)
 "hjS" = (
-/obj/machinery/fluid_machinery/binary/valve/overfloor{
-	dir = 4;
-	name = "pool valve"
+/obj/cable{
+	icon_state = "1-2"
 	},
-/turf/simulated/wall/auto/supernorn,
-/area/station/crew_quarters/pool)
+/obj/fluid_pipe/t_junction/supply{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "hku" = (
 /obj/disposalpipe/segment,
 /obj/fluid_pipe/straight/waste,
@@ -45060,13 +45065,13 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/east)
 "iCw" = (
-/obj/machinery/light/small{
-	dir = 1;
-	status = 2
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
 	},
-/obj/fluid_pipe/fluid_tank/see_fluid/water,
-/turf/simulated/floor/plating,
-/area/station/janitor/plumbing)
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
+/area/station/crew_quarters/pool)
 "iCD" = (
 /obj/landmark/engine_room,
 /turf/space,
@@ -45752,6 +45757,10 @@
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
+"jdv" = (
+/obj/fluid_pipe/straight/waste,
+/turf/simulated/floor/plating,
+/area/station/janitor/plumbing)
 "jeh" = (
 /obj/disposalpipe/segment/transport{
 	dir = 4;
@@ -50191,9 +50200,7 @@
 	},
 /area/station/medical/dome)
 "mjB" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 4
-	},
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/bluewhite/corner{
 	dir = 4
 	},
@@ -59304,11 +59311,13 @@
 /turf/space,
 /area/space)
 "slu" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 8
+/obj/machinery/light{
+	dir = 8;
+	tag = ""
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/bluewhite/corner{
-	dir = 8
+	dir = 4
 	},
 /area/station/crew_quarters/pool)
 "slD" = (
@@ -61957,6 +61966,10 @@
 /obj/mapping_helper/firedoor_spawn,
 /obj/mapping_helper/access/maint,
 /obj/decal/stripe_delivery,
+/obj/machinery/fluid_machinery/binary/valve/overfloor{
+	dir = 4;
+	name = "pool valve"
+	},
 /turf/simulated/floor/white,
 /area/station/crew_quarters/pool)
 "tYu" = (
@@ -63580,11 +63593,11 @@
 /turf/simulated/floor/red/side,
 /area/station/security/main)
 "vaj" = (
-/obj/fluid_pipe/t_junction/supply{
-	dir = 4
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
 	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
+/area/station/crew_quarters/pool)
 "vaq" = (
 /obj/table/reinforced/bar/auto,
 /turf/simulated/floor/specialroom/bar/edge,
@@ -109213,11 +109226,11 @@ aFC
 pCg
 rFd
 rFd
-vaj
+rFd
 rFd
 heT
 aOn
-cZe
+hjS
 aQr
 aLd
 ujW
@@ -109515,7 +109528,7 @@ aFD
 rMr
 aGZ
 aGZ
-hjS
+aGZ
 aGY
 aGY
 aGZ
@@ -109817,11 +109830,11 @@ aFE
 aGX
 aIf
 aJu
-slu
+aKA
 mjB
-aKA
-aJu
-aKA
+vaj
+slu
+iCw
 aQs
 vmQ
 aSl
@@ -118589,7 +118602,7 @@ aSt
 aXy
 gkz
 aQy
-iCw
+oyI
 kBc
 pcs
 dpB
@@ -118894,7 +118907,7 @@ aQy
 baM
 qOo
 iEY
-gXR
+jdv
 xvY
 gEt
 bgZ
