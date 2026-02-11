@@ -667,7 +667,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/trinary)
 	New()
 		..()
 		src.beaker.name = "Water Calibration Vial"
-		src.beaker.desc = "This one vial is the one thing holding a flood of shit coming through the water system."
+		src.beaker.desc = "This one vial is used to configure what goes out the waste system into the water system. Should NOT be in the wrong hands."
 
 /obj/machinery/fluid_machinery/trinary/filter/attackby(obj/item/reagent_containers/glass/B, mob/user)
 	..()
