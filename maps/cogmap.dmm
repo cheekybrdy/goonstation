@@ -36367,6 +36367,10 @@
 /area/station/maintenance/disposal)
 "cVo" = (
 /obj/decal/tile_edge/stripe/extra_big,
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_x = 10
+	},
 /turf/simulated/floor,
 /area/station/hangar/engine)
 "cVt" = (
