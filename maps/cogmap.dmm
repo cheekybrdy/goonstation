@@ -41145,7 +41145,6 @@
 /obj/fluid_spawner{
 	amount = 90000
 	},
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active,
 /turf/simulated/floor/plating,
 /area/station/janitor/reservior)
 "fQF" = (
@@ -48644,9 +48643,6 @@
 /area/station/mining/magnet)
 "kTc" = (
 /obj/machinery/fluid_machinery/unary/dripper,
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
-	dir = 1
-	},
 /turf/simulated/floor/plating,
 /area/station/janitor/reservior)
 "kTw" = (
@@ -59630,9 +59626,6 @@
 /obj/machinery/power/apc/autoname_west,
 /obj/cable{
 	icon_state = "0-4"
-	},
-/obj/fluid_pipe/t_junction/supply{
-	dir = 4
 	},
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor/active{
 	dir = 4
