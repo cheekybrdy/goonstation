@@ -44477,13 +44477,14 @@
 /turf/simulated/floor/neutral/corner,
 /area/station/crew_quarters/market)
 "idl" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 8
+/obj/cable{
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/bluewhite/corner{
-	dir = 8
+/obj/fluid_pipe/t_junction/supply{
+	dir = 4
 	},
-/area/station/crew_quarters/pool)
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "idr" = (
 /obj/xmastree/ephemeral,
 /turf/simulated/floor/orangeblack/side,
@@ -50423,9 +50424,7 @@
 	},
 /area/station/medical/dome)
 "mjB" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 4
-	},
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/bluewhite/corner{
 	dir = 4
 	},
@@ -51430,6 +51429,14 @@
 	},
 /turf/simulated/floor/black,
 /area/station/crew_quarters/bar)
+"mRh" = (
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
+	},
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
+/area/station/crew_quarters/pool)
 "mRk" = (
 /obj/machinery/disposal,
 /obj/disposalpipe/trunk{
@@ -56260,11 +56267,10 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
 "qaC" = (
-/obj/machinery/fluid_machinery/binary/valve/overfloor{
-	dir = 4;
-	name = "pool valve"
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
 	},
-/turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/pool)
 "qaJ" = (
 /obj/cable{
@@ -62265,6 +62271,10 @@
 /obj/mapping_helper/firedoor_spawn,
 /obj/mapping_helper/access/maint,
 /obj/decal/stripe_delivery,
+/obj/machinery/fluid_machinery/binary/valve/overfloor{
+	dir = 4;
+	name = "pool valve"
+	},
 /turf/simulated/floor/white,
 /area/station/crew_quarters/pool)
 "tYu" = (
@@ -63892,11 +63902,15 @@
 /turf/simulated/floor/red/side,
 /area/station/security/main)
 "vaj" = (
-/obj/fluid_pipe/t_junction/supply{
+/obj/machinery/light{
+	dir = 8;
+	tag = ""
+	},
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor/bluewhite/corner{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
+/area/station/crew_quarters/pool)
 "vaq" = (
 /obj/table/reinforced/bar/auto,
 /turf/simulated/floor/specialroom/bar/edge,
@@ -109583,11 +109597,11 @@ aFC
 pCg
 rFd
 rFd
-vaj
+rFd
 rFd
 heT
 aOn
-cZe
+idl
 aQr
 aLd
 ujW
@@ -109885,7 +109899,7 @@ aFD
 rMr
 aGZ
 aGZ
-qaC
+aGZ
 aGY
 aGY
 aGZ
@@ -110187,11 +110201,11 @@ aFE
 aGX
 aIf
 aJu
-idl
+aKA
 mjB
-aKA
-aJu
-aKA
+qaC
+vaj
+mRh
 aQs
 vmQ
 aSl
