@@ -61725,12 +61725,6 @@
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor,
 /area/station/crew_quarters/supplylobby)
-"tJc" = (
-/obj/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/black,
-/area/space)
 "tJC" = (
 /obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/grass/leafy,
@@ -116862,7 +116856,7 @@ aUH
 aWa
 aXu
 veJ
-tJc
+aZy
 aSq
 fTe
 sAK
