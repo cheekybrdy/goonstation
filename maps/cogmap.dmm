@@ -5464,6 +5464,9 @@
 	},
 /turf/simulated/floor/carpet/grime,
 /area/station/crew_quarters/baroffice)
+"awf" = (
+/turf/simulated/floor/plating,
+/area/station/janitor/reservior)
 "awj" = (
 /obj/machinery/meter{
 	pixel_x = 10
@@ -48641,6 +48644,13 @@
 	},
 /turf/simulated/floor/grime,
 /area/station/mining/magnet)
+"kSW" = (
+/obj/machinery/power/apc/autoname_west,
+/obj/cable{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating,
+/area/station/janitor/reservior)
 "kTc" = (
 /obj/machinery/fluid_machinery/unary/dripper,
 /turf/simulated/floor/plating,
@@ -59604,12 +59614,11 @@
 /turf/space,
 /area/space)
 "slu" = (
-/obj/machinery/power/apc/autoname_west,
-/obj/cable{
-	icon_state = "0-4"
-	},
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor/active{
 	dir = 4
+	},
+/obj/cable{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/reservior)
@@ -67512,6 +67521,7 @@
 	desc = "The one thing preventing a flood of shit hitting the station.";
 	name = "water waste filter"
 	},
+/obj/machinery/camera/directional/east,
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "xwN" = (
@@ -117443,8 +117453,8 @@ aXw
 aWb
 aZz
 aSq
-wvM
-acW
+awf
+kSW
 fLZ
 fLZ
 adC
