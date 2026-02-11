@@ -161,7 +161,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	src.icon_state = "inlet[src.on][CHECKHIDEPIPE(src) ? "h" : null]"
 
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor
-	level = OVERFLOOR
+	level = PIPE_MACHINE_LAYER
 
 	active // For mapping
 		on = TRUE

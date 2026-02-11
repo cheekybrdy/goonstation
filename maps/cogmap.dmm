@@ -2807,7 +2807,9 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/fluid_pipe/straight/supply/overfloor,
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/showers)
 "akR" = (
@@ -4984,10 +4986,10 @@
 /obj/disposalpipe/segment/food{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active,
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active,
 /turf/simulated/floor/sanitary,
 /area/station/security/brig)
 "auw" = (
@@ -5298,8 +5300,8 @@
 	},
 /obj/item/pen,
 /obj/item/paper_bin,
-/obj/fluid_pipe/elbow/waste{
-	dir = 1
+/obj/fluid_pipe/t_junction/waste{
+	dir = 8
 	},
 /turf/simulated/floor/sanitary,
 /area/station/security/brig)
@@ -11520,8 +11522,8 @@
 /obj/disposalpipe/trunk{
 	dir = 1
 	},
-/obj/fluid_pipe/straight/waste{
-	dir = 4
+/obj/fluid_pipe/elbow/waste{
+	dir = 1
 	},
 /turf/simulated/floor/bluewhite{
 	dir = 6
@@ -27734,8 +27736,9 @@
 	pixel_y = 12
 	},
 /obj/item/paper_bin,
-/obj/fluid_pipe/straight/supply{
-	dir = 4
+/obj/fluid_pipe/elbow/supply,
+/obj/cable{
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/toilets)
@@ -34748,9 +34751,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/apc/autoname_north,
-/obj/fluid_pipe/straight/waste{
-	dir = 4
-	},
+/obj/fluid_pipe/elbow/waste,
 /turf/simulated/floor/purple/side{
 	dir = 9
 	},
@@ -36915,7 +36916,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/station/janitor/plumbing)
+/area/station/crew_quarters/jazz)
 "dpD" = (
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
@@ -39111,7 +39112,9 @@
 /area/space)
 "eDM" = (
 /obj/machinery/phone/wall,
-/obj/fluid_pipe/straight/waste/overfloor,
+/obj/fluid_pipe/elbow/waste/overfloor{
+	dir = 8
+	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/kitchen)
 "eEm" = (
@@ -39888,9 +39891,7 @@
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
 	dir = 1
 	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/bluewhite{
 	dir = 4
 	},
@@ -40036,7 +40037,7 @@
 	},
 /area/station/hydroponics/bay)
 "fix" = (
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/straight/waste/overfloor,
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/showers)
 "fiA" = (
@@ -40931,9 +40932,7 @@
 /obj/machinery/alarm{
 	pixel_y = 23
 	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/purple/side{
 	dir = 5
 	},
@@ -44478,7 +44477,9 @@
 /turf/simulated/floor/neutral/corner,
 /area/station/crew_quarters/market)
 "idl" = (
-/obj/fluid_pipe/straight/supply,
+/obj/fluid_pipe/elbow/supply{
+	dir = 8
+	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 8
 	},
@@ -44883,7 +44884,7 @@
 /obj/item/storage/toilet{
 	dir = 4
 	},
-/obj/fluid_pipe/t_junction/waste{
+/obj/fluid_pipe/elbow/waste{
 	dir = 4
 	},
 /turf/simulated/floor/sanitary,
@@ -45333,13 +45334,13 @@
 /turf/simulated/floor/plating,
 /area/station/routing/eva)
 "iEY" = (
-/obj/fluid_pipe/elbow/waste,
 /obj/cable{
 	icon_state = "1-4"
 	},
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/fluid_pipe/t_junction/waste,
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "iFc" = (
@@ -45649,15 +45650,6 @@
 	dir = 1
 	},
 /area/station/hallway/primary/south)
-"iUr" = (
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/fluid_pipe/t_junction/supply{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
 "iUA" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 1
@@ -48532,9 +48524,7 @@
 /turf/simulated/floor/plating/airless,
 /area/station/wreckage)
 "kOD" = (
-/obj/fluid_pipe/straight/waste/overfloor{
-	dir = 4
-	},
+/obj/fluid_pipe/straight/waste/overfloor,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/security/brig)
 "kOI" = (
@@ -49627,7 +49617,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/station/janitor/plumbing)
+/area/station/crew_quarters/jazz)
 "lFN" = (
 /obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/wood,
@@ -50433,7 +50423,9 @@
 	},
 /area/station/medical/dome)
 "mjB" = (
-/obj/fluid_pipe/elbow/supply,
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 4
 	},
@@ -51438,12 +51430,6 @@
 	},
 /turf/simulated/floor/black,
 /area/station/crew_quarters/bar)
-"mRh" = (
-/obj/fluid_pipe/elbow/waste/overfloor{
-	dir = 4
-	},
-/turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/security/brig)
 "mRk" = (
 /obj/machinery/disposal,
 /obj/disposalpipe/trunk{
@@ -52940,8 +52926,8 @@
 	dir = 1
 	},
 /obj/machinery/disposal/small/west,
-/obj/fluid_pipe/straight/supply{
-	dir = 4
+/obj/fluid_pipe/elbow/supply{
+	dir = 8
 	},
 /turf/simulated/floor/wood/two,
 /area/station/medical/staff)
@@ -54016,8 +54002,8 @@
 /obj/item/storage/box/biohazard_bags,
 /obj/item/storage/box/biohazard_bags,
 /obj/item/storage/box/trash_bags,
-/obj/fluid_pipe/straight/supply{
-	dir = 4
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
 	},
 /turf/simulated/floor/purple/side{
 	dir = 10
@@ -54660,7 +54646,9 @@
 /obj/submachine/chef_oven,
 /obj/landmark/bill_spawn,
 /obj/noticeboard/persistent/kitchen/directional/north,
-/obj/fluid_pipe/straight/supply,
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
 /turf/simulated/floor/specialroom/cafeteria,
 /area/station/crew_quarters/kitchen)
 "oXH" = (
@@ -56272,12 +56260,11 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
 "qaC" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 1
+/obj/machinery/fluid_machinery/binary/valve/overfloor{
+	dir = 4;
+	name = "pool valve"
 	},
-/turf/simulated/floor/bluewhite/corner{
-	dir = 8
-	},
+/turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/pool)
 "qaJ" = (
 /obj/cable{
@@ -58077,7 +58064,7 @@
 /turf/simulated/floor/black,
 /area/station/security/main)
 "rlq" = (
-/obj/fluid_pipe/elbow/waste{
+/obj/fluid_pipe/elbow/waste/overfloor{
 	dir = 1
 	},
 /turf/simulated/wall/auto/supernorn,
@@ -58768,8 +58755,8 @@
 /obj/machinery/camera/directional/east{
 	pixel_y = -10
 	},
-/obj/fluid_pipe/straight/waste{
-	dir = 4
+/obj/fluid_pipe/elbow/waste{
+	dir = 1
 	},
 /turf/simulated/floor/wood/two,
 /area/station/medical/staff)
@@ -59730,6 +59717,9 @@
 "sow" = (
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
@@ -61725,6 +61715,12 @@
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor,
 /area/station/crew_quarters/supplylobby)
+"tJc" = (
+/obj/fluid_pipe/elbow/waste/overfloor{
+	dir = 8
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/station/crew_quarters/showers)
 "tJC" = (
 /obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/grass/leafy,
@@ -62269,10 +62265,6 @@
 /obj/mapping_helper/firedoor_spawn,
 /obj/mapping_helper/access/maint,
 /obj/decal/stripe_delivery,
-/obj/machinery/fluid_machinery/binary/valve/overfloor{
-	dir = 4;
-	name = "pool valve"
-	},
 /turf/simulated/floor/white,
 /area/station/crew_quarters/pool)
 "tYu" = (
@@ -62994,7 +62986,7 @@
 	dir = 4
 	},
 /obj/machinery/firealarm/directional/west,
-/obj/fluid_pipe/straight/supply{
+/obj/fluid_pipe/elbow/supply{
 	dir = 4
 	},
 /turf/simulated/floor/bluewhite{
@@ -63900,15 +63892,11 @@
 /turf/simulated/floor/red/side,
 /area/station/security/main)
 "vaj" = (
-/obj/machinery/light{
-	dir = 8;
-	tag = ""
-	},
-/obj/fluid_pipe/straight/supply,
-/turf/simulated/floor/bluewhite/corner{
+/obj/fluid_pipe/t_junction/supply{
 	dir = 4
 	},
-/area/station/crew_quarters/pool)
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "vaq" = (
 /obj/table/reinforced/bar/auto,
 /turf/simulated/floor/specialroom/bar/edge,
@@ -102035,7 +102023,7 @@ aho
 aho
 auX
 ioj
-mRh
+aho
 ayv
 azS
 qiY
@@ -109595,11 +109583,11 @@ aFC
 pCg
 rFd
 rFd
-rFd
+vaj
 rFd
 heT
 aOn
-iUr
+cZe
 aQr
 aLd
 ujW
@@ -109897,7 +109885,7 @@ aFD
 rMr
 aGZ
 aGZ
-aGZ
+qaC
 aGY
 aGY
 aGZ
@@ -110199,11 +110187,11 @@ aFE
 aGX
 aIf
 aJu
-aKA
-mjB
 idl
-vaj
-qaC
+mjB
+aKA
+aJu
+aKA
 aQs
 vmQ
 aSl
@@ -111991,7 +111979,7 @@ uec
 ahO
 aiG
 ajP
-fix
+tJc
 ezA
 rlq
 ajP
