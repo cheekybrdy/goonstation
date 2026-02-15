@@ -13,6 +13,7 @@ var/list/taunt_levels = "Pissy Preschooler", "I want to speak to your manager", 
 	mode = 0 // 0 is idle, 1 is warming up, 2 is for when the broadcast is sent, 3 is cooldown
 	timer = 1 MINUTE
 	emagged = FALSE
+	start_time = null
 
 /obj/machinery/tauntomatic/attack_hand(mob/user)
 	. = ..()
@@ -33,7 +34,9 @@ var/list/taunt_levels = "Pissy Preschooler", "I want to speak to your manager", 
 
 /obj/machinery/tauntomatic/warmup(var/taunt_amount)
 	playsound(src.loc, 'sound/vox/orkinsult2.ogg', 75, 1)
-	if(taunt_amount = taunt_levels[1])
+	start_time = world.timeofday
+	if(taunt_amount != taunt_levels[1] || "REDACTED")
+		timer = 3 MINUTES
 
 /obj/machinery/tauntomatic/text_generate(var/taunt_amount)
 	title = TAUNTOMATIC_PICK(title_header) + TAUNTOMATIC_PICK(organisations_1)
