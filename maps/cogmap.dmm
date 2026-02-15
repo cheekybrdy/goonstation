@@ -33316,7 +33316,7 @@
 	},
 /area/station/medical/medbay)
 "crG" = (
-/obj/stool/chair{
+/obj/stool/chair/blue{
 	dir = 8
 	},
 /turf/simulated/floor/blue,
@@ -33468,13 +33468,13 @@
 /turf/simulated/floor/bluewhite,
 /area/station/medical/medbay)
 "csv" = (
-/obj/stool/chair{
-	dir = 8
-	},
 /obj/machinery/light{
 	dir = 4
 	},
 /obj/railing/orange,
+/obj/stool/chair/blue{
+	dir = 8
+	},
 /turf/simulated/floor/blue,
 /area/station/medical/medbay)
 "csy" = (
@@ -41817,12 +41817,12 @@
 /turf/space,
 /area/space)
 "gli" = (
-/obj/stool/chair{
-	dir = 4
-	},
 /obj/machinery/light{
 	dir = 8;
 	tag = ""
+	},
+/obj/stool/chair/blue{
+	dir = 4
 	},
 /turf/simulated/floor/bluewhite{
 	dir = 8
@@ -59106,6 +59106,9 @@
 /obj/fluid_pipe/straight/waste{
 	dir = 4
 	},
+/obj/stool/chair/blue{
+	dir = 1
+	},
 /turf/simulated/floor/bluewhite{
 	dir = 1
 	},
@@ -62993,11 +62996,11 @@
 	},
 /area/station/crew_quarters/locker)
 "uue" = (
-/obj/stool/chair{
-	dir = 4
-	},
 /obj/machinery/firealarm/directional/west,
 /obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
+/obj/stool/chair/blue{
 	dir = 4
 	},
 /turf/simulated/floor/bluewhite{
