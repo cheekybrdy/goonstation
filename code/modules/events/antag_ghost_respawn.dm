@@ -28,6 +28,15 @@
 	var/respawn_lock = 0
 	var/admin_override = 0
 	var/antag_count = 1
+	var/valued_spawns = 0
+	var/threat_type = 0
+
+	taunt // For the HoS' tauntomatic, so somewhat sorted into threat levels
+		name = "Tauntomatic Spawn"
+		message_delay = 0.1 SECONDS //Delay is handled by the tauntomatic's warmup process.
+		required_elapsed_round_time = 0 MINUTES // If the HoS has lost they ID or they don't know what's good for they, they fault
+		valued_spawns = 1
+		threat_type = 0 // determines a humanoid or station threat spawn
 
 	admin_call(var/source)
 		if (..())
@@ -63,10 +72,14 @@
 
 		// Admin-configured respawns seem to work out fine, so let's give automatic role selection a try.
 		if (src.admin_override != 1)
-			if (!source && (!ticker.mode || ticker.mode.latejoin_antag_compatible == 0 || late_traitors == 0))
+			if (!source && (!ticker.mode || ticker.mode.latejoin_antag_compatible == 0 || late_traitors == 0) && !valued_spawns)
 				message_admins("Antagonist Spawn (non-admin) is disabled in this game mode, aborting.")
 				return
+			var/list/humanoid_antags
+			var/list/intangible_antags // basically just station threats, just all at time of writing that are midround possible are in the intangible section as well. (nuk)
 			var/list/possible_antags
+			humanoid_antags = list("Hunter", "Werewolf", "Wizard", "Wrestler", "Vampire", "Changeling", "Space Phoenix") //Space Phoenix is shoved in here due to relative threat level, being a pseudo antag critter
+			intangible_antags = list("Blob", "Wraith", "Flockmind")
 			#ifndef RP_MODE
 			possible_antags = list("Blob", "Hunter", "Werewolf", "Wizard", "Wraith", "Wrestler", "Wrestle Doodle", "Vampire", "Changeling", "Flockmind", "Space Phoenix")
 			#else
@@ -81,7 +94,13 @@
 			if (!length(possible_antags))
 				message_admins("Antagonist spawn of Space Phoenix on an underwater map is disabled, aborting.")
 				return
-			src.antagonist_type = pick(possible_antags)
+			if(!valued_threats)
+				if(!threat_type)
+					src.antagonist_type = pick(humanoid_antags)
+				else
+					src.antagonist_type = pick(intangible_antags)
+			else
+				src.antagonist_type = pick(possible_antags)
 			for(var/mob/living/intangible/wraith/W in ticker.mode.traitors)
 				if(W.deaths < 2)
 					src.antagonist_type -= list("Wraith")
@@ -117,7 +136,7 @@
 
 		// Don't lock up the event controller.
 		SPAWN(0)
-			if (src) src.do_event(source)
+			if (src) src.do_event(source, valued_spawns)
 
 		return
 
@@ -127,7 +146,9 @@
 
 		return ..()
 
-	proc/do_event(var/source)
+	proc/do_event(var/source, var/valued_rolls = 0)
+		var/humanoid = 0
+		var/station_threat = 0
 		if (!src || !istype(src, /datum/random_event/major/player_spawn/antag/antagonist))
 			return
 
@@ -221,147 +242,269 @@
 			var/datum/mind/mind = M3.mind
 			mind.wipe_antagonists()
 			M3 = mind.current
-			switch (src.antagonist_type)
-				if ("Blob")
-					if (istype(mind))
-						send_to = 3
-						mind.add_antagonist(ROLE_BLOB, do_relocate = FALSE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_BLOB
-						M3 = mind.current
-						var/mob/living/intangible/blob_overmind/blob = M3
-						blob.random_event_spawn = TRUE
-					else
-						failed = 1
+			if(!valued_rolls)
+				switch (src.antagonist_type)
+					if ("Blob")
+						if (istype(mind))
+							send_to = 3
+							mind.add_antagonist(ROLE_BLOB, do_relocate = FALSE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_BLOB
+							M3 = mind.current
+							var/mob/living/intangible/blob_overmind/blob = M3
+							blob.random_event_spawn = TRUE
+						else
+							failed = 1
 
-				if ("Flockmind")
-					if (istype(mind))
-						send_to = 3
-						mind.add_antagonist(ROLE_FLOCKMIND, do_relocate = FALSE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_FLOCKMIND
-						M3 = mind.current
-						var/mob/living/intangible/flock/flockmind/F = mind.current
-						if (istype(F) && (alive_player_count() > 40)) // Flockmind can have a free trace, as a treat.
-							SPAWN(1)
-								F.partition(ANTAGONIST_SOURCE_RANDOM_EVENT)
-					else
-						failed = 1
+					if ("Flockmind")
+						if (istype(mind))
+							send_to = 3
+							mind.add_antagonist(ROLE_FLOCKMIND, do_relocate = FALSE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_FLOCKMIND
+							M3 = mind.current
+							var/mob/living/intangible/flock/flockmind/F = mind.current
+							if (istype(F) && (alive_player_count() > 40)) // Flockmind can have a free trace, as a treat.
+								SPAWN(1)
+									F.partition(ANTAGONIST_SOURCE_RANDOM_EVENT)
+						else
+							failed = 1
 
-				if ("Wraith")
-					if (istype(mind))
-						send_to = 3
-						mind.add_antagonist(ROLE_WRAITH, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_WRAITH
-						M3 = mind.current
-					else
-						failed = 1
+					if ("Wraith")
+						if (istype(mind))
+							send_to = 3
+							mind.add_antagonist(ROLE_WRAITH, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_WRAITH
+							M3 = mind.current
+						else
+							failed = 1
 
-				if ("Wizard")
-					var/mob/living/L = M3.humanize()
-					if (istype(L))
-						M3 = L
-						send_to = 2
-						L.mind?.add_antagonist(ROLE_WIZARD, do_relocate = FALSE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_WIZARD
-					else
-						failed = 1
+					if ("Wizard")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							send_to = 2
+							L.mind?.add_antagonist(ROLE_WIZARD, do_relocate = FALSE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_WIZARD
+						else
+							failed = 1
 
-				if ("Werewolf")
-					var/mob/living/L = M3.humanize()
-					if (istype(L))
-						M3 = L
-						L.mind?.add_antagonist(ROLE_WEREWOLF, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_WEREWOLF
-					else
-						failed = 1
+					if ("Werewolf")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_WEREWOLF, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_WEREWOLF
+						else
+							failed = 1
 
-				if ("Hunter")
-					var/mob/living/L = M3.humanize()
-					if (istype(L))
-						M3 = L
-						L.mind?.add_antagonist(ROLE_HUNTER, do_equip = FALSE, do_relocate = TRUE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_HUNTER
-					else
-						failed = 1
+					if ("Hunter")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_HUNTER, do_equip = FALSE, do_relocate = TRUE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_HUNTER
+						else
+							failed = 1
 
-				if ("Salvager")
-					var/mob/living/L = M3.humanize(equip_rank=FALSE)
-					if (istype(L))
-						M3 = L
-						L.mind?.add_antagonist(ROLE_SALVAGER, do_equip = TRUE, do_relocate = TRUE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_SALVAGER
-					else
-						failed = 1
+					if ("Salvager")
+						var/mob/living/L = M3.humanize(equip_rank=FALSE)
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_SALVAGER, do_equip = TRUE, do_relocate = TRUE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_SALVAGER
+						else
+							failed = 1
 
-				if ("Wrestler")
-					var/mob/living/L = M3.humanize()
-					if (istype(L))
-						M3 = L
-						L.mind?.add_antagonist(ROLE_WRESTLER, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_WRESTLER
-						var/antagonist_role = src.antagonist_type
-						SPAWN(0)
-							M3.choose_name(3, antagonist_role, M3.real_name + " the " + antagonist_role)
-					else
-						failed = 1
+					if ("Wrestler")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_WRESTLER, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_WRESTLER
+							var/antagonist_role = src.antagonist_type
+							SPAWN(0)
+								M3.choose_name(3, antagonist_role, M3.real_name + " the " + antagonist_role)
+						else
+							failed = 1
 
-				if ("Wrestle Doodle")
-					var/mob/living/critter/C = M3.critterize(/mob/living/critter/small_animal/bird/timberdoodle/strong)
-					if (istype(C))
-						M3 = C
-						C.mind?.add_antagonist(ROLE_WRESTLER, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_WRESTLER
-						var/antagonist_role = src.antagonist_type
-						SPAWN(0)
-							C.choose_name(3, antagonist_role, C.real_name + " the " + antagonist_role)
-					else
-						failed = 1
+					if ("Wrestle Doodle")
+						var/mob/living/critter/C = M3.critterize(/mob/living/critter/small_animal/bird/timberdoodle/strong)
+						if (istype(C))
+							M3 = C
+							C.mind?.add_antagonist(ROLE_WRESTLER, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_WRESTLER
+							var/antagonist_role = src.antagonist_type
+							SPAWN(0)
+								C.choose_name(3, antagonist_role, C.real_name + " the " + antagonist_role)
+						else
+							failed = 1
 
-				if ("Vampire")
-					var/mob/living/L = M3.humanize()
-					if (istype(L))
-						M3 = L
-						L.mind?.add_antagonist(ROLE_VAMPIRE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_VAMPIRE
-					else
-						failed = 1
+					if ("Vampire")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_VAMPIRE, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_VAMPIRE
+						else
+							failed = 1
 
-				if ("Changeling")
-					var/mob/living/L = M3.humanize()
-					if (istype(L))
-						M3 = L
-						L.mind?.add_antagonist(ROLE_CHANGELING, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_CHANGELING
-					else
-						failed = 1
+					if ("Changeling")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_CHANGELING, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_CHANGELING
+						else
+							failed = 1
 
-				if ("Headspider")
-					var/mob/living/critter/C = M3.critterize(/mob/living/critter/changeling/headspider)
-					if (C && istype(C))
-						M3 = C
-						C.mind.add_antagonist(ROLE_CHANGELING, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						C.remove_ability_holder(/datum/abilityHolder/changeling/)
-					else
-						failed = 1
+					if ("Headspider")
+						var/mob/living/critter/C = M3.critterize(/mob/living/critter/changeling/headspider)
+						if (C && istype(C))
+							M3 = C
+							C.mind.add_antagonist(ROLE_CHANGELING, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							C.remove_ability_holder(/datum/abilityHolder/changeling/)
+						else
+							failed = 1
 
-				if ("Arcfiend")
-					var/mob/living/L = M3.humanize()
-					if (istype(L))
-						M3 = L
-						L.mind?.add_antagonist(ROLE_ARCFIEND, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						role = ROLE_ARCFIEND
-					else
-						failed = 1
-				if ("Space Phoenix")
-					if (istype(mind))
-						send_to = 4
-						mind.add_antagonist(ROLE_PHOENIX, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
-						M3 = mind.current
-						role = ROLE_PHOENIX
-					else
-						failed = 1
+					if ("Arcfiend")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_ARCFIEND, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							role = ROLE_ARCFIEND
+						else
+							failed = 1
+					if ("Space Phoenix")
+						if (istype(mind))
+							send_to = 4
+							mind.add_antagonist(ROLE_PHOENIX, source = ANTAGONIST_SOURCE_RANDOM_EVENT)
+							M3 = mind.current
+							role = ROLE_PHOENIX
+						else
+							failed = 1
 				else
 					failed = 1
+			else if (humanoid)
+				switch (src.antagonist_type)
+					if ("Wizard")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							send_to = 2
+							L.mind?.add_antagonist(ROLE_WIZARD, do_relocate = FALSE, source = ANTAGONIST_SOURCE_TAUNT)
+							role = ROLE_WIZARD
+						else
+							failed = 1
 
+					if ("Werewolf")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_WEREWOLF, source = ANTAGONIST_SOURCE_TAUNT)
+							role = ROLE_WEREWOLF
+						else
+							failed = 1
+
+					if ("Hunter")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_HUNTER, do_equip = FALSE, do_relocate = TRUE, source = ANTAGONIST_SOURCE_TAUNT)
+							role = ROLE_HUNTER
+						else
+							failed = 1
+
+					if ("Salvager")
+						var/mob/living/L = M3.humanize(equip_rank=FALSE)
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_SALVAGER, do_equip = TRUE, do_relocate = TRUE, source = ANTAGONIST_SOURCE_TAUNT)
+							role = ROLE_SALVAGER
+						else
+							failed = 1
+
+					if ("Wrestler")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_WRESTLER, source = ANTAGONIST_SOURCE_TAUNT)
+							role = ROLE_WRESTLER
+							var/antagonist_role = src.antagonist_type
+							SPAWN(0)
+								M3.choose_name(3, antagonist_role, M3.real_name + " the " + antagonist_role)
+						else
+							failed = 1
+
+					if ("Vampire")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_VAMPIRE, source = ANTAGONIST_SOURCE_TAUNT)
+							role = ROLE_VAMPIRE
+						else
+							failed = 1
+
+					if ("Changeling")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_CHANGELING, source = ANTAGONIST_SOURCE_TAUNT)
+							role = ROLE_CHANGELING
+						else
+							failed = 1
+
+					if ("Arcfiend")
+						var/mob/living/L = M3.humanize()
+						if (istype(L))
+							M3 = L
+							L.mind?.add_antagonist(ROLE_ARCFIEND, source = ANTAGONIST_SOURCE_TAUNT)
+							role = ROLE_ARCFIEND
+						else
+							failed = 1
+
+					if ("Space Phoenix")
+						if (istype(mind))
+							send_to = 4
+							mind.add_antagonist(ROLE_PHOENIX, source = ANTAGONIST_SOURCE_TAUNT)
+							M3 = mind.current
+							role = ROLE_PHOENIX
+						else
+							failed = 1
+			else if (station_threat)
+				switch (src.antagonist_type)
+					if ("Blob")
+						if (istype(mind))
+							send_to = 3
+							mind.add_antagonist(ROLE_BLOB, do_relocate = FALSE, source = ANTAGONIST_SOURCE_TAUNT)
+							role = ROLE_BLOB
+							M3 = mind.current
+							var/mob/living/intangible/blob_overmind/blob = M3
+							blob.random_event_spawn = TRUE
+						else
+							failed = 1
+
+					if ("Flockmind")
+						if (istype(mind))
+							send_to = 3
+							mind.add_antagonist(ROLE_FLOCKMIND, do_relocate = FALSE, source = ANTAGONIST_SOURCE_TAUNT)
+							role = ROLE_FLOCKMIND
+							M3 = mind.current
+							var/mob/living/intangible/flock/flockmind/F = mind.current
+							if (istype(F) && (alive_player_count() > 40)) // Flockmind can have a free trace, as a treat.
+								SPAWN(1)
+									F.partition(ANTAGONIST_SOURCE_TAUNT)
+						else
+							failed = 1
+
+					if ("Wraith")
+						if (istype(mind))
+							send_to = 3
+							mind.add_antagonist(ROLE_WRAITH, source = ANTAGONIST_SOURCE_TAUNT)
+							role = ROLE_WRAITH
+							M3 = mind.current
+						else
+							failed = 1
+			else
+				failed = 1
 			if (!ASLoc)
 				failed = 1
 

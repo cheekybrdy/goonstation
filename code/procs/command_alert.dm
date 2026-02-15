@@ -115,3 +115,5 @@ proc/alert_origin_class(alert_origin)
 			return ALERT_CLOWN_CLASS
 		if(ALERT_SYNDICATE)
 			return ALERT_SYNDICATE_CLASS
+		if(ALERT_TAUNT)
+			return ALERT_TAUNT_CLASS

@@ -29,3 +29,4 @@
 #define ALERT_COMMAND_CLASS "acomm"
 #define ALERT_CLOWN_CLASS "aclown"
 #define ALERT_SYNDICATE_CLASS "asyn"
+#define ALERT_TAUNT_CLASS "ataunt"
