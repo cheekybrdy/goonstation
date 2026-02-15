@@ -38,6 +38,7 @@ var/list/taunt_levels = "Pissy Preschooler", "I want to speak to your manager", 
 	if(taunt_amount != taunt_levels[1] || "REDACTED")
 		timer = 3 MINUTES
 
+
 /obj/machinery/tauntomatic/text_generate(var/taunt_amount)
 	title = TAUNTOMATIC_PICK(title_header) + TAUNTOMATIC_PICK(organisations_1)
 	fire(taunt_amount)
