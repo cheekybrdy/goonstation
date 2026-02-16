@@ -1,14 +1,14 @@
-titleheader@=Attention to @,An announcement regarding @,A important broadcast for @,A warning to @,Woe, @,To the @,OI YOU @,A formal complaint regarding: @,In this article we'll be covering @,Some concerning truths regarding @,Employee notice for @,About the @,The Ascension of @,And here we observe the wild @,The facts regarding @,My fingers write this to you out of sheer disgust... @,DO THEY KNOW??? The @,They'll never grow up, these @, Phone call for 1800
+titleheader@=Attention to all@,An announcement regarding @,A important broadcast for @,A warning to @,Woe, @,To the @,OI YOU @,A formal complaint regarding: @,In this article we'll be covering @,Some concerning truths regarding @,Employee notice for @,About the @,The Ascension of @,And here we observe the wild @,The facts regarding @,My fingers write this to you out of sheer disgust... @,DO THEY KNOW??? The @,They'll never grow up, @, Phone call for 1800
 
-organisations1@=Syndicate Scum@,bootlicking enemies of Nanotransen@,that one local fuckwad eco-terrorist with a glowy stick@,those jackasses on that scrapship@,the local brainslurping flesh monster going by "Bob"@,the bloodsucker that finally got out of my basement@,Glob-@,Uni-@,Inter@,Media-@,Meta-@,Multi@,New @,Pan-@,Metro-@,Nano-@,Chem-@,Wave-@,Gene-@,FAAE-@,RSS @,NanoTrasen@,Regional-
+organisations1@=Syndicate Scum@,bootlicking enemies of Nanotransen@,that one local fuckwad eco-terrorist with a glowy stick@,those jackasses on that scrapship@,the local brainslurping flesh monster going by "Bob"@,the bloodsucker that finally got out of my basement@,that one guy from that got a costume from that one movie from the corner store@,that weird teal bird that keeps waking me up at 5am@,That one ghost that didn't get invited to the halloween party@,that pile of sentient jelly that looks like your mother@,those upstart crew members that can't decide on what to protest on@,those guys that put a bomb threat in and never bothered to show up@,that one guy who superglued a wolf costume to themself @
 
-prefixes2@=Engineering@,Gen@,Co@,System@,Node@,Capital@,Moon@,Main@,Labs@,Lab@,NanoTrasen@,NT@,Supply
+insult_adjectives1@=fucking@,stupid@,annoying@,insufferable@,incompetent@,hypocritical@,mogrel@,swag-bellied@,tickle-brained@,toad-spotted@,fopdoodled@,abrasive@,stupid@,unloved
 
-prefixes3@=Space@,Moon@,Mining@,Research@,Supply@,Goon@,Orbital@,Science@,Asteroid@,Production@,Transport@,Delivery@,Extraplanetary@,Robot@,Memorial@,Mass@,Development@,Deep Space
+insult_adjectives2@=moronic@,lazy@,slothful@,potty-mouthed@,dickwadded@,two-faced@,shit-for-brains@,toilet-breathed@,powergaming@,metagaming@,yapping@,empty-headed@,overrated@,lickity-splitted@,obese@,no-lifed@,hyper-aggressive@,animalistic
 
-suffixes@=Station@,Orbital@,Facility@,Depot@,Outpost@,Installation@,Observatory@,Array@,Relay@,Monitor@,Platform@,Construct@,Hangar@,Center@,Port@,Waystation@,Factory@,Waypoint@,Stopover@,Hub@,HQ@,Office@,Object@,Fortification@,Repository@,Store@,Cache@,Terminal@,Depository@,Terminus@,Dump@,Site@,Garrison@,Headquarters@,Theater@,Lab@,Labs@,Laboratory@,Dockyard@,Shipyard@,Salvage
+insult_nouns1@=idiots@,pissants@,toilet-lickers@,numbskulls@,toddlers@,clankers@,children@,scammers@,swindlers@,drunkards@,pubbies@,yappers@,zombies@,cowards@,grumps@,laggards@,pigs
 
-greek@=Alpha@,Beta@,Gamma@,Delta@,Epsilon@,Zeta@,Eta@,Theta@,Iota@,Kappa@,Lambda@,Mu@,Nu@,Xi@,Omicron@,Pi@,Rho@,Sigma@,Tau@,Upsilon@,Phi@,Chi@,Psi@,Omega
+insult_nouns2@=fools@,stumblers@,stroller users@,piss-removers@,pathologists@,whippersnappers@,bootlickers@,bathtubers@,juicers@,loiterers@,chauvanists@,brainrotters
 
 romanNum@=II@,III@,IV@,V@,VI@,VII@,VIII@,IX@,X@,XI@,XII@,XIII@,XIV@,XV@,XVI@,XVII@,XVIII@,XIX@,XX
 
