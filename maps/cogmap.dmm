@@ -26489,9 +26489,6 @@
 /area/station/hallway/primary/south)
 "bVB" = (
 /obj/machinery/atmospherics/pipe/simple,
-/obj/fluid_pipe/elbow/supply{
-	dir = 8
-	},
 /turf/simulated/floor/yellow/side{
 	dir = 1
 	},
@@ -26683,9 +26680,7 @@
 	},
 /obj/disposalpipe/segment/morgue,
 /obj/decal/stripe_caution,
-/obj/fluid_pipe/elbow/supply{
-	dir = 1
-	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor,
 /area/station/crew_quarters/supplylobby)
 "bWb" = (
@@ -27047,12 +27042,18 @@
 /obj/disposalpipe/segment/morgue{
 	dir = 4
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/crew_quarters/supplylobby)
 "bXe" = (
 /obj/disposalpipe/segment/morgue{
 	dir = 8;
 	icon_state = "pipe-c"
+	},
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/supplylobby)
@@ -27307,6 +27308,9 @@
 "bXY" = (
 /obj/machinery/atmospherics/pipe/simple,
 /obj/disposalpipe/segment/morgue{
+	dir = 4
+	},
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -31350,9 +31354,6 @@
 /obj/machinery/light{
 	dir = 1;
 	pixel_y = 21
-	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
 	},
 /turf/simulated/floor/neutral/side{
 	dir = 1
@@ -41089,8 +41090,8 @@
 /obj/decal/poster/wallsign/teaparty{
 	pixel_y = 32
 	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
+/obj/fluid_pipe/elbow/supply{
+	dir = 8
 	},
 /turf/simulated/floor/yellow/side{
 	dir = 1
@@ -42858,9 +42859,11 @@
 	},
 /area/station/engine/ptl)
 "gXF" = (
-/obj/fluid_pipe/straight/supply/overfloor,
-/turf/simulated/wall/auto/supernorn,
-/area/station/maintenance/central)
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
+	},
+/turf/simulated/floor/white,
+/area/station/crew_quarters/pool)
 "gYc" = (
 /obj/machinery/firealarm/directional/east,
 /obj/disposalpipe/segment/mail,
@@ -49229,10 +49232,12 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "loJ" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 1
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
-/turf/simulated/floor/white,
+/turf/simulated/floor/bluewhite/corner{
+	dir = 4
+	},
 /area/station/crew_quarters/pool)
 "lpe" = (
 /obj/machinery/computer/ordercomp,
@@ -49273,6 +49278,14 @@
 	},
 /turf/simulated/floor/grey,
 /area/station/engine/inner)
+"lqS" = (
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
+/area/station/crew_quarters/pool)
 "lqU" = (
 /obj/landmark/pest,
 /obj/machinery/atmospherics/pipe/simple{
@@ -50015,9 +50028,6 @@
 	dir = 4;
 	pixel_x = 10
 	},
-/obj/fluid_pipe/elbow/supply{
-	dir = 4
-	},
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "lTS" = (
@@ -50470,16 +50480,11 @@
 	},
 /area/station/medical/dome)
 "mjB" = (
-/obj/cable{
-	icon_state = "4-8"
+/obj/fluid_pipe/t_junction/supply{
+	dir = 4
 	},
-/obj/fluid_pipe/elbow/supply{
-	dir = 1
-	},
-/turf/simulated/floor/yellow/side{
-	dir = 1
-	},
-/area/station/engine/storage)
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "mjS" = (
 /obj/disposalpipe/segment/transport{
 	dir = 4
@@ -51480,14 +51485,11 @@
 /turf/simulated/floor/black,
 /area/station/crew_quarters/bar)
 "mRh" = (
-/obj/cable{
-	icon_state = "4-8"
+/obj/fluid_pipe/elbow/supply,
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
 	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
-/turf/simulated/floor/grass/leafy,
-/area/station/garden/owlery)
+/area/station/crew_quarters/pool)
 "mRk" = (
 /obj/machinery/disposal,
 /obj/disposalpipe/trunk{
@@ -55448,11 +55450,14 @@
 /turf/simulated/floor/plating,
 /area/station/quartermaster/cargooffice)
 "prf" = (
-/obj/fluid_pipe/t_junction/supply{
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
+/turf/simulated/floor/grass/leafy,
+/area/station/garden/owlery)
 "prm" = (
 /turf/space,
 /area/station/maintenance/northeast)
@@ -60444,9 +60449,6 @@
 	dir = 8;
 	pixel_x = -10
 	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
 /turf/simulated/floor,
 /area/station/crew_quarters/supplylobby)
 "sMz" = (
@@ -61409,13 +61411,9 @@
 /turf/simulated/floor/plating,
 /area/station/crew_quarters/cafeteria)
 "tvx" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 8
-	},
-/turf/simulated/floor/bluewhite/corner{
-	dir = 4
-	},
-/area/station/crew_quarters/pool)
+/obj/fluid_pipe/straight/supply/overfloor,
+/turf/simulated/wall/auto/supernorn,
+/area/station/maintenance/central)
 "tvH" = (
 /obj/machinery/vending/alcohol/with_ammo{
 	dir = 8;
@@ -61761,6 +61759,9 @@
 	dir = 4
 	},
 /obj/mapping_helper/firedoor_spawn,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/crew_quarters/supplylobby)
 "tJc" = (
@@ -61770,24 +61771,14 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/showers)
 "tJC" = (
-/obj/table/auto,
-/obj/item/storage/toolbox/electrical{
-	pixel_x = -5;
-	pixel_y = 9
-	},
-/obj/item/device/multitool{
-	pixel_x = 9;
-	pixel_y = 8
-	},
-/obj/item/clothing/gloves/yellow{
-	pixel_x = -2;
-	pixel_y = -1
-	},
-/obj/fluid_pipe/straight/supply{
+/obj/disposalpipe/segment/morgue{
 	dir = 4
 	},
-/turf/simulated/floor/yellow,
-/area/station/engine/storage)
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/hallway/primary/south)
 "tJH" = (
 /obj/machinery/conveyor/WE{
 	id = "ghostdrone"
@@ -61870,8 +61861,8 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "tMh" = (
-/obj/fluid_pipe/straight/supply{
-	dir = 4
+/obj/fluid_pipe/elbow/supply{
+	dir = 8
 	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 4
@@ -61979,11 +61970,24 @@
 	},
 /area/space)
 "tPo" = (
-/obj/fluid_pipe/elbow/supply,
-/turf/simulated/floor/bluewhite/corner{
-	dir = 8
+/obj/table/auto,
+/obj/item/storage/toolbox/electrical{
+	pixel_x = -5;
+	pixel_y = 9
 	},
-/area/station/crew_quarters/pool)
+/obj/item/device/multitool{
+	pixel_x = 9;
+	pixel_y = 8
+	},
+/obj/item/clothing/gloves/yellow{
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
+/turf/simulated/floor/yellow,
+/area/station/engine/storage)
 "tQq" = (
 /obj/machinery/atmospherics/binary/valve{
 	high_risk = 1;
@@ -63764,8 +63768,8 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
 	},
 /turf/simulated/floor/yellow/side{
 	dir = 1
@@ -66788,6 +66792,13 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
 /area/station/medical/dome)
+"wRE" = (
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor,
+/area/station/hallway/primary/south)
 "wRG" = (
 /obj/machinery/vending/standard,
 /obj/cable{
@@ -66858,13 +66869,16 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
 "wTj" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
 /obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
-/turf/simulated/floor/bluewhite/corner{
-	dir = 8
+/turf/simulated/floor/yellow/side{
+	dir = 1
 	},
-/area/station/crew_quarters/pool)
+/area/station/engine/storage)
 "wTs" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -110265,7 +110279,7 @@ aSl
 aTm
 wht
 aXb
-mRh
+prf
 aUz
 ojC
 bdo
@@ -110561,7 +110575,7 @@ aLQ
 aMV
 aLQ
 aPl
-wTj
+lqS
 aRs
 aSl
 aTm
@@ -110863,7 +110877,7 @@ rqI
 aLS
 aLS
 ave
-tMh
+loJ
 aRt
 aSl
 aSl
@@ -111467,10 +111481,10 @@ aLS
 jYs
 aLS
 ave
-tvx
+tMh
 mSr
 rFd
-prf
+mjB
 rFd
 ddt
 lMq
@@ -111769,8 +111783,8 @@ aLS
 aLS
 rqI
 aPn
-tPo
-gXF
+mRh
+tvx
 aSm
 aTo
 aVZ
@@ -112071,7 +112085,7 @@ rqI
 aLS
 aLS
 aPm
-tMh
+loJ
 aRv
 aRv
 aRv
@@ -112373,7 +112387,7 @@ aLS
 aLS
 kEr
 ujW
-loJ
+gXF
 aRv
 uGl
 aTp
@@ -120277,12 +120291,12 @@ nPp
 sPe
 iwL
 bIC
-tJC
+tPo
 bJz
 bNJ
 bNJ
 bPa
-uSJ
+wTj
 nMC
 bIC
 lZW
@@ -120584,7 +120598,7 @@ bKJ
 bKJ
 bKJ
 bKJ
-mjB
+uSJ
 rPq
 bIC
 gpO
@@ -121494,8 +121508,8 @@ bGc
 bRT
 bIF
 fOz
-bWU
-bXX
+wRE
+tJC
 bZC
 bZM
 wef
