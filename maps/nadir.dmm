@@ -2917,10 +2917,7 @@
 /area/station/maintenance/disposal)
 "bpN" = (
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "bpV" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -3659,10 +3656,7 @@
 /obj/mapping_helper/wingrille_spawn/auto,
 /obj/window_blinds/cog2/left,
 /turf/simulated/floor/plating,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "bCW" = (
 /obj/mesh/grille/steel,
 /turf/simulated/floor/plating,
@@ -4393,10 +4387,7 @@
 "bVY" = (
 /obj/machinery/hydro_growlamp,
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "bWh" = (
 /obj/table/auto,
 /obj/item/shaker/mustard{
@@ -6052,10 +6043,7 @@
 	pixel_x = 12
 	},
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "cMK" = (
 /obj/machinery/vending/standard,
 /turf/simulated/floor/plating,
@@ -6326,10 +6314,7 @@
 "cSf" = (
 /obj/submachine/cargopad/hydroponic,
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "cSg" = (
 /obj/cable{
 	icon_state = "1-4"
@@ -7050,10 +7035,7 @@
 	},
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "diu" = (
 /obj/stool/chair/comfy/flock{
 	dir = 8
@@ -9643,10 +9625,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "euj" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -11421,10 +11400,7 @@
 	},
 /obj/landmark/start/job/botanist,
 /turf/simulated/floor/plating,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "fiR" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -12067,10 +12043,7 @@
 "fvZ" = (
 /obj/decal/cleanable/dirt/dirt2,
 /turf/simulated/floor/plating,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "fwk" = (
 /obj/cable{
 	icon_state = "1-8"
@@ -13386,10 +13359,7 @@
 "fZP" = (
 /obj/reagent_dispensers/still,
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "fZQ" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -14186,10 +14156,7 @@
 /obj/forcefield/energyshield/perma/doorlink,
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "grC" = (
 /obj/table/reinforced/bar/auto,
 /obj/item/decoration/ashtray,
@@ -14896,10 +14863,7 @@
 /obj/mapping_helper/wingrille_spawn/auto,
 /obj/window_blinds/cog2/right,
 /turf/simulated/floor/plating,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "gEL" = (
 /obj/machinery/light/small,
 /obj/machinery/shieldgenerator/energy_shield{
@@ -21153,10 +21117,7 @@
 /obj/disposalpipe/trunk/south,
 /obj/machinery/disposal,
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "jjb" = (
 /obj/lattice{
 	icon_state = "lattice-dir-b"
@@ -21338,10 +21299,7 @@
 	pixel_y = 21
 	},
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "joJ" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -22401,10 +22359,7 @@
 /obj/item/reagent_containers/dropper/mechanical,
 /obj/machinery/firealarm/directional/west,
 /turf/simulated/floor/plating,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "jNu" = (
 /mob/living/critter/small_animal/turtle/sylvester/HoS,
 /turf/simulated/floor/carpet/red/fancy/edge/west,
@@ -22665,10 +22620,7 @@
 "jRv" = (
 /obj/machinery/vending/hydroponics,
 /turf/simulated/floor/plating,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "jRw" = (
 /obj/machinery/drainage,
 /obj/machinery/light_switch/west,
@@ -24581,10 +24533,7 @@
 	pixel_x = 12
 	},
 /turf/simulated/floor/plating,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "kEC" = (
 /obj/machinery/door/airlock/pyro/alt,
 /obj/cable{
@@ -27258,10 +27207,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "lLN" = (
 /obj/machinery/power/data_terminal,
 /obj/machinery/guardbot_dock,
@@ -28028,10 +27974,7 @@
 /area/station/security/equipment)
 "mbt" = (
 /turf/simulated/wall/auto/supernorn,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "mby" = (
 /obj/storage/secure/closet/fridge/blood,
 /turf/simulated/floor/redblack,
@@ -31833,10 +31776,7 @@
 	},
 /obj/storage/crate/bloody,
 /turf/simulated/floor/plating,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "nIb" = (
 /obj/machinery/atmospherics/binary/valve{
 	name = "purge valve"
@@ -33632,10 +33572,7 @@
 /obj/item/reagent_containers/dropper,
 /obj/machinery/light_switch/north,
 /turf/simulated/floor/plating,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "oBx" = (
 /obj/disposalpipe/segment/brig{
 	dir = 1
@@ -37470,10 +37407,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "qqf" = (
 /obj/fakeobject/flock/antenna/broken{
 	icon_state = "atenna-broken-1"
@@ -38236,10 +38170,7 @@
 	},
 /obj/machinery/light/small,
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "qHP" = (
 /obj/machinery/light{
 	dir = 8;
@@ -40105,10 +40036,7 @@
 	},
 /obj/blind_switch/area/west,
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "rGm" = (
 /obj/disposalpipe/trunk/north,
 /obj/machinery/disposal/transport{
@@ -44696,10 +44624,7 @@
 	},
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "tJx" = (
 /obj/disposalpipe/segment/bent/west,
 /obj/stool/chair/comfy/wheelchair{
@@ -44950,10 +44875,7 @@
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "tQS" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -46750,10 +46672,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "uHL" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/maintenance/southeast)
@@ -47312,10 +47231,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "uUW" = (
 /turf/simulated/floor/white,
 /area/station/medical/medbay/cloner)
@@ -50830,10 +50746,7 @@
 "wBt" = (
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/black/grime,
-/area/station/hydroponics{
-	do_not_irradiate = 1;
-	name = "Hydroponics Storage"
-	})
+/area/station/storage/hydroponics)
 "wBG" = (
 /turf/simulated/floor/red,
 /area/station/security/checkpoint/escape)
