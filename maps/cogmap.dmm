@@ -10063,7 +10063,6 @@
 	icon_state = "1-8"
 	},
 /obj/reagent_dispensers/fueltank,
-/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating/damaged2,
 /area/station/maintenance/central)
 "aLe" = (
@@ -11822,11 +11821,13 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating/scorched,
 /area/station/maintenance/central)
 "aQs" = (
 /obj/critter/seagull,
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 4
 	},
@@ -12480,6 +12481,10 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/machinery/fluid_machinery/binary/valve/overfloor{
+	dir = 1;
+	name = "pool valve"
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/central)
 "aSo" = (
@@ -12760,6 +12765,9 @@
 /area/station/garden/owlery)
 "aTo" = (
 /obj/machinery/portable_atmospherics/pump,
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/central)
 "aTp" = (
@@ -36606,6 +36614,7 @@
 	cycle_id = "centmaint1";
 	name = "Central Maintenance"
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/central)
 "ddu" = (
@@ -40436,7 +40445,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/fluid_pipe/t_junction/supply{
+/obj/fluid_pipe/elbow/supply{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -40639,7 +40648,7 @@
 	icon_state = "4-8"
 	},
 /obj/landmark/kudzu,
-/obj/fluid_pipe/straight/supply,
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/grass/leafy,
 /area/station/garden/owlery)
 "fxZ" = (
@@ -42843,9 +42852,11 @@
 	},
 /area/station/engine/ptl)
 "gXF" = (
-/obj/fluid_pipe/straight/supply,
-/turf/simulated/wall/grass/leafy,
-/area/station/garden/owlery)
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
+	},
+/turf/simulated/floor/white,
+/area/station/crew_quarters/pool)
 "gYc" = (
 /obj/machinery/firealarm/directional/east,
 /obj/disposalpipe/segment/mail,
@@ -45370,7 +45381,7 @@
 /area/station/maintenance/solar/west)
 "iFh" = (
 /obj/fluid_pipe/elbow/supply{
-	dir = 1
+	dir = 8
 	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 8
@@ -46301,6 +46312,9 @@
 /obj/machinery/navbeacon/tour/cog1/tour9,
 /obj/landmark/gps_waypoint,
 /mob/living/critter/small_animal/mouse,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/grass/leafy,
 /area/station/garden/owlery)
 "jrQ" = (
@@ -48252,6 +48266,7 @@
 /area/station/crew_quarters/quarters)
 "kEr" = (
 /mob/living/critter/small_animal/walrus,
+/obj/machinery/fluid_machinery/unary/dripper,
 /turf/simulated/floor/pool/no_animate,
 /area/station/crew_quarters/pool)
 "kEJ" = (
@@ -48702,6 +48717,9 @@
 "kVv" = (
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
 /turf/simulated/wall/false_wall,
 /area/station/maintenance/central)
@@ -49208,9 +49226,11 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "loJ" = (
-/obj/fluid_pipe/straight/supply,
-/turf/simulated/floor/bluewhite/corner{
+/obj/fluid_pipe/elbow/supply{
 	dir = 8
+	},
+/turf/simulated/floor/bluewhite/corner{
+	dir = 4
 	},
 /area/station/crew_quarters/pool)
 "lpe" = (
@@ -49854,6 +49874,9 @@
 	icon_state = "pipe-c";
 	name = "crematorium pipe"
 	},
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/central)
 "lNA" = (
@@ -50446,11 +50469,11 @@
 	},
 /area/station/medical/dome)
 "mjB" = (
-/obj/fluid_pipe/elbow/supply,
-/turf/simulated/floor/bluewhite/corner{
+/obj/fluid_pipe/t_junction/supply{
 	dir = 4
 	},
-/area/station/crew_quarters/pool)
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "mjS" = (
 /obj/disposalpipe/segment/transport{
 	dir = 4
@@ -51452,13 +51475,11 @@
 /turf/simulated/floor/black,
 /area/station/crew_quarters/bar)
 "mRh" = (
-/obj/machinery/light{
-	dir = 8;
-	tag = ""
-	},
-/obj/fluid_pipe/straight/supply,
-/turf/simulated/floor/bluewhite/corner{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
+	},
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
 	},
 /area/station/crew_quarters/pool)
 "mRk" = (
@@ -51504,6 +51525,7 @@
 /obj/mapping_helper/firedoor_spawn,
 /obj/mapping_helper/access/maint,
 /obj/decal/stripe_delivery,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/white,
 /area/station/maintenance/central)
 "mSv" = (
@@ -55659,6 +55681,9 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/grass/leafy,
 /area/station/garden/owlery)
 "pAv" = (
@@ -58932,6 +58957,9 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/wall/grass/leafy{
 	density = 0
 	},
@@ -61375,11 +61403,9 @@
 /turf/simulated/floor/plating,
 /area/station/crew_quarters/cafeteria)
 "tvx" = (
-/mob/living/critter/small_animal/seal,
-/obj/machinery/fluid_machinery/unary/dripper{
-	dir = 8
-	},
-/turf/simulated/floor/pool/no_animate,
+/obj/pool/perspective,
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor/white,
 /area/station/crew_quarters/pool)
 "tvH" = (
 /obj/machinery/vending/alcohol/with_ammo{
@@ -61732,7 +61758,12 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/showers)
 "tJC" = (
-/obj/fluid_pipe/straight/supply,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/grass/leafy,
 /area/station/garden/owlery)
 "tJH" = (
@@ -61817,10 +61848,9 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "tMh" = (
-/obj/tree,
-/obj/fluid_pipe/straight/supply,
-/turf/simulated/floor/grass/leafy,
-/area/station/garden/owlery)
+/obj/fluid_pipe/straight/supply/overfloor,
+/turf/simulated/wall/auto/supernorn,
+/area/station/maintenance/central)
 "tMA" = (
 /obj/securearea{
 	desc = "A warning sign which reads 'COLLISION HAZARD'";
@@ -61923,13 +61953,7 @@
 	},
 /area/space)
 "tPo" = (
-/obj/pool/perspective{
-	dir = 8;
-	tag = "icon-pool (WEST)"
-	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/bluewhite/corner{
 	dir = 8
 	},
@@ -62275,9 +62299,8 @@
 /obj/mapping_helper/firedoor_spawn,
 /obj/mapping_helper/access/maint,
 /obj/decal/stripe_delivery,
-/obj/machinery/fluid_machinery/binary/valve/overfloor{
-	dir = 4;
-	name = "pool valve"
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
 /turf/simulated/floor/white,
 /area/station/crew_quarters/pool)
@@ -62650,9 +62673,13 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/west)
 "ujW" = (
-/obj/fluid_pipe/straight/supply/overfloor,
-/turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/garden/owlery)
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
+/turf/simulated/floor/bluewhite/corner{
+	dir = 4
+	},
+/area/station/crew_quarters/pool)
 "ukb" = (
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 9
@@ -64242,6 +64269,9 @@
 "vlL" = (
 /obj/machinery/camera/directional/south{
 	pixel_x = -10
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 8
@@ -109600,10 +109630,10 @@ aOn
 fsa
 aQr
 aLd
-ujW
-gXF
-tJC
-tMh
+aSl
+aTm
+aUz
+wht
 fxW
 tiG
 aUz
@@ -110198,9 +110228,9 @@ aGX
 aIf
 aJu
 aKA
-mjB
-loJ
-mRh
+aLP
+aKA
+aJu
 iFh
 aQs
 vmQ
@@ -110208,7 +110238,7 @@ aSl
 aTm
 wht
 aXb
-aXc
+tJC
 aUz
 ojC
 bdo
@@ -110500,11 +110530,11 @@ aGY
 aIg
 aIf
 aKB
-tPo
+aLQ
 aMV
 aLQ
 aPl
-aKA
+mRh
 aRs
 aSl
 aTm
@@ -110802,11 +110832,11 @@ aGY
 aIh
 aIf
 aKC
-tvx
+rqI
 aLS
 aLS
 ave
-aLP
+ujW
 aRt
 aSl
 aSl
@@ -111410,11 +111440,11 @@ aLS
 jYs
 aLS
 ave
-aLP
+loJ
 mSr
-aIe
-aIe
-aIe
+rFd
+mjB
+rFd
 ddt
 lMq
 mNL
@@ -111712,8 +111742,8 @@ aLS
 aLS
 rqI
 aPn
-aKA
-aIc
+tPo
+tMh
 aSm
 aTo
 aVZ
@@ -112014,7 +112044,7 @@ rqI
 aLS
 aLS
 aPm
-aLP
+ujW
 aRv
 aRv
 aRv
@@ -112315,8 +112345,8 @@ aKC
 aLS
 aLS
 kEr
-aPm
-aIf
+tvx
+gXF
 aRv
 uGl
 aTp
