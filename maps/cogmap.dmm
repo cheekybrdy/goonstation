@@ -6194,7 +6194,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/obj/fluid_pipe/elbow/waste{
+/obj/fluid_pipe/t_junction/waste{
 	dir = 4
 	},
 /turf/simulated/floor/black,
@@ -36058,6 +36058,10 @@
 /obj/disposalpipe/segment,
 /turf/simulated/floor,
 /area/station/hydroponics/bay)
+"cIq" = (
+/obj/fluid_pipe/straight/supply/overfloor,
+/turf/simulated/wall/auto/supernorn,
+/area/station/maintenance/central)
 "cIO" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 5
@@ -42859,11 +42863,24 @@
 	},
 /area/station/engine/ptl)
 "gXF" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 1
+/obj/table/auto,
+/obj/item/storage/toolbox/electrical{
+	pixel_x = -5;
+	pixel_y = 9
 	},
-/turf/simulated/floor/white,
-/area/station/crew_quarters/pool)
+/obj/item/device/multitool{
+	pixel_x = 9;
+	pixel_y = 8
+	},
+/obj/item/clothing/gloves/yellow{
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
+/turf/simulated/floor/yellow,
+/area/station/engine/storage)
 "gYc" = (
 /obj/machinery/firealarm/directional/east,
 /obj/disposalpipe/segment/mail,
@@ -49278,14 +49295,6 @@
 	},
 /turf/simulated/floor/grey,
 /area/station/engine/inner)
-"lqS" = (
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
-/turf/simulated/floor/bluewhite/corner{
-	dir = 8
-	},
-/area/station/crew_quarters/pool)
 "lqU" = (
 /obj/landmark/pest,
 /obj/machinery/atmospherics/pipe/simple{
@@ -50480,11 +50489,12 @@
 	},
 /area/station/medical/dome)
 "mjB" = (
-/obj/fluid_pipe/t_junction/supply{
+/obj/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor,
+/area/station/hallway/primary/south)
 "mjS" = (
 /obj/disposalpipe/segment/transport{
 	dir = 4
@@ -51485,11 +51495,14 @@
 /turf/simulated/floor/black,
 /area/station/crew_quarters/bar)
 "mRh" = (
-/obj/fluid_pipe/elbow/supply,
-/turf/simulated/floor/bluewhite/corner{
-	dir = 8
+/obj/disposalpipe/segment/morgue{
+	dir = 4
 	},
-/area/station/crew_quarters/pool)
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/hallway/primary/south)
 "mRk" = (
 /obj/machinery/disposal,
 /obj/disposalpipe/trunk{
@@ -55450,14 +55463,13 @@
 /turf/simulated/floor/plating,
 /area/station/quartermaster/cargooffice)
 "prf" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
 /obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
-/turf/simulated/floor/grass/leafy,
-/area/station/garden/owlery)
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
+/area/station/crew_quarters/pool)
 "prm" = (
 /turf/space,
 /area/station/maintenance/northeast)
@@ -59711,6 +59723,14 @@
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/toilets)
+"sno" = (
+/obj/fluid_pipe/elbow/supply{
+	dir = 8
+	},
+/turf/simulated/floor/bluewhite/corner{
+	dir = 4
+	},
+/area/station/crew_quarters/pool)
 "snq" = (
 /obj/decal/cleanable/dirt,
 /obj/item/tile/steel,
@@ -61411,9 +61431,10 @@
 /turf/simulated/floor/plating,
 /area/station/crew_quarters/cafeteria)
 "tvx" = (
-/obj/fluid_pipe/straight/supply/overfloor,
-/turf/simulated/wall/auto/supernorn,
-/area/station/maintenance/central)
+/obj/pool/perspective,
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor/white,
+/area/station/crew_quarters/pool)
 "tvH" = (
 /obj/machinery/vending/alcohol/with_ammo{
 	dir = 8;
@@ -61771,14 +61792,14 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/showers)
 "tJC" = (
-/obj/disposalpipe/segment/morgue{
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
-/obj/fluid_pipe/elbow/supply{
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/station/hallway/primary/south)
+/turf/simulated/floor/grass/leafy,
+/area/station/garden/owlery)
 "tJH" = (
 /obj/machinery/conveyor/WE{
 	id = "ghostdrone"
@@ -61861,13 +61882,11 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "tMh" = (
-/obj/fluid_pipe/elbow/supply{
-	dir = 8
-	},
-/turf/simulated/floor/bluewhite/corner{
+/obj/fluid_pipe/t_junction/supply{
 	dir = 4
 	},
-/area/station/crew_quarters/pool)
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "tMA" = (
 /obj/securearea{
 	desc = "A warning sign which reads 'COLLISION HAZARD'";
@@ -61970,23 +61989,15 @@
 	},
 /area/space)
 "tPo" = (
-/obj/table/auto,
-/obj/item/storage/toolbox/electrical{
-	pixel_x = -5;
-	pixel_y = 9
-	},
-/obj/item/device/multitool{
-	pixel_x = 9;
-	pixel_y = 8
-	},
-/obj/item/clothing/gloves/yellow{
-	pixel_x = -2;
-	pixel_y = -1
+/obj/cable{
+	icon_state = "4-8"
 	},
 /obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
-/turf/simulated/floor/yellow,
+/turf/simulated/floor/yellow/side{
+	dir = 1
+	},
 /area/station/engine/storage)
 "tQq" = (
 /obj/machinery/atmospherics/binary/valve{
@@ -62703,9 +62714,10 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/west)
 "ujW" = (
-/obj/pool/perspective,
-/obj/fluid_pipe/straight/supply,
-/turf/simulated/floor/white,
+/obj/fluid_pipe/elbow/supply,
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
 /area/station/crew_quarters/pool)
 "ukb" = (
 /obj/machinery/atmospherics/pipe/simple/insulated{
@@ -66792,13 +66804,6 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
 /area/station/medical/dome)
-"wRE" = (
-/obj/disposalpipe/segment{
-	dir = 4
-	},
-/obj/fluid_pipe/straight/supply,
-/turf/simulated/floor,
-/area/station/hallway/primary/south)
 "wRG" = (
 /obj/machinery/vending/standard,
 /obj/cable{
@@ -66869,16 +66874,11 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
 "wTj" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
-/turf/simulated/floor/yellow/side{
+/obj/fluid_pipe/elbow/supply{
 	dir = 1
 	},
-/area/station/engine/storage)
+/turf/simulated/floor/white,
+/area/station/crew_quarters/pool)
 "wTs" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -110279,7 +110279,7 @@ aSl
 aTm
 wht
 aXb
-prf
+tJC
 aUz
 ojC
 bdo
@@ -110575,7 +110575,7 @@ aLQ
 aMV
 aLQ
 aPl
-lqS
+prf
 aRs
 aSl
 aTm
@@ -111481,10 +111481,10 @@ aLS
 jYs
 aLS
 ave
-tMh
+sno
 mSr
 rFd
-mjB
+tMh
 rFd
 ddt
 lMq
@@ -111783,8 +111783,8 @@ aLS
 aLS
 rqI
 aPn
-mRh
-tvx
+ujW
+cIq
 aSm
 aTo
 aVZ
@@ -112386,8 +112386,8 @@ aKC
 aLS
 aLS
 kEr
-ujW
-gXF
+tvx
+wTj
 aRv
 uGl
 aTp
@@ -120291,12 +120291,12 @@ nPp
 sPe
 iwL
 bIC
-tPo
+gXF
 bJz
 bNJ
 bNJ
 bPa
-wTj
+tPo
 nMC
 bIC
 lZW
@@ -121508,8 +121508,8 @@ bGc
 bRT
 bIF
 fOz
-wRE
-tJC
+mjB
+mRh
 bZC
 bZM
 wef
