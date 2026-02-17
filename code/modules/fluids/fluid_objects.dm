@@ -189,7 +189,6 @@ TYPEINFO(/obj/machinery/drainage/big)
 
 	reservior_trace
 		amount = 125
-		reagent_id = "water"
 
 		New()
 			var/trace_table = rand(0,100)
