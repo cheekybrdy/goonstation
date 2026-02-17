@@ -10280,7 +10280,7 @@
 	tag = "icon-pool (WEST)"
 	},
 /obj/fluid_pipe/elbow/waste{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 8
@@ -36667,6 +36667,13 @@
 	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay/treatment)
+"deC" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/crew_quarters/pool)
 "deH" = (
 /obj/machinery/power/apc/autoname_north,
 /obj/cable{
@@ -37625,6 +37632,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/east)
+"dIR" = (
+/obj/disposalpipe/segment,
+/obj/fluid_pipe/t_junction/waste{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "dIU" = (
 /obj/cable{
 	icon_state = "0-8"
@@ -39492,7 +39506,9 @@
 /obj/item/reagent_containers/food/snacks/ingredient/egg{
 	rand_pos = 0
 	},
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/elbow/waste{
+	dir = 8
+	},
 /turf/simulated/floor/grass/leafy,
 /area/station/ranch)
 "eOj" = (
@@ -43244,14 +43260,6 @@
 	dir = 10
 	},
 /area/station/medical/medbay/cloner)
-"hiy" = (
-/obj/fluid_pipe/straight/supply,
-/obj/machinery/fluid_machinery/binary/valve{
-	dir = 8;
-	name = "pool drainage valve"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
 "hjb" = (
 /obj/lattice{
 	dir = 5;
@@ -45353,6 +45361,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
+"iEh" = (
+/obj/pool/perspective{
+	dir = 8;
+	tag = "icon-pool (WEST)"
+	},
+/obj/fluid_pipe/elbow/waste{
+	dir = 4
+	},
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
+/area/station/crew_quarters/pool)
 "iEk" = (
 /obj/disposalpipe/segment/mail,
 /obj/fluid_pipe/straight/supply,
@@ -45867,13 +45887,6 @@
 	},
 /turf/simulated/floor/blue,
 /area/station/engine/coldloop)
-"iXN" = (
-/obj/disposalpipe/segment,
-/obj/fluid_pipe/t_junction/waste{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
 "iXU" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /obj/window_blinds/cog2/left{
@@ -49096,18 +49109,6 @@
 /obj/storage/crate/bin/lostandfound,
 /turf/simulated/floor/grey/side,
 /area/station/crew_quarters/courtroom)
-"lhn" = (
-/obj/pool/perspective{
-	dir = 8;
-	tag = "icon-pool (WEST)"
-	},
-/obj/fluid_pipe/elbow/waste{
-	dir = 8
-	},
-/turf/simulated/floor/bluewhite/corner{
-	dir = 8
-	},
-/area/station/crew_quarters/pool)
 "lid" = (
 /obj/machinery/atmospherics/binary/valve{
 	high_risk = 1;
@@ -51239,13 +51240,6 @@
 /obj/mesh/grille/steel,
 /turf/simulated/floor/plating/airless,
 /area/station/wreckage)
-"mFH" = (
-/obj/mapping_helper/wingrille_spawn/auto,
-/obj/fluid_pipe/straight/waste{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/crew_quarters/pool)
 "mFI" = (
 /obj/item/device/radio/beacon,
 /obj/landmark/pest,
@@ -55626,12 +55620,6 @@
 	icon_state = "fred6"
 	},
 /area/station/crew_quarters/captain)
-"pwB" = (
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor{
-	dir = 8
-	},
-/turf/simulated/floor/pool/no_animate,
-/area/station/crew_quarters/pool)
 "pwI" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4
@@ -62403,6 +62391,14 @@
 	},
 /turf/simulated/floor/white,
 /area/station/crew_quarters/pool)
+"tXX" = (
+/obj/fluid_pipe/straight/supply,
+/obj/machinery/fluid_machinery/binary/valve{
+	dir = 8;
+	name = "pool drainage valve"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "tYu" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 1
@@ -62586,8 +62582,8 @@
 	pixel_y = 31
 	},
 /obj/machinery/interdictor/ranch,
-/obj/fluid_pipe/elbow/supply{
-	dir = 1
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
 /turf/simulated/floor/wood/seven,
 /area/station/ranch)
@@ -66345,6 +66341,12 @@
 	icon_state = "fblue2"
 	},
 /area/station/crew_quarters/stockex)
+"wxY" = (
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor{
+	dir = 8
+	},
+/turf/simulated/floor/pool/no_animate,
+/area/station/crew_quarters/pool)
 "wys" = (
 /obj/fluid_pipe/t_junction/supply{
 	dir = 4
@@ -109425,7 +109427,7 @@ rmN
 kHH
 kHH
 kHH
-iXN
+dIR
 sMz
 kHH
 kHH
@@ -109727,7 +109729,7 @@ pCg
 rFd
 rFd
 rFd
-hiy
+tXX
 heT
 aOn
 fsa
@@ -110029,7 +110031,7 @@ rMr
 aGZ
 aGZ
 aGZ
-mFH
+deC
 aGY
 aGZ
 tXV
@@ -110633,9 +110635,9 @@ aGY
 aIg
 aIf
 aKB
-lhn
-aMV
 aLQ
+aMV
+iEh
 aPl
 tMh
 aRs
@@ -110937,7 +110939,7 @@ aIf
 aKC
 rqI
 aLS
-pwB
+wxY
 ave
 ujW
 aRt
