@@ -1,4 +1,22 @@
 
+(t)mon feb 16 26
+(u)Ikea
+(p)25903
+(e)💅💊|C-QoL, A-Medical
+(+)IV bags can now be sliced open with snipping tools such as wirecutters or scissors.
+(u)TheGeneralJay
+(p)25863
+(e)🗺💅|A-Mapping, C-QoL
+(+)Clarion's morgue has been given a makeover.
+(t)sun feb 15 26
+(u)Cheekybrdy
+(p)25908
+(e)🧛|A-Gamemodes
+(+)BR has more azone loot available in it.
+(u)JORJ949
+(p)25878
+(e)🗺⚖🧛|A-Mapping, C-Balance, A-Gamemodes
+(*)The listening post is no longer accessless once opened. Instead the doors become syndicate access and destroyable.
 (t)sat feb 14 26
 (u)Lord_Earthfire
 (p)25896
