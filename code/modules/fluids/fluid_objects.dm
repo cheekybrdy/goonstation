@@ -194,7 +194,7 @@ TYPEINFO(/obj/machinery/drainage/big)
 		New()
 			var/trace_table = rand(0,100)
 			switch(trace_table)
-				if(-INFINITY to 24)
+				if(-INFINITY to 24.5)
 					qdel(src)
 				if (25 to 49)
 					reagent_id = "flourine"
