@@ -186,6 +186,7 @@ TYPEINFO(/obj/machinery/drainage/big)
 				src.reagent_id = "blood"
 			..()
 #endif
+
 	reservior_trace
 		amount = 125
 		reagent_id = "water"

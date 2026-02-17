@@ -5452,6 +5452,7 @@
 /turf/simulated/floor/carpet/grime,
 /area/station/crew_quarters/baroffice)
 "awf" = (
+/obj/fluid_spawner/reservior_trace,
 /turf/simulated/floor/plating,
 /area/station/janitor/reservior)
 "awj" = (
@@ -41202,9 +41203,7 @@
 /turf/simulated/floor/plating,
 /area/station/routing/depot)
 "fQc" = (
-/obj/fluid_spawner{
-	amount = 90000
-	},
+/obj/fluid_spawner/reservior,
 /turf/simulated/floor/plating,
 /area/station/janitor/reservior)
 "fQF" = (
