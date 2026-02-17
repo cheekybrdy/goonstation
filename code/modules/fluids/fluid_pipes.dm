@@ -200,6 +200,10 @@ DEFINE_PIPES_WASTE(/obj/fluid_pipe/quad)
 		src.changeHealth(-I.force)
 	..()
 
+/obj/fluid_pipe/fluid_tank/water
+	name = "fluid tank (water)"
+	default_reagent = "water"
+
 /obj/fluid_pipe/fluid_tank/see_fluid
 	icon_state = "tank-view"
 
@@ -222,6 +226,11 @@ DEFINE_PIPES_WASTE(/obj/fluid_pipe/quad)
 	if (dist > 2)
 		return
 	. = "<br>[SPAN_NOTICE("[src.network.reagents.get_description(user, RC_FULLNESS | RC_VISIBLE | RC_SPECTRO)]")]"
+
+/obj/fluid_pipe/fluid_tank/see_fluid/water
+	name = "fluid tank (water)"
+	default_reagent = "water"
+
 
 // Represents a single connected set of fluid pipes
 /datum/flow_network
