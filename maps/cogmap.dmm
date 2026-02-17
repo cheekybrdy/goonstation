@@ -10267,6 +10267,9 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/central)
 "aLP" = (
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 4
 	},
@@ -10275,6 +10278,9 @@
 /obj/pool/perspective{
 	dir = 8;
 	tag = "icon-pool (WEST)"
+	},
+/obj/fluid_pipe/elbow/waste{
+	dir = 4
 	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 8
@@ -10580,6 +10586,7 @@
 	dir = 8;
 	tag = "icon-pool (WEST)"
 	},
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/bluewhite/corner{
 	dir = 4
 	},
@@ -12466,9 +12473,9 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/fluid_machinery/binary/valve/overfloor{
-	dir = 1;
-	name = "pool valve"
+/obj/machinery/fluid_machinery/binary/valve{
+	name = "pool supply valve";
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/central)
@@ -43237,6 +43244,14 @@
 	dir = 10
 	},
 /area/station/medical/medbay/cloner)
+"hiy" = (
+/obj/fluid_pipe/straight/supply,
+/obj/machinery/fluid_machinery/binary/valve{
+	dir = 8;
+	name = "pool drainage valve"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "hjb" = (
 /obj/lattice{
 	dir = 5;
@@ -45852,6 +45867,13 @@
 	},
 /turf/simulated/floor/blue,
 /area/station/engine/coldloop)
+"iXN" = (
+/obj/disposalpipe/segment,
+/obj/fluid_pipe/t_junction/waste{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "iXU" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /obj/window_blinds/cog2/left{
@@ -49074,6 +49096,18 @@
 /obj/storage/crate/bin/lostandfound,
 /turf/simulated/floor/grey/side,
 /area/station/crew_quarters/courtroom)
+"lhn" = (
+/obj/pool/perspective{
+	dir = 8;
+	tag = "icon-pool (WEST)"
+	},
+/obj/fluid_pipe/elbow/waste{
+	dir = 8
+	},
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
+/area/station/crew_quarters/pool)
 "lid" = (
 /obj/machinery/atmospherics/binary/valve{
 	high_risk = 1;
@@ -51205,6 +51239,13 @@
 /obj/mesh/grille/steel,
 /turf/simulated/floor/plating/airless,
 /area/station/wreckage)
+"mFH" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/crew_quarters/pool)
 "mFI" = (
 /obj/item/device/radio/beacon,
 /obj/landmark/pest,
@@ -55585,6 +55626,12 @@
 	icon_state = "fred6"
 	},
 /area/station/crew_quarters/captain)
+"pwB" = (
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor{
+	dir = 8
+	},
+/turf/simulated/floor/pool/no_animate,
+/area/station/crew_quarters/pool)
 "pwI" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4
@@ -109378,7 +109425,7 @@ rmN
 kHH
 kHH
 kHH
-kHH
+iXN
 sMz
 kHH
 kHH
@@ -109680,7 +109727,7 @@ pCg
 rFd
 rFd
 rFd
-rFd
+hiy
 heT
 aOn
 fsa
@@ -109982,7 +110029,7 @@ rMr
 aGZ
 aGZ
 aGZ
-aGY
+mFH
 aGY
 aGZ
 tXV
@@ -110586,7 +110633,7 @@ aGY
 aIg
 aIf
 aKB
-aLQ
+lhn
 aMV
 aLQ
 aPl
@@ -110890,7 +110937,7 @@ aIf
 aKC
 rqI
 aLS
-aLS
+pwB
 ave
 ujW
 aRt

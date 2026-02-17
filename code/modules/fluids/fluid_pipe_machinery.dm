@@ -664,7 +664,6 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/trinary)
 		..()
 		src.beaker.name = "Water Calibration Vial"
 		src.beaker.desc = "This one vial is used to configure what goes out the waste system into the water system. Should NOT be in the wrong hands."
-	var/default_reagent = null
 
 /obj/machinery/fluid_machinery/trinary/filter/New()
 	..()
