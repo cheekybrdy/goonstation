@@ -10282,7 +10282,7 @@
 	tag = "icon-pool (WEST)"
 	},
 /obj/fluid_pipe/elbow/waste{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 8
@@ -15311,13 +15311,6 @@
 	icon_state = "Stairs2_wide"
 	},
 /area/station/bridge)
-"bbf" = (
-/obj/disposalpipe/segment,
-/obj/fluid_pipe/t_junction/waste{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
 "bbg" = (
 /obj/table/reinforced/auto,
 /obj/machinery/computer3/generic/personal{
@@ -20223,18 +20216,6 @@
 	},
 /turf/simulated/floor/engine/vacuum,
 /area/station/engine/combustion_chamber)
-"bvh" = (
-/obj/pool/perspective{
-	dir = 8;
-	tag = "icon-pool (WEST)"
-	},
-/obj/fluid_pipe/elbow/waste{
-	dir = 4
-	},
-/turf/simulated/floor/bluewhite/corner{
-	dir = 8
-	},
-/area/station/crew_quarters/pool)
 "bvs" = (
 /obj/table/wood/auto,
 /obj/item/plate,
@@ -21825,6 +21806,14 @@
 /obj/decal/tile_edge/stripe/extra_big,
 /turf/simulated/floor/plating/airless,
 /area/station/mining/magnet)
+"bDD" = (
+/obj/fluid_pipe/straight/supply,
+/obj/machinery/fluid_machinery/binary/valve{
+	dir = 8;
+	name = "pool drainage valve"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "bDF" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 4
@@ -42795,13 +42784,6 @@
 /obj/machinery/firealarm/directional/north,
 /turf/simulated/floor/grime,
 /area/station/maintenance/east)
-"gTX" = (
-/obj/mapping_helper/wingrille_spawn/auto,
-/obj/fluid_pipe/straight/waste{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/crew_quarters/pool)
 "gUi" = (
 /obj/machinery/atmospherics/pipe/simple,
 /obj/disposalpipe/segment,
@@ -44505,14 +44487,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/station/crew_quarters/fitness)
-"ial" = (
-/obj/fluid_pipe/straight/supply,
-/obj/machinery/fluid_machinery/binary/valve{
-	dir = 8;
-	name = "pool drainage valve"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
 "iay" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4
@@ -48489,6 +48463,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southwest)
+"kIY" = (
+/obj/disposalpipe/segment,
+/obj/fluid_pipe/t_junction/waste{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "kJF" = (
 /obj/machinery/alarm{
 	pixel_y = 23
@@ -50007,6 +49988,13 @@
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/market)
+"lQt" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/crew_quarters/pool)
 "lQD" = (
 /obj/disposalpipe/trunk,
 /obj/machinery/disposal,
@@ -58192,9 +58180,11 @@
 /turf/simulated/floor/black,
 /area/station/security/main)
 "rlq" = (
-/obj/fluid_pipe/elbow/waste,
-/turf/simulated/floor/sanitary,
-/area/station/crew_quarters/showers)
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor{
+	dir = 8
+	},
+/turf/simulated/floor/pool/no_animate,
+/area/station/crew_quarters/pool)
 "rlw" = (
 /obj/cable/orange{
 	icon_state = "4-8"
@@ -58981,7 +58971,8 @@
 	density = 0;
 	icon_state = "maint_open";
 	locked = 1;
-	operating = -1
+	operating = -1;
+	opacity = 0
 	},
 /obj/fluid_pipe/straight/waste{
 	dir = 4
@@ -61833,12 +61824,6 @@
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor,
 /area/station/janitor/office)
-"tIy" = (
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor{
-	dir = 8
-	},
-/turf/simulated/floor/pool/no_animate,
-/area/station/crew_quarters/pool)
 "tIS" = (
 /obj/disposalpipe/segment/morgue{
 	dir = 4
@@ -63579,6 +63564,18 @@
 	},
 /turf/simulated/floor/grime,
 /area/station/security/checkpoint/cargo)
+"uHC" = (
+/obj/pool/perspective{
+	dir = 8;
+	tag = "icon-pool (WEST)"
+	},
+/obj/fluid_pipe/elbow/waste{
+	dir = 8
+	},
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
+/area/station/crew_quarters/pool)
 "uIM" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
@@ -66476,6 +66473,10 @@
 	},
 /turf/simulated/floor,
 /area/station/turret_protected/ai_upload_foyer)
+"wCJ" = (
+/obj/fluid_pipe/elbow/waste,
+/turf/simulated/floor/sanitary,
+/area/station/crew_quarters/showers)
 "wCQ" = (
 /obj/mapping_helper/firedoor_spawn,
 /obj/machinery/door/airlock/pyro/external{
@@ -109429,7 +109430,7 @@ rmN
 kHH
 kHH
 kHH
-bbf
+kIY
 sMz
 kHH
 kHH
@@ -109731,7 +109732,7 @@ pCg
 rFd
 rFd
 rFd
-ial
+bDD
 heT
 aOn
 fsa
@@ -110033,7 +110034,7 @@ rMr
 aGZ
 aGZ
 aGZ
-gTX
+lQt
 aGY
 aGZ
 tXV
@@ -110637,9 +110638,9 @@ aGY
 aIg
 aIf
 aKB
-aLQ
+uHC
 aMV
-bvh
+aLQ
 aPl
 tMh
 aRs
@@ -110941,7 +110942,7 @@ aIf
 aKC
 rqI
 aLS
-tIy
+rlq
 ave
 ujW
 aRt
@@ -111825,7 +111826,7 @@ ahL
 vXJ
 ajP
 akR
-rlq
+wCJ
 amI
 alS
 apq
