@@ -178,6 +178,37 @@ TYPEINFO(/obj/machinery/drainage/big)
 		amount = 330
 		reagent_id = "wine"
 
+	reservior
+		amount = 80000
+#ifdef HALLOWEEN
+		New()
+			if(halloween_mode && prob(0.01))
+				src.reagent_id = "blood"
+			..()
+#endif
+	reservior_trace
+		amount = 125
+		reagent_id = "water"
+
+		New()
+			var/trace_table = rand(0,100)
+			switch(trace_table)
+				if(trace_table > 25)
+					qdel(src)
+				else if (trace_table <= 25 && trace_table >= 49)
+					reagent_id = "flourine"
+				else if (trace_table <= 50 && trace_table >= 74)
+					reagent_id = "saltwater"
+				else if (trace_table <= 75 && trace_table >= 97)
+					reagent_id = "sodawater"
+				else if (trace_table = 98)
+					reagent_id = "espresso"
+				else if (trace_table = 99)
+					reagent_id = "triplewater"
+				else
+					reagent_id = "compost"
+			..()
+
 	polluted_filth
 		delay = 35
 		amount = 1250
