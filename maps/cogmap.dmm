@@ -3245,7 +3245,9 @@
 	},
 /obj/rack,
 /obj/item/item_box/medical_patches/mini_styptic,
-/obj/fluid_pipe/t_junction/waste,
+/obj/fluid_pipe/t_junction/waste{
+	dir = 8
+	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/showers)
 "amK" = (
@@ -15309,6 +15311,13 @@
 	icon_state = "Stairs2_wide"
 	},
 /area/station/bridge)
+"bbf" = (
+/obj/disposalpipe/segment,
+/obj/fluid_pipe/t_junction/waste{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "bbg" = (
 /obj/table/reinforced/auto,
 /obj/machinery/computer3/generic/personal{
@@ -20214,6 +20223,18 @@
 	},
 /turf/simulated/floor/engine/vacuum,
 /area/station/engine/combustion_chamber)
+"bvh" = (
+/obj/pool/perspective{
+	dir = 8;
+	tag = "icon-pool (WEST)"
+	},
+/obj/fluid_pipe/elbow/waste{
+	dir = 4
+	},
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
+/area/station/crew_quarters/pool)
 "bvs" = (
 /obj/table/wood/auto,
 /obj/item/plate,
@@ -36667,13 +36688,6 @@
 	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay/treatment)
-"deC" = (
-/obj/mapping_helper/wingrille_spawn/auto,
-/obj/fluid_pipe/straight/waste{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/crew_quarters/pool)
 "deH" = (
 /obj/machinery/power/apc/autoname_north,
 /obj/cable{
@@ -37632,13 +37646,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/east)
-"dIR" = (
-/obj/disposalpipe/segment,
-/obj/fluid_pipe/t_junction/waste{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
 "dIU" = (
 /obj/cable{
 	icon_state = "0-8"
@@ -38999,7 +39006,9 @@
 	name = "Showers"
 	},
 /obj/mapping_helper/firedoor_spawn,
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/elbow/waste{
+	dir = 1
+	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/showers)
 "ezC" = (
@@ -42786,6 +42795,13 @@
 /obj/machinery/firealarm/directional/north,
 /turf/simulated/floor/grime,
 /area/station/maintenance/east)
+"gTX" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/crew_quarters/pool)
 "gUi" = (
 /obj/machinery/atmospherics/pipe/simple,
 /obj/disposalpipe/segment,
@@ -44489,6 +44505,14 @@
 	},
 /turf/simulated/floor/wood,
 /area/station/crew_quarters/fitness)
+"ial" = (
+/obj/fluid_pipe/straight/supply,
+/obj/machinery/fluid_machinery/binary/valve{
+	dir = 8;
+	name = "pool drainage valve"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "iay" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4
@@ -45361,18 +45385,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
-"iEh" = (
-/obj/pool/perspective{
-	dir = 8;
-	tag = "icon-pool (WEST)"
-	},
-/obj/fluid_pipe/elbow/waste{
-	dir = 4
-	},
-/turf/simulated/floor/bluewhite/corner{
-	dir = 8
-	},
-/area/station/crew_quarters/pool)
 "iEk" = (
 /obj/disposalpipe/segment/mail,
 /obj/fluid_pipe/straight/supply,
@@ -58180,10 +58192,8 @@
 /turf/simulated/floor/black,
 /area/station/security/main)
 "rlq" = (
-/obj/fluid_pipe/elbow/waste/overfloor{
-	dir = 1
-	},
-/turf/simulated/wall/auto/supernorn,
+/obj/fluid_pipe/elbow/waste,
+/turf/simulated/floor/sanitary,
 /area/station/crew_quarters/showers)
 "rlw" = (
 /obj/cable/orange{
@@ -61823,6 +61833,12 @@
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor,
 /area/station/janitor/office)
+"tIy" = (
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor{
+	dir = 8
+	},
+/turf/simulated/floor/pool/no_animate,
+/area/station/crew_quarters/pool)
 "tIS" = (
 /obj/disposalpipe/segment/morgue{
 	dir = 4
@@ -62391,14 +62407,6 @@
 	},
 /turf/simulated/floor/white,
 /area/station/crew_quarters/pool)
-"tXX" = (
-/obj/fluid_pipe/straight/supply,
-/obj/machinery/fluid_machinery/binary/valve{
-	dir = 8;
-	name = "pool drainage valve"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
 "tYu" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 1
@@ -66341,12 +66349,6 @@
 	icon_state = "fblue2"
 	},
 /area/station/crew_quarters/stockex)
-"wxY" = (
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor{
-	dir = 8
-	},
-/turf/simulated/floor/pool/no_animate,
-/area/station/crew_quarters/pool)
 "wys" = (
 /obj/fluid_pipe/t_junction/supply{
 	dir = 4
@@ -109427,7 +109429,7 @@ rmN
 kHH
 kHH
 kHH
-dIR
+bbf
 sMz
 kHH
 kHH
@@ -109729,7 +109731,7 @@ pCg
 rFd
 rFd
 rFd
-tXX
+ial
 heT
 aOn
 fsa
@@ -110031,7 +110033,7 @@ rMr
 aGZ
 aGZ
 aGZ
-deC
+gTX
 aGY
 aGZ
 tXV
@@ -110637,7 +110639,7 @@ aIf
 aKB
 aLQ
 aMV
-iEh
+bvh
 aPl
 tMh
 aRs
@@ -110939,7 +110941,7 @@ aIf
 aKC
 rqI
 aLS
-wxY
+tIy
 ave
 ujW
 aRt
@@ -111823,7 +111825,7 @@ ahL
 vXJ
 ajP
 akR
-arp
+rlq
 amI
 alS
 apq
@@ -112126,7 +112128,7 @@ aiG
 ajP
 tJc
 ezA
-rlq
+ajP
 ajP
 ajP
 ajP
