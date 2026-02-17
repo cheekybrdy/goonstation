@@ -199,7 +199,7 @@ TYPEINFO(/obj/machinery/drainage/big)
 				if (25 to 49)
 					reagent_id = "fluorine"
 				if (50 to 74)
-					reagent_id = "saltwater"
+					reagent_id = "seawater"
 				if (75 to 90)
 					reagent_id = "sodawater"
 				if (91)
