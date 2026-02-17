@@ -193,21 +193,20 @@ TYPEINFO(/obj/machinery/drainage/big)
 
 		New()
 			var/trace_table = rand(0,100)
-			switch(trace_table)
-				if(trace_table > 25)
-					qdel(src)
-				else if (trace_table <= 25 && trace_table >= 49)
-					reagent_id = "flourine"
-				else if (trace_table <= 50 && trace_table >= 74)
-					reagent_id = "saltwater"
-				else if (trace_table <= 75 && trace_table >= 97)
-					reagent_id = "sodawater"
-				else if (trace_table = 98)
-					reagent_id = "espresso"
-				else if (trace_table = 99)
-					reagent_id = "triplewater"
-				else
-					reagent_id = "compost"
+			if(trace_table > 25)
+				qdel(src)
+			else if (trace_table <= 25 && 49 >= trace_table)
+				reagent_id = "flourine"
+			else if (trace_table <= 50 && 74 >= trace_table)
+				reagent_id = "saltwater"
+			else if (trace_table <= 75 && 97 >= trace_table)
+				reagent_id = "sodawater"
+			else if (trace_table == 98)
+				reagent_id = "espresso"
+			else if (trace_table == 99)
+				reagent_id = "triplewater"
+			else
+				reagent_id = "compost"
 			..()
 
 	polluted_filth
