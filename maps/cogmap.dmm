@@ -7723,7 +7723,7 @@
 	tag = "icon-pool (WEST)"
 	},
 /obj/fluid_pipe/elbow/waste{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 8
@@ -10292,7 +10292,7 @@
 	tag = "icon-pool (WEST)"
 	},
 /obj/fluid_pipe/elbow/waste{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/bluewhite/corner{
 	dir = 8
@@ -10350,9 +10350,7 @@
 /area/station/medical/medbooth)
 "aMd" = (
 /obj/disposalpipe/segment/mail,
-/obj/fluid_pipe/elbow/supply{
-	dir = 4
-	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/white,
 /area/station/medical/medbooth)
 "aMe" = (
@@ -36963,7 +36961,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/station/crew_quarters/jazz)
+/area/station/janitor/plumbing)
 "dpD" = (
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
@@ -37994,10 +37992,6 @@
 	dir = 8
 	},
 /area/station/science/teleporter)
-"dTF" = (
-/obj/fluid_pipe/elbow/supply,
-/turf/simulated/floor/plating,
-/area/station/maintenance/southwest)
 "dTQ" = (
 /obj/table/reinforced/auto,
 /obj/machinery/door/airlock/pyro/glass/windoor{
@@ -46585,6 +46579,13 @@
 	dir = 1
 	},
 /area/station/engine/storage)
+"jyK" = (
+/obj/disposalpipe/segment/mail,
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
+/turf/simulated/floor/white,
+/area/station/medical/medbooth)
 "jzd" = (
 /obj/mesh/catwalk{
 	dir = 8
@@ -49228,6 +49229,10 @@
 /mob/living/critter/small_animal/opossum/morty,
 /turf/simulated/floor/sanitary/white,
 /area/station/medical/morgue)
+"lmq" = (
+/obj/fluid_pipe/straight/supply/overfloor,
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/station/janitor/supply)
 "lms" = (
 /obj/stool/chair,
 /obj/landmark/pest,
@@ -49738,7 +49743,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/station/crew_quarters/jazz)
+/area/station/janitor/plumbing)
 "lFN" = (
 /obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/wood,
@@ -50599,10 +50604,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/routing/depot)
-"mkT" = (
-/obj/fluid_pipe/straight/supply/overfloor,
-/turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/janitor/supply)
 "mlb" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -53691,6 +53692,13 @@
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor/black,
 /area/station/teleporter)
+"olJ" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/crew_quarters/pool)
 "omr" = (
 /obj/disposalpipe/segment/brig,
 /obj/vehicle/segway,
@@ -58196,12 +58204,12 @@
 /turf/simulated/floor/black,
 /area/station/security/main)
 "rlq" = (
-/obj/mapping_helper/wingrille_spawn/auto,
-/obj/fluid_pipe/straight/waste{
+/obj/disposalpipe/segment,
+/obj/fluid_pipe/t_junction/waste{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/station/crew_quarters/pool)
+/area/station/maintenance/central)
 "rlw" = (
 /obj/cable/orange{
 	icon_state = "4-8"
@@ -61354,18 +61362,6 @@
 	},
 /turf/simulated/floor,
 /area/station/security/main)
-"tqd" = (
-/obj/disposalpipe/segment,
-/obj/fluid_pipe/t_junction/waste{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
-"tqh" = (
-/obj/disposalpipe/segment/mail,
-/obj/fluid_pipe/straight/supply,
-/turf/simulated/floor/white,
-/area/station/medical/medbooth)
 "tqo" = (
 /mob/living/critter/small_animal/mouse,
 /turf/simulated/floor/plating,
@@ -66273,6 +66269,12 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
+"wwV" = (
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor{
+	dir = 8
+	},
+/turf/simulated/floor/pool/no_animate,
+/area/station/crew_quarters/pool)
 "wxk" = (
 /obj/lattice{
 	dir = 4;
@@ -66802,11 +66804,9 @@
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai_upload)
 "wPB" = (
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor{
-	dir = 8
-	},
-/turf/simulated/floor/pool/no_animate,
-/area/station/crew_quarters/pool)
+/obj/fluid_pipe/elbow/supply,
+/turf/simulated/floor/plating,
+/area/station/maintenance/southwest)
 "wPN" = (
 /obj/machinery/light,
 /obj/disposalpipe/segment/produce{
@@ -109448,7 +109448,7 @@ rmN
 kHH
 kHH
 kHH
-tqd
+rlq
 sMz
 kHH
 kHH
@@ -110052,7 +110052,7 @@ rMr
 aGZ
 aGZ
 aGZ
-rlq
+olJ
 aGY
 aGZ
 tXV
@@ -110656,9 +110656,9 @@ aGY
 aIg
 aIf
 aKB
-aLQ
-aMV
 aDC
+aMV
+aLQ
 aPl
 tMh
 aRs
@@ -110960,7 +110960,7 @@ aIf
 aKC
 rqI
 aLS
-wPB
+wwV
 ave
 ujW
 aRt
@@ -111649,7 +111649,7 @@ ckZ
 cpR
 aif
 cuw
-dTF
+wPB
 cwo
 rgb
 ahh
@@ -112858,7 +112858,7 @@ ula
 chb
 aib
 cvH
-mkT
+lmq
 oEG
 cwZ
 cxj
@@ -119112,8 +119112,8 @@ xhn
 aHp
 aJK
 aKT
-tqh
 aMd
+jyK
 aOy
 aPw
 aQA
