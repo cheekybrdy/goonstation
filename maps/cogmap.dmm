@@ -32032,11 +32032,10 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
 "dyE" = (
-/obj/fluid_pipe/straight/waste,
-/obj/cable{
-	icon_state = "1-2"
+/obj/fluid_pipe/straight/waste{
+	dir = 4
 	},
-/turf/simulated/floor/white,
+/turf/simulated/floor/bluewhite,
 /area/station/medical/medbay)
 "dze" = (
 /obj/effects/background_objects/x0{
@@ -41055,11 +41054,9 @@
 /turf/simulated/floor/plating,
 /area/station/engine/hotloop)
 "izB" = (
+/obj/fluid_pipe/straight/waste,
 /obj/cable{
 	icon_state = "1-2"
-	},
-/obj/fluid_pipe/elbow/waste{
-	dir = 1
 	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
@@ -67245,7 +67242,7 @@
 /obj/fluid_pipe/straight/waste{
 	dir = 4
 	},
-/turf/simulated/floor/bluewhite,
+/turf/simulated/floor/white,
 /area/station/medical/medbay)
 "xmy" = (
 /obj/machinery/conveyor/WE{
@@ -68148,8 +68145,11 @@
 /turf/simulated/floor/darkblue,
 /area/station/medical/medbay/psychiatrist)
 "xPZ" = (
-/obj/fluid_pipe/straight/waste{
-	dir = 4
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/fluid_pipe/elbow/waste{
+	dir = 1
 	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
@@ -103042,7 +103042,7 @@ cjk
 kfV
 dTF
 cqB
-xmh
+dyE
 cjk
 vGP
 vGP
@@ -103646,7 +103646,7 @@ dmk
 cox
 uLF
 cqB
-xPZ
+xmh
 gDm
 qDD
 syc
@@ -103948,7 +103948,7 @@ cnk
 qaa
 tlj
 cqB
-xPZ
+xmh
 hYK
 oPE
 syc
@@ -104249,8 +104249,8 @@ bVR
 cnl
 ggh
 tpP
-dyE
 izB
+xPZ
 rTe
 kGi
 iuY
