@@ -395,6 +395,8 @@ var/global
 
 	literal_disarm = 0
 
+	skeleton_crew = 0
+
 #ifdef RP_MODE
 	global_sims_mode = 1 // SET THIS TO 0 TO DISABLE SIMS MODE
 #else

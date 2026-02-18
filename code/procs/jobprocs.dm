@@ -48,6 +48,7 @@ else if (istype(JOB, /datum/job/security/security_officer))\
 	set background = 1
 
 	var/list/unassigned = list()
+	var/skeleton_crew_threshold = 15 //when do we give extra access to keep the station functioning on lower populations?
 
 	for (var/client/C)
 		var/mob/new_player/player = C.mob
@@ -57,6 +58,8 @@ else if (istype(JOB, /datum/job/security/security_officer))\
 		if (player.ready_play && !player.mind.assigned_role)
 			unassigned += player
 	var/inital_ready = length(unassigned) // Doing this here cause other job allocations take away
+	if(inital_ready <= skeleton_crew_threshold)
+		skeleton_crew = 1
 	var/percent_readied_up = length(clients) ? (length(unassigned)/length(clients)) * 100 : 0
 	logTheThing(LOG_DEBUG, null, "<b>Aloe</b>: roughly [percent_readied_up]% of players were readied up at roundstart (blobs and wraiths don't count).")
 

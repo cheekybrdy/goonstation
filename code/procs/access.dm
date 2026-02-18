@@ -319,6 +319,7 @@
 		else
 			return list()
 
+
 /proc/get_all_accesses()  // not adding the special stuff to this
 #if defined(I_MEAN_ALL_ACCESS)
 	return access_all_actually
@@ -337,6 +338,15 @@
 				access_research, access_research_director, access_dwaine_superuser, access_engineering_atmos, access_medical_director,
 				access_researchfoyer, access_telesci, access_artlab, access_robotdepot, access_money)
 #endif
+
+var/list/skele_access_sec = (access_security, access_brig, access_forensics_lockers, access_ticket, access_fine_small,
+							access_morgue, access_securitylockers, access_carrypermit, access_contrabandpermit)
+
+var/list/skele_access_civ = (access_kitchen, access_bar, access_janitor, access_hydro, access_ranch)
+
+var/list/skele_access_med =  (access_medical, access_medlab, access_morgue, access_medical_lockers, access_pharmacy)
+
+/proc/get_skeleton_accesses()
 
 // Generated at round start.
 var/list/access_name_lookup = null
