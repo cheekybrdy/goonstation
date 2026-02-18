@@ -292,6 +292,8 @@ else if (istype(JOB, /datum/job/security/security_officer))\
 		SPAWN(1 SECOND)
 			announce_heads_of_staff()
 	boutput(src, "<B>You are the [JOB.name].</B>")
+	if(skeleton_crew)
+		boutput(src, "<B>The station is currently being staffed by a skeleton crew, your ID may have additional access within your department.</B>")
 	src.job = JOB.name
 	src.mind.assigned_role = JOB.name
 
