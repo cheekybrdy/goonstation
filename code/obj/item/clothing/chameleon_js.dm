@@ -1752,6 +1752,18 @@ ABSTRACT_TYPE(/datum/chameleon_suit_pattern)
 		icon_state = "satchel_genetics"
 		item_state = "satchel_genetics"
 
+	pharma
+		name = "pharmacy satchel"
+		desc = "A thick, wearable container made of synthetic fibers, able to carry a number of objects safely on the back of pharmacists."
+		icon_state = "bp_pharmacy"
+		item_state = "bp_pharmacy"
+
+	pharma_satchel
+		name = "pharmacy satchel"
+		desc = "A thick, wearable container made of synthetic fibers, able to carry a number of objects safely on the shoulder of pharmacists."
+		icon_state = "satchel_pharmacy"
+		item_state = "satchel_pharmacy"
+
 	medic
 		name = "medic's backpack"
 		desc = "A thick, wearable container made of synthetic fibers, able to carry a number of objects comfortably on a Medical Doctor's back."
