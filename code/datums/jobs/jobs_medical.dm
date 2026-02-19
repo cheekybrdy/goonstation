@@ -98,7 +98,7 @@ ABSTRACT_TYPE(/datum/job/medical)
 	limit = 1 // limited workspace
 	access_string = "Pharmacist"
 	slot_back = list(/obj/item/storage/backpack/pharma)
-	slot_belt = list(/obj/item/device/pda2/medical/pharma)
+	slot_belt = list(/obj/item/device/pda2/pharma)
 	slot_foot = list(/obj/item/clothing/shoes/white)
 	slot_jump = list(/obj/item/clothing/under/rank/pharmacist)
 	slot_suit = list(/obj/item/clothing/suit/labcoat/pharmacist)
