@@ -231,7 +231,7 @@
 		mailgroups = list(MGD_MEDBAY,MGD_MEDRESEACH,MGD_PARTY)
 		alertgroups = list(MGA_MAIL, MGA_RADIO, MGA_SALES, MGA_CRISIS, MGA_CLONER)
 
-	pharma
+	pharmacist
 		name = "Pharmacy PDA"
 		icon_state = "pda-pha"
 		setup_default_cartridge = /obj/item/disk/data/cartridge/medical
