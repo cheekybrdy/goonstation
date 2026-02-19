@@ -42823,7 +42823,6 @@
 	name = "Chemistry Privacy Shutters";
 	opacity = 0
 	},
-/obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
