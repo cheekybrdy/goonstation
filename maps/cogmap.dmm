@@ -23138,15 +23138,15 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
 "bVH" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/disposalpipe/segment/mail{
+/obj/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/purple/side{
-	dir = 1
+/obj/disposalpipe/segment/mail,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
 	},
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor,
 /area/station/hallway/primary/south)
 "bVM" = (
 /obj/cable{
@@ -23161,6 +23161,9 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/purple/corner{
 	dir = 1
 	},
@@ -23170,6 +23173,9 @@
 	icon_state = "4-8"
 	},
 /obj/disposalpipe/segment/mail{
+	dir = 4
+	},
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -23184,6 +23190,9 @@
 	icon_state = "pipe-sj2";
 	mail_tag = "robotics";
 	name = "robotics mail router"
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
@@ -23203,6 +23212,9 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "bVT" = (
@@ -23212,6 +23224,9 @@
 /obj/disposalpipe/segment/mail{
 	dir = 2;
 	icon_state = "pipe-c"
+	},
+/obj/fluid_pipe/elbow/supply{
+	dir = 8
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
@@ -32085,11 +32100,9 @@
 	},
 /area/station/engine/monitoring)
 "dAW" = (
-/obj/fluid_pipe/elbow/supply/overfloor{
-	dir = 4
-	},
+/obj/fluid_pipe/straight/waste/overfloor,
 /turf/simulated/wall/auto/supernorn,
-/area/station/medical/robotics)
+/area/station/maintenance/southwest)
 "dBu" = (
 /obj/cable,
 /obj/cable{
@@ -37527,7 +37540,9 @@
 /obj/machinery/camera/directional/west{
 	pixel_y = 10
 	},
-/obj/fluid_pipe/elbow/supply,
+/obj/fluid_pipe/t_junction/supply{
+	dir = 4
+	},
 /turf/simulated/floor/yellow/side,
 /area/station/hallway/primary/south)
 "gCi" = (
@@ -42576,6 +42591,9 @@
 	dir = 1;
 	pixel_y = 16
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/purple/side{
 	dir = 1
 	},
@@ -43132,9 +43150,7 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
-/obj/fluid_pipe/elbow/supply{
-	dir = 8
-	},
+/obj/fluid_pipe/t_junction/supply,
 /turf/simulated/floor/purple/side{
 	dir = 1
 	},
@@ -47104,6 +47120,12 @@
 	dir = 1
 	},
 /area/station/turret_protected/ai_upload_foyer)
+"lZr" = (
+/obj/fluid_pipe/straight/waste/overfloor{
+	dir = 4
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/station/crew_quarters/toilets)
 "lZA" = (
 /obj/landmark/halloween,
 /obj/disposalpipe/segment/mail{
@@ -49694,6 +49716,9 @@
 	dir = 4
 	},
 /obj/mapping_helper/firedoor_spawn,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "nyC" = (
@@ -58417,8 +58442,8 @@
 	dir = 4;
 	name = "crematorium pipe"
 	},
-/obj/fluid_pipe/t_junction/supply{
-	dir = 8
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southwest)
@@ -60920,12 +60945,6 @@
 /obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/carpet/arcade,
 /area/station/crew_quarters/arcade)
-"tLI" = (
-/obj/fluid_pipe/straight/waste/overfloor{
-	dir = 4
-	},
-/turf/simulated/wall/auto/supernorn,
-/area/station/crew_quarters/toilets)
 "tLQ" = (
 /obj/machinery/disposal,
 /obj/disposalpipe/trunk{
@@ -61618,6 +61637,9 @@
 	icon_state = "pipe-sj2";
 	mail_tag = "genetics";
 	name = "genetics mail router"
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
 /turf/simulated/floor/purple/side{
 	dir = 1
@@ -62800,7 +62822,7 @@
 /obj/disposalpipe/segment/morgue{
 	name = "crematorium pipe"
 	},
-/obj/fluid_pipe/t_junction/supply,
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/southwest)
 "uFk" = (
@@ -62843,10 +62865,6 @@
 /obj/machinery/space_heater,
 /turf/simulated/floor/wood,
 /area/station/crew_quarters/pool)
-"uGG" = (
-/obj/fluid_pipe/straight/waste/overfloor,
-/turf/simulated/wall/auto/supernorn,
-/area/station/maintenance/southwest)
 "uHb" = (
 /obj/strip_door,
 /obj/disposalpipe/segment,
@@ -65469,6 +65487,9 @@
 	dir = 4
 	},
 /obj/disposalpipe/segment,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "wfP" = (
@@ -108629,7 +108650,7 @@ qoP
 obL
 bNi
 bNi
-bVH
+oUr
 tLU
 bYm
 bLG
@@ -111956,7 +111977,7 @@ tLU
 aif
 bZt
 srh
-dAW
+cca
 cca
 cca
 cca
@@ -112255,7 +112276,7 @@ wph
 bUB
 bVO
 rlV
-uGG
+dAW
 fTv
 rxx
 uFj
@@ -112559,7 +112580,7 @@ bVO
 tLU
 bYe
 qgc
-tLI
+lZr
 qgc
 qgc
 aif
@@ -114066,7 +114087,7 @@ bRD
 vcr
 bUA
 bVT
-vPW
+bVH
 gBU
 jGE
 aaG
