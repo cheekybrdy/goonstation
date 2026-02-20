@@ -4930,7 +4930,7 @@
 /obj/stool/chair/comfy/wheelchair{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/supply{
+/obj/fluid_pipe/elbow/supply{
 	dir = 4
 	},
 /turf/simulated/floor/bluewhite/corner{
@@ -4991,9 +4991,6 @@
 	},
 /obj/item/paper_bin,
 /obj/item/pen,
-/obj/fluid_pipe/straight/waste{
-	dir = 4
-	},
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "ayu" = (
@@ -5003,9 +5000,6 @@
 	pixel_y = 32
 	},
 /obj/disposalpipe/segment/brig{
-	dir = 4
-	},
-/obj/fluid_pipe/straight/waste{
 	dir = 4
 	},
 /turf/simulated/floor/grime,
@@ -5023,9 +5017,7 @@
 /obj/disposalpipe/trunk/brig{
 	dir = 8
 	},
-/obj/fluid_pipe/elbow/waste{
-	dir = 1
-	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "ayw" = (
@@ -5359,6 +5351,7 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "azU" = (
@@ -6162,6 +6155,9 @@
 	icon_state = "darkwindow";
 	name = "divider window"
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "aCJ" = (
@@ -6174,11 +6170,17 @@
 	icon_state = "darkwindow";
 	name = "divider window"
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/specialroom/bar,
 /area/station/security/secwing)
 "aCK" = (
 /obj/stool/chair{
 	dir = 8
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
 /turf/simulated/floor/specialroom/bar,
 /area/station/security/secwing)
@@ -8381,6 +8383,7 @@
 	pixel_x = 1;
 	pixel_y = 3
 	},
+/obj/fluid_pipe/elbow/waste,
 /turf/simulated/floor/bluewhite{
 	dir = 9
 	},
@@ -8679,6 +8682,10 @@
 /area/station/crew_quarters/cafeteria)
 "aMc" = (
 /obj/iv_stand,
+/obj/machinery/sink/piped/slim{
+	dir = 4;
+	pixel_x = -5
+	},
 /turf/simulated/floor/bluewhite{
 	dir = 8
 	},
@@ -8959,7 +8966,6 @@
 /obj/machinery/sleeper/compact{
 	dir = 8
 	},
-/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/bluewhite{
 	dir = 9
 	},
@@ -9392,7 +9398,6 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/bluewhite{
 	dir = 8
 	},
@@ -9407,9 +9412,6 @@
 /obj/disposalpipe/segment/mail,
 /obj/cable{
 	icon_state = "5-8"
-	},
-/obj/fluid_pipe/straight/waste{
-	dir = 4
 	},
 /turf/simulated/floor/white,
 /area/station/medical/medbooth)
@@ -9741,25 +9743,16 @@
 /area/station/crew_quarters/jazz)
 "aPt" = (
 /obj/machinery/vending/medical,
-/obj/fluid_pipe/elbow/supply{
-	dir = 4
-	},
 /turf/simulated/floor/bluewhite{
 	dir = 10
 	},
 /area/station/medical/medbooth)
 "aPu" = (
 /obj/storage/secure/closet/medical/medicine,
-/obj/machinery/sink/piped/slim{
-	dir = 1
-	},
 /turf/simulated/floor/bluewhite,
 /area/station/medical/medbooth)
 "aPv" = (
 /obj/storage/secure/closet/medical/uniforms,
-/obj/fluid_pipe/elbow/waste{
-	dir = 1
-	},
 /turf/simulated/floor/bluewhite,
 /area/station/medical/medbooth)
 "aPw" = (
@@ -35040,6 +35033,9 @@
 	dir = 1
 	},
 /obj/landmark/start/job/medical_doctor,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/bluewhite{
 	dir = 1
 	},
@@ -37717,7 +37713,9 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
-/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/t_junction/waste{
+	dir = 8
+	},
 /turf/simulated/floor/bluewhite{
 	dir = 5
 	},
@@ -40926,9 +40924,7 @@
 /obj/disposalpipe/junction{
 	name = "ejection pipe"
 	},
-/obj/fluid_pipe/t_junction/waste{
-	dir = 4
-	},
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "iuW" = (
@@ -44573,12 +44569,12 @@
 /turf/simulated/floor,
 /area/station/security/main)
 "kwG" = (
-/obj/cable{
-	icon_state = "4-8"
+/obj/mapping_helper/wingrille_spawn/auto,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
-/obj/fluid_pipe/elbow/waste,
-/turf/simulated/floor/white,
-/area/station/medical/medbooth)
+/turf/simulated/floor/plating,
+/area/station/ranch)
 "kwY" = (
 /obj/mesh/grille/steel,
 /turf/simulated/floor/plating,
@@ -44989,9 +44985,6 @@
 "kJF" = (
 /obj/machinery/alarm{
 	pixel_y = 23
-	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
 	},
 /turf/simulated/floor/bluewhite{
 	dir = 1
@@ -50400,9 +50393,6 @@
 	},
 /area/station/chapel/sanctuary)
 "nTh" = (
-/obj/fluid_pipe/elbow/waste{
-	dir = 1
-	},
 /turf/simulated/floor/white,
 /area/station/medical/medbooth)
 "nTE" = (
@@ -50519,10 +50509,7 @@
 /obj/disposalpipe/segment/food{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/waste{
-	dir = 4
-	},
-/obj/fluid_pipe/straight/supply,
+/obj/fluid_pipe/t_junction/waste,
 /turf/simulated/floor/sanitary,
 /area/station/security/brig)
 "nYG" = (
@@ -50892,9 +50879,14 @@
 	},
 /area/mining/magnet)
 "okg" = (
-/obj/fluid_pipe/elbow/supply/overfloor,
-/turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/security/brig)
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/fluid_pipe/t_junction/supply{
+	dir = 8
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/station/security/secwing)
 "oko" = (
 /obj/mesh/catwalk{
 	dir = 5
@@ -51901,7 +51893,6 @@
 /obj/cable{
 	icon_state = "5-10"
 	},
-/obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/white,
 /area/station/medical/medbooth)
 "oLp" = (
@@ -52214,7 +52205,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "oTC" = (
-/obj/fluid_pipe/straight/waste/overfloor,
+/obj/fluid_pipe/straight/supply/overfloor,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/security/brig)
 "oTO" = (
@@ -53261,6 +53252,9 @@
 	icon_state = "0-8"
 	},
 /obj/fluid_pipe/straight/supply,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/bluewhite{
 	dir = 1
 	},
@@ -54644,6 +54638,7 @@
 /obj/item/device/radio/intercom/brig{
 	dir = 8
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "qjx" = (
@@ -56625,10 +56620,11 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/solar/west)
 "rnO" = (
-/obj/fluid_pipe/t_junction/supply/overfloor{
-	dir = 8
+/obj/stool,
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
 	},
-/turf/simulated/wall/auto/reinforced/supernorn,
+/turf/simulated/floor/grime,
 /area/station/security/brig)
 "rom" = (
 /obj/machinery/navbeacon/tour/cog1/tour19,
@@ -60663,10 +60659,6 @@
 	},
 /turf/simulated/floor,
 /area/station/turret_protected/Zeta)
-"tCD" = (
-/obj/fluid_pipe/elbow/waste,
-/turf/simulated/floor/white,
-/area/station/medical/medbooth)
 "tCI" = (
 /obj/machinery/conveyor/NS{
 	id = "cargo"
@@ -62003,9 +61995,7 @@
 /obj/cable{
 	icon_state = "1-10"
 	},
-/obj/fluid_pipe/t_junction/waste{
-	dir = 8
-	},
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/bluewhite{
 	dir = 4
 	},
@@ -102525,14 +102515,14 @@ gsY
 uUh
 aho
 aho
-okg
+aho
 nYC
 sxd
 oTC
 ayv
 azS
 qiY
-anK
+rnO
 kfd
 aFl
 azN
@@ -102827,7 +102817,7 @@ oSm
 eco
 qcv
 lIX
-rnO
+oTC
 pgg
 qkK
 aho
@@ -103740,7 +103730,7 @@ mJL
 pbn
 iVi
 kGb
-kGb
+okg
 ykc
 meL
 ayy
@@ -119151,7 +119141,7 @@ aJJ
 aKS
 aMc
 aya
-kwG
+aOx
 aPv
 aQz
 ybw
@@ -119753,7 +119743,7 @@ bNf
 bVG
 aJL
 ffm
-tCD
+nTh
 oKQ
 nTh
 nlE
@@ -126679,7 +126669,7 @@ jKe
 ajh
 aki
 amD
-apY
+kwG
 apY
 apY
 lax
