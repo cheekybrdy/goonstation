@@ -178,6 +178,10 @@ TYPEINFO(/obj/machinery/drainage/big)
 		amount = 330
 		reagent_id = "wine"
 
+	chlorine
+		amount = 150
+		reagent_id = "chlorine"
+
 	reservior
 		amount = 80000
 #ifdef HALLOWEEN

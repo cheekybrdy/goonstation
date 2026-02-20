@@ -44968,6 +44968,10 @@
 	name = "pool supply valve";
 	dir = 1
 	},
+/obj/item/reagent_containers/food/drinks/fueltank/chlorine{
+	pixel_x = 8;
+	pixel_y = 8
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/central)
 "kNi" = (
@@ -63233,6 +63237,10 @@
 /obj/fluid_pipe/elbow/supply/overfloor,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/storage)
+"uYl" = (
+/obj/fluid_spawner/chlorine,
+/turf/simulated/floor/pool/no_animate,
+/area/station/crew_quarters/pool)
 "uYD" = (
 /obj/disposalpipe/segment,
 /obj/fluid_pipe/elbow/waste{
@@ -111726,7 +111734,7 @@ aIf
 aKC
 aLS
 jYs
-aLS
+uYl
 ave
 mRh
 vIX
