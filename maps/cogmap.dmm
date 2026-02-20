@@ -33176,7 +33176,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/fluid_machinery/binary/pump{
+/obj/machinery/fluid_machinery/binary/valve/active{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
@@ -54084,7 +54084,7 @@
 /turf/simulated/floor,
 /area/station/medical/dome)
 "pTl" = (
-/obj/machinery/fluid_machinery/binary/pump,
+/obj/machinery/fluid_machinery/binary/valve/active,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "pTo" = (
@@ -60983,7 +60983,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/obj/machinery/fluid_machinery/binary/pump{
+/obj/machinery/fluid_machinery/binary/valve/active{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
