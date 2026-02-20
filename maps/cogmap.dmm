@@ -19650,6 +19650,9 @@
 	dir = 8;
 	tag = ""
 	},
+/obj/fluid_pipe/elbow/waste{
+	dir = 4
+	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/toilets)
 "bIB" = (
@@ -34410,9 +34413,6 @@
 	dir = 1;
 	pixel_y = 21
 	},
-/obj/fluid_pipe/elbow/waste{
-	dir = 8
-	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/bathroom)
 "eNz" = (
@@ -37344,7 +37344,6 @@
 /obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/bathroom)
 "gxI" = (
@@ -40150,6 +40149,7 @@
 /obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/bathroom)
 "icD" = (
@@ -52092,6 +52092,9 @@
 	pixel_x = -8
 	},
 /obj/landmark/bill_spawn,
+/obj/fluid_pipe/elbow/waste{
+	dir = 4
+	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/bathroom)
 "oTX" = (
@@ -52198,9 +52201,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/obj/fluid_pipe/t_junction/waste{
-	dir = 8
-	},
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/toilets)
 "oVe" = (
@@ -64479,8 +64480,10 @@
 	},
 /area/station/ranch)
 "vMf" = (
-/obj/fluid_pipe/straight/waste,
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/active,
+/obj/fluid_pipe/t_junction/waste{
+	dir = 8
+	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/toilets)
 "vMX" = (
