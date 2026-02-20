@@ -9601,9 +9601,7 @@
 	dir = 4
 	},
 /obj/decal/tile_edge/stripe/extra_big,
-/obj/fluid_pipe/straight/supply/overfloor{
-	dir = 4
-	},
+/obj/fluid_pipe/t_junction/supply,
 /turf/simulated/floor,
 /area/station/science/lobby)
 "aPc" = (
@@ -44569,12 +44567,14 @@
 /turf/simulated/floor,
 /area/station/security/main)
 "kwG" = (
-/obj/mapping_helper/wingrille_spawn/auto,
-/obj/fluid_pipe/straight/supply{
-	dir = 4
+/obj/cable{
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating,
-/area/station/ranch)
+/obj/fluid_pipe/t_junction/supply{
+	dir = 8
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/station/security/secwing)
 "kwY" = (
 /obj/mesh/grille/steel,
 /turf/simulated/floor/plating,
@@ -50393,8 +50393,12 @@
 	},
 /area/station/chapel/sanctuary)
 "nTh" = (
-/turf/simulated/floor/white,
-/area/station/medical/medbooth)
+/obj/mapping_helper/wingrille_spawn/auto,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/ranch)
 "nTE" = (
 /turf/simulated/floor/redblack{
 	dir = 4
@@ -50878,15 +50882,6 @@
 	dir = 10
 	},
 /area/mining/magnet)
-"okg" = (
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/fluid_pipe/t_junction/supply{
-	dir = 8
-	},
-/turf/simulated/floor/specialroom/bar,
-/area/station/security/secwing)
 "oko" = (
 /obj/mesh/catwalk{
 	dir = 5
@@ -52205,8 +52200,11 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "oTC" = (
-/obj/fluid_pipe/straight/supply/overfloor,
-/turf/simulated/wall/auto/reinforced/supernorn,
+/obj/stool,
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
+/turf/simulated/floor/grime,
 /area/station/security/brig)
 "oTO" = (
 /obj/decal/tile_edge/stripe/extra_big{
@@ -56620,11 +56618,8 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/solar/west)
 "rnO" = (
-/obj/stool,
-/obj/fluid_pipe/elbow/supply{
-	dir = 4
-	},
-/turf/simulated/floor/grime,
+/obj/fluid_pipe/straight/supply/overfloor,
+/turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/security/brig)
 "rom" = (
 /obj/machinery/navbeacon/tour/cog1/tour19,
@@ -60659,6 +60654,9 @@
 	},
 /turf/simulated/floor,
 /area/station/turret_protected/Zeta)
+"tCD" = (
+/turf/simulated/floor/white,
+/area/station/medical/medbooth)
 "tCI" = (
 /obj/machinery/conveyor/NS{
 	id = "cargo"
@@ -102518,11 +102516,11 @@ aho
 aho
 nYC
 sxd
-oTC
+rnO
 ayv
 azS
 qiY
-rnO
+oTC
 kfd
 aFl
 azN
@@ -102817,7 +102815,7 @@ oSm
 eco
 qcv
 lIX
-oTC
+rnO
 pgg
 qkK
 aho
@@ -103730,7 +103728,7 @@ mJL
 pbn
 iVi
 kGb
-okg
+kwG
 ykc
 meL
 ayy
@@ -119743,9 +119741,9 @@ bNf
 bVG
 aJL
 ffm
-nTh
+tCD
 oKQ
-nTh
+tCD
 nlE
 aQB
 nyV
@@ -126669,7 +126667,7 @@ jKe
 ajh
 aki
 amD
-kwG
+nTh
 apY
 apY
 lax
