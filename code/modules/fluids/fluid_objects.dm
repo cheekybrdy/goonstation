@@ -200,7 +200,7 @@ TYPEINFO(/obj/machinery/drainage/big)
 				if(-INFINITY to 24.5)
 					qdel(src)
 				if (25 to 49)
-					reagent_id = "fluorine"
+					reagent_id = "chlorine"
 				if (50 to 74)
 					reagent_id = "seawater"
 				if (75 to 90)
