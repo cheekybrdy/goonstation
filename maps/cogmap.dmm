@@ -32730,9 +32730,6 @@
 	},
 /area/station/science/teleporter)
 "dTF" = (
-/obj/disposalpipe/segment/mail{
-	dir = 4
-	},
 /obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
@@ -43610,9 +43607,6 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/disposalpipe/trunk/mail{
-	dir = 8
-	},
 /obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
@@ -53822,9 +53816,6 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/central)
 "pLd" = (
-/obj/disposalpipe/segment/mail{
-	dir = 4
-	},
 /obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
