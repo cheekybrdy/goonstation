@@ -1603,6 +1603,9 @@
 	icon_state = "1-8"
 	},
 /obj/disposalpipe/segment/food,
+/obj/fluid_pipe/elbow/supply{
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "agK" = (
@@ -1845,6 +1848,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/blue,
 /area/station/crew_quarters/quartersB)
 "ahF" = (
@@ -1862,6 +1866,9 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "ahH" = (
@@ -1871,6 +1878,9 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 5
 	},
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "ahI" = (
@@ -1879,6 +1889,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
+	},
+/obj/fluid_pipe/elbow/waste{
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
@@ -2056,6 +2069,7 @@
 /obj/window/cubicle{
 	dir = 2
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/blue,
 /area/station/crew_quarters/quartersB)
 "aiY" = (
@@ -2252,6 +2266,7 @@
 /obj/window/cubicle{
 	dir = 4
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/blue,
 /area/station/crew_quarters/quartersB)
 "ajL" = (
@@ -2263,6 +2278,7 @@
 "ajN" = (
 /obj/machinery/atmospherics/pipe/simple,
 /obj/disposalpipe/segment,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "ajP" = (
@@ -2684,6 +2700,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "alV" = (
@@ -2766,6 +2783,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "amL" = (
@@ -2964,6 +2982,7 @@
 /area/station/crew_quarters/fitness)
 "aof" = (
 /obj/machinery/atmospherics/pipe/simple,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "aoh" = (
@@ -3094,6 +3113,9 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "ape" = (
@@ -3101,6 +3123,7 @@
 /area/station/crew_quarters/barber_shop)
 "aph" = (
 /obj/disposalpipe/segment/mail,
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor,
 /area/station/crew_quarters/locker)
 "api" = (
@@ -3116,6 +3139,9 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "app" = (
@@ -3123,6 +3149,9 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple,
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "apq" = (
@@ -3752,6 +3781,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "ath" = (
@@ -4003,6 +4033,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "auy" = (
@@ -4244,6 +4275,9 @@
 /obj/decal/cleanable/dirt,
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
@@ -4977,6 +5011,7 @@
 /obj/disposalpipe/trunk/brig{
 	dir = 8
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "ayw" = (
@@ -5310,6 +5345,7 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "azU" = (
@@ -6113,6 +6149,9 @@
 	icon_state = "darkwindow";
 	name = "divider window"
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "aCJ" = (
@@ -6125,11 +6164,17 @@
 	icon_state = "darkwindow";
 	name = "divider window"
 	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/specialroom/bar,
 /area/station/security/secwing)
 "aCK" = (
 /obj/stool/chair{
 	dir = 8
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
 	},
 /turf/simulated/floor/specialroom/bar,
 /area/station/security/secwing)
@@ -30880,6 +30925,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/medical/medbay/treatment)
+"cTB" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/obj/fluid_pipe/elbow/waste{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/northwest)
 "cTF" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -32748,9 +32805,13 @@
 /turf/simulated/floor,
 /area/station/medical/medbay/surgery)
 "dVB" = (
-/obj/fluid_pipe/elbow/supply/overfloor,
-/turf/simulated/wall/auto/supernorn,
-/area/station/crew_quarters/bathroom)
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
+/turf/simulated/floor/redblack{
+	dir = 4
+	},
+/area/station/security/evidence)
 "dVI" = (
 /obj/machinery/launcher_loader/west{
 	door_delay = 4
@@ -33597,9 +33658,6 @@
 /obj/disposalpipe/segment/food{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/supply/overfloor{
-	dir = 4
-	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/security/brig)
 "etu" = (
@@ -33925,9 +33983,7 @@
 	icon_state = "4-8"
 	},
 /obj/disposalpipe/segment,
-/obj/fluid_pipe/elbow/supply{
-	dir = 8
-	},
+/obj/fluid_pipe/t_junction/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "eBF" = (
@@ -35751,7 +35807,7 @@
 /area/station/maintenance/southwest)
 "fyR" = (
 /obj/disposalpipe/segment/mail,
-/obj/fluid_pipe/elbow/supply{
+/obj/fluid_pipe/t_junction/supply{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -36005,6 +36061,12 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
+"fGn" = (
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
+/turf/simulated/floor/black,
+/area/station/security/evidence)
 "fGA" = (
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 4
@@ -36303,6 +36365,7 @@
 /area/station/routing/depot)
 "fQc" = (
 /obj/fluid_spawner/reservior,
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active,
 /turf/simulated/floor/plating,
 /area/station/janitor/reservior)
 "fQh" = (
@@ -37341,9 +37404,6 @@
 /obj/machinery/door/window/southright,
 /obj/landmark/antagonist/blob,
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/active,
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/bathroom)
 "gxI" = (
@@ -38455,6 +38515,14 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
 /area/station/ai_monitored/storage/eva)
+"had" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/disposalpipe/segment/food,
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor/plating,
+/area/station/maintenance/northwest)
 "hao" = (
 /obj/machinery/status_display{
 	pixel_x = 32
@@ -40146,9 +40214,6 @@
 	dir = 2
 	},
 /obj/item/reagent_containers/glass/bottle/bubblebath,
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
 /obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/bathroom)
@@ -40336,6 +40401,9 @@
 /obj/machinery/door/airlock/pyro{
 	dir = 4;
 	locked = 1
+	},
+/obj/forcefield/energyshield/perma/doorlink{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/reservior)
@@ -41019,6 +41087,18 @@
 /obj/landmark/engine_room,
 /turf/space,
 /area/space)
+"iDd" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/fluid_machinery/binary/pump/active{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/northwest)
 "iDg" = (
 /obj/fluid_pipe/straight/waste,
 /obj/fluid_pipe/straight/supply{
@@ -41407,9 +41487,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/specialroom/cafeteria,
 /area/station/crew_quarters/barber_shop)
 "iRs" = (
@@ -42414,9 +42492,7 @@
 	pixel_y = 31
 	},
 /obj/machinery/interdictor/ranch,
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/wood/seven,
 /area/station/ranch)
 "jxG" = (
@@ -42457,9 +42533,6 @@
 	desc = "A chute for sending things to the kitchen";
 	id = "ranch_flusher";
 	name = "Kitchen Chute"
-	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
 	},
 /turf/simulated/floor,
 /area/station/ranch)
@@ -44224,6 +44297,9 @@
 /obj/disposalpipe/segment{
 	dir = 4
 	},
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/blue,
 /area/station/medical/staff)
 "kqK" = (
@@ -44453,6 +44529,13 @@
 /obj/decal/stripe_caution,
 /turf/simulated/floor,
 /area/station/security/main)
+"kwG" = (
+/obj/stool,
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
+/turf/simulated/floor/grime,
+/area/station/security/brig)
 "kwY" = (
 /obj/mesh/grille/steel,
 /turf/simulated/floor/plating,
@@ -45047,9 +45130,11 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/southwest)
 "kOD" = (
-/obj/fluid_pipe/straight/waste/overfloor,
-/turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/security/brig)
+/obj/fluid_pipe/t_junction/waste{
+	dir = 8
+	},
+/turf/simulated/floor/sanitary,
+/area/station/crew_quarters/toilets)
 "kOI" = (
 /obj/disposalpipe/segment,
 /obj/machinery/conveyor/NS{
@@ -45171,6 +45256,9 @@
 /obj/machinery/power/apc/autoname_west,
 /obj/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor/active{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/reservior)
@@ -45443,6 +45531,15 @@
 	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay/treatment)
+"lbB" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/northwest)
 "lce" = (
 /obj/cable{
 	icon_state = "0-2"
@@ -45863,6 +45960,15 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
+"lpT" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/fluid_pipe/t_junction/supply{
+	dir = 8
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/station/security/secwing)
 "lqf" = (
 /obj/cable/orange{
 	icon_state = "1-2"
@@ -45939,6 +46045,9 @@
 	},
 /obj/mapping_helper/firedoor_spawn,
 /obj/mapping_helper/access/maint,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/crew_quarters/quartersB)
 "lti" = (
@@ -46485,6 +46594,7 @@
 	pixel_y = -3;
 	pixel_x = -4
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/redblack{
 	dir = 10
 	},
@@ -50371,9 +50481,7 @@
 /obj/disposalpipe/segment/food{
 	dir = 4
 	},
-/obj/fluid_pipe/elbow/waste{
-	dir = 8
-	},
+/obj/fluid_pipe/t_junction/waste,
 /turf/simulated/floor/sanitary,
 /area/station/security/brig)
 "nYG" = (
@@ -51834,7 +51942,10 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/obj/fluid_pipe/elbow/waste,
+/obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "oNU" = (
@@ -52050,6 +52161,9 @@
 	icon_state = "pipe-c"
 	},
 /obj/fluid_pipe/straight/waste,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/wood/seven,
 /area/station/ranch)
 "oSX" = (
@@ -52600,6 +52714,9 @@
 	},
 /obj/mapping_helper/firedoor_spawn,
 /obj/mapping_helper/access/security,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/red,
 /area/station/security/evidence)
 "pdR" = (
@@ -52671,9 +52788,8 @@
 /obj/disposalpipe/segment/food{
 	dir = 4
 	},
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active,
-/obj/fluid_pipe/elbow/supply{
-	dir = 4
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
+	dir = 8
 	},
 /turf/simulated/floor/sanitary,
 /area/station/security/brig)
@@ -53257,6 +53373,9 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "puT" = (
@@ -53814,14 +53933,14 @@
 /turf/simulated/floor,
 /area/station/routing/engine)
 "pPQ" = (
-/obj/disposalpipe/segment/food{
+/obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
 /obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/northwest)
+/turf/simulated/floor/blue,
+/area/station/crew_quarters/quartersB)
 "pQg" = (
 /obj/machinery/door/poddoor/pyro/shutters{
 	density = 0;
@@ -53851,10 +53970,10 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/obj/machinery/fluid_machinery/binary/pump/active{
+/obj/fluid_pipe/straight/supply,
+/obj/fluid_pipe/straight/waste{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "pQJ" = (
@@ -54048,6 +54167,7 @@
 /obj/railing/orange/reinforced{
 	dir = 8
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/wood/seven,
 /area/station/ranch)
 "pVS" = (
@@ -54224,6 +54344,7 @@
 	pixel_y = -5;
 	pixel_x = 5
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/redblack{
 	dir = 8
 	},
@@ -54506,6 +54627,7 @@
 /obj/item/device/radio/intercom/brig{
 	dir = 8
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "qjx" = (
@@ -54557,17 +54679,11 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "qkK" = (
-/obj/machinery/sink/piped/slim{
-	dir = 8;
-	pixel_x = 6
-	},
 /obj/item/pen,
 /obj/item/paper_bin,
-/obj/fluid_pipe/t_junction/waste{
+/obj/item/storage/toilet{
 	dir = 8
 	},
-/obj/item/pen,
-/obj/item/paper_bin,
 /turf/simulated/floor/sanitary,
 /area/station/security/brig)
 "qkQ" = (
@@ -55054,6 +55170,16 @@
 	dir = 9
 	},
 /area/station/janitor/office)
+"qxe" = (
+/obj/stool/bed,
+/obj/landmark/start/job/assistant,
+/obj/item/clothing/suit/bedsheet{
+	bcolor = "blue";
+	icon_state = "bedsheet-blue"
+	},
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor/blue,
+/area/station/crew_quarters/quartersB)
 "qxv" = (
 /obj/machinery/fluid_machinery/binary/pump/active{
 	dir = 4
@@ -56129,9 +56255,6 @@
 /obj/disposalpipe/loafer{
 	dir = 4
 	},
-/obj/fluid_pipe/elbow/supply{
-	dir = 8
-	},
 /turf/simulated/floor,
 /area/station/maintenance/northwest)
 "raA" = (
@@ -57026,8 +57149,8 @@
 /turf/simulated/floor,
 /area/station/ai_monitored/storage/eva)
 "rHA" = (
-/obj/fluid_pipe/straight/supply{
-	dir = 4
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
 	},
 /turf/simulated/floor/black,
 /area/station/crew_quarters/bar)
@@ -57614,6 +57737,9 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
 /turf/simulated/floor/wood/seven,
 /area/station/ranch)
 "rYD" = (
@@ -58062,7 +58188,9 @@
 /area/station/quartermaster/office)
 "sjQ" = (
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/active,
-/obj/fluid_pipe/quad/waste,
+/obj/fluid_pipe/t_junction/waste{
+	dir = 4
+	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/bathroom)
 "sjY" = (
@@ -58118,11 +58246,11 @@
 /turf/space,
 /area/space)
 "slu" = (
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor/active{
-	dir = 4
-	},
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/fluid_pipe/t_junction/supply{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/reservior)
@@ -58309,6 +58437,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/turret_protected/ai_upload_foyer)
+"srp" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/crew_quarters/locker)
 "srq" = (
 /obj/machinery/plantpot,
 /turf/simulated/floor/grass{
@@ -58554,11 +58691,9 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
 "sxd" = (
-/obj/item/storage/toilet{
-	dir = 4
-	},
-/obj/fluid_pipe/elbow/waste{
-	dir = 4
+/obj/machinery/sink/piped/slim{
+	dir = 4;
+	pixel_x = -6
 	},
 /turf/simulated/floor/sanitary,
 /area/station/security/brig)
@@ -59155,6 +59290,7 @@
 	dir = 4
 	},
 /obj/reagent_dispensers/watertank/big,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/wood/seven,
 /area/station/ranch)
 "sNr" = (
@@ -59494,8 +59630,8 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/fluid_pipe/straight/waste{
-	dir = 4
+/obj/fluid_pipe/elbow/supply{
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
@@ -62213,6 +62349,9 @@
 /area/station/crew_quarters/quarters)
 "utH" = (
 /obj/submachine/laundry_machine,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
 /turf/simulated/floor/neutral/side{
 	dir = 4
 	},
@@ -63322,11 +63461,13 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "vaj" = (
-/obj/fluid_pipe/elbow/supply/overfloor{
-	dir = 4
+/obj/cable{
+	icon_state = "1-2"
 	},
-/turf/simulated/wall/auto/supernorn,
-/area/station/crew_quarters/bathroom)
+/obj/machinery/atmospherics/pipe/simple,
+/obj/fluid_pipe/elbow/waste,
+/turf/simulated/floor/plating,
+/area/station/maintenance/northwest)
 "vaq" = (
 /obj/table/reinforced/bar/auto,
 /turf/simulated/floor/specialroom/bar/edge,
@@ -63541,7 +63682,6 @@
 /obj/machinery/shower/piped{
 	dir = 1
 	},
-/obj/fluid_pipe/straight/supply/overfloor,
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/bathroom)
 "vhC" = (
@@ -64132,6 +64272,9 @@
 	dir = 4
 	},
 /obj/storage/secure/closet/civilian/ranch,
+/obj/fluid_pipe/elbow/supply{
+	dir = 1
+	},
 /turf/simulated/floor/wood/seven,
 /area/station/ranch)
 "vBA" = (
@@ -66120,7 +66263,7 @@
 /obj/window/cubicle{
 	dir = 2
 	},
-/obj/fluid_pipe/quad/supply,
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/bathroom)
 "wDs" = (
@@ -66197,7 +66340,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/obj/fluid_pipe/straight/supply,
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "wFV" = (
@@ -66948,8 +67091,8 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
-/obj/fluid_pipe/straight/waste{
-	dir = 4
+/obj/fluid_pipe/elbow/waste{
+	dir = 1
 	},
 /turf/simulated/floor/specialroom/cafeteria,
 /area/station/crew_quarters/barber_shop)
@@ -67652,8 +67795,8 @@
 /obj/railing/orange/reinforced{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
+/obj/fluid_pipe/elbow/supply{
+	dir = 8
 	},
 /turf/simulated/floor/wood/seven,
 /area/station/ranch)
@@ -68489,9 +68632,6 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor/active{
-	dir = 4
-	},
 /turf/simulated/floor/plating,
 /area/station/janitor/reservior)
 "xZQ" = (
@@ -68856,8 +68996,8 @@
 	},
 /obj/landmark/bill_spawn,
 /obj/landmark/start/job/assistant,
-/obj/fluid_pipe/straight/waste{
-	dir = 4
+/obj/fluid_pipe/elbow/waste{
+	dir = 1
 	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/toilets)
@@ -102359,11 +102499,11 @@ aho
 aho
 nYC
 sxd
-aho
+rnO
 ayv
 azS
 qiY
-anK
+kwG
 kfd
 aFl
 azN
@@ -102661,7 +102801,7 @@ lIX
 rnO
 pgg
 qkK
-kOD
+aho
 aho
 dcw
 aho
@@ -102957,7 +103097,7 @@ eym
 qPT
 tTl
 aAE
-aAE
+fGn
 vhC
 sxC
 aho
@@ -103259,11 +103399,11 @@ jRq
 aAE
 aAE
 aAE
-aAE
+fGn
 aAE
 hIS
 uFn
-pPQ
+auw
 oYj
 awT
 ayw
@@ -103561,7 +103701,7 @@ cZR
 xRC
 dBI
 urV
-nTE
+dVB
 nTE
 lov
 uFn
@@ -103571,7 +103711,7 @@ mJL
 pbn
 iVi
 kGb
-kGb
+lpT
 ykc
 meL
 ayy
@@ -104468,8 +104608,8 @@ ahx
 ahx
 ahx
 agH
-ahx
-ahx
+had
+had
 atf
 aux
 puR
@@ -107486,7 +107626,7 @@ ajF
 akG
 afd
 pXN
-anX
+srp
 anX
 anX
 anX
@@ -108090,8 +108230,8 @@ acz
 akI
 alM
 adM
-dVB
-vaj
+kPt
+anZ
 anZ
 anZ
 anZ
@@ -108994,7 +109134,7 @@ jMs
 ahE
 aiC
 ajJ
-bEg
+qxe
 wWC
 vgG
 wDo
@@ -109293,7 +109433,7 @@ afP
 agO
 agO
 agO
-ahE
+pPQ
 ajf
 mVQ
 akM
@@ -109595,7 +109735,7 @@ agb
 jMs
 ahz
 jMs
-ahE
+pPQ
 hPI
 ahz
 bEg
@@ -110198,7 +110338,7 @@ afi
 afi
 afi
 afi
-afi
+vaj
 oNI
 fec
 ppZ
@@ -110803,7 +110943,7 @@ afj
 afj
 afj
 ahH
-iSl
+lbB
 ajP
 ajP
 ajP
@@ -111105,7 +111245,7 @@ afk
 tYY
 agQ
 ahI
-iSl
+cTB
 ajP
 fTc
 tVZ
@@ -112313,7 +112453,7 @@ adW
 adW
 uec
 lvO
-iSl
+iDd
 ajP
 tJc
 eFw
@@ -113011,7 +113151,7 @@ rbu
 oVb
 vMf
 ycN
-ycN
+kOD
 qGV
 evo
 gfY

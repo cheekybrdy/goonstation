@@ -207,11 +207,6 @@ DEFINE_PIPES_WASTE(/obj/fluid_pipe/quad)
 /obj/fluid_pipe/fluid_tank/see_fluid
 	icon_state = "tank-view"
 
-	water
-		name = "water reserve"
-		desc = "The tanks with the inital shipped in reserve of water, damn annoying to replace."
-		default_reagent = "water"
-
 /obj/fluid_pipe/fluid_tank/see_fluid/refresh_connections(datum/reagents/flow_network/leftover)
 	..()
 	src.AddComponent( \
