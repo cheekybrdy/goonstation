@@ -23138,16 +23138,11 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
 "bVH" = (
-/obj/disposalpipe/segment{
+/obj/fluid_pipe/straight/waste/overfloor{
 	dir = 4
 	},
-/obj/disposalpipe/segment/mail,
-/obj/fluid_pipe/straight/waste{
-	dir = 4
-	},
-/obj/fluid_pipe/straight/supply,
-/turf/simulated/floor,
-/area/station/hallway/primary/south)
+/turf/simulated/wall/auto/supernorn,
+/area/station/crew_quarters/toilets)
 "bVM" = (
 /obj/cable{
 	icon_state = "1-4"
@@ -32100,9 +32095,16 @@
 	},
 /area/station/engine/monitoring)
 "dAW" = (
-/obj/fluid_pipe/straight/waste/overfloor,
-/turf/simulated/wall/auto/supernorn,
-/area/station/maintenance/southwest)
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/obj/disposalpipe/segment/mail,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor,
+/area/station/hallway/primary/south)
 "dBu" = (
 /obj/cable,
 /obj/cable{
@@ -47120,12 +47122,6 @@
 	dir = 1
 	},
 /area/station/turret_protected/ai_upload_foyer)
-"lZr" = (
-/obj/fluid_pipe/straight/waste/overfloor{
-	dir = 4
-	},
-/turf/simulated/wall/auto/supernorn,
-/area/station/crew_quarters/toilets)
 "lZA" = (
 /obj/landmark/halloween,
 /obj/disposalpipe/segment/mail{
@@ -53512,7 +53508,7 @@
 	icon_state = "1-2"
 	},
 /obj/disposalpipe/segment/morgue,
-/obj/fluid_pipe/straight/supply,
+/obj/machinery/fluid_machinery/binary/pump/active,
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
 "pzD" = (
@@ -56418,10 +56414,8 @@
 /turf/simulated/floor/shuttlebay,
 /area/station/hangar/sec)
 "rfp" = (
-/obj/machinery/fluid_machinery/binary/pump/active{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
+/obj/fluid_pipe/straight/waste/overfloor,
+/turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/southwest)
 "rfy" = (
 /obj/machinery/atmospherics/pipe/simple{
@@ -112276,7 +112270,7 @@ wph
 bUB
 bVO
 rlV
-dAW
+rfp
 fTv
 rxx
 uFj
@@ -112580,7 +112574,7 @@ bVO
 tLU
 bYe
 qgc
-lZr
+bVH
 qgc
 qgc
 aif
@@ -113796,7 +113790,7 @@ lBS
 aif
 ahh
 bZJ
-rfp
+mrD
 ciq
 ahh
 cnD
@@ -114087,7 +114081,7 @@ bRD
 vcr
 bUA
 bVT
-bVH
+dAW
 gBU
 jGE
 aaG
