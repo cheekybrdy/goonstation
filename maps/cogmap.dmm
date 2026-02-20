@@ -35725,6 +35725,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/engine/substation/pylon)
+"fww" = (
+/obj/machinery/sink/piped/slim{
+	pixel_y = 12
+	},
+/turf/simulated/floor/bluewhite{
+	dir = 1
+	},
+/area/station/medical/medbay/pharmacy)
 "fwA" = (
 /obj/disposalpipe/segment/morgue{
 	icon_state = "pipe-c";
@@ -38373,6 +38381,9 @@
 	icon_state = "4-8"
 	},
 /obj/landmark/gps_waypoint,
+/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
+	dir = 1
+	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay/pharmacy)
 "gXu" = (
@@ -39256,6 +39267,9 @@
 "hyC" = (
 /obj/cabinet/chemistry,
 /obj/machinery/firealarm/directional/west,
+/obj/fluid_pipe/elbow/supply{
+	dir = 4
+	},
 /turf/simulated/floor/bluewhite{
 	dir = 9
 	},
@@ -40098,6 +40112,7 @@
 /turf/simulated/floor,
 /area/station/hydroponics/bay)
 "hYK" = (
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/bluewhite,
 /area/station/medical/medbay)
 "hYR" = (
@@ -40607,6 +40622,7 @@
 	},
 /obj/table/auto,
 /obj/item/storage/box/syringes,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/bluewhite/corner{
 	dir = 4
 	},
@@ -42979,6 +42995,9 @@
 /turf/simulated/floor/purple/side,
 /area/station/science/lobby)
 "jIo" = (
+/obj/fluid_pipe/t_junction/waste{
+	dir = 8
+	},
 /turf/simulated/floor/bluewhite{
 	dir = 1
 	},
@@ -43650,12 +43669,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
-/obj/cable{
-	icon_state = "4-8"
-	},
+/obj/fluid_pipe/t_junction/supply,
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
 "jZi" = (
@@ -44567,14 +44581,9 @@
 /turf/simulated/floor,
 /area/station/security/main)
 "kwG" = (
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/fluid_pipe/t_junction/supply{
-	dir = 8
-	},
-/turf/simulated/floor/specialroom/bar,
-/area/station/security/secwing)
+/obj/fluid_pipe/straight/supply,
+/turf/simulated/floor/white,
+/area/station/medical/medbay)
 "kwY" = (
 /obj/mesh/grille/steel,
 /turf/simulated/floor/plating,
@@ -44921,6 +44930,7 @@
 	pixel_x = 2;
 	pixel_y = -10
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/bluewhite{
 	dir = 10
 	},
@@ -50393,12 +50403,8 @@
 	},
 /area/station/chapel/sanctuary)
 "nTh" = (
-/obj/mapping_helper/wingrille_spawn/auto,
-/obj/fluid_pipe/straight/supply{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/ranch)
+/turf/simulated/floor/white,
+/area/station/medical/medbooth)
 "nTE" = (
 /turf/simulated/floor/redblack{
 	dir = 4
@@ -50882,6 +50888,10 @@
 	dir = 10
 	},
 /area/mining/magnet)
+"okg" = (
+/obj/fluid_pipe/t_junction/waste,
+/turf/simulated/floor/white,
+/area/station/medical/medbay)
 "oko" = (
 /obj/mesh/catwalk{
 	dir = 5
@@ -52075,6 +52085,7 @@
 	icon_state = "4-8"
 	},
 /obj/table/reinforced/chemistry/auto/clericalsup,
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay/pharmacy)
 "oPG" = (
@@ -54651,6 +54662,7 @@
 /obj/cable{
 	icon_state = "0-4"
 	},
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/medical/medbay/pharmacy)
 "qjS" = (
@@ -60655,8 +60667,12 @@
 /turf/simulated/floor,
 /area/station/turret_protected/Zeta)
 "tCD" = (
-/turf/simulated/floor/white,
-/area/station/medical/medbooth)
+/obj/mapping_helper/wingrille_spawn/auto,
+/obj/fluid_pipe/straight/supply{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/ranch)
 "tCI" = (
 /obj/machinery/conveyor/NS{
 	id = "cargo"
@@ -66775,6 +66791,15 @@
 /obj/item/clothing/head/cakehat,
 /turf/simulated/floor/specialroom/bar/edge,
 /area/station/crew_quarters/bar)
+"wSJ" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/fluid_pipe/t_junction/supply{
+	dir = 8
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/station/security/secwing)
 "wSZ" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -103515,7 +103540,7 @@ cmc
 xwZ
 kQT
 jYK
-cqB
+kwG
 ikx
 kHJ
 qjM
@@ -103728,7 +103753,7 @@ mJL
 pbn
 iVi
 kGb
-kwG
+wSJ
 ykc
 meL
 ayy
@@ -103821,7 +103846,7 @@ cqB
 xmh
 gDm
 rAT
-jIo
+fww
 shO
 eWa
 jSW
@@ -104120,7 +104145,7 @@ cnk
 qaa
 tlj
 cqB
-xmh
+okg
 hYK
 oPE
 jIo
@@ -119741,9 +119766,9 @@ bNf
 bVG
 aJL
 ffm
-tCD
+nTh
 oKQ
-tCD
+nTh
 nlE
 aQB
 nyV
@@ -126667,7 +126692,7 @@ jKe
 ajh
 aki
 amD
-nTh
+tCD
 apY
 apY
 lax
