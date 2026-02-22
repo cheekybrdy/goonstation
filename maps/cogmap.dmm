@@ -2163,7 +2163,7 @@
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/ai_monitored/armory)
 "ajs" = (
-/obj/fluid_pipe/elbow/supply/overfloor{
+/obj/fluid_pipe/elbow/supply{
 	dir = 8
 	},
 /turf/simulated/wall/auto/reinforced/supernorn{
@@ -3226,7 +3226,7 @@
 	icon_state = "1-2"
 	},
 /obj/disposalpipe/segment/mail,
-/obj/fluid_pipe/straight/supply/overfloor,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/crew_quarters/market)
 "apN" = (
@@ -23101,7 +23101,7 @@
 /area/station/science/lobby)
 "bVw" = (
 /obj/disposalpipe/segment/transport,
-/obj/fluid_pipe/straight/waste/overfloor{
+/obj/fluid_pipe/straight/waste{
 	dir = 4
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -23130,7 +23130,7 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
 "bVH" = (
-/obj/fluid_pipe/straight/waste/overfloor{
+/obj/fluid_pipe/straight/waste{
 	dir = 4
 	},
 /turf/simulated/wall/auto/supernorn,
@@ -31207,7 +31207,7 @@
 	name = "Tool Storage"
 	})
 "daT" = (
-/obj/fluid_pipe/elbow/supply/overfloor,
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/wall/auto/supernorn,
 /area/station/hallway/secondary/entry)
 "daU" = (
@@ -35171,7 +35171,7 @@
 /turf/simulated/floor,
 /area/station/science/chemistry)
 "fix" = (
-/obj/fluid_pipe/straight/waste/overfloor,
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/showers)
 "fiA" = (
@@ -40705,7 +40705,7 @@
 /obj/disposalpipe/segment/transport{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/waste/overfloor{
+/obj/fluid_pipe/straight/waste{
 	dir = 4
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -42736,7 +42736,7 @@
 /turf/simulated/floor,
 /area/station/security/checkpoint/arrivals)
 "jAo" = (
-/obj/fluid_pipe/elbow/supply/overfloor{
+/obj/fluid_pipe/elbow/supply{
 	dir = 1
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -43985,7 +43985,7 @@
 	dir = 4
 	},
 /obj/disposalpipe/segment/transport,
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -44874,7 +44874,7 @@
 	icon_state = "1-2"
 	},
 /obj/disposalpipe/segment/transport,
-/obj/fluid_pipe/straight/waste/overfloor,
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/hallway/primary/south)
 "kHj" = (
@@ -45208,7 +45208,7 @@
 /turf/simulated/floor/caution/westeast,
 /area/station/routing/sortingRoom)
 "kPt" = (
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/wall/auto/supernorn,
@@ -45873,7 +45873,7 @@
 /turf/simulated/floor/sanitary/white,
 /area/station/medical/morgue)
 "lmq" = (
-/obj/fluid_pipe/straight/supply/overfloor,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/janitor/supply)
 "lms" = (
@@ -46201,7 +46201,7 @@
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "lvw" = (
-/obj/fluid_pipe/straight/supply/overfloor,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/showers)
 "lvO" = (
@@ -46248,7 +46248,7 @@
 /area/station/medical/robotics)
 "lwZ" = (
 /obj/machinery/phone/wall,
-/obj/fluid_pipe/elbow/waste/overfloor{
+/obj/fluid_pipe/elbow/waste{
 	dir = 8
 	},
 /turf/simulated/wall/auto/supernorn,
@@ -46844,7 +46844,7 @@
 /turf/simulated/floor,
 /area/station/routing/sortingRoom)
 "lRo" = (
-/obj/fluid_pipe/elbow/supply/overfloor{
+/obj/fluid_pipe/elbow/supply{
 	dir = 4
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -47416,7 +47416,7 @@
 /turf/simulated/floor/purplewhite,
 /area/station/science/chemistry)
 "mjB" = (
-/obj/fluid_pipe/straight/supply/overfloor,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/central)
 "mjS" = (
@@ -48621,7 +48621,7 @@
 	icon_state = "1-2"
 	},
 /obj/disposalpipe/segment/mail,
-/obj/fluid_pipe/straight/supply/overfloor,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/hallway/primary/south)
 "mSL" = (
@@ -50322,7 +50322,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -53806,7 +53806,7 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -54464,7 +54464,7 @@
 /turf/simulated/floor/grime,
 /area/station/hallway/primary/east)
 "qfE" = (
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -54499,7 +54499,7 @@
 /turf/simulated/floor/grime,
 /area/station/maintenance/disposal)
 "qgc" = (
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/wall/auto/supernorn,
@@ -54868,7 +54868,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/fluid_pipe/straight/waste/overfloor{
+/obj/fluid_pipe/straight/waste{
 	dir = 4
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -54996,7 +54996,7 @@
 /turf/simulated/floor/orangeblack,
 /area/station/ai_monitored/storage/eva)
 "qsJ" = (
-/obj/fluid_pipe/straight/supply/overfloor,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/northeast)
 "qsL" = (
@@ -55898,7 +55898,7 @@
 /turf/simulated/floor/plating,
 /area/station/engine/elect)
 "qNo" = (
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/wall/auto/supernorn,
@@ -56423,7 +56423,7 @@
 /turf/simulated/floor/shuttlebay,
 /area/station/hangar/sec)
 "rfp" = (
-/obj/fluid_pipe/straight/waste/overfloor,
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/southwest)
 "rfy" = (
@@ -56634,7 +56634,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/solar/west)
 "rnO" = (
-/obj/fluid_pipe/straight/supply/overfloor,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/security/brig)
 "rom" = (
@@ -60856,7 +60856,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "tJc" = (
-/obj/fluid_pipe/elbow/waste/overfloor{
+/obj/fluid_pipe/elbow/waste{
 	dir = 8
 	},
 /turf/simulated/wall/auto/supernorn,
@@ -63407,7 +63407,7 @@
 	},
 /area/station/mining/staff_room)
 "uXG" = (
-/obj/fluid_pipe/elbow/supply/overfloor,
+/obj/fluid_pipe/elbow/supply,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/storage)
 "uYl" = (
@@ -64173,7 +64173,7 @@
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "vvG" = (
-/obj/fluid_pipe/straight/supply/overfloor{
+/obj/fluid_pipe/straight/supply{
 	dir = 4
 	},
 /turf/simulated/wall/auto/supernorn,
@@ -66884,7 +66884,7 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/bar)
 "wWC" = (
-/obj/fluid_pipe/straight/supply/overfloor,
+/obj/fluid_pipe/straight/supply,
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/quartersB)
 "wXd" = (
@@ -67547,7 +67547,7 @@
 	icon_state = "1-2"
 	},
 /obj/disposalpipe/segment/transport,
-/obj/fluid_pipe/straight/waste/overfloor,
+/obj/fluid_pipe/straight/waste,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/crew_quarters/market)
 "xra" = (
