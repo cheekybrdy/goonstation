@@ -207,6 +207,35 @@ DEFINE_PIPES_WASTE(/obj/fluid_pipe/quad)
 /obj/fluid_pipe/fluid_tank/see_fluid
 	icon_state = "tank-view"
 
+/obj/fluid_pipe/fluid_tank/see_fluid/alert
+
+	//For PDA/signal alert stuff on implants
+	var/uses_radio = 0
+	var/list/mailgroups = MGT_JANITOR
+	var/net_id = null
+	var/alert_frequency = FREQ_PDA
+
+	// Robbed from implant code
+	proc/send_message(var/message, var/alertgroup, var/sender_name)
+		DEBUG_MESSAGE("sending message: [message]")
+		var/datum/signal/newsignal = get_free_signal()
+		newsignal.source = src
+		newsignal.data["command"] = "text_message"
+		newsignal.data["sender_name"] = sender_name
+		newsignal.data["message"] = "[message]"
+
+		newsignal.data["address_1"] = "00000000"
+		newsignal.data["group"] = mailgroups
+		newsignal.data["sender"] = src.net_id
+
+		SEND_SIGNAL(src, COMSIG_MOVABLE_POST_RADIO_PACKET, newsignal)
+
+	on_life()
+		if (src.reagents.total_volume >= capacity)
+			var/myarea = get_area(src)
+			var/message = "SEWAGE BACKUP ALERT: [src] in [myarea]."
+			src.send_message(message, mailgroups, "PLUMBING-MAILBOT")
+
 /obj/fluid_pipe/fluid_tank/see_fluid/refresh_connections(datum/reagents/flow_network/leftover)
 	..()
 	src.AddComponent( \

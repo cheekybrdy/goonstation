@@ -12909,12 +12909,18 @@
 /obj/disposalpipe/segment{
 	dir = 4
 	},
+/obj/cable{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/black,
 /area/station/crew_quarters/jazz)
 "aZz" = (
 /obj/machinery/disposal,
 /obj/disposalpipe/trunk{
 	dir = 8
+	},
+/obj/cable{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/black,
 /area/station/crew_quarters/jazz)
@@ -30873,6 +30879,14 @@
 /obj/landmark/pest,
 /turf/simulated/floor/specialroom/bar,
 /area/station/crew_quarters/cafeteria)
+"cRW" = (
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/mesh/catwalk,
+/obj/machinery/power/apc/autoname_south,
+/turf/simulated/floor/airless/plating/catwalk,
+/area/station/janitor/reservior)
 "cSb" = (
 /obj/shrub{
 	dir = 1
@@ -33017,6 +33031,9 @@
 /obj/machinery/power/apc/autoname_south,
 /obj/cable{
 	icon_state = "0-8"
+	},
+/obj/cable{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/carpet{
 	icon_state = "fred6"
@@ -38881,9 +38898,6 @@
 /obj/fluid_pipe/elbow/supply{
 	dir = 1
 	},
-/obj/cable{
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "hku" = (
@@ -40453,9 +40467,6 @@
 	dir = 4
 	},
 /obj/mapping_helper/access/janitor,
-/obj/cable{
-	icon_state = "4-8"
-	},
 /obj/machinery/door/airlock/pyro{
 	dir = 4;
 	locked = 1
@@ -41258,9 +41269,6 @@
 "iEY" = (
 /obj/cable{
 	icon_state = "1-4"
-	},
-/obj/cable{
-	icon_state = "4-8"
 	},
 /obj/fluid_pipe/t_junction/waste,
 /turf/simulated/floor/plating,
@@ -42735,6 +42743,13 @@
 /obj/fluid_pipe/straight/supply,
 /turf/simulated/floor,
 /area/station/security/checkpoint/arrivals)
+"jzS" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/black,
+/area/station/crew_quarters/jazz)
 "jAo" = (
 /obj/fluid_pipe/elbow/supply{
 	dir = 1
@@ -45306,10 +45321,6 @@
 /turf/simulated/floor/grime,
 /area/station/mining/magnet)
 "kSW" = (
-/obj/machinery/power/apc/autoname_west,
-/obj/cable{
-	icon_state = "0-4"
-	},
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor/active{
 	dir = 4
 	},
@@ -46548,7 +46559,7 @@
 /turf/simulated/floor/blue,
 /area/station/storage/warehouse)
 "lFm" = (
-/obj/fluid_pipe/fluid_tank/see_fluid{
+/obj/fluid_pipe/fluid_tank/see_fluid/alert{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -58271,9 +58282,6 @@
 /turf/space,
 /area/space)
 "slu" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
 /obj/fluid_pipe/t_junction/supply{
 	dir = 1
 	},
@@ -58378,9 +58386,6 @@
 /turf/simulated/floor/black,
 /area/station/medical/crematorium)
 "sow" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
 	dir = 4
 	},
@@ -68675,9 +68680,6 @@
 /area/station/janitor/office)
 "xZL" = (
 /obj/fluid_pipe/quad/supply,
-/obj/cable{
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/station/janitor/reservior)
 "xZQ" = (
@@ -118272,7 +118274,7 @@ aWc
 aWc
 aXw
 aWc
-aWc
+jzS
 sjj
 fQc
 slu
@@ -118574,7 +118576,7 @@ aag
 aQy
 uQq
 aQy
-aap
+cRW
 fLZ
 nCf
 xZL
