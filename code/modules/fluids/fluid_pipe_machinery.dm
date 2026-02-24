@@ -343,7 +343,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	name = "dispenser"
 	icon_state = "dispenser"
 	desc = "Fills itself with fluid and dispenses patches, pills, and vials when reaching the set amount or when prompted to."
-	HELP_MESSAGE_OVERRIDE("FYou can use a <b>multitool</b> to modify its settings.")
+	HELP_MESSAGE_OVERRIDE("You can use a <b>multitool</b> to modify its settings.")
 	var/automatic = TRUE
 	var/max = 50
 	var/min = 1
@@ -422,6 +422,66 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	if (!src.automatic)
 		return
 	src.dispense()
+
+/obj/machinery/fluid_machinery/unary/sensor
+	name = "float sensor"
+	icon_state = "sensor"
+	desc = "Will send an alert once the network's capacity is greater then the set threshold of the sensor."
+	HELP_MESSAGE_OVERRIDE("You can use a <b>multitool</b> to modify its trigger threshold.")
+	var/signal_threshold = 20000
+	var/check_timer = 5 SECONDS
+	//For PDA/signal alert stuff
+	var/uses_radio = 0
+	var/list/mailgroups = MGT_JANITOR
+	var/net_id = null
+	var/alert_frequency = FREQ_PDA
+	var/message = "PLUMBING NETWORK BACKUP ALERT: [src] in [myarea]."
+
+/obj/machinery/fluid_machinery/unary/sensor/New()
+	..()
+	AddComponent(/datum/component/mechanics_holder)
+	SEND_SIGNAL(src,COMSIG_MECHCOMP_ADD_INPUT,"Set Threshold", PROC_REF(set_threshold_manual))
+
+// Robbed from implant code
+/obj/machinery/fluid_machinery/unary/sensor/send_message(var/message, var/alertgroup, var/sender_name)
+	DEBUG_MESSAGE("sending message: [message]")
+	var/datum/signal/newsignal = get_free_signal()
+	newsignal.source = src
+	newsignal.data["command"] = "text_message"
+	newsignal.data["sender_name"] = sender_name
+	newsignal.data["message"] = "[message]"
+
+	newsignal.data["address_1"] = "00000000"
+	newsignal.data["group"] = mailgroups
+	newsignal.data["sender"] = src.net_id
+
+	SEND_SIGNAL(src, COMSIG_MOVABLE_POST_RADIO_PACKET, newsignal)
+
+/obj/machinery/fluid_machinery/unary/sensor/process()
+	var/timer_cooldown = world.time + check_timer
+	if (!src.network) return
+	if (world.time < timer_cooldown)return
+	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.total_volume]")
+	if (src.network.reagents.total_volume >= capacity)
+		var/myarea = get_area(src)
+		src.send_message(message, mailgroups, "PLUMBING-MAILBOT")
+
+/obj/machinery/fluid_machinery/unary/sensor/proc/set_threshold(var/datum/mechanicsMessage/input)
+	var/newthreshold = text2num_safe(input.signal)
+	if (!newthreshold)
+		return
+	src.signal_threshold = round(clamp(newthreshold, null, src.network.reagents.total_volume), QUANTIZATION_UNITS)
+	logTheThing(LOG_STATION, null, "A fluid dispenser was set to dispense [src.amount] units through MechComp at [log_loc(src)].")
+
+/obj/machinery/fluid_machinery/unary/dispenser/proc/set_threshold_manual(obj/item/W, mob/user)
+	var/inp = tgui_input_number(user, "Please enter sensor threshold (Will round to [QUANTIZATION_UNITS]):", "Dispense Amount", src.signal_threshold, null, src.network.reagents.total_volume)
+	if (!inp) return
+	src.amount = round(inp, QUANTIZATION_UNITS)
+	logTheThing(LOG_STATION, user, "set a fluid sensor set to trigger at [src.amount] units at [log_loc(src)].")
+
+/obj/machinery/fluid_machinery/unary/sensor/filtration
+	var/message = "SEWAGE BACKUP ALERT: [src] in [myarea]."
+
 
 /obj/machinery/fluid_machinery/unary/node
 	name = "node"
