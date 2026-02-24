@@ -208,7 +208,7 @@ DEFINE_PIPES_WASTE(/obj/fluid_pipe/quad)
 	icon_state = "tank-view"
 
 /obj/fluid_pipe/fluid_tank/see_fluid/alert
-
+	var/check_timer = 5 SECONDS
 	//For PDA/signal alert stuff on implants
 	var/uses_radio = 0
 	var/list/mailgroups = MGT_JANITOR
@@ -230,8 +230,9 @@ DEFINE_PIPES_WASTE(/obj/fluid_pipe/quad)
 
 		SEND_SIGNAL(src, COMSIG_MOVABLE_POST_RADIO_PACKET, newsignal)
 
-	on_life()
-		if (src.reagents.total_volume >= capacity)
+	process()
+		. = ..()
+		if (src.network.reagents.total_volume >= capacity)
 			var/myarea = get_area(src)
 			var/message = "SEWAGE BACKUP ALERT: [src] in [myarea]."
 			src.send_message(message, mailgroups, "PLUMBING-MAILBOT")

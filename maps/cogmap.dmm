@@ -46559,7 +46559,7 @@
 /turf/simulated/floor/blue,
 /area/station/storage/warehouse)
 "lFm" = (
-/obj/fluid_pipe/fluid_tank/see_fluid/alert{
+/obj/fluid_pipe/fluid_tank/see_fluid{
 	dir = 4
 	},
 /turf/simulated/floor/plating,

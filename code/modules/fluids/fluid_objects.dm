@@ -222,7 +222,7 @@ TYPEINFO(/obj/machinery/drainage/big)
 				if (98)
 					reagent_id = "espresso"
 				if (99)
-					reagent_id = "triplewater"
+					reagent_id = "cocktail_triplewater"
 				else
 					reagent_id = "compost"
 			..()
