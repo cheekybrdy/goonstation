@@ -429,7 +429,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	desc = "Will send an alert once the network's capacity is greater then the set threshold of the sensor."
 	HELP_MESSAGE_OVERRIDE("You can use a <b>multitool</b> to modify its trigger threshold or radio frequency.")
 	var/Threshold_Min = 0
-	var/Threshold_Max = 1000
+	var/Threshold_Max = 100000
 	var/signal_threshold = 1000
 	var/check_timer = 5 SECONDS
 	//For PDA/signal alert stuff
@@ -484,7 +484,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 
 
 /obj/machinery/fluid_machinery/unary/sensor/proc/set_threshold_manual(obj/item/W, mob/user)
-	var/inp = tgui_input_number(user, "Please enter sensor threshold (Will round to [QUANTIZATION_UNITS]):", "Dispense Amount", src.signal_threshold, Threshold_Min, Threshold_Max)
+	var/inp = tgui_input_number(user, "Please enter sensor threshold (Will round to [QUANTIZATION_UNITS]):", "Dispense Amount", 100, Threshold_Min, Threshold_Max)
 	if (!inp) return
 	src.signal_threshold = round(inp, QUANTIZATION_UNITS)
 	logTheThing(LOG_STATION, user, "set a fluid sensor set to trigger at [src.signal_threshold] units at [log_loc(src)].")
