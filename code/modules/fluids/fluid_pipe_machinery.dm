@@ -427,12 +427,14 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	name = "float sensor"
 	icon_state = "sensor"
 	desc = "Will send an alert once the network's capacity is greater then the set threshold of the sensor."
-	HELP_MESSAGE_OVERRIDE("You can use a <b>multitool</b> to modify its trigger threshold.")
-	var/signal_threshold = 20000
+	HELP_MESSAGE_OVERRIDE("You can use a <b>multitool</b> to modify its trigger threshold or radio frequency.")
+	var/Threshold_Min = 0
+	var/Threshold_Max = 1000
+	var/signal_threshold = 1000
 	var/check_timer = 5 SECONDS
 	//For PDA/signal alert stuff
 	var/uses_radio = 0
-	var/list/mailgroups = MGT_JANITOR
+	var/list/mailgroups = null
 	var/net_id = null
 	var/alert_frequency = FREQ_PDA
 	var/filtration = null // used to give a unique message for roundstart sewage sensors
@@ -440,7 +442,8 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 /obj/machinery/fluid_machinery/unary/sensor/New()
 	..()
 	AddComponent(/datum/component/mechanics_holder)
-	SEND_SIGNAL(src,COMSIG_MECHCOMP_ADD_INPUT,"Set Threshold", PROC_REF(set_threshold_manual))
+	SEND_SIGNAL(src,COMSIG_MECHCOMP_ADD_CONFIG,"Set Threshold", PROC_REF(set_threshold_manual))
+	SEND_SIGNAL(src,COMSIG_MECHCOMP_ADD_CONFIG,"Set Frequency", PROC_REF(set_frequency_manual))
 
 // Robbed from implant code
 /obj/machinery/fluid_machinery/unary/sensor/proc/send_message(var/message, var/alertgroup, var/sender_name)
@@ -462,7 +465,8 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	if (!src.network) return
 	if (world.time < timer_cooldown)return
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.total_volume]")
-	if (src.network.reagents.total_volume >= signal_threshold)
+	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.reagent_list]")
+	if (src.network.reagents.total_volume >= signal_threshold && filtration)
 		var/myarea = get_area(src)
 		var/message = null //not 4 long
 		if(!filtration)
@@ -475,16 +479,32 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	var/newthreshold = text2num_safe(input.signal)
 	if (!newthreshold)
 		return
-	src.signal_threshold = round(clamp(newthreshold, null, src.network.reagents.total_volume), QUANTIZATION_UNITS)
+	src.signal_threshold = round(clamp(newthreshold, 0, src.network.reagents.total_volume), QUANTIZATION_UNITS)
 	logTheThing(LOG_STATION, null, "set a fluid sensor set to trigger at [src.signal_threshold] units through MechComp at [log_loc(src)].")
 
+
 /obj/machinery/fluid_machinery/unary/sensor/proc/set_threshold_manual(obj/item/W, mob/user)
-	var/inp = tgui_input_number(user, "Please enter sensor threshold (Will round to [QUANTIZATION_UNITS]):", "Dispense Amount", src.signal_threshold, null, src.network.reagents.total_volume)
+	var/inp = tgui_input_number(user, "Please enter sensor threshold (Will round to [QUANTIZATION_UNITS]):", "Dispense Amount", src.signal_threshold, Threshold_Min, Threshold_Max)
 	if (!inp) return
 	src.signal_threshold = round(inp, QUANTIZATION_UNITS)
 	logTheThing(LOG_STATION, user, "set a fluid sensor set to trigger at [src.signal_threshold] units at [log_loc(src)].")
 
+
+/obj/machinery/fluid_machinery/unary/sensor/proc/set_frequency(var/datum/mechanicsMessage/input)
+	var/newfrequency = text2num_safe(input.signal)
+	if (!newfrequency)
+		return
+	src.signal_threshold = round(clamp(newfrequency, R_FREQ_MINIMUM, R_FREQ_MAXIMUM), QUANTIZATION_UNITS)
+	logTheThing(LOG_STATION, null, "set a fluid sensor set to trigger at [src.alert_frequency] units through MechComp at [log_loc(src)].")
+
+/obj/machinery/fluid_machinery/unary/sensor/proc/set_frequency_manual(obj/item/W, mob/user)
+	var/inp = tgui_input_number(user, "Please enter frequency :", "Frequency", src.alert_frequency, R_FREQ_MINIMUM, R_FREQ_MAXIMUM)
+	if (!inp) return
+	logTheThing(LOG_STATION, user, "set a fluid sensor set to send at [src.alert_frequency] at [log_loc(src)].")
+
 /obj/machinery/fluid_machinery/unary/sensor/filtration
+	mailgroups = MGT_JANITOR
+	signal_threshold = 20000
 	filtration = 1
 
 
