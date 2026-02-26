@@ -183,7 +183,7 @@ TYPEINFO(/obj/machinery/drainage/big)
 		reagent_id = "chlorine"
 
 	reservior
-		amount = 80000
+		amount = 60000
 #ifdef HALLOWEEN
 		New()
 			if(halloween_mode && prob(0.01))
@@ -192,7 +192,7 @@ TYPEINFO(/obj/machinery/drainage/big)
 #endif
 
 	reservior_trace
-		amount = 125
+		amount = 1000
 
 		New()
 			var/trace_table = rand(0,100)
