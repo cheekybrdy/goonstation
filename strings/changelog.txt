@@ -1,4 +1,26 @@
 
+(t)thu feb 26 26
+(u)bork
+(p)25988
+(e)🔬|A-Science
+(+)Records now all display their names in the same format.
+(t)wed feb 25 26
+(u)Sord
+(+)Pharmacists and the Medical Director get an auto-injector filler which can fill empty auto-injectors with hypospray whitelisted chemicals (unless emagged)
+(+)Empty auto-injectors can be printed at the medical fabricator.
+(+)Note: expended/already filled auto-injectors can not have more chemicals added to them.
+(u)A.I. The Artificial Idiot
+(p)26002
+(e)⚗|A-Chemistry
+(*)Adds fish sauce, made by putting a fish in a still
+(u)JORJ949
+(p)25923
+(e)🎨💅🧛🔨|C-Sprites, C-QoL, A-Gamemodes, A-Player-Actions
+(*)Headspiders are now tied to using a 10 DNA ability rather than having 10 DNA left on death. Using the ability removes it from your list of abilities and will activate on death.
+(u)Temthrush & Sunkiisu
+(p)24649
+(e)🎨🤖|C-Sprites, A-Silicons
+(+)Added 21 new borg screenhead faces
 (t)mon feb 23 26
 (u)Kanthes
 (p)25978
