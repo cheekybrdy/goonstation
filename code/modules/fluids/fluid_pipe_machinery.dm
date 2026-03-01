@@ -449,18 +449,21 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 // Robbed from implant code
 /obj/machinery/fluid_machinery/unary/sensor/proc/send_message(var/message, var/alertgroup, var/sender_name)
 	DEBUG_MESSAGE("sending message: [message]")
+	var/datum/component/packet_connected/radio/radio_connection = MAKE_SENDER_RADIO_PACKET_COMPONENT(null, null, alert_frequency)
 	var/datum/signal/newsignal = get_free_signal()
 	var/net_id = generate_net_id(src)
-	newsignal.source = src
-	newsignal.data["command"] = "text_message"
-	newsignal.data["sender_name"] = sender_name
-	newsignal.data["message"] = message
+	if (message)
+		newsignal.source = src
+		newsignal.data["command"] = "text_message"
+		newsignal.data["sender_name"] = sender_name
+		newsignal.data["message"] = message
 
-	newsignal.data["address_1"] = "00000000"
-	newsignal.data["group"] = mailgroups
-	newsignal.data["sender"] = net_id
+		newsignal.data["address_1"] = "00000000"
+		newsignal.data["group"] = mailgroups
+		newsignal.data["sender"] = net_id
 
-	SEND_SIGNAL(src, COMSIG_MOVABLE_POST_RADIO_PACKET, newsignal)
+		SEND_SIGNAL(src, COMSIG_MOVABLE_POST_RADIO_PACKET, newsignal)
+		qdel(radio_connection)
 
 /obj/machinery/fluid_machinery/unary/sensor/process()
 	if(GET_COOLDOWN(src, "sensor_check")) return
@@ -496,7 +499,6 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	boutput(user, "Threshold set to [src.signal_threshold] units.")
 	logTheThing(LOG_STATION, user, "set a fluid sensor set to trigger at [src.signal_threshold] units at [log_loc(src)].")
 
-
 /obj/machinery/fluid_machinery/unary/sensor/proc/set_frequency(var/datum/mechanicsMessage/input)
 	var/newfrequency = text2num_safe(input.signal)
 	if (!newfrequency)
@@ -507,7 +509,6 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 /obj/machinery/fluid_machinery/unary/sensor/proc/set_frequency_manual(obj/item/W, mob/user)
 	var/inp = tgui_input_number(user, "Please enter frequency :", "Frequency", src.alert_frequency, R_FREQ_MAXIMUM, R_FREQ_MINIMUM)
 	if (!inp) return
-	boutput(user, "Frequency set to: [src.alert_frequency]Hz.")
 	logTheThing(LOG_STATION, user, "set a fluid sensor set to send at [src.alert_frequency] at [log_loc(src)].")
 
 /obj/machinery/fluid_machinery/unary/sensor/proc/toggle_alerts(obj/item/W, mob/user)
