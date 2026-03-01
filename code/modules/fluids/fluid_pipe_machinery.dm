@@ -460,6 +460,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	newsignal.data["group"] = mailgroups
 	newsignal.data["sender"] = src.net_id
 
+	SEND_SIGNAL(src, COMSIG_MOVABLE_POST_RADIO_PACKET, newsignal)
 
 /obj/machinery/fluid_machinery/unary/sensor/process()
 	if(GET_COOLDOWN(src, "sensor_check")) return
