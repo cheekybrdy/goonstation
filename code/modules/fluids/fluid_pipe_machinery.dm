@@ -435,7 +435,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	var/triggered = null //To stop PDA spam
 	//For PDA/signal alert stuff
 	var/pda_mode = TRUE
-	var/list/mailgroups = MGA_PLUMBING
+	var/list/mailgroups = list(MGA_PLUMBING)
 	var/net_id = null
 	var/alert_frequency = FREQ_PDA
 	var/filtration = null // used to give a unique message for roundstart sewage sensors
@@ -454,22 +454,22 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	newsignal.source = src
 	newsignal.data["command"] = "text_message"
 	newsignal.data["sender_name"] = sender_name
-	newsignal.data["message"] = "[message]"
+	newsignal.data["message"] = message
 
 	newsignal.data["address_1"] = "00000000"
 	newsignal.data["group"] = mailgroups
 	newsignal.data["sender"] = src.net_id
 
-	SEND_SIGNAL(src, COMSIG_MOVABLE_POST_RADIO_PACKET, newsignal)
 
 /obj/machinery/fluid_machinery/unary/sensor/process()
 	if(GET_COOLDOWN(src, "sensor_check")) return
 	if (!src.network) return
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.total_volume]")
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.reagent_list]")
-	if(triggered && src.network.reagents.total_volume <= signal_threshold) // Has it gone below the threshold to reset the PDA alerts?
+	if(triggered && src.network.reagents.total_volume < signal_threshold) // Has it gone below the threshold to reset the PDA alerts?
 		triggered = 0
 	if (src.network.reagents.total_volume >= signal_threshold && pda_mode && !triggered)
+		FLICK("sensor0",src)
 		var/myarea = get_area(src)
 		var/message = null //not 4 long
 		if(!filtration)
