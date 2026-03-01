@@ -461,7 +461,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	SEND_SIGNAL(src, COMSIG_MOVABLE_POST_RADIO_PACKET, newsignal)
 
 /obj/machinery/fluid_machinery/unary/sensor/process()
-	if(!GET_COOLDOWN(src, "sensor_check"))
+	if(GET_COOLDOWN(src, "sensor_check")) return
 	if (!src.network) return
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.total_volume]")
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.reagent_list]")
@@ -484,7 +484,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 
 
 /obj/machinery/fluid_machinery/unary/sensor/proc/set_threshold_manual(obj/item/W, mob/user)
-	var/inp = tgui_input_number(user, "Please enter sensor threshold (Will round to [QUANTIZATION_UNITS]):", "Dispense Amount", 100, src.Threshold_Min, src.Threshold_Max)
+	var/inp = tgui_input_number(user, "Please enter sensor threshold (Will round to [QUANTIZATION_UNITS]):", "Dispense Amount", 0, src.Threshold_Max, src.Threshold_Min)
 	if (!inp) return
 	src.signal_threshold = round(inp, QUANTIZATION_UNITS)
 	logTheThing(LOG_STATION, user, "set a fluid sensor set to trigger at [src.signal_threshold] units at [log_loc(src)].")
@@ -498,7 +498,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	logTheThing(LOG_STATION, null, "set a fluid sensor set to trigger at [src.alert_frequency] units through MechComp at [log_loc(src)].")
 
 /obj/machinery/fluid_machinery/unary/sensor/proc/set_frequency_manual(obj/item/W, mob/user)
-	var/inp = tgui_input_number(user, "Please enter frequency :", "Frequency", src.alert_frequency, R_FREQ_MINIMUM, R_FREQ_MAXIMUM)
+	var/inp = tgui_input_number(user, "Please enter frequency :", "Frequency", src.alert_frequency, R_FREQ_MAXIMUM, R_FREQ_MINIMUM)
 	if (!inp) return
 	logTheThing(LOG_STATION, user, "set a fluid sensor set to send at [src.alert_frequency] at [log_loc(src)].")
 
