@@ -511,6 +511,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 
 /obj/machinery/fluid_machinery/unary/sensor/proc/toggle_alerts(obj/item/W, mob/user)
 	src.pda_mode = !src.pda_mode
+	boutput(user, "Alert creation is currently [src.pda_mode]")
 
 /obj/machinery/fluid_machinery/unary/sensor/filtration
 	signal_threshold = 20000
