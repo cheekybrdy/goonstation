@@ -461,9 +461,8 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	SEND_SIGNAL(src, COMSIG_MOVABLE_POST_RADIO_PACKET, newsignal)
 
 /obj/machinery/fluid_machinery/unary/sensor/process()
-	var/timer_cooldown = world.time + check_timer
+	if(!GET_COOLDOWN(src, "sensor_check"))
 	if (!src.network) return
-	if (world.time < timer_cooldown)return
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.total_volume]")
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.reagent_list]")
 	if (src.network.reagents.total_volume >= signal_threshold && filtration)
@@ -474,6 +473,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 		else
 			message = "SEWAGE BACKUP ALERT: [src] in [myarea]."
 		src.send_message(message, mailgroups, "PLUMBING-MAILBOT")
+	ON_COOLDOWN(src, "sensor_check", check_timer)
 
 /obj/machinery/fluid_machinery/unary/sensor/proc/set_threshold(var/datum/mechanicsMessage/input)
 	var/newthreshold = text2num_safe(input.signal)
