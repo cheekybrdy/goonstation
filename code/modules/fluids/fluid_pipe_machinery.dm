@@ -434,7 +434,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	var/check_timer = 5 SECONDS
 	var/triggered = null //To stop PDA spam
 	//For PDA/signal alert stuff
-	var/uses_radio = 0
+	var/pda_mode = TRUE
 	var/list/mailgroups = null
 	var/net_id = null
 	var/alert_frequency = FREQ_PDA
@@ -445,6 +445,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	AddComponent(/datum/component/mechanics_holder)
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_ADD_CONFIG,"Set Threshold", PROC_REF(set_threshold_manual))
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_ADD_CONFIG,"Set Frequency", PROC_REF(set_frequency_manual))
+	SEND_SIGNAL(src,COMSIG_MECHCOMP_ADD_CONFIG,"Toggle Message Alerts", PROC_REF(toggle_alerts))
 
 // Robbed from implant code
 /obj/machinery/fluid_machinery/unary/sensor/proc/send_message(var/message, var/alertgroup, var/sender_name)
@@ -468,7 +469,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.reagent_list]")
 	if(triggered && src.network.reagents.total_volume <= signal_threshold) // Has it gone below the threshold to reset the PDA alerts?
 		triggered = 0
-	if (src.network.reagents.total_volume >= signal_threshold && filtration && !triggered)
+	if (src.network.reagents.total_volume >= signal_threshold && pda_mode && !triggered)
 		var/myarea = get_area(src)
 		var/message = null //not 4 long
 		if(!filtration)
@@ -505,6 +506,9 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	var/inp = tgui_input_number(user, "Please enter frequency :", "Frequency", src.alert_frequency, R_FREQ_MAXIMUM, R_FREQ_MINIMUM)
 	if (!inp) return
 	logTheThing(LOG_STATION, user, "set a fluid sensor set to send at [src.alert_frequency] at [log_loc(src)].")
+
+/obj/machinery/fluid_machinery/unary/sensor/proc/toggle_alerts(obj/item/W, mob/user)
+	src.pda_mode = !src.pda_mode
 
 /obj/machinery/fluid_machinery/unary/sensor/filtration
 	mailgroups = MGT_JANITOR
