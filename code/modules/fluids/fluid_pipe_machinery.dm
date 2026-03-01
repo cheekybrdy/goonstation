@@ -435,7 +435,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	var/triggered = null //To stop PDA spam
 	//For PDA/signal alert stuff
 	var/pda_mode = TRUE
-	var/list/mailgroups = null
+	var/list/mailgroups = MGA_PLUMBING
 	var/net_id = null
 	var/alert_frequency = FREQ_PDA
 	var/filtration = null // used to give a unique message for roundstart sewage sensors
@@ -511,7 +511,6 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	src.pda_mode = !src.pda_mode
 
 /obj/machinery/fluid_machinery/unary/sensor/filtration
-	mailgroups = MGT_JANITOR
 	signal_threshold = 20000
 	filtration = 1
 
