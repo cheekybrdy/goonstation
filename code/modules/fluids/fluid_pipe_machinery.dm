@@ -475,6 +475,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 		else
 			message = "SEWAGE BACKUP ALERT: [src] in [myarea]."
 		src.send_message(message, mailgroups, "PLUMBING-MAILBOT")
+		triggered = 1
 	ON_COOLDOWN(src, "sensor_check", check_timer)
 
 /obj/machinery/fluid_machinery/unary/sensor/proc/set_threshold(var/datum/mechanicsMessage/input)
