@@ -492,6 +492,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	var/inp = tgui_input_number(user, "Please enter sensor threshold (Will round to [QUANTIZATION_UNITS]):", "Dispense Amount", 0, src.Threshold_Max, src.Threshold_Min)
 	if (!inp) return
 	src.signal_threshold = round(inp, QUANTIZATION_UNITS)
+	boutput(user, "Threshold set to [src.signal_threshold] units.")
 	logTheThing(LOG_STATION, user, "set a fluid sensor set to trigger at [src.signal_threshold] units at [log_loc(src)].")
 
 
@@ -505,6 +506,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 /obj/machinery/fluid_machinery/unary/sensor/proc/set_frequency_manual(obj/item/W, mob/user)
 	var/inp = tgui_input_number(user, "Please enter frequency :", "Frequency", src.alert_frequency, R_FREQ_MAXIMUM, R_FREQ_MINIMUM)
 	if (!inp) return
+	boutput(user, "Frequency set to: [src.alert_frequency]Hz.")
 	logTheThing(LOG_STATION, user, "set a fluid sensor set to send at [src.alert_frequency] at [log_loc(src)].")
 
 /obj/machinery/fluid_machinery/unary/sensor/proc/toggle_alerts(obj/item/W, mob/user)
