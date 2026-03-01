@@ -467,6 +467,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.total_volume]")
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.reagent_list]")
 	if(triggered && src.network.reagents.total_volume <= signal_threshold) // Has it gone below the threshold to reset the PDA alerts?
+		triggered = 0
 	if (src.network.reagents.total_volume >= signal_threshold && filtration && !triggered)
 		var/myarea = get_area(src)
 		var/message = null //not 4 long
