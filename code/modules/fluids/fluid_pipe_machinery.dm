@@ -432,6 +432,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	var/Threshold_Max = 100000
 	var/signal_threshold = 1000
 	var/check_timer = 5 SECONDS
+	var/triggered = null //To stop PDA spam
 	//For PDA/signal alert stuff
 	var/uses_radio = 0
 	var/list/mailgroups = null
@@ -465,7 +466,8 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	if (!src.network) return
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.total_volume]")
 	SEND_SIGNAL(src,COMSIG_MECHCOMP_TRANSMIT_SIGNAL, "[src.network.reagents.reagent_list]")
-	if (src.network.reagents.total_volume >= signal_threshold && filtration)
+	if(triggered && src.network.reagents.total_volume <= signal_threshold) // Has it gone below the threshold to reset the PDA alerts?
+	if (src.network.reagents.total_volume >= signal_threshold && filtration && !triggered)
 		var/myarea = get_area(src)
 		var/message = null //not 4 long
 		if(!filtration)
