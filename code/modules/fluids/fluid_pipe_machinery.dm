@@ -436,7 +436,6 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	//For PDA/signal alert stuff
 	var/pda_mode = TRUE
 	var/list/mailgroups = list(MGA_PLUMBING)
-	var/net_id = null
 	var/alert_frequency = FREQ_PDA
 	var/filtration = null // used to give a unique message for roundstart sewage sensors
 
@@ -451,6 +450,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 /obj/machinery/fluid_machinery/unary/sensor/proc/send_message(var/message, var/alertgroup, var/sender_name)
 	DEBUG_MESSAGE("sending message: [message]")
 	var/datum/signal/newsignal = get_free_signal()
+	var/net_id = generate_net_id(src)
 	newsignal.source = src
 	newsignal.data["command"] = "text_message"
 	newsignal.data["sender_name"] = sender_name
@@ -458,7 +458,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 
 	newsignal.data["address_1"] = "00000000"
 	newsignal.data["group"] = mailgroups
-	newsignal.data["sender"] = src.net_id
+	newsignal.data["sender"] = net_id
 
 	SEND_SIGNAL(src, COMSIG_MOVABLE_POST_RADIO_PACKET, newsignal)
 
