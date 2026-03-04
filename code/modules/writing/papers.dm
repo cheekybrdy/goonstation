@@ -498,6 +498,37 @@ Only trained personnel should operate station systems. Follow all procedures car
 	icon_state = "paper"
 	info = {"This thing is too good as a backscratcher, I'm keeping it until you get the power source for its main use. -M"}
 
+/obj/item/paper/toxmoon_biodome
+	name = "Hazardous Material Disposal Procedure"
+	icon_state = "paper"
+	info = {"If we need to get rid of anything especially hazardous, or simply something we need <i>gone<i>, send it to these coordinates. <br>
+	Its a old decommisioned Giesel nuclear power plant so whatever we need to stuff there won't be an anomaly in any readings.
+	There is a <i>slight<i> undead problem but if we mainly stick to dumping at the perimeter nothing should be exposed."}
+
+/obj/item/paper/toxmoon_depot
+	name = "Logistical Log - Outpost Gamma Dumping Site"
+	icon_state = "paper"
+	info = {"Item Log 27/03/47 <br>
+	2x Fuel Rods, abstract matter <br>
+	10x Trash Bags
+	1x Body Bag
+	2x Experiment Vials
+	AWATING APPROVAL
+	MISC ALCHEMY SUPPLIES"}
+
+/obj/item/paper/toxmoon_checkpoint
+	name = "Xiang Giesel Entrance Record"
+	icon_state = "paper"
+	info = {"Entrance Record 27/03/42 <br>
+	Chief Engineer: Fiona Trout 5:55 AM <br>
+	Senior Engineer: Travis Grant 6:10 AM <br>
+	Senior Engineer: Hugo Mann 6:15 AM <br>
+	Junior Engineer: Erin Claude 6:25 AM <br>
+	Visitor: Garriot Doe 7:15 AM <br>
+	Junior Engineer: Boris Trevich 7:54 AM <br>
+	NOTICE: HIGH RADIATION LEVELS DETECTED. <br>
+	ALL INCOMING EMPLOYEES PROCEED WITH CAUTION."}
+
 /obj/item/paper/telecrystal_update
 	name = "email printout"
 	info = {"

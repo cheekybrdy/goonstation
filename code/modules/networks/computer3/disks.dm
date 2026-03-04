@@ -176,6 +176,12 @@
 		name = "galactic coordinate disk - 'Fatuus'"
 		target_name = "Fatuus"
 
+	toxmoon
+		name = "galactic coordinate disk - 'Fatuus Dumping Site'"
+		icon_state = "datadisktele2"
+		disk_color = "#4ED57C"
+		target_name = "Fatuus II"
+
 	mars_outpost
 		name = "galactic coordinate disk - 'Mars'"
 		target_name = "Mars"

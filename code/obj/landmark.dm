@@ -545,6 +545,9 @@ var/global/list/job_start_locations = list()
 /obj/landmark/lrt/biodome
 	name = "Fatuus"
 
+/obj/landmark/lrt/toxmoon
+	name = "Fatuus II"
+
 /obj/landmark/lrt/mars_outpost
 	name = "Mars"
 
