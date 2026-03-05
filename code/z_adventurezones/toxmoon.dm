@@ -30,7 +30,7 @@
 		nitrogen = 0
 		oxygen = 0
 		var/image/fallout_overlay
-		var/fallout_overlay = image('icons/effects/tile_effects.dmi', "rad_particles")
+		fallout_overlay = image('icons/effects/tile_effects.dmi', "rad_particles")
 
 		New()
 			AddOverlays(fallout_overlay, "fallout")
