@@ -3767,6 +3767,15 @@
 	},
 /turf/unsimulated/floor/caution/east,
 /area/hospital/samostrel)
+"asn" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 1;
+	name = "grimy pipe"
+	},
+/mob/living/critter/zombie,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "asr" = (
 /obj/fakeobject/pipe{
 	desc = "The air from it smells faintly of mildew.";
@@ -5949,6 +5958,21 @@
 /obj/mapping_helper/mob_spawn/corpse/human/owlery_security,
 /turf/unsimulated/floor/wood/two,
 /area/owlery/staffhall)
+"aDd" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 6;
+	name = "grimy pipe";
+	pixel_x = -4
+	},
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 4;
+	name = "grimy pipe";
+	pixel_x = 14
+	},
+/turf/unsimulated/floor,
+/area/toxmoon/upper_plant)
 "aDm" = (
 /obj/machinery/door/poddoor/blast/lunar/tour{
 	density = 0;
@@ -54657,6 +54681,12 @@
 	icon_state = "fullblack"
 	},
 /area/sim/racing_track)
+"ebA" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/unsimulated/floor/plating,
+/area/toxmoon/depot)
 "ebC" = (
 /obj/landmark/viscontents_spawn{
 	targetZ = 4
@@ -56491,6 +56521,17 @@
 	},
 /turf/unsimulated/outdoors/grass,
 /area/centcom/outside)
+"fuI" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 1;
+	name = "grimy pipe"
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "fuP" = (
 /obj/lattice{
 	dir = 10;
@@ -57212,6 +57253,9 @@
 	icon_state = "broken_powerline";
 	layer = 2.5;
 	name = "power conduit"
+	},
+/obj/machinery/light/small{
+	dir = 8
 	},
 /turf/unsimulated/floor/plating/scorched,
 /area/toxmoon/upper_plant)
@@ -57966,6 +58010,9 @@
 	pixel_y = 26;
 	name = "override panel-'lockdown override'";
 	id = "toxmoon_entrance"
+	},
+/obj/machinery/light/small{
+	dir = 8
 	},
 /turf/unsimulated/floor/setpieces/rootfloor{
 	icon_state = "rootfloor_3"
@@ -58856,6 +58903,15 @@
 	},
 /turf/unsimulated/floor/orangeblack,
 /area/crunch)
+"hhC" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 1;
+	name = "grimy pipe";
+	pixel_x = -4
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "hhE" = (
 /obj/fakeobject{
 	dir = 1;
@@ -61213,6 +61269,12 @@
 	},
 /turf/unsimulated/floor,
 /area/watchful_eye_sensor)
+"iUD" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "iUI" = (
 /obj/mesh/catwalk,
 /obj/cable{
@@ -62375,6 +62437,14 @@
 	},
 /turf/unsimulated/floor,
 /area/watchful_eye_sensor)
+"jKz" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 4;
+	name = "grimy pipe"
+	},
+/turf/unsimulated/floor,
+/area/toxmoon/upper_plant)
 "jKH" = (
 /obj/decal/cleanable/oil,
 /turf/unsimulated/floor/grime,
@@ -62897,6 +62967,13 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/meat_derelict/guts)
+"keN" = (
+/obj/machinery/door/airlock/pyro{
+	dir = 4;
+	name = "Pump Room"
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "kfa" = (
 /turf/unsimulated/floor/void/channel,
 /area/adventure/channel/flingy)
@@ -63291,6 +63368,16 @@
 	dir = 4
 	},
 /area/syndicate_station/battlecruiser)
+"krk" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 4;
+	name = "grimy pipe"
+	},
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/upper_plant)
 "krl" = (
 /obj/indestructible/shuttle_corner{
 	dir = 6;
@@ -63987,6 +64074,9 @@
 /area/centcom/offices{
 	icon_state = "blue"
 	})
+"kPF" = (
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated,
+/area/toxmoon/upper_plant)
 "kPQ" = (
 /obj/iomoon_puzzle/button{
 	id = "iomoon_burntpuzzleD;iomoon_burntroomE"
@@ -64670,6 +64760,9 @@
 /obj/random_item_spawner/junk/one_or_zero,
 /turf/unsimulated/floor/setpieces/toxmoon/radpool,
 /area/toxmoon/exterior)
+"lrk" = (
+/turf/unsimulated/wall/auto/adventure/overgrown1,
+/area/space)
 "lrl" = (
 /obj/fakeobject/pipe{
 	desc = "It seems to have been damaged somehow.";
@@ -65357,6 +65450,15 @@
 	icon_state = "beach-0"
 	},
 /area/titlescreen)
+"lUP" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 4;
+	name = "grimy pipe"
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "lUV" = (
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/unsimulated/floor/plating,
@@ -69375,6 +69477,10 @@
 	dir = 9
 	},
 /area/centcom/offices/katzen)
+"oXg" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "oXl" = (
 /obj/machinery/shuttle/engine/propulsion{
 	dir = 4;
@@ -72264,6 +72370,13 @@
 /obj/mesh/grille/steel,
 /turf/unsimulated/floor/plating,
 /area/owlery/Owlopen)
+"qWO" = (
+/obj/machinery/door/airlock/pyro{
+	dir = 4
+	},
+/obj/decal/poster/wallsign/iso/safe/shower,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "qWW" = (
 /obj/table/reinforced/bar/auto{
 	name = "table"
@@ -72610,6 +72723,14 @@
 	},
 /turf/unsimulated/floor/lava,
 /area/iomoon)
+"roj" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/upper_plant)
 "rol" = (
 /obj/fakeobject/pipe{
 	desc = "It is not working.";
@@ -72648,6 +72769,15 @@
 	},
 /turf/unsimulated/floor/wood/eight,
 /area/centcom/offices/bilo)
+"rpz" = (
+/obj/machinery/shower{
+	dir = 1
+	},
+/obj/machinery/drainage,
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/upper_plant)
 "rpG" = (
 /turf/unsimulated/floor/setpieces/rootfloor{
 	icon_state = "rootfloor_2"
@@ -73003,6 +73133,16 @@
 	name = "Fireplace"
 	},
 /area/centcom/offices/flaborized)
+"rAF" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 6;
+	name = "grimy pipe"
+	},
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/upper_plant)
 "rAS" = (
 /obj/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -74890,6 +75030,13 @@
 /area/centcom/offices{
 	icon_state = "blue"
 	})
+"sRq" = (
+/obj/machinery/door/poddoor/blast{
+	dir = 4;
+	id = "toxmoon_mainhall"
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "sSC" = (
 /obj/storage/closet/wardrobe/wizard,
 /turf/unsimulated/floor/wood/two,
@@ -79471,6 +79618,13 @@
 "wpC" = (
 /turf/unsimulated/floor/orangeblack/corner,
 /area/meat_derelict/entry)
+"wpF" = (
+/obj/machinery/shower{
+	dir = 1
+	},
+/obj/machinery/drainage,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "wpP" = (
 /obj/item/radio_tape/adventure/xg,
 /turf/unsimulated/floor/carpet/grime,
@@ -79924,6 +80078,12 @@
 	},
 /turf/space,
 /area/watchful_eye_sensor)
+"wFl" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/unsimulated/floor/setpieces/oldfloor,
+/area/toxmoon/depot)
 "wFK" = (
 /obj/lattice/directional_icons,
 /turf/space,
@@ -80736,6 +80896,12 @@
 	},
 /turf/unsimulated/floor/void/channel,
 /area/adventure/channel)
+"xkB" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "xkM" = (
 /obj/machinery/light,
 /turf/unsimulated/floor/grey/side{
@@ -81421,6 +81587,15 @@
 /obj/mesh/grille/steel,
 /turf/unsimulated/floor/plating,
 /area/moon/museum/west)
+"xBa" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 4;
+	name = "grimy pipe"
+	},
+/obj/machinery/light/small,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "xBc" = (
 /obj/indestructible/shuttle_corner{
 	icon_state = "wall3_trans"
@@ -82316,6 +82491,12 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/katzen)
+"ydk" = (
+/obj/machinery/light/small,
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/upper_plant)
 "yea" = (
 /turf/unsimulated/floor/black{
 	icon_state = "cairngorm11"
@@ -82464,6 +82645,12 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital)
+"yjJ" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/unsimulated/floor/setpieces/oldfloor,
+/area/toxmoon/depot)
 "ykl" = (
 /obj/cable/green{
 	icon_state = "5-10"
@@ -127425,7 +127612,7 @@ aaa
 fVQ
 uUK
 vzM
-bnW
+ydk
 fVQ
 fWN
 bnW
@@ -128627,12 +128814,12 @@ dFC
 eyM
 aaa
 fVQ
-pgp
-pgp
-pgp
-vzM
+rAF
+hzI
+hzI
+fuI
 dbs
-dbs
+asn
 fAp
 hzI
 tvz
@@ -128662,7 +128849,7 @@ kEW
 kEW
 hfP
 kEW
-mLc
+wFl
 kEW
 hfP
 aaa
@@ -128929,9 +129116,9 @@ dvn
 eyM
 aaa
 fVQ
-pgp
-pgp
-pgp
+xlG
+kLE
+bnW
 kLE
 vzM
 bnW
@@ -128959,7 +129146,7 @@ soG
 eGU
 eGU
 hfP
-kEW
+ebA
 puk
 mLc
 ppK
@@ -129231,13 +129418,13 @@ qkV
 eyM
 aaa
 fVQ
-pgp
-pgp
-pgp
+krk
 vzM
 kLE
 vzM
-vzM
+aDd
+hhC
+hhC
 xkn
 sxU
 ukI
@@ -129533,15 +129720,15 @@ qkV
 eyM
 aaa
 fVQ
-pgp
-pgp
-pgp
-vzM
+xlG
+kLE
 kLE
 vzM
+jKz
+vzM
 bnW
 bnW
-xlG
+xBa
 ukI
 ukI
 pGS
@@ -129835,11 +130022,11 @@ qkV
 eyM
 aaa
 fVQ
-pgp
-pgp
-pgp
+krk
+xkB
+bnW
 vzM
-vzM
+xlG
 kLE
 kLE
 bnW
@@ -130137,14 +130324,14 @@ qkV
 eyM
 aaa
 fVQ
-pgp
-pgp
-pgp
-pgp
-pgp
+lUP
+fVQ
+keN
+fVQ
+lUP
 fVQ
 fVQ
-smy
+qWO
 giJ
 ukI
 pGS
@@ -130439,13 +130626,13 @@ eyM
 eyM
 aaa
 fVQ
-pgp
-pgp
-pgp
-pgp
-pgp
+kPF
+kPF
+kPF
+kPF
+kPF
 fVQ
-vzM
+iUD
 bnW
 pbL
 tKg
@@ -130741,13 +130928,13 @@ aaa
 aaa
 aaa
 fVQ
-pgp
-pgp
-pgp
-pgp
-pgp
+kPF
+kPF
+kPF
+kPF
+kPF
 fVQ
-vzM
+wpF
 kLE
 vwc
 ukI
@@ -130776,7 +130963,7 @@ xGn
 hfP
 dCR
 kEW
-mLc
+yjJ
 vqt
 hfP
 aaa
@@ -131035,21 +131222,21 @@ aaa
 aaa
 aaa
 aaa
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+lrk
+lrk
+lrk
+lrk
+lrk
+lrk
+lrk
 fVQ
-pgp
-pgp
-pgp
-pgp
-pgp
+kPF
+kPF
+kPF
+kPF
+kPF
 fVQ
-bnW
+rpz
 vzM
 vwc
 ukI
@@ -131333,11 +131520,11 @@ bGG
 ngw
 bFS
 aaa
-cnw
-cnw
-cnw
-cnw
-cnw
+lrk
+lrk
+lrk
+lrk
+lrk
 cnw
 cnw
 cnw
@@ -131345,11 +131532,11 @@ cnw
 cnw
 cnw
 pgp
-pgp
-pgp
-pgp
-pgp
-pgp
+kPF
+kPF
+kPF
+kPF
+kPF
 fVQ
 vzM
 kLE
@@ -131635,7 +131822,7 @@ bGt
 bKJ
 bFS
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -131647,14 +131834,14 @@ cnw
 cnw
 cnw
 pgp
-pgp
-pgp
-pgp
-pgp
-pgp
+kPF
+kPF
+kPF
+kPF
+kPF
 fVQ
 fVQ
-smy
+qWO
 fVQ
 ukI
 ukI
@@ -131937,7 +132124,7 @@ bGG
 ngw
 bFS
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -131949,12 +132136,12 @@ cnw
 cnw
 cnw
 pgp
-pgp
-pgp
-pgp
-pgp
-pgp
-pgp
+kPF
+kPF
+kPF
+kPF
+kPF
+sRq
 vzM
 vzM
 bnW
@@ -131981,7 +132168,7 @@ lqk
 eGU
 lqk
 eGU
-imM
+eGU
 eGU
 eGU
 eGU
@@ -132239,7 +132426,7 @@ bHK
 bFR
 bFS
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -132251,12 +132438,12 @@ cnw
 cnw
 cnw
 pgp
-pgp
-pgp
-pgp
-pgp
-pgp
-pgp
+kPF
+kPF
+kPF
+kPF
+kPF
+oXg
 bnW
 bnW
 vzM
@@ -132541,7 +132728,7 @@ bFS
 bFS
 bFS
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -132553,12 +132740,12 @@ cnw
 cnw
 cnw
 pgp
-pgp
-pgp
-pgp
-pgp
-pgp
-pgp
+kPF
+kPF
+kPF
+kPF
+kPF
+oXg
 bnW
 vzM
 vzM
@@ -132843,7 +133030,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -132855,14 +133042,14 @@ cnw
 cnw
 cnw
 pgp
-pgp
-pgp
-pgp
-pgp
-pgp
-pgp
+kPF
+kPF
+kPF
+kPF
+kPF
+sRq
 vzM
-bnW
+roj
 bnW
 rVh
 etU
@@ -133145,7 +133332,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -133157,15 +133344,15 @@ cnw
 cnw
 cnw
 pgp
-pgp
-pgp
-pgp
-pgp
-pgp
-pgp
-pgp
-pgp
-pgp
+kPF
+kPF
+kPF
+kPF
+kPF
+fVQ
+fVQ
+fVQ
+fVQ
 ukI
 ukI
 iFd
@@ -133447,7 +133634,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -133489,9 +133676,9 @@ eGU
 eGU
 eGU
 rUm
-imM
-imM
-imM
+eGU
+eGU
+eGU
 cBK
 eGU
 eGU
@@ -133749,7 +133936,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -133792,8 +133979,8 @@ gLI
 eEm
 kXz
 fIR
-imM
-imM
+eGU
+eGU
 eGU
 eGU
 eGU
@@ -134051,7 +134238,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -134095,7 +134282,7 @@ wKQ
 bUw
 wKQ
 dSH
-imM
+eGU
 jji
 eGU
 eGU
@@ -134353,7 +134540,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -134655,7 +134842,7 @@ bFN
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -134957,7 +135144,7 @@ bFN
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -135259,7 +135446,7 @@ bFN
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -135561,7 +135748,7 @@ bFN
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -135863,7 +136050,7 @@ bFN
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -136165,7 +136352,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -136467,7 +136654,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -136769,7 +136956,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw
@@ -137071,7 +137258,7 @@ aaa
 aaa
 aaa
 aaa
-cnw
+lrk
 cnw
 cnw
 cnw

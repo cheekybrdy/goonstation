@@ -29,6 +29,10 @@
 		radgas = 100
 		nitrogen = 0
 		oxygen = 0
+		var/fallout_overlay = image('icons/effects/tile_effects.dmi', "rad_particles")
+
+		New()
+			AddOverlays(fallout_overlay, "fallout")
 
 /turf/unsimulated/floor/setpieces/toxmoon/radpool
 	name = "radioactive goop"
