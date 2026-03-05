@@ -29,10 +29,10 @@
 		radgas = 100
 		nitrogen = 0
 		oxygen = 0
-		var/image/fallout_overlay
-		fallout_overlay = image('icons/effects/tile_effects.dmi', "rad_particles")
 
 		New()
+			..()
+			var/image/fallout_overlay = image('icons/effects/tile_effects.dmi', "rad_particles")
 			AddOverlays(fallout_overlay, "fallout")
 
 /turf/unsimulated/floor/setpieces/toxmoon/radpool

@@ -3767,15 +3767,6 @@
 	},
 /turf/unsimulated/floor/caution/east,
 /area/hospital/samostrel)
-"asn" = (
-/obj/fakeobject/pipe{
-	color = "b4b4b4";
-	dir = 1;
-	name = "grimy pipe"
-	},
-/mob/living/critter/zombie,
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/upper_plant)
 "asr" = (
 /obj/fakeobject/pipe{
 	desc = "The air from it smells faintly of mildew.";
@@ -4062,6 +4053,16 @@
 	name = "compartment floor"
 	},
 /area/moon/museum/west)
+"ato" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 6;
+	name = "grimy pipe"
+	},
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/upper_plant)
 "atp" = (
 /obj/critter/mannequin{
 	dead_state = "spacemannequin-dead";
@@ -5958,21 +5959,6 @@
 /obj/mapping_helper/mob_spawn/corpse/human/owlery_security,
 /turf/unsimulated/floor/wood/two,
 /area/owlery/staffhall)
-"aDd" = (
-/obj/fakeobject/pipe{
-	color = "b4b4b4";
-	dir = 6;
-	name = "grimy pipe";
-	pixel_x = -4
-	},
-/obj/fakeobject/pipe{
-	color = "b4b4b4";
-	dir = 4;
-	name = "grimy pipe";
-	pixel_x = 14
-	},
-/turf/unsimulated/floor,
-/area/toxmoon/upper_plant)
 "aDm" = (
 /obj/machinery/door/poddoor/blast/lunar/tour{
 	density = 0;
@@ -46680,6 +46666,15 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital/underground)
+"dqs" = (
+/obj/machinery/shower{
+	dir = 1
+	},
+/obj/machinery/drainage,
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/upper_plant)
 "dqv" = (
 /turf/unsimulated/floor/grey/side{
 	dir = 5
@@ -54681,12 +54676,6 @@
 	icon_state = "fullblack"
 	},
 /area/sim/racing_track)
-"ebA" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/unsimulated/floor/plating,
-/area/toxmoon/depot)
 "ebC" = (
 /obj/landmark/viscontents_spawn{
 	targetZ = 4
@@ -56521,17 +56510,6 @@
 	},
 /turf/unsimulated/outdoors/grass,
 /area/centcom/outside)
-"fuI" = (
-/obj/fakeobject/pipe{
-	color = "b4b4b4";
-	dir = 1;
-	name = "grimy pipe"
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/upper_plant)
 "fuP" = (
 /obj/lattice{
 	dir = 10;
@@ -56805,6 +56783,12 @@
 /area/centcom/offices{
 	icon_state = "blue"
 	})
+"fFg" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/unsimulated/floor/plating,
+/area/toxmoon/depot)
 "fFv" = (
 /obj/indestructible/shuttle_corner{
 	icon_state = "wall3_trans"
@@ -57728,6 +57712,13 @@
 	},
 /turf/space,
 /area/space)
+"goQ" = (
+/obj/machinery/shower{
+	dir = 1
+	},
+/obj/machinery/drainage,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "goR" = (
 /obj/table/wood/auto/desk{
 	color = "#333333";
@@ -57959,6 +57950,13 @@
 /obj/machinery/light/traffic_light/john_owlery/delay5,
 /turf/space,
 /area/space)
+"gxl" = (
+/obj/machinery/door/airlock/pyro{
+	dir = 4
+	},
+/obj/decal/poster/wallsign/iso/safe/shower,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "gxE" = (
 /obj/decal/cleanable/dirt,
 /obj/cable{
@@ -58903,15 +58901,6 @@
 	},
 /turf/unsimulated/floor/orangeblack,
 /area/crunch)
-"hhC" = (
-/obj/fakeobject/pipe{
-	color = "b4b4b4";
-	dir = 1;
-	name = "grimy pipe";
-	pixel_x = -4
-	},
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/upper_plant)
 "hhE" = (
 /obj/fakeobject{
 	dir = 1;
@@ -59484,6 +59473,16 @@
 	dir = 5
 	},
 /area/centcom/offices/cogwerks)
+"hDx" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 4;
+	name = "grimy pipe"
+	},
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/upper_plant)
 "hEq" = (
 /obj/table/wood/round,
 /obj/item/reagent_containers/food/drinks/bottle/champagne{
@@ -59597,9 +59596,8 @@
 	},
 /area/meat_derelict/guts)
 "hIa" = (
-/obj/item/reagent_containers/food/snacks/yellow_cake_uranium_cake,
 /turf/unsimulated/wall/auto/adventure/overgrown1,
-/area/toxmoon/entrance)
+/area/space)
 "hIh" = (
 /obj/disposalpipe/trunk/west,
 /obj/machinery/disposal,
@@ -60526,9 +60524,6 @@
 /turf/space,
 /area/syndicate_station_space)
 "isD" = (
-/obj/decal/grass_edge{
-	dir = 4
-	},
 /obj/decal/grass_edge/corner{
 	dir = 4
 	},
@@ -60780,6 +60775,12 @@
 "iDk" = (
 /turf/unsimulated/floor/grime,
 /area/sim/gunsim/lobby)
+"iDv" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/unsimulated/floor/setpieces/oldfloor,
+/area/toxmoon/depot)
 "iDD" = (
 /obj/landmark/lrt/io,
 /turf/unsimulated/iomoon/plating,
@@ -61269,12 +61270,6 @@
 	},
 /turf/unsimulated/floor,
 /area/watchful_eye_sensor)
-"iUD" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/upper_plant)
 "iUI" = (
 /obj/mesh/catwalk,
 /obj/cable{
@@ -61467,6 +61462,15 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital/underground)
+"jbm" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 1;
+	name = "grimy pipe"
+	},
+/mob/living/critter/zombie,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "jbA" = (
 /obj/storage/secure/closet/civilian/hydro{
 	desc = "The only PDAs you'll find in this locker are Plant Data Analyzers. Heh.";
@@ -61592,6 +61596,21 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/moon/museum)
+"jeK" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 6;
+	name = "grimy pipe";
+	pixel_x = -4
+	},
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 4;
+	name = "grimy pipe";
+	pixel_x = 14
+	},
+/turf/unsimulated/floor,
+/area/toxmoon/upper_plant)
 "jeL" = (
 /obj/overlay{
 	density = 1;
@@ -61869,6 +61888,10 @@
 	},
 /turf/unsimulated/floor,
 /area/watchful_eye_sensor)
+"jnq" = (
+/obj/decal/grass_edge,
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/entrance)
 "jns" = (
 /obj/machinery/light,
 /turf/unsimulated/floor,
@@ -62437,14 +62460,6 @@
 	},
 /turf/unsimulated/floor,
 /area/watchful_eye_sensor)
-"jKz" = (
-/obj/fakeobject/pipe{
-	color = "b4b4b4";
-	dir = 4;
-	name = "grimy pipe"
-	},
-/turf/unsimulated/floor,
-/area/toxmoon/upper_plant)
 "jKH" = (
 /obj/decal/cleanable/oil,
 /turf/unsimulated/floor/grime,
@@ -62893,6 +62908,10 @@
 	tag = "icon-fpurple1"
 	},
 /area/centcom/lounge)
+"kcP" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "kcV" = (
 /obj/decal/cleanable/blood{
 	icon_state = "handblood_c"
@@ -62967,13 +62986,6 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/meat_derelict/guts)
-"keN" = (
-/obj/machinery/door/airlock/pyro{
-	dir = 4;
-	name = "Pump Room"
-	},
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/upper_plant)
 "kfa" = (
 /turf/unsimulated/floor/void/channel,
 /area/adventure/channel/flingy)
@@ -63368,16 +63380,6 @@
 	dir = 4
 	},
 /area/syndicate_station/battlecruiser)
-"krk" = (
-/obj/fakeobject/pipe{
-	color = "b4b4b4";
-	dir = 4;
-	name = "grimy pipe"
-	},
-/turf/unsimulated/floor/setpieces/rootfloor{
-	icon_state = "rootfloor_3"
-	},
-/area/toxmoon/upper_plant)
 "krl" = (
 /obj/indestructible/shuttle_corner{
 	dir = 6;
@@ -64074,9 +64076,6 @@
 /area/centcom/offices{
 	icon_state = "blue"
 	})
-"kPF" = (
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated,
-/area/toxmoon/upper_plant)
 "kPQ" = (
 /obj/iomoon_puzzle/button{
 	id = "iomoon_burntpuzzleD;iomoon_burntroomE"
@@ -64559,6 +64558,14 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/centcom/lobby)
+"ljV" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/upper_plant)
 "lkO" = (
 /obj/machinery/door/airlock/pyro/maintenance,
 /turf/unsimulated/floor/plating,
@@ -64760,9 +64767,6 @@
 /obj/random_item_spawner/junk/one_or_zero,
 /turf/unsimulated/floor/setpieces/toxmoon/radpool,
 /area/toxmoon/exterior)
-"lrk" = (
-/turf/unsimulated/wall/auto/adventure/overgrown1,
-/area/space)
 "lrl" = (
 /obj/fakeobject/pipe{
 	desc = "It seems to have been damaged somehow.";
@@ -65450,15 +65454,6 @@
 	icon_state = "beach-0"
 	},
 /area/titlescreen)
-"lUP" = (
-/obj/mapping_helper/wingrille_spawn/auto,
-/obj/fakeobject/pipe{
-	color = "b4b4b4";
-	dir = 4;
-	name = "grimy pipe"
-	},
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/upper_plant)
 "lUV" = (
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/unsimulated/floor/plating,
@@ -66746,6 +66741,17 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/moon/museum/west)
+"mWG" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 1;
+	name = "grimy pipe"
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "mWP" = (
 /obj/machinery/light/emergency{
 	dir = 8
@@ -67723,10 +67729,6 @@
 /turf/unsimulated/floor/plating,
 /area/owlery/Owlmait2)
 "nJT" = (
-/obj/decal/grass_edge,
-/obj/decal/grass_edge{
-	dir = 4
-	},
 /obj/decal/grass_edge{
 	dir = 8
 	},
@@ -68668,6 +68670,12 @@
 	dir = 8
 	},
 /area/precursor)
+"onF" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "onI" = (
 /obj/ladder{
 	id = "iomoon"
@@ -69222,6 +69230,13 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/glowbold)
+"oKF" = (
+/obj/machinery/door/airlock/pyro{
+	dir = 4;
+	name = "Pump Room"
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "oLg" = (
 /obj/fakeobject/pipe{
 	icon = 'icons/obj/atmospherics/pipes/manifold_pipe.dmi';
@@ -69477,8 +69492,13 @@
 	dir = 9
 	},
 /area/centcom/offices/katzen)
-"oXg" = (
+"oWQ" = (
 /obj/mapping_helper/wingrille_spawn/auto,
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 4;
+	name = "grimy pipe"
+	},
 /turf/unsimulated/floor/plating/scorched,
 /area/toxmoon/upper_plant)
 "oXl" = (
@@ -70582,6 +70602,12 @@
 "pHY" = (
 /turf/unsimulated/wall/auto/adventure/shuttle/dark,
 /area/drone)
+"pIA" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/unsimulated/floor/setpieces/oldfloor,
+/area/toxmoon/depot)
 "pJd" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -70696,6 +70722,13 @@
 /obj/storage/closet/emergency,
 /turf/unsimulated/floor/plating,
 /area/solarium)
+"pMY" = (
+/obj/decal/grass_edge{
+	dir = 4
+	},
+/obj/decal/grass_edge,
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/entrance)
 "pNh" = (
 /obj/item/reagent_containers/food/snacks/plant/glowfruit/spawnable{
 	pixel_x = -11;
@@ -72370,13 +72403,6 @@
 /obj/mesh/grille/steel,
 /turf/unsimulated/floor/plating,
 /area/owlery/Owlopen)
-"qWO" = (
-/obj/machinery/door/airlock/pyro{
-	dir = 4
-	},
-/obj/decal/poster/wallsign/iso/safe/shower,
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/upper_plant)
 "qWW" = (
 /obj/table/reinforced/bar/auto{
 	name = "table"
@@ -72414,6 +72440,13 @@
 /obj/machinery/communications_dish,
 /turf/space,
 /area/watchful_eye_sensor)
+"qYh" = (
+/obj/decal/grass_edge{
+	dir = 8
+	},
+/obj/decal/grass_edge,
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/entrance)
 "qYW" = (
 /obj/machinery/power/data_terminal,
 /obj/cable{
@@ -72442,6 +72475,13 @@
 	dir = 1
 	},
 /area/iomoon/base)
+"raw" = (
+/obj/decal/grass_edge,
+/obj/decal/grass_edge{
+	dir = 4
+	},
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/entrance)
 "raS" = (
 /obj/stool/chair/comfy,
 /obj/landmark/spawner/random_trader,
@@ -72723,14 +72763,6 @@
 	},
 /turf/unsimulated/floor/lava,
 /area/iomoon)
-"roj" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/unsimulated/floor/setpieces/rootfloor{
-	icon_state = "rootfloor_3"
-	},
-/area/toxmoon/upper_plant)
 "rol" = (
 /obj/fakeobject/pipe{
 	desc = "It is not working.";
@@ -72763,21 +72795,21 @@
 /obj/machinery/light,
 /turf/unsimulated/floor/carpet/grime,
 /area/centcom/offices/flaborized)
+"roM" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 4;
+	name = "grimy pipe"
+	},
+/obj/machinery/light/small,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "rph" = (
 /obj/stool/chair/comfy/purple{
 	dir = 1
 	},
 /turf/unsimulated/floor/wood/eight,
 /area/centcom/offices/bilo)
-"rpz" = (
-/obj/machinery/shower{
-	dir = 1
-	},
-/obj/machinery/drainage,
-/turf/unsimulated/floor/setpieces/rootfloor{
-	icon_state = "rootfloor_3"
-	},
-/area/toxmoon/upper_plant)
 "rpG" = (
 /turf/unsimulated/floor/setpieces/rootfloor{
 	icon_state = "rootfloor_2"
@@ -73133,16 +73165,6 @@
 	name = "Fireplace"
 	},
 /area/centcom/offices/flaborized)
-"rAF" = (
-/obj/fakeobject/pipe{
-	color = "b4b4b4";
-	dir = 6;
-	name = "grimy pipe"
-	},
-/turf/unsimulated/floor/setpieces/rootfloor{
-	icon_state = "rootfloor_3"
-	},
-/area/toxmoon/upper_plant)
 "rAS" = (
 /obj/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -73504,6 +73526,13 @@
 /obj/decal/stripe_delivery,
 /turf/unsimulated/floor/plating,
 /area/upper_arctic/pod2)
+"rLP" = (
+/obj/machinery/door/poddoor/blast{
+	dir = 4;
+	id = "toxmoon_mainhall"
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "rLQ" = (
 /obj/shrub{
 	dir = 6
@@ -73562,6 +73591,14 @@
 	},
 /turf/unsimulated/outdoors/grass,
 /area/void_diner)
+"rPx" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 4;
+	name = "grimy pipe"
+	},
+/turf/unsimulated/floor,
+/area/toxmoon/upper_plant)
 "rPE" = (
 /obj/table/reinforced/bar/auto{
 	name = "table"
@@ -75030,13 +75067,6 @@
 /area/centcom/offices{
 	icon_state = "blue"
 	})
-"sRq" = (
-/obj/machinery/door/poddoor/blast{
-	dir = 4;
-	id = "toxmoon_mainhall"
-	},
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/upper_plant)
 "sSC" = (
 /obj/storage/closet/wardrobe/wizard,
 /turf/unsimulated/floor/wood/two,
@@ -75782,6 +75812,12 @@
 	opacity = 0
 	},
 /area/centcom/lobby)
+"tBC" = (
+/obj/machinery/light/small,
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/upper_plant)
 "tDJ" = (
 /turf/unsimulated/floor/blackwhite/whitegrime/other,
 /area/observatory)
@@ -76160,6 +76196,15 @@
 	opacity = 0
 	},
 /area/centcom/lobby)
+"tVX" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 1;
+	name = "grimy pipe";
+	pixel_x = -4
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "tWe" = (
 /obj/fakeobject{
 	anchored = 1;
@@ -77140,6 +77185,9 @@
 	dir = 8
 	},
 /area/crypt/graveyard)
+"uGA" = (
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated,
+/area/toxmoon/upper_plant)
 "uHq" = (
 /obj/lattice{
 	dir = 9;
@@ -77420,6 +77468,12 @@
 /mob/living/critter/zombie,
 /turf/unsimulated/dirt,
 /area/crypt/graveyard)
+"uRU" = (
+/obj/decal/grass_edge/corner{
+	dir = 4
+	},
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/entrance)
 "uSr" = (
 /turf/unsimulated/floor/orangeblack/corner{
 	dir = 4
@@ -78429,6 +78483,9 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/cogwerks)
+"vBg" = (
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/entrance)
 "vBq" = (
 /turf/unsimulated/wall/auto/adventure/shuttle/dark,
 /area/shuttle/merchant_shuttle/diner_centcom)
@@ -78872,6 +78929,10 @@
 	dir = 8
 	},
 /area/void_diner)
+"vQc" = (
+/obj/decal/grass_edge/corner,
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/entrance)
 "vQW" = (
 /obj/decal/glow{
 	anchored = 1;
@@ -79115,6 +79176,12 @@
 /obj/mapping_helper/airlock/bolter,
 /turf/unsimulated/floor/darkpurple,
 /area/syndicate_station/battlecruiser)
+"vYt" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/upper_plant)
 "vYu" = (
 /obj/fakeobject/vacuumtape,
 /obj/cable/green{
@@ -79618,13 +79685,6 @@
 "wpC" = (
 /turf/unsimulated/floor/orangeblack/corner,
 /area/meat_derelict/entry)
-"wpF" = (
-/obj/machinery/shower{
-	dir = 1
-	},
-/obj/machinery/drainage,
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/upper_plant)
 "wpP" = (
 /obj/item/radio_tape/adventure/xg,
 /turf/unsimulated/floor/carpet/grime,
@@ -79924,6 +79984,12 @@
 /obj/table/wood/auto,
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/glowbold)
+"wAs" = (
+/obj/decal/grass_edge/corner{
+	dir = 1
+	},
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/entrance)
 "wAJ" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -80078,12 +80144,6 @@
 	},
 /turf/space,
 /area/watchful_eye_sensor)
-"wFl" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/unsimulated/floor/setpieces/oldfloor,
-/area/toxmoon/depot)
 "wFK" = (
 /obj/lattice/directional_icons,
 /turf/space,
@@ -80896,12 +80956,6 @@
 	},
 /turf/unsimulated/floor/void/channel,
 /area/adventure/channel)
-"xkB" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/upper_plant)
 "xkM" = (
 /obj/machinery/light,
 /turf/unsimulated/floor/grey/side{
@@ -81380,6 +81434,15 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital)
+"xxS" = (
+/obj/decal/grass_edge{
+	dir = 4
+	},
+/obj/decal/grass_edge{
+	dir = 1
+	},
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/entrance)
 "xyj" = (
 /obj/decal/icefloor,
 /obj/item/currency/spacecash/thousand,
@@ -81587,15 +81650,6 @@
 /obj/mesh/grille/steel,
 /turf/unsimulated/floor/plating,
 /area/moon/museum/west)
-"xBa" = (
-/obj/fakeobject/pipe{
-	color = "b4b4b4";
-	dir = 4;
-	name = "grimy pipe"
-	},
-/obj/machinery/light/small,
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/upper_plant)
 "xBc" = (
 /obj/indestructible/shuttle_corner{
 	icon_state = "wall3_trans"
@@ -82491,12 +82545,6 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/katzen)
-"ydk" = (
-/obj/machinery/light/small,
-/turf/unsimulated/floor/setpieces/rootfloor{
-	icon_state = "rootfloor_3"
-	},
-/area/toxmoon/upper_plant)
 "yea" = (
 /turf/unsimulated/floor/black{
 	icon_state = "cairngorm11"
@@ -82645,12 +82693,6 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital)
-"yjJ" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/unsimulated/floor/setpieces/oldfloor,
-/area/toxmoon/depot)
 "ykl" = (
 /obj/cable/green{
 	icon_state = "5-10"
@@ -127612,7 +127654,7 @@ aaa
 fVQ
 uUK
 vzM
-ydk
+tBC
 fVQ
 fWN
 bnW
@@ -128814,12 +128856,12 @@ dFC
 eyM
 aaa
 fVQ
-rAF
+ato
 hzI
 hzI
-fuI
+mWG
 dbs
-asn
+jbm
 fAp
 hzI
 tvz
@@ -128849,7 +128891,7 @@ kEW
 kEW
 hfP
 kEW
-wFl
+iDv
 kEW
 hfP
 aaa
@@ -129146,7 +129188,7 @@ soG
 eGU
 eGU
 hfP
-ebA
+fFg
 puk
 mLc
 ppK
@@ -129418,13 +129460,13 @@ qkV
 eyM
 aaa
 fVQ
-krk
+hDx
 vzM
 kLE
 vzM
-aDd
-hhC
-hhC
+jeK
+tVX
+tVX
 xkn
 sxU
 ukI
@@ -129724,11 +129766,11 @@ xlG
 kLE
 kLE
 vzM
-jKz
+rPx
 vzM
 bnW
 bnW
-xBa
+roM
 ukI
 ukI
 pGS
@@ -130022,8 +130064,8 @@ qkV
 eyM
 aaa
 fVQ
-krk
-xkB
+hDx
+onF
 bnW
 vzM
 xlG
@@ -130324,14 +130366,14 @@ qkV
 eyM
 aaa
 fVQ
-lUP
+oWQ
 fVQ
-keN
+oKF
 fVQ
-lUP
+oWQ
 fVQ
 fVQ
-qWO
+gxl
 giJ
 ukI
 pGS
@@ -130345,7 +130387,7 @@ pGS
 pGS
 pGS
 pGS
-hIa
+ukI
 eGU
 eGU
 eGU
@@ -130626,13 +130668,13 @@ eyM
 eyM
 aaa
 fVQ
-kPF
-kPF
-kPF
-kPF
-kPF
+uGA
+uGA
+uGA
+uGA
+uGA
 fVQ
-iUD
+vYt
 bnW
 pbL
 tKg
@@ -130928,13 +130970,13 @@ aaa
 aaa
 aaa
 fVQ
-kPF
-kPF
-kPF
-kPF
-kPF
+uGA
+uGA
+uGA
+uGA
+uGA
 fVQ
-wpF
+goQ
 kLE
 vwc
 ukI
@@ -130963,7 +131005,7 @@ xGn
 hfP
 dCR
 kEW
-yjJ
+pIA
 vqt
 hfP
 aaa
@@ -131222,21 +131264,21 @@ aaa
 aaa
 aaa
 aaa
-lrk
-lrk
-lrk
-lrk
-lrk
-lrk
-lrk
+hIa
+hIa
+hIa
+hIa
+hIa
+hIa
+hIa
 fVQ
-kPF
-kPF
-kPF
-kPF
-kPF
+uGA
+uGA
+uGA
+uGA
+uGA
 fVQ
-rpz
+dqs
 vzM
 vwc
 ukI
@@ -131520,11 +131562,11 @@ bGG
 ngw
 bFS
 aaa
-lrk
-lrk
-lrk
-lrk
-lrk
+hIa
+hIa
+hIa
+hIa
+hIa
 cnw
 cnw
 cnw
@@ -131532,11 +131574,11 @@ cnw
 cnw
 cnw
 pgp
-kPF
-kPF
-kPF
-kPF
-kPF
+uGA
+uGA
+uGA
+uGA
+uGA
 fVQ
 vzM
 kLE
@@ -131822,7 +131864,7 @@ bGt
 bKJ
 bFS
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -131834,14 +131876,14 @@ cnw
 cnw
 cnw
 pgp
-kPF
-kPF
-kPF
-kPF
-kPF
+uGA
+uGA
+uGA
+uGA
+uGA
 fVQ
 fVQ
-qWO
+gxl
 fVQ
 ukI
 ukI
@@ -132124,7 +132166,7 @@ bGG
 ngw
 bFS
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -132136,12 +132178,12 @@ cnw
 cnw
 cnw
 pgp
-kPF
-kPF
-kPF
-kPF
-kPF
-sRq
+uGA
+uGA
+uGA
+uGA
+uGA
+rLP
 vzM
 vzM
 bnW
@@ -132426,7 +132468,7 @@ bHK
 bFR
 bFS
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -132438,12 +132480,12 @@ cnw
 cnw
 cnw
 pgp
-kPF
-kPF
-kPF
-kPF
-kPF
-oXg
+uGA
+uGA
+uGA
+uGA
+uGA
+kcP
 bnW
 bnW
 vzM
@@ -132728,7 +132770,7 @@ bFS
 bFS
 bFS
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -132740,12 +132782,12 @@ cnw
 cnw
 cnw
 pgp
-kPF
-kPF
-kPF
-kPF
-kPF
-oXg
+uGA
+uGA
+uGA
+uGA
+uGA
+kcP
 bnW
 vzM
 vzM
@@ -133030,7 +133072,7 @@ aaa
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -133042,14 +133084,14 @@ cnw
 cnw
 cnw
 pgp
-kPF
-kPF
-kPF
-kPF
-kPF
-sRq
+uGA
+uGA
+uGA
+uGA
+uGA
+rLP
 vzM
-roj
+ljV
 bnW
 rVh
 etU
@@ -133332,7 +133374,7 @@ aaa
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -133344,11 +133386,11 @@ cnw
 cnw
 cnw
 pgp
-kPF
-kPF
-kPF
-kPF
-kPF
+uGA
+uGA
+uGA
+uGA
+uGA
 fVQ
 fVQ
 fVQ
@@ -133634,7 +133676,7 @@ aaa
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -133936,7 +133978,7 @@ aaa
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -134238,7 +134280,7 @@ aaa
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -134540,7 +134582,7 @@ aaa
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -134842,7 +134884,7 @@ bFN
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -135144,7 +135186,7 @@ bFN
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -135169,11 +135211,11 @@ ukI
 ukI
 iFd
 pGS
-mkC
-mkC
+qYh
+nJT
 nJT
 isD
-trh
+wAs
 itc
 hAi
 iFd
@@ -135446,7 +135488,7 @@ bFN
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -135470,12 +135512,12 @@ pgp
 ukI
 ukI
 iFd
-iFd
-pGS
-iFd
-iFd
-mkC
-iFd
+pfA
+uRU
+vBg
+wAs
+trh
+xxS
 iFd
 iFd
 mkC
@@ -135748,7 +135790,7 @@ bFN
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -135772,10 +135814,10 @@ pgp
 ukI
 pGS
 iFd
-pGS
-pGS
-pGS
-pGS
+jnq
+vBg
+wAs
+xxS
 pGS
 pGS
 pGS
@@ -136050,7 +136092,7 @@ bFN
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -136074,9 +136116,9 @@ pgp
 ukI
 ukI
 pGS
-pGS
-pGS
-pGS
+raw
+vQc
+waG
 pGS
 pGS
 pGS
@@ -136352,7 +136394,7 @@ aaa
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -136377,8 +136419,8 @@ ukI
 ukI
 iFd
 pGS
-pGS
-pGS
+pMY
+xxS
 pGS
 pGS
 rtH
@@ -136654,7 +136696,7 @@ aaa
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -136956,7 +136998,7 @@ aaa
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
@@ -137258,7 +137300,7 @@ aaa
 aaa
 aaa
 aaa
-lrk
+hIa
 cnw
 cnw
 cnw
