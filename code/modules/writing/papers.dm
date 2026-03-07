@@ -506,7 +506,7 @@ Only trained personnel should operate station systems. Follow all procedures car
 	There is a <i>slight<i> undead problem but if we mainly stick to dumping at the perimeter nothing should be exposed."}
 
 /obj/item/paper/toxmoon_depot
-	name = "Logistical Log - Outpost Gamma Dumping Site"
+	name = "Logistical Log - Facility Sigma Dumping Site"
 	icon_state = "paper"
 	info = {"Item Log 27/03/47 <br>
 	2x Fuel Rods, abstract matter <br>
