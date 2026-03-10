@@ -36158,6 +36158,7 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southwest)
+"fIx" = (
 /obj/item/spraybottle/cleaner{
 	pixel_x = 1;
 	pixel_y = -8
