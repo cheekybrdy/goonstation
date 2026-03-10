@@ -345,7 +345,7 @@ ABSTRACT_TYPE(/obj/machinery/fluid_machinery/unary/drain)
 	name = "dispenser"
 	icon_state = "dispenser"
 	desc = "Fills itself with fluid and dispenses patches, pills, and vials when reaching the set amount or when prompted to."
-	HELP_MESSAGE_OVERRIDE("FYou can use a <b>multitool</b> to modify its settings.")
+	HELP_MESSAGE_OVERRIDE("You can use a <b>multitool</b> to modify its settings.")
 	var/automatic = TRUE
 	var/max = 50
 	var/min = 1
