@@ -63568,6 +63568,7 @@
 /obj/fluid_pipe/elbow/waste{
 	dir = 4
 	},
+/area/station/crew_quarters/catering)
 "vei" = (
 /obj/machinery/alarm/directional/west,
 /turf/simulated/floor/black,
