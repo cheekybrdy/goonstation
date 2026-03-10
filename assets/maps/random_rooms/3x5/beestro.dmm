@@ -81,7 +81,7 @@
 "G" = (
 /obj/table/reinforced/bar/auto,
 /obj/machinery/espresso_machine,
-/obj/mapping_helper/glassware_spawn,
+/obj/item/reagent_containers/food/drinks/espressocup,
 /turf/simulated/bar,
 /area/dmm_suite/clear_area)
 "I" = (

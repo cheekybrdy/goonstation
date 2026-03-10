@@ -443,7 +443,6 @@
 "ns" = (
 /obj/decal/tile_edge/stripe/extra_big,
 /obj/machinery/chem_dispenser/alcohol,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/black,
 /area/prefab/safehouse)
 "nz" = (
@@ -453,7 +452,6 @@
 "nK" = (
 /obj/machinery/chem_dispenser/soda,
 /obj/decal/tile_edge/stripe/extra_big,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/black,
 /area/prefab/safehouse)
 "nQ" = (

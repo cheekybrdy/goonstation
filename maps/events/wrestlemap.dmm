@@ -5784,7 +5784,6 @@
 	icon_state = "bot2";
 	tag = ""
 	},
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/specialroom/arcade,
 /area/station/science/chemistry)
 "cAv" = (
@@ -6565,7 +6564,6 @@
 /area/station/hallway/primary/central)
 "cXv" = (
 /obj/machinery/chem_dispenser/chemical,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/bluewhite{
 	dir = 1
 	},
@@ -14865,7 +14863,6 @@
 /area/station/hallway/primary/south)
 "gIB" = (
 /obj/machinery/chem_dispenser/chemical,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/carpet/green/standard/edge/west,
 /area/station/crew_quarters/bar)
 "gIE" = (
@@ -16069,6 +16066,7 @@
 "hkT" = (
 /obj/table/reinforced/chemistry/auto,
 /obj/item/storage/box/beakerbox,
+/obj/item/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/specialroom/arcade,
 /area/station/science/chemistry)
 "hlq" = (
@@ -17402,11 +17400,11 @@
 /area/station/chapel/sanctuary)
 "hPk" = (
 /obj/machinery/chem_dispenser/soda,
+/obj/item/reagent_containers/food/drinks/drinkingglass/pitcher,
 /obj/machinery/light/incandescent/warm/very{
 	dir = 4;
 	pixel_x = 10
 	},
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/carpet/green/fancy/junction/sw_n,
 /area/station/crew_quarters/jazz)
 "hPw" = (
@@ -22078,6 +22076,7 @@
 	pixel_x = 10
 	},
 /obj/machinery/chem_shaker/large/chemistry,
+/obj/item/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/specialroom/arcade,
 /area/station/science/chemistry)
 "jQL" = (
@@ -24237,10 +24236,10 @@
 	tag = ""
 	},
 /obj/disposalpipe/segment/mail/vertical,
+/obj/item/reagent_containers/glass/beaker/large,
 /obj/machinery/status_display{
 	pixel_y = 30
 	},
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/black,
 /area/station/medical/head)
 "kPv" = (
@@ -25431,7 +25430,6 @@
 "lve" = (
 /obj/machinery/chem_dispenser/alcohol,
 /obj/decal/cleanable/cobweb,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/plating,
 /area/station/maintenance/inner/the_cage)
 "lvi" = (
@@ -34039,10 +34037,10 @@
 	layer = 9.1;
 	pixel_x = -10
 	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/pitcher,
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/plating,
 /area/station/crew_quarters/bar)
 "poi" = (
@@ -35424,7 +35422,7 @@
 /area/station/security/processing)
 "pXg" = (
 /obj/machinery/chem_dispenser/soda,
-/obj/mapping_helper/glassware_spawn,
+/obj/item/reagent_containers/food/drinks/drinkingglass/pitcher,
 /turf/simulated/floor/carpet/green/decal,
 /area/station/crew_quarters/bar)
 "pXi" = (
@@ -37946,10 +37944,10 @@
 /area/station/science/lobby)
 "rhG" = (
 /obj/machinery/chem_dispenser/alcohol,
+/obj/item/reagent_containers/food/drinks/drinkingglass/pitcher,
 /obj/machinery/firealarm/directional/east{
 	pixel_y = 1
 	},
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/carpet/green/fancy/edge/se,
 /area/station/crew_quarters/jazz)
 "rhT" = (
@@ -43450,6 +43448,7 @@
 /area/station/mining/staff_room)
 "tJz" = (
 /obj/item/storage/box/beakerbox,
+/obj/item/reagent_containers/glass/beaker/large,
 /obj/table/reinforced/chemistry/auto,
 /turf/simulated/floor/specialroom/arcade,
 /area/station/science/chemistry)

@@ -4198,7 +4198,7 @@ var/global/noir = 0
 
 	var/client/client = usr.client
 
-	if (client.holder.level >= LEVEL_SA)
+	if (client.holder.level >= LEVEL_PA)
 		var/chosen = get_one_match(object, use_concrete_types = FALSE)
 
 		if (chosen)

@@ -351,11 +351,11 @@
 			amount = min(
 				round(amount),
 				genResearch.max_material - genResearch.researchMaterial,
-				round(wagesystem.budgets[BUDGET_CAT_DEPT_MEDICAL] / 50),
+				round(wagesystem.research_budget / 50),
 			)
 			if (amount > 0)
 				var/cost = amount * 50
-				wagesystem.budgets[BUDGET_CAT_DEPT_MEDICAL] -= cost
+				wagesystem.research_budget -= cost
 				genResearch.researchMaterial += amount
 				on_ui_interacted(ui.user)
 		if("research")
@@ -975,7 +975,7 @@
 		"materialCur" = genResearch.researchMaterial,
 		"mutationsResearched" = genResearch.mutations_researched,
 		"autoDecryptors" = genResearch.lock_breakers,
-		"budget" = wagesystem.budgets[BUDGET_CAT_DEPT_MEDICAL],
+		"budget" = wagesystem.research_budget,
 		"costPerMaterial" = 50,
 		"researchCost" = mut_research_cost,
 		"toSplice" = src.to_splice?.name,

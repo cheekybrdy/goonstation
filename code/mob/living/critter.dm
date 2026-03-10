@@ -159,8 +159,7 @@ ADMIN_INTERACT_PROCS(/mob/living/critter, proc/modify_health, proc/admincmd_atta
 				abilityHolder.addAbility(abil)
 
 	if(src.bioHolder)
-		src.bioHolder.base_genetic_stability = 50
-		src.bioHolder.calculateStability()
+		src.bioHolder.genetic_stability = 50
 
 	SPAWN(0.5 SECONDS) //if i don't spawn, no abilities even show up
 		if (abilityHolder)

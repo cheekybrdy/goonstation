@@ -4224,7 +4224,7 @@
 /area/radiostation/engineering)
 "asW" = (
 /obj/machinery/espresso_machine,
-/obj/mapping_helper/glassware_spawn,
+/obj/item/reagent_containers/food/drinks/espressocup,
 /turf/simulated/floor/grime,
 /area/diner/kitchen)
 "atb" = (
@@ -19140,10 +19140,6 @@
 	name = "reinforced plating"
 	},
 /area/diner/motel/chemstorage)
-"kNT" = (
-/obj/item/raw_material/shard/glass,
-/turf/simulated/floor/white/grime,
-/area/derelict_ai_sat)
 "kOK" = (
 /turf/unsimulated/floor,
 /area/timewarp/ship)
@@ -23679,8 +23675,8 @@
 /area/timewarp/ship)
 "vpl" = (
 /obj/machinery/chem_dispenser/alcohol,
+/obj/item/reagent_containers/food/drinks/drinkingglass/pitcher,
 /obj/decal/cleanable/dirt,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/scorched2,
 /area/diner/kitchen)
 "vpt" = (
@@ -64609,7 +64605,7 @@ aRp
 aRo
 aRo
 aSl
-kNT
+aRo
 aTc
 amR
 uBm

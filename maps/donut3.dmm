@@ -9967,7 +9967,10 @@
 /obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
-/obj/mapping_helper/glassware_spawn,
+/obj/item/reagent_containers/food/drinks/drinkingglass/pitcher{
+	pixel_x = -4;
+	pixel_y = 3
+	},
 /turf/simulated/floor{
 	icon_state = "corner_east"
 	},
@@ -13883,7 +13886,10 @@
 /obj/machinery/camera/directional/north{
 	pixel_x = -10
 	},
-/obj/mapping_helper/glassware_spawn,
+/obj/item/reagent_containers/food/drinks/drinkingglass/pitcher{
+	pixel_x = 7;
+	pixel_y = 3
+	},
 /turf/simulated/floor/caution/corner/sw,
 /area/station/crew_quarters/bar)
 "ejc" = (
@@ -19838,8 +19844,11 @@
 	dir = 1
 	},
 /obj/machinery/chem_dispenser/chemical,
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_x = 6;
+	pixel_y = 1
+	},
 /obj/machinery/firealarm/directional/north,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
 	},
@@ -22430,7 +22439,6 @@
 /area/station/bridge)
 "gWm" = (
 /obj/machinery/chem_dispenser/chef,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/white/checker2{
 	dir = 1
 	},
@@ -22599,7 +22607,6 @@
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 8
 	},
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
 	},
@@ -36431,7 +36438,6 @@
 /area/station/hallway/primary/west)
 "lsx" = (
 /obj/machinery/chem_dispenser/alcohol,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/specialroom/bar,
 /area/station/wreckage{
 	name = "Restricted Area"
@@ -43977,7 +43983,6 @@
 	desc = "What? Security has moments of weakness too!";
 	name = "emergency alcohol dispenser"
 	},
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/wood/eight,
 /area/station/ai_monitored/armory)
 "nIN" = (
@@ -46873,11 +46878,18 @@
 /area/station/maintenance/inner/se)
 "oDm" = (
 /obj/machinery/chem_dispenser/chemical,
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_x = -5;
+	pixel_y = 1
+	},
 /obj/machinery/firealarm/directional/north,
+/obj/item/clothing/glasses/spectro{
+	pixel_x = 4;
+	pixel_y = -2
+	},
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor{
 	icon_state = "corner_east"
 	},
@@ -51914,6 +51926,9 @@
 /obj/machinery/espresso_machine{
 	pixel_y = 3
 	},
+/obj/item/reagent_containers/food/drinks/espressocup{
+	pixel_x = 7
+	},
 /obj/drink_rack/cup{
 	pixel_x = 1;
 	pixel_y = 30
@@ -51925,7 +51940,6 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/black,
 /area/station/crew_quarters/bar)
 "qfk" = (
@@ -64208,7 +64222,6 @@
 /obj/machinery/chem_dispenser/chemical,
 /obj/decal/tile_edge/stripe/extra_big,
 /obj/disposalpipe/segment/mail,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
 	},
@@ -74535,7 +74548,6 @@
 /area/station/maintenance/inner/sw)
 "wWs" = (
 /obj/machinery/chem_dispenser/chef,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/white/checker2{
 	dir = 1
 	},
@@ -74635,7 +74647,6 @@
 	pixel_x = -29;
 	pixel_y = 3
 	},
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
 	},
@@ -78209,7 +78220,6 @@
 /area/station/medical/asylum/main)
 "xVQ" = (
 /obj/machinery/chem_dispenser/alcohol,
-/obj/mapping_helper/glassware_spawn,
 /turf/simulated/floor/plating/jen,
 /area/station/medical/asylum/rec)
 "xVR" = (
@@ -79243,10 +79253,6 @@
 	},
 /obj/machinery/camera/directional/north{
 	pixel_x = -10
-	},
-/obj/item/clothing/glasses/spectro{
-	pixel_x = 12;
-	pixel_y = 0
 	},
 /turf/simulated/floor/carpet/grime,
 /area/station/crew_quarters/baroffice)

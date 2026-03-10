@@ -31,8 +31,7 @@
 	"Total Station Budget Monitor",
 	"Payroll Budget Monitor",
 	"Cargo Budget Monitor",
-	"Union Budget Monitor",
-	"Medical Budget Monitor",
+	"Research Budget Monitor",
 	"Total PTL Net Income",
 	"Step Counter",
 	"Service Bell Ring Counter",
@@ -123,19 +122,16 @@
 				text_to_display = "[hour_display] [hour_minute_divider] [minute_display]"
 
 			if("Total Station Budget Monitor")
-				text_to_display = wagesystem.budgets[BUDGET_CAT_STATION] + wagesystem.budgets[BUDGET_CAT_DEPT_MEDICAL] + wagesystem.budgets[BUDGET_CAT_SHIPPING]
+				text_to_display = wagesystem.station_budget + wagesystem.research_budget + wagesystem.shipping_budget
 
 			if("Payroll Budget Monitor")
-				text_to_display = wagesystem.budgets[BUDGET_CAT_STATION]
+				text_to_display = wagesystem.station_budget
 
 			if("Cargo Budget Monitor")
-				text_to_display = wagesystem.budgets[BUDGET_CAT_SHIPPING]
+				text_to_display = wagesystem.shipping_budget
 
-			if("Union Budget Monitor")
-				text_to_display = wagesystem.budgets[BUDGET_CAT_UNION]
-
-			if("Medical Budget Monitor")
-				text_to_display = wagesystem.budgets[BUDGET_CAT_DEPT_MEDICAL]
+			if("Research Budget Monitor")
+				text_to_display = wagesystem.research_budget
 
 			if("Total PTL Net Income")
 				var/total_PTL_money = 0

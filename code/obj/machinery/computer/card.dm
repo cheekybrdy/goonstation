@@ -569,15 +569,14 @@
 /obj/machinery/computer/card/attackby(obj/item/I, mob/user)
 	//grab the ID card from an access implant if this is one
 	var/modify_only = 0
-	if (istypes(I, list(/obj/item/implantcase/access, /obj/item/implant/access)))
-		if (!src.modify)
-			I = get_card_from(I)
-		else if (!src.scan)
-			boutput(user, SPAN_NOTICE("[I] will not work in the authentication card slot."))
-			return
+	if (!istype(I,/obj/item/card/id))
+		I = get_card_from(I)
 		modify_only = 1
 
-	if (istype(I, /obj/item/card/id))
+	if (modify_only && src.eject && !src.scan && src.modify)
+		boutput(user, SPAN_NOTICE("[src.eject] will not work in the authentication card slot."))
+		return
+	else if (istype(I, /obj/item/card/id))
 		if (!src.scan && !modify_only)
 			boutput(user, SPAN_NOTICE("You insert [I] into the authentication card slot."))
 			user.drop_item()

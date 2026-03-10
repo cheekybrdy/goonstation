@@ -517,10 +517,7 @@
 
 
 /client/proc/init_admin()
-#ifndef DONT_ADMIN_MEE
-	if (IsLocalClient(src))
-		admins[src.ckey] = "Host"
-#endif
+	if (IsLocalClient(src)) admins[src.ckey] = "Host"
 	if (admins.Find(src.ckey) && !src.holder)
 		src.make_admin()
 		return 1

@@ -1227,8 +1227,6 @@
 	VAR_PRIVATE/burp_counter = 0
 	///Stored to keep UpdateOverlays calls to a minimum
 	VAR_PRIVATE/eye_state = -1
-	//Doesn't drain, doesn't generate electricity, just does the weird plasma effects
-	var/passive = FALSE
 
 	OnLife(mult)
 		. = ..()
@@ -1245,11 +1243,8 @@
 		if (prob(20))
 			return
 		ON_COOLDOWN(src.owner, "plasma_electricity", 7 SECONDS)
-		if (!src.passive || src.material > 20)
-			src.material -= 5
+		src.material -= 5
 		src.update_eyes()
-		if (src.passive)
-			return
 		var/obj/item/found_item = null
 		if (prob(15)) //most of the time we try to ground into an item, sometimes it misses
 			boutput(src.owner, SPAN_ALERT("Electricty arcs wildly from your fingers!"))
@@ -1314,7 +1309,7 @@
 			return
 		var/new_eye_state
 		switch (src.material)
-			if (1 to 15)
+			if (1 to 20)
 				new_eye_state = 1
 			if (15 to INFINITY)
 				new_eye_state = 2
@@ -1335,7 +1330,7 @@
 		if (src.eye_state >= 2 && prob(10))
 			src.owner.AddComponent(\
 				/datum/component/hallucination/random_image_override,\
-				timeout = 15,\
+				timeout = 20,\
 				image_list = list(\
 					image('icons/turf/floors.dmi', "void")\
 				),\
@@ -1352,12 +1347,3 @@
 		src.owner.ClearSpecificOverlays("plasma_eyes")
 		src.owner.remove_color_matrix(COLOR_MATRIX_PLASMA_MADNESS_LABEL, 1 SECOND)
 		. = ..()
-
-/datum/bioEffect/plasma_metabolism/passive
-	id = "plasma_metabolism_passive"
-	passive = TRUE
-	effect_group = null
-
-	New(for_global_list)
-		. = ..()
-		src.material = 16

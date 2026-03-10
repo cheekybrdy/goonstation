@@ -88,7 +88,7 @@ export const BioEffectManager = () => {
               {/* Input and button for managing Stability */}
               Stability:
               <NumberInput
-                minValue={-1}
+                minValue={0}
                 maxValue={Infinity}
                 width="5em"
                 step={1}

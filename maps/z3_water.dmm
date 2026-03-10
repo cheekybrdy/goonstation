@@ -3489,7 +3489,6 @@
 /area/cult_base/leader)
 "qL" = (
 /obj/machinery/chem_dispenser/alcohol,
-/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor,
 /area/cult_base/leader)
 "qR" = (
