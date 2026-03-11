@@ -10168,6 +10168,9 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
+/obj/cable{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/purplewhite/corner,
 /area/station/science/lobby)
 "dPc" = (
@@ -12949,7 +12952,6 @@
 /obj/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc/autoname_west,
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/Zeta)
@@ -14583,6 +14585,9 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
+/obj/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/purplewhite,
 /area/station/science/lobby)
 "gWB" = (
@@ -16163,6 +16168,9 @@
 /area/station/maintenance/northwest)
 "ieK" = (
 /obj/disposalpipe/segment/mail,
+/obj/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/purplewhite,
 /area/station/science/lobby)
 "ife" = (
@@ -18242,6 +18250,9 @@
 	},
 /obj/mapping_helper/firedoor_spawn,
 /obj/disposalpipe/segment/mail,
+/obj/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/engine,
 /area/station/science/teleporter)
 "jGv" = (
@@ -24417,6 +24428,9 @@
 /area/station/crew_quarters/kitchen)
 "ocl" = (
 /obj/machinery/firealarm/directional/north,
+/obj/cable{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/purple,
 /area/station/turret_protected/Zeta)
 "oda" = (
@@ -26985,6 +26999,9 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
+/obj/cable{
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/purplewhite,
 /area/station/science/lobby)
 "pBx" = (
@@ -28489,6 +28506,12 @@
 "qAd" = (
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/bathroom/extra1)
+"qAg" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/purplewhite,
+/area/station/science/lobby)
 "qAl" = (
 /obj/cable{
 	icon_state = "1-4"
@@ -30959,6 +30982,12 @@
 	},
 /turf/simulated/floor/red/redblackchecker,
 /area/station/security/processing)
+"rUu" = (
+/obj/cable{
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/purplewhite,
+/area/station/science/lobby)
 "rUI" = (
 /turf/simulated/floor/blueblack{
 	dir = 4
@@ -37042,6 +37071,10 @@
 	pixel_y = 24;
 	req_access_txt = "19"
 	},
+/obj/machinery/power/apc/autoname_west,
+/obj/cable{
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/purple,
 /area/station/turret_protected/Zeta)
 "vMP" = (
@@ -37085,6 +37118,9 @@
 "vPb" = (
 /obj/cable{
 	icon_state = "1-2"
+	},
+/obj/cable{
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/purple,
 /area/station/turret_protected/Zeta)
@@ -92812,8 +92848,8 @@ jvc
 lfe
 mwA
 pGw
-ejE
-ejE
+rUu
+qAg
 gWq
 ieK
 jGs
