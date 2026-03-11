@@ -571,6 +571,7 @@
 /area/hospital)
 "adW" = (
 /obj/machinery/chem_dispenser/chemical,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/white,
 /area/hospital)
 "adY" = (
@@ -12399,13 +12400,13 @@
 "baZ" = (
 /obj/table/auto,
 /obj/item/reagent_containers/glass/beaker/large,
-/obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/syringe,
 /obj/item/chem_grenade/cryo,
 /turf/unsimulated/floor/white,
 /area/upper_arctic/pod1)
 "bba" = (
 /obj/machinery/chem_dispenser/chemical,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/white,
 /area/upper_arctic/pod1)
 "bbe" = (
@@ -22080,6 +22081,7 @@
 /area/solarium)
 "bKc" = (
 /obj/machinery/chem_dispenser/alcohol,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/specialroom/chapel{
 	dir = 1
 	},
@@ -24500,12 +24502,14 @@
 /area/crypt/sigma/mainhall)
 "bSi" = (
 /obj/machinery/chem_dispenser/soda,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/specialroom/chapel{
 	dir = 1
 	},
 /area/crypt/sigma/mainhall)
 "bSj" = (
 /obj/machinery/chem_dispenser/alcohol,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/specialroom/chapel{
 	dir = 4
 	},
@@ -24986,6 +24990,7 @@
 	mouse_opacity = 0
 	},
 /obj/machinery/chem_dispenser/botany,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/wood/three,
 /area/afterlife/heaven/hydroponics)
 "bUm" = (
@@ -33060,6 +33065,7 @@
 /area/owlery/lab)
 "cxt" = (
 /obj/machinery/chem_dispenser/chemical,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/black,
 /area/owlery/lab)
 "cxu" = (
@@ -44913,6 +44919,7 @@
 	icon_state = "tile1"
 	},
 /obj/machinery/espresso_machine,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/carpet{
 	dir = 1;
 	icon_state = "fred1"
@@ -51232,10 +51239,10 @@
 /area/centcom/lounge)
 "dIZ" = (
 /obj/machinery/chem_dispenser/chemical,
-/obj/item/reagent_containers/glass/beaker/large,
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/black,
 /area/centcom/lounge)
 "dJa" = (
@@ -51355,12 +51362,12 @@
 /area/centcom/lounge)
 "dJr" = (
 /obj/machinery/chem_dispenser/soda,
-/obj/item/reagent_containers/food/drinks/drinkingglass/pitcher,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/black,
 /area/centcom/lounge)
 "dJs" = (
 /obj/machinery/chem_dispenser/alcohol,
-/obj/item/reagent_containers/food/drinks/drinkingglass/pitcher,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/black,
 /area/centcom/lounge)
 "dJt" = (
@@ -63818,7 +63825,7 @@
 /area/adventure/channel/flingy)
 "kfH" = (
 /obj/machinery/espresso_machine,
-/obj/item/reagent_containers/food/drinks/espressocup,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/outdoors/grass,
 /area/void_diner)
 "kfN" = (
@@ -66972,6 +66979,7 @@
 /area/watchful_eye_sensor)
 "mkm" = (
 /obj/machinery/chem_dispenser/soda,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/outdoors/grass,
 /area/void_diner)
 "mkC" = (
@@ -74610,6 +74618,7 @@
 /turf/unsimulated/floor,
 /area/centcom)
 "rtu" = (
+/obj/mapping_helper/glassware_spawn,
 /obj/machinery/chem_dispenser/soda{
 	pixel_y = 31;
 	density = 0
@@ -77429,6 +77438,7 @@
 "tnk" = (
 /obj/machinery/chem_dispenser/chemical,
 /obj/decal/stripe_delivery,
+/obj/mapping_helper/glassware_spawn,
 /turf/unsimulated/floor/plating,
 /area/crater/biodome/research)
 "tnB" = (
@@ -80239,6 +80249,7 @@
 	dir = 8;
 	pixel_x = 4
 	},
+/obj/mapping_helper/glassware_spawn,
 /obj/machinery/chem_dispenser/alcohol/ultra{
 	pixel_y = 31;
 	density = 0
