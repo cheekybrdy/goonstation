@@ -56,6 +56,8 @@
 					FallTime = 0 SECONDS,\
 					TargetLandmark = src.falltarget)
 				..()
+			lake
+				falltarget = LANDMARK_FALL_LAKE
 
 /turf/unsimulated/floor/setpieces/toxmoon/radpool
 	name = "radioactive goop"
@@ -86,7 +88,7 @@
 			if (isintangible(O))
 				return
 
-			if (istype(O, /obj/critter))
+			if (iscritter(O))
 				var/obj/critter/C = O
 				if (C.flying)
 					return
@@ -98,11 +100,14 @@
 
 			if (check_target_immunity(O, TRUE))
 				return
+
+			if(ismobcritter(O))
+				var/mob/living/critter/C = O
+				if(C.goop_immune)
+					return
+
 			if (isliving(O) && !ON_COOLDOWN(src, "goop_hurty", 0.5 SECONDS))
 				var/mob/living/M = O
-				if(M == /mob/living/critter)
-					var/mob/living/critter/C = M
-					if(C.goop_immune) return
 				M.take_radiation_dose(mult * (neutron ? 1 SIEVERTS: 0.6 SIEVERTS) * (radStrength/100), TRUE)
 				M.changeStatus("slowed", 3 SECONDS)
 				var/other_damage = rand(1,3)
@@ -118,6 +123,23 @@
 						M.take_toxin_damage(rand(10,20))
 			return
 
+	fall
+		var/falltarget = LANDMARK_FALL_SEWER
+		New()
+			..()
+			src.AddComponent(/datum/component/pitfall/target_landmark,\
+				BruteDamageMax = 20,\
+				FallTime = 0 SECONDS,\
+				TargetLandmark = src.falltarget)
+			..()
+
+/obj/fakeobject/sewagedrain
+	name = "sewage drain"
+	desc = "A sewage drain in the middle of a lake. It seems to be lacking grilles to stop people from falling in."
+	icon = 'icons/obj/decoration.dmi'
+	icon_state = "sewage_drain"
+	anchored = 1
+// areas
 
 
 /area/toxmoon
@@ -134,6 +156,9 @@
 	irradiated = 0.2
 	permarads = 1
 	rad_overlay = 0
+
+/area/toxmoon/sewer
+	name = "Fatuus Sewer"
 
 /area/toxmoon/plant/exterior
 	name = "Facility Sigma Waste Site"
@@ -160,7 +185,7 @@
 
 /area/toxmoon/plant/reactor
 	name = "Geisel Radiofabrik Decommisioned Power Plant - Reactor"
-	irradiated = 5
+	irradiated = 1.5
 
 /mob/living/critter/radthing
 	name = "Inconceivable Goop Abomination"
@@ -295,3 +320,87 @@
 		holder.owner.reagents.clear_reagents()
 		SEND_SIGNAL(holder.owner, COMSIG_MOB_VOMIT, 10)
 		return 0
+
+/obj/fakeobject/toxmoon_boss_reactor
+	name = "Molten Reactor Core"
+	desc = "A molten nuclear reactor core. It's still burning and smoking. Some engineers are gonna get fired for this." // nothin off, NOTHIN
+	icon = 'icons/misc/nuclearreactor.dmi'
+	icon_state = "reactor_destroyed"
+	bound_width = 160
+	bound_height = 160
+	pixel_x = -64
+	pixel_y = -64
+	bound_x = -64
+	bound_y = -64
+	anchored = ANCHORED
+	density = TRUE
+	mat_changename = FALSE
+	dir = EAST
+	pixel_point = TRUE
+	/// ref to the turf the reactor light is stored on, because you can't center simple lights
+	VAR_PRIVATE/turf/_light_turf
+	var/id = "toxmoon_boss"
+
+	New()
+		. = ..()
+		src.AddComponent(/datum/component/radioactive, 10, FALSE, FALSE, 5)
+		src.UpdateParticles(new/particles/nuke_overheat_smoke(get_turf(src)),"overheat_smoke")
+		src._light_turf = get_turf(src)
+		src._light_turf.add_medium_light("reactor_destroyed_light", list(255,0,0,255))
+
+	EnteredProximity(atom/movable/AM)
+		. = ..()
+		for(var/obj/machinery/door/poddoor/P in by_type[/obj/machinery/door]) //robbed checkpoint bot code
+			if (P.id == src.id)
+				if (!P.density)
+					SPAWN( 0 )
+						P.close()
+
+	proc/SpawnBoss(height = 7, use_shadow=TRUE, boss_type=/mob/living/critter/noxia_abomination) //wowwie more ripped code
+		logTheThing(LOG_COMBAT, src, "toxmoon boss summoned at [log_loc(src)].")
+		src.anchored = ANCHORED_ALWAYS
+
+		var/obj/boss = new boss_type(get_turf(src))
+		boss.anchored = ANCHORED_ALWAYS
+		boss.pixel_y = 32 * height
+		boss.alpha = 0
+		boss.layer += 4
+		boss.plane = PLANE_NOSHADOW_ABOVE
+		animate(boss, alpha = 255, time = 0.9 SECONDS, flags = ANIMATION_PARALLEL)
+		animate(boss, pixel_y = 0, easing = EASE_IN | QUAD_EASING, time = 1.84 SECONDS, flags = ANIMATION_PARALLEL)
+
+		var/obj/effects/shadow
+		if(use_shadow)
+			shadow = new /obj/effects{
+				icon='icons/effects/96x96.dmi';
+				icon_state="circle";
+				mouse_opacity = 0;
+				color = "#000000";
+				alpha = 0;
+				transform = matrix(0.8, 0, 0, 0, 0.5, 0);
+				pixel_x = -32;
+				pixel_y = -32 - 7;
+				anchored = ANCHORED_ALWAYS;
+				plane = PLANE_NOSHADOW_BELOW
+			}(get_turf(src))
+			animate(shadow, alpha = 150, transform = matrix(0.25, 0, 0, 0, 0.17, 0), easing = EASE_IN | QUAD_EASING, time = 1.75 SECONDS, flags = ANIMATION_PARALLEL)
+
+		playsound(get_turf(src), 'sound/effects/cartoon_fall.ogg', 50, FALSE)
+		SPAWN(1.8 SECONDS)
+			boss.anchored = boss_type == boss_type ? FALSE : initial(boss.anchored)
+			boss.plane = initial(boss.plane)
+			if(shadow)
+				qdel(shadow)
+
+/mob/living/critter/noxia_abomination
+	name = "Writhing Abomination"
+	desc = "Oh my god, what the fuck, how the fuck does something like this some to exist, like what the actual fuck, this is a affront to Darwinism."
+	health_brute = 500
+	health_brute_vuln = 0.2
+	health_burn = 500
+	health_burn_vuln = 0.2
+	icon = 'icons/mob/critter/nonhuman/critter160x160.dmi'
+	icon_state = "nabom"
+	bound_height = 96
+	bound_width = 96
+	event_handler_flags = IMMUNE_TRENCH_WARP
