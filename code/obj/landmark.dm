@@ -610,6 +610,11 @@ var/global/list/job_start_locations = list()
 /obj/landmark/fall/biodome/ancient
 	name = LANDMARK_FALL_ANCIENT
 
+// Toxmoon
+
+/obj/landmark/fall/toxmoon
+	name = LANDMARK_FALL_REACTOR
+
 // Underwater
 
 /obj/landmark/fall/sea/elevator

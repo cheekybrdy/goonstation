@@ -121,6 +121,15 @@
 				infect = src.abilityHolder.getAbility(/datum/targetable/zombie/infect)
 		return ..() && !infect?.disabled
 
+	radproof
+
+		New()
+			..()
+			remove_lifeprocess(/datum/lifeprocess/radiation)
+			APPLY_ATOM_PROPERTY(src, PROP_MOB_RADPROT_INT, src, 100)
+			faction = list(FACTION_TOXMOON)
+			goop_immune = TRUE
+
 /mob/living/critter/zombie/scientist
 	name = "shambling scientist"
 	desc = "Physician, heal thyself! Welp, so much for that."
@@ -138,6 +147,15 @@
 	health_brute_vuln = 1
 	health_burn = 15
 	health_burn_vuln = 1
+
+	radproof
+
+		New()
+			..()
+			remove_lifeprocess(/datum/lifeprocess/radiation)
+			APPLY_ATOM_PROPERTY(src, PROP_MOB_RADPROT_INT, src, 100)
+			faction = list(FACTION_TOXMOON)
+			goop_immune = TRUE
 
 /mob/living/critter/zombie/biosuit
 	name = "biosuit shambler"
@@ -245,6 +263,15 @@
 		..()
 		src.remove_simple_light("rad")
 		make_cleanable(/obj/decal/cleanable/greenglow, src.loc)
+
+	radproof
+
+		New()
+			..()
+			remove_lifeprocess(/datum/lifeprocess/radiation)
+			APPLY_ATOM_PROPERTY(src, PROP_MOB_RADPROT_INT, src, 100)
+			faction = list(FACTION_TOXMOON)
+			goop_immune = TRUE
 
 /mob/living/critter/zombie/meatmonaut
 	name = "lost cosmonaut"
