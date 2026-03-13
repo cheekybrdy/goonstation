@@ -529,6 +529,18 @@ Only trained personnel should operate station systems. Follow all procedures car
 	NOTICE: HIGH RADIATION LEVELS DETECTED. <br>
 	ALL INCOMING EMPLOYEES PROCEED WITH CAUTION."}
 
+/obj/item/paper/toxmoon_worker
+	name = "note to self"
+	icon_state = "paper"
+	info = {"Send a note to head office about this visitor, they've seemed really shifty and I swore I saw a camera flash from under their coat."}
+
+/obj/item/paper/toxmoon_cooling
+	name = "NOTICE: tower renovations"
+	icon_state = "paper"
+	info = {"The cooling tower has been adjusted to employee complaints of a lack of recreational facilities on site. <br>
+	in order to address concern the cooling tower now also functions as a pool. Please do not use the pool in the event of a nuclear incident <br>
+	any uranium will backflow into the pool."}
+
 /obj/item/paper/telecrystal_update
 	name = "email printout"
 	info = {"

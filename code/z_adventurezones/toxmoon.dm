@@ -3,10 +3,11 @@
 /////// --------
 /////// terrain
 /////// areas
+/////// rad pools
 /////// rad monsters
 /////// rad monster critter abilities
-///////
-
+/////// boss spawner
+/////// boss
 ////////////////////////////////
 ///////////////////////////////////////
 
@@ -125,6 +126,7 @@
 
 	fall
 		var/falltarget = LANDMARK_FALL_SEWER
+
 		New()
 			..()
 			src.AddComponent(/datum/component/pitfall/target_landmark,\
@@ -133,12 +135,16 @@
 				TargetLandmark = src.falltarget)
 			..()
 
+		lake
+			falltarget = LANDMARK_FALL_LAKE
+
 /obj/fakeobject/sewagedrain
 	name = "sewage drain"
 	desc = "A sewage drain in the middle of a lake. It seems to be lacking grilles to stop people from falling in."
 	icon = 'icons/obj/decoration.dmi'
 	icon_state = "sewage_drain"
 	anchored = 1
+
 // areas
 
 
@@ -183,6 +189,10 @@
 	name = "Geisel Radiofabrik Decommisioned Power Plant - Lower Level"
 	irradiated = 0.6
 
+/area/toxmoon/plant/controls
+	name = "Geisel Radiofabrik Decommisioned Power Plant - Control Room"
+	irradiated = 0.8
+
 /area/toxmoon/plant/reactor
 	name = "Geisel Radiofabrik Decommisioned Power Plant - Reactor"
 	irradiated = 1.5
@@ -207,7 +217,7 @@
 	ai_retaliate_patience = 0
 	ai_retaliate_persistence = RETALIATE_UNTIL_DEAD
 	add_abilities = list(/datum/targetable/critter/acidpuke)
-	blood_id = "uranium"
+	blood_id = "radium"
 	var/moan_sounds = list("sound/voice/Zgroan1.ogg", "sound/voice/Zgroan2.ogg", "sound/voice/Zgroan3.ogg", "sound/voice/Zgroan4.ogg")
 	faction = list(FACTION_TOXMOON)
 	goop_immune = TRUE
@@ -238,8 +248,6 @@
 			if ("scream")
 				return 2
 		return ..()
-
-
 
 	setup_healths()
 		add_hh_flesh(src.health_brute, src.health_brute_vuln)
@@ -337,6 +345,7 @@
 	mat_changename = FALSE
 	dir = EAST
 	pixel_point = TRUE
+	density = 0
 	/// ref to the turf the reactor light is stored on, because you can't center simple lights
 	VAR_PRIVATE/turf/_light_turf
 	var/id = "toxmoon_boss"
@@ -350,6 +359,7 @@
 
 	EnteredProximity(atom/movable/AM)
 		. = ..()
+		message_admins("proximity code ran for reactor")
 		for(var/obj/machinery/door/poddoor/P in by_type[/obj/machinery/door]) //robbed checkpoint bot code
 			if (P.id == src.id)
 				if (!P.density)
@@ -394,7 +404,7 @@
 
 /mob/living/critter/noxia_abomination
 	name = "Writhing Abomination"
-	desc = "Oh my god, what the fuck, how the fuck does something like this some to exist, like what the actual fuck, this is a affront to Darwinism."
+	desc = "Oh my god, what the fuck, how the fuck does something like this come to exist, like what the actual fuck, this is a affront to Darwinism."
 	health_brute = 500
 	health_brute_vuln = 0.2
 	health_burn = 500

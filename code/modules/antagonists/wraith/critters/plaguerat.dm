@@ -270,3 +270,190 @@ TYPEINFO(/mob/living/critter/wraith/plaguerat)
 		HH.name = "mouth"
 		HH.limb_name = "teeth"
 		HH.can_hold_items = 0
+
+/mob/living/critter/plaguerat // Non wraith variants for NPC enemies
+	name = "plague rat"
+	real_name = "plague rat"
+	desc = "Shouldn't be seeing this."
+	icon = 'icons/mob/wraith_critters.dmi'
+	icon_state = "smallRat"
+	density = 1
+	hand_count = 2
+	custom_gib_handler = /proc/gibs
+	var/venom = "rat_spit"	//What are we injecting on bite
+	var/bitesound = "sound/weapons/handcuffs.ogg"
+	var/deathsound = "sound/impact_sounds/Generic_Snap_1.ogg"
+	death_text = "%src% falls on its back!"
+	pet_text = list("pets","hugs","snuggles","cuddles")
+	add_abilities = list(/datum/targetable/critter/plague_rat/rat_bite)
+	ai_type = /datum/aiHolder/aggressive
+	faction = list(FACTION_TOXMOON)
+	blood_id = "miasma"
+	/// venom injected per bite
+	var/bite_transfer_amt = 3
+	butcherable = BUTCHER_ALLOWED
+	max_skins = 1
+	reagent_capacity = 100
+	goop_immune = TRUE
+	is_npc = TRUE
+	ai_retaliates = TRUE
+	ai_retaliate_patience = 0
+	ai_retaliate_persistence = RETALIATE_UNTIL_INCAP
+	ai_attacks_per_ability = 5
+
+	New(var/turf/T)
+		..(T)
+		SPAWN(0)
+			src.bioHolder.AddEffect("nightvision", 0, 0, 0, 1)
+
+	setup_hands()
+		..()
+		var/datum/handHolder/HH = hands[1]
+		HH.limb = new /datum/limb/small_critter
+		HH.icon = 'icons/mob/critter_ui.dmi'
+		HH.icon_state = "handn"
+		HH.name = "paw"
+		HH.limb_name = "claws"
+
+		HH = hands[2]
+		HH.limb = new /datum/limb/mouth/small
+		HH.icon = 'icons/mob/critter_ui.dmi'
+		HH.icon_state = "mouth"
+		HH.name = "mouth"
+		HH.limb_name = "teeth"
+		HH.can_hold_items = 0
+
+	setup_healths()
+		..()
+		add_hh_flesh(health_brute, health_brute_vuln)
+		add_hh_flesh_burn(health_burn, health_burn_vuln)
+
+	critter_basic_attack(var/mob/target)
+		playsound(src.loc, 'sound/weapons/handcuffs.ogg', 50, 1, -1)
+		src.set_hand(2)
+		..()
+
+	critter_ability_attack(mob/target)
+		var/datum/targetable/critter/plague_rat/rat_bite/bite = src.abilityHolder.getAbility(/datum/targetable/critter/plague_rat/rat_bite)
+		if (bite && !bite.disabled && bite.cooldowncheck())
+			bite.handleCast(target)
+			return TRUE
+		if(!ON_COOLDOWN(src, "rat_bite", 5 SECONDS))
+			venom_bite(target)
+
+	on_pet(mob/user)
+		if (..())
+			return 1
+		if (prob(10))	//You probably shouldnt be petting them
+			boutput(user, "As you approach to pet [src], it snaps at you and bites your hand.")
+			random_brute_damage(user, 5)
+			user.emote("scream")
+			playsound(src.loc, 'sound/impact_sounds/Flesh_Tear_2.ogg', 70, 1)
+			if(ishuman(user))
+				var/mob/living/carbon/human/H = user
+				if(H.clothing_protects_from_chems())
+					boutput(H, "The bite is painful, but at least your biosuit protected you from the rat's diseases.")
+				else
+					boutput(H, "Your hand immediately starts to painfully puff up, that can't be good.")
+					H.contract_disease(/datum/ailment/disease/space_plague, null, null, 1)
+
+	specific_emotes(var/act, var/param = null, var/voluntary = 0)
+		switch (act)
+			if ("scream")
+				if (src.emote_check(voluntary, 50))
+					playsound(src, 'sound/voice/animal/mouse_squeak.ogg', 80, TRUE, channel=VOLUME_CHANNEL_EMOTE)
+					return SPAN_EMOTE("<b>[src]</b> squeaks!")
+			if ("fart")
+				if (src.emote_check(voluntary, 50))
+					playsound(src, 'sound/voice/farts/poo2.ogg', 40, TRUE, 0.1, 3, channel=VOLUME_CHANNEL_EMOTE)
+					return SPAN_EMOTE("<b>[src]</b> toots disgustingly!")
+
+	specific_emote_type(var/act)
+		switch (act)
+			if ("scream","hiss")
+				return 2
+		return ..()
+
+	animate_lying(lying)
+		animate_180_rest(src, !lying)
+
+	death(var/gibbed)
+		if (!gibbed)
+			src.unequip_all()
+			playsound(src, src.deathsound, 50, 0)
+			src.gib()
+		return ..()
+
+	proc/venom_bite(mob/M)
+		if (src.reagents && istype(M) && M.reagents)
+			playsound(src, src.bitesound, 50, 1)
+			if (issilicon(M))
+				var/mob/living/silicon/robot/R = M
+				R.compborg_take_critter_damage("[pick("l","r")]_[pick("arm","leg")]", rand(2,4))
+			else
+				M.TakeDamageAccountArmor("All", rand(1,3), 0, 0, DAMAGE_STAB)
+			if(ishuman(M))
+				var/mob/living/carbon/human/H = M
+
+				if(H.clothing_protects_from_chems())
+					boutput(H, "The bite hurts a lot, but it didn't manage to pierce your protective suit.")
+					return 1
+			M.reagents.add_reagent(src.venom, src.bite_transfer_amt)
+	young
+		name = "diseased rat"
+		real_name = "diseased rat"
+		desc = "A diseased looking rat."
+		icon_state = "smallRat"
+		bite_transfer_amt = 1
+		flags = TABLEPASS | DOORPASS
+		health_brute = 25
+		health_brute_vuln = 1
+		health_burn = 25
+		health_burn_vuln = 1.2
+		can_help = 1
+		can_throw = 1
+		can_grab = 0
+		can_disarm = 1
+
+	medium
+		name = "plague-ridden rat"
+		real_name = "plague ridden rat"
+		desc = "A wretched, disgusting rat."
+		icon_state = "mediumRat"
+		flags = TABLEPASS
+		health_brute = 40
+		health_brute_vuln = 0.9
+		health_burn = 40
+		health_burn_vuln = 1.2
+		can_help = 1
+		can_throw = 0
+		can_grab = 0
+		can_disarm = 1
+
+	adult
+		name = "bloated rat mass"
+		real_name = "bloated rat mass"
+		desc = "A horrible mass of puss and warts, that once used to look like a rat."
+		icon_state = "giantRat"
+		health_brute = 50
+		health_brute_vuln = 0.8
+		health_burn = 50
+		health_burn_vuln = 1.3
+		can_help = 1
+		can_throw = 1
+		can_grab = 1
+		can_disarm = 1
+		add_abilities = list(/datum/targetable/critter/plague_rat/rat_bite,
+							/datum/targetable/critter/slam/rat)
+
+	critter_ability_attack(mob/target)
+		var/datum/targetable/critter/plague_rat/rat_bite/bite = src.abilityHolder.getAbility(/datum/targetable/critter/plague_rat/rat_bite)
+		var/datum/targetable/critter/slam/rat/slam = src.abilityHolder.getAbility(/datum/targetable/critter/slam/rat)
+		if (bite && !bite.disabled && bite.cooldowncheck())
+			bite.handleCast(target)
+			return TRUE
+		if (slam && !slam.disabled && slam.cooldowncheck())
+			slam.handleCast(target)
+			return TRUE
+		if(!ON_COOLDOWN(src, "rat_bite", 5 SECONDS))
+			venom_bite(target)

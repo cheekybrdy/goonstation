@@ -139,6 +139,15 @@
 	health_burn = 15
 	health_brute_vuln = 0.4
 
+	radproof
+
+		New()
+			..()
+			remove_lifeprocess(/datum/lifeprocess/radiation)
+			APPLY_ATOM_PROPERTY(src, PROP_MOB_RADPROT_INT, src, 100)
+			faction = list(FACTION_TOXMOON)
+			goop_immune = TRUE
+
 /mob/living/critter/zombie/security
 	name = "undead guard"
 	desc = "Eh, couldn't be any worse than regular security."

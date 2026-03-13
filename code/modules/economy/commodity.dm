@@ -2055,3 +2055,5 @@ datum/commodity/drugs/sell/poppies
 	comtype = /obj/item/playing_card/expensive
 	onmarket = 1
 	price = PAY_EMBEZZLED
+
+////////flexx///////////
