@@ -49,7 +49,7 @@
 			can_burn = FALSE
 			can_break = FALSE
 
-			var/falltarget = LANDMARK_FALL_REACTOR
+			var/falltarget = LANDMARK_FALL_TOX_REACTOR
 
 			New()
 				src.AddComponent(/datum/component/pitfall/target_landmark,\
@@ -58,7 +58,7 @@
 					TargetLandmark = src.falltarget)
 				..()
 			lake
-				falltarget = LANDMARK_FALL_LAKE
+				falltarget = LANDMARK_FALL_TOX_LAKE
 
 /turf/unsimulated/floor/setpieces/toxmoon/radpool
 	name = "radioactive goop"
@@ -125,7 +125,7 @@
 			return
 
 	fall
-		var/falltarget = LANDMARK_FALL_SEWER
+		var/falltarget = LANDMARK_FALL_TOX_SEWER
 
 		New()
 			..()
@@ -136,7 +136,7 @@
 			..()
 
 		lake
-			falltarget = LANDMARK_FALL_LAKE
+			falltarget = LANDMARK_FALL_TOX_LAKE
 
 /obj/fakeobject/sewagedrain
 	name = "sewage drain"

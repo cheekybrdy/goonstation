@@ -613,13 +613,13 @@ var/global/list/job_start_locations = list()
 // Toxmoon
 
 /obj/landmark/fall/toxmoon
-	name = LANDMARK_FALL_REACTOR
+	name = LANDMARK_FALL_TOX_REACTOR
 
 /obj/landmark/fall/toxmoon/sewer
-	name = LANDMARK_FALL_SEWER
+	name = LANDMARK_FALL_TOX_SEWER
 
 /obj/landmark/fall/toxmoon/lake
-	name = LANDMARK_FALL_LAKE
+	name = LANDMARK_FALL_TOX_LAKE
 
 // Underwater
 
