@@ -390,6 +390,8 @@
 		var/obj/dialogueobj/controlpc/PC = src.master
 		if(PC.cutoff)
 			return
+		if(QDELETED(PC))
+			return
 		else
 			..()
 
