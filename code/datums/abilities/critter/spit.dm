@@ -70,5 +70,5 @@
 			qdel(A)
 			qdel(B)
 
-	toxmoon
+	low_cd
 		cooldown = 3 SECONDS

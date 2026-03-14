@@ -94,7 +94,7 @@ TYPEINFO(/area)
 	var/permarads = 0
 
 	/// prevents the glowy warning stuff from radiation, should always be one for standard areas
-	var/rad_overlay = 1
+	var/prevent_radiation_overlay = FALSE
 	/**
 	  * Don't irradiate this place during the blowout event
 		*
@@ -4504,7 +4504,7 @@ ABSTRACT_TYPE(/area/mining)
   * Updates the icon of the area. Mainly used for flashing it red or blue. See: old party lights
   */
 /area/update_icon()
-	if(irradiated && rad_overlay) //From a radiation blowout event
+	if(irradiated && !prevent_radiation_overlay) //From a radiation blowout event
 		icon_state = "blowout"
 	else if ((fire || eject) && power_environ)
 		if(fire && !eject)

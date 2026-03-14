@@ -161,7 +161,7 @@
 /area/toxmoon/plant
 	irradiated = 0.2
 	permarads = 1
-	rad_overlay = 0
+	prevent_radiation_overlay = TRUE
 
 /area/toxmoon/sewer
 	name = "Fatuus Sewer"
@@ -277,10 +277,10 @@
 		..()
 
 	spitter
-		add_abilities = list(/datum/targetable/critter/spit/toxmoon)
+		add_abilities = list(/datum/targetable/critter/spit/low_cd)
 
 		critter_ability_attack(mob/target)
-			var/datum/targetable/critter/spit/toxmoon/spit = src.abilityHolder.getAbility(/datum/targetable/critter/spit/toxmoon)
+			var/datum/targetable/critter/spit/low_cd/spit = src.abilityHolder.getAbility(/datum/targetable/critter/spit/low_cd)
 			src.set_dir(get_dir(src, target))
 
 			if (!spit.disabled && spit.cooldowncheck() && prob(10))

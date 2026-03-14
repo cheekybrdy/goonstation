@@ -510,9 +510,6 @@ proc/generate_space_color()
 							mover.Bump(obstacle)
 							return FALSE
 
-	if(mover == /obj/projectile)
-		qdel(mover)
-		return
 
 	return ..() //Nothing found to block so return success!
 
