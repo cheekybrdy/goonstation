@@ -64310,6 +64310,7 @@
 /obj/decal/stage_edge{
 	dir = 8
 	},
+/obj/machinery/weapon_stand/katana_stand,
 /turf/simulated/floor/wood,
 /area/toxmoon/sewer)
 "kjJ" = (
@@ -65176,9 +65177,10 @@
 /turf/unsimulated/floor/plating,
 /area/iomoon/base/underground)
 "kHg" = (
-/mob/living/critter/plaguerat/adult{
+/mob/living/critter/wraith/plaguerat/adult/npc{
+	desc = "I am here, my son.";
 	name = "Sensei Sawdust";
-	desc = "I am here, my son."
+	name_generator_path = null
 	},
 /turf/simulated/floor/wood,
 /area/toxmoon/sewer)
@@ -66072,7 +66074,7 @@
 /turf/unsimulated/floor/grime,
 /area/sim/gunsim/lobby)
 "llK" = (
-/mob/living/critter/plaguerat/medium,
+/mob/living/critter/wraith/plaguerat/adult/npc,
 /turf/unsimulated/greek/underworld,
 /area/toxmoon/sewer)
 "lmi" = (
@@ -72137,7 +72139,7 @@
 /turf/unsimulated/floor,
 /area/hospital/samostrel)
 "plc" = (
-/mob/living/critter/plaguerat/adult,
+/mob/living/critter/wraith/plaguerat/young/npc,
 /turf/unsimulated/greek/underworld,
 /area/toxmoon/sewer)
 "plg" = (
@@ -77863,7 +77865,7 @@
 /turf/unsimulated/floor/white/grime,
 /area/toxmoon/plant/lower)
 "sRL" = (
-/mob/living/critter/plaguerat/young,
+/mob/living/critter/wraith/plaguerat/medium/npc,
 /turf/unsimulated/greek/underworld,
 /area/toxmoon/sewer)
 "sRP" = (
@@ -78673,6 +78675,7 @@
 /area/centcom/lobby)
 "tAZ" = (
 /obj/fakeobject/carcosa/statue/broken,
+/obj/item/disk/data/floppy/lrt/carcosa,
 /turf/unsimulated/floor/auto/void,
 /area/toxmoon/cave)
 "tBC" = (
@@ -154352,8 +154355,8 @@ xQj
 xQj
 xQj
 xQj
-sRL
 xQj
+sRL
 xQj
 xQj
 xQj
@@ -155566,7 +155569,7 @@ diU
 diU
 hfb
 xQj
-xQj
+plc
 qLl
 aaa
 dkY
@@ -157367,7 +157370,7 @@ cnw
 aaa
 qLl
 qom
-xQj
+sRL
 qom
 sMj
 qLl
@@ -157982,7 +157985,7 @@ xQj
 xQj
 xQj
 xQj
-sRL
+xQj
 qLl
 aaa
 dkY
@@ -158276,7 +158279,7 @@ rBN
 qom
 wqu
 xQj
-xQj
+plc
 dnm
 xQj
 xQj
@@ -159178,7 +159181,7 @@ cnw
 cnw
 aaa
 qLl
-llK
+xQj
 qom
 rBN
 xQj
@@ -159793,7 +159796,7 @@ sCp
 pfV
 fdD
 cRq
-xQj
+plc
 xQj
 qLl
 aaa
@@ -160691,7 +160694,7 @@ aaa
 aaa
 qLl
 xQj
-xQj
+plc
 xQj
 xQj
 xQj
@@ -161002,7 +161005,7 @@ diU
 pfV
 hfb
 xQj
-plc
+xQj
 qLl
 aaa
 dkY
@@ -161606,7 +161609,7 @@ wIc
 wIc
 hfb
 xQj
-xQj
+sRL
 qLl
 aaa
 dkY
@@ -161901,7 +161904,7 @@ qLl
 qLl
 qLl
 qLl
-xQj
+sRL
 xQj
 sCp
 diU
@@ -162505,13 +162508,13 @@ fLY
 fLY
 oqu
 qLl
-llK
+xQj
 xQj
 sCp
 diU
 diU
 hfb
-sRL
+xQj
 xQj
 qLl
 aaa
@@ -163715,12 +163718,12 @@ wkL
 qLl
 xQj
 xQj
-llK
+xQj
 xQj
 jcj
 xQj
 xQj
-xQj
+llK
 qLl
 aaa
 dkY

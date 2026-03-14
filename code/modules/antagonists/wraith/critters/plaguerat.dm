@@ -210,8 +210,9 @@ TYPEINFO(/mob/living/critter/wraith/plaguerat)
 		ai_type = /datum/aiHolder/aggressive
 		ai_retaliates = TRUE
 		ai_retaliate_patience = 0
-		ai_retaliate_persistence = RETALIATE_UNTIL_DEAD
+		ai_retaliate_persistence = RETALIATE_UNTIL_INCAP
 		goop_immune = TRUE
+		faction = list(FACTION_TOXMOON)
 
 /mob/living/critter/wraith/plaguerat/medium
 	name = "plague-ridden rat"
@@ -257,8 +258,9 @@ TYPEINFO(/mob/living/critter/wraith/plaguerat)
 		ai_type = /datum/aiHolder/aggressive
 		ai_retaliates = TRUE
 		ai_retaliate_patience = 0
-		ai_retaliate_persistence = RETALIATE_UNTIL_DEAD
+		ai_retaliate_persistence = RETALIATE_UNTIL_INCAP
 		goop_immune = TRUE
+		faction = list(FACTION_TOXMOON)
 
 /mob/living/critter/wraith/plaguerat/adult
 	name = "bloated rat mass"
@@ -283,10 +285,10 @@ TYPEINFO(/mob/living/critter/wraith/plaguerat)
 	critter_ability_attack(mob/target)
 		var/datum/targetable/critter/plague_rat/rat_bite/bite = src.abilityHolder.getAbility(/datum/targetable/critter/plague_rat/rat_bite)
 		var/datum/targetable/critter/slam/rat/slam = src.abilityHolder.getAbility(/datum/targetable/critter/slam/rat)
-		if (bite && !bite.disabled && bite.cooldowncheck())
+		if (bite && !bite.disabled && bite.cooldowncheck() && prob(30))
 			bite.handleCast(target)
 			return TRUE
-		if (slam && !slam.disabled && slam.cooldowncheck())
+		if (slam && !slam.disabled && slam.cooldowncheck() && prob(20))
 			slam.handleCast(target)
 			return TRUE
 		if(!ON_COOLDOWN(src, "rat_bite", 5 SECONDS))
@@ -314,5 +316,6 @@ TYPEINFO(/mob/living/critter/wraith/plaguerat)
 		ai_type = /datum/aiHolder/aggressive
 		ai_retaliates = TRUE
 		ai_retaliate_patience = 0
-		ai_retaliate_persistence = RETALIATE_UNTIL_DEAD
+		ai_retaliate_persistence = RETALIATE_UNTIL_INCAP
 		goop_immune = TRUE
+		faction = list(FACTION_TOXMOON)
