@@ -259,7 +259,7 @@
 
 		if (src.ai?.enabled)
 			if (prob(5))
-				playsound(src, pick(moan_sounds), 25, 5)
+				playsound(src, pick(src.moan_sounds), 25, 5)
 
 	critter_ability_attack(mob/target)
 		var/datum/targetable/critter/acidpuke/puke = src.abilityHolder.getAbility(/datum/targetable/critter/acidpuke)
