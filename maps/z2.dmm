@@ -71596,6 +71596,18 @@
 	},
 /turf/unsimulated/floor/caution/north,
 /area/meat_derelict/soviet)
+"oUJ" = (
+/obj/table/reinforced/bar/auto{
+	name = "table"
+	},
+/obj/machinery/shredder{
+	pixel_y = 10
+	},
+/turf/unsimulated/floor/carpet{
+	dir = 1;
+	icon_state = "fblue3"
+	},
+/area/centcom/lobby)
 "oVu" = (
 /obj/fakeobject{
 	anchored = 1;
@@ -75699,7 +75711,11 @@
 /area/centcom/offices/tarmunora)
 "rBI" = (
 /obj/machinery/bug_reporter{
-	dir = 4
+	pixel_x = -10
+	},
+/obj/machinery/shredder{
+	pixel_x = 10;
+	pixel_y = 3
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/leah)
@@ -161737,7 +161753,7 @@ aES
 bFH
 dLh
 dMi
-dMJ
+oUJ
 dNg
 dNB
 dNP
