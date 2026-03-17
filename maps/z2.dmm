@@ -1535,6 +1535,13 @@
 	dir = 1
 	},
 /area/hospital/samostrel)
+"ahG" = (
+/obj/pool/perspective{
+	dir = 6;
+	tag = "icon-pool (SOUTHEAST)"
+	},
+/turf/unsimulated/floor,
+/area/toxmoon/plant/upper)
 "ahK" = (
 /obj/machinery/light/worn{
 	brightness = 2;
@@ -6963,6 +6970,13 @@
 	name = "strange surface"
 	},
 /area/crater/cave)
+"aIO" = (
+/obj/machinery/light/small/floor,
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 8
+	},
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/lower)
 "aIQ" = (
 /turf/unsimulated/floor/black,
 /area/marsoutpost/vault)
@@ -10245,6 +10259,12 @@
 	dir = 4
 	},
 /area/crater/biodome/research)
+"aTY" = (
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 8
+	},
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated,
+/area/toxmoon/plant/lower)
 "aUb" = (
 /obj/decal/mushrooms/type2,
 /obj/decal/cleanable/dirt,
@@ -19891,6 +19911,13 @@
 	},
 /turf/space/fluid/cenote,
 /area/crater)
+"bBQ" = (
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 5;
+	icon_state = "xtra_bigstripe-corner2"
+	},
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/lower)
 "bBW" = (
 /obj/iomoon_puzzle/ancient_robot_door{
 	dir = 1;
@@ -53947,10 +53974,10 @@
 	},
 /area/centcom/gallery)
 "dRs" = (
-/turf/unsimulated/floor/setpieces/toxmoon/radpool/fall/lake{
-	desc = "The water test says this needs more chlorine. The water seems to be being sucked in here.";
-	name = "vacumous goop"
+/obj/fakeobject/rockpile/big{
+	density = 1
 	},
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
 /area/toxmoon/sewer)
 "dRv" = (
 /obj/table/wood/round/auto,
@@ -55565,8 +55592,8 @@
 /area/shuttle/merchant_shuttle/diner_centcom)
 "esP" = (
 /obj/pool/perspective{
-	dir = 5;
-	tag = "icon-pool (NORTHEAST)"
+	dir = 1;
+	tag = "icon-pool (NORTH)"
 	},
 /turf/unsimulated/floor/plating/scorched,
 /area/toxmoon/plant/upper)
@@ -57110,6 +57137,13 @@
 /obj/mapping_helper/access/syndie_shuttle,
 /turf/unsimulated/floor/shuttlebay,
 /area/syndicate_station/battlecruiser)
+"fvO" = (
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 10;
+	icon_state = "xtra_bigstripe-corner2"
+	},
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/lower)
 "fvX" = (
 /obj/dialogueobj/engineerscorpse,
 /obj/decal/cleanable/blood/gibs{
@@ -60836,6 +60870,10 @@
 "hVP" = (
 /turf/simulated/floor/white/grime,
 /area/observatory)
+"hVV" = (
+/obj/random_item_spawner/organs/bloody/one_to_three,
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/sewer)
 "hVY" = (
 /obj/fakeobject/pipe{
 	density = 1;
@@ -65394,6 +65432,11 @@
 /obj/decal/stripe_caution,
 /turf/unsimulated/floor/plating,
 /area/iomoon/base)
+"kOe" = (
+/obj/fakeobject/rockpile,
+/obj/random_item_spawner/organs/bloody/one_to_three,
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/sewer)
 "kOx" = (
 /obj/decal/stripe_delivery,
 /turf/unsimulated/floor/plating,
@@ -68929,18 +68972,13 @@
 /turf/unsimulated/outdoors/grass,
 /area/shuttle/merchant_shuttle/left_centcom/destiny)
 "nhQ" = (
-/obj/fakeobject/greekgrass/curve{
-	dir = 1;
-	name = "sludge loam"
+/obj/pool/perspective/innercorners{
+	dir = 8
 	},
-/obj/fakeobject/rockpile,
-/obj/effects/harmless_smoke{
-	name = "mist";
-	opacity = 0;
-	pixel_y = 0
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
 	},
-/turf/unsimulated/floor/setpieces/toxmoon/radpool,
-/area/toxmoon/sewer)
+/area/toxmoon/plant/upper)
 "njd" = (
 /obj/machinery/door/airlock/pyro/command/centcom{
 	dir = 4
@@ -69399,6 +69437,10 @@
 "nxJ" = (
 /obj/landmark/fall/toxmoon,
 /obj/machinery/light/small/floor,
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 9;
+	icon_state = "xtra_bigstripe-corner2"
+	},
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated,
 /area/toxmoon/plant/lower)
 "nxQ" = (
@@ -70905,12 +70947,10 @@
 /turf/unsimulated/floor/plating/damaged2,
 /area/void_diner)
 "ouC" = (
-/obj/pool/perspective{
-	dir = 6;
-	tag = "icon-pool (SOUTHEAST)"
-	},
-/turf/unsimulated/floor/plating/scorched,
-/area/toxmoon/plant/upper)
+/obj/landmark/fall/toxmoon,
+/obj/decal/tile_edge/stripe/extra_big,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/lower)
 "ouH" = (
 /obj/machinery/conveyor/SN{
 	id = "owlery_trash"
@@ -73106,6 +73146,10 @@
 /obj/railing/yellow/reinforced,
 /turf/unsimulated/floor/plating,
 /area/iomoon/base)
+"pPl" = (
+/obj/decal/tile_edge/stripe/extra_big,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/lower)
 "pPI" = (
 /obj/table/reinforced/auto,
 /turf/unsimulated/floor/shuttle{
@@ -77730,6 +77774,12 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital)
+"sLW" = (
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 4
+	},
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/lower)
 "sMj" = (
 /obj/random_item_spawner/furniture_parts,
 /turf/unsimulated/greek/underworld,
@@ -79001,7 +79051,7 @@
 /turf/unsimulated/floor/darkblue,
 /area/syndicate_station/battlecruiser)
 "tPy" = (
-/obj/machinery/chem_dispenser,
+/obj/machinery/chem_dispenser/chemical,
 /turf/unsimulated/floor/white/grime,
 /area/toxmoon/plant/lower)
 "tPE" = (
@@ -79887,6 +79937,13 @@
 /obj/mapping_helper/access/admin_override,
 /turf/unsimulated/floor/black,
 /area/centcom/lobby)
+"uxP" = (
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 6;
+	icon_state = "xtra_bigstripe-corner2"
+	},
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated,
+/area/toxmoon/plant/lower)
 "uyp" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -82053,6 +82110,14 @@
 	},
 /turf/space,
 /area/watchful_eye_sensor)
+"vLK" = (
+/obj/fakeobject/greekgrass/curve{
+	dir = 1;
+	name = "sludge loam"
+	},
+/obj/random_item_spawner/organs/bloody/one_to_three,
+/turf/unsimulated/floor/setpieces/toxmoon/radpool,
+/area/toxmoon/sewer)
 "vLV" = (
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/unsimulated/floor/plating/scorched,
@@ -82371,6 +82436,13 @@
 /obj/item/device/audio_log/hospital_02,
 /turf/unsimulated/floor/plating,
 /area/hospital/underground)
+"vUq" = (
+/obj/pool/perspective{
+	dir = 5;
+	tag = "icon-pool (NORTHEAST)"
+	},
+/turf/unsimulated/floor,
+/area/toxmoon/plant/upper)
 "vUu" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -86436,6 +86508,12 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/meat_derelict/guts)
+"yjb" = (
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 1
+	},
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/lower)
 "yjx" = (
 /obj/fakeobject/pipe{
 	desc = "It seems to have been damaged somehow.";
@@ -143194,10 +143272,10 @@ tGf
 grt
 aaa
 lmk
-ldp
-qhB
-qhB
-qhB
+uxP
+sLW
+sLW
+bBQ
 rpA
 lmk
 ldp
@@ -143496,10 +143574,10 @@ tGf
 grt
 aaa
 lmk
-eSM
+ouC
 qhB
 ldp
-qhB
+yjb
 qhB
 pIS
 ldp
@@ -143798,10 +143876,10 @@ tGf
 grt
 aaa
 lmk
-qhB
+pPl
 ldp
 pgY
-qhB
+yjb
 vPu
 fTt
 bxA
@@ -144100,9 +144178,9 @@ tGf
 grt
 aaa
 lmk
-qhB
-bYJ
-ldp
+fvO
+aIO
+aTY
 nxJ
 ldp
 lmk
@@ -149521,13 +149599,13 @@ ukI
 kLE
 dzD
 esP
-tTd
-tTd
-tTd
-tTd
-tTd
-tTd
-ouC
+oEu
+oEu
+oEu
+oEu
+oEu
+oEu
+kQo
 dzD
 kLE
 ukI
@@ -149821,15 +149899,15 @@ bqX
 aaa
 ukI
 gXS
-kLE
-kLE
-jbm
-kLE
-kLE
-kLE
-kLE
 bGy
-kLE
+vUq
+nhQ
+tTd
+tTd
+tTd
+tTd
+tTd
+ahG
 kLE
 kEa
 ukI
@@ -150130,7 +150208,7 @@ kLE
 kLE
 kEa
 kLE
-kLE
+bGy
 kLE
 kEa
 kEa
@@ -154673,7 +154751,7 @@ xQj
 xQj
 qLl
 xQj
-xQj
+xsv
 xQj
 xQj
 xQj
@@ -154980,7 +155058,7 @@ nYJ
 vXR
 vXR
 nbF
-xQj
+xsv
 xQj
 qLl
 qLl
@@ -155884,7 +155962,7 @@ xQj
 xQj
 eVH
 diU
-diU
+hVV
 hfb
 xQj
 xQj
@@ -156789,7 +156867,7 @@ qLl
 xQj
 xQj
 xAS
-diU
+hVV
 diU
 hfb
 xQj
@@ -157092,7 +157170,7 @@ xQj
 xQj
 xAS
 diU
-diU
+pfV
 hfb
 xQj
 xQj
@@ -157395,7 +157473,7 @@ xQj
 xAS
 diU
 diU
-hfb
+vLK
 xQj
 xQj
 qLl
@@ -158303,7 +158381,7 @@ xQj
 wqu
 xQj
 xQj
-xQj
+xsv
 qLl
 aaa
 dkY
@@ -158900,7 +158978,7 @@ qom
 dnm
 dnm
 qLl
-xQj
+xsv
 xQj
 wbS
 vXR
@@ -160113,7 +160191,7 @@ xQj
 sCp
 pyE
 dRs
-nhQ
+aip
 xQj
 xQj
 qLl
@@ -160414,7 +160492,7 @@ xQj
 xQj
 rdM
 fdD
-fdD
+kOe
 hfb
 xQj
 xQj
@@ -160709,14 +160787,14 @@ aaa
 aaa
 aaa
 qLl
-xQj
+xsv
 plc
 xQj
 xQj
 xQj
 sCp
 diU
-diU
+hVV
 aip
 xQj
 xQj
@@ -161624,7 +161702,7 @@ rdM
 wIc
 wIc
 hfb
-xQj
+xsv
 sRL
 qLl
 aaa
@@ -162225,7 +162303,7 @@ qLl
 xQj
 xQj
 sCp
-diU
+hVV
 diU
 hfb
 xQj
@@ -162529,7 +162607,7 @@ xQj
 sCp
 diU
 diU
-hfb
+eYp
 xQj
 xQj
 qLl
@@ -162829,9 +162907,9 @@ xQj
 xQj
 xQj
 sCp
+pfV
 diU
-diU
-eYp
+hfb
 xQj
 xQj
 qLl
@@ -163735,7 +163813,7 @@ qLl
 xQj
 xQj
 xQj
-xQj
+xsv
 jcj
 xQj
 xQj

@@ -170,26 +170,18 @@
 	name = "Toxic River"
 	desc = "Some foul flowing goop."
 	icon_state = "toxriver"
-	var/radStrength = 15 // Weaker due to push effect
-	var/neutron = FALSE // no neutron shit, unless you want to make a especially vile subtype
 
 	New()
 		..()
 		src.add_simple_light("rad", list(0, 0.8 * 255, 0.3 * 255, 0.8 * 255))
 
-	Entered(atom/movable/T, atom/OldLoc) // push effect
-		var/mult = 1
+	Crossed(atom/movable/T) // push effect
 		..()
-		if(ismob(T) || isobj(T))
-			step(T,src.dir, 20)
-		if(ismobcritter(T))
-			var/mob/living/critter/C = T
-			if(C.goop_immune) return
-		if (isliving(T) && !ON_COOLDOWN(src, "goop_hurty", 0.5 SECONDS))
-			var/mob/living/M = T
-			boutput(M, "You feel the corrosive goop singe you!")
-			M.take_radiation_dose(mult * (neutron ? 0.4 SIEVERTS: 0.2 SIEVERTS) * (radStrength/100), TRUE)
-			random_burn_damage(M, rand(1,5) * mult)
+		for(T in src.loc?.contents)
+			if(T.loc != src.loc) //fixes race condition where T gets yoinked during the turf-to-turf loop that calls Crossed on everything (& ends up with an active walk inside another object)
+				return
+			if(!T.anchored)
+				walk(T,src.dir,2.5,32)
 
 /obj/stone
 	name = "stone"

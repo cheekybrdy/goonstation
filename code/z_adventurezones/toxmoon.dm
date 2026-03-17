@@ -31,6 +31,7 @@
 		plating
 			name = "plating"
 			icon_state = "plating"
+			step_material = "step_plating"
 			intact = 0
 			layer = PLATING_LAYER
 
@@ -57,6 +58,7 @@
 					FallTime = 0 SECONDS,\
 					TargetLandmark = src.falltarget)
 				..()
+
 			lake
 				falltarget = LANDMARK_FALL_TOX_LAKE
 
@@ -134,9 +136,6 @@
 				FallTime = 0 SECONDS,\
 				TargetLandmark = src.falltarget)
 			..()
-
-		lake
-			falltarget = LANDMARK_FALL_TOX_LAKE
 
 /obj/fakeobject/sewagedrain
 	name = "sewage drain"
