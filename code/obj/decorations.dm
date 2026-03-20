@@ -168,7 +168,7 @@
 
 /obj/river/toxic
 	name = "Toxic River"
-	desc = "Some foul flowing goop."
+	desc = "Some foul flowing goop. The current seems strong enough to push a person around."
 	icon_state = "toxriver"
 
 	New()
@@ -178,6 +178,8 @@
 	Crossed(atom/movable/T) // push effect
 		..()
 		for(T in src.loc?.contents)
+			if(!loc)
+				return
 			if(T.loc != src.loc) //fixes race condition where T gets yoinked during the turf-to-turf loop that calls Crossed on everything (& ends up with an active walk inside another object)
 				return
 			if(!T.anchored)

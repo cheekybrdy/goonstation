@@ -527,12 +527,12 @@ Only trained personnel should operate station systems. Follow all procedures car
 	Visitor: Garriot Doe 7:15 AM <br>
 	Junior Engineer: Boris Trevich 7:54 AM <br>
 	NOTICE: HIGH RADIATION LEVELS DETECTED. <br>
-	ALL INCOMING EMPLOYEES PROCEED WITH CAUTION."}
+	ALL INBOUND EMPLOYEES PROCEED WITH CAUTION."}
 
 /obj/item/paper/toxmoon_worker
 	name = "note to self"
 	icon_state = "paper"
-	info = {"Send a note to head office about this visitor, they've seemed really shifty and I swore I saw a camera flash from under their coat."}
+	info = {"Send a email to head office about this visitor, they've seemed really shifty and I swore I saw a camera flash from under their trenchcoat."}
 
 /obj/item/paper/toxmoon_cooling
 	name = "NOTICE: tower renovations"
@@ -540,6 +540,52 @@ Only trained personnel should operate station systems. Follow all procedures car
 	info = {"The cooling tower has been adjusted to employee complaints of a lack of recreational facilities on site. <br>
 	in order to address concern the cooling tower now also functions as a pool. Please do not use the pool in the event of a nuclear incident <br>
 	any uranium will backflow into the pool."}
+
+/obj/item/paper/toxmoon_report
+	name = "EVALUATION: part durability assessment"
+	icon_state = "paper"
+	info = {"The engine will be able to run on our current FY budget, but will have parts missing critical replacement guidelines.
+	For example, the SMES wiring which cannot be afforded with the current payroll will have worse thermal capacity, which could backfire a large amount
+	of electricity into the turbine, causing critical and potentially lethal failures."}
+
+/obj/item/paper/toxmoon_inventory
+	name = "Replacement Storage Inventory"
+	icon_state = "paper"
+	info = {"1x Turbine Blades (Steel) <br>
+	1x Turbine Stator (Steel) <br>
+	2x Fuel Rod <br>
+	2x Control Rod <br>
+	2x Gas Channel <br>
+	2x Heat Exchanger <br>
+	MISSING:
+	1x High Load Thermal Battery
+	1x Jumper Cables"}
+
+/obj/item/paper/toxmoon_research
+	name = "Research Conclusions: Radioisotopics"
+	icon_state = "paper"
+	info = {"Subject 19-C:<br>
+	Dosed with: Reactor Byproduct D
+	Shows large amount of covalent bonds between flesh and Byproduct D.
+	Additional exposure to Exotic Compound Omicron resulted in violent pulsing in Subject 19-C.
+	Additional monitoring needed, and additional containment procedures are required for subject in question."}
+
+/obj/item/paper/toxmoon_director
+	name = "Director's Report"
+	icon_state = "paper"
+	info = {"Reactor operations are nominal as of late, though there are larger external pressures on the facility. <br>
+	A representative from a shell corperation that has ties to Nanotransen is meeting me here today. I am worried that they are after our<br>
+	radioisotopic research, though they have had interest in the land, with conflicting bids for where the plant stands today <br>
+	do they want the land for something we don't even know or do they just want their claws onto what they plan today. I have... Precautions <br>
+	But I do not want to use them, nor Byproduct I in any way, even if it is better then it being in what I suspect is Jam's hands.
+	Signed, Site Director Lǜ"}
+
+/obj/item/paper/toxmoon_controls
+	name = "CRITICAL FAILURE AUTOMATED READOUT"
+	icon_state = "paper"
+	info = {"Critical Failure of Transformer: Excess Heat of 1400 Kelvin to reactor. <br>
+	MELTDOWN IMMINENT. <br>
+	IF YOU ARE READING THIS, MY CONDOLENCES."}
 
 /obj/item/paper/telecrystal_update
 	name = "email printout"

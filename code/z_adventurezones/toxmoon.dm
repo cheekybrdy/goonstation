@@ -276,6 +276,8 @@
 		..()
 
 	spitter
+		icon_state = "spitter"
+		ai_type = /datum/aiHolder/ranged
 		add_abilities = list(/datum/targetable/critter/spit/low_cd)
 
 		critter_ability_attack(mob/target)
@@ -286,6 +288,13 @@
 				spit.handleCast(target)
 				src.ai.move_away(target,1)
 				return TRUE
+
+		setup_hands()
+			..()
+			var/datum/handHolder/HH = hands[1]
+			HH.limb = new /datum/limb/gun/kinetic/spit
+			HH.icon_state = "gun"
+			HH.limb_name = "spitter arm"
 
 /datum/targetable/critter/acidpuke // critter version
 	name = "Acidic Mass Emesis"

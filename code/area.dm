@@ -860,6 +860,20 @@ ABSTRACT_TYPE(/area/shuttle)
 	icon_state = "shuttle2"
 	force_fullbright = 0
 
+/area/shuttle/toxmoon_elevator/upper
+	name = "Toxmoon Lift Upper Section"
+	icon_state = "shuttle"
+	force_fullbright = 0
+	irradiated = 0.4
+	prevent_radiation_overlay = TRUE
+
+/area/shuttle/toxmoon_elevator/lower
+	name = "Toxmoon Lift Lower Section"
+	icon_state = "shuttle2"
+	force_fullbright = 0
+	irradiated = 0.6
+	prevent_radiation_overlay = TRUE
+
 /area/shuttle/centcom_elevator/upper
 	name = "Centcom Lift Upper Section"
 	icon_state = "shuttle"

@@ -450,6 +450,13 @@
 		cooldown = 1 SECOND
 		reload_time = 20 SECONDS
 
+	spit //idk where else to put this one
+		proj = new/datum/projectile/special/acidspit
+		shots = 1
+		current_shots = 4
+		cooldown = 1 SECOND
+		reload_time = 5 SECONDS
+
 /datum/limb/gun/energy
 	phaser
 		proj = new/datum/projectile/laser/light
