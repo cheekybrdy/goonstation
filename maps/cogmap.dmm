@@ -31115,8 +31115,9 @@
 	},
 /area/station/crew_quarters/hor)
 "dpB" = (
-/obj/machinery/fluid_machinery/binary/pump/active{
-	dir = 8
+/obj/machinery/fluid_machinery/trinary/filter/water{
+	desc = "The one thing preventing a flood of shit hitting the station.";
+	name = "water waste filter"
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
@@ -40869,7 +40870,9 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/obj/fluid_pipe/t_junction/waste,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "iFc" = (
@@ -58153,9 +58156,7 @@
 /turf/simulated/floor/black,
 /area/station/medical/crematorium)
 "sow" = (
-/obj/machinery/fluid_machinery/unary/drain/inlet_pump/active{
-	dir = 4
-	},
+/obj/fluid_pipe/elbow/waste,
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "spb" = (
@@ -60816,8 +60817,8 @@
 /turf/simulated/floor/yellow/side,
 /area/station/engine/storage)
 "tNE" = (
-/obj/fluid_pipe/straight/waste{
-	dir = 4
+/obj/fluid_pipe/t_junction/waste{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
@@ -67581,11 +67582,8 @@
 /turf/simulated/floor/grime,
 /area/station/security/brig)
 "xvY" = (
-/obj/machinery/fluid_machinery/trinary/filter/water{
-	desc = "The one thing preventing a flood of shit hitting the station.";
-	name = "water waste filter"
-	},
 /obj/machinery/camera/directional/east,
+/obj/machinery/fluid_machinery/unary/sensor/filtration,
 /turf/simulated/floor/plating,
 /area/station/janitor/plumbing)
 "xwN" = (
@@ -119079,7 +119077,7 @@ aQy
 oyI
 kbF
 hjS
-dpB
+lcl
 lFm
 urn
 ejY
@@ -119381,7 +119379,7 @@ aQy
 iCw
 kBc
 sow
-lcl
+dpB
 tNE
 eTN
 fia
