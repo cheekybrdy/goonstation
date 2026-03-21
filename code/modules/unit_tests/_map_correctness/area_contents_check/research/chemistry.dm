@@ -18,6 +18,10 @@
 		CONTENTS_GT(/obj/submachine/chem_extractor, 0),
 		// Utility
 		CONTENTS_GT(/obj/machinery/glass_recycler/chemistry, 0),
+		CONTENTS_OR(
+			list(CONTENTS_GT(/obj/machinery/fluid_machinery/unary/drain, 0)),
+			list(CONTENTS_GT(/obj/machinery/drainage, 0)),
+		),
 		CONTENTS_GT(/obj/machinery/fluid_machinery/unary/drain, 0),
 		CONTENTS_EQ(/obj/machinery/computer/chem_request_receiver, 1),
 		CONTENTS_EQ(/obj/machinery/disposal/chemlink, 1),
