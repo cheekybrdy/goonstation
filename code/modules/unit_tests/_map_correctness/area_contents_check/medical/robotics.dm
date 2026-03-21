@@ -7,7 +7,7 @@
 		// Surgical Equipment
 		CONTENTS_GT(/obj/machinery/optable, 0),
 		CONTENTS_GT(/obj/machinery/computer/operating, 0),
-		CONTENTS_GT(/obj/machinery/drainage, 0),
+		CONTENTS_GT(/obj/machinery/fluid_machinery/unary/drain, 0),
 		CONTENTS_GT(/obj/machinery/sink, 0),
 		// Robotics Equipment
 		CONTENTS_GT(/obj/machinery/computer/robot_module_rewriter, 0),
