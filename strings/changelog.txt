@@ -1,4 +1,21 @@
-
+(t)sun mar 22 26
+(u)LeahTheTech, JORJ949, Mordent
+(*)Added the Explodinator 3007
+(t)fri mar 20 26
+(u)Lord_Earthfire
+(p)26180
+(e)⚖📡|C-Balance, A-AI
+(+)Some mobs, such as spiders in your personal zoo, will be much more chill with people at the other side of windows
+(u)Pirate-Rob
+(p)26043
+(e)🗺🎨🔬🌠|A-Mapping, C-Sprites, A-Science, A-Events
+(+)Split generic Storage Drive into 5 different types with all new sprites.
+(+)SoftTech Vendor now sells a better storage drive, with an even better one as hidden stock.
+(+)You can now open harddrive casing with a screw driver and actually wipe it or turn on write-protection.
+(u)Cheekybrdy
+(p)26029
+(e)🎨|C-Sprites
+(+)Adds a float sensor fluid machine.
 (t)thu mar 19 26
 (u)JORJ949
 (p)26074
