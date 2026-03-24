@@ -63141,6 +63141,7 @@
 /obj/item/reactor_component/heat_exchanger/random_material{
 	pixel_x = 17
 	},
+/obj/item/mining_tools/pick,
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated,
 /area/toxmoon/plant/lower)
 "jpR" = (
@@ -64319,6 +64320,11 @@
 /obj/item/storage/secure/ssafe/icemoon,
 /turf/unsimulated/wall/auto/lead/blue,
 /area/lower_arctic/pod1)
+"khk" = (
+/obj/table/reinforced/industrial,
+/obj/item/storage/toolbox/emergency,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated,
+/area/toxmoon/plant/lower)
 "kht" = (
 /obj/indestructible/shuttle_corner{
 	icon_state = "wall3_trans"
@@ -65031,6 +65037,7 @@
 	pixel_x = -6;
 	pixel_y = 6
 	},
+/obj/item/storage/toolbox/mechanical/orange_tools,
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
 /area/toxmoon/plant/lower)
 "kAW" = (
@@ -66210,6 +66217,11 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/afterlife/bar)
+"lnr" = (
+/obj/landmark/fall/toxmoon,
+/obj/table/reinforced/industrial/auto,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated,
+/area/toxmoon/plant/lower)
 "lnE" = (
 /obj/storage/closet/dresser/random,
 /turf/unsimulated/floor/carpet/grime,
@@ -67129,6 +67141,17 @@
 /obj/item/reagent_containers/food/snacks/pizza/vendor/meatball,
 /turf/unsimulated/greek/underworld,
 /area/toxmoon/sewer)
+"lUi" = (
+/obj/table/auto,
+/obj/item/material_piece/neutronium{
+	pixel_x = 8
+	},
+/obj/item/material_piece/neutronium{
+	pixel_x = -8
+	},
+/obj/item/material_piece/neutronium,
+/turf/unsimulated/floor,
+/area/toxmoon/plant/reactor)
 "lUk" = (
 /obj/decal/icefloor,
 /mob/living/critter/spider/ice,
@@ -68817,6 +68840,11 @@
 	},
 /turf/unsimulated/floor/void/channel,
 /area/adventure/channel)
+"mZI" = (
+/obj/table/reinforced/industrial/auto,
+/obj/item/storage/box/trash_bags,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated,
+/area/toxmoon/plant/lower)
 "mZO" = (
 /mob/living/critter/small_animal/floateye/watchful,
 /obj/decal/residual_energy,
@@ -71072,7 +71100,7 @@
 /turf/unsimulated/floor/martian,
 /area/crunch)
 "owW" = (
-/mob/living/critter/radthing,
+/mob/living/critter/radthing/neutron,
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated,
 /area/toxmoon/plant/controls)
 "oxe" = (
@@ -71143,6 +71171,11 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital)
+"ozo" = (
+/obj/table/reinforced/industrial,
+/obj/item/storage/box/vialbox,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/lower)
 "ozp" = (
 /obj/tree/carcosa/five,
 /obj/item/clothing/suit/cultist/hastur,
@@ -75474,6 +75507,10 @@
 	},
 /turf/unsimulated/floor,
 /area/centcom/offices/pali)
+"rqQ" = (
+/obj/railway_vehicle/flatbed/container/rtgs,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/lower)
 "rrt" = (
 /obj/machinery/door/airlock/pyro/glass,
 /obj/fakeobject/airlock_broken/firelock{
@@ -80497,6 +80534,7 @@
 	dir = 9;
 	name = "grimy pipe"
 	},
+/mob/living/critter/radthing,
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated,
 /area/toxmoon/plant/lower)
 "uLU" = (
@@ -142470,9 +142508,9 @@ grt
 aaa
 lmk
 qhB
-qhB
+rqQ
 ldp
-ldp
+mZI
 ldp
 lmk
 tLy
@@ -142774,7 +142812,7 @@ lmk
 ldp
 eSM
 qhB
-rpA
+lnr
 ldp
 lmk
 ibe
@@ -144586,7 +144624,7 @@ lmk
 rpA
 gEm
 qhB
-ldp
+khk
 ldp
 lmk
 xsC
@@ -144888,7 +144926,7 @@ lmk
 ldp
 qhB
 qhB
-qhB
+ozo
 qhB
 lmk
 xsC
@@ -155739,20 +155777,20 @@ cnw
 cnw
 cnw
 aaa
-iqc
-iqc
-lOH
-lOH
-bzi
-lOH
-lVc
-pzZ
-pzZ
-pzZ
-wOF
-wOF
-wOF
 kau
+wOF
+wOF
+pzZ
+pzZ
+wOF
+sAM
+pzZ
+wOF
+pzZ
+wOF
+wOF
+pzZ
+pzZ
 kau
 aaa
 qLl
@@ -156041,21 +156079,21 @@ cnw
 cnw
 cnw
 aaa
-aaa
-kau
-kau
+iqc
+iqc
+lOH
+rPi
+bzi
+lOH
+lVc
+pzZ
+pzZ
+pzZ
 wOF
-jas
-pzZ
-pzZ
-pzZ
-pzZ
-pzZ
-rOw
+wOF
 wOF
 kau
 kau
-aaa
 aaa
 qLl
 vmG
@@ -156342,21 +156380,21 @@ cnw
 cnw
 cnw
 cnw
-cnw
 aaa
 aaa
 kau
+kau
 wOF
-wOF
-wOF
+jas
 pzZ
-wOF
-wOF
-wOF
 pzZ
+pzZ
+pzZ
+pzZ
+rOw
 wOF
 kau
-aaa
+kau
 aaa
 aaa
 qLl
@@ -156648,15 +156686,15 @@ cnw
 aaa
 aaa
 kau
-hUT
+wOF
+wOF
 wOF
 pzZ
 wOF
 wOF
 wOF
-wOF
-xXQ
 pzZ
+wOF
 kau
 aaa
 aaa
@@ -156948,17 +156986,17 @@ cnw
 cnw
 cnw
 aaa
+aaa
 kau
-kau
-kau
-kau
-kau
-wlY
-kau
-kau
-kau
-kau
-kau
+hUT
+wOF
+pzZ
+wOF
+wOF
+wOF
+wOF
+xXQ
+pzZ
 kau
 aaa
 qLl
@@ -157251,17 +157289,17 @@ cnw
 cnw
 aaa
 kau
-kgO
-kgO
-hPa
-hPa
-hPa
-bpB
 kau
-aaa
-aaa
-aaa
-aaa
+kau
+kau
+kau
+wlY
+kau
+kau
+kau
+kau
+kau
+kau
 aaa
 qLl
 rBN
@@ -157554,16 +157592,16 @@ cnw
 aaa
 kau
 kgO
+kgO
 hPa
 hPa
 hPa
-hPa
-hPa
+bpB
 kau
 aaa
-cnw
-cnw
-cnw
+aaa
+aaa
+aaa
 aaa
 qLl
 qom
@@ -157855,7 +157893,7 @@ cnw
 cnw
 aaa
 kau
-hPa
+lUi
 hPa
 hPa
 hPa
@@ -158158,7 +158196,7 @@ cnw
 aaa
 kau
 hPa
-fQw
+hPa
 hPa
 hPa
 hPa
@@ -158459,12 +158497,12 @@ cnw
 cnw
 aaa
 kau
-kau
-kau
-kau
-kau
-kau
-kau
+hPa
+fQw
+hPa
+hPa
+hPa
+hPa
 kau
 aaa
 cnw
@@ -158760,14 +158798,14 @@ cnw
 cnw
 cnw
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+kau
+kau
+kau
+kau
+kau
+kau
+kau
+kau
 aaa
 cnw
 cnw
@@ -159061,16 +159099,16 @@ cnw
 cnw
 cnw
 cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
-cnw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 cnw
 cnw
 cnw

@@ -537,9 +537,9 @@ Only trained personnel should operate station systems. Follow all procedures car
 /obj/item/paper/toxmoon_cooling
 	name = "NOTICE: tower renovations"
 	icon_state = "paper"
-	info = {"The cooling tower has been adjusted to employee complaints of a lack of recreational facilities on site. <br>
-	in order to address concern the cooling tower now also functions as a pool. Please do not use the pool in the event of a nuclear incident <br>
-	any uranium will backflow into the pool."}
+	info = {"The cooling tower has been adjusted due to employee complaints of a lack of recreational facilities on site. <br>
+	In order to address these concerns the cooling tower now also functions as a pool. Please do not use the pool in the event of a nuclear incident as
+	any radium will backflow into the pool."}
 
 /obj/item/paper/toxmoon_report
 	name = "EVALUATION: part durability assessment"

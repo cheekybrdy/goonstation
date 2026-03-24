@@ -275,6 +275,17 @@
 			src.gib()
 		..()
 
+	neutron
+		health_brute = 65
+		health_burn = 65
+		icon_state = "goop_neutron"
+		New()
+			..()
+			remove_lifeprocess(/datum/lifeprocess/radiation)
+			APPLY_MOVEMENT_MODIFIER(src, /datum/movement_modifier/zombie, src)
+			src.bioHolder.RemoveEffect("radioactive")
+			src.bioHolder.AddEffect("n_radioactive")
+
 	spitter
 		icon_state = "spitter"
 		ai_type = /datum/aiHolder/ranged
