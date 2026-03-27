@@ -35,7 +35,7 @@ var/global/list/mapNames = list(
 
 	"Crash" = 				list("id" = "CRASH",		"settings" = "crash",			"playerPickable" = FALSE),
 	"Atlas" =				list("id" = "ATLAS",		"settings" = "atlas",			"playerPickable" = FALSE,	"MaxPlayersAllowed" = 30),
-	"Mushroom" =			list("id" = "MUSHROOM",		"settings" = "mushroom",		"playerPickable" = FALSE),
+	"𝓜𝓤𝓢𝓗𝓡𝓞𝓞𝓜🍄 ⓶: 𝓔𝓛𝓔𝓒𝓣𝓡𝓘𝓒 𝓑𝓞𝓞𝓖𝓐𝓛𝓞𝓞" =  list("id" = "MUSHROOM",		"settings" = "mushroom",		"playerPickable" = TRUE),
 	"Density2" = 			list("id" = "DENSITY2",		"settings" = "density2",		"playerPickable" = FALSE,	"MaxPlayersAllowed" = 20),
 	"blank" =				list("id" = "BLANK",		"settings" = "", 				"playerPickable" = FALSE),
 	"blank_underwater" =	list("id" = "BLANK_UNDERWATER", "settings" = "", 			"playerPickable" = FALSE),
