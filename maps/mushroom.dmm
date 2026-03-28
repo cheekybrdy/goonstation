@@ -3580,6 +3580,12 @@
 /obj/disposalpipe/segment,
 /turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/disposal)
+"aBq" = (
+/obj/decal/cleanable/writing{
+	words = "Erik wuz here!! 2k16"
+	},
+/turf/simulated/floor/plating/airless,
+/area/space)
 "aBt" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/plating,
@@ -96610,7 +96616,7 @@ onV
 xtN
 aaa
 jtO
-abm
+aBq
 bgd
 pFz
 kJO
