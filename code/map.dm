@@ -10,6 +10,7 @@ var/global/datum/map_settings/map_settings = null
 
 ///id corresponds to the name of the /obj/landmark/map
 ///playerPickable defines whether the map can be chosen by players when voting on a new map.
+var/global/list/sequelTitles = pick(list("𝓔𝓛𝓔𝓒𝓣𝓡𝓘𝓒 𝓑𝓞𝓞𝓖𝓐𝓛𝓞𝓞","𝓜𝓤𝓢𝓗 𝓗𝓐𝓡𝓓𝓔𝓡","𝓣𝓗𝓔 𝓢𝓔𝓐𝓡𝓒𝓗 𝓕𝓞𝓡 𝓜𝓞𝓡𝓔 𝓒𝓡𝓔𝓓𝓘𝓣𝓢"))
 var/global/list/mapNames = list(
 	// commented out ones were previously non existent.
 	//"Construction" =		list("id" = "CONSTRUCTION", "settings" = "construction"),
@@ -35,7 +36,7 @@ var/global/list/mapNames = list(
 
 	"Crash" = 				list("id" = "CRASH",		"settings" = "crash",			"playerPickable" = FALSE),
 	"Atlas" =				list("id" = "ATLAS",		"settings" = "atlas",			"playerPickable" = FALSE,	"MaxPlayersAllowed" = 30),
-	"𝓜𝓤𝓢𝓗𝓡𝓞𝓞𝓜🍄 ⓶: 𝓔𝓛𝓔𝓒𝓣𝓡𝓘𝓒 𝓑𝓞𝓞𝓖𝓐𝓛𝓞𝓞" =  list("id" = "MUSHROOM",		"settings" = "mushroom",		"playerPickable" = TRUE),
+	"𝓜𝓤𝓢𝓗𝓡𝓞𝓞𝓜🍄 ⓶: [sequelTitles]" =  list("id" = "MUSHROOM",		"settings" = "mushroom",		"playerPickable" = TRUE),
 	"Density2" = 			list("id" = "DENSITY2",		"settings" = "density2",		"playerPickable" = FALSE,	"MaxPlayersAllowed" = 20),
 	"blank" =				list("id" = "BLANK",		"settings" = "", 				"playerPickable" = FALSE),
 	"blank_underwater" =	list("id" = "BLANK_UNDERWATER", "settings" = "", 			"playerPickable" = FALSE),
