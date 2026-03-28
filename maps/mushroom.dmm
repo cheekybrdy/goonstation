@@ -6587,6 +6587,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/machinery/camera/directional/east,
 /turf/simulated/floor/purple/checker,
 /area/station/science/hall)
 "bwY" = (
@@ -10309,11 +10310,11 @@
 	},
 /obj/item/disk/data/floppy/read_only/network_progs{
 	pixel_x = -7;
-	pixel_y = -18
+	pixel_y = 16
 	},
 /obj/item/disk/data/floppy/read_only/communications{
 	pixel_x = -3;
-	pixel_y = -20
+	pixel_y = 14
 	},
 /obj/table/auto,
 /turf/simulated/floor/circuit,
@@ -15134,6 +15135,14 @@
 	dir = 1
 	},
 /area/station/hydroponics/bay)
+"hCj" = (
+/obj/machinery/camera/directional/south{
+	pixel_x = -10
+	},
+/turf/simulated/floor/shuttlebay{
+	name = "test chamber plating"
+	},
+/area/station/science/testchamber)
 "hDh" = (
 /obj/lattice{
 	dir = 10;
@@ -20632,6 +20641,9 @@
 /obj/disposalpipe/trunk/transport{
 	dir = 4
 	},
+/obj/machinery/camera/directional/south{
+	pixel_x = -10
+	},
 /turf/simulated/floor/grime,
 /area/station/science/testchamber)
 "lCm" = (
@@ -22041,6 +22053,7 @@
 "mBo" = (
 /obj/stool/bed,
 /obj/item/clothing/suit/bedsheet/pink,
+/obj/machinery/camera/directional/east,
 /turf/simulated/floor/purple/checker,
 /area/station/crew_quarters/hor)
 "mBq" = (
@@ -23287,6 +23300,10 @@
 	},
 /turf/simulated/floor/grime,
 /area/station/science/testchamber)
+"nwy" = (
+/obj/machinery/camera/directional/north,
+/turf/simulated/floor/purple,
+/area/station/science/hall)
 "nxh" = (
 /obj/storage/closet/emergency,
 /turf/simulated/floor/plating,
@@ -28366,6 +28383,13 @@
 /turf/simulated/floor/white,
 /area/station/science/chemistry)
 "qOE" = (
+/obj/machinery/door_control{
+	id = "dwaine_core";
+	name = "DWAINE Core Shield";
+	pixel_x = -23;
+	dir = 8;
+	pixel_y = 0
+	},
 /turf/simulated/floor/darkblue/checker/other,
 /area/station/turret_protected/Zeta)
 "qPb" = (
@@ -36390,7 +36414,8 @@
 	},
 /obj/airbridge_controller{
 	tunnel_width = 2;
-	id = "aicoren"
+	id = "aicoren";
+	primary_controller = 1
 	},
 /turf/space,
 /area/space)
@@ -36793,6 +36818,12 @@
 "wmR" = (
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/kitchen/freezer)
+"wnN" = (
+/obj/machinery/camera/directional/south{
+	pixel_x = -10
+	},
+/turf/space,
+/area/space)
 "wnO" = (
 /obj/machinery/firealarm/directional/north,
 /obj/storage/secure/closet/medical/anesthetic,
@@ -75198,7 +75229,7 @@ abm
 aaa
 aaa
 aaa
-aaa
+wnN
 wvY
 wvY
 wvY
@@ -92638,7 +92669,7 @@ aaa
 aaa
 aaa
 qIi
-qLi
+nwy
 tBJ
 vHB
 tWv
@@ -98086,7 +98117,7 @@ eit
 hTc
 rFx
 pTp
-eit
+hCj
 xtN
 aaa
 aaa
