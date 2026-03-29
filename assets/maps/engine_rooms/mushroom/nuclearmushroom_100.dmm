@@ -293,6 +293,12 @@
 	},
 /turf/simulated/floor/engine/glow/blue,
 /area/station/engine/inner)
+"qh" = (
+/obj/decal/poster/wallsign/accident_sign{
+	pixel_y = 27
+	},
+/turf/simulated/floor,
+/area/station/engine/inner)
 "qY" = (
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 6
@@ -1358,7 +1364,7 @@ LA
 (8,1,1) = {"
 NN
 YB
-aZ
+qh
 zX
 iN
 xH
