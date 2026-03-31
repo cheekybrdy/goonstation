@@ -347,7 +347,7 @@
 		SEND_SIGNAL(holder.owner, COMSIG_MOB_VOMIT, 10)
 		return 0
 
-/obj/fakeobject/toxmoon_boss_reactor
+/obj/fakeobject/toxmoon_boss_reactor // cause the normal one barfs rads across cordons
 	name = "Molten Reactor Core"
 	desc = "A molten nuclear reactor core. It's still burning and smoking. Some engineers are gonna get fired for this." // nothin off, NOTHIN
 	icon = 'icons/misc/nuclearreactor.dmi'
@@ -364,9 +364,9 @@
 	dir = EAST
 	pixel_point = TRUE
 	density = 0
+	var/id = "toxmoon_boss"
 	/// ref to the turf the reactor light is stored on, because you can't center simple lights
 	VAR_PRIVATE/turf/_light_turf
-	var/id = "toxmoon_boss"
 
 	New()
 		. = ..()
@@ -375,20 +375,36 @@
 		src._light_turf = get_turf(src)
 		src._light_turf.add_medium_light("reactor_destroyed_light", list(255,0,0,255))
 
-	EnteredProximity(atom/movable/AM)
-		. = ..()
-		message_admins("proximity code ran for reactor")
+
+/obj/boss_spawn_trigger
+	icon = 'icons/misc/mark.dmi'
+	icon_state = "ydn"
+	invisibility = INVIS_ALWAYS
+	anchored = ANCHORED
+	density = 0
+	var/active = 0
+	var/id = "toxmoon_boss"
+
+	Crossed(atom/movable/AM as mob|obj)
+		..()
+		if(active) return
+		active = TRUE
+		for(var/obj/boss_spawn_trigger/T in by_type[/obj/boss_spawn_trigger])
+			if (T.id == src.id)
+				qdel(T)
 		for(var/obj/machinery/door/poddoor/P in by_type[/obj/machinery/door]) //robbed checkpoint bot code
 			if (P.id == src.id)
 				if (!P.density)
 					SPAWN( 0 )
 						P.close()
+		for(var/obj/fakeobject/toxmoon_boss_reactor/R in range(10))
+			SpawnBoss(R.loc)
 
-	proc/SpawnBoss(height = 7, use_shadow=TRUE, boss_type=/mob/living/critter/noxia_abomination) //wowwie more ripped code
+	proc/SpawnBoss(spawn_point = get_turf(src), height = 7, use_shadow=TRUE, boss_type=/mob/living/critter/noxia_abomination) //wowwie more ripped code
 		logTheThing(LOG_COMBAT, src, "toxmoon boss summoned at [log_loc(src)].")
 		src.anchored = ANCHORED_ALWAYS
 
-		var/obj/boss = new boss_type(get_turf(src))
+		var/obj/boss = new boss_type(spawn_point)
 		boss.anchored = ANCHORED_ALWAYS
 		boss.pixel_y = 32 * height
 		boss.alpha = 0
@@ -411,7 +427,7 @@
 				anchored = ANCHORED_ALWAYS;
 				plane = PLANE_NOSHADOW_BELOW
 			}(get_turf(src))
-			animate(shadow, alpha = 150, transform = matrix(0.25, 0, 0, 0, 0.17, 0), easing = EASE_IN | QUAD_EASING, time = 1.75 SECONDS, flags = ANIMATION_PARALLEL)
+			animate(spawn_point, alpha = 150, transform = matrix(0.25, 0, 0, 0, 0.17, 0), easing = EASE_IN | QUAD_EASING, time = 1.75 SECONDS, flags = ANIMATION_PARALLEL)
 
 		playsound(get_turf(src), 'sound/effects/cartoon_fall.ogg', 50, FALSE)
 		SPAWN(1.8 SECONDS)
@@ -427,8 +443,25 @@
 	health_brute_vuln = 0.2
 	health_burn = 500
 	health_burn_vuln = 0.2
+	stamina = INFINITY // Don't want something hanging from the ceiling to go horizontal
 	icon = 'icons/mob/critter/nonhuman/critter160x160.dmi'
 	icon_state = "nabom"
-	bound_height = 96
-	bound_width = 96
+	bound_height = 160
+	bound_width = 160
+	pixel_x = -32;
+	pixel_y = -32 - 7;
 	event_handler_flags = IMMUNE_TRENCH_WARP
+	anchored = TRUE
+
+	New()
+		..()
+		remove_lifeprocess(/datum/lifeprocess/radiation)
+		APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
+		APPLY_ATOM_PROPERTY(src, PROP_MOB_CANTMOVE, src.type)
+		APPLY_ATOM_PROPERTY(M, PROP_MOB_CANT_BE_PINNED, src.type)
+		src.bioHolder.AddEffect("radioactive")
+
+
+	setup_healths()
+		add_hh_flesh(src.health_brute, src.health_brute_vuln)
+		add_hh_flesh_burn(src.health_burn, src.health_brute_vuln)

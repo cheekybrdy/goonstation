@@ -180,8 +180,6 @@
 		for(T in src.loc?.contents)
 			if(ON_COOLDOWN(src, "river_push", 1 SECOND))
 				return
-			if(!loc)
-				return
 			if(T.loc != src.loc) //fixes race condition where T gets yoinked during the turf-to-turf loop that calls Crossed on everything (& ends up with an active walk inside another object)
 				return
 			if(!T.anchored)

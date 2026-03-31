@@ -75916,6 +75916,7 @@
 	dir = 4;
 	name = "Radioisotopic Research"
 	},
+/obj/creepy_sound_trigger,
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
 /area/toxmoon/plant/lower)
 "rBY" = (
@@ -76537,6 +76538,7 @@
 	dir = 4;
 	id = "toxmoon_entrance"
 	},
+/obj/creepy_sound_trigger,
 /turf/unsimulated/floor/setpieces/rootfloor{
 	icon_state = "rootfloor_3"
 	},
@@ -77849,6 +77851,10 @@
 	dir = 8
 	},
 /area/owlery/staffhall)
+"sKy" = (
+/obj/boss_spawn_trigger,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/reactor)
 "sKM" = (
 /obj/admin_plaque{
 	name = "Katzen's Office";
@@ -79908,6 +79914,7 @@
 	layer = 1.5;
 	name = "grimy pipe"
 	},
+/obj/boss_spawn_trigger,
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
 /area/toxmoon/plant/reactor)
 "urH" = (
@@ -80205,6 +80212,7 @@
 	dir = 4;
 	id = "toxmoon_entrance"
 	},
+/obj/creepy_sound_trigger,
 /turf/unsimulated/floor/scorched2,
 /area/toxmoon/plant/upper)
 "uBH" = (
@@ -153063,7 +153071,7 @@ aaa
 aaa
 kau
 wOF
-pzZ
+sKy
 wOF
 wOF
 wOF
@@ -153364,15 +153372,15 @@ aaa
 aaa
 kau
 kau
-pzZ
-pzZ
+sKy
+sKy
 wOF
 wOF
 pzZ
 wFl
 wOF
-pzZ
-pzZ
+sKy
+sKy
 kau
 kau
 aaa
