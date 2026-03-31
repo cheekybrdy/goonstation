@@ -210,8 +210,11 @@ TYPEINFO(/mob/living/critter/wraith/plaguerat)
 		ai_retaliates = TRUE
 		ai_retaliate_patience = 0
 		ai_retaliate_persistence = RETALIATE_UNTIL_INCAP
-		goop_immune = TRUE
 		faction = list(FACTION_TOXMOON)
+
+		New()
+			APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
+			..()
 
 /mob/living/critter/wraith/plaguerat/medium
 	name = "plague-ridden rat"
@@ -258,8 +261,11 @@ TYPEINFO(/mob/living/critter/wraith/plaguerat)
 		ai_retaliates = TRUE
 		ai_retaliate_patience = 0
 		ai_retaliate_persistence = RETALIATE_UNTIL_INCAP
-		goop_immune = TRUE
 		faction = list(FACTION_TOXMOON)
+
+		New()
+			APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
+			..()
 
 /mob/living/critter/wraith/plaguerat/adult
 	name = "bloated rat mass"
@@ -316,5 +322,8 @@ TYPEINFO(/mob/living/critter/wraith/plaguerat)
 		ai_retaliates = TRUE
 		ai_retaliate_patience = 0
 		ai_retaliate_persistence = RETALIATE_UNTIL_INCAP
-		goop_immune = TRUE
 		faction = list(FACTION_TOXMOON)
+
+		New()
+			APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
+			..()

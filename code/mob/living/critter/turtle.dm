@@ -422,7 +422,6 @@
 	faction = list(FACTION_TOXMOON)
 	costume_name = "sylv_costume_3"
 	add_abilities = list(/datum/targetable/critter/charge/long_cd)
-	goop_immune = TRUE
 
 	critter_ability_attack(mob/target)
 		var/datum/targetable/critter/charge/long_cd/charge = src.abilityHolder.getAbility(/datum/targetable/critter/charge/long_cd)
@@ -432,6 +431,7 @@
 
 	New()
 		..()
+		APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
 		src.update_icon()
 
 	tigernado

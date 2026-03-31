@@ -110,8 +110,6 @@ ADMIN_INTERACT_PROCS(/mob/living/critter, proc/modify_health, proc/admincmd_atta
 	var/ai_attack_count = 0
 	///The number of basic attacks this critter will perform in between using abilities
 	var/ai_attacks_per_ability = 2
-	// For the Toxic goop on fatuus
-	var/goop_immune = FALSE
 
 	blood_id = "blood"
 

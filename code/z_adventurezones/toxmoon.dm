@@ -105,8 +105,7 @@
 				return
 
 			if(ismobcritter(O))
-				var/mob/living/critter/C = O
-				if(C.goop_immune)
+				if HAS_ATOM_PROPERTY(O, PROP_MOB_GOOPIMMUNE)
 					return
 
 			if (isliving(O) && !ON_COOLDOWN(src, "goop_hurty", 0.5 SECONDS))
@@ -219,12 +218,12 @@
 	blood_id = "radium"
 	var/moan_sounds = list("sound/voice/Zgroan1.ogg", "sound/voice/Zgroan2.ogg", "sound/voice/Zgroan3.ogg", "sound/voice/Zgroan4.ogg")
 	faction = list(FACTION_TOXMOON)
-	goop_immune = TRUE
 
 	New()
 		..()
 		remove_lifeprocess(/datum/lifeprocess/radiation)
 		APPLY_MOVEMENT_MODIFIER(src, /datum/movement_modifier/zombie, src)
+		APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
 		src.bioHolder.AddEffect("radioactive")
 
 	critter_basic_attack(var/mob/target)

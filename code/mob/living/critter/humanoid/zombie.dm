@@ -128,7 +128,7 @@
 			remove_lifeprocess(/datum/lifeprocess/radiation)
 			APPLY_ATOM_PROPERTY(src, PROP_MOB_RADPROT_INT, src, 100)
 			faction = list(FACTION_TOXMOON)
-			goop_immune = TRUE
+			APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
 
 /mob/living/critter/zombie/scientist
 	name = "shambling scientist"
@@ -146,7 +146,7 @@
 			remove_lifeprocess(/datum/lifeprocess/radiation)
 			APPLY_ATOM_PROPERTY(src, PROP_MOB_RADPROT_INT, src, 100)
 			faction = list(FACTION_TOXMOON)
-			goop_immune = TRUE
+			APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
 
 /mob/living/critter/zombie/security
 	name = "undead guard"
@@ -164,7 +164,7 @@
 			remove_lifeprocess(/datum/lifeprocess/radiation)
 			APPLY_ATOM_PROPERTY(src, PROP_MOB_RADPROT_INT, src, 100)
 			faction = list(FACTION_TOXMOON)
-			goop_immune = TRUE
+			APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
 
 /mob/living/critter/zombie/biosuit
 	name = "biosuit shambler"
@@ -280,7 +280,7 @@
 			remove_lifeprocess(/datum/lifeprocess/radiation)
 			APPLY_ATOM_PROPERTY(src, PROP_MOB_RADPROT_INT, src, 100)
 			faction = list(FACTION_TOXMOON)
-			goop_immune = TRUE
+			APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
 
 /mob/living/critter/zombie/meatmonaut
 	name = "lost cosmonaut"
