@@ -347,13 +347,6 @@
 	},
 /turf/unsimulated/floor/plating/damaged1,
 /area/hospital)
-"adl" = (
-/obj/machinery/door/airlock/pyro/medical{
-	name = "Hydrotherapy Room";
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/blue,
-/area/hospital)
 "adn" = (
 /obj/table/auto,
 /obj/random_item_spawner/med_tool,
@@ -1102,14 +1095,6 @@
 	words = "I KNOW WHAT HAPPENED ON OUTPOST THETA"
 	},
 /turf/unsimulated/floor/white/grime,
-/area/hospital)
-"agc" = (
-/obj/machinery/door/airlock/pyro/medical{
-	dir = 4;
-	name = "Patient Room";
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/white,
 /area/hospital)
 "agd" = (
 /obj/fakeobject/lighttube_broken{
@@ -2305,14 +2290,6 @@
 /obj/machinery/computer/television/small/virtual,
 /turf/unsimulated/floor/setpieces/gauntlet,
 /area/gauntlet/viewing)
-"amb" = (
-/obj/machinery/door/airlock/pyro/medical{
-	dir = 4;
-	name = "Patient Room";
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/white/grime,
-/area/hospital)
 "amd" = (
 /obj/stool/chair/comfy/red,
 /turf/unsimulated/floor,
@@ -2818,13 +2795,6 @@
 	},
 /turf/unsimulated/floor/caution/west,
 /area/hospital/samostrel)
-"anP" = (
-/obj/machinery/door/airlock/pyro/command{
-	name = "captain's quarters";
-	req_access_txt = "1917"
-	},
-/turf/unsimulated/floor/carpet/office,
-/area/hospital/samostrel)
 "anS" = (
 /obj/stool/bed,
 /turf/unsimulated/floor{
@@ -2918,16 +2888,6 @@
 /area/hospital)
 "aoq" = (
 /turf/unsimulated/floor/specialroom/bar,
-/area/hospital)
-"aor" = (
-/obj/machinery/door/airlock/pyro/glass{
-	dir = 4;
-	name = "Security Booth";
-	req_access_txt = "1"
-	},
-/turf/unsimulated/floor/red/side{
-	dir = 4
-	},
 /area/hospital)
 "aos" = (
 /turf/unsimulated/floor/red/side{
@@ -3803,14 +3763,6 @@
 	},
 /turf/unsimulated/floor,
 /area/hospital/samostrel)
-"asj" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	dir = 4;
-	name = "Compartment Access";
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/caution/east,
-/area/hospital/samostrel)
 "asr" = (
 /obj/fakeobject/pipe{
 	desc = "The air from it smells faintly of mildew.";
@@ -4387,6 +4339,17 @@
 	icon_state = "floor3"
 	},
 /area/hospital/samostrel)
+"auy" = (
+/obj/table/reinforced/auto,
+/obj/machinery/door/window{
+	dir = 4
+	},
+/obj/machinery/recharger,
+/obj/mapping_helper/access/owlsecurity,
+/turf/unsimulated/floor/redblack{
+	dir = 5
+	},
+/area/owlery/owleryhall)
 "auK" = (
 /obj/stool/bench/blue/auto,
 /turf/unsimulated/floor/grey/side{
@@ -4431,18 +4394,6 @@
 "ava" = (
 /obj/machinery/light/small/iomoon{
 	dir = 1
-	},
-/turf/unsimulated/floor{
-	icon = 'icons/turf/shuttle.dmi';
-	icon_state = "floor3"
-	},
-/area/hospital/samostrel)
-"avb" = (
-/obj/machinery/door/airlock/pyro/engineering{
-	desc = "Oh sure it looks the same, but all the connections and mounting points are different.  Also all the screw heads are those awful triangular ones.";
-	dir = 4;
-	name = "Reactor Control";
-	req_access_txt = ""
 	},
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
@@ -5250,13 +5201,6 @@
 /mob/living/critter/small_animal/bird/owl,
 /turf/unsimulated/grass,
 /area/owlery/owllock)
-"azn" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	dir = 4;
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor,
-/area/hospital)
 "azr" = (
 /obj/item/reagent_containers/food/snacks/ice_cream/goodrandom,
 /obj/item/reagent_containers/food/snacks/ice_cream/goodrandom,
@@ -22599,14 +22543,6 @@
 	},
 /turf/unsimulated/floor,
 /area/crunch)
-"bLA" = (
-/obj/machinery/door/airlock/pyro{
-	dir = 4;
-	name = "Toilet Cubicle";
-	req_access_txt = "0"
-	},
-/turf/unsimulated/floor/white/corner,
-/area/crunch)
 "bLB" = (
 /obj/securearea{
 	desc = "A poster that reads 'CLEAN HANDS SAVE CASH: Today's unwashed palm is tomorrow's class action suit!'.";
@@ -22784,6 +22720,31 @@
 "bMc" = (
 /turf/unsimulated/floor/grass/leafy,
 /area/sim/racing_track)
+"bMl" = (
+/obj/reagent_dispensers/beerkeg/owlfeed,
+/obj/window{
+	desc = "A window.  For a museum exhibit.";
+	dir = 1;
+	name = "exhibit window"
+	},
+/obj/window{
+	desc = "A window.  For a museum exhibit.";
+	dir = 4;
+	name = "exhibit window"
+	},
+/obj/window{
+	desc = "A window.  For a museum exhibit.";
+	dir = 2;
+	name = "exhibit window"
+	},
+/obj/machinery/door/window{
+	dir = 8;
+	icon_state = "right"
+	},
+/turf/unsimulated/floor/redblack{
+	dir = 8
+	},
+/area/owlery/gangzone)
 "bMm" = (
 /obj/creepy_sound_trigger,
 /obj/machinery/door/airlock/pyro/external,
@@ -25326,13 +25287,6 @@
 	icon_state = "leadwindow_gray_2"
 	},
 /area/crypt/sigma/mainhall)
-"bVm" = (
-/obj/machinery/door/airlock/pyro{
-	name = "Kitchen";
-	req_access_txt = "28"
-	},
-/turf/unsimulated/floor/white/grime,
-/area/crypt/sigma/mainhall)
 "bVn" = (
 /turf/unsimulated/floor/carpet/red/fancy/edge/ne,
 /area/syndicate_station/battlecruiser)
@@ -25668,14 +25622,6 @@
 /area/sim/test_area{
 	name = "VR Test Area"
 	})
-"bWK" = (
-/obj/creepy_sound_trigger,
-/obj/machinery/door/airlock/pyro{
-	name = "Kitchen";
-	req_access_txt = "28"
-	},
-/turf/unsimulated/floor/white/grime,
-/area/crypt/sigma/kitchen)
 "bWM" = (
 /obj/racing_boosterstrip{
 	dir = 4
@@ -26840,15 +26786,6 @@
 /obj/item/tile/steel,
 /turf/unsimulated/floor,
 /area/crunch)
-"caH" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	dir = 4;
-	name = "Lab Maintenance Access";
-	req_access_txt = ""
-	},
-/obj/trigger/critter,
-/turf/unsimulated/floor/white,
-/area/crunch)
 "caI" = (
 /turf/unsimulated/floor/orangeblack/side/white{
 	dir = 4
@@ -27743,17 +27680,6 @@
 "ceY" = (
 /turf/unsimulated/floor/setpieces/gauntlet,
 /area/afterlife/heaven)
-"ceZ" = (
-/obj/fakeobject/airlock_broken/firelock{
-	icon = 'icons/obj/doors/SL_doors.dmi';
-	icon_state = "fdoor0"
-	},
-/obj/machinery/door/airlock/pyro/medical{
-	name = "Receiver Control";
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor,
-/area/meat_derelict/entry)
 "cfb" = (
 /obj/securearea{
 	desc = "";
@@ -31388,13 +31314,6 @@
 	dir = 4
 	},
 /area/crunch/wtc)
-"crD" = (
-/obj/machinery/door/airlock/pyro/classic{
-	dir = 4;
-	req_access_txt = "12"
-	},
-/turf/unsimulated/floor/grey,
-/area/crunch/wtc)
 "crE" = (
 /turf/unsimulated/floor/black/side{
 	dir = 10
@@ -31407,13 +31326,6 @@
 /turf/unsimulated/floor/black/side{
 	dir = 6
 	},
-/area/crunch/wtc)
-"crH" = (
-/obj/machinery/door/airlock/pyro/classic{
-	dir = 4;
-	req_access_txt = "12"
-	},
-/turf/unsimulated/floor/neutral,
 /area/crunch/wtc)
 "crI" = (
 /turf/unsimulated/floor/black,
@@ -33290,17 +33202,6 @@
 	},
 /turf/unsimulated/floor/bluewhite,
 /area/owlery/staffhall)
-"cxU" = (
-/obj/table/reinforced/auto,
-/obj/machinery/door/window{
-	icon_state = "right";
-	req_access_txt = "0"
-	},
-/obj/random_item_spawner/desk_stuff,
-/turf/unsimulated/floor/bluewhite{
-	dir = 6
-	},
-/area/owlery/staffhall)
 "cxW" = (
 /obj/machinery/door/airlock/pyro/glass{
 	dir = 1
@@ -33394,14 +33295,6 @@
 "cym" = (
 /obj/decal/cleanable/tomatosplat,
 /turf/unsimulated/floor/sanitary/white,
-/area/owlery/staffhall)
-"cyn" = (
-/obj/machinery/door/airlock/pyro/classic{
-	dir = 4;
-	name = "Kitchen";
-	req_access_txt = "12"
-	},
-/turf/unsimulated/floor/wood/two,
 /area/owlery/staffhall)
 "cyo" = (
 /turf/unsimulated/floor/wood/two,
@@ -33574,13 +33467,6 @@
 "cyO" = (
 /obj/decal/cleanable/blood/tracks{
 	dir = 8
-	},
-/turf/unsimulated/floor/white,
-/area/owlery/staffhall)
-"cyR" = (
-/obj/machinery/door/airlock/gannets/alt{
-	dir = 8;
-	req_access_txt = "12"
 	},
 /turf/unsimulated/floor/white,
 /area/owlery/staffhall)
@@ -33976,13 +33862,6 @@
 	},
 /turf/unsimulated/floor/blackwhite,
 /area/owlery/staffhall)
-"cAc" = (
-/obj/machinery/door/airlock/pyro/glass{
-	name = "Owl Ward";
-	req_access_txt = "12"
-	},
-/turf/unsimulated/floor/black,
-/area/owlery/gangzone)
 "cAd" = (
 /obj/item/reagent_containers/food/drinks/drinkingglass,
 /obj/item/reagent_containers/food/drinks/drinkingglass,
@@ -35110,12 +34989,6 @@
 	dir = 8
 	},
 /area/owlery/Owlopen)
-"cDv" = (
-/obj/machinery/vending/security{
-	req_access_txt = "71"
-	},
-/turf/unsimulated/floor/redblack/corner,
-/area/owlery/Owlopen)
 "cDw" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -35247,32 +35120,6 @@
 	},
 /turf/unsimulated/floor/red,
 /area/owlery/gangzone)
-"cDT" = (
-/obj/reagent_dispensers/beerkeg/owlfeed,
-/obj/window{
-	desc = "A window.  For a museum exhibit.";
-	dir = 1;
-	name = "exhibit window"
-	},
-/obj/window{
-	desc = "A window.  For a museum exhibit.";
-	dir = 4;
-	name = "exhibit window"
-	},
-/obj/window{
-	desc = "A window.  For a museum exhibit.";
-	dir = 2;
-	name = "exhibit window"
-	},
-/obj/machinery/door/window{
-	dir = 8;
-	icon_state = "right";
-	req_access_txt = "0"
-	},
-/turf/unsimulated/floor/redblack{
-	dir = 8
-	},
-/area/owlery/gangzone)
 "cDU" = (
 /obj/decal/cleanable/blood/gibs{
 	icon_state = "gibmid1"
@@ -35306,31 +35153,6 @@
 	},
 /turf/unsimulated/floor/redblack{
 	dir = 8
-	},
-/area/owlery/gangzone)
-"cDY" = (
-/obj/reagent_dispensers/beerkeg/owlfeed,
-/obj/window{
-	desc = "A window.  For a museum exhibit.";
-	dir = 2;
-	name = "exhibit window"
-	},
-/obj/window{
-	desc = "A window.  For a museum exhibit.";
-	dir = 8;
-	name = "exhibit window"
-	},
-/obj/window{
-	desc = "A window.  For a museum exhibit.";
-	dir = 1;
-	name = "exhibit window"
-	},
-/obj/machinery/door/window{
-	dir = 4;
-	req_access_txt = "0"
-	},
-/turf/unsimulated/floor/redblack{
-	dir = 4
 	},
 /area/owlery/gangzone)
 "cDZ" = (
@@ -35622,20 +35444,6 @@
 	},
 /turf/unsimulated/wall/auto/reinforced/supernorn,
 /area/owlery/Owlmait)
-"cEX" = (
-/obj/item/gun/flamethrower/assembled/loaded,
-/obj/item/clothing/suit/hazard/fire/armored,
-/obj/item/clothing/head/helmet/welding,
-/obj/storage/secure/crate/weapon/confiscated_items{
-	req_access_txt = "71"
-	},
-/obj/machinery/light/emergency{
-	dir = 4
-	},
-/turf/unsimulated/floor/redblack/corner{
-	dir = 1
-	},
-/area/owlery/Owlopen)
 "cFa" = (
 /obj/table/reinforced/auto,
 /obj/item/paper/failedexperiment,
@@ -37214,13 +37022,6 @@
 	},
 /obj/cable{
 	icon_state = "4-8"
-	},
-/turf/unsimulated/floor/wood/two,
-/area/owlery/owleryhall)
-"cJN" = (
-/obj/machinery/door/window{
-	dir = 4;
-	req_access_txt = "12"
 	},
 /turf/unsimulated/floor/wood/two,
 /area/owlery/owleryhall)
@@ -40608,16 +40409,6 @@
 	name = "exhibit window"
 	},
 /turf/unsimulated/floor/green,
-/area/owlery/owllock)
-"cTq" = (
-/obj/machinery/door/window{
-	dir = 8;
-	icon_state = "right";
-	req_access_txt = "0"
-	},
-/turf/unsimulated/floor/yellowblack{
-	dir = 4
-	},
 /area/owlery/owllock)
 "cTr" = (
 /obj/river,
@@ -47617,19 +47408,6 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/merchant_shuttle/left_centcom/cogmap2)
-"dvj" = (
-/obj/fakeobject/airlock_broken/firelock{
-	dir = 8;
-	icon = 'icons/obj/doors/SL_doors.dmi';
-	icon_state = "fdoor0"
-	},
-/obj/machinery/door/airlock/pyro/medical{
-	dir = 4;
-	name = "Morgue";
-	req_access_txt = "5"
-	},
-/turf/unsimulated/floor/black,
-/area/crypt/sigma/lab)
 "dvl" = (
 /turf/unsimulated/floor/shuttle{
 	icon_state = "floor2"
@@ -49868,14 +49646,6 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/merchant_shuttle/right_centcom/destiny)
-"dEe" = (
-/obj/machinery/door/airlock/pyro/medical{
-	name = "Morgue";
-	req_access_txt = "5"
-	},
-/obj/decal/stripe_delivery,
-/turf/unsimulated/floor/plating,
-/area/crypt/sigma/lab)
 "dEm" = (
 /obj/table/wood/auto/desk,
 /obj/item/paper/blueprint{
@@ -50268,15 +50038,6 @@
 	icon_state = "leadwindow_gray_2"
 	},
 /area/crypt/sigma/morgue)
-"dFD" = (
-/obj/creepy_sound_trigger,
-/obj/machinery/door/airlock/pyro/medical{
-	dir = 4;
-	name = "Morgue";
-	req_access_txt = "5"
-	},
-/turf/unsimulated/floor/white/grime,
-/area/crypt/sigma/lab)
 "dFE" = (
 /obj/machinery/door/airlock/pyro/medical{
 	dir = 4
@@ -55473,6 +55234,15 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/studenterhue)
+"eoX" = (
+/obj/machinery/door/window{
+	dir = 8;
+	icon_state = "right"
+	},
+/turf/unsimulated/floor/yellowblack{
+	dir = 4
+	},
+/area/owlery/owllock)
 "epD" = (
 /obj/storage/closet/dresser,
 /obj/item/clothing/under/suit/black,
@@ -56612,14 +56382,6 @@
 /obj/structure/woodwall,
 /turf/unsimulated/floor/plating,
 /area/retentioncenter)
-"feE" = (
-/obj/machinery/door/airlock/pyro/command{
-	name = "Research Director's Office";
-	req_access_txt = "19"
-	},
-/obj/decal/stripe_delivery,
-/turf/unsimulated/floor/plating,
-/area/crypt/sigma/rd)
 "ffi" = (
 /obj/decal/grass_edge{
 	dir = 1
@@ -56778,6 +56540,12 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/sovexe)
+"fhJ" = (
+/obj/machinery/door/window{
+	dir = 4
+	},
+/turf/unsimulated/floor/wood/two,
+/area/owlery/owleryhall)
 "fic" = (
 /obj/cable/green{
 	icon_state = "6-9"
@@ -56950,6 +56718,17 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital)
+"fnG" = (
+/obj/machinery/door/airlock/pyro/medical{
+	aiControlDisabled = 1;
+	dir = 4;
+	locked = 1;
+	name = "Lower Level Access"
+	},
+/obj/decal/stripe_delivery,
+/obj/mapping_helper/access/chemistry,
+/turf/unsimulated/floor/plating,
+/area/crypt/sigma/mainhall)
 "fob" = (
 /obj/stool/chair/yellow{
 	dir = 8
@@ -57025,6 +56804,13 @@
 	dir = 4
 	},
 /area/iomoon/base)
+"fqZ" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	dir = 4;
+	name = "Compartment Access"
+	},
+/turf/unsimulated/floor/caution/east,
+/area/hospital/samostrel)
 "frB" = (
 /obj/decal/grass_edge{
 	dir = 8
@@ -57187,6 +56973,19 @@
 /obj/tree/sakura_tree,
 /turf/unsimulated/floor/grass/leafy,
 /area/dojo/sakura)
+"fzK" = (
+/obj/table/reinforced/auto{
+	layer = 2
+	},
+/obj/machinery/door/window{
+	icon_state = "right"
+	},
+/obj/machinery/door/window{
+	dir = 8
+	},
+/obj/mapping_helper/access/owlcommand,
+/turf/unsimulated/floor/white,
+/area/owlery/office)
 "fzQ" = (
 /obj/cable{
 	icon_state = "5-10"
@@ -57744,6 +57543,10 @@
 	icon_state = "shore-18"
 	},
 /area/titlescreen)
+"fTf" = (
+/obj/machinery/vending/security/owlery,
+/turf/unsimulated/floor/redblack/corner,
+/area/owlery/Owlopen)
 "fTo" = (
 /obj/indestructible/shuttle_corner{
 	icon_state = "wall3_trans"
@@ -57862,6 +57665,13 @@
 /obj/decal/cleanable/fungus,
 /turf/unsimulated/floor/black,
 /area/owlery/Owlmait2)
+"fVE" = (
+/obj/machinery/door/airlock/pyro/security{
+	name = "Lab Security"
+	},
+/obj/decal/stripe_delivery,
+/turf/unsimulated/floor/plating,
+/area/crypt/sigma)
 "fVL" = (
 /obj/decal/cleanable/glitter/harmless,
 /obj/decal/tile_edge/stripe{
@@ -58453,17 +58263,6 @@
 	},
 /turf/unsimulated/floor/carpet/red/decal,
 /area/centcom/offices/grifflez)
-"gph" = (
-/obj/machinery/door/airlock/pyro/medical{
-	aiControlDisabled = 1;
-	dir = 4;
-	locked = 1;
-	name = "Lower Level Access";
-	req_access_txt = "33"
-	},
-/obj/decal/stripe_delivery,
-/turf/unsimulated/floor/plating,
-/area/crypt/sigma/mainhall)
 "gpj" = (
 /obj/table,
 /obj/item/paper/book/from_file/pharmacopia,
@@ -58865,6 +58664,14 @@
 	dir = 1
 	},
 /area/hospital/samostrel)
+"gBK" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	dir = 4;
+	name = "Lab Maintenance Access"
+	},
+/obj/trigger/critter,
+/turf/unsimulated/floor/white,
+/area/crunch)
 "gCf" = (
 /obj/item/storage/pill_bottle/crank,
 /obj/decal/cleanable/dirt,
@@ -59377,6 +59184,12 @@
 /obj/decal/cleanable/dirt/dirt4,
 /turf/unsimulated/floor/grime,
 /area/sim/gunsim/lobby)
+"gTl" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	name = "Maintenance Office"
+	},
+/turf/unsimulated/floor/plating,
+/area/hospital/underground)
 "gUr" = (
 /obj/machinery/espresso_machine,
 /obj/table/monodesk/auto,
@@ -59598,6 +59411,14 @@
 	dir = 4
 	},
 /area/upper_arctic/exterior/surface)
+"hbL" = (
+/obj/machinery/door/poddoor/blast{
+	dir = 4;
+	id = "toxmoon_entrance"
+	},
+/obj/creepy_sound_trigger,
+/turf/unsimulated/floor/scorched2,
+/area/toxmoon/plant/upper)
 "hcG" = (
 /obj/table/wood/auto/desk,
 /obj/item/luggable_computer/personal/adhara_laptop,
@@ -61241,6 +61062,12 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/glowbold)
+"ijT" = (
+/obj/machinery/door/airlock/pyro/classic{
+	dir = 4
+	},
+/turf/unsimulated/floor/neutral,
+/area/crunch/wtc)
 "ijU" = (
 /obj/machinery/door/airlock/pyro/maintenance,
 /obj/mapping_helper/access/owlmaint,
@@ -61927,6 +61754,18 @@
 "iFd" = (
 /turf/unsimulated/floor/setpieces/rootfloor,
 /area/toxmoon/plant/entrance)
+"iGe" = (
+/obj/table/reinforced/auto,
+/obj/machinery/door/window{
+	icon_state = "right"
+	},
+/obj/item/folder,
+/obj/item/card/id/owlgold{
+	name = "James Musujasa (Head Of Personnel)"
+	},
+/obj/mapping_helper/access/owlcommand,
+/turf/unsimulated/floor/white,
+/area/owlery/office)
 "iGw" = (
 /obj/decal/cleanable/glitter/harmless,
 /obj/random_item_spawner/dressup/one,
@@ -61969,6 +61808,10 @@
 /obj/item/paper/book/from_file/the_trial,
 /turf/unsimulated/floor/blackwhite,
 /area/owlery/office)
+"iHZ" = (
+/obj/machinery/door/airlock/pyro/maintenance,
+/turf/unsimulated/floor/plating,
+/area/meat_derelict/main)
 "iId" = (
 /obj/securearea,
 /turf/unsimulated/wall/auto/lead/blue,
@@ -62858,6 +62701,13 @@
 /obj/mesh/grille/steel/broken,
 /turf/unsimulated/floor/plating,
 /area/meat_derelict/soviet)
+"jhQ" = (
+/obj/machinery/door/airlock/pyro/command{
+	name = "captain's quarters"
+	},
+/obj/mapping_helper/access/ainley_buddy,
+/turf/unsimulated/floor/carpet/office,
+/area/hospital/samostrel)
 "jhY" = (
 /obj/fakeobject/pipe{
 	desc = "It won't budge.";
@@ -64435,15 +64285,6 @@
 	dir = 6
 	},
 /area/upper_arctic/exterior/surface)
-"kkO" = (
-/obj/machinery/door/airlock/pyro/engineering{
-	desc = "Oh sure it looks the same, but all the connections and mounting points are different.  Also all the screw heads are those awful triangular ones.";
-	dir = 4;
-	name = "Reactor Control";
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/plating,
-/area/hospital/samostrel)
 "kkX" = (
 /turf/unsimulated/wall/auto/lead/white,
 /area/moon/museum)
@@ -64985,6 +64826,16 @@
 /area/centcom/offices{
 	icon_state = "blue"
 	})
+"kzm" = (
+/obj/machinery/door/poddoor/blast{
+	dir = 4;
+	id = "toxmoon_entrance"
+	},
+/obj/creepy_sound_trigger,
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/plant/upper)
 "kzr" = (
 /obj/decal/grass_edge/corner{
 	dir = 1
@@ -65618,6 +65469,10 @@
 	},
 /turf/unsimulated/floor/setpieces/carcosa/carcosa_dirt_inner,
 /area/toxmoon/cave)
+"kRP" = (
+/obj/machinery/door/airlock/pyro/maintenance,
+/turf/unsimulated/floor/plating,
+/area/hospital/underground)
 "kRW" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -65887,6 +65742,17 @@
 "lac" = (
 /turf/unsimulated/floor/plating,
 /area/hospital/samostrel)
+"lal" = (
+/obj/machinery/door/airlock/pyro/medical{
+	aiControlDisabled = 1;
+	dir = 4;
+	locked = 1;
+	name = "Upper Level Access"
+	},
+/obj/decal/stripe_delivery,
+/obj/mapping_helper/access/chemistry,
+/turf/unsimulated/floor/plating,
+/area/crater/biodome/crew)
 "lar" = (
 /obj/stool/chair/dining/wood,
 /turf/unsimulated/floor/carpet/arcade,
@@ -66239,17 +66105,6 @@
 /obj/mapping_helper/access/public,
 /turf/unsimulated/floor/white/grime,
 /area/toxmoon/plant/lower)
-"lod" = (
-/obj/machinery/door/airlock/pyro/medical{
-	aiControlDisabled = 1;
-	dir = 4;
-	locked = 1;
-	name = "Upper Level Access";
-	req_access_txt = "33"
-	},
-/obj/decal/stripe_delivery,
-/turf/unsimulated/floor/plating,
-/area/crater/biodome/crew)
 "loh" = (
 /obj/cable{
 	icon_state = "2-8"
@@ -66446,6 +66301,21 @@
 /obj/decal/cleanable/blood/gibs,
 /turf/unsimulated/floor/yellow,
 /area/owlery/gangzone)
+"lsp" = (
+/obj/fakeobject/airlock_broken/firelock{
+	icon = 'icons/obj/doors/SL_doors.dmi';
+	icon_state = "fdoor0"
+	},
+/obj/machinery/door/airlock/pyro/medical{
+	aiControlDisabled = 1;
+	dir = 4;
+	locked = 1;
+	name = "Hazardous Materials Storage";
+	secondsElectrified = -1
+	},
+/obj/trigger/critter,
+/turf/unsimulated/floor,
+/area/crunch)
 "lsE" = (
 /obj/stool/bee_bed/double{
 	name = "rat bed"
@@ -66580,6 +66450,18 @@
 	},
 /turf/space,
 /area/wizard_station_space)
+"lwf" = (
+/obj/item/gun/flamethrower/assembled/loaded,
+/obj/item/clothing/suit/hazard/fire/armored,
+/obj/item/clothing/head/helmet/welding,
+/obj/machinery/light/emergency{
+	dir = 4
+	},
+/obj/storage/secure/crate/weapon/confiscated_items/owlery,
+/turf/unsimulated/floor/redblack/corner{
+	dir = 1
+	},
+/area/owlery/Owlopen)
 "lwy" = (
 /obj/fakeobject/shuttlethruster{
 	desc = "A small impulse drive.";
@@ -66854,6 +66736,12 @@
 /obj/disposalpipe/segment/bent/east,
 /turf/unsimulated/floor/wood/six,
 /area/afterlife/bar/sanctuary)
+"lJv" = (
+/obj/machinery/door/airlock/gannets/alt{
+	dir = 8
+	},
+/turf/unsimulated/floor/white,
+/area/owlery/staffhall)
 "lJD" = (
 /obj/fakeobject/pipe{
 	density = 1;
@@ -67218,6 +67106,13 @@
 	icon_state = "plating_dusty1"
 	},
 /area/marsoutpost)
+"lVo" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	dir = 4;
+	name = "Compartment Access"
+	},
+/turf/unsimulated/floor/plating,
+/area/hospital/samostrel)
 "lVt" = (
 /obj/mesh/catwalk,
 /obj/lattice,
@@ -67521,6 +67416,14 @@
 	},
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
 /area/toxmoon/plant/upper)
+"mey" = (
+/obj/machinery/door/airlock/pyro/command{
+	name = "Research Director's Office"
+	},
+/obj/decal/stripe_delivery,
+/obj/mapping_helper/access/heads,
+/turf/unsimulated/floor/plating,
+/area/crypt/sigma/rd)
 "meJ" = (
 /obj/table/auto,
 /obj/machinery/coffeemaker/engineering,
@@ -69256,6 +69159,12 @@
 /obj/decal/cleanable/dirt/dirt3,
 /turf/unsimulated/floor/grime,
 /area/sim/gunsim/lobby)
+"nsa" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	name = "Compartment Access"
+	},
+/turf/unsimulated/floor/plating,
+/area/hospital/samostrel)
 "nsb" = (
 /obj/decal/grass_edge/corner{
 	dir = 8
@@ -69427,12 +69336,6 @@
 	dir = 4
 	},
 /area/centcom)
-"nvY" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/plating,
-/area/hospital)
 "nwd" = (
 /obj/decal/stage_edge,
 /obj/machinery/vending/snack,
@@ -69484,6 +69387,12 @@
 /obj/machinery/light/small/floor,
 /turf/unsimulated/floor/marble/black,
 /area/centcom/gallery)
+"nwU" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	dir = 4
+	},
+/turf/unsimulated/floor/plating,
+/area/hospital/underground)
 "nxr" = (
 /obj/fakeobject/pipe{
 	dir = 1;
@@ -71615,6 +71524,12 @@
 	icon_state = "floorgrime-w"
 	},
 /area/sim/racing_track)
+"oRV" = (
+/obj/machinery/door/airlock/pyro/glass{
+	name = "Owl Ward"
+	},
+/turf/unsimulated/floor/black,
+/area/owlery/gangzone)
 "oSa" = (
 /obj/fakeobject/skeleton,
 /turf/unsimulated/floor/arctic/snow,
@@ -73581,6 +73496,13 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/marsoutpost)
+"pXz" = (
+/obj/machinery/door/airlock/pyro{
+	dir = 4;
+	name = "Toilet Cubicle"
+	},
+/turf/unsimulated/floor/white/corner,
+/area/crunch)
 "pXE" = (
 /obj/fakeobject{
 	anchored = 1;
@@ -73872,6 +73794,16 @@
 	},
 /turf/unsimulated/outdoors/grass,
 /area/shuttle/merchant_shuttle/right_centcom/destiny)
+"qij" = (
+/obj/fakeobject/airlock_broken/firelock{
+	icon = 'icons/obj/doors/SL_doors.dmi';
+	icon_state = "fdoor0"
+	},
+/obj/machinery/door/airlock/pyro/medical{
+	name = "Receiver Control"
+	},
+/turf/unsimulated/floor,
+/area/meat_derelict/entry)
 "qiG" = (
 /obj/machinery/sink/slim{
 	dir = 4
@@ -73933,13 +73865,6 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/watchful_eye_sensor)
-"qlV" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	dir = 4;
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/plating,
-/area/hospital/underground)
 "qmk" = (
 /obj/decal/grass_edge,
 /obj/decal/grass_edge{
@@ -74184,22 +74109,6 @@
 	},
 /turf/unsimulated/floor,
 /area/watchful_eye_sensor)
-"qvf" = (
-/obj/fakeobject/airlock_broken/firelock{
-	icon = 'icons/obj/doors/SL_doors.dmi';
-	icon_state = "fdoor0"
-	},
-/obj/machinery/door/airlock/pyro/medical{
-	aiControlDisabled = 1;
-	dir = 4;
-	locked = 1;
-	name = "Hazardous Materials Storage";
-	req_access_txt = "";
-	secondsElectrified = -1
-	},
-/obj/trigger/critter,
-/turf/unsimulated/floor,
-/area/crunch)
 "qvj" = (
 /obj/map/light/lava,
 /obj/mesh/catwalk{
@@ -74223,6 +74132,12 @@
 /obj/landmark/lrt/luna_museum,
 /turf/unsimulated/floor,
 /area/moon/museum)
+"qvP" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	dir = 4
+	},
+/turf/unsimulated/floor,
+/area/hospital)
 "qvU" = (
 /obj/decal/cleanable/blood{
 	icon_state = "left_bloodygloves_c"
@@ -74388,14 +74303,6 @@
 /obj/decal/lightshaft,
 /turf/unsimulated/floor/carpet/darkcarpet,
 /area/centcom/gallery)
-"qAU" = (
-/obj/machinery/door/airlock/pyro/security{
-	name = "Lab Security";
-	req_access_txt = ""
-	},
-/obj/decal/stripe_delivery,
-/turf/unsimulated/floor/plating,
-/area/crypt/sigma)
 "qBh" = (
 /obj/mesh/catwalk{
 	dir = 10;
@@ -74854,6 +74761,13 @@
 /obj/fakeobject/dreambeach/mars,
 /turf/unsimulated/floor/dream/beach,
 /area/titlescreen)
+"qOP" = (
+/obj/machinery/door/airlock/pyro/medical{
+	dir = 4;
+	name = "Patient Room"
+	},
+/turf/unsimulated/floor/white/grime,
+/area/hospital)
 "qPk" = (
 /obj/mapping_helper/wingrille_spawn/auto/crystal,
 /turf/unsimulated/floor/plating/random,
@@ -75233,6 +75147,12 @@
 /obj/item/reagent_containers/food/snacks/yoghurt/frozen,
 /turf/unsimulated/floor/specialroom/freezer,
 /area/centcom/lounge)
+"rhd" = (
+/obj/machinery/door/airlock/pyro/medical{
+	name = "Hydrotherapy Room"
+	},
+/turf/unsimulated/floor/blue,
+/area/hospital)
 "rhp" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -75300,6 +75220,13 @@
 	},
 /turf/unsimulated/outdoors/grass,
 /area/void_diner)
+"rjd" = (
+/obj/machinery/door/airlock/pyro/medical{
+	dir = 4;
+	name = "Patient Room"
+	},
+/turf/unsimulated/floor/white,
+/area/hospital)
 "rje" = (
 /obj/machinery/light,
 /obj/decal/cleanable/blood/tracks{
@@ -75481,6 +75408,12 @@
 	},
 /turf/unsimulated/floor/wood/eight,
 /area/centcom/offices/bilo)
+"rpm" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	name = "Atmospheric Processing"
+	},
+/turf/unsimulated/floor/plating,
+/area/hospital)
 "rpA" = (
 /obj/landmark/fall/toxmoon,
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated,
@@ -75909,16 +75842,6 @@
 	},
 /turf/unsimulated/greek/underworld,
 /area/toxmoon/sewer)
-"rBQ" = (
-/obj/mapping_helper/access/public,
-/obj/machinery/door/airlock/gannets/chemistry/alt{
-	req_access = null;
-	dir = 4;
-	name = "Radioisotopic Research"
-	},
-/obj/creepy_sound_trigger,
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
-/area/toxmoon/plant/lower)
 "rBY" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -76396,6 +76319,14 @@
 /obj/decal/stripe_delivery,
 /turf/unsimulated/floor/plating,
 /area/shuttle/icebase_elevator/upper)
+"rPZ" = (
+/obj/machinery/door/airlock/pyro/medical{
+	name = "Morgue"
+	},
+/obj/decal/stripe_delivery,
+/obj/mapping_helper/access/medical,
+/turf/unsimulated/floor/plating,
+/area/crypt/sigma/lab)
 "rQp" = (
 /obj/admin_plaque{
 	name = "Sov's Office"
@@ -76533,16 +76464,6 @@
 	dir = 9
 	},
 /area/centcom/gallery)
-"rVh" = (
-/obj/machinery/door/poddoor/blast{
-	dir = 4;
-	id = "toxmoon_entrance"
-	},
-/obj/creepy_sound_trigger,
-/turf/unsimulated/floor/setpieces/rootfloor{
-	icon_state = "rootfloor_3"
-	},
-/area/toxmoon/plant/upper)
 "rVr" = (
 /obj/decal/cleanable/cobweb,
 /mob/living/critter/spider/ice/baby,
@@ -77032,6 +76953,16 @@
 	},
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated/fall,
 /area/toxmoon/plant/upper)
+"sjb" = (
+/obj/table/reinforced/auto,
+/obj/machinery/door/window{
+	icon_state = "right"
+	},
+/obj/random_item_spawner/desk_stuff,
+/turf/unsimulated/floor/bluewhite{
+	dir = 6
+	},
+/area/owlery/staffhall)
 "sjB" = (
 /obj/lattice{
 	dir = 1;
@@ -77232,6 +77163,10 @@
 /area/sim/tdome/tdomea{
 	name = "Thunderdome Lounge"
 	})
+"soU" = (
+/obj/machinery/door/airlock/pyro/maintenance,
+/turf/unsimulated/floor/plating,
+/area/hospital)
 "spe" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -77241,6 +77176,14 @@
 	dir = 1
 	},
 /area/iomoon/base/underground)
+"spg" = (
+/obj/creepy_sound_trigger,
+/obj/machinery/door/airlock/pyro{
+	name = "Kitchen"
+	},
+/obj/mapping_helper/access/kitchen,
+/turf/unsimulated/floor/white/grime,
+/area/crypt/sigma/kitchen)
 "spy" = (
 /turf/unsimulated/floor/stairs/wide/other{
 	dir = 8
@@ -77312,13 +77255,6 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/merchant_shuttle/left_centcom/cogmap)
-"srF" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	name = "Maintenance Office";
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/plating,
-/area/hospital/underground)
 "srX" = (
 /obj/lattice{
 	dir = 1;
@@ -78679,13 +78615,6 @@
 	},
 /turf/unsimulated/wall/auto/lead/blue,
 /area/upper_arctic/mining)
-"tsB" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	name = "Compartment Access";
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/plating,
-/area/hospital/samostrel)
 "tsD" = (
 /obj/item/device/radio/intercom/virtual{
 	dir = 1
@@ -78916,6 +78845,17 @@
 "tGf" = (
 /turf/unsimulated/floor/grass/leafy,
 /area/toxmoon/plant/lake)
+"tGi" = (
+/obj/machinery/door/airlock/pyro/engineering{
+	desc = "Oh sure it looks the same, but all the connections and mounting points are different.  Also all the screw heads are those awful triangular ones.";
+	dir = 4;
+	name = "Reactor Control"
+	},
+/turf/unsimulated/floor{
+	icon = 'icons/turf/shuttle.dmi';
+	icon_state = "floor3"
+	},
+/area/hospital/samostrel)
 "tGw" = (
 /obj/item/cigbutt{
 	pixel_x = 6
@@ -78998,18 +78938,6 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/moon/museum/west)
-"tIZ" = (
-/obj/table/reinforced/auto,
-/obj/machinery/door/window{
-	dir = 4;
-	req_access_txt = "0"
-	},
-/obj/machinery/recharger,
-/obj/mapping_helper/access/owlsecurity,
-/turf/unsimulated/floor/redblack{
-	dir = 5
-	},
-/area/owlery/owleryhall)
 "tJn" = (
 /obj/chainlink_fence{
 	dir = 1
@@ -79034,13 +78962,6 @@
 "tKt" = (
 /turf/unsimulated/outdoors/grass,
 /area/void_diner)
-"tKZ" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	name = "Atmospheric Processing";
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/plating,
-/area/hospital)
 "tLj" = (
 /obj/decal/grass_edge/corner{
 	dir = 8
@@ -79907,16 +79828,6 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital)
-"urk" = (
-/obj/fakeobject/pipe{
-	color = "b4b4b4";
-	dir = 9;
-	layer = 1.5;
-	name = "grimy pipe"
-	},
-/obj/boss_spawn_trigger,
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
-/area/toxmoon/plant/reactor)
 "urH" = (
 /obj/lattice{
 	dir = 10;
@@ -80207,14 +80118,6 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/watchful_eye_sensor)
-"uBF" = (
-/obj/machinery/door/poddoor/blast{
-	dir = 4;
-	id = "toxmoon_entrance"
-	},
-/obj/creepy_sound_trigger,
-/turf/unsimulated/floor/scorched2,
-/area/toxmoon/plant/upper)
 "uBH" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4"
@@ -80323,12 +80226,6 @@
 	icon_state = "space-1"
 	},
 /area/titlescreen)
-"uEt" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/plating,
-/area/meat_derelict/main)
 "uEu" = (
 /obj/machinery/door/unpowered/martian,
 /obj/trigger/critter,
@@ -80821,14 +80718,6 @@
 /obj/mapping_helper/access/owlcommand,
 /turf/unsimulated/floor/black,
 /area/owlery/staffhall)
-"uVk" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	dir = 4;
-	name = "Compartment Access";
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/plating,
-/area/hospital/samostrel)
 "uVv" = (
 /turf/simulated/wall/auto/reinforced/old,
 /area/void_diner)
@@ -81179,6 +81068,19 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/moon/museum/west)
+"vhz" = (
+/obj/machinery/door/airlock/pyro/security{
+	density = 0;
+	icon_state = "sec_open";
+	locked = 1;
+	name = "Armory";
+	opacity = 0;
+	operating = -1
+	},
+/obj/decal/stripe_caution,
+/obj/mapping_helper/access/armory,
+/turf/unsimulated/floor/plating,
+/area/hospital)
 "vhA" = (
 /obj/stool/chair/office/green{
 	desc = "This is a very cool gamer chair, and definitely not just a green office chair.";
@@ -81799,6 +81701,15 @@
 	},
 /turf/unsimulated/wall/auto/lead/blue,
 /area/upper_arctic/pod1)
+"vvo" = (
+/obj/creepy_sound_trigger,
+/obj/machinery/door/airlock/pyro/medical{
+	dir = 4;
+	name = "Morgue"
+	},
+/obj/mapping_helper/access/medical,
+/turf/unsimulated/floor/white/grime,
+/area/crypt/sigma/lab)
 "vvr" = (
 /obj/decal/grass_edge,
 /obj/decal/grass_edge{
@@ -81868,6 +81779,13 @@
 /obj/item/raw_material/shard/glass,
 /turf/unsimulated/floor/white/grime,
 /area/toxmoon/plant/lower)
+"vxX" = (
+/obj/machinery/door/airlock/pyro/classic{
+	dir = 4;
+	name = "Kitchen"
+	},
+/turf/unsimulated/floor/wood/two,
+/area/owlery/staffhall)
 "vyo" = (
 /obj/fakeobject/pipe{
 	density = 1;
@@ -81885,6 +81803,14 @@
 /mob/living/critter/zombie/security/radproof,
 /turf/unsimulated/floor/plating/scorched,
 /area/toxmoon/plant/entrance)
+"vyO" = (
+/obj/machinery/door/airlock/pyro/engineering{
+	desc = "Oh sure it looks the same, but all the connections and mounting points are different.  Also all the screw heads are those awful triangular ones.";
+	dir = 4;
+	name = "Reactor Control"
+	},
+/turf/unsimulated/floor/plating,
+/area/hospital/samostrel)
 "vzy" = (
 /obj/table/monodesk/auto{
 	icon_state = "12"
@@ -83036,6 +82962,12 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/moon/museum)
+"wij" = (
+/obj/machinery/door/airlock/pyro/classic{
+	dir = 4
+	},
+/turf/unsimulated/floor/grey,
+/area/crunch/wtc)
 "wiy" = (
 /obj/table/auto,
 /obj/item/ammo/ammobox/shootingrange,
@@ -83163,12 +83095,6 @@
 	name = "broken door"
 	},
 /area/meat_derelict/soviet)
-"wmE" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	req_access_txt = ""
-	},
-/turf/unsimulated/floor/plating,
-/area/hospital/underground)
 "wmU" = (
 /obj/machinery/door/airlock/pyro{
 	dir = 4;
@@ -83367,6 +83293,16 @@
 	},
 /turf/space,
 /area/syndicate_station_space)
+"wte" = (
+/obj/machinery/door/airlock/pyro/glass{
+	dir = 4;
+	name = "Security Booth"
+	},
+/obj/mapping_helper/access/security,
+/turf/unsimulated/floor/red/side{
+	dir = 4
+	},
+/area/hospital)
 "wtT" = (
 /obj/lattice{
 	dir = 1;
@@ -83401,19 +83337,6 @@
 	},
 /turf/space,
 /area/wizard_station_space)
-"wvp" = (
-/obj/table/reinforced/auto,
-/obj/machinery/door/window{
-	icon_state = "right";
-	req_access_txt = "0"
-	},
-/obj/item/folder,
-/obj/item/card/id/owlgold{
-	name = "James Musujasa (Head Of Personnel)"
-	},
-/obj/mapping_helper/access/owlcommand,
-/turf/unsimulated/floor/white,
-/area/owlery/office)
 "wvs" = (
 /obj/lattice{
 	icon_state = "lattice-dir-b"
@@ -84286,19 +84209,6 @@
 	},
 /turf/unsimulated/floor/wood,
 /area/centcom/garden)
-"wTR" = (
-/obj/machinery/door/airlock/pyro/security{
-	density = 0;
-	icon_state = "sec_open";
-	locked = 1;
-	name = "Armory";
-	opacity = 0;
-	operating = -1;
-	req_access_txt = "37"
-	},
-/obj/decal/stripe_caution,
-/turf/unsimulated/floor/plating,
-/area/hospital)
 "wTT" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -84327,6 +84237,16 @@
 /obj/map/light/dimred,
 /turf/unsimulated/floor/marble/black,
 /area/centcom/offices/wander)
+"wUy" = (
+/obj/fakeobject/pipe{
+	color = "b4b4b4";
+	dir = 9;
+	layer = 1.5;
+	name = "grimy pipe"
+	},
+/obj/boss_spawn_trigger,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/reactor)
 "wVa" = (
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated/fall,
 /area/toxmoon/plant/upper)
@@ -84458,6 +84378,16 @@
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/unsimulated/floor/plating,
 /area/centcom/lobby)
+"xaN" = (
+/obj/mapping_helper/access/public,
+/obj/machinery/door/airlock/gannets/chemistry/alt{
+	req_access = null;
+	dir = 4;
+	name = "Radioisotopic Research"
+	},
+/obj/creepy_sound_trigger,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/lower)
 "xbl" = (
 /obj/item/implant/artifact/ancient/ancient_gimmick,
 /turf/unsimulated/floor/setpieces{
@@ -84847,6 +84777,13 @@
 /obj/item/reagent_containers/food/snacks/pizza/vendor/pepperoni,
 /turf/unsimulated/greek/underworld,
 /area/toxmoon/sewer)
+"xnz" = (
+/obj/machinery/door/airlock/pyro{
+	name = "Kitchen"
+	},
+/obj/mapping_helper/access/kitchen,
+/turf/unsimulated/floor/white/grime,
+/area/crypt/sigma/mainhall)
 "xnC" = (
 /obj/machinery/light/small/floor/purpleish,
 /turf/simulated/floor/carpet/blue/decal/innercross,
@@ -86172,6 +86109,30 @@
 	},
 /turf/simulated/floor/grime,
 /area/observatory)
+"xVy" = (
+/obj/reagent_dispensers/beerkeg/owlfeed,
+/obj/window{
+	desc = "A window.  For a museum exhibit.";
+	dir = 2;
+	name = "exhibit window"
+	},
+/obj/window{
+	desc = "A window.  For a museum exhibit.";
+	dir = 8;
+	name = "exhibit window"
+	},
+/obj/window{
+	desc = "A window.  For a museum exhibit.";
+	dir = 1;
+	name = "exhibit window"
+	},
+/obj/machinery/door/window{
+	dir = 4
+	},
+/turf/unsimulated/floor/redblack{
+	dir = 4
+	},
+/area/owlery/gangzone)
 "xVP" = (
 /obj/machinery/light,
 /turf/unsimulated/floor/wood/eight,
@@ -86402,21 +86363,6 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/moon/museum)
-"ybq" = (
-/obj/table/reinforced/auto{
-	layer = 2
-	},
-/obj/machinery/door/window{
-	icon_state = "right";
-	req_access_txt = "0"
-	},
-/obj/machinery/door/window{
-	dir = 8;
-	req_access_txt = "0"
-	},
-/obj/mapping_helper/access/owlcommand,
-/turf/unsimulated/floor/white,
-/area/owlery/office)
 "ybr" = (
 /obj/decal/tile_edge/line/blue{
 	dir = 8;
@@ -86618,6 +86564,19 @@
 /obj/decal/cleanable/sakura,
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/angel)
+"yha" = (
+/obj/fakeobject/airlock_broken/firelock{
+	dir = 8;
+	icon = 'icons/obj/doors/SL_doors.dmi';
+	icon_state = "fdoor0"
+	},
+/obj/machinery/door/airlock/pyro/medical{
+	dir = 4;
+	name = "Morgue"
+	},
+/obj/mapping_helper/access/medical,
+/turf/unsimulated/floor/black,
+/area/crypt/sigma/lab)
 "yhB" = (
 /mob/living/critter/bear,
 /turf/unsimulated/floor/cave,
@@ -87991,7 +87950,7 @@ aGx
 aGx
 aGx
 aGx
-qlV
+nwU
 aGx
 aGx
 aGx
@@ -88593,7 +88552,7 @@ aaa
 aGx
 jzx
 gxU
-wmE
+kRP
 dqm
 gxU
 gxU
@@ -89703,7 +89662,7 @@ bLn
 bLn
 ceO
 ceO
-qvf
+lsp
 ceO
 ceO
 bKw
@@ -91561,7 +91520,7 @@ czR
 cyl
 cAP
 cBx
-cDv
+fTf
 cCT
 cDt
 cBx
@@ -91865,7 +91824,7 @@ cAQ
 cBx
 cCl
 cCU
-cEX
+lwf
 cBx
 cEI
 cFn
@@ -92157,7 +92116,7 @@ cnw
 aBY
 aBY
 aBY
-cyn
+vxX
 aBY
 aBY
 aBY
@@ -93701,7 +93660,7 @@ cUY
 cWC
 cLu
 cDC
-tIZ
+auy
 wwq
 cDC
 cDC
@@ -94827,13 +94786,13 @@ bZf
 aDC
 aDC
 aDC
-caH
+gBK
 aDC
 aDC
 aDC
 aDC
 aDC
-caH
+gBK
 aDC
 aDC
 bJE
@@ -95197,7 +95156,7 @@ cFq
 cFq
 cIo
 cJL
-cJN
+fhJ
 cLs
 cKY
 cFq
@@ -95478,7 +95437,7 @@ aBY
 cuI
 cxf
 cHc
-cxU
+sjb
 cys
 bxW
 fVa
@@ -96084,8 +96043,8 @@ cxg
 cDb
 aBY
 aBY
-cyR
-cyR
+lJv
+lJv
 aBY
 czY
 aBY
@@ -97050,11 +97009,11 @@ duq
 aGx
 wdj
 gxU
-srF
+gTl
 maa
 gxU
 maa
-wmE
+kRP
 aEG
 dpw
 fDB
@@ -97499,7 +97458,7 @@ bJX
 bJX
 bJX
 aDC
-bLA
+pXz
 aDC
 aDC
 bMz
@@ -97958,7 +97917,7 @@ duq
 duq
 aGx
 aGx
-qlV
+nwU
 aGx
 aGx
 duq
@@ -100935,7 +100894,7 @@ cHn
 cHO
 cIy
 cJo
-ybq
+fzK
 cKD
 cAD
 cCS
@@ -101237,7 +101196,7 @@ wWP
 cDO
 cHO
 cJp
-wvp
+iGe
 cKD
 cAD
 cnw
@@ -102377,7 +102336,7 @@ cbu
 aaa
 cnB
 cnB
-crD
+wij
 cnB
 cnB
 cnB
@@ -103371,7 +103330,7 @@ cNx
 cTi
 cSp
 cST
-cTq
+eoX
 cTE
 cSp
 cUw
@@ -103585,7 +103544,7 @@ cbu
 aaa
 cnB
 cnB
-crH
+ijT
 cnB
 cnB
 cnB
@@ -104793,7 +104752,7 @@ aaa
 ctb
 cnB
 cnB
-crD
+wij
 cnB
 cnB
 cnB
@@ -105153,7 +105112,7 @@ cBX
 cCa
 cCM
 cDn
-cDT
+bMl
 cDn
 cCM
 cCM
@@ -106053,7 +106012,7 @@ bxW
 cEp
 kTs
 czO
-cAc
+oRV
 cAL
 cBs
 cCd
@@ -106355,7 +106314,7 @@ bxW
 cEo
 sbS
 czP
-cAc
+oRV
 cAM
 cBt
 cCe
@@ -107267,7 +107226,7 @@ cBv
 cCg
 cCN
 cDq
-cDY
+xVy
 cEC
 cCN
 cCK
@@ -118236,8 +118195,8 @@ aIr
 aIr
 aIr
 rtc
-lod
-lod
+lal
+lal
 rtc
 aIr
 aIr
@@ -125001,12 +124960,12 @@ bPs
 nuo
 bSb
 bSp
-qAU
+fVE
 bST
 bSS
 bSS
 bST
-qAU
+fVE
 bSp
 bSp
 nuo
@@ -126828,7 +126787,7 @@ bWe
 bWe
 bVw
 bVw
-feE
+mey
 bXm
 bXm
 bXm
@@ -127130,7 +127089,7 @@ bVw
 bVw
 bVw
 bVw
-feE
+mey
 bXm
 bXC
 dUl
@@ -128633,13 +128592,13 @@ bUi
 bSs
 bSf
 bSs
-bVm
+xnz
 bVA
 bVA
 bVA
 bVA
 bVA
-bWK
+spg
 bXa
 bXp
 bXp
@@ -129219,7 +129178,7 @@ dVs
 aDY
 aDY
 uiu
-dFD
+vvo
 aDY
 aDY
 aDY
@@ -129228,14 +129187,14 @@ aDY
 aDY
 afW
 afW
-gph
+fnG
 afW
 afW
 afW
 afW
 afW
 afW
-gph
+fnG
 afW
 afW
 wMp
@@ -129611,7 +129570,7 @@ aeX
 aeX
 aeX
 aeX
-agc
+rjd
 aeX
 aeX
 aeX
@@ -129619,13 +129578,13 @@ ajh
 aeX
 aeX
 aeX
-amb
+qOP
 aeX
 afe
-amb
+qOP
 aeX
 aeX
-amb
+qOP
 aeX
 aeX
 aeX
@@ -129827,7 +129786,7 @@ bNq
 bNq
 bNq
 bNq
-dEe
+rPZ
 bRm
 bRA
 bRQ
@@ -131129,10 +131088,10 @@ aji
 aeX
 aeX
 aeX
-amb
+qOP
 aeX
 aeX
-amb
+qOP
 aeX
 aeX
 aeX
@@ -131631,7 +131590,7 @@ aDY
 aDY
 lWU
 aDY
-dvj
+yha
 aDY
 aDY
 aDY
@@ -133529,7 +133488,7 @@ aeX
 aeX
 acb
 acM
-adl
+rhd
 abL
 acb
 acb
@@ -133850,7 +133809,7 @@ aeX
 aeX
 aeX
 aeX
-aor
+wte
 aeX
 adG
 aeX
@@ -135051,7 +135010,7 @@ aeX
 agU
 ahL
 aiz
-wTR
+vhz
 ajp
 ajm
 aeX
@@ -136175,7 +136134,7 @@ rLP
 vzM
 vzM
 hDx
-uBF
+hbL
 jRL
 qXI
 hnr
@@ -136258,7 +136217,7 @@ mmz
 mmz
 nHN
 afp
-nvY
+soU
 ajp
 ajm
 akO
@@ -136554,7 +136513,7 @@ aeX
 adn
 acb
 acb
-nvY
+soU
 mmz
 mmz
 mmz
@@ -137081,7 +137040,7 @@ rLP
 vzM
 kEa
 ljV
-rVh
+kzm
 etU
 nOS
 qXI
@@ -137488,7 +137447,7 @@ aeX
 awS
 axz
 aeX
-azn
+qvP
 aeX
 abp
 aaa
@@ -138068,7 +138027,7 @@ aeX
 afe
 afr
 mmz
-nvY
+soU
 ahO
 ahO
 ajt
@@ -138382,10 +138341,10 @@ aeX
 anB
 uBH
 oLg
-tKZ
+rpm
 mmz
 mmz
-tKZ
+rpm
 adQ
 adQ
 aeX
@@ -142249,7 +142208,7 @@ aqL
 cdB
 ccY
 ccY
-ceZ
+qij
 ccY
 ccY
 cgy
@@ -145240,7 +145199,7 @@ lmk
 lmk
 lmk
 vlA
-rBQ
+xaN
 lmk
 lmk
 iYA
@@ -146185,7 +146144,7 @@ chM
 nxQ
 chN
 chN
-uEt
+iHZ
 rEI
 nGf
 cba
@@ -153077,7 +153036,7 @@ wOF
 wOF
 qze
 rPi
-urk
+wUy
 pzZ
 kau
 aaa
@@ -169123,7 +169082,7 @@ atb
 abr
 abr
 abr
-uVk
+lVo
 abr
 abr
 axb
@@ -170930,12 +170889,12 @@ aoK
 apz
 abr
 abr
-asj
+fqZ
 abr
 abr
 abr
-avb
-avb
+tGi
+tGi
 abr
 abr
 axb
@@ -171227,7 +171186,7 @@ akW
 alH
 aml
 amZ
-anP
+jhQ
 abB
 abB
 hkn
@@ -172746,7 +172705,7 @@ iNJ
 gZf
 abr
 abr
-kkO
+vyO
 abr
 abr
 axb
@@ -173650,7 +173609,7 @@ neB
 abr
 lac
 iNJ
-tsB
+nsa
 lac
 abr
 lac
