@@ -349,8 +349,7 @@
 /area/hospital)
 "adl" = (
 /obj/machinery/door/airlock/pyro/medical{
-	name = "Hydrotherapy Room";
-	req_access_txt = ""
+	name = "Hydrotherapy Room"
 	},
 /turf/unsimulated/floor/blue,
 /area/hospital)
@@ -1106,8 +1105,7 @@
 "agc" = (
 /obj/machinery/door/airlock/pyro/medical{
 	dir = 4;
-	name = "Patient Room";
-	req_access_txt = ""
+	name = "Patient Room"
 	},
 /turf/unsimulated/floor/white,
 /area/hospital)
@@ -2308,8 +2306,7 @@
 "amb" = (
 /obj/machinery/door/airlock/pyro/medical{
 	dir = 4;
-	name = "Patient Room";
-	req_access_txt = ""
+	name = "Patient Room"
 	},
 /turf/unsimulated/floor/white/grime,
 /area/hospital)
@@ -2820,9 +2817,9 @@
 /area/hospital/samostrel)
 "anP" = (
 /obj/machinery/door/airlock/pyro/command{
-	name = "captain's quarters";
-	req_access_txt = "1917"
+	name = "captain's quarters"
 	},
+/obj/mapping_helper/access/ainley_buddy,
 /turf/unsimulated/floor/carpet/office,
 /area/hospital/samostrel)
 "anS" = (
@@ -2922,9 +2919,9 @@
 "aor" = (
 /obj/machinery/door/airlock/pyro/glass{
 	dir = 4;
-	name = "Security Booth";
-	req_access_txt = "1"
+	name = "Security Booth"
 	},
+/obj/mapping_helper/access/security,
 /turf/unsimulated/floor/red/side{
 	dir = 4
 	},
@@ -3806,8 +3803,7 @@
 "asj" = (
 /obj/machinery/door/airlock/pyro/maintenance{
 	dir = 4;
-	name = "Compartment Access";
-	req_access_txt = ""
+	name = "Compartment Access"
 	},
 /turf/unsimulated/floor/caution/east,
 /area/hospital/samostrel)
@@ -4441,8 +4437,7 @@
 /obj/machinery/door/airlock/pyro/engineering{
 	desc = "Oh sure it looks the same, but all the connections and mounting points are different.  Also all the screw heads are those awful triangular ones.";
 	dir = 4;
-	name = "Reactor Control";
-	req_access_txt = ""
+	name = "Reactor Control"
 	},
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
@@ -5252,8 +5247,7 @@
 /area/owlery/owllock)
 "azn" = (
 /obj/machinery/door/airlock/pyro/maintenance{
-	dir = 4;
-	req_access_txt = ""
+	dir = 4
 	},
 /turf/unsimulated/floor,
 /area/hospital)
@@ -22602,8 +22596,7 @@
 "bLA" = (
 /obj/machinery/door/airlock/pyro{
 	dir = 4;
-	name = "Toilet Cubicle";
-	req_access_txt = "0"
+	name = "Toilet Cubicle"
 	},
 /turf/unsimulated/floor/white/corner,
 /area/crunch)
@@ -25328,9 +25321,9 @@
 /area/crypt/sigma/mainhall)
 "bVm" = (
 /obj/machinery/door/airlock/pyro{
-	name = "Kitchen";
-	req_access_txt = "28"
+	name = "Kitchen"
 	},
+/obj/mapping_helper/access/kitchen,
 /turf/unsimulated/floor/white/grime,
 /area/crypt/sigma/mainhall)
 "bVn" = (
@@ -25671,9 +25664,9 @@
 "bWK" = (
 /obj/creepy_sound_trigger,
 /obj/machinery/door/airlock/pyro{
-	name = "Kitchen";
-	req_access_txt = "28"
+	name = "Kitchen"
 	},
+/obj/mapping_helper/access/kitchen,
 /turf/unsimulated/floor/white/grime,
 /area/crypt/sigma/kitchen)
 "bWM" = (
@@ -26843,8 +26836,7 @@
 "caH" = (
 /obj/machinery/door/airlock/pyro/maintenance{
 	dir = 4;
-	name = "Lab Maintenance Access";
-	req_access_txt = ""
+	name = "Lab Maintenance Access"
 	},
 /obj/trigger/critter,
 /turf/unsimulated/floor/white,
@@ -27749,8 +27741,7 @@
 	icon_state = "fdoor0"
 	},
 /obj/machinery/door/airlock/pyro/medical{
-	name = "Receiver Control";
-	req_access_txt = ""
+	name = "Receiver Control"
 	},
 /turf/unsimulated/floor,
 /area/meat_derelict/entry)
@@ -31390,8 +31381,7 @@
 /area/crunch/wtc)
 "crD" = (
 /obj/machinery/door/airlock/pyro/classic{
-	dir = 4;
-	req_access_txt = "12"
+	dir = 4
 	},
 /turf/unsimulated/floor/grey,
 /area/crunch/wtc)
@@ -31410,8 +31400,7 @@
 /area/crunch/wtc)
 "crH" = (
 /obj/machinery/door/airlock/pyro/classic{
-	dir = 4;
-	req_access_txt = "12"
+	dir = 4
 	},
 /turf/unsimulated/floor/neutral,
 /area/crunch/wtc)
@@ -33293,8 +33282,7 @@
 "cxU" = (
 /obj/table/reinforced/auto,
 /obj/machinery/door/window{
-	icon_state = "right";
-	req_access_txt = "0"
+	icon_state = "right"
 	},
 /obj/random_item_spawner/desk_stuff,
 /turf/unsimulated/floor/bluewhite{
@@ -33398,8 +33386,7 @@
 "cyn" = (
 /obj/machinery/door/airlock/pyro/classic{
 	dir = 4;
-	name = "Kitchen";
-	req_access_txt = "12"
+	name = "Kitchen"
 	},
 /turf/unsimulated/floor/wood/two,
 /area/owlery/staffhall)
@@ -33579,8 +33566,7 @@
 /area/owlery/staffhall)
 "cyR" = (
 /obj/machinery/door/airlock/gannets/alt{
-	dir = 8;
-	req_access_txt = "12"
+	dir = 8
 	},
 /turf/unsimulated/floor/white,
 /area/owlery/staffhall)
@@ -33978,8 +33964,7 @@
 /area/owlery/staffhall)
 "cAc" = (
 /obj/machinery/door/airlock/pyro/glass{
-	name = "Owl Ward";
-	req_access_txt = "12"
+	name = "Owl Ward"
 	},
 /turf/unsimulated/floor/black,
 /area/owlery/gangzone)
@@ -35111,9 +35096,7 @@
 	},
 /area/owlery/Owlopen)
 "cDv" = (
-/obj/machinery/vending/security{
-	req_access_txt = "71"
-	},
+/obj/machinery/vending/security/owlery,
 /turf/unsimulated/floor/redblack/corner,
 /area/owlery/Owlopen)
 "cDw" = (
@@ -35266,8 +35249,7 @@
 	},
 /obj/machinery/door/window{
 	dir = 8;
-	icon_state = "right";
-	req_access_txt = "0"
+	icon_state = "right"
 	},
 /turf/unsimulated/floor/redblack{
 	dir = 8
@@ -35326,8 +35308,7 @@
 	name = "exhibit window"
 	},
 /obj/machinery/door/window{
-	dir = 4;
-	req_access_txt = "0"
+	dir = 4
 	},
 /turf/unsimulated/floor/redblack{
 	dir = 4
@@ -35626,12 +35607,10 @@
 /obj/item/gun/flamethrower/assembled/loaded,
 /obj/item/clothing/suit/hazard/fire/armored,
 /obj/item/clothing/head/helmet/welding,
-/obj/storage/secure/crate/weapon/confiscated_items{
-	req_access_txt = "71"
-	},
 /obj/machinery/light/emergency{
 	dir = 4
 	},
+/obj/storage/secure/crate/weapon/confiscated_items/owlery,
 /turf/unsimulated/floor/redblack/corner{
 	dir = 1
 	},
@@ -37219,8 +37198,7 @@
 /area/owlery/owleryhall)
 "cJN" = (
 /obj/machinery/door/window{
-	dir = 4;
-	req_access_txt = "12"
+	dir = 4
 	},
 /turf/unsimulated/floor/wood/two,
 /area/owlery/owleryhall)
@@ -40612,8 +40590,7 @@
 "cTq" = (
 /obj/machinery/door/window{
 	dir = 8;
-	icon_state = "right";
-	req_access_txt = "0"
+	icon_state = "right"
 	},
 /turf/unsimulated/floor/yellowblack{
 	dir = 4
@@ -47625,9 +47602,9 @@
 	},
 /obj/machinery/door/airlock/pyro/medical{
 	dir = 4;
-	name = "Morgue";
-	req_access_txt = "5"
+	name = "Morgue"
 	},
+/obj/mapping_helper/access/medical,
 /turf/unsimulated/floor/black,
 /area/crypt/sigma/lab)
 "dvl" = (
@@ -49870,10 +49847,10 @@
 /area/shuttle/merchant_shuttle/right_centcom/destiny)
 "dEe" = (
 /obj/machinery/door/airlock/pyro/medical{
-	name = "Morgue";
-	req_access_txt = "5"
+	name = "Morgue"
 	},
 /obj/decal/stripe_delivery,
+/obj/mapping_helper/access/medical,
 /turf/unsimulated/floor/plating,
 /area/crypt/sigma/lab)
 "dEm" = (
@@ -50272,9 +50249,9 @@
 /obj/creepy_sound_trigger,
 /obj/machinery/door/airlock/pyro/medical{
 	dir = 4;
-	name = "Morgue";
-	req_access_txt = "5"
+	name = "Morgue"
 	},
+/obj/mapping_helper/access/medical,
 /turf/unsimulated/floor/white/grime,
 /area/crypt/sigma/lab)
 "dFE" = (
@@ -56614,10 +56591,10 @@
 /area/retentioncenter)
 "feE" = (
 /obj/machinery/door/airlock/pyro/command{
-	name = "Research Director's Office";
-	req_access_txt = "19"
+	name = "Research Director's Office"
 	},
 /obj/decal/stripe_delivery,
+/obj/mapping_helper/access/heads,
 /turf/unsimulated/floor/plating,
 /area/crypt/sigma/rd)
 "ffi" = (
@@ -58458,10 +58435,10 @@
 	aiControlDisabled = 1;
 	dir = 4;
 	locked = 1;
-	name = "Lower Level Access";
-	req_access_txt = "33"
+	name = "Lower Level Access"
 	},
 /obj/decal/stripe_delivery,
+/obj/mapping_helper/access/chemistry,
 /turf/unsimulated/floor/plating,
 /area/crypt/sigma/mainhall)
 "gpj" = (
@@ -64439,8 +64416,7 @@
 /obj/machinery/door/airlock/pyro/engineering{
 	desc = "Oh sure it looks the same, but all the connections and mounting points are different.  Also all the screw heads are those awful triangular ones.";
 	dir = 4;
-	name = "Reactor Control";
-	req_access_txt = ""
+	name = "Reactor Control"
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital/samostrel)
@@ -66244,10 +66220,10 @@
 	aiControlDisabled = 1;
 	dir = 4;
 	locked = 1;
-	name = "Upper Level Access";
-	req_access_txt = "33"
+	name = "Upper Level Access"
 	},
 /obj/decal/stripe_delivery,
+/obj/mapping_helper/access/chemistry,
 /turf/unsimulated/floor/plating,
 /area/crater/biodome/crew)
 "loh" = (
@@ -69428,9 +69404,7 @@
 	},
 /area/centcom)
 "nvY" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	req_access_txt = ""
-	},
+/obj/machinery/door/airlock/pyro/maintenance,
 /turf/unsimulated/floor/plating,
 /area/hospital)
 "nwd" = (
@@ -73935,8 +73909,7 @@
 /area/watchful_eye_sensor)
 "qlV" = (
 /obj/machinery/door/airlock/pyro/maintenance{
-	dir = 4;
-	req_access_txt = ""
+	dir = 4
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital/underground)
@@ -74194,7 +74167,6 @@
 	dir = 4;
 	locked = 1;
 	name = "Hazardous Materials Storage";
-	req_access_txt = "";
 	secondsElectrified = -1
 	},
 /obj/trigger/critter,
@@ -74390,8 +74362,7 @@
 /area/centcom/gallery)
 "qAU" = (
 /obj/machinery/door/airlock/pyro/security{
-	name = "Lab Security";
-	req_access_txt = ""
+	name = "Lab Security"
 	},
 /obj/decal/stripe_delivery,
 /turf/unsimulated/floor/plating,
@@ -77312,8 +77283,7 @@
 /area/shuttle/merchant_shuttle/left_centcom/cogmap)
 "srF" = (
 /obj/machinery/door/airlock/pyro/maintenance{
-	name = "Maintenance Office";
-	req_access_txt = ""
+	name = "Maintenance Office"
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital/underground)
@@ -78675,8 +78645,7 @@
 /area/upper_arctic/mining)
 "tsB" = (
 /obj/machinery/door/airlock/pyro/maintenance{
-	name = "Compartment Access";
-	req_access_txt = ""
+	name = "Compartment Access"
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital/samostrel)
@@ -78995,8 +78964,7 @@
 "tIZ" = (
 /obj/table/reinforced/auto,
 /obj/machinery/door/window{
-	dir = 4;
-	req_access_txt = "0"
+	dir = 4
 	},
 /obj/machinery/recharger,
 /obj/mapping_helper/access/owlsecurity,
@@ -79030,8 +78998,7 @@
 /area/void_diner)
 "tKZ" = (
 /obj/machinery/door/airlock/pyro/maintenance{
-	name = "Atmospheric Processing";
-	req_access_txt = ""
+	name = "Atmospheric Processing"
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital)
@@ -80316,9 +80283,7 @@
 	},
 /area/titlescreen)
 "uEt" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	req_access_txt = ""
-	},
+/obj/machinery/door/airlock/pyro/maintenance,
 /turf/unsimulated/floor/plating,
 /area/meat_derelict/main)
 "uEu" = (
@@ -80816,8 +80781,7 @@
 "uVk" = (
 /obj/machinery/door/airlock/pyro/maintenance{
 	dir = 4;
-	name = "Compartment Access";
-	req_access_txt = ""
+	name = "Compartment Access"
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital/samostrel)
@@ -83156,9 +83120,7 @@
 	},
 /area/meat_derelict/soviet)
 "wmE" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	req_access_txt = ""
-	},
+/obj/machinery/door/airlock/pyro/maintenance,
 /turf/unsimulated/floor/plating,
 /area/hospital/underground)
 "wmU" = (
@@ -83396,8 +83358,7 @@
 "wvp" = (
 /obj/table/reinforced/auto,
 /obj/machinery/door/window{
-	icon_state = "right";
-	req_access_txt = "0"
+	icon_state = "right"
 	},
 /obj/item/folder,
 /obj/item/card/id/owlgold{
@@ -84285,10 +84246,10 @@
 	locked = 1;
 	name = "Armory";
 	opacity = 0;
-	operating = -1;
-	req_access_txt = "37"
+	operating = -1
 	},
 /obj/decal/stripe_caution,
+/obj/mapping_helper/access/armory,
 /turf/unsimulated/floor/plating,
 /area/hospital)
 "wTT" = (
@@ -86399,12 +86360,10 @@
 	layer = 2
 	},
 /obj/machinery/door/window{
-	icon_state = "right";
-	req_access_txt = "0"
+	icon_state = "right"
 	},
 /obj/machinery/door/window{
-	dir = 8;
-	req_access_txt = "0"
+	dir = 8
 	},
 /obj/mapping_helper/access/owlcommand,
 /turf/unsimulated/floor/white,
