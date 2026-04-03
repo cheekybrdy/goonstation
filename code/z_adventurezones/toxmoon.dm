@@ -31,7 +31,6 @@
 		plating
 			name = "plating"
 			icon_state = "plating"
-			step_material = "step_plating"
 			intact = 0
 			layer = PLATING_LAYER
 
