@@ -388,10 +388,10 @@
 	Crossed(atom/movable/AM as mob|obj)
 		..()
 		if(active) return
-		active = TRUE
+		active = FALSE
 		for(var/obj/boss_spawn_trigger/T in by_type[/obj/boss_spawn_trigger])
 			if (T.id == src.id)
-				qdel(T)
+				T.active = FALSE
 		for(var/obj/machinery/door/poddoor/P in by_type[/obj/machinery/door]) //robbed checkpoint bot code
 			if (P.id == src.id)
 				if (!P.density)
@@ -458,7 +458,7 @@
 		remove_lifeprocess(/datum/lifeprocess/radiation)
 		APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
 		APPLY_ATOM_PROPERTY(src, PROP_MOB_CANTMOVE, src.type)
-		APPLY_ATOM_PROPERTY(M, PROP_MOB_CANT_BE_PINNED, src.type)
+		APPLY_ATOM_PROPERTY(src, PROP_MOB_CANT_BE_PINNED, src.type)
 		src.bioHolder.AddEffect("radioactive")
 
 
