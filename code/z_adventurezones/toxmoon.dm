@@ -17,6 +17,7 @@
 	name = "floor"
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "floor"
+	material = "steel"
 
 	irradiated
 		radgas = 100
@@ -31,6 +32,7 @@
 		plating
 			name = "plating"
 			icon_state = "plating"
+			step_material = "step_plating"
 			intact = 0
 			layer = PLATING_LAYER
 
