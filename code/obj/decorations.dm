@@ -187,9 +187,9 @@
 		return
 	if (AM.anchored)
 		return
-	if(istype(A, /obj/critter) && A:flying)		//They are flying above it, ok.
+	if(istype(AM, /obj/critter) && AM:flying)		//They are flying above it, ok.
 		return FALSE
-	if(HAS_ATOM_PROPERTY(A, PROP_ATOM_FLOATING)) // Don't put new checks here, apply this atom prop instead.
+	if(HAS_ATOM_PROPERTY(AM, PROP_ATOM_FLOATING)) // Don't put new checks here, apply this atom prop instead.
 		return FALSE
 	return TRUE
 	move_thing(AM)
