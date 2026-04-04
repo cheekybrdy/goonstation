@@ -740,7 +740,7 @@ ABSTRACT_TYPE(/datum/fishing_spot)
 		result.AddComponent(/datum/component/radioactive, 20, TRUE, FALSE, 0)
 		return result
 
-/datum/fishing_spot/acid_goop
+/datum/fishing_spot/acid_river
 	fishing_atom_type = /obj/river/toxic
 	rod_tier_required = 3
 	fish_available = list(/obj/item/reagent_containers/food/fish/goldfish = 30,\

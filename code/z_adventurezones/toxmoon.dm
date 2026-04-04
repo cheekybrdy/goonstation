@@ -17,7 +17,6 @@
 	name = "floor"
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "floor"
-	material = "steel"
 
 	irradiated
 		radgas = 100
@@ -78,6 +77,7 @@
 
 	New()
 		..()
+		set_dir(rand(1,8))
 		src.add_simple_light("rad", list(0, 0.8 * 255, 0.3 * 255, 0.8 * 255))
 
 	Entered(atom/movable/O, atom/old_loc)
@@ -385,14 +385,15 @@
 	density = 0
 	var/active = 0
 	var/id = "toxmoon_boss"
+	var/boss_path = /mob/living/critter/noxia_abomination
 
 	Crossed(atom/movable/AM as mob|obj)
 		..()
 		if(active) return
-		active = FALSE
+		active = TRUE
 		for(var/obj/boss_spawn_trigger/T in by_type[/obj/boss_spawn_trigger])
 			if (T.id == src.id)
-				T.active = FALSE
+				T.active = TRUE
 		for(var/obj/machinery/door/poddoor/P in by_type[/obj/machinery/door]) //robbed checkpoint bot code
 			if (P.id == src.id)
 				if (!P.density)
@@ -401,7 +402,7 @@
 		for(var/obj/fakeobject/toxmoon_boss_reactor/R in range(10))
 			SpawnBoss(R.loc)
 
-	proc/SpawnBoss(spawn_point = get_turf(src), height = 7, use_shadow=TRUE, boss_type=/mob/living/critter/noxia_abomination) //wowwie more ripped code
+	proc/SpawnBoss(spawn_point = get_turf(src), height = 7, use_shadow=TRUE, boss_type=boss_path) //wowwie more ripped code
 		logTheThing(LOG_COMBAT, src, "toxmoon boss summoned at [log_loc(src)].")
 		src.anchored = ANCHORED_ALWAYS
 

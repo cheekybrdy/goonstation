@@ -170,6 +170,8 @@
 	name = "Toxic River"
 	desc = "Some foul flowing goop. The current seems strong enough to push a person around."
 	icon_state = "toxriver"
+	/// The lag at which the movement happens. Lower = faster
+	var/move_lag = 4
 
 	New()
 		..()
@@ -177,13 +179,27 @@
 
 	Crossed(atom/movable/T) // push effect
 		..()
-		for(T in src.loc?.contents)
-			if(ON_COOLDOWN(src, "river_push", 1 SECOND))
-				return
-			if(T.loc != src.loc) //fixes race condition where T gets yoinked during the turf-to-turf loop that calls Crossed on everything (& ends up with an active walk inside another object)
-				return
-			if(!T.anchored)
-				walk(T,src.dir,2.5,32)
+/obj/river/toxic/Crossed(atom/movable/AM)
+	..()
+	if(!loc)
+		return
+	if(AM.loc != src.loc) //fixes race condition where AM gets yoinked during the turf-to-turf loop that calls Crossed on everything (& ends up with an active walk inside another object)
+		return
+	if (AM.anchored)
+		return
+	if(istype(A, /obj/critter) && A:flying)		//They are flying above it, ok.
+		return FALSE
+	if(HAS_ATOM_PROPERTY(A, PROP_ATOM_FLOATING)) // Don't put new checks here, apply this atom prop instead.
+		return FALSE
+	return TRUE
+	move_thing(AM)
+
+/obj/river/toxic/proc/move_thing(var/atom/movable/A)
+	var/movedir = src.dir	// base movement dir
+
+	A.glide_size = (32 / move_lag) * world.tick_lag
+	walk(A, movedir, move_lag, (32 / move_lag) * world.tick_lag)
+	A.glide_size = (32 / move_lag) * world.tick_lag
 
 /obj/stone
 	name = "stone"

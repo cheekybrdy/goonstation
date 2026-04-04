@@ -51,7 +51,7 @@ TYPEINFO(/mob/living/critter/wraith/plaguerat)
 		START_TRACKING
 		SPAWN(0)
 			src.bioHolder.AddEffect("nightvision", 0, 0, 0, 1)
-			if(src.faction == FACTION_TOXMOON)
+			if(src.is_npc)
 				return
 			if(M != null)
 				src.master = M
