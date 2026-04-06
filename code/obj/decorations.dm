@@ -188,10 +188,9 @@
 	if (AM.anchored)
 		return
 	if(istype(AM, /obj/critter) && AM:flying)		//They are flying above it, ok.
-		return FALSE
+		return
 	if(HAS_ATOM_PROPERTY(AM, PROP_ATOM_FLOATING)) // Don't put new checks here, apply this atom prop instead.
-		return FALSE
-	return TRUE
+		return
 	move_thing(AM)
 
 /obj/river/toxic/proc/move_thing(var/atom/movable/A)
