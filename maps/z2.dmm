@@ -56710,6 +56710,10 @@
 	},
 /turf/unsimulated/floor/orangeblack,
 /area/crunch)
+"fnt" = (
+/obj/machinery/door/airlock/gannets/maintenance,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/plant/upper)
 "fnw" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -57244,6 +57248,15 @@
 	},
 /turf/unsimulated/floor,
 /area/hospital/samostrel)
+"fHX" = (
+/obj/railing/green/reinforced{
+	dir = 1
+	},
+/obj/mesh/catwalk,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/catwalk{
+	dir = 8
+	},
+/area/toxmoon/plant/upper)
 "fIc" = (
 /turf/unsimulated/wall/generic{
 	desc = "It's sealed shut.";
@@ -57534,6 +57547,10 @@
 	},
 /turf/unsimulated/floor/industrial,
 /area/iomoon/base/underground)
+"fSW" = (
+/obj/table/round/auto,
+/turf/unsimulated/floor/plating/scorched,
+/area/toxmoon/plant/upper)
 "fTb" = (
 /obj/decal/cleanable/dirt,
 /turf/unsimulated/floor/plating,
@@ -59710,13 +59727,13 @@
 /turf/unsimulated/dirt,
 /area/crypt/graveyard)
 "hoe" = (
-/obj/mesh/catwalk/dubious,
 /mob/living/critter/radthing,
 /obj/machinery/light/small/floor,
 /obj/railing/green/reinforced{
 	dir = 8
 	},
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated/fall,
+/obj/mesh/catwalk,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/catwalk,
 /area/toxmoon/plant/upper)
 "hoh" = (
 /turf/unsimulated/wall/auto/sengoku{
@@ -62049,9 +62066,11 @@
 /turf/unsimulated/floor/setpieces/toxmoon/radpool,
 /area/toxmoon/plant/lake)
 "iQu" = (
-/obj/mesh/catwalk/dubious,
 /obj/railing/green/reinforced,
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated/fall,
+/obj/mesh/catwalk,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/catwalk{
+	dir = 8
+	},
 /area/toxmoon/plant/upper)
 "iQw" = (
 /obj/table/wood/round,
@@ -62459,6 +62478,10 @@
 "jbK" = (
 /turf/unsimulated/floor/stairs/dark,
 /area/iomoon/base)
+"jbP" = (
+/obj/storage/closet/welding_supply,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/upper)
 "jcj" = (
 /obj/river/toxic{
 	dir = 8
@@ -62900,6 +62923,8 @@
 	dir = 1;
 	status = 2
 	},
+/obj/table/reinforced/auto,
+/obj/item/sheet/mauxite,
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
 /area/toxmoon/plant/upper)
 "jmf" = (
@@ -67339,6 +67364,13 @@
 /obj/mapping_helper/access/owlcommand,
 /turf/unsimulated/floor/wood/two,
 /area/owlery/office)
+"mcl" = (
+/obj/table/round/auto,
+/obj/item/reagent_containers/food/drinks/fueltank/chlorine,
+/turf/unsimulated/floor/setpieces/rootfloor{
+	icon_state = "rootfloor_3"
+	},
+/area/toxmoon/plant/upper)
 "mcq" = (
 /obj/securearea{
 	desc = "";
@@ -68759,11 +68791,6 @@
 	dir = 4
 	},
 /area/centcom/offices/adhara)
-"nap" = (
-/obj/table/round/auto,
-/obj/item/reagent_containers/food/drinks/fueltank/chlorine,
-/turf/unsimulated/floor,
-/area/toxmoon/plant/upper)
 "naR" = (
 /obj/table/reinforced/auto,
 /obj/traitorifier/virtual/nuclear,
@@ -70746,6 +70773,11 @@
 	dir = 8
 	},
 /area/precursor)
+"ono" = (
+/obj/table/reinforced/auto,
+/obj/item/clothing/head/helmet/welding,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated,
+/area/toxmoon/plant/upper)
 "onF" = (
 /obj/storage/secure/closet/personal,
 /turf/unsimulated/floor/carpet/green/standard/edge{
@@ -71804,14 +71836,14 @@
 /turf/unsimulated/floor/plating,
 /area/iomoon/base/underground)
 "oYu" = (
-/obj/mesh/catwalk/dubious,
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
 	desc = "A pipe.";
 	name = "pipe";
 	pixel_y = -22
 	},
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated/fall,
+/obj/mesh/catwalk,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/catwalk,
 /area/toxmoon/plant/upper)
 "oYB" = (
 /obj/machinery/door/airlock/pyro/classic{
@@ -72576,12 +72608,14 @@
 /turf/space,
 /area/syndicate_station_space)
 "pwB" = (
-/obj/mesh/catwalk/dubious,
 /obj/railing/green/reinforced{
 	dir = 1
 	},
 /obj/railing/green/reinforced,
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated/fall,
+/obj/mesh/catwalk,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/catwalk{
+	dir = 8
+	},
 /area/toxmoon/plant/upper)
 "pxd" = (
 /obj/stool/chair{
@@ -75349,11 +75383,11 @@
 	},
 /area/hospital/samostrel)
 "rnH" = (
-/obj/mesh/catwalk/dubious,
 /obj/railing/green/reinforced{
 	dir = 8
 	},
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated/fall,
+/obj/mesh/catwalk,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/catwalk,
 /area/toxmoon/plant/upper)
 "rnK" = (
 /obj/lattice{
@@ -76946,12 +76980,14 @@
 /turf/unsimulated/floor/plating,
 /area/centcom/lobby)
 "siL" = (
-/obj/mesh/catwalk/dubious,
 /obj/railing/green/reinforced,
 /obj/railing/green/reinforced{
 	dir = 1
 	},
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated/fall,
+/obj/mesh/catwalk,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/catwalk{
+	dir = 8
+	},
 /area/toxmoon/plant/upper)
 "sjb" = (
 /obj/table/reinforced/auto,
@@ -79648,7 +79684,6 @@
 	},
 /area/centcom/gallery)
 "ujj" = (
-/obj/mesh/catwalk/dubious,
 /obj/machinery/door_control/oneshot{
 	pixel_y = 9;
 	name = "override panel-'reactor access'";
@@ -79662,7 +79697,8 @@
 	dir = 4
 	},
 /obj/machinery/computer/elevator/toxmoon,
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated/fall,
+/obj/mesh/catwalk,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/catwalk,
 /area/toxmoon/plant/upper)
 "ujt" = (
 /mob/living/critter/small_animal/turtle/machoangelo,
@@ -80634,11 +80670,11 @@
 /turf/simulated/floor/airless/plating/catwalk,
 /area/space)
 "uRN" = (
-/obj/mesh/catwalk/dubious,
 /obj/railing/green/reinforced{
 	dir = 1
 	},
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated/fall,
+/obj/mesh/catwalk,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/catwalk,
 /area/toxmoon/plant/upper)
 "uRP" = (
 /obj/map/light/graveyard,
@@ -85960,6 +85996,14 @@
 	opacity = 0
 	},
 /area/centcom/gallery)
+"xRm" = (
+/obj/fakeobject/tallsmes{
+	desc = "An ultra-high-capacity superconducting magnetic energy storage (SMES) unit, except communist.";
+	icon = 'icons/misc/hospital.dmi'
+	},
+/obj/effects/welding,
+/turf/unsimulated/floor,
+/area/toxmoon/plant/upper)
 "xSb" = (
 /obj/lattice{
 	dir = 4;
@@ -86342,8 +86386,8 @@
 /turf/unsimulated/floor/setpieces/toxmoon/radpool,
 /area/toxmoon/plant/exterior)
 "yax" = (
-/obj/mesh/catwalk/dubious,
-/turf/unsimulated/floor/setpieces/toxmoon/irradiated/fall,
+/obj/mesh/catwalk,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/catwalk,
 /area/toxmoon/plant/upper)
 "yaC" = (
 /turf/unsimulated/floor/arrival/corner{
@@ -86466,6 +86510,12 @@
 	dir = 10
 	},
 /area/centcom/offices/zewaka)
+"yeu" = (
+/obj/table/reinforced/auto,
+/obj/decal/poster/wallsign/iso/mandatory/welding,
+/obj/item/sheet/steel/reinforced/fullstack,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/upper)
 "yeV" = (
 /obj/machinery/light/small/floor,
 /turf/unsimulated/floor/shuttle{
@@ -137927,7 +137977,7 @@ aaa
 aaa
 ukI
 wVa
-uRN
+fHX
 wVa
 wVa
 wVa
@@ -138531,7 +138581,7 @@ aaa
 aaa
 ukI
 wVa
-uRN
+fHX
 rnH
 rnH
 hoe
@@ -140040,7 +140090,7 @@ aaa
 aaa
 aaa
 ukI
-jdN
+jbP
 jdN
 uGA
 ukI
@@ -140644,7 +140694,7 @@ aaa
 aaa
 aaa
 ukI
-uGA
+ono
 uGA
 jdN
 ukI
@@ -140946,7 +140996,7 @@ aaa
 aaa
 aaa
 ukI
-jdN
+yeu
 jdN
 uGA
 mza
@@ -140957,7 +141007,7 @@ jdN
 jdN
 uGA
 ukI
-tLT
+xRm
 kLE
 rPx
 kLE
@@ -147603,9 +147653,9 @@ kLE
 kEa
 kLE
 ukI
-aaa
-aaa
-aaa
+ukI
+ukI
+ukI
 aaa
 lmk
 qwz
@@ -147905,9 +147955,9 @@ eeX
 apX
 kLE
 ukI
-aaa
-aaa
-aaa
+mcl
+fSW
+ukI
 aaa
 lmk
 qwz
@@ -148207,9 +148257,9 @@ kQo
 vzM
 kEa
 ukI
-aaa
-aaa
-aaa
+vzM
+kLE
+ukI
 aaa
 lmk
 qwz
@@ -148508,10 +148558,10 @@ oEu
 kQo
 iiE
 kEa
+fnt
+vzM
+vzM
 ukI
-aaa
-aaa
-aaa
 aaa
 lmk
 qwz
@@ -148811,9 +148861,9 @@ kQo
 vzM
 kLE
 ukI
-aaa
-aaa
-aaa
+kLE
+vzM
+ukI
 aaa
 lmk
 idu
@@ -149113,9 +149163,9 @@ kQo
 kLE
 kLE
 ukI
-aaa
-aaa
-aaa
+ukI
+ukI
+ukI
 aaa
 lmk
 qwz
@@ -150309,7 +150359,7 @@ cnw
 aaa
 ukI
 lvr
-nap
+kLE
 kLE
 kLE
 kLE

@@ -77,7 +77,7 @@
 
 	New()
 		..()
-		set_dir(rand(1,8))
+		set_dir(pick(NORTH, SOUTH))
 		src.add_simple_light("rad", list(0, 0.8 * 255, 0.3 * 255, 0.8 * 255))
 
 	Entered(atom/movable/O, atom/old_loc)
@@ -448,10 +448,13 @@
 	stamina = INFINITY // Don't want something hanging from the ceiling to go horizontal
 	icon = 'icons/mob/critter/nonhuman/critter160x160.dmi'
 	icon_state = "nabom"
-	bound_height = 160
 	bound_width = 160
-	pixel_x = -32;
-	pixel_y = -32 - 7;
+	bound_height = 160
+	pixel_x = -64
+	pixel_y = -64
+	bound_x = -64
+	bound_y = -64
+	isFlying = TRUE // on da ceilin
 	event_handler_flags = IMMUNE_TRENCH_WARP
 	anchored = TRUE
 
