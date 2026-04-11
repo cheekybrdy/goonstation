@@ -81966,6 +81966,10 @@
 /obj/cover/showcase,
 /turf/unsimulated/floor/wizard/showcase,
 /area/centcom/offices/enakai)
+"vEt" = (
+/obj/boss_spawn_marker,
+/turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
+/area/toxmoon/plant/reactor)
 "vEz" = (
 /obj/fakeobject/dreambeach/biggest/big_palm_with_nuts,
 /turf/unsimulated/floor/dream/beach,
@@ -154293,7 +154297,7 @@ pzZ
 pzZ
 pzZ
 pzZ
-pzZ
+vEt
 wOF
 pzZ
 pzZ

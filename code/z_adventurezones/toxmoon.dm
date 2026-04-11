@@ -376,6 +376,12 @@
 		src._light_turf = get_turf(src)
 		src._light_turf.add_medium_light("reactor_destroyed_light", list(255,0,0,255))
 
+/obj/boss_spawn_marker
+	icon = 'icons/misc/mark.dmi'
+	icon_state = "ydn"
+	invisibility = INVIS_ALWAYS
+	anchored = ANCHORED
+	density = 0
 
 /obj/boss_spawn_trigger
 	icon = 'icons/misc/mark.dmi'
@@ -386,7 +392,7 @@
 	var/active = 0
 	var/id = "toxmoon_boss"
 	var/boss_path = /mob/living/critter/noxia_abomination
-
+	var/spawn_location = /obj/boss_spawn_marker
 	Crossed(atom/movable/AM as mob|obj)
 		..()
 		if(active) return
@@ -399,8 +405,8 @@
 				if (!P.density)
 					SPAWN( 0 )
 						P.close()
-		for(var/obj/fakeobject/toxmoon_boss_reactor/R in range(10))
-			SpawnBoss(R.loc)
+		for(spawn_location in range(10))
+			SpawnBoss(get_turf(spawn_location))
 
 	proc/SpawnBoss(spawn_point = get_turf(src), height = 7, use_shadow=TRUE, boss_type=boss_path) //wowwie more ripped code
 		logTheThing(LOG_COMBAT, src, "toxmoon boss summoned at [log_loc(src)].")
