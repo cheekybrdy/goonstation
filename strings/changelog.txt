@@ -1,4 +1,40 @@
 
+(t)fri may 01 26
+(u)Tela
+(p)26350
+(e)🎨|C-Sprites
+(+)Adds 4 New Hairstyles! Side Pigtails, Long Top Bun, Curtained Ponytail, Low Bun, Along with Hairparts for Side Pigtails and Scorpion Braid.
+(u)Urist McCoder
+(p)26406
+(e)🆕⚗|C-Feature, A-Chemistry
+(*)drinks that contain coffee as an ingredient now contain caffeine, with alcoholic drinks having an amount equal to espresso
+(+)pineapple matcha is now considered matcha tea
+(+)lattes and coconut milk espresso have the same caffeine amount as espresso
+(u)bork
+(p)26475
+(e)🎨🍝|C-Sprites, A-Catering
+(+)repsrites rice and beans, risotto and fried rice
+(t)thu apr 30 26
+(u)JORJ949
+(p)26484
+(e)⚖💡|C-Balance, A-Station-Systems
+(*)AI turrets (and Computer Core/Armory(If not using a NARCS)) on the stun setting can no longer be heard through walls
+(u)glowbold
+(e)💅👮|C-QoL, A-Security
+(*)Detectives now get two fingerprint dusters in their forensics cart (sprite by TemThrush). Cargo can order more in a Forensic-locked crate.
+(u)glowbold
+(p)26395
+(e)⚖💊|C-Balance, A-Medical
+(+)A stopped or missing heart stops bleeding, and causes your organs to slowly die.
+(t)wed apr 29 26
+(u)TheGeneralJay
+(p)26279
+(e)🗺|A-Mapping
+(*)Crew of the NSS Clarion can now utilize the fancy new southern hall.
+(u)bamlord
+(p)26458
+(e)|
+(+)Basketball hoops now send an mechcomp output and are thus even more illegal.
 (t)sat apr 25 26
 (u)Lorrmaster
 (p)26361

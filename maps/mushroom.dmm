@@ -22176,7 +22176,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/item/reagent_containers/applicator/glue,
+/obj/item/reagent_containers/applicator/stick/glue,
 /turf/simulated/floor/plating/scorched,
 /area/station/crew_quarters/clown)
 "naj" = (
