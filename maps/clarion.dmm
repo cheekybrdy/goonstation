@@ -13230,6 +13230,12 @@
 	pixel_x = 0;
 	pixel_y = -22
 	},
+/obj/item/device/prisoner_scanner{
+	pixel_x = -2
+	},
+/obj/item/wrench{
+	pixel_x = -1
+	},
 /turf/simulated/floor,
 /area/station/security/secwing)
 "eJx" = (
@@ -18454,10 +18460,6 @@
 	pixel_x = 7;
 	pixel_y = -3
 	},
-/obj/machinery/recharger{
-	pixel_x = -31;
-	pixel_y = 4
-	},
 /turf/simulated/floor,
 /area/station/security/secwing)
 "ijP" = (
@@ -20298,13 +20300,8 @@
 /area/station/engine/substation/east)
 "jzI" = (
 /obj/table/reinforced/auto,
-/obj/item/device/prisoner_scanner{
-	pixel_x = -2;
-	pixel_y = 67
-	},
-/obj/item/wrench{
-	pixel_x = -1;
-	pixel_y = 65
+/obj/machinery/recharger{
+	pixel_y = 4
 	},
 /turf/simulated/floor,
 /area/station/security/secwing)
