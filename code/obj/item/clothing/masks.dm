@@ -57,6 +57,9 @@
 			src.vchange = W
 			W.set_loc(src)
 			user.u_equip(W)
+			if(user.get_slot_from_item(src) == SLOT_WEAR_MASK)
+				for(var/modifier in src.vchange.speech_modifiers)
+					user.ensure_speech_tree().AddSpeechModifier(modifier)
 			return
 	else if (issnippingtool(W))
 		if (src.vchange)
@@ -69,6 +72,9 @@
 				return
 			user.show_text("You remove [src.vchange] from [src].", "green")
 			user.put_in_hand_or_drop(src.vchange)
+			if(user.get_slot_from_item(src) == SLOT_WEAR_MASK)
+				for(var/modifier in src.vchange.speech_modifiers)
+					user.ensure_speech_tree().RemoveSpeechModifier(modifier)
 			src.vchange = null
 			return
 		else
