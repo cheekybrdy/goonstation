@@ -196,7 +196,6 @@
 		can_copy = 1
 		can_reclaim = 1
 		can_scramble = 1
-		curable_by_mutadone = 1
 
 /datum/bioEffect/mutantrace/cat
 	name = "Feline Genetics"
