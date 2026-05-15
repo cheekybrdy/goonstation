@@ -194,6 +194,7 @@
 
 /area/toxmoon/plant/reactor
 	name = "Geisel Radiofabrik Decommisioned Power Plant - Reactor"
+	ambient_light = rgb(82, 238, 34)
 	irradiated = 1.5
 
 /mob/living/critter/radthing
@@ -476,3 +477,25 @@
 	setup_healths()
 		add_hh_flesh(src.health_brute, src.health_brute_vuln)
 		add_hh_flesh_burn(src.health_burn, src.health_brute_vuln)
+
+	// 	src.set_dir(get_dir(src, target))
+	// 	var/obj/projectile/P1 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
+	// 	var/obj/projectile/P2 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
+
+	// 		P1.yo = 96
+	// 		P1.xo = 0
+	// 		P2.yo = 96
+	// 		P2.xo = 0
+	// 		P1.set_loc(locate(src.x, src.y+2, src.z))
+	// 		P2.set_loc(locate(src.x+2,src.y+2, src.z))
+	// 		P1.orig_turf = P1.loc //our orig_turf was set in initialize_projectile() but that was before we moved it to the side of the ship
+	// 		P2.orig_turf = P2.loc
+	// 	else
+	// 		P1.die()
+	// 		P2.die()
+	// 		return
+
+	// SPAWN(0)
+	// 	P1.launch()
+	// SPAWN(0)
+	// 	P2.launch()

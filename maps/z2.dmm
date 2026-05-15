@@ -28386,6 +28386,14 @@
 	dir = 4
 	},
 /area/owlery/staffhall)
+"chx" = (
+/obj/effects/harmless_smoke{
+	name = "mist";
+	opacity = 0
+	},
+/obj/machinery/conveyor/toxriver,
+/turf/unsimulated/greek/underworld,
+/area/toxmoon/sewer)
 "chy" = (
 /obj/decal/cleanable/ash,
 /turf/unsimulated/floor/scorched,
@@ -43450,7 +43458,6 @@
 /turf/unsimulated/floor/industrial,
 /area/iomoon/base/underground)
 "dbx" = (
-/obj/river/toxic,
 /obj/machinery/light/small/floor/broken,
 /turf/unsimulated/greek/underworld,
 /area/toxmoon/sewer)
@@ -60890,6 +60897,13 @@
 /obj/item/cloth/towel/clown,
 /turf/unsimulated/greek/underworld,
 /area/toxmoon/sewer)
+"hWR" = (
+/obj/machinery/conveyor/toxriver{
+	dir = 4;
+	entry = 1
+	},
+/turf/unsimulated/greek/underworld,
+/area/toxmoon/sewer)
 "hXs" = (
 /mob/living/critter/zombie/radiation/radproof,
 /obj/fakeobject/pipe{
@@ -61403,6 +61417,13 @@
 	dir = 8
 	},
 /area/centcom/gallery)
+"ioW" = (
+/mob/living/critter/wraith/plaguerat/medium/npc,
+/obj/machinery/conveyor/toxriver{
+	dir = 1
+	},
+/turf/unsimulated/greek/underworld,
+/area/toxmoon/sewer)
 "ioZ" = (
 /obj/landmark{
 	name = "Nuclear-Bomb"
@@ -62441,6 +62462,13 @@
 /area/centcom/offices{
 	icon_state = "blue"
 	})
+"iYu" = (
+/obj/random_item_spawner/gross,
+/obj/machinery/conveyor/toxriver{
+	dir = 6
+	},
+/turf/unsimulated/greek/underworld,
+/area/toxmoon/sewer)
 "iYA" = (
 /obj/decal/cleanable/rust/jen,
 /turf/unsimulated/wall/auto/adventure/overgrown1,
@@ -62538,12 +62566,12 @@
 /turf/unsimulated/floor/plating,
 /area/hospital/underground)
 "jaT" = (
-/obj/river/toxic{
-	dir = 1
-	},
 /obj/effects/harmless_smoke{
 	name = "mist";
 	opacity = 0
+	},
+/obj/machinery/conveyor/toxriver{
+	dir = 1
 	},
 /turf/unsimulated/greek/underworld,
 /area/toxmoon/sewer)
@@ -62592,12 +62620,6 @@
 /obj/storage/closet/welding_supply,
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated/plating,
 /area/toxmoon/plant/upper)
-"jcj" = (
-/obj/river/toxic{
-	dir = 8
-	},
-/turf/unsimulated/greek/underworld,
-/area/toxmoon/sewer)
 "jcn" = (
 /obj/machinery/door/unpowered/wood{
 	desc = "This heavy door has a more ornate lock than the rest.";
@@ -63337,6 +63359,10 @@
 /obj/machinery/light,
 /turf/unsimulated/floor,
 /area/centcom/lounge)
+"jvU" = (
+/obj/machinery/conveyor/toxriver,
+/turf/unsimulated/greek/underworld,
+/area/toxmoon/sewer)
 "jvX" = (
 /obj/decal/cleanable/dirt/dirt4,
 /turf/unsimulated/floor/grime,
@@ -66536,7 +66562,7 @@
 	name = "mist";
 	opacity = 0
 	},
-/obj/river/toxic{
+/obj/machinery/conveyor/toxriver{
 	dir = 1
 	},
 /turf/unsimulated/greek/underworld,
@@ -67231,12 +67257,12 @@
 /area/toxmoon/plant/entrance)
 "lXP" = (
 /obj/landmark/fall/toxmoon/sewer,
-/obj/river/toxic{
-	dir = 4
-	},
 /obj/effects/harmless_smoke{
 	name = "mist";
 	opacity = 0
+	},
+/obj/machinery/conveyor/toxriver{
+	dir = 4
 	},
 /turf/unsimulated/greek/underworld,
 /area/toxmoon/sewer)
@@ -68134,12 +68160,6 @@
 /obj/random_item_spawner/junk/one_or_zero,
 /turf/unsimulated/floor/setpieces/toxmoon/radpool,
 /area/toxmoon/plant/exterior)
-"mBN" = (
-/obj/river/toxic{
-	dir = 9
-	},
-/turf/unsimulated/greek/underworld,
-/area/toxmoon/sewer)
 "mCg" = (
 /obj/table/auto,
 /obj/item/reactor_component/fuel_rod/random_material{
@@ -77042,6 +77062,13 @@
 "sjM" = (
 /turf/unsimulated/floor/white/checker,
 /area/wizard_station)
+"sjN" = (
+/obj/random_item_spawner/gross,
+/obj/machinery/conveyor/toxriver{
+	dir = 1
+	},
+/turf/unsimulated/greek/underworld,
+/area/toxmoon/sewer)
 "sjQ" = (
 /obj/admin_plaque{
 	name = "Sord's Office";
@@ -81578,7 +81605,7 @@
 /turf/unsimulated/floor/plating,
 /area/moon/museum)
 "vpP" = (
-/obj/river/toxic{
+/obj/machinery/conveyor/toxriver{
 	dir = 1
 	},
 /turf/unsimulated/greek/underworld,
@@ -81596,8 +81623,8 @@
 	name = "mist";
 	opacity = 0
 	},
-/obj/river/toxic{
-	dir = 8
+/obj/machinery/conveyor/toxriver{
+	dir = 4
 	},
 /turf/unsimulated/greek/underworld,
 /area/toxmoon/sewer)
@@ -81758,6 +81785,12 @@
 	},
 /turf/unsimulated/floor,
 /area/centcom/lounge)
+"vuS" = (
+/obj/machinery/conveyor/toxriver{
+	dir = 9
+	},
+/turf/unsimulated/greek/underworld,
+/area/toxmoon/sewer)
 "vvb" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -83589,7 +83622,6 @@
 /turf/unsimulated/floor/setpieces/toxmoon/radpool,
 /area/toxmoon/plant/entrance)
 "wAI" = (
-/obj/river/toxic,
 /obj/effects/harmless_smoke{
 	name = "mist";
 	opacity = 0
@@ -84747,7 +84779,7 @@
 /turf/unsimulated/floor/industrial,
 /area/iomoon/base)
 "xlr" = (
-/obj/river/toxic{
+/obj/machinery/conveyor/toxriver{
 	dir = 4
 	},
 /turf/unsimulated/greek/underworld,
@@ -86080,10 +86112,6 @@
 /obj/mapping_helper/mob_spawn/corpse/human/owlery_security/assistant,
 /turf/unsimulated/floor/white,
 /area/owlery/staffhall)
-"xUb" = (
-/obj/river/toxic,
-/turf/unsimulated/greek/underworld,
-/area/toxmoon/sewer)
 "xUe" = (
 /turf/unsimulated/floor/dream/beach{
 	icon_state = "shore-21"
@@ -118729,7 +118757,7 @@ aaa
 sZZ
 sZZ
 qLl
-xlr
+hWR
 qLl
 "}
 (107,1,1) = {"
@@ -154311,7 +154339,7 @@ qLl
 xQj
 xQj
 xQj
-xQj
+xlr
 xQj
 qLl
 qLl
@@ -154613,7 +154641,7 @@ xQj
 xQj
 xQj
 sRL
-xQj
+xlr
 xQj
 xQj
 qLl
@@ -154915,10 +154943,10 @@ qLl
 xQj
 xsv
 xQj
+xlr
 xQj
 xQj
-mBN
-vpP
+vuS
 vpP
 vpP
 vpP
@@ -155220,7 +155248,7 @@ nYJ
 vXR
 vXR
 nbF
-xsv
+iYu
 xQj
 qLl
 qLl
@@ -156120,14 +156148,14 @@ qLl
 vmG
 xQj
 qLl
-xQj
-xQj
+jvU
+jvU
 eVH
 diU
 hVV
 hfb
-xQj
-xQj
+vpP
+vpP
 qLl
 aaa
 dkY
@@ -157630,14 +157658,14 @@ sRL
 qom
 sMj
 qLl
-xQj
-xQj
+jvU
+jvU
 xAS
 diU
 diU
 vLK
-xQj
-xQj
+vpP
+vpP
 qLl
 aaa
 dkY
@@ -159744,8 +159772,8 @@ qLl
 qLl
 xQj
 qLl
-wAI
-xUb
+chx
+jvU
 sCp
 diU
 diU
@@ -161858,14 +161886,14 @@ aaa
 aaa
 aaa
 qLl
-xQj
-xQj
+jvU
+jvU
 rdM
 wIc
 wIc
 hfb
-xsv
-sRL
+sjN
+ioW
 qLl
 aaa
 dkY
@@ -163976,7 +164004,7 @@ xQj
 xQj
 xQj
 xsv
-jcj
+xlr
 xQj
 xQj
 llK

@@ -741,7 +741,7 @@ ABSTRACT_TYPE(/datum/fishing_spot)
 		return result
 
 /datum/fishing_spot/acid_river
-	fishing_atom_type = /obj/river/toxic
+	fishing_atom_type = /obj/machinery/conveyor/toxriver
 	rod_tier_required = 3
 	fish_available = list(/obj/item/reagent_containers/food/fish/goldfish = 30,\
 	/obj/item/reagent_containers/food/fish/carp = 15,\
