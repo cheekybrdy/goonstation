@@ -24,6 +24,7 @@ TYPEINFO(/mob/living/critter/gorilla)
 	is_npc = TRUE
 	no_stamina_stuns = TRUE
 	add_abilities = list(/datum/targetable/critter/roar, /datum/targetable/wrestler/throw/gorilla_fling)
+	has_genes = TRUE
 	var/enraged = FALSE // gorillas that are not already enraged and witness an ally being harmed will switch to aggressive AI
 
 	New()
