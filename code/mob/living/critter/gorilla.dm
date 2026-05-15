@@ -36,7 +36,7 @@ TYPEINFO(/mob/living/critter/gorilla)
 		src.bioHolder.AddNewPoolEffect("strong", scramble=TRUE)
 		src.bioHolder.AddNewPoolEffect("hulk", scramble=TRUE)
 		src.bioHolder.AddNewPoolEffect("monkey", scramble=TRUE)
-		src.bioHolder.AddNewPoolEffect("seamonkey", scramble=TRUE)
+		src.bioHolder.AddNewPoolEffect("seamonkey-loot", scramble=TRUE)
 		APPLY_ATOM_PROPERTY(src, PROP_MOB_STUN_RESIST, "gorilla", 25)
 		APPLY_ATOM_PROPERTY(src, PROP_MOB_STUN_RESIST_MAX, "gorilla", 25)
 
