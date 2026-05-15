@@ -47636,6 +47636,7 @@
 	icon_state = "chair_couch-blue";
 	name = "ratty blue couch"
 	},
+/obj/landmark/spawner/gorilla/one_in_twenty,
 /turf/simulated/floor/grass,
 /area/station/medical/dome)
 "qXG" = (

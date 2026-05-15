@@ -36263,6 +36263,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
+"dWT" = (
+/obj/landmark/spawner/gorilla/one_in_twenty,
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/medical/dome)
 "dWU" = (
 /obj/machinery/door/poddoor/pyro/shutters{
 	density = 0;
@@ -105541,7 +105547,7 @@ sSa
 hvo
 lDv
 dhj
-dhj
+dWT
 qBE
 wQD
 aah

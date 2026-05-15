@@ -512,6 +512,16 @@ var/global/list/job_start_locations = list()
 	icon_state = "artifact_10"
 	spawnchance = 10
 
+/obj/landmark/spawner/gorilla
+	name = "Gorilla Spawner"
+	icon_state = "gorilla_spawn"
+	type_to_spawn = /mob/living/critter/gorilla
+
+/obj/landmark/spawner/gorilla/one_in_twenty
+	name = "Gorilla Spawn (5%)"
+	icon_state = "gorilla_spawn_20"
+	spawnchance = 5
+
 /* ===== LRT Landmarks ===== */
 
 // consider refactoring to be associative the other way around later

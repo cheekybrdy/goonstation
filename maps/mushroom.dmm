@@ -22646,6 +22646,7 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
+/obj/landmark/spawner/gorilla/one_in_twenty,
 /turf/simulated/floor/grass,
 /area/station/medical/dome)
 "nmX" = (

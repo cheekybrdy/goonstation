@@ -25131,6 +25131,12 @@
 /obj/cable,
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/radio/bathroom)
+"dla" = (
+/obj/landmark/spawner/gorilla/one_in_twenty,
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/medical/dome)
 "dlD" = (
 /obj/item/currency/spacecash/thousand,
 /obj/item/tank/oxygen,
@@ -90701,7 +90707,7 @@ aif
 amm
 alm
 aaU
-amm
+dla
 iMW
 acx
 deR

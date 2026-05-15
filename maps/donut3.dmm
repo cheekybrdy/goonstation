@@ -54848,6 +54848,10 @@
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/white,
 /area/station/medical/cdc)
+"raF" = (
+/obj/landmark/spawner/gorilla/one_in_twenty,
+/turf/simulated/floor/grass,
+/area/station/medical/dome)
 "raK" = (
 /turf/simulated/floor/carpet/red/fancy/edge/east,
 /area/station/maintenance/outer/north)
@@ -130269,7 +130273,7 @@ pMQ
 bMe
 pMQ
 abr
-pMQ
+raF
 ruQ
 aEJ
 wNT

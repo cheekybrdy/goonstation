@@ -73822,6 +73822,12 @@
 "xfw" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/ranch)
+"xfK" = (
+/obj/landmark/spawner/gorilla/one_in_twenty,
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/medical/dome)
 "xgb" = (
 /obj/cable/orange{
 	icon_state = "1-2"
@@ -115528,7 +115534,7 @@ cYe
 daa
 uKJ
 ddd
-ddd
+xfK
 dgl
 ddg
 cuW

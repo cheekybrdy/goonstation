@@ -20620,6 +20620,7 @@
 /obj/shrub{
 	dir = 1
 	},
+/obj/landmark/spawner/gorilla/one_in_twenty,
 /turf/simulated/floor/grass{
 	name = "astroturf"
 	},
