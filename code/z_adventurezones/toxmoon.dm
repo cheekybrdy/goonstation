@@ -397,8 +397,7 @@
 	Crossed(atom/movable/AM as mob|obj)
 		..()
 		if(active) return
-		active = TRUE
-		for(var/obj/boss_spawn_trigger/T in by_type[/obj/boss_spawn_trigger])
+		for(var/obj/boss_spawn_trigger/T in world)
 			if (T.id == src.id)
 				T.active = TRUE
 		for(var/obj/machinery/door/poddoor/P in by_type[/obj/machinery/door]) //robbed checkpoint bot code
@@ -408,6 +407,7 @@
 						P.close()
 		for(spawn_location in range(10))
 			SpawnBoss(get_turf(spawn_location))
+		active = TRUE
 
 	proc/SpawnBoss(spawn_point = get_turf(src), height = 7, use_shadow=TRUE, boss_type=boss_path) //wowwie more ripped code
 		logTheThing(LOG_COMBAT, src, "toxmoon boss summoned at [log_loc(src)].")
