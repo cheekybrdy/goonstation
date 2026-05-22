@@ -26498,6 +26498,20 @@
 	},
 /turf/unsimulated/floor/grey,
 /area/afterlife/heaven)
+"bZx" = (
+/obj/storage/secure/crate/bee{
+	desc = "A crate with a picture of an owl on it. Hoot.";
+	name = "Owl crate"
+	},
+/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
+/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
+/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
+/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
+/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
+/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
+/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
+/turf/unsimulated/floor/plating,
+/area/owlery/staffhall)
 "bZy" = (
 /turf/unsimulated/floor/carpet{
 	dir = 10;
@@ -27837,6 +27851,12 @@
 	dir = 4
 	},
 /area/meat_derelict/entry)
+"cfx" = (
+/obj/table/auto,
+/obj/item/reagent_containers/applicator/condiment/shaker/salt,
+/obj/item/kitchen/utensil/knife,
+/turf/unsimulated/floor/white,
+/area/shuttle/john/owlery)
 "cfy" = (
 /turf/unsimulated/floor/orangeblack/side{
 	dir = 4
@@ -36431,6 +36451,11 @@
 	},
 /turf/unsimulated/floor/black,
 /area/owlery/gangzone)
+"cHy" = (
+/obj/stool/chair/comfy/shuttle/brown,
+/obj/item/reagent_containers/applicator/condiment/bottle/mustard,
+/turf/unsimulated/floor/shuttle/yellow,
+/area/shuttle/john/owlery)
 "cHB" = (
 /obj/item/device/audio_log/radioship/small,
 /obj/item/reagent_containers/food/drinks/mug/random_color,
@@ -61328,20 +61353,6 @@
 	},
 /turf/space,
 /area/watchful_eye_sensor)
-"ing" = (
-/obj/storage/secure/crate/bee{
-	desc = "A crate with a picture of an owl on it. Hoot.";
-	name = "Owl crate"
-	},
-/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
-/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
-/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
-/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
-/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
-/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
-/obj/item/reagent_containers/food/snacks/ingredient/egg/critter/owl,
-/turf/unsimulated/floor/plating,
-/area/owlery/staffhall)
 "inj" = (
 /obj/fakeobject/pipe{
 	desc = "The air from it smells faintly of mildew.";
@@ -63250,17 +63261,6 @@
 /obj/decal/cleanable/blood,
 /turf/unsimulated/floor,
 /area/watchful_eye_sensor)
-"jtE" = (
-/obj/item/paper/book/from_file/the_trial{
-	pixel_x = -8;
-	pixel_y = 6
-	},
-/obj/item/paper{
-	info = "\"A member of an insidious race of calcium-based beings, known to cleverly hide under of the flesh of carbon-based organisms. Their presence can only be revealed via special rays of radiation or certain medical procedures.\"";
-	name = "Skeleton.png"
-	},
-/turf/unsimulated/floor/wood/two,
-/area/centcom/offices/studenterhue)
 "jtH" = (
 /obj/stool/chair/office/syndie{
 	dir = 1
@@ -66086,6 +66086,17 @@
 /obj/random_item_spawner/junk/one_or_zero,
 /turf/unsimulated/floor/setpieces/toxmoon/radpool,
 /area/toxmoon/plant/lake)
+"lgD" = (
+/obj/item/paper/book/from_file/the_trial{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/obj/item/paper{
+	info = "\"A member of an insidious race of calcium-based beings, known to cleverly hide under of the flesh of carbon-based organisms. Their presence can only be revealed via special rays of radiation or certain medical procedures.\"";
+	name = "Skeleton.png"
+	},
+/turf/unsimulated/floor/wood/two,
+/area/centcom/offices/studenterhue)
 "lhd" = (
 /turf/unsimulated/floor/blackwhite{
 	dir = 4
@@ -66763,6 +66774,27 @@
 	icon_state = "shore-1"
 	},
 /area/titlescreen)
+"lFb" = (
+/obj/table/reinforced/bar/auto,
+/obj/item/reagent_containers/applicator/condiment/shaker/salt{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/applicator/condiment/bottle/ketchup{
+	pixel_x = 4;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/applicator/condiment/bottle/mustard{
+	name = "moostard bottle";
+	pixel_x = -2;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/applicator/condiment/shaker/pepper{
+	pixel_x = 6;
+	pixel_y = 2
+	},
+/turf/unsimulated/outdoors/grass,
+/area/void_diner)
 "lFq" = (
 /obj/stool/bench/blue/auto,
 /turf/unsimulated/floor/arrival{
@@ -72343,11 +72375,6 @@
 	},
 /turf/unsimulated/floor/carpet/red/decal,
 /area/centcom/offices/grifflez)
-"pln" = (
-/obj/stool/chair/comfy/shuttle/brown,
-/obj/item/reagent_containers/applicator/condiment/bottle/mustard,
-/turf/unsimulated/floor/shuttle/yellow,
-/area/shuttle/john/owlery)
 "plw" = (
 /turf/unsimulated/wall/generic{
 	desc = "It's sealed shut.";
@@ -75553,27 +75580,6 @@
 	},
 /turf/unsimulated/wall/auto/lead/blue,
 /area/centcom/lobby)
-"rsz" = (
-/obj/table/reinforced/bar/auto,
-/obj/item/reagent_containers/applicator/condiment/shaker/salt{
-	pixel_x = -6;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/applicator/condiment/bottle/ketchup{
-	pixel_x = 4;
-	pixel_y = 10
-	},
-/obj/item/reagent_containers/applicator/condiment/bottle/mustard{
-	name = "moostard bottle";
-	pixel_x = -2;
-	pixel_y = 5
-	},
-/obj/item/reagent_containers/applicator/condiment/shaker/pepper{
-	pixel_x = 6;
-	pixel_y = 2
-	},
-/turf/unsimulated/outdoors/grass,
-/area/void_diner)
 "rsL" = (
 /obj/mesh/catwalk{
 	dir = 6
@@ -78124,6 +78130,15 @@
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/unsimulated/floor/engine,
 /area/shuttle/merchant_shuttle/right_centcom/cogmap2)
+"sUy" = (
+/obj/spacevine{
+	icon_state = "vine-light2"
+	},
+/mob/living/critter/gorilla/carl,
+/turf/unsimulated/floor/green/side{
+	dir = 1
+	},
+/area/crater/biodome/north)
 "sVQ" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -86484,12 +86499,6 @@
 	},
 /turf/unsimulated/floor/grime,
 /area/marsoutpost)
-"ybP" = (
-/obj/table/auto,
-/obj/item/reagent_containers/applicator/condiment/shaker/salt,
-/obj/item/kitchen/utensil/knife,
-/turf/unsimulated/floor/white,
-/area/shuttle/john/owlery)
 "ybQ" = (
 /obj/decal/cleanable/blood,
 /obj/mapping_helper/mob_spawn/corpse/human/owlery_security/assistant,
@@ -88899,7 +88908,7 @@ bDs
 cIf
 cJE
 hTr
-ybP
+cfx
 cic
 aBL
 aBL
@@ -89808,7 +89817,7 @@ cJD
 cKh
 cic
 aBL
-pln
+cHy
 cFc
 cMR
 cnw
@@ -101251,7 +101260,7 @@ cnw
 cnw
 bBm
 aBY
-ing
+bZx
 chS
 aBY
 cwN
@@ -105551,7 +105560,7 @@ uVv
 pyP
 iTT
 tKt
-rsz
+lFb
 jlN
 tKt
 tKt
@@ -122497,7 +122506,7 @@ wTN
 aMc
 aMJ
 aML
-aOc
+sUy
 aOY
 nyQ
 aQx
@@ -158744,7 +158753,7 @@ seL
 gJV
 wel
 rJY
-jtE
+lgD
 poK
 wel
 dEo
