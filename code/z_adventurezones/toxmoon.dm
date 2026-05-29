@@ -383,6 +383,7 @@
 	invisibility = INVIS_ALWAYS
 	anchored = ANCHORED
 	density = 0
+	var/id = "toxmoon_boss"
 
 /obj/boss_spawn_trigger
 	icon = 'icons/misc/mark.dmi'
@@ -390,24 +391,25 @@
 	invisibility = INVIS_ALWAYS
 	anchored = ANCHORED
 	density = 0
-	var/active = 0
+	var/active = 0 // we don't just delete in case its a arena that resets instead of just being a one-off spawner
 	var/id = "toxmoon_boss"
 	var/boss_path = /mob/living/critter/noxia_abomination
 	var/spawn_location = /obj/boss_spawn_marker
 	Crossed(atom/movable/AM as mob|obj)
+
+		if(!active)
+			active = TRUE
+			for(var/obj/boss_spawn_trigger/T in world)
+				if (T.id == src.id)
+					T.active = TRUE
+			for(var/obj/machinery/door/poddoor/P in by_type[/obj/machinery/door]) //robbed checkpoint bot code
+				if (P.id == src.id)
+					if (!P.density)
+						SPAWN( 0 )
+							P.close()
+			for(spawn_location in src.area)
+				SpawnBoss(get_turf(spawn_location))
 		..()
-		if(active) return
-		for(var/obj/boss_spawn_trigger/T in world)
-			if (T.id == src.id)
-				T.active = TRUE
-		for(var/obj/machinery/door/poddoor/P in by_type[/obj/machinery/door]) //robbed checkpoint bot code
-			if (P.id == src.id)
-				if (!P.density)
-					SPAWN( 0 )
-						P.close()
-		for(spawn_location in range(10))
-			SpawnBoss(get_turf(spawn_location))
-		active = TRUE
 
 	proc/SpawnBoss(spawn_point = get_turf(src), height = 7, use_shadow=TRUE, boss_type=boss_path) //wowwie more ripped code
 		logTheThing(LOG_COMBAT, src, "toxmoon boss summoned at [log_loc(src)].")
@@ -464,6 +466,7 @@
 	isFlying = TRUE // on da ceilin
 	event_handler_flags = IMMUNE_TRENCH_WARP
 	anchored = TRUE
+	ai_type = /datum/aiHolder/ranged
 
 	New()
 		..()
