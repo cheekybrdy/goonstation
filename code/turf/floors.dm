@@ -657,6 +657,12 @@
 /turf/simulated/floor/yellowblack/corner
 	icon_state = "yellowblackcorner"
 
+/turf/simulated/floor/yellowwhite
+	icon_state = "yellowwhite"
+
+/turf/simulated/floor/yellowwhite/corner
+	icon_state = "yellowwhitecorner"
+
 /////////////////////////////////////////
 
 /turf/simulated/floor/orange
@@ -668,20 +674,38 @@
 /turf/simulated/floor/orange/corner
 	icon_state = "orangecorner"
 
+/turf/simulated/floor/orange/checker
+	icon_state = "orangechecker"
+
 
 /turf/simulated/floor/orangeblack
-	icon_state = "fullcaution"
-
-/turf/simulated/floor/orangeblack/side
-	icon_state = "caution"
-
-/turf/simulated/floor/orangeblack/side/white
-	icon_state = "cautionwhite"
+	icon_state = "orangeblack"
 
 /turf/simulated/floor/orangeblack/corner
+	icon_state = "orangeblackcorner"
+
+
+/turf/simulated/floor/orangewhite
+	icon_state = "orangewhite"
+
+/turf/simulated/floor/orangewhite/corner
+	icon_state = "orangewhitecorner"
+
+/////////////////////////////////////////
+
+/turf/simulated/floor/caution
+	icon_state = "fullcaution"
+
+/turf/simulated/floor/caution/side
+	icon_state = "caution"
+
+/turf/simulated/floor/caution/side/white
+	icon_state = "cautionwhite"
+
+/turf/simulated/floor/caution/corner
 	icon_state = "cautioncorner"
 
-/turf/simulated/floor/orangeblack/corner/white
+/turf/simulated/floor/caution/corner/white
 	icon_state = "cautionwhitecorner"
 
 /////////////////////////////////////////
