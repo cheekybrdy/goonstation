@@ -506,19 +506,13 @@
 /turf/simulated/floor/darkblue
 	icon_state = "fulldblue"
 
-/turf/simulated/floor/darkblue/checker
-	icon_state = "blue-dblue"
-
-/turf/simulated/floor/darkblue/checker/other
-	icon_state = "blue-dblue2"
-
 /turf/simulated/floor/darkblue/side
 	icon_state = "dblue"
 
 /turf/simulated/floor/darkblue/corner
 	icon_state = "dbluecorner"
 
-/turf/simulated/floor/darkblue/checker/white
+/turf/simulated/floor/darkblue/checker
 	icon_state = "dbluechecker"
 
 /turf/simulated/floor/darkblueblack
@@ -692,9 +686,6 @@
 	icon_state = "orangewhitecorner"
 
 /////////////////////////////////////////
-
-/turf/simulated/floor/caution
-	icon_state = "fullcaution"
 
 /turf/simulated/floor/caution/side
 	icon_state = "caution"
@@ -904,6 +895,15 @@ DEFINE_FLOORS(twotone/white,
 
 DEFINE_FLOORS(twotone/black,
 	icon_state = "twotone_black")
+
+DEFINE_FLOORS(twotone/orange,
+	icon_state = "twotone_orange")
+
+DEFINE_FLOORS(twotone/dblue,
+	icon_state = "twotone_dblue")
+
+DEFINE_FLOORS(twotone/dpurple,
+	icon_state = "twotone_dpurple")
 
 /////////////////////////////////////////
 

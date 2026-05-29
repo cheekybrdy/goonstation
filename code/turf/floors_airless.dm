@@ -382,12 +382,6 @@
 /turf/simulated/floor/airless/darkblue
 	icon_state = "fulldblue"
 
-/turf/simulated/floor/airless/darkblue/checker
-	icon_state = "blue-dblue"
-
-/turf/simulated/floor/airless/darkblue/checker/other
-	icon_state = "blue-dblue2"
-
 /turf/simulated/floor/airless/darkblue/side
 	icon_state = "dblue"
 
@@ -564,9 +558,6 @@
 	icon_state = "orangewhitecorner"
 
 /////////////////////////////////////////
-
-/turf/simulated/floor/airless/caution
-	icon_state = "fullcaution"
 
 /turf/simulated/floor/airless/caution/side
 	icon_state = "caution"

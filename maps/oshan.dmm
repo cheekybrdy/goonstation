@@ -5960,11 +5960,11 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/north)
 "aBS" = (
-/turf/simulated/floor/orangeblack/side,
+/turf/simulated/floor/caution/side,
 /area/station/hallway/primary/north)
 "aBT" = (
 /obj/machinery/light/incandescent/netural,
-/turf/simulated/floor/orangeblack/side,
+/turf/simulated/floor/caution/side,
 /area/station/hallway/primary/north)
 "aBV" = (
 /turf/simulated/floor,
@@ -6238,14 +6238,14 @@
 /turf/simulated/floor/sanitary,
 /area/station/medical/morgue)
 "aDz" = (
-/turf/simulated/floor/orangeblack/side/white{
+/turf/simulated/floor/caution/side/white{
 	dir = 1
 	},
 /area/station/science/teleporter)
 "aDA" = (
 /obj/reagent_dispensers/foamtank,
 /obj/item/extinguisher,
-/turf/simulated/floor/orangeblack/side/white{
+/turf/simulated/floor/caution/side/white{
 	dir = 1
 	},
 /area/station/science/teleporter)
@@ -6259,13 +6259,13 @@
 /obj/cable{
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/orangeblack/side/white{
+/turf/simulated/floor/caution/side/white{
 	dir = 1
 	},
 /area/station/science/teleporter)
 "aDD" = (
 /obj/storage/crate/adventure,
-/turf/simulated/floor/orangeblack/side/white{
+/turf/simulated/floor/caution/side/white{
 	dir = 5
 	},
 /area/station/science/teleporter)
@@ -6666,7 +6666,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/orangeblack/side/white{
+/turf/simulated/floor/caution/side/white{
 	dir = 8
 	},
 /area/station/science/teleporter)
@@ -6818,7 +6818,7 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/orangeblack/side/white{
+/turf/simulated/floor/caution/side/white{
 	dir = 8
 	},
 /area/station/science/teleporter)
@@ -6911,17 +6911,17 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/quartermaster/refinery)
 "aGe" = (
-/turf/simulated/floor/orangeblack/side/white{
+/turf/simulated/floor/caution/side/white{
 	dir = 10
 	},
 /area/station/science/teleporter)
 "aGf" = (
-/turf/simulated/floor/orangeblack/side/white,
+/turf/simulated/floor/caution/side/white,
 /area/station/science/teleporter)
 "aGg" = (
 /obj/storage/closet/emergency,
 /obj/machinery/light/incandescent/cool,
-/turf/simulated/floor/orangeblack/side/white,
+/turf/simulated/floor/caution/side/white,
 /area/station/science/teleporter)
 "aGh" = (
 /obj/machinery/atmospherics/pipe/manifold{
@@ -7178,7 +7178,7 @@
 /obj/disposalpipe/segment/brig{
 	dir = 4
 	},
-/turf/simulated/floor/orangeblack/side{
+/turf/simulated/floor/caution/side{
 	dir = 1
 	},
 /area/station/hallway/primary/east)
@@ -7187,7 +7187,7 @@
 /obj/disposalpipe/segment/brig{
 	dir = 4
 	},
-/turf/simulated/floor/orangeblack/side{
+/turf/simulated/floor/caution/side{
 	dir = 1
 	},
 /area/station/hallway/primary/east)
@@ -14780,7 +14780,7 @@
 /obj/item/device/radio/headset/multifreq,
 /obj/item/device/radio/headset/multifreq,
 /obj/item/device/radio/headset/multifreq,
-/turf/simulated/floor/orangeblack/side/white,
+/turf/simulated/floor/caution/side/white,
 /area/station/science/teleporter)
 "bug" = (
 /obj/decal/stage_edge{
@@ -15608,7 +15608,7 @@
 "bxG" = (
 /obj/machinery/light/incandescent/netural,
 /obj/disposalpipe/segment/morgue,
-/turf/simulated/floor/orangeblack/side{
+/turf/simulated/floor/caution/side{
 	dir = 8
 	},
 /area/station/hallway/primary/south)
@@ -15769,7 +15769,7 @@
 /area/station/quartermaster/office)
 "byx" = (
 /obj/disposalpipe/segment/morgue,
-/turf/simulated/floor/orangeblack/side{
+/turf/simulated/floor/caution/side{
 	dir = 8
 	},
 /area/station/hallway/primary/south)
@@ -20592,7 +20592,7 @@
 /obj/table/reinforced/auto,
 /obj/item/storage/box/trackimp_kit,
 /obj/item/hand_labeler,
-/turf/simulated/floor/orangeblack/side/white,
+/turf/simulated/floor/caution/side/white,
 /area/station/science/teleporter)
 "bWo" = (
 /obj/table/reinforced/auto,
@@ -20602,7 +20602,7 @@
 /obj/item/device/light/glowstick,
 /obj/item/device/gps,
 /obj/item/device/gps,
-/turf/simulated/floor/orangeblack/side/white{
+/turf/simulated/floor/caution/side/white{
 	dir = 6
 	},
 /area/station/science/teleporter)
@@ -29660,7 +29660,7 @@
 	dir = 4
 	},
 /obj/machinery/firealarm/directional/north,
-/turf/simulated/floor/orangeblack/side{
+/turf/simulated/floor/caution/side{
 	dir = 1
 	},
 /area/station/hallway/primary/east)
@@ -33765,7 +33765,7 @@
 /turf/simulated/floor/grime,
 /area/diner/bathroom)
 "kve" = (
-/turf/simulated/floor/orangeblack/side/white{
+/turf/simulated/floor/caution/side/white{
 	dir = 8
 	},
 /area/station/science/teleporter)
@@ -46845,7 +46845,7 @@
 /obj/machinery/light/incandescent/cool,
 /obj/machinery/firealarm/directional/north,
 /obj/storage/closet/fire,
-/turf/simulated/floor/orangeblack/side/white{
+/turf/simulated/floor/caution/side/white{
 	dir = 1
 	},
 /area/station/science/teleporter)
@@ -48440,7 +48440,7 @@
 /obj/machinery/camera/directional/west{
 	pixel_y = -10
 	},
-/turf/simulated/floor/orangeblack/side/white{
+/turf/simulated/floor/caution/side/white{
 	dir = 9
 	},
 /area/station/science/teleporter)
