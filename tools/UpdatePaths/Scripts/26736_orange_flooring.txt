@@ -13,3 +13,4 @@
 /turf/unsimulated/floor/orangeblack/side/white : /turf/unsimulated/floor/caution/side/white{@OLD}
 /turf/simulated/floor/darkblue/checker/white : /turf/simulated/floor/darkblue/checker{@OLD}
 /turf/simulated/floor/dblue/checker : /turf/simulated/floor/darkblue/checker{@OLD}
+/turf/simulated/floor/darkblue/checker/other : /turf/simulated/floor/darkblue/checker{@OLD}
