@@ -293,7 +293,7 @@
 /area/noGenerate)
 "vz" = (
 /obj/decal/stripe_caution,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/prefab/adrift_cargorouter)
 "vM" = (
 /obj/machinery/disposal/transport{
@@ -416,7 +416,7 @@
 /area/prefab/adrift_cargorouter)
 "Eo" = (
 /obj/machinery/manufacturer/qm,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/prefab/adrift_cargorouter)
 "Er" = (
 /obj/disposaloutlet{

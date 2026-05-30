@@ -4127,14 +4127,14 @@
 	dir = 1;
 	input_stage = 2
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/buddyfactory)
 "asK" = (
 /obj/machinery/buddyfactory{
 	dir = 1;
 	input_stage = 3
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/buddyfactory)
 "asL" = (
 /obj/rack,
@@ -4160,7 +4160,7 @@
 	icon_state = "fab_robot";
 	name = "janky machine"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/buddyfactory)
 "asN" = (
 /obj/decal{
@@ -4236,13 +4236,13 @@
 	icon_state = "factory_arm_broken";
 	name = "broken robot arm"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/buddyfactory)
 "atf" = (
 /obj/machinery/buddyfactory{
 	input_stage = 2
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/buddyfactory)
 "atg" = (
 /obj/rack,
@@ -4251,7 +4251,7 @@
 /turf/simulated/floor,
 /area/buddyfactory)
 "ath" = (
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/buddyfactory)
 "ati" = (
 /obj/cable{
@@ -4468,7 +4468,7 @@
 	icon_state = "factory_arm_broken";
 	name = "broken robot arm"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/buddyfactory)
 "atV" = (
 /obj/machinery/light{
@@ -4489,7 +4489,7 @@
 /area/buddyfactory)
 "atZ" = (
 /obj/machinery/buddyfactory,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/buddyfactory)
 "aua" = (
 /obj/fakeobject{
@@ -4602,7 +4602,7 @@
 /obj/machinery/door/airlock/pyro/external{
 	dir = 8
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/buddyfactory)
 "auA" = (
 /obj/fakeobject/flock/antenna/broken{
@@ -6021,7 +6021,7 @@
 /area/abandonedmedicalship)
 "aHH" = (
 /obj/shieldgen,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/h7/storage)
 "aHI" = (
 /turf/simulated/floor/airless/grime,
@@ -6622,7 +6622,7 @@
 /obj/item/sheet/steel{
 	amount = 10
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/h7/storage)
 "aJG" = (
 /obj/fakeobject/airlock_broken/firelock{
@@ -7139,7 +7139,7 @@
 /obj/storage/crate/medical,
 /obj/item/storage/firstaid/regular,
 /obj/item/storage/firstaid/toxin,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/h7/storage)
 "aLv" = (
 /turf/simulated/floor/caution/side{
@@ -7625,7 +7625,7 @@
 "aMU" = (
 /obj/machinery/manufacturer/mechanic,
 /obj/decal/cleanable/cobweb,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/derelict_ai_sat)
 "aMV" = (
 /obj/fakeobject/airmonitor_broken{
@@ -7699,7 +7699,7 @@
 	layer = 9.1;
 	pixel_x = -10
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/derelict_ai_sat)
 "aNg" = (
 /turf/simulated/floor/caution/side{
@@ -7787,10 +7787,10 @@
 "aNA" = (
 /obj/storage/crate,
 /obj/item/rcd_ammo,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/h7/storage)
 "aNB" = (
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/derelict_ai_sat)
 "aND" = (
 /obj/cable{
@@ -7842,7 +7842,7 @@
 "aNL" = (
 /obj/machinery/disposal,
 /obj/disposalpipe/trunk,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/derelict_ai_sat)
 "aNM" = (
 /obj/storage/crate,
@@ -8021,7 +8021,7 @@
 /obj/cable{
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/h7/computer_core)
 "aOn" = (
 /obj/machinery/door/airlock/pyro/glass/med{
@@ -8070,7 +8070,7 @@
 	desc = "Caution! Science is present!";
 	name = "research caution sign"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/h7/storage)
 "aOv" = (
 /obj/fakeobject/skeleton{
@@ -8153,7 +8153,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/h7/computer_core)
 "aOK" = (
 /turf/simulated/floor/caution/south,
@@ -8237,7 +8237,7 @@
 "aOW" = (
 /obj/storage/crate,
 /obj/item/cable_coil,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/h7/storage)
 "aOX" = (
 /obj/fakeobject/pipe{
@@ -15809,7 +15809,7 @@
 	dir = 5;
 	icon_state = "xtra_bigstripe-corner2"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/radiostation/teleporter)
 "cMo" = (
 /obj/table/reinforced/bar/auto,
@@ -16448,7 +16448,7 @@
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 1
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/radiostation/teleporter)
 "enX" = (
 /obj/decal/tile_edge/stripe/extra_big{
@@ -17347,7 +17347,7 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/radiostation/teleporter)
 "gAT" = (
 /obj/table/endtable_honey,
@@ -17425,7 +17425,7 @@
 	name = "Drone Computer Core"
 	},
 /obj/mapping_helper/airlock/aiDisabler,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/helldrone)
 "gNH" = (
 /obj/fakeobject/pipe{
@@ -19355,7 +19355,7 @@
 	name = "Drone Computer Core"
 	},
 /obj/mapping_helper/airlock/aiDisabler,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/helldrone/core)
 "luF" = (
 /obj/lattice{
@@ -20035,7 +20035,7 @@
 	dir = 9;
 	icon_state = "xtra_bigstripe-corner2"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/radiostation/teleporter)
 "mOG" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
@@ -22234,7 +22234,7 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/radiostation/teleporter)
 "sao" = (
 /obj/fakeobject{
@@ -24458,7 +24458,7 @@
 /turf/space,
 /area/abandonedmedicalship)
 "xpM" = (
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/radiostation/teleporter)
 "xpZ" = (
 /turf/unsimulated/floor/white,
@@ -24584,7 +24584,7 @@
 /area/diner/hangar)
 "xHN" = (
 /obj/machinery/door/airlock/pyro/external,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/buddyfactory)
 "xIj" = (
 /obj/item/tile/steel,

@@ -12579,11 +12579,11 @@
 /obj/disposalpipe/trunk/mail{
 	dir = 4
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "bzR" = (
 /obj/disposalpipe/segment,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "bzS" = (
 /obj/storage/secure/closet/civilian/hydro,
@@ -12710,7 +12710,7 @@
 	charge = 100;
 	maxcharge = 15000
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "bAE" = (
 /obj/machinery/rkit,
@@ -12741,7 +12741,7 @@
 /turf/simulated/floor/yellow,
 /area/station/engine/elect)
 "bAL" = (
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "bAM" = (
 /obj/cable{
@@ -12843,7 +12843,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "bBu" = (
 /obj/disposalpipe/segment{
@@ -13349,11 +13349,11 @@
 /obj/disposalpipe/trunk{
 	dir = 4
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "bEO" = (
 /obj/machinery/vending/mechanics,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "bEQ" = (
 /obj/cable{
@@ -20698,7 +20698,7 @@
 /obj/mapping_helper/firedoor_spawn,
 /obj/mapping_helper/access/artlab,
 /obj/disposalpipe/segment/vertical,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/science/artifact)
 "fRa" = (
 /obj/item/clothing/head/constructioncone,
@@ -22216,7 +22216,7 @@
 /obj/item/storage/box/lightbox/tubes,
 /obj/item/storage/box/lightbox/tubes,
 /obj/item/device/multitool,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "gLX" = (
 /obj/disposalpipe/segment{
@@ -25948,7 +25948,7 @@
 	icon_state = "1-2"
 	},
 /obj/disposalpipe/junction/right/north,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "iSc" = (
 /obj/machinery/camera/science/directional/east{
@@ -27596,7 +27596,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "jQX" = (
 /obj/cable{
@@ -38054,7 +38054,7 @@
 	},
 /obj/mapping_helper/access/eva,
 /obj/mapping_helper/firedoor_spawn,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "pAU" = (
 /obj/machinery/door/airlock/pyro/external,
@@ -38558,7 +38558,7 @@
 	dir = 4
 	},
 /obj/landmark/start/job/technical_trainee,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "pOX" = (
 /obj/machinery/firealarm/directional/west,
@@ -47856,7 +47856,7 @@
 /area/station/crew_quarters/cafeteria)
 "vlE" = (
 /obj/machinery/alarm/directional/north,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/engine/elect)
 "vlK" = (
 /obj/disposalpipe/segment/mail{

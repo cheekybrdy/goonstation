@@ -17075,7 +17075,7 @@
 	pixel_x = 5;
 	pixel_y = 10
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "bkz" = (
 /obj/rack,
@@ -17093,7 +17093,7 @@
 /obj/machinery/light/emergency{
 	dir = 1
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "bkA" = (
 /obj/storage/crate,
@@ -17393,7 +17393,7 @@
 /obj/machinery/dispenser{
 	pltanks = 0
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "blP" = (
 /obj/machinery/disposal,
@@ -17533,7 +17533,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 6
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "bmz" = (
 /obj/item/storage/belt/utility{
@@ -17560,7 +17560,7 @@
 /obj/table/auto{
 	icon_state = "1"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "bmA" = (
 /obj/machinery/atmospherics/pipe/simple{
@@ -17985,7 +17985,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "bnY" = (
 /obj/cable{
@@ -18129,7 +18129,7 @@
 /obj/machinery/camera/directional/east{
 	pixel_y = -10
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "boJ" = (
 /obj/cable{
@@ -18313,7 +18313,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/apc/autoname_east,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "bpD" = (
 /obj/cable{
@@ -18543,7 +18543,7 @@
 	pixel_x = 9;
 	pixel_y = 2
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "bqh" = (
 /obj/machinery/power/data_terminal,
@@ -18653,7 +18653,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "bqJ" = (
 /obj/machinery/turret,
@@ -45629,7 +45629,7 @@
 "kxn" = (
 /obj/machinery/space_heater,
 /obj/machinery/firealarm/directional/east,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "kxr" = (
 /obj/storage/secure/closet/medical/medicine,
@@ -47387,7 +47387,7 @@
 	dir = 4
 	},
 /obj/machinery/alarm/directional/north,
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "lTS" = (
 /obj/landmark/random_room/size5x3,
@@ -50644,7 +50644,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 9
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "ogp" = (
 /obj/cable{
@@ -53799,7 +53799,7 @@
 	pixel_x = -6;
 	pixel_y = 9
 	},
-/turf/simulated/floor/orangeblack,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "que" = (
 /obj/cable{
