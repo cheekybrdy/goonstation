@@ -43475,7 +43475,9 @@
 /area/station/quartermaster/office)
 "cJO" = (
 /obj/disposalpipe/segment/mail/bent/west,
-/turf/simulated/floor/caution,
+/turf/simulated/floor/caution{
+	dir = 1
+	},
 /area/station/quartermaster/office)
 "cJP" = (
 /turf/simulated/floor/caution,
@@ -43513,12 +43515,16 @@
 /obj/table/reinforced/auto,
 /obj/item/cargotele,
 /obj/item/cargotele,
-/turf/simulated/floor/caution,
+/turf/simulated/floor/caution{
+	dir = 1
+	},
 /area/station/quartermaster/office)
 "cJW" = (
 /obj/disposalpipe/segment/mineral,
 /obj/machinery/computer/announcement/station/cargo,
-/turf/simulated/floor/caution,
+/turf/simulated/floor/caution{
+	dir = 1
+	},
 /area/station/quartermaster/office)
 "cJX" = (
 /obj/machinery/light/emergency{
@@ -47531,7 +47537,9 @@
 /obj/table/reinforced/auto,
 /obj/random_item_spawner/tools,
 /obj/item/reagent_containers/food/drinks/mug/random_color,
-/turf/simulated/floor/caution,
+/turf/simulated/floor/caution{
+	dir = 1
+	},
 /area/station/quartermaster/office)
 "cZm" = (
 /obj/machinery/light/small{
@@ -53509,6 +53517,11 @@
 	},
 /turf/simulated/floor/caution,
 /area/station/maintenance/central)
+"fCU" = (
+/turf/simulated/floor/caution{
+	dir = 6
+	},
+/area/station/quartermaster/office)
 "fDB" = (
 /obj/item/storage/toolbox/mechanical,
 /obj/machinery/firealarm/directional/north,
@@ -64990,7 +65003,9 @@
 /obj/table/reinforced/auto,
 /obj/machinery/phone,
 /obj/noticeboard/persistent/cargo/directional/north,
-/turf/simulated/floor/caution,
+/turf/simulated/floor/caution{
+	dir = 1
+	},
 /area/station/quartermaster/office)
 "pka" = (
 /obj/machinery/atmospherics/binary/valve,
@@ -67451,6 +67466,11 @@
 /obj/machinery/firealarm/directional/east,
 /turf/simulated/floor/specialroom/bar,
 /area/station/security/checkpoint/chapel)
+"rfP" = (
+/turf/simulated/floor/caution{
+	dir = 8
+	},
+/area/station/quartermaster/office)
 "rfU" = (
 /obj/mapping_helper/firedoor_spawn,
 /obj/machinery/door/airlock/pyro/engineering{
@@ -70120,6 +70140,11 @@
 /obj/mapping_helper/access/maint,
 /turf/simulated/floor/plating,
 /area/station/hallway/primary/east)
+"twv" = (
+/turf/simulated/floor/caution{
+	dir = 4
+	},
+/area/station/quartermaster/office)
 "txe" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -72194,6 +72219,11 @@
 	},
 /turf/simulated/floor/black,
 /area/station/crew_quarters/quartersA)
+"vBF" = (
+/turf/simulated/floor/caution{
+	dir = 1
+	},
+/area/station/quartermaster/office)
 "vCd" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -72573,6 +72603,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
+"vVU" = (
+/turf/simulated/floor/caution{
+	dir = 10
+	},
+/area/station/quartermaster/office)
 "vVV" = (
 /obj/reagent_dispensers/foamtank,
 /obj/machinery/atmospherics/pipe/simple/insulated/cold{
@@ -121847,7 +121882,7 @@ cEa
 cFR
 cHk
 mFx
-cJP
+vBF
 cLt
 cMY
 cLr
@@ -122458,8 +122493,8 @@ cOq
 cPN
 cRo
 cSS
-cJP
-cJP
+rfP
+vVU
 cWS
 kZx
 cZp
@@ -123062,8 +123097,8 @@ cOq
 cPP
 cRo
 cSS
-cJP
-cJP
+twv
+fCU
 cWS
 kZx
 cZp

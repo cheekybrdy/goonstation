@@ -688,9 +688,12 @@
 /////////////////////////////////////////
 
 /turf/simulated/floor/caution
+	icon_state = "fullcaution"
+
+/turf/simulated/floor/caution/side
 	icon_state = "caution"
 
-/turf/simulated/floor/caution/white
+/turf/simulated/floor/caution/side/white
 	icon_state = "cautionwhite"
 
 /turf/simulated/floor/caution/corner
