@@ -26502,7 +26502,7 @@
 /turf/unsimulated/floor/caution/corner/white,
 /area/crunch)
 "can" = (
-/turf/unsimulated/floor/caution/side/white,
+/turf/unsimulated/floor/caution/white,
 /area/crunch)
 "cao" = (
 /turf/unsimulated/floor/caution/corner/white{
@@ -26614,7 +26614,7 @@
 /turf/unsimulated/floor/white,
 /area/crunch)
 "caI" = (
-/turf/unsimulated/floor/caution/side/white{
+/turf/unsimulated/floor/caution/white{
 	dir = 4
 	},
 /area/crunch)
@@ -26626,7 +26626,7 @@
 /turf/unsimulated/floor/caution,
 /area/crunch)
 "caK" = (
-/turf/unsimulated/floor/caution/side/white{
+/turf/unsimulated/floor/caution/white{
 	dir = 8
 	},
 /area/crunch)
@@ -26739,7 +26739,7 @@
 	},
 /area/crunch)
 "cbe" = (
-/turf/unsimulated/floor/caution/side/white{
+/turf/unsimulated/floor/caution/white{
 	dir = 1
 	},
 /area/crunch)

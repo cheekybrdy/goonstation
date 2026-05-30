@@ -25612,7 +25612,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/light_switch/north,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 5
 	},
 /area/station/engine/power{
@@ -26176,7 +26176,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 8
 	},
 /area/station/engine/power{
@@ -26197,7 +26197,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 4
 	},
 /area/station/engine/power{
@@ -26812,7 +26812,7 @@
 /turf/simulated/floor/caution/northsouth,
 /area/station/engine/core)
 "bIi" = (
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 8
 	},
 /area/station/engine/power{
@@ -26830,7 +26830,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 4
 	},
 /area/station/engine/power{
@@ -27593,7 +27593,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 4
 	},
 /area/station/engine/power{
@@ -28190,7 +28190,7 @@
 	output = 10000
 	},
 /obj/cable,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 6
 	},
 /area/station/engine/power{
@@ -51967,7 +51967,7 @@
 /obj/cable/orange{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 9
 	},
 /area/station/engine/power{
@@ -52857,7 +52857,7 @@
 	mixerid = "engine_combust";
 	name = "Gas Mixer Control (Combustion Chamber)"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 1
 	},
 /area/station/engine/power{
@@ -52879,7 +52879,7 @@
 	},
 /obj/table/reinforced/auto,
 /obj/machinery/phone,
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/engine/power{
 	name = "Engineering Control Room"
 	})
@@ -54974,7 +54974,7 @@
 /obj/cable/orange{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 1
 	},
 /area/station/engine/power{
@@ -73228,7 +73228,7 @@
 /obj/cable/orange{
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/engine/power{
 	name = "Engineering Control Room"
 	})
@@ -73702,7 +73702,7 @@
 /obj/cable/orange{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 10
 	},
 /area/station/engine/power{

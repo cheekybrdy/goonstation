@@ -3911,7 +3911,9 @@
 /obj/stool/chair/office{
 	dir = 8
 	},
-/turf/simulated/floor/carpet/red/standard/edge/west,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "apv" = (
 /obj/machinery/door/airlock/pyro{
@@ -4026,7 +4028,9 @@
 	},
 /obj/machinery/door/window/westright,
 /obj/machinery/light/small/floor,
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/hallway/primary/west)
 "apI" = (
 /obj/disposalpipe/segment/morgue{
@@ -4225,7 +4229,9 @@
 /obj/stool/chair/comfy{
 	dir = 4
 	},
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "aqy" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
@@ -4234,9 +4240,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/security/checkpoint/podbay)
-"aqz" = (
-/turf/simulated/floor/carpet/red/standard/edge/west,
-/area/station/crew_quarters/radio/news_office)
 "aqA" = (
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/radio/bathroom{
@@ -4248,7 +4251,9 @@
 	dir = 8;
 	name = "camera - news office"
 	},
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "aqD" = (
 /obj/decal/poster/wallsign/escape_right,
@@ -4411,10 +4416,9 @@
 	layer = 9.1;
 	pixel_x = -10
 	},
-/turf/simulated/floor/airless/twotone/dblue,
-/area/station/crew_quarters/radio/news_office)
-"aru" = (
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "arw" = (
 /obj/disposalpipe/segment/mail/horizontal,
@@ -4430,7 +4434,9 @@
 /area/station/crew_quarters/radio/news_office)
 "arx" = (
 /obj/disposalpipe/segment/mail/horizontal,
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "ary" = (
 /obj/disposalpipe/segment/mail/horizontal,
@@ -4676,20 +4682,13 @@
 	dir = 4
 	},
 /area/station/crew_quarters/radio/news_office)
-"asA" = (
-/turf/simulated/floor/carpet/red/standard/edge/north,
-/area/station/crew_quarters/radio/news_office)
 "asB" = (
 /obj/stool/chair/office{
 	dir = 1
 	},
-/turf/simulated/floor/carpet/red/standard/edge/north,
-/area/station/crew_quarters/radio/news_office)
-"asC" = (
-/turf/simulated/floor/carpet/red/standard/innercorner/nw,
-/area/station/crew_quarters/radio/news_office)
-"asD" = (
-/turf/simulated/floor/carpet/red/standard/edge/east,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "asE" = (
 /obj/cable{
@@ -4983,15 +4982,11 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/carpet/red/standard/edge/se,
 /area/station/crew_quarters/radio/news_office)
-"atO" = (
-/turf/simulated/floor/carpet/red/standard/edge/south,
-/area/station/crew_quarters/radio/news_office)
 "atP" = (
 /obj/machinery/light,
-/turf/simulated/floor/carpet/red/standard/edge/south,
-/area/station/crew_quarters/radio/news_office)
-"atQ" = (
-/turf/simulated/floor/carpet/red/standard/edge/se,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "atR" = (
 /obj/stool/chair{
@@ -7042,7 +7037,9 @@
 	device_color = "#32BC2D"
 	},
 /obj/table/wood/auto,
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "aDo" = (
 /obj/cable{
@@ -7159,7 +7156,9 @@
 "aDM" = (
 /obj/submachine/mixing_desk,
 /obj/table/wood/auto,
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "aDP" = (
 /obj/stool/chair/yellow{
@@ -7876,7 +7875,9 @@
 /area/station/engine/engineering)
 "aHc" = (
 /obj/table/wood/auto,
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "aHe" = (
 /obj/machinery/door_control{
@@ -8327,7 +8328,9 @@
 "aJg" = (
 /obj/machinery/phone,
 /obj/table/wood/auto,
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "aJm" = (
 /obj/machinery/atmospherics/binary/pump/active{
@@ -15728,7 +15731,7 @@
 	},
 /obj/machinery/door/window/westright,
 /obj/machinery/light/small/floor,
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/airless/twotone/dblue,
 /area/station/hallway/primary/south)
 "btU" = (
 /obj/storage/crate,
@@ -23696,9 +23699,7 @@
 /obj/window/cubicle{
 	dir = 2
 	},
-/turf/simulated/floor/darkblue/checker{
-	dir = 4
-	},
+/turf/simulated/floor/airless/twotone/dblue,
 /area/station/crew_quarters/market)
 "cds" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced/crystal,
@@ -30358,7 +30359,9 @@
 /obj/machinery/camera/directional/east{
 	pixel_y = 10
 	},
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "eOX" = (
 /obj/machinery/door/airlock/pyro/external{
@@ -34157,7 +34160,9 @@
 "hrB" = (
 /obj/table/wood/auto,
 /obj/machinery/loudspeaker,
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "hrS" = (
 /obj/submachine/cargopad/security,
@@ -35479,7 +35484,9 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/carpet/red/standard/edge/east,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "ivQ" = (
 /obj/disposalpipe/segment/mail/vertical,
@@ -36434,7 +36441,7 @@
 	},
 /obj/mapping_helper/firedoor_spawn,
 /obj/disposalpipe/segment/horizontal,
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/airless/twotone/dblue,
 /area/station/science/artifact)
 "jbW" = (
 /obj/machinery/atmospherics/unary/portables_connector{
@@ -37947,7 +37954,9 @@
 	},
 /obj/table/wood/auto,
 /obj/machinery/loudspeaker,
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "keD" = (
 /obj/cable/orange{
@@ -39354,7 +39363,9 @@
 /area/station/security/secwing)
 "kZl" = (
 /obj/machinery/firealarm/directional/west,
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "kZr" = (
 /obj/lattice{
@@ -39809,7 +39820,9 @@
 /area/station/security/secwing)
 "lsn" = (
 /obj/reagent_dispensers/watertank/fountain,
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "lso" = (
 /obj/table/auto,
@@ -42822,7 +42835,9 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/carpet/red/standard/edge/ne,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "nDw" = (
 /obj/table/wood/auto,
@@ -43860,7 +43875,9 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/carpet/red/standard/edge/east,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "onu" = (
 /turf/simulated/floor/sanitary/white,
@@ -44656,7 +44673,9 @@
 /obj/cable{
 	icon_state = "4-9"
 	},
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "oTh" = (
 /obj/machinery/nanofab/refining,
@@ -46864,7 +46883,9 @@
 /obj/machinery/computer/television/small{
 	pixel_y = 8
 	},
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "qwl" = (
 /obj/disposalpipe/segment/horizontal,
@@ -48068,7 +48089,9 @@
 /obj/cable{
 	icon_state = "1-6"
 	},
-/turf/simulated/floor/carpet/red/standard/edge/east,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "rlK" = (
 /obj/stool/bed,
@@ -49988,7 +50011,7 @@
 	pixel_x = -6;
 	pixel_y = 8
 	},
-/turf/simulated/floor/darkblue/checker,
+/turf/simulated/floor/airless/twotone/dblue,
 /area/station/science/artifact)
 "sKA" = (
 /turf/simulated/wall/auto/supernorn,
@@ -56165,7 +56188,9 @@
 /turf/simulated/floor/grey,
 /area/station/storage/hydroponics)
 "wSk" = (
-/turf/simulated/floor/carpet/red/standard/edge/sw,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "wSn" = (
 /obj/machinery/door/airlock/pyro/command{
@@ -57099,7 +57124,9 @@
 "xyz" = (
 /obj/machinery/disposal,
 /obj/disposalpipe/trunk/west,
-/turf/simulated/floor/airless/twotone/dblue,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "xzv" = (
 /obj/cable{
@@ -57264,7 +57291,9 @@
 "xGt" = (
 /obj/machinery/navbeacon/mule/news_office/west,
 /obj/machinery/camera/directional/south,
-/turf/simulated/floor/carpet/red/standard/edge/south,
+/turf/simulated/floor/airless/twotone/dblue{
+	dir = 4
+	},
 /area/station/crew_quarters/radio/news_office)
 "xGF" = (
 /obj/lattice{
@@ -95596,7 +95625,7 @@ hrB
 aDl
 kZl
 art
-aol
+wSk
 wSk
 ait
 xTH
@@ -95897,8 +95926,8 @@ anm
 aHc
 aDM
 aqx
-aru
-asA
+wSk
+wSk
 xGt
 auF
 auG
@@ -96201,7 +96230,7 @@ qwf
 aHc
 aJg
 asB
-atO
+wSk
 auG
 avC
 awL
@@ -96498,11 +96527,11 @@ akp
 ali
 amg
 anm
-aol
+wSk
 apr
-aqz
+wSk
 apr
-asC
+wSk
 atP
 auG
 eiq
@@ -96804,8 +96833,8 @@ nDa
 omL
 ivC
 rlG
-asD
-atQ
+wSk
+wSk
 auG
 wux
 awN

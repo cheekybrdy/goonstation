@@ -22352,7 +22352,7 @@
 /obj/machinery/networked/teleconsole{
 	dir = 8
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 4
 	},
 /area/station/science/teleporter)
@@ -22690,7 +22690,7 @@
 	dir = 8;
 	tag = ""
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 8
 	},
 /area/station/science/teleporter)
@@ -22716,7 +22716,7 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 4
 	},
 /area/station/science/teleporter)
@@ -23079,7 +23079,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 4
 	},
 /area/station/science/teleporter)
@@ -23551,7 +23551,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 8
 	},
 /area/station/science/teleporter)
@@ -23573,7 +23573,7 @@
 	},
 /obj/cable,
 /obj/machinery/power/data_terminal,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 4
 	},
 /area/station/science/teleporter)
@@ -29286,7 +29286,7 @@
 /area/station/quartermaster/office)
 "ciT" = (
 /obj/landmark/gps_waypoint,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 8
 	},
 /area/station/science/teleporter)
@@ -38431,7 +38431,7 @@
 /obj/cable{
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 8
 	},
 /area/station/science/teleporter)

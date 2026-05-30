@@ -1218,7 +1218,7 @@
 /obj/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/engine/engineering)
 "ams" = (
 /obj/machinery/camera/directional/west{
@@ -5131,7 +5131,7 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 1
 	},
 /area/station/science/teleporter)
@@ -5145,12 +5145,12 @@
 	pixel_y = 21
 	},
 /obj/machinery/disposal/mail/small/autoname/research/telescience/north,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 1
 	},
 /area/station/science/teleporter)
 "aVU" = (
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 1
 	},
 /area/station/science/teleporter)
@@ -5473,7 +5473,7 @@
 /obj/item/paper_bin,
 /obj/item/stamp,
 /obj/item/pen,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 8
 	},
 /area/station/science/teleporter)
@@ -5489,7 +5489,7 @@
 	dir = 4
 	},
 /obj/storage/crate/adventure,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 4
 	},
 /area/station/science/teleporter)
@@ -5597,7 +5597,7 @@
 	pixel_x = -10;
 	tag = ""
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 10
 	},
 /area/station/science/teleporter)
@@ -5607,7 +5607,7 @@
 	icon_state = "4-8"
 	},
 /obj/reagent_dispensers/foamtank,
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/science/teleporter)
 "baP" = (
 /obj/disposalpipe/segment{
@@ -5625,7 +5625,7 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 6
 	},
 /area/station/science/teleporter)
@@ -7538,7 +7538,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/engine/engineering)
 "buE" = (
 /obj/cable{
@@ -8055,7 +8055,7 @@
 /turf/simulated/floor,
 /area/station/security/brig)
 "bzN" = (
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 1
 	},
 /area/station/engine/gravity)
@@ -11187,7 +11187,7 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/science/teleporter)
 "doj" = (
 /obj/machinery/door/airlock/pyro/maintenance{
@@ -12537,7 +12537,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 4
 	},
 /area/station/science/teleporter)
@@ -16320,7 +16320,7 @@
 /obj/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/engine/engineering)
 "gJN" = (
 /obj/cable/blue{
@@ -17649,7 +17649,7 @@
 	name = "Active Particle Phase Matrix"
 	},
 /obj/machinery/alarm/directional/west,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 8
 	},
 /area/station/science/teleporter)
@@ -18313,7 +18313,7 @@
 	pixel_y = 5;
 	pixel_x = 7
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 10
 	},
 /area/station/engine/gravity)
@@ -18483,7 +18483,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/autoname_north,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 5
 	},
 /area/station/science/teleporter)
@@ -18755,7 +18755,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/insulated,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 4
 	},
 /area/station/engine/gravity)
@@ -20700,7 +20700,7 @@
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 6
 	},
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/engine/gravity)
 "jNk" = (
 /obj/machinery/disposal/small,
@@ -21495,7 +21495,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 4
 	},
 /area/station/science/teleporter)
@@ -22246,7 +22246,7 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/engine/engineering)
 "kUn" = (
 /turf/simulated/floor/carpet/blue/fancy/edge/south,
@@ -23920,7 +23920,7 @@
 /obj/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/engine/engineering)
 "lXB" = (
 /obj/lattice{
@@ -26042,7 +26042,7 @@
 /obj/machinery/computer/telescope{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 8
 	},
 /area/station/science/teleporter)
@@ -29128,7 +29128,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/science/teleporter)
 "pyB" = (
 /obj/cable/orange{
@@ -33804,7 +33804,7 @@
 /obj/item/device/gps,
 /obj/item/device/gps,
 /obj/item/device/gps,
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/science/teleporter)
 "sLd" = (
 /obj/machinery/light/small{
@@ -35950,7 +35950,7 @@
 /obj/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 10
 	},
 /area/station/engine/engineering)
@@ -37121,7 +37121,7 @@
 /obj/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side/white,
+turf/simulated/floor/caution/white,
 /area/station/engine/engineering)
 "uLB" = (
 /obj/machinery/light,
@@ -38158,7 +38158,7 @@
 	pixel_x = -25;
 	pixel_y = -4
 	},
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 9
 	},
 /area/station/science/teleporter)
@@ -38836,7 +38836,7 @@
 	},
 /obj/machinery/camera/directional/east,
 /obj/machinery/light,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 6
 	},
 /area/station/engine/gravity)
@@ -39681,7 +39681,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/insulated,
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 5
 	},
 /area/station/engine/gravity)
@@ -41630,7 +41630,7 @@
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay/pharmacy)
 "xUX" = (
-/turf/simulated/floor/caution/side/white{
+turf/simulated/floor/caution/white{
 	dir = 9
 	},
 /area/station/engine/gravity)
