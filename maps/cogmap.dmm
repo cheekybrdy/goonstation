@@ -807,20 +807,6 @@
 "adG" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/crew_quarters/observatory)
-"adI" = (
-/obj/machinery/atmospherics/pipe/simple/insulated/cold{
-	can_rupture = 0
-	},
-/obj/cable{
-	icon_state = "0-2"
-	},
-/obj/cable,
-/obj/cable{
-	icon_state = "0-8"
-	},
-/obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/turf/simulated/floor/plating,
-/area/station/hangar/engine)
 "adJ" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/plating,
@@ -1023,6 +1009,17 @@
 /obj/decal/cleanable/oil,
 /obj/reagent_dispensers/heliumtank,
 /turf/simulated/floor/plating,
+/area/station/crew_quarters/clown)
+"aeF" = (
+/obj/stool/bed,
+/obj/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 1;
+	status = 2
+	},
+/obj/item/paper/book/from_file/the_trial,
+/obj/item/reagent_containers/applicator/stick/glue,
+/turf/simulated/floor/plating/scorched,
 /area/station/crew_quarters/clown)
 "aeG" = (
 /turf/simulated/wall/auto/supernorn,
@@ -5466,21 +5463,6 @@
 	name = "astroturf"
 	},
 /area/station/hydroponics/bay)
-"aBc" = (
-/obj/machinery/computer/atmosphere/mixercontrol{
-	frequency = 1225;
-	id = "engine_combust_control";
-	mixerid = "engine_combust";
-	name = "Gas Mixer Control (Combustion Chamber)"
-	},
-/obj/machinery/power/data_terminal,
-/obj/machinery/status_display{
-	pixel_y = 30
-	},
-/turf/simulated/floor/yellow/side{
-	dir = 1
-	},
-/area/station/engine/monitoring)
 "aBe" = (
 /obj/landmark/gps_waypoint,
 /turf/simulated/floor/wood,
@@ -8764,17 +8746,6 @@
 	},
 /turf/simulated/floor/black,
 /area/station/bridge)
-"aNK" = (
-/obj/stool/bed,
-/obj/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 1;
-	status = 2
-	},
-/obj/item/paper/book/from_file/the_trial,
-/obj/item/reagent_containers/applicator/stick/glue,
-/turf/simulated/floor/plating/scorched,
-/area/station/crew_quarters/clown)
 "aNR" = (
 /obj/storage/secure/closet/command/hos,
 /obj/machinery/light{
@@ -14296,10 +14267,6 @@
 	},
 /turf/simulated/floor/grime,
 /area/station/maintenance/disposal)
-"bip" = (
-/obj/floorpillstatue,
-/turf/simulated/floor/plating,
-/area/station/maintenance/disposal)
 "biq" = (
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
@@ -19042,17 +19009,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/solar/south)
-"bGK" = (
-/obj/machinery/power/data_terminal,
-/obj/cable{
-	icon_state = "0-2"
-	},
-/obj/table/wood/auto,
-/obj/machinery/computer3/generic/personal,
-/turf/simulated/floor/yellow/side{
-	dir = 5
-	},
-/area/station/engine/monitoring)
 "bGL" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/monitoring)
@@ -19816,17 +19772,6 @@
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/engine/engineering/ce)
-"bKE" = (
-/obj/disposalpipe/segment{
-	dir = 4
-	},
-/obj/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/yellow/side{
-	dir = 6
-	},
-/area/station/engine/monitoring)
 "bKM" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 6
@@ -31829,6 +31774,16 @@
 	dir = 5
 	},
 /area/station/hydroponics/bay)
+"dPR" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	name = "Air Hookups"
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/plating,
+/area/station/atmos/hookups/east)
 "dPW" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -32286,10 +32241,6 @@
 	dir = 4
 	},
 /area/station/crew_quarters/market)
-"ebq" = (
-/obj/machinery/door/airlock/pyro/maintenance,
-/turf/simulated/floor/plating,
-/area/station/maintenance/northeast)
 "ebD" = (
 /obj/disposalpipe/segment,
 /obj/cable{
@@ -32386,6 +32337,20 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
 /area/station/mining/staff_room)
+"egH" = (
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/camera/directional/south{
+	pixel_x = -10
+	},
+/turf/simulated/floor/yellow/side{
+	dir = 6
+	},
+/area/station/engine/monitoring)
 "egN" = (
 /obj/landmark/start/job/quartermaster,
 /obj/stool/chair/yellow,
@@ -32540,26 +32505,6 @@
 	dir = 1
 	},
 /area/station/engine/monitoring)
-"elh" = (
-/obj/machinery/door/airlock/pyro/external{
-	dir = 4;
-	name = "AI and Computer Core"
-	},
-/obj/mapping_helper/access/heads,
-/obj/decal/stripe_delivery,
-/obj/forcefield/energyshield/perma/doorlink{
-	desc = "A door-linked force field that prevents gasses from passing through it.";
-	dir = 4;
-	name = "Door-linked Atmospheric Forcefield";
-	powerlevel = 1
-	},
-/obj/mapping_helper/airlock/cycler/manual{
-	cycle_id = "aiairbridge";
-	enter_id = "outer";
-	name = "AI Airbridge"
-	},
-/turf/simulated/floor,
-/area/station/crew_quarters/market)
 "eli" = (
 /obj/table/reinforced/auto,
 /obj/machinery/camera/directional/west{
@@ -33584,17 +33529,6 @@
 	},
 /turf/simulated/floor/yellow,
 /area/station/engine/gas)
-"eMB" = (
-/obj/cable{
-	icon_state = "0-2"
-	},
-/obj/cable,
-/obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/obj/cable{
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/plating,
-/area/station/engine/coldloop)
 "eMD" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -34161,26 +34095,6 @@
 "ffe" = (
 /turf/simulated/floor/shuttlebay,
 /area/station/hangar/medical)
-"fff" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/airlock/pyro/command{
-	dir = 4;
-	name = "Electrical Substation"
-	},
-/obj/mapping_helper/access/heads,
-/obj/mapping_helper/firedoor_spawn,
-/obj/disposalpipe/segment{
-	dir = 4
-	},
-/obj/mapping_helper/airlock/cycler/manual{
-	cycle_id = "aipower";
-	enter_id = "inner";
-	name = "AI Power"
-	},
-/turf/simulated/floor/plating,
-/area/station/turret_protected/ai_upload_foyer)
 "ffW" = (
 /obj/machinery/conveyor/EW{
 	name = "cargo belt - west";
@@ -34492,18 +34406,12 @@
 /turf/simulated/floor/red/side,
 /area/station/security/main)
 "flW" = (
-/obj/cable{
-	icon_state = "4-8"
+/obj/decal/stripe_delivery,
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 1
 	},
-/obj/disposalpipe/segment/mail{
-	dir = 4
-	},
-/obj/machinery/light/emergency,
-/obj/fluid_pipe/straight/waste{
-	dir = 4
-	},
-/turf/simulated/floor/neutral/side,
-/area/station/hallway/primary/east)
+/turf/simulated/floor,
+/area/station/engine/monitoring)
 "fmu" = (
 /obj/landmark/pest,
 /obj/machinery/atmospherics/unary/outlet_injector/active{
@@ -34588,6 +34496,27 @@
 /obj/machinery/power/apc/autoname_west,
 /turf/simulated/floor,
 /area/station/quartermaster/office)
+"foj" = (
+/obj/machinery/door/airlock/pyro/external{
+	dir = 4;
+	name = "AI and Computer Core"
+	},
+/obj/decal/stripe_delivery,
+/obj/forcefield/energyshield/perma/doorlink{
+	desc = "A door-linked force field that prevents gasses from passing through it.";
+	dir = 4;
+	name = "Door-linked Atmospheric Forcefield";
+	powerlevel = 1
+	},
+/obj/mapping_helper/airlock/cycler/manual{
+	cycle_id = "aiairbridge";
+	enter_id = "outer";
+	name = "AI Airbridge"
+	},
+/obj/mapping_helper/access/ai_upload,
+/obj/mapping_helper/access/computer_core,
+/turf/simulated/floor,
+/area/station/crew_quarters/market)
 "foA" = (
 /obj/machinery/door/airlock/pyro/external{
 	name = "Supply Dock Airlock"
@@ -34705,17 +34634,6 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
 /area/station/storage/hydroponics)
-"fqF" = (
-/obj/machinery/atmospherics/pipe/simple/insulated/cold{
-	dir = 4;
-	can_rupture = 0
-	},
-/obj/cable{
-	icon_state = "0-2"
-	},
-/obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/turf/simulated/floor/plating,
-/area/station/engine/coldloop)
 "fqP" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -36115,27 +36033,6 @@
 	},
 /turf/simulated/floor,
 /area/station/science/lobby)
-"gcS" = (
-/obj/cable/orange{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/pyro/glass/engineering{
-	name = "Hangar Access"
-	},
-/obj/mapping_helper/firedoor_spawn,
-/obj/mapping_helper/access/engineering_engine,
-/obj/decal/stripe_delivery,
-/obj/disposalpipe/segment,
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/mapping_helper/airlock/cycler/manual{
-	cycle_id = "engairlock";
-	enter_id = "inner";
-	name = "Engineering Airlock"
-	},
-/turf/simulated/floor,
-/area/station/hangar/engine)
 "gdm" = (
 /obj/machinery/door/window/northleft,
 /obj/fluid_pipe/t_junction/waste{
@@ -36207,6 +36104,14 @@
 	dir = 6
 	},
 /area/station/hallway/primary/central)
+"gfj" = (
+/obj/machinery/door/airlock/pyro/maintenance,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/grime,
+/area/station/hallway/secondary/construction2)
 "gfr" = (
 /obj/cable,
 /obj/machinery/door/poddoor/pyro/shutters{
@@ -36384,12 +36289,6 @@
 	},
 /turf/space,
 /area/space)
-"gkO" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/central)
 "glo" = (
 /obj/machinery/firealarm/directional/north,
 /obj/disposalpipe/segment/mail{
@@ -37286,16 +37185,6 @@
 	},
 /turf/simulated/floor,
 /area/station/engine/storage)
-"gLG" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	name = "Air Hookups"
-	},
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/mapping_helper/firedoor_spawn,
-/turf/simulated/floor/plating,
-/area/station/atmos/hookups/east)
 "gLK" = (
 /obj/decal/tile_edge/stripe/big{
 	dir = 5;
@@ -37973,6 +37862,27 @@
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/supplylobby)
+"hdl" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/pyro/command{
+	dir = 4;
+	name = "Electrical Substation"
+	},
+/obj/mapping_helper/firedoor_spawn,
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/obj/mapping_helper/airlock/cycler/manual{
+	cycle_id = "aipower";
+	enter_id = "inner";
+	name = "AI Power"
+	},
+/obj/mapping_helper/access/ai_upload,
+/obj/mapping_helper/access/computer_core,
+/turf/simulated/floor/plating,
+/area/station/turret_protected/ai_upload_foyer)
 "hdJ" = (
 /obj/fluid_pipe/straight/supply,
 /obj/cable{
@@ -38043,6 +37953,20 @@
 	},
 /turf/simulated/floor,
 /area/station/mining/staff_room)
+"heP" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/disposalpipe/segment,
+/obj/machinery/door/airlock/pyro/command{
+	name = "Computer Core Access"
+	},
+/obj/mapping_helper/firedoor_spawn,
+/obj/decal/stripe_delivery,
+/obj/mapping_helper/access/ai_upload,
+/obj/mapping_helper/access/computer_core,
+/turf/simulated/floor/black,
+/area/station/turret_protected/Zeta)
 "heT" = (
 /obj/fluid_pipe/straight/see_fluid/supply,
 /turf/simulated/floor/plating,
@@ -38169,6 +38093,16 @@
 /obj/decal/stripe_delivery,
 /turf/simulated/floor,
 /area/station/crew_quarters/cafeteria)
+"hiC" = (
+/obj/cable{
+	icon_state = "1-8"
+	},
+/obj/disposalpipe/segment{
+	dir = 4;
+	name = "factory pipe"
+	},
+/turf/simulated/floor/grey,
+/area/station/engine/inner)
 "hjb" = (
 /obj/lattice{
 	dir = 5;
@@ -38781,6 +38715,14 @@
 	},
 /turf/simulated/floor/specialroom/bar,
 /area/station/security/secwing)
+"hCx" = (
+/obj/machinery/door/airlock/pyro/maintenance,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/grime,
+/area/station/hallway/secondary/construction)
 "hCK" = (
 /obj/landmark/start/job/quartermaster,
 /obj/cable{
@@ -40212,6 +40154,27 @@
 	},
 /turf/simulated/floor/blue,
 /area/station/medical/medbay)
+"isA" = (
+/obj/cable/orange{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/pyro/engineering{
+	name = "Hangar Access"
+	},
+/obj/mapping_helper/firedoor_spawn,
+/obj/mapping_helper/access/engineering_engine,
+/obj/decal/stripe_delivery,
+/obj/disposalpipe/segment,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/mapping_helper/airlock/cycler/manual{
+	cycle_id = "engairlock";
+	enter_id = "inner";
+	name = "Engineering Airlock"
+	},
+/turf/simulated/floor,
+/area/station/hangar/engine)
 "isF" = (
 /obj/disposalpipe/segment/food{
 	dir = 4
@@ -40591,14 +40554,6 @@
 /obj/machinery/alarm/directional/west,
 /turf/simulated/floor/black,
 /area/station/crew_quarters/jazz)
-"iEJ" = (
-/obj/cable,
-/obj/cable{
-	icon_state = "0-2"
-	},
-/obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/turf/simulated/floor/plating,
-/area/station/engine/hotloop)
 "iEM" = (
 /obj/cable{
 	icon_state = "1-8"
@@ -40726,13 +40681,6 @@
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/locker)
-"iIP" = (
-/obj/cable{
-	icon_state = "0-2"
-	},
-/obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/turf/simulated/floor/plating,
-/area/station/engine/hotloop)
 "iJw" = (
 /obj/machinery/status_display,
 /turf/simulated/wall/auto/supernorn,
@@ -40815,6 +40763,27 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
+"iMM" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 4;
+	can_rupture = 0
+	},
+/obj/cable,
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "engi";
+	layer = 4;
+	name = "Engine Room Shield";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/engine/hotloop)
 "iMW" = (
 /obj/disposalpipe/segment/transport{
 	icon_state = "pipe-c"
@@ -42543,17 +42512,6 @@
 /area/station/hangar/catering{
 	name = "Catering Hangar"
 	})
-"jKQ" = (
-/obj/machinery/firealarm/directional/south,
-/obj/cable{
-	icon_state = "1-8"
-	},
-/obj/disposalpipe/segment{
-	dir = 4;
-	name = "factory pipe"
-	},
-/turf/simulated/floor/grey,
-/area/station/engine/inner)
 "jLs" = (
 /obj/disposalpipe/junction{
 	dir = 4
@@ -42948,6 +42906,20 @@
 /obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/specialroom/cafeteria,
 /area/station/crew_quarters/kitchen)
+"jVA" = (
+/obj/table/wood/auto,
+/obj/item/plate,
+/obj/random_item_spawner/tableware/few,
+/obj/item/reagent_containers/applicator/condiment/shaker/salt{
+	pixel_x = -12;
+	pixel_y = 9
+	},
+/obj/item/reagent_containers/applicator/condiment/shaker/pepper{
+	pixel_x = -7;
+	pixel_y = 12
+	},
+/turf/simulated/floor/carpet,
+/area/station/crew_quarters/cafeteria)
 "jVD" = (
 /obj/machinery/plantpot,
 /obj/machinery/light{
@@ -44058,14 +44030,6 @@
 	dir = 5
 	},
 /area/station/janitor/office)
-"kxA" = (
-/obj/machinery/door/airlock/pyro/maintenance,
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/mapping_helper/firedoor_spawn,
-/turf/simulated/floor/grime,
-/area/station/hallway/secondary/construction2)
 "kxF" = (
 /obj/item/swingsignfolded,
 /obj/disposalpipe/segment/produce{
@@ -44682,6 +44646,25 @@
 /obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/plating,
 /area/station/maintenance/southwest)
+"kSb" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "pdoor0";
+	id = "engi";
+	layer = 4;
+	name = "Engine Room Shield";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/hangar/engine)
 "kSW" = (
 /obj/machinery/fluid_machinery/unary/drain/inlet_pump/overfloor/active{
 	dir = 4
@@ -45180,20 +45163,6 @@
 /area/station/maintenance/storage{
 	name = "Medical Storage"
 	})
-"ljo" = (
-/obj/table/wood/auto,
-/obj/item/plate,
-/obj/random_item_spawner/tableware/few,
-/obj/item/reagent_containers/applicator/condiment/shaker/salt{
-	pixel_x = -12;
-	pixel_y = 9
-	},
-/obj/item/reagent_containers/applicator/condiment/shaker/pepper{
-	pixel_x = -7;
-	pixel_y = 12
-	},
-/turf/simulated/floor/carpet,
-/area/station/crew_quarters/cafeteria)
 "ljI" = (
 /obj/reagent_dispensers/watertank/fountain,
 /obj/machinery/camera/directional/east{
@@ -45812,6 +45781,12 @@
 	},
 /turf/simulated/floor/black,
 /area/station/engine/coldloop)
+"lBS" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/southwest)
 "lBV" = (
 /obj/storage/crate{
 	name = "Cone Crate"
@@ -46427,21 +46402,6 @@
 /obj/fluid_pipe/straight/see_fluid/waste,
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
-"lUF" = (
-/obj/machinery/door/airlock/pyro/glass/engineering{
-	name = "Core Access"
-	},
-/obj/mapping_helper/firedoor_spawn,
-/obj/mapping_helper/access/engineering_engine,
-/obj/machinery/atmospherics/pipe/simple/insulated{
-	can_rupture = 0
-	},
-/obj/decal/stripe_delivery,
-/obj/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor,
-/area/station/engine/inner)
 "lUG" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -46605,6 +46565,22 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
+"lZQ" = (
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "engi";
+	layer = 4;
+	name = "Engine Room Shield";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/engine/hotloop)
 "maI" = (
 /obj/disposalpipe/segment/mail,
 /turf/simulated/floor/carpet{
@@ -49519,17 +49495,6 @@
 	},
 /turf/simulated/floor,
 /area/station/engine/monitoring)
-"nJe" = (
-/obj/noticeboard/persistent/engineering/directional/north,
-/obj/decal/stripe_delivery,
-/obj/decal/tile_edge/stripe/extra_big{
-	dir = 1
-	},
-/obj/machinery/camera/directional/north{
-	pixel_x = -10
-	},
-/turf/simulated/floor,
-/area/station/engine/monitoring)
 "nJu" = (
 /obj/cable{
 	icon_state = "0-8"
@@ -50274,16 +50239,6 @@
 /obj/disposalpipe/segment/mail,
 /turf/simulated/floor/plating,
 /area/station/science/testchamber)
-"oeX" = (
-/obj/machinery/atmospherics/pipe/simple/insulated{
-	can_rupture = 0
-	},
-/obj/cable{
-	icon_state = "0-4"
-	},
-/obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/turf/simulated/floor/plating,
-/area/station/hangar/engine)
 "ofF" = (
 /obj/machinery/mass_driver{
 	dir = 8;
@@ -50314,16 +50269,6 @@
 	},
 /turf/simulated/floor/orangeblack,
 /area/station/ai_monitored/storage/eva)
-"ogp" = (
-/obj/cable{
-	icon_state = "1-4"
-	},
-/obj/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
-	},
-/turf/simulated/floor/grey,
-/area/station/engine/inner)
 "ogM" = (
 /obj/item/device/radio/intercom/mining{
 	dir = 8
@@ -50653,6 +50598,10 @@
 	},
 /turf/simulated/floor/black,
 /area/station/medical/robotics)
+"onU" = (
+/obj/machinery/door/airlock/pyro/maintenance,
+/turf/simulated/floor/plating,
+/area/station/maintenance/northeast)
 "ook" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -51086,6 +51035,18 @@
 	},
 /turf/simulated/floor,
 /area/station/hydroponics/bay)
+"oyG" = (
+/obj/cable{
+	icon_state = "1-4"
+	},
+/obj/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/obj/machinery/firealarm/directional/south,
+/obj/machinery/camera/directional/west,
+/turf/simulated/floor/grey,
+/area/station/engine/inner)
 "oyI" = (
 /obj/machinery/fluid_machinery/unary/input,
 /turf/simulated/floor/plating,
@@ -51979,33 +51940,17 @@
 	dir = 4
 	},
 /area/station/hallway/primary/east)
-"oXH" = (
-/obj/table/wood/auto,
-/obj/decal/cleanable/desk_clutter{
-	pixel_x = 1
+"oWY" = (
+/obj/machinery/computer/atmosphere/mixercontrol{
+	frequency = 1225;
+	id = "engine_combust_control";
+	mixerid = "engine_combust";
+	name = "Gas Mixer Control (Combustion Chamber)"
 	},
-/obj/item/paper_bin{
-	pixel_x = -7;
-	pixel_y = 7
-	},
-/obj/item/clipboard{
-	pixel_x = 7;
-	pixel_y = 6
-	},
-/obj/item/paper/engine{
-	pixel_x = 7;
-	pixel_y = 5
-	},
-/obj/item/pen{
-	pixel_x = -7;
-	pixel_y = 8
-	},
-/obj/machinery/light{
-	dir = 8;
-	pixel_x = -10
-	},
+/obj/machinery/power/data_terminal,
+/obj/noticeboard/persistent/engineering/directional/north,
 /turf/simulated/floor/yellow/side{
-	dir = 9
+	dir = 1
 	},
 /area/station/engine/monitoring)
 "oYj" = (
@@ -54033,28 +53978,6 @@
 	},
 /turf/simulated/floor/specialroom/bar,
 /area/station/crew_quarters/cafeteria)
-"qfv" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/table/reinforced/bar/auto,
-/obj/item_dispenser/icedispenser{
-	dir = 8;
-	pixel_x = 19;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/applicator/condiment/shaker/pepper{
-	pixel_x = -9;
-	pixel_y = 10
-	},
-/obj/item/reagent_containers/applicator/condiment/shaker/salt{
-	pixel_x = -5;
-	pixel_y = 8
-	},
-/turf/simulated/floor/specialroom/bar/edge{
-	dir = 8
-	},
-/area/station/crew_quarters/bar)
 "qfA" = (
 /obj/disposalpipe/segment/morgue{
 	dir = 4;
@@ -54202,6 +54125,23 @@
 	},
 /turf/simulated/floor,
 /area/station/hydroponics/bay)
+"qig" = (
+/obj/cable,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "engi";
+	layer = 4;
+	name = "Engine Room Shield";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/engine/hotloop)
 "qiB" = (
 /obj/disposalpipe/segment,
 /obj/cable{
@@ -54437,26 +54377,6 @@
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/hallway/primary/south)
-"qov" = (
-/obj/machinery/door/airlock/pyro/external{
-	dir = 4;
-	name = "AI and Computer Core"
-	},
-/obj/mapping_helper/access/heads,
-/obj/decal/stripe_delivery,
-/obj/forcefield/energyshield/perma/doorlink{
-	desc = "A door-linked force field that prevents gasses from passing through it.";
-	dir = 4;
-	name = "Door-linked Atmospheric Forcefield";
-	powerlevel = 1
-	},
-/obj/mapping_helper/airlock/cycler/manual{
-	cycle_id = "aiairbridge";
-	enter_id = "inner";
-	name = "AI Airbridge"
-	},
-/turf/simulated/floor,
-/area/station/turret_protected/ai_upload_foyer)
 "qoP" = (
 /obj/machinery/conveyor/WE{
 	name = "cargo belt - east";
@@ -54724,6 +54644,28 @@
 	dir = 1
 	},
 /area/station/hallway/primary/east)
+"qwS" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/table/reinforced/bar/auto,
+/obj/item_dispenser/icedispenser{
+	dir = 8;
+	pixel_x = 19;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/applicator/condiment/shaker/pepper{
+	pixel_x = -9;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/applicator/condiment/shaker/salt{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/turf/simulated/floor/specialroom/bar/edge{
+	dir = 8
+	},
+/area/station/crew_quarters/bar)
 "qwX" = (
 /obj/pool/perspective{
 	dir = 8;
@@ -55056,6 +54998,26 @@
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor/sanitary/white,
 /area/station/medical/morgue)
+"qCD" = (
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	dir = 4;
+	can_rupture = 0
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "engi";
+	layer = 4;
+	name = "Engine Room Shield";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/engine/coldloop)
 "qCK" = (
 /obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/black,
@@ -55376,6 +55338,19 @@
 	},
 /turf/simulated/floor/purple,
 /area/station/science/lobby)
+"qKD" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "pdoor0";
+	id = "engi";
+	layer = 4;
+	name = "Engine Room Shield";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/engine/inner)
 "qKH" = (
 /obj/cable{
 	icon_state = "0-2"
@@ -55789,22 +55764,6 @@
 	},
 /turf/simulated/floor/blue,
 /area/station/medical/medbay)
-"qWU" = (
-/obj/machinery/door/airlock/pyro/glass/engineering{
-	name = "Core Access"
-	},
-/obj/mapping_helper/firedoor_spawn,
-/obj/mapping_helper/access/engineering_engine,
-/obj/machinery/atmospherics/pipe/simple/insulated/cold{
-	can_rupture = 0
-	},
-/obj/cable/orange{
-	icon_state = "1-2"
-	},
-/obj/decal/stripe_delivery,
-/obj/disposalpipe/segment,
-/turf/simulated/floor,
-/area/station/engine/inner)
 "qXF" = (
 /obj/disposalpipe/segment{
 	dir = 4
@@ -56901,6 +56860,22 @@
 /obj/machinery/firealarm/directional/east,
 /turf/simulated/floor/grey/side,
 /area/station/engine/inner)
+"rII" = (
+/obj/machinery/door/airlock/pyro/engineering{
+	name = "Core Access"
+	},
+/obj/mapping_helper/firedoor_spawn,
+/obj/mapping_helper/access/engineering_engine,
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	can_rupture = 0
+	},
+/obj/cable/orange{
+	icon_state = "1-2"
+	},
+/obj/decal/stripe_delivery,
+/obj/disposalpipe/segment,
+/turf/simulated/floor,
+/area/station/engine/inner)
 "rIM" = (
 /obj/disposalpipe/segment{
 	dir = 4
@@ -57406,19 +57381,6 @@
 /obj/disposalpipe/segment/mail,
 /turf/simulated/floor,
 /area/station/security/main)
-"rXW" = (
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/disposalpipe/segment,
-/obj/machinery/door/airlock/pyro/command{
-	name = "Computer Core Access"
-	},
-/obj/mapping_helper/firedoor_spawn,
-/obj/mapping_helper/access/heads,
-/obj/decal/stripe_delivery,
-/turf/simulated/floor/black,
-/area/station/turret_protected/Zeta)
 "rYg" = (
 /obj/machinery/status_display/market,
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -58057,6 +58019,23 @@
 	},
 /turf/simulated/floor/plating/airless,
 /area/station/maintenance/central)
+"snJ" = (
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/table/wood/auto,
+/obj/machinery/computer3/generic/personal,
+/obj/machinery/door_control{
+	id = "engi";
+	name = "Engine Room Shield Control";
+	pixel_x = 5;
+	pixel_y = 27
+	},
+/turf/simulated/floor/yellow/side{
+	dir = 5
+	},
+/area/station/engine/monitoring)
 "snK" = (
 /obj/machinery/navbeacon/tour/cog1/tour17,
 /obj/fluid_pipe/straight/waste{
@@ -58599,14 +58578,6 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
 /area/station/hallway/primary/south)
-"sEl" = (
-/obj/machinery/door/airlock/pyro/maintenance,
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/mapping_helper/firedoor_spawn,
-/turf/simulated/floor/grime,
-/area/station/hallway/secondary/construction)
 "sEN" = (
 /obj/machinery/door/firedoor/pyro{
 	dir = 4
@@ -58650,6 +58621,16 @@
 /obj/fluid_pipe/straight/waste,
 /turf/simulated/floor/black,
 /area/station/crew_quarters/bar)
+"sFS" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 9;
+	level = 2
+	},
+/obj/machinery/door/airlock/pyro/maintenance{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/northwest)
 "sFY" = (
 /obj/machinery/light/small,
 /obj/machinery/vehicle/pod_smooth/heavy/security,
@@ -58969,6 +58950,12 @@
 	},
 /turf/simulated/floor/red,
 /area/station/medical/medbay/surgery)
+"sMK" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/central)
 "sMR" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -59119,6 +59106,21 @@
 	},
 /turf/simulated/floor/black,
 /area/station/engine/coldloop)
+"sPm" = (
+/obj/machinery/door/airlock/pyro/engineering{
+	name = "Core Access"
+	},
+/obj/mapping_helper/firedoor_spawn,
+/obj/mapping_helper/access/engineering_engine,
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	can_rupture = 0
+	},
+/obj/decal/stripe_delivery,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor,
+/area/station/engine/inner)
 "sPu" = (
 /obj/machinery/conveyor/NS{
 	id = "cargo"
@@ -59736,6 +59738,26 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/storage/tech)
+"tjV" = (
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable,
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "engi";
+	layer = 4;
+	name = "Engine Room Shield";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/engine/coldloop)
 "tkk" = (
 /obj/window/reinforced{
 	dir = 2
@@ -61041,6 +61063,29 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
+"tWA" = (
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	can_rupture = 0
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable,
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "pdoor0";
+	id = "engi";
+	layer = 4;
+	name = "Engine Room Shield";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/hangar/engine)
 "tWT" = (
 /obj/cable{
 	icon_state = "1-8"
@@ -61695,18 +61740,6 @@
 /obj/landmark/pest,
 /turf/simulated/floor/specialroom/gym,
 /area/station/crew_quarters/fitness)
-"ume" = (
-/obj/machinery/atmospherics/pipe/simple/insulated{
-	dir = 4;
-	can_rupture = 0
-	},
-/obj/cable,
-/obj/cable{
-	icon_state = "0-8"
-	},
-/obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/turf/simulated/floor/plating,
-/area/station/engine/hotloop)
 "umE" = (
 /obj/cable/yellow{
 	icon_state = "4-8"
@@ -61929,19 +61962,6 @@
 "urn" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/janitor/plumbing)
-"urw" = (
-/obj/table/wood/auto,
-/obj/item/plate,
-/obj/item/reagent_containers/applicator/condiment/bottle/mustard{
-	pixel_x = 3;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/applicator/condiment/bottle/ketchup{
-	pixel_x = 8;
-	pixel_y = 6
-	},
-/turf/simulated/floor/carpet,
-/area/station/crew_quarters/cafeteria)
 "urV" = (
 /obj/machinery/camera/directional/east,
 /turf/simulated/floor/redblack{
@@ -63622,6 +63642,18 @@
 /obj/mapping_helper/access/maint,
 /turf/simulated/floor/plating,
 /area/station/maintenance/central)
+"vmU" = (
+/obj/cable/orange{
+	icon_state = "1-2"
+	},
+/obj/machinery/door_control{
+	id = "engi";
+	name = "Engine Room Shield Control";
+	pixel_x = 24;
+	dir = 4
+	},
+/turf/simulated/floor/black,
+/area/station/engine/hotloop)
 "vnk" = (
 /obj/table/wood/auto,
 /obj/machinery/computer/television/small,
@@ -63700,6 +63732,27 @@
 	name = "test chamber plating"
 	},
 /area/station/science/testchamber)
+"voE" = (
+/obj/machinery/door/airlock/pyro/external{
+	dir = 4;
+	name = "AI and Computer Core"
+	},
+/obj/decal/stripe_delivery,
+/obj/forcefield/energyshield/perma/doorlink{
+	desc = "A door-linked force field that prevents gasses from passing through it.";
+	dir = 4;
+	name = "Door-linked Atmospheric Forcefield";
+	powerlevel = 1
+	},
+/obj/mapping_helper/airlock/cycler/manual{
+	cycle_id = "aiairbridge";
+	enter_id = "inner";
+	name = "AI Airbridge"
+	},
+/obj/mapping_helper/access/ai_upload,
+/obj/mapping_helper/access/computer_core,
+/turf/simulated/floor,
+/area/station/turret_protected/ai_upload_foyer)
 "vpO" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -63845,21 +63898,6 @@
 	},
 /turf/simulated/floor,
 /area/station/engine/elect)
-"vtl" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/southwest)
-"vtP" = (
-/obj/machinery/atmospherics/pipe/simple/insulated/cold{
-	dir = 4;
-	can_rupture = 0
-	},
-/obj/cable,
-/obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/turf/simulated/floor/plating,
-/area/station/engine/coldloop)
 "vtV" = (
 /obj/landmark/pest,
 /obj/disposalpipe/segment/morgue{
@@ -65171,6 +65209,19 @@
 	},
 /turf/simulated/floor,
 /area/station/hangar/qm)
+"wdd" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/disposalpipe/segment/mail{
+	dir = 4
+	},
+/obj/machinery/light/emergency,
+/obj/fluid_pipe/straight/waste{
+	dir = 4
+	},
+/turf/simulated/floor/neutral/side,
+/area/station/hallway/primary/east)
 "wde" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -66783,12 +66834,6 @@
 /obj/fluid_pipe/straight/supply,
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
-"xbK" = (
-/obj/cable/orange{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/black,
-/area/station/engine/hotloop)
 "xbR" = (
 /obj/machinery/sleeper/compact,
 /turf/unsimulated/floor/shuttle/white,
@@ -66832,6 +66877,19 @@
 	dir = 9
 	},
 /area/station/mining/staff_room)
+"xcr" = (
+/obj/table/wood/auto,
+/obj/item/plate,
+/obj/item/reagent_containers/applicator/condiment/bottle/mustard{
+	pixel_x = 3;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/applicator/condiment/bottle/ketchup{
+	pixel_x = 8;
+	pixel_y = 6
+	},
+/turf/simulated/floor/carpet,
+/area/station/crew_quarters/cafeteria)
 "xcH" = (
 /obj/machinery/atmospherics/pipe/manifold{
 	dir = 8;
@@ -67537,12 +67595,6 @@
 	},
 /turf/simulated/floor/grime,
 /area/station/security/brig)
-"xvY" = (
-/obj/machinery/door/airlock/pyro/maintenance{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/southeast)
 "xwN" = (
 /obj/machinery/phone/wall,
 /turf/simulated/wall/auto/supernorn,
@@ -67794,6 +67846,38 @@
 /obj/machinery/door/airlock/pyro/glass/med,
 /turf/simulated/floor,
 /area/station/medical/research)
+"xEM" = (
+/obj/table/wood/auto,
+/obj/decal/cleanable/desk_clutter{
+	pixel_x = 1
+	},
+/obj/item/paper_bin{
+	pixel_x = -7;
+	pixel_y = 7
+	},
+/obj/item/clipboard{
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/obj/item/paper/engine{
+	pixel_x = 7;
+	pixel_y = 5
+	},
+/obj/item/pen{
+	pixel_x = -7;
+	pixel_y = 8
+	},
+/obj/machinery/light{
+	dir = 8;
+	pixel_x = -10
+	},
+/obj/machinery/camera/directional/north{
+	pixel_x = -10
+	},
+/turf/simulated/floor/yellow/side{
+	dir = 9
+	},
+/area/station/engine/monitoring)
 "xEV" = (
 /obj/machinery/alarm/directional/east,
 /turf/simulated/floor/grey,
@@ -67817,6 +67901,24 @@
 /obj/machinery/light/traffic_light/trader_left/delay3,
 /turf/space,
 /area/space)
+"xFa" = (
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	dir = 4;
+	can_rupture = 0
+	},
+/obj/cable,
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "engi";
+	layer = 4;
+	name = "Engine Room Shield";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/engine/coldloop)
 "xFh" = (
 /obj/mesh/grille/steel,
 /obj/disposalpipe/segment/morgue{
@@ -67970,6 +68072,12 @@
 	},
 /turf/space,
 /area/shuttle/arrival/station)
+"xKS" = (
+/obj/machinery/door/airlock/pyro/maintenance{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/southeast)
 "xLf" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -68757,16 +68865,6 @@
 	},
 /turf/simulated/floor/specialroom/chapel,
 /area/station/chapel/sanctuary)
-"ygt" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 9;
-	level = 2
-	},
-/obj/machinery/door/airlock/pyro/maintenance{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/northwest)
 "ygC" = (
 /obj/cable{
 	icon_state = "0-8"
@@ -106999,7 +107097,7 @@ adC
 bAt
 bAt
 bAt
-elh
+foj
 bAt
 bAt
 bAt
@@ -108784,7 +108882,7 @@ aSl
 aSl
 aGT
 aGT
-gkO
+sMK
 aGT
 aGT
 bhF
@@ -109113,7 +109211,7 @@ buc
 buc
 buc
 bxx
-qov
+voE
 bxx
 bCh
 bCh
@@ -110323,7 +110421,7 @@ qqm
 lYU
 wCA
 unw
-rXW
+heP
 bWR
 wuO
 bEd
@@ -110925,7 +111023,7 @@ bvU
 jfS
 buc
 bxx
-fff
+hdl
 bxx
 bCh
 bcd
@@ -111453,10 +111551,10 @@ adC
 adC
 abV
 xCL
-ygt
+sFS
 abY
 anW
-aNK
+aeF
 afl
 age
 eTP
@@ -112667,7 +112765,7 @@ acJ
 oUt
 afo
 agh
-kxA
+gfj
 ver
 xgO
 ajQ
@@ -113671,7 +113769,7 @@ bYe
 caY
 caY
 bYe
-vtl
+lBS
 aif
 ahh
 bZJ
@@ -114554,7 +114652,7 @@ upE
 nBE
 gXu
 rzS
-xbK
+vmU
 dnA
 nre
 jsj
@@ -114851,9 +114949,9 @@ eZT
 fpJ
 evG
 bqk
-iIP
-iEJ
-ume
+lZQ
+qig
+iMM
 bqk
 dVP
 bqk
@@ -115159,7 +115257,7 @@ oZF
 pAv
 tqV
 ebD
-ogp
+oyG
 bsN
 bGw
 piQ
@@ -115463,7 +115561,7 @@ adC
 iCD
 vwt
 bsN
-oXH
+xEM
 xgT
 cff
 cfj
@@ -115765,7 +115863,7 @@ adC
 adC
 tCJ
 bsN
-aBc
+oWY
 xSS
 bIn
 txE
@@ -116604,7 +116702,7 @@ aom
 aJB
 aqP
 ofY
-urw
+xcr
 uOt
 buW
 aqP
@@ -116654,7 +116752,7 @@ bpQ
 hxI
 ybb
 hbl
-oeX
+kSb
 mzL
 xop
 jrH
@@ -116670,7 +116768,7 @@ adC
 adC
 adC
 jLO
-lUF
+sPm
 qei
 iWd
 aCg
@@ -116906,7 +117004,7 @@ aon
 apw
 aqP
 rUa
-ljo
+jVA
 uOt
 fFY
 aqP
@@ -116956,7 +117054,7 @@ dfm
 ezq
 qnb
 qnb
-gcS
+isA
 tqQ
 lqf
 oSX
@@ -116971,9 +117069,9 @@ adC
 adC
 adC
 adC
-jKQ
-bsN
-nJe
+hiC
+qKD
+flW
 lWj
 oOe
 chI
@@ -117258,7 +117356,7 @@ jZI
 jbl
 nkx
 xXF
-adI
+tWA
 rIp
 muj
 hJP
@@ -117274,7 +117372,7 @@ adC
 adC
 adC
 ngx
-qWU
+rII
 dcN
 qRH
 nqD
@@ -117518,7 +117616,7 @@ lem
 oPF
 asl
 asl
-qfv
+qwS
 lkC
 xiO
 aIu
@@ -118404,7 +118502,7 @@ adw
 aei
 aeN
 afD
-sEl
+hCx
 xbT
 kND
 aiY
@@ -118483,7 +118581,7 @@ adC
 adC
 udc
 bsN
-bGK
+snJ
 rDU
 jIu
 bJw
@@ -119079,9 +119177,9 @@ bsS
 bsS
 bsS
 bsS
-fqF
-eMB
-vtP
+qCD
+tjV
+xFa
 bBN
 dIr
 bBN
@@ -119091,7 +119189,7 @@ bBN
 rtL
 bIx
 hsQ
-bKE
+egH
 jbi
 jbi
 jbi
@@ -121220,7 +121318,7 @@ bZM
 jXL
 ccp
 cdA
-gLG
+dPR
 cgh
 orT
 ciI
@@ -122051,7 +122149,7 @@ tbE
 iuu
 sbQ
 bVV
-flW
+wdd
 aGo
 aGo
 yfF
@@ -123843,7 +123941,7 @@ vxT
 aie
 aie
 aie
-ebq
+onU
 vJA
 lwo
 wys
@@ -125152,7 +125250,7 @@ qiB
 gwu
 vGo
 ciL
-xvY
+xKS
 ciL
 crf
 koL
@@ -125699,7 +125797,7 @@ bdI
 qgb
 bgB
 bhl
-bip
+biq
 bju
 bfs
 iEe
