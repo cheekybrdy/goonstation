@@ -1406,7 +1406,7 @@
 	pixel_x = -24;
 	pixel_y = -8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/office)
@@ -2066,7 +2066,7 @@
 /obj/item/clothing/head/helmet/space,
 /obj/item/clothing/mask/breath,
 /obj/item/tank/jetpack/micro,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2078,7 +2078,7 @@
 /obj/item/extinguisher{
 	pixel_y = 8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2087,7 +2087,7 @@
 /obj/item/clothing/suit/space,
 /obj/item/clothing/head/helmet/space,
 /obj/item/clothing/mask/breath,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2101,7 +2101,7 @@
 	dir = 1
 	},
 /obj/item/tank/jetpack/micro,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2114,7 +2114,7 @@
 	pixel_y = 8
 	},
 /obj/item/tank/jetpack/micro,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 5
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2245,7 +2245,7 @@
 /obj/machinery/light/incandescent{
 	dir = 8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2281,7 +2281,7 @@
 /obj/cable{
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2427,7 +2427,7 @@
 	},
 /obj/item/sheet/glass/fullstack,
 /obj/table/reinforced/auto,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2471,7 +2471,7 @@
 	name = "Blast Door Control";
 	pixel_x = 24
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2576,7 +2576,7 @@
 /obj/machinery/light/incandescent{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/hallway/primary/north)
@@ -2587,7 +2587,7 @@
 /obj/item/device/light/flashlight,
 /obj/table/reinforced/auto,
 /obj/item/reagent_containers/food/drinks/fueltank,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2719,7 +2719,7 @@
 	},
 /area/station/storage/primary)
 "arO" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/hallway/primary/north)
@@ -2738,7 +2738,7 @@
 /turf/simulated/floor/plating,
 /area/station/crew_quarters/fitness)
 "arV" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2752,7 +2752,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/ai_monitored/storage/eva)
@@ -2965,7 +2965,7 @@
 /obj/machinery/light/incandescent{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/ai_monitored/storage/eva)
@@ -3079,7 +3079,7 @@
 /obj/item/cell/supercell/charged,
 /obj/item/cell/supercell/charged,
 /obj/item/cell/supercell/charged,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 10
 	},
 /area/station/ai_monitored/storage/eva)
@@ -3095,7 +3095,7 @@
 	pixel_y = 1
 	},
 /obj/item/device/timer,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "atF" = (
 /obj/table/auto,
@@ -3105,19 +3105,19 @@
 /obj/item/cable_coil,
 /obj/item/storage/toolbox/electrical,
 /obj/item/disk/data/floppy/read_only/communications,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "atG" = (
 /obj/table/auto,
 /obj/item/storage/belt/utility,
 /obj/item/device/gps,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "atJ" = (
 /obj/machinery/dispenser{
 	pltanks = 0
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 6
 	},
 /area/station/ai_monitored/storage/eva)
@@ -3465,7 +3465,7 @@
 /obj/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/office)
 "aCQ" = (
 /obj/disposalpipe/segment{
@@ -3502,7 +3502,7 @@
 /obj/machinery/light/incandescent{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/crew_quarters/supplylobby)
@@ -3582,7 +3582,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/crew_quarters/supplylobby)
@@ -3605,7 +3605,7 @@
 /area/station/hallway/primary/south)
 "aIH" = (
 /obj/machinery/light/incandescent,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 6
 	},
 /area/station/crew_quarters/supplylobby)
@@ -4351,7 +4351,7 @@
 /obj/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/crew_quarters/supplylobby)
@@ -6589,7 +6589,7 @@
 /area/station/maintenance/northwest)
 "bJo" = (
 /obj/machinery/nanofab/refining,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/office)
@@ -10021,7 +10021,7 @@
 /obj/machinery/light/incandescent{
 	dir = 1
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/station/crew_quarters/supplylobby)
@@ -10065,7 +10065,7 @@
 /area/station/crew_quarters/hop)
 "dXv" = (
 /obj/machinery/manufacturer/qm,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/office)
@@ -10676,7 +10676,7 @@
 /area/station/hallway/primary/west)
 "eqS" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/crew_quarters/supplylobby)
@@ -11281,7 +11281,7 @@
 	name = "Loading Door Control";
 	pixel_x = -24
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/station/quartermaster/office)
@@ -11419,7 +11419,7 @@
 /turf/simulated/floor,
 /area/station/hangar/engine)
 "eWe" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/crew_quarters/supplylobby)
@@ -11516,7 +11516,7 @@
 	icon_state = "2-4";
 	pixel_y = 0
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/teleporter)
@@ -12028,7 +12028,7 @@
 /mob/living/carbon/human/npc/monkey/albert,
 /obj/machinery/light/incandescent,
 /obj/machinery/light/emergency,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/hallway/primary/north)
@@ -13310,7 +13310,7 @@
 	pixel_y = 28
 	},
 /obj/machinery/door/window/southleft,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/crew_quarters/supplylobby)
@@ -14146,7 +14146,7 @@
 /turf/simulated/floor/purplewhite,
 /area/station/science/lobby)
 "gWB" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/office)
@@ -15369,7 +15369,7 @@
 	c_tag = "EVA";
 	pixel_y = 10
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 5
 	},
 /area/station/ai_monitored/storage/eva)
@@ -15401,7 +15401,7 @@
 	icon_state = "1-2"
 	},
 /obj/disposalpipe/segment/mail,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/office)
@@ -16320,7 +16320,7 @@
 	dir = 1
 	},
 /obj/machinery/light/incandescent,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/office)
 "iEl" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
@@ -17127,7 +17127,7 @@
 /obj/machinery/computer/supplycomp{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/office)
@@ -17165,7 +17165,7 @@
 /obj/machinery/computer/barcode/qm/no_belthell{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/office)
@@ -19027,7 +19027,7 @@
 	},
 /area/station/mining/magnet)
 "kzw" = (
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/crew_quarters/supplylobby)
 "kzP" = (
 /obj/lattice{
@@ -19202,7 +19202,7 @@
 "kHJ" = (
 /obj/landmark/start/job/mail_courier,
 /obj/stool/bench/yellow,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/crew_quarters/supplylobby)
@@ -19468,7 +19468,7 @@
 /obj/machinery/conveyor_switch{
 	id = "qmin"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/office)
@@ -19581,7 +19581,7 @@
 	pixel_x = -6;
 	pixel_y = 4
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/teleporter)
@@ -20147,7 +20147,7 @@
 	icon_state = "1-2"
 	},
 /obj/disposalpipe/segment/mail,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/office)
 "lsF" = (
 /obj/machinery/light/incandescent{
@@ -21636,7 +21636,7 @@
 	},
 /area/station/science/lab)
 "mAv" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/station/quartermaster/office)
@@ -22241,7 +22241,7 @@
 	dir = 8
 	},
 /obj/machinery/disposal,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 5
 	},
 /area/station/crew_quarters/supplylobby)
@@ -22865,7 +22865,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/firealarm/directional/south,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 10
 	},
 /area/station/quartermaster/office)
@@ -25074,7 +25074,7 @@
 /obj/machinery/door/airlock/pyro/glass{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/crew_quarters/supplylobby)
@@ -26642,7 +26642,7 @@
 	},
 /area/station/hydroponics/bay)
 "pMv" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/science/hall)
@@ -26659,7 +26659,7 @@
 	c_tag = "Cargo Bay Lobby";
 	pixel_x = -10
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/crew_quarters/supplylobby)
 "pNq" = (
 /obj/disposalpipe/segment/produce{
@@ -26766,7 +26766,7 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/science/hall)
 "pRv" = (
 /turf/space,
@@ -27755,7 +27755,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/science/hall)
@@ -27776,7 +27776,7 @@
 /obj/cable{
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/science/hall)
@@ -27818,7 +27818,7 @@
 /obj/cable{
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/science/hall)
@@ -27975,7 +27975,7 @@
 /obj/cable{
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/science/hall)
@@ -27986,7 +27986,7 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/science/hall)
@@ -29399,7 +29399,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/teleporter)
@@ -29677,7 +29677,7 @@
 /turf/simulated/floor,
 /area/station/security/main)
 "rDU" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/crew_quarters/supplylobby)
@@ -29715,7 +29715,7 @@
 	pixel_x = -4;
 	pixel_y = 8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/science/hall)
@@ -30242,7 +30242,7 @@
 /turf/simulated/floor/purple/side,
 /area/station/hallway/primary/south)
 "rWa" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/station/crew_quarters/supplylobby)
@@ -30602,7 +30602,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/autoname_north,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/teleporter)
@@ -31327,7 +31327,7 @@
 /obj/machinery/computer/announcement/station/cargo,
 /obj/cable,
 /obj/machinery/power/apc/autoname_south,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 10
 	},
 /area/station/quartermaster/office)
@@ -31379,7 +31379,7 @@
 	icon_state = "4-8"
 	},
 /obj/landmark/gps_waypoint,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/teleporter)
@@ -31910,7 +31910,7 @@
 	pixel_x = -10
 	},
 /obj/machinery/light/incandescent,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/ai_monitored/storage/eva)
 "sYO" = (
 /obj/machinery/light/incandescent{
@@ -32765,7 +32765,7 @@
 /obj/machinery/light/incandescent{
 	dir = 8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/office)
@@ -36102,7 +36102,7 @@
 /obj/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/crew_quarters/supplylobby)
@@ -36454,7 +36454,7 @@
 /area/station/engine/engineering)
 "vWr" = (
 /obj/storage/secure/closet/engineering/cargo,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/office)
@@ -37948,7 +37948,7 @@
 /obj/machinery/light/incandescent{
 	dir = 8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/office)

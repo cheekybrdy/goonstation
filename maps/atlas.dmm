@@ -1008,7 +1008,7 @@
 /turf/simulated/floor,
 /area/station/quartermaster/office)
 "adZ" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 5
 	},
 /area/station/quartermaster/office)
@@ -1020,7 +1020,7 @@
 /turf/simulated/floor/caution,
 /area/station/quartermaster/office)
 "aeb" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/station/quartermaster/office)

@@ -2152,7 +2152,7 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
 "aDc" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/hangar/main)
@@ -8244,7 +8244,7 @@
 	icon_state = "1-4"
 	},
 /obj/machinery/firealarm/directional/west,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 10
 	},
 /area/station/hangar/main)
@@ -8555,7 +8555,7 @@
 	pixel_x = -16
 	},
 /obj/decal/stripe_delivery,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 10
 	},
 /area/station/hangar/main)
@@ -14893,7 +14893,7 @@
 /obj/landmark/gps_waypoint,
 /obj/machinery/navbeacon/mule/podbay_north/south,
 /obj/decal/mule/beacon,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/hangar/main)
@@ -35872,7 +35872,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/hangar/main)
 "lie" = (
 /obj/machinery/light/incandescent/netural,
@@ -50971,7 +50971,7 @@
 /turf/simulated/floor/plating,
 /area/station/medical/medbay/cloner)
 "pPH" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/station/hangar/main)
@@ -58303,7 +58303,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/hangar/main)
@@ -68269,7 +68269,7 @@
 /obj/disposalpipe/trunk/mail{
 	dir = 1
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 10
 	},
 /area/station/hangar/main)
@@ -68629,7 +68629,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/station/hangar/main)

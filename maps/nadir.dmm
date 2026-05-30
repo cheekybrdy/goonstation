@@ -1368,7 +1368,7 @@
 /area/station/maintenance/northeast)
 "aDI" = (
 /obj/storage/secure/closet/engineering/cargo,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/cargobay{
@@ -2037,7 +2037,7 @@
 /obj/machinery/computer/barcode/qm/no_belthell{
 	dir = 8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/storage{
@@ -3404,7 +3404,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/west)
 "bxk" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/cargobay{
@@ -4011,7 +4011,7 @@
 /obj/machinery/computer/transception{
 	dir = 8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/storage{
@@ -4134,7 +4134,7 @@
 	area_name = "Quartermaster's office";
 	dir = 8
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/cargooffice)
 "bPO" = (
 /obj/machinery/light{
@@ -5802,7 +5802,7 @@
 	layer = 9.1;
 	pixel_x = 10
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/cargooffice)
@@ -5984,7 +5984,7 @@
 /obj/machinery/light,
 /obj/machinery/disposal/mail/qm,
 /obj/disposalpipe/trunk/mail/north,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/cargobay{
 	name = "Cargo Primary Endpoint"
 	})
@@ -6325,7 +6325,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/cargobay{
 	name = "Cargo Primary Endpoint"
 	})
@@ -7655,7 +7655,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/storage{
@@ -10725,7 +10725,7 @@
 	icon_state = "4-8"
 	},
 /obj/disposalpipe/segment/horizontal,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/cargooffice)
@@ -10967,7 +10967,7 @@
 /obj/machinery/computer/supplycomp{
 	dir = 8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/storage{
@@ -11622,7 +11622,7 @@
 /obj/tug_cart{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/storage{
 	name = "Cargo Auxiliary Endpoint"
 	})
@@ -11945,7 +11945,7 @@
 /area/station/crew_quarters/cafeteria)
 "ftR" = (
 /obj/vehicle/tug,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 10
 	},
 /area/station/quartermaster/storage{
@@ -11982,7 +11982,7 @@
 	layer = 9.1;
 	pixel_y = 21
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/storage{
@@ -14496,7 +14496,7 @@
 /area/station/chapel/office)
 "gxC" = (
 /obj/disposalpipe/segment/mail/vertical,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/cargooffice)
 "gxH" = (
 /obj/disposalpipe/segment/ejection{
@@ -14710,7 +14710,7 @@
 	pixel_x = 2;
 	pixel_y = 5
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 10
 	},
 /area/station/quartermaster/cargobay{
@@ -16574,7 +16574,7 @@
 /obj/item/device/radio/intercom/cargo{
 	dir = 8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/storage{
@@ -17350,7 +17350,7 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/storage{
@@ -17431,7 +17431,7 @@
 /obj/machinery/computer/announcement/station/cargo{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/cargooffice)
@@ -17675,7 +17675,7 @@
 	pixel_y = 32
 	},
 /obj/machinery/light_switch/east,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 5
 	},
 /area/station/quartermaster/storage{
@@ -17908,7 +17908,7 @@
 	icon_state = "1-2"
 	},
 /obj/disposalpipe/segment/vertical,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/cargooffice)
 "hPg" = (
 /obj/machinery/light/small,
@@ -19581,7 +19581,7 @@
 /obj/decal/stripe_caution,
 /obj/machinery/navbeacon/mule/QM1_north/east,
 /obj/machinery/bot/mulebot/QM1,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/storage{
@@ -19706,7 +19706,7 @@
 /area/station/crew_quarters/showers)
 "izq" = (
 /obj/disposalpipe/segment/mail/vertical,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/cargobay{
 	name = "Cargo Primary Endpoint"
 	})
@@ -21003,7 +21003,7 @@
 "jev" = (
 /obj/noticeboard/persistent/cargo/directional/north,
 /obj/machinery/manufacturer/hangar,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/cargooffice)
@@ -21213,7 +21213,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/storage{
@@ -23779,7 +23779,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/storage{
@@ -25939,7 +25939,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/cargobay{
@@ -26570,7 +26570,7 @@
 /obj/item/wrapping_paper,
 /obj/item/wirecutters,
 /obj/machinery/light,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 10
 	},
 /area/station/quartermaster/cargooffice)
@@ -27078,7 +27078,7 @@
 	pixel_y = 24;
 	pixel_x = 0
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/station/quartermaster/cargooffice)
@@ -27242,7 +27242,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/autoname_north,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 5
 	},
 /area/station/quartermaster/cargobay{
@@ -28266,7 +28266,7 @@
 	})
 "mgR" = (
 /obj/storage/secure/closet/engineering/cargo,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/station/quartermaster/cargobay{
@@ -29310,7 +29310,7 @@
 	name = "undeliverable mail outlet"
 	},
 /obj/disposalpipe/trunk/mail/east,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/storage{
@@ -29706,7 +29706,7 @@
 	layer = 9.1;
 	pixel_x = -10
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 10
 	},
 /area/station/quartermaster/cargobay{
@@ -29714,7 +29714,7 @@
 	})
 "mOC" = (
 /obj/machinery/manufacturer/medical,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/cargooffice)
@@ -30525,7 +30525,7 @@
 	},
 /obj/machinery/power/data_terminal,
 /obj/machinery/computer3/generic/personal,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/storage{
@@ -31240,7 +31240,7 @@
 	layer = 9.1;
 	pixel_x = 10
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 6
 	},
 /area/station/quartermaster/storage{
@@ -31954,7 +31954,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/cargobay{
@@ -32856,7 +32856,7 @@
 /obj/tug_cart{
 	dir = 4
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/storage{
@@ -35105,7 +35105,7 @@
 /obj/cable{
 	icon_state = "0-10"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 5
 	},
 /area/station/quartermaster/cargooffice)
@@ -36665,7 +36665,7 @@
 	dir = 4
 	},
 /obj/disposalpipe/segment/mail/bent/north,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/cargobay{
@@ -38337,7 +38337,7 @@
 /obj/machinery/light_switch/east,
 /obj/item/cell/supercell,
 /obj/item/cell/supercell,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 6
 	},
 /area/station/quartermaster/cargooffice)
@@ -38901,7 +38901,7 @@
 /area/pasiphae/bridge)
 "rdb" = (
 /obj/disposalpipe/segment/mail/vertical,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/cargobay{
@@ -42535,7 +42535,7 @@
 "sNY" = (
 /obj/decal/stripe_caution,
 /obj/machinery/navbeacon/mule/QM2_north/east,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/storage{
@@ -42665,7 +42665,7 @@
 /obj/cable{
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/cargooffice)
@@ -42788,7 +42788,7 @@
 /area/station/crew_quarters/market)
 "sSN" = (
 /obj/disposalpipe/segment/horizontal,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/cargobay{
 	name = "Cargo Primary Endpoint"
 	})
@@ -43012,7 +43012,7 @@
 /obj/item/device/radio/intercom/cargo{
 	dir = 8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/cargooffice)
@@ -43761,7 +43761,7 @@
 /obj/machinery/recharger,
 /obj/item/cargotele,
 /obj/item/cargotele,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/station/quartermaster/cargooffice)
 "tpy" = (
 /obj/machinery/light,
@@ -44672,7 +44672,7 @@
 /obj/stool/chair/office/yellow{
 	dir = 8
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 6
 	},
 /area/station/quartermaster/cargobay{
@@ -46804,7 +46804,7 @@
 /turf/simulated/floor/white,
 /area/station/medical/staff)
 "uMd" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/cargooffice)
@@ -47405,7 +47405,7 @@
 	layer = 9.1;
 	pixel_y = 21
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/cargooffice)
@@ -48210,7 +48210,7 @@
 	layer = 9.1;
 	pixel_y = 21
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/cargobay{
@@ -49753,7 +49753,7 @@
 	pixel_y = 10
 	},
 /obj/machinery/firealarm/directional/east,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/cargooffice)
@@ -52136,7 +52136,7 @@
 	icon_state = "2-8"
 	},
 /obj/disposalpipe/segment/mail/vertical,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/station/quartermaster/cargooffice)
@@ -52147,7 +52147,7 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/station/quartermaster/cargobay{
@@ -52953,7 +52953,7 @@
 	pixel_x = -10
 	},
 /obj/machinery/computer/supplycomp,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/cargooffice)
@@ -53037,7 +53037,7 @@
 	dir = 8
 	},
 /obj/landmark/start/job/quartermaster,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/station/quartermaster/cargooffice)

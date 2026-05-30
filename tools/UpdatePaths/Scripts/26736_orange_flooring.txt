@@ -16,6 +16,12 @@
 /turf/simulated/floor/darkblue/checker/white : /turf/simulated/floor/darkblue/checker{@OLD}
 /turf/simulated/floor/dblue/checker : /turf/simulated/floor/darkblue/checker{@OLD}
 /turf/simulated/floor/darkblue/checker/other : /turf/simulated/floor/darkblue/checker{@OLD}
-/turf/simulated/floor/caution/side/white : turf/simulated/floor/caution/white{@OLD}
+/turf/simulated/floor/caution/side/white : /turf/simulated/floor/caution/white{@OLD}
 /turf/simulated/floor/airless/caution/side/white : /turf/simulated/floor/airless/caution/white{@OLD}
 /turf/unsimulated/floor/caution/side/white : /turf/unsimulated/floor/caution/white{@OLD}
+/turf/simulated/floor/caution/side : /turf/simulated/floor/caution{@OLD}
+/turf/simulated/floor/airless/caution/side : /turf/simulated/floor/airless/caution{@OLD}
+/turf/unsimulated/floor/caution/side : /turf/unsimulated/floor/caution{@OLD}
+turf/simulated/floor/caution/white : /turf/simulated/floor/caution/white{@OLD}
+turf/simulated/floor/airless/caution/white : /turf/simulated/floor/airless/caution/white{@OLD}
+turf/unsimulated/floor/caution/side/white : /turf/unsimulated/floor/caution/white{@OLD}

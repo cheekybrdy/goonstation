@@ -5687,7 +5687,7 @@
 /turf/simulated/floor/plating/airless/asteroid,
 /area/space)
 "aGi" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/h7/storage)
@@ -7142,7 +7142,7 @@
 /turf/simulated/floor/caution,
 /area/h7/storage)
 "aLv" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 10
 	},
 /area/h7/storage)
@@ -7248,7 +7248,7 @@
 /turf/simulated/floor,
 /area/h7/computer_core)
 "aLN" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/h7/computer_core)
@@ -7381,7 +7381,7 @@
 	name = "Remote W APC";
 	pixel_x = -24
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/h7/storage)
@@ -7499,7 +7499,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/h7/computer_core)
@@ -7633,7 +7633,7 @@
 	dir = 1
 	},
 /obj/machinery/rkit,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/derelict_ai_sat)
@@ -7641,7 +7641,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/derelict_ai_sat)
@@ -7702,7 +7702,7 @@
 /turf/simulated/floor/caution,
 /area/derelict_ai_sat)
 "aNg" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/derelict_ai_sat)
@@ -7770,7 +7770,7 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/derelict_ai_sat)
@@ -7802,7 +7802,7 @@
 /obj/storage/crate,
 /obj/item/extinguisher,
 /obj/item/extinguisher,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/h7/storage)
@@ -7851,7 +7851,7 @@
 	},
 /obj/item/staple_gun,
 /obj/item/furniture_parts/table,
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/derelict_ai_sat)
@@ -7985,7 +7985,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 4
 	},
 /area/h7/computer_core)
@@ -8368,7 +8368,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/h7/computer_core)
 "aPn" = (
 /obj/cable{
@@ -8377,7 +8377,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/h7/computer_core)
 "aPo" = (
 /obj/cable{
@@ -8389,7 +8389,7 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 6
 	},
 /area/h7/computer_core)
@@ -12371,7 +12371,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/h7/lab)
 "bcu" = (
 /obj/cable{
@@ -12380,20 +12380,20 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/h7/lab)
 "bcv" = (
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/h7/lab)
 "bcw" = (
 /obj/cable{
 	icon_state = "4-8"
 	},
 /obj/fakeobject/lighttube_broken,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/h7/lab)
 "bcx" = (
 /obj/item/raw_material/shard/glass,
@@ -12440,13 +12440,13 @@
 	icon_state = "4-8"
 	},
 /obj/decal/cleanable/ash,
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/h7/lab)
 "bcF" = (
 /obj/cable{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/caution/side,
+/turf/simulated/floor/caution,
 /area/h7/lab)
 "bcG" = (
 /obj/cable{
@@ -13418,7 +13418,7 @@
 /turf/simulated/wall/auto/old,
 /area/space)
 "bhd" = (
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 8
 	},
 /area/derelict_ai_sat)
@@ -16478,7 +16478,7 @@
 /obj/machinery/door/airlock/pyro{
 	name = "Printing Press"
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 1
 	},
 /area/radiostation/press)
@@ -23760,7 +23760,7 @@
 /obj/machinery/light/lamp/black{
 	pixel_y = 6
 	},
-/turf/simulated/floor/caution/side{
+/turf/simulated/floor/caution{
 	dir = 9
 	},
 /area/derelict_ai_sat)
