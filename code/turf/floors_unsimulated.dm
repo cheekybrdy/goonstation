@@ -534,7 +534,7 @@
 /turf/unsimulated/floor/caution/side
 	icon_state = "caution"
 
-/turf/unsimulated/floor/caution/side/white
+/turf/unsimulated/floor/caution/white
 	icon_state = "cautionwhite"
 
 /turf/unsimulated/floor/caution/corner
