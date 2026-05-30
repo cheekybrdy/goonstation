@@ -559,10 +559,10 @@
 
 /////////////////////////////////////////
 
-/turf/simulated/floor/airless/caution/side
+/turf/simulated/floor/airless/caution
 	icon_state = "caution"
 
-/turf/simulated/floor/airless/caution/side/white
+/turf/simulated/floor/airless/caution/white
 	icon_state = "cautionwhite"
 
 /turf/simulated/floor/airless/caution/corner
