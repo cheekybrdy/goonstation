@@ -1317,11 +1317,15 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 		src.master.add_fingerprint(usr)
 		src.master.updateSelfDialog()
 		return
+
 // Chemical Request
+/datum/computer/file/pda_program/chemical_request
 	name = "Chemical Request"
 	size = 2
 	var/tmp/temp = null
 	var/tmp/antispam = 0
+	var/tmp/note = null
+	var/tmp/quantity = 5
 
 	return_text()
 		if(..())
@@ -1332,7 +1336,6 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			dat += "<br>[src.temp]"
 		else
 			dat += {"<br><B>Chemical Ordering Program</B><HR>
-			<B>Research Budget:</B> [wagesystem.budgets[BUDGET_CAT_DEPT_MEDICAL]] Credits<BR>
 			<A href='byond://?src=\ref[src];viewrequests=1'>View Requests</A><BR>
 			<A href='byond://?src=\ref[src];order=1'>Request Items</A><BR>"}
 		return dat
@@ -1343,38 +1346,55 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			return
 
 		if (href_list["order"])
-			src.temp = {"<B>Research Budget:</B> [wagesystem.budgets[BUDGET_CAT_DEPT_MEDICAL]] Credits<BR><HR>
-			<B>Please select the Chemical you would like to request:</B><BR><BR>"}
+			src.temp = {"<B>Please select the Chemical you would like to request:</B><BR><BR>"}
 			src.temp += search_snippet("background-color: #6F7961; color: #000;")
 			src.temp += "<BR><BR>"
-			for(var/S in concrete_typesof(/datum/reagent) )
-				var/datum/reagent/N = new S()
-				// Have to send the type instead of a reference to the obj because it would get caught by the garbage collector. oh well.
-				src.temp += {"<div class='supply-package'><A href='byond://?src=\ref[src];doorder=[N.type]'><B><U>[N.name]</U></B></A><BR>
-				<B>Cost:</B> [N.cost] Credits<BR>
-				<B>About:</B> [N.desc]<BR><BR></div>"}
+			var/list/chems = list()
+			for (var/id in chem_reactions_by_id)
+				var/datum/chemical_reaction/reaction = chem_reactions_by_id[id]
+				if (reaction.hidden)
+					continue
+				//eventual_result overrides the actual result
+				var/result = reaction.eventual_result || reaction.result
+				if (!result)
+					continue
+				if (!islist(result))
+					result = list(result)
+				for (var/result_id in result)
+					var/datum/reagent/reagent = reagents_cache[result_id]
+					if (reagent && !istype(reagent, /datum/reagent/fooddrink)) //all the cocktails clog the UI
+						chems += reagent
+			for (var/id in basic_elements)
+				var/datum/reagent/reagent = reagents_cache[id]
+				chems = reagent
+			for(var/chem in chems)
+				src.temp += {"<div class='supply-package'><A href='byond://?src=\ref[src];doorder=[chem.type]'><B><U>[chem.name]</U></B></A><BR>
+				<B>Contents:</B> [chem.description]<BR><BR></div>"}
+			note = input("Add a Note (Optional)", "Enter Message Text", note) as text|null
+			quantity = input("Enter request amount", "Enter Message Text", quantity) as text|null
+			if(!isnum_safe(quantity)) return
+			quantity = min(quantity,10000)
+			quantity = max(quantity,1)
 			src.temp += "<BR><A href='byond://?src=\ref[src];mainmenu=1'>OK</A>"
 
 		else if (href_list["doorder"])
-			var/datum/supply_order/O = new/datum/supply_order ()
-			var/supplytype = href_list["doorder"]
-			if (!dd_hasprefix(supplytype, "/datum/supply_packs"))
-				qdel(O)
-				return
-			var/datum/supply_packs/P = new supplytype ()
+			var/datum/chem_request/O = new/datum/chem_request ()
+			var/chemreq = href_list["doorder"]
+			var/datum/chem_request/P = new chemreq ()
 
-			O.object = P
-			O.orderedby = src.master.owner
-			O.address = src.master.net_id
-			O.console_location = get_area(src.master)
-			shippingmarket.supply_requests += O
+			O.reagent_name = P
+			O.requester_name = src.master.owner
+			O.volume = quantity
+			O.note = src.note
+			O.area_name = get_area(src.master)
+			chem_requests += O
 			src.temp = "Request sent to Chemical Request Console. The Chemists/Pharmacists will process your request as soon as possible.<BR>"
 
 			// pda alert ////////
 			if (!antispam || (antispam < (ticker.round_elapsed_ticks)) )
 				antispam = ticker.round_elapsed_ticks + SPAM_DELAY
 				var/datum/signal/pdaSignal = get_free_signal()
-				pdaSignal.data = list("address_1"="00000000", "command"="text_message", "sender_name"="CARGO-MAILBOT",  "group"=list(MGT_CARGO, MGA_CARGOREQUEST), "sender"="00000000", "message"="Notification: [O.object] requested by [O.orderedby] at [O.console_location].")
+				pdaSignal.data = list("address_1"="00000000", "command"="text_message", "sender_name"="RESEARCH-MAILBOT",  "group"=list(MGD_RESEARCH, MGA_CHEMREQUEST), "sender"="00000000", "message"="Notification: [O.reagent_name] requested by [O.requester_name] at [O.area_name].")
 				SEND_SIGNAL(src.master, COMSIG_MOVABLE_POST_RADIO_PACKET, pdaSignal, null, "pda")
 
 			//////////////////
@@ -1382,9 +1402,10 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 
 		else if (href_list["viewrequests"])
 			src.temp = "<B>Current Requests:</B><BR><BR>"
-			for(var/C in chem_requests)
-				var/datum/reagent/CO = C
-				src.temp += "[CO.object.name] requested by [CO.orderedby] from [CO.console_location].<BR>"
+			for(var/list/C in chem_requests)
+				var/list/datum/chem_request/CO = C
+				src.temp += "[CO.reagent_name] requested by [CO.requester_name] from [CO.area_name].<BR>"
+				src.temp += "STATUS:[CO.state]"
 			src.temp += "<BR><A href='byond://?src=\ref[src];mainmenu=1'>OK</A>"
 
 		else if (href_list["mainmenu"])
@@ -1393,7 +1414,6 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 		src.master.add_fingerprint(usr)
 		src.master.updateSelfDialog()
 		return
-
 #undef SPAM_DELAY
 
 /datum/computer/file/pda_program/station_name

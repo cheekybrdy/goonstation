@@ -160,13 +160,14 @@
 		setup_default_pen = /obj/item/pen/fancy
 		setup_default_cartridge = /obj/item/disk/data/cartridge/research_director
 		mailgroups = list(MGD_RESEARCH,MGD_COMMAND,MGD_PARTY)
+		alertgroups = list(MGA_CHEMREQUEST)
 
 	medical_director
 		icon_state = "pda-md"
 		setup_default_pen = /obj/item/pen/fancy
 		setup_default_cartridge = /obj/item/disk/data/cartridge/medical_director
 		mailgroups = list(MGD_MEDICAL,MGT_GENETICS,MGT_ROBOTICS,MGD_COMMAND,MGD_PARTY)
-		alertgroups = list(MGA_MAIL, MGA_RADIO, MGA_DEATH, MGA_MEDCRIT, MGA_CLONER, MGA_CRISIS)
+		alertgroups = list(MGA_MAIL, MGA_RADIO, MGA_DEATH, MGA_MEDCRIT, MGA_CLONER, MGA_CRISIS, MGA_CHEMREQUEST)
 
 	chiefengineer
 		icon_state = "pda-ce"
@@ -257,13 +258,14 @@
 		icon_state = "pda-pha"
 		setup_default_cartridge = /obj/item/disk/data/cartridge/medical
 		mailgroups = list(MGD_MEDICAL, MGD_PARTY)
-		alertgroups = list(MGA_MAIL, MGA_RADIO, MGA_DEATH, MGA_CRISIS, MGA_MEDCRIT)
+		alertgroups = list(MGA_MAIL, MGA_RADIO, MGA_DEATH, MGA_CRISIS, MGA_MEDCRIT, MGA_CHEMREQUEST)
 
 	toxins
 		name = "Research PDA"
 		icon_state = "pda-tox"
 		setup_default_cartridge = /obj/item/disk/data/cartridge/toxins
 		mailgroups = list(MGD_RESEARCH,MGD_PARTY)
+		alertgroups = list(MGA_CHEMREQUEST)
 
 	// Engineering and Supply
 
@@ -456,6 +458,7 @@
 		src.hd.root.add_file(new /datum/computer/file/pda_program/emergency_alert)
 		src.hd.root.add_file(new /datum/computer/file/pda_program/gps)
 		src.hd.root.add_file(new /datum/computer/file/pda_program/cargo_request(src))
+		src.hd.root.add_file(new /datum/computer/file/pda_program/chemical_request(src))
 		if(length(src.default_muted_mailgroups))
 			src.host_program.muted_mailgroups = src.default_muted_mailgroups
 		if(ismob(src.loc))
