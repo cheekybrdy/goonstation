@@ -902,10 +902,10 @@ DEFINE_FLOORS(twotone/black,
 DEFINE_FLOORS(twotone/orange,
 	icon_state = "twotone_orange")
 
-DEFINE_FLOORS(twotone/dblue,
+DEFINE_FLOORS(twotone/darkblue,
 	icon_state = "twotone_dblue")
 
-DEFINE_FLOORS(twotone/dpurple,
+DEFINE_FLOORS(twotone/darkpurple,
 	icon_state = "twotone_dpurple")
 
 /////////////////////////////////////////
