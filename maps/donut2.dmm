@@ -13087,7 +13087,9 @@
 /area/station/atmos/highcap_storage)
 "bDc" = (
 /obj/machinery/light/small/sticky,
-/obj/machinery/abcu,
+/obj/machinery/dispenser{
+	pltanks = 0
+	},
 /turf/simulated/floor/grime,
 /area/station/atmos/highcap_storage)
 "bDf" = (
