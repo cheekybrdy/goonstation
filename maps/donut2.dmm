@@ -3823,7 +3823,7 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/orange/corner,
+/turf/simulated/floor/caution/corner,
 /area/station/hangar/main)
 "ayo" = (
 /obj/rack,
@@ -16744,7 +16744,7 @@
 	pixel_y = 24
 	},
 /obj/machinery/manufacturer/general,
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/side{
 	dir = 1
 	},
 /area/station/hangar/main)
@@ -21357,7 +21357,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "gmd" = (
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 1
 	},
 /area/station/hangar/main)

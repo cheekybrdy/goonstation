@@ -1811,7 +1811,7 @@
 /turf/simulated/floor/specialroom/gym,
 /area/station/medical/dome)
 "aKz" = (
-/turf/simulated/floor/orange/corner,
+/turf/simulated/floor/caution/corner,
 /area/station/hallway/primary/south)
 "aKA" = (
 /obj/cable{
@@ -6424,7 +6424,7 @@
 /obj/machinery/atmospherics/pipe/simple,
 /obj/disposalpipe/segment,
 /obj/stool/bench/yellow/auto,
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 4
 	},
 /area/station/engine/inner)
@@ -6504,7 +6504,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/orange/corner,
+/turf/simulated/floor/caution/corner,
 /area/station/engine/engineering)
 "cUP" = (
 /obj/machinery/light{
@@ -9424,7 +9424,7 @@
 "ehD" = (
 /obj/machinery/atmospherics/pipe/simple,
 /obj/stool/bench/yellow/auto,
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 8
 	},
 /area/station/engine/inner)
@@ -18831,7 +18831,7 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/orange/corner,
+/turf/simulated/floor/caution/corner,
 /area/station/engine/inner)
 "izO" = (
 /obj/machinery/manufacturer/hangar,
@@ -22397,7 +22397,7 @@
 /area/station/storage/warehouse)
 "jYo" = (
 /obj/machinery/atmospherics/pipe/simple,
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 1
 	},
 /area/station/engine/inner)
@@ -28013,7 +28013,7 @@
 	icon_state = "1-4"
 	},
 /obj/stool/bench/yellow/auto,
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 1
 	},
 /area/station/engine/inner)
@@ -29160,7 +29160,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/orange/corner,
+/turf/simulated/floor/caution/corner,
 /area/station/engine/inner)
 "nfW" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -29947,7 +29947,7 @@
 	dir = 6;
 	icon_state = "bot2"
 	},
-/turf/simulated/floor/orange/corner,
+/turf/simulated/floor/caution/corner,
 /area/station/engine/power)
 "nyy" = (
 /obj/landmark/pest,
@@ -31351,7 +31351,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 8
 	},
 /area/station/engine/engineering)
@@ -32306,7 +32306,7 @@
 /turf/simulated/floor/specialroom/gym,
 /area/station/medical/medbay/treatment1)
 "otF" = (
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 4
 	},
 /area/station/engine/inner)
@@ -43372,7 +43372,7 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 8
 	},
 /area/station/engine/inner)
@@ -52739,7 +52739,7 @@
 	icon_state = "1-2"
 	},
 /obj/stool/bench/yellow/auto,
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 4
 	},
 /area/station/engine/inner)

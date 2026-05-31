@@ -424,7 +424,7 @@
 	pixel_y = 12
 	},
 /obj/table/endtable_classic,
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 4
 	},
 /area/pirate_ship)
@@ -672,7 +672,7 @@
 /obj/item/reagent_containers/food/snacks/lasagna,
 /obj/table/reinforced/bar/auto,
 /obj/machinery/light/incandescent/warm,
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 1
 	},
 /area/pirate_ship)
@@ -786,7 +786,7 @@
 /obj/machinery/light/incandescent/warm{
 	dir = 1
 	},
-/turf/simulated/floor/orange/corner,
+/turf/simulated/floor/caution/corner,
 /area/pirate_ship)
 "tH" = (
 /obj/forcefield/energyshield/perma/doorlink{
@@ -994,7 +994,7 @@
 /obj/machinery/light/incandescent/warm{
 	dir = 1
 	},
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 8
 	},
 /area/pirate_ship)
@@ -1433,7 +1433,7 @@
 	},
 /obj/machinery/light/incandescent/warm,
 /obj/table/reinforced/chemistry/auto,
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 4
 	},
 /area/pirate_ship)
@@ -1520,7 +1520,7 @@
 /obj/item/reagent_containers/mender/burn,
 /obj/item/reagent_containers/mender/brute,
 /obj/machinery/light/incandescent/warm,
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 1
 	},
 /area/pirate_ship)
@@ -2225,7 +2225,7 @@
 /obj/machinery/light/incandescent/warm{
 	dir = 1
 	},
-/turf/simulated/floor/orange/corner,
+/turf/simulated/floor/caution/corner,
 /area/pirate_ship)
 "Wd" = (
 /obj/decal/tile_edge/stripe/extra_big,
@@ -2319,7 +2319,7 @@
 /obj/machinery/light/incandescent/warm{
 	dir = 1
 	},
-/turf/simulated/floor/orange/corner{
+/turf/simulated/floor/caution/corner{
 	dir = 8
 	},
 /area/pirate_ship)
