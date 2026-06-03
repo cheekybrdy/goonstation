@@ -497,13 +497,6 @@
 /turf/unsimulated/floor/yellowblack/corner
 	icon_state = "yellowblackcorner"
 
-
-/turf/unsimulated/floor/yellowwhite
-	icon_state = "yellowwhite"
-
-/turf/unsimulated/floor/yellowwhite/corner
-	icon_state = "yellowwhitecorner"
-
 /////////////////////////////////////////
 
 /turf/unsimulated/floor/orange

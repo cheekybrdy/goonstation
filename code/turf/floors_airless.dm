@@ -531,12 +531,6 @@
 /turf/simulated/floor/airless/yellowblack/corner
 	icon_state = "yellowblackcorner"
 
-/turf/simulated/floor/airless/yellowwhite
-	icon_state = "yellowwhite"
-
-/turf/simulated/floor/airless/yellowwhite/corner
-	icon_state = "yellowwhitecorner"
-
 /////////////////////////////////////////
 
 /turf/simulated/floor/airless/orange
