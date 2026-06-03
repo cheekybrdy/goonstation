@@ -394,11 +394,19 @@
 	var/active = 0 // we don't just delete in case its a arena that resets instead of just being a one-off spawner
 	var/id = "toxmoon_boss"
 	var/boss_path = /mob/living/critter/noxia_abomination
-	var/spawn_location = /obj/boss_spawn_marker
+	var/wait_area = /area/toxmoon/plant/controls
 	Crossed(atom/movable/AM as mob|obj)
-
-		if(!active)
+		if(!active && ismob(AM))
 			active = TRUE
+			var/mob/M = AM
+			if(!M.mind)
+				return
+			boutput(M, SPAN_ALERT("Oh shit."))
+			if(wait_area)
+				for(var/WA in get_area_turfs(wait_area, TRUE)) //we can have the previous area checked for players before we trigger shit,
+					for(var/mob/TM in get_turf(WA))			   //so it lessens the chance of a group getting split in and out a arena
+						if(TM.mind)
+							return
 			for(var/obj/boss_spawn_trigger/T in world)
 				if (T.id == src.id)
 					T.active = TRUE
@@ -407,8 +415,9 @@
 					if (!P.density)
 						SPAWN( 0 )
 							P.close()
-			for(spawn_location in src.area)
-				SpawnBoss(get_turf(spawn_location))
+			for(var/obj/boss_spawn_marker/T in world)
+				if (T.id == src.id)
+					SpawnBoss(get_turf(T))
 		..()
 
 	proc/SpawnBoss(spawn_point = get_turf(src), height = 7, use_shadow=TRUE, boss_type=boss_path) //wowwie more ripped code
@@ -460,9 +469,8 @@
 	bound_width = 160
 	bound_height = 160
 	pixel_x = -64
-	pixel_y = -64
+	pixel_y = -128
 	bound_x = -64
-	bound_y = -64
 	isFlying = TRUE // on da ceilin
 	event_handler_flags = IMMUNE_TRENCH_WARP
 	anchored = TRUE
@@ -473,7 +481,11 @@
 		remove_lifeprocess(/datum/lifeprocess/radiation)
 		APPLY_ATOM_PROPERTY(src, PROP_MOB_GOOPIMMUNE, src.type)
 		APPLY_ATOM_PROPERTY(src, PROP_MOB_CANTMOVE, src.type)
+		APPLY_ATOM_PROPERTY(src, PROP_MOB_CANTTURN, src.type)
 		APPLY_ATOM_PROPERTY(src, PROP_MOB_CANT_BE_PINNED, src.type)
+		APPLY_ATOM_PROPERTY(src, PROP_MOB_NO_SELF_HARM, src.type)
+		APPLY_ATOM_PROPERTY(src, PROP_MOB_UNGRABBABLE, src.type)
+		APPLY_ATOM_PROPERTY(src, PROP_MOB_UNBUMPABLE, src.type)
 		src.bioHolder.AddEffect("radioactive")
 
 

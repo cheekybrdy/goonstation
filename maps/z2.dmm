@@ -56621,6 +56621,7 @@
 /area/crunch)
 "fnt" = (
 /obj/machinery/door/airlock/gannets/maintenance,
+/obj/mapping_helper/access/public,
 /turf/unsimulated/floor/plating/scorched,
 /area/toxmoon/plant/upper)
 "fnw" = (
@@ -58624,13 +58625,6 @@
 	},
 /turf/space,
 /area/watchful_eye_sensor)
-"gEf" = (
-/obj/machinery/door_control/podbay{
-	id = "hangar_wizard";
-	pixel_x = 21
-	},
-/turf/unsimulated/floor/plating,
-/area/toxmoon/depot)
 "gEi" = (
 /obj/decal/glow{
 	anchored = 1;
@@ -59940,6 +59934,9 @@
 "hzY" = (
 /obj/machinery/chem_shaker/large/chemistry,
 /obj/item/raw_material/shard/glass,
+/obj/item/reagent_containers/glass/plumbing/condenser{
+	pixel_y = 13
+	},
 /turf/unsimulated/floor/plating/damaged3,
 /area/toxmoon/plant/lower)
 "hAi" = (
@@ -70490,6 +70487,12 @@
 	name = "wood floor"
 	},
 /area/wizard_station)
+"olD" = (
+/obj/fakeobject/sewagedrain{
+	pixel_y = -14
+	},
+/turf/unsimulated/wall/greek/underwall,
+/area/toxmoon/sewer)
 "olG" = (
 /obj/decal/exhibit/premium{
 	exhibit_id = "ex_centcom_premium";
@@ -75095,6 +75098,13 @@
 /obj/map/light/brighterwhite,
 /turf/unsimulated/floor/wood/two,
 /area/afterlife/bar)
+"rmf" = (
+/obj/fakeobject/sewagedrain{
+	pixel_y = -14;
+	desc = "A sewage drain, looks like the bars got melted off long ago."
+	},
+/turf/unsimulated/wall/greek/underwall,
+/area/toxmoon/sewer)
 "rnz" = (
 /obj/lattice/directional_icons{
 	dir = 1
@@ -82721,6 +82731,10 @@
 "wjS" = (
 /obj/table/reinforced/chemistry/auto,
 /obj/item/paper/toxmoon_research,
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = 9;
+	pixel_y = 9
+	},
 /turf/unsimulated/floor/white/grime,
 /area/toxmoon/plant/lower)
 "wjW" = (
@@ -82935,6 +82949,7 @@
 /area/centcom/offices/urs)
 "wpq" = (
 /obj/table/auto,
+/obj/item/gun/energy/phaser_gun,
 /turf/unsimulated/floor/setpieces/toxmoon/irradiated,
 /area/toxmoon/plant/controls)
 "wpw" = (
@@ -132552,7 +132567,7 @@ kqH
 wdk
 eMA
 fvv
-gEf
+fvv
 wdk
 tUM
 eMA
@@ -153960,7 +153975,7 @@ pzZ
 pzZ
 pzZ
 pzZ
-vEt
+pzZ
 wOF
 pzZ
 pzZ
@@ -154564,7 +154579,7 @@ pzZ
 wOF
 xwQ
 pzZ
-pzZ
+vEt
 pzZ
 pzZ
 wOF
@@ -155782,7 +155797,7 @@ aaa
 qLl
 vmG
 xQj
-qLl
+rmf
 jvU
 jvU
 eVH
@@ -157292,7 +157307,7 @@ qom
 sRL
 qom
 sMj
-qLl
+olD
 jvU
 jvU
 xAS
@@ -161520,7 +161535,7 @@ aaa
 aaa
 aaa
 aaa
-qLl
+olD
 jvU
 jvU
 rdM

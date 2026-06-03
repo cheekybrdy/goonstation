@@ -201,6 +201,7 @@ TYPEINFO(/obj/machinery/conveyor) {
 	icon = 'icons/misc/worlds.dmi'
 	protected = TRUE
 	operating = 1
+	move_lag = 2.5
 
 	var/entry = FALSE // To start the tug test after the fall
 
