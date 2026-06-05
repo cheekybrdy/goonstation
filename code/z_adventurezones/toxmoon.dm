@@ -53,7 +53,7 @@
 			var/falltarget = LANDMARK_FALL_TOX_REACTOR
 
 			New()
-				src.AddComponent(/datum/component/pitfall/target_landmark,\
+				src.AddComponent(/datum/component/pitfall/target_landmark/enter_triggering,\
 					BruteDamageMax = 50,\
 					FallTime = 0 SECONDS,\
 					TargetLandmark = src.falltarget)
@@ -475,6 +475,8 @@
 	event_handler_flags = IMMUNE_TRENCH_WARP
 	anchored = TRUE
 	ai_type = /datum/aiHolder/ranged
+	var/entrance_id = "toxmoon_boss"
+	var/exit_id = "toxmoon_loot"
 
 	New()
 		..()
@@ -492,6 +494,15 @@
 	setup_healths()
 		add_hh_flesh(src.health_brute, src.health_brute_vuln)
 		add_hh_flesh_burn(src.health_burn, src.health_brute_vuln)
+
+	death(gibbed, do_drop_equipment)
+		for(var/obj/machinery/door/poddoor/P in by_type[/obj/machinery/door]) //robbed checkpoint bot code
+			if (P.id == src.entrance_id || src.exit_id)
+				if (P.density)
+					SPAWN( 0 )
+						P.open()
+		. = ..()
+
 
 	// 	src.set_dir(get_dir(src, target))
 	// 	var/obj/projectile/P1 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
