@@ -1,4 +1,14 @@
-
+(t)thu jun 04 26
+(u)LeahTheTech
+(+)Slugs and snails now eat plants out of hydroponics trays. Grief botany today!
+(t)wed jun 03 26
+(u)Driftered
+(p)26748
+(e)|
+(*)Cyborgs may now choose their crayon color instead of swapping until they get what they want.
+(t)wed jun 3 26
+(u)LeahTheTech
+(+)Syndie chainsaw butchering now has a 3 second action bar to prevent accidental gibbings (whole bodies make better plant food)
 (t)sun may 31 26
 (u)Pirate-Rob
 (p)26087
@@ -43,7 +53,7 @@
 (u)LeahTheTech
 (p)26521
 (e)🗺⚖🧛|A-Mapping, C-Balance, A-Gamemodes
-(*)The listening post barracks are now locked until the syndicate codereader has scanned an authentication disk. The barracks contain the syndicate apparel vendor, 2TC, and a syndicate announcement computer.
+(*)The listening post barracks are now locked until the syndicate codereader has scanned an authentication disk. The barracks contain the syndicate apparel vendor, 2TC, and a deployable turret.
 (u)Lord_Earthfire
 (p)26266
 (e)🆕⚗|C-Feature, A-Chemistry
