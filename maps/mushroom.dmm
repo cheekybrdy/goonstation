@@ -10079,7 +10079,7 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /obj/cable,
 /turf/simulated/floor/plating,
-/area/station/turret_protected/armory_outside)
+/area/station/security/evidence)
 "dXA" = (
 /obj/mapping_helper/access/telesci,
 /obj/cable{
@@ -18939,7 +18939,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
-/area/station/turret_protected/armory_outside)
+/area/station/security/evidence)
 "kvv" = (
 /turf/unsimulated/floor/arrival{
 	dir = 1
@@ -32503,7 +32503,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
-/area/station/turret_protected/armory_outside)
+/area/station/security/evidence)
 "toB" = (
 /obj/machinery/light_switch{
 	name = "S light switch";
@@ -89892,7 +89892,7 @@ oDO
 toi
 kuZ
 dXw
-nlV
+gGN
 qQI
 rHz
 qzg
