@@ -668,9 +668,6 @@
 /turf/simulated/floor/orange/corner
 	icon_state = "orangecorner"
 
-/turf/simulated/floor/orange/checker
-	icon_state = "orangechecker"
-
 /////////////////////////////////////////
 
 /turf/simulated/floor/caution
