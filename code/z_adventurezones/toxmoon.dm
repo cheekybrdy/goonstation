@@ -462,7 +462,7 @@
 	health_brute = 500
 	health_brute_vuln = 0.2
 	health_burn = 500
-	health_burn_vuln = 0.2
+	health_burn_vuln = 0.6
 	stamina = INFINITY // Don't want something hanging from the ceiling to go horizontal
 	icon = 'icons/mob/critter/nonhuman/critter160x160.dmi'
 	icon_state = "nabom"
@@ -477,6 +477,7 @@
 	ai_type = /datum/aiHolder/ranged
 	var/entrance_id = "toxmoon_boss"
 	var/exit_id = "toxmoon_loot"
+	add_abilities = list(/datum/targetable/critter/spit/low_cd)
 
 	New()
 		..()
@@ -503,7 +504,21 @@
 						P.open()
 		. = ..()
 
+	critter_ability_attack(mob/target)
+		var/datum/targetable/critter/spit/low_cd/spit = src.abilityHolder.getAbility(/datum/targetable/critter/spit/low_cd)
+		src.set_dir(get_dir(src, target))
 
+		if (!spit.disabled && spit.cooldowncheck() && prob(10))
+			spit.handleCast(target)
+			src.ai.move_away(target,1)
+			return TRUE
+
+	setup_hands()
+		..()
+		var/datum/handHolder/HH = hands[1]
+		HH.limb = new /datum/limb/gun/kinetic/spit
+		HH.icon_state = "gun"
+		HH.limb_name = "spitter arm"
 	// 	src.set_dir(get_dir(src, target))
 	// 	var/obj/projectile/P1 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
 	// 	var/obj/projectile/P2 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
