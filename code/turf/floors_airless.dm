@@ -545,18 +545,6 @@
 /turf/simulated/floor/airless/orange/checker
 	icon_state = "orangechecker"
 
-/turf/simulated/floor/airless/orangeblack
-	icon_state = "orangeblack"
-
-/turf/simulated/floor/airless/orangeblack/corner
-	icon_state = "orangeblackcorner"
-
-/turf/simulated/floor/airless/orangewhite
-	icon_state = "orangewhite"
-
-/turf/simulated/floor/airless/orangewhite/corner
-	icon_state = "orangewhitecorner"
-
 /////////////////////////////////////////
 
 /turf/simulated/floor/airless/caution

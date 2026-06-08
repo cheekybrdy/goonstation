@@ -671,20 +671,6 @@
 /turf/simulated/floor/orange/checker
 	icon_state = "orangechecker"
 
-
-/turf/simulated/floor/orangeblack
-	icon_state = "orangeblack"
-
-/turf/simulated/floor/orangeblack/corner
-	icon_state = "orangeblackcorner"
-
-
-/turf/simulated/floor/orangewhite
-	icon_state = "orangewhite"
-
-/turf/simulated/floor/orangewhite/corner
-	icon_state = "orangewhitecorner"
-
 /////////////////////////////////////////
 
 /turf/simulated/floor/caution
