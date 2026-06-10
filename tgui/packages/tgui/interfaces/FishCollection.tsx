@@ -27,7 +27,7 @@ export const FishCollection = (props) => {
   const { fish_data, collected } = data;
 
   return (
-    <Window title="Fish Collection" theme="ntos" width={420} height={380}>
+    <Window title="Fish Collection" theme="ntos" width={420} height={360}>
       <Window.Content>
         Collected fish: {collected?.length ?? 0}/{fish_data.length}
         <Divider />
