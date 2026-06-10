@@ -69,6 +69,7 @@ ABSTRACT_TYPE(/obj/item/reagent_containers)
 
 	attack(mob/target, mob/user, def_zone, is_special = FALSE, params = null)
 		return
+
 	attackby(obj/item/I, mob/user)
 		if (istype(I, /obj/item/beaker_lid))
 			try_to_apply_lid(I, user)
