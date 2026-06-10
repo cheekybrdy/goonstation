@@ -61,6 +61,7 @@ Alien/mutant/other fish:
 		Meat mutant
 		Eye fish
 		Void fish
+		Code worm
 		Sun fish
 		Blobfish
 		Lava fish
