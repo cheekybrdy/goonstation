@@ -58,6 +58,7 @@ Aquarium saltwater fish:
 
 Alien/mutant/other fish:
 	Implemented:
+		Literal Swordfish
 		Meat mutant
 		Eye fish
 		Void fish
@@ -71,7 +72,6 @@ Alien/mutant/other fish:
 		Tree fish
 		Origami fish
 		Cardboard fish
-		Literal Swordfish
 	Unimplemented:
 		Blood fish
 		Starstonefish
