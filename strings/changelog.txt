@@ -1,4 +1,20 @@
 
+(t)thu jun 11 26
+(u)JORJ949
+(p)26839
+(e)⚖🧛|C-Balance, A-Gamemodes
+(*)Salvagers now get random uniforms, suits and hats, pulling from the same pool that stowaways do. They also start with a gas mask.
+(t)wed jun 10 26
+(u)LeahTheTech
+(+)Chameleon projectors no longer make an obnoxious flash sound when scanning something.
+(+)Cloaking field generators now cost 2TC, down from 3, and start at max range.
+(p)21572
+(e)🆕🎨🔨|C-Feature, C-Sprites, A-Player-Actions
+(*)Changelings now have the ability to swap bodies with those they absorb, leaving their old body as a husk. The old absorb behaviour remains as a different button.
+(u)LeahTheTech
+(p)26852
+(e)💅⛔🧛|C-QoL, C-Removal, A-Gamemodes
+(+)Removed changeling lesser form button and moved it to the transform menu.
 (t)tue jun 09 26
 (u)Gomp
 (p)26809
