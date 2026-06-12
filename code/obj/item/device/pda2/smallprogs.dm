@@ -1326,6 +1326,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 	var/tmp/antispam = 0
 	var/tmp/note = null
 	var/tmp/quantity = 5
+	var/tmp/reagent_color = null
 
 	return_text()
 		if(..())
@@ -1366,28 +1367,34 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 						chems += reagent
 			for (var/id in basic_elements)
 				var/datum/reagent/reagent = reagents_cache[id]
-				chems = reagent
-			for(var/chem in chems)
+				chems += reagent
+			for(var/datum/reagent/chem in chems)
 				src.temp += {"<div class='supply-package'><A href='byond://?src=\ref[src];doorder=[chem.type]'><B><U>[chem.name]</U></B></A><BR>
 				<B>Contents:</B> [chem.description]<BR><BR></div>"}
-			note = input("Add a Note (Optional)", "Enter Message Text", note) as text|null
-			quantity = input("Enter request amount", "Enter Message Text", quantity) as text|null
-			if(!isnum_safe(quantity)) return
-			quantity = min(quantity,10000)
-			quantity = max(quantity,1)
 			src.temp += "<BR><A href='byond://?src=\ref[src];mainmenu=1'>OK</A>"
 
 		else if (href_list["doorder"])
 			var/datum/chem_request/O = new/datum/chem_request ()
-			var/chemreq = href_list["doorder"]
-			var/datum/chem_request/P = new chemreq ()
+			var/chemreg = href_list["doorder"]
+			var/datum/reagent/P = new chemreg ()
 
-			O.reagent_name = P
+			if (!dd_hasprefix(chemreg, "/datum/reagent"))
+				qdel(O)
+				return
+
+			note = input("Add a Note (Optional)", "Enter Message Text", note) as text|null
+			quantity = input("Enter request amount", "Enter Amount", quantity) as num|null
+			if(!isnum_safe(quantity)) return
+			quantity = min(quantity,10000)
+			quantity = max(quantity,1)
+
+			O.reagent_name = P.name
+			O.reagent_color = list(P.fluid_r, P.fluid_g, P.fluid_b)
 			O.requester_name = src.master.owner
 			O.volume = quantity
 			O.note = src.note
 			O.area_name = get_area(src.master)
-			chem_requests += O
+			chem_requests["[O.id]"] = O
 			src.temp = "Request sent to Chemical Request Console. The Chemists/Pharmacists will process your request as soon as possible.<BR>"
 
 			// pda alert ////////
@@ -1403,7 +1410,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 		else if (href_list["viewrequests"])
 			src.temp = "<B>Current Requests:</B><BR><BR>"
 			for(var/list/C in chem_requests)
-				var/list/datum/chem_request/CO = C
+				var/datum/chem_request/CO = C
 				src.temp += "[CO.reagent_name] requested by [CO.requester_name] from [CO.area_name].<BR>"
 				src.temp += "STATUS:[CO.state]"
 			src.temp += "<BR><A href='byond://?src=\ref[src];mainmenu=1'>OK</A>"
