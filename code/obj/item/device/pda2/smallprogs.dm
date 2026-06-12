@@ -1368,6 +1368,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			for (var/id in basic_elements)
 				var/datum/reagent/reagent = reagents_cache[id]
 				chems += reagent
+			sortList(chems[name], /proc/cmp_text_asc)
 			for(var/datum/reagent/chem in chems)
 				src.temp += {"<div class='supply-package'><A href='byond://?src=\ref[src];doorder=[chem.type]'><B><U>[chem.name]</U></B></A><BR>
 				<B>Contents:</B> [chem.description]<BR><BR></div>"}
@@ -1409,10 +1410,10 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 
 		else if (href_list["viewrequests"])
 			src.temp = "<B>Current Requests:</B><BR><BR>"
-			for(var/list/C in chem_requests)
-				var/datum/chem_request/CO = C
-				src.temp += "[CO.reagent_name] requested by [CO.requester_name] from [CO.area_name].<BR>"
-				src.temp += "STATUS:[CO.state]"
+			for (var/request_id in chem_requests)
+				var/datum/chem_request/request = chem_requests[request_id]
+				src.temp += "[request.reagent_name] requested by [request.requester_name] from [request.area_name].<BR>"
+				src.temp += "STATUS:[request.state]<BR>"
 			src.temp += "<BR><A href='byond://?src=\ref[src];mainmenu=1'>OK</A>"
 
 		else if (href_list["mainmenu"])
