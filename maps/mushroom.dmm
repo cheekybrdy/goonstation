@@ -8417,7 +8417,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/red,
-/area/station/security/main)
+/area/station/security/evidence)
 "cOz" = (
 /obj/disposalpipe/segment{
 	dir = 4
@@ -8528,15 +8528,11 @@
 /turf/simulated/floor/purple,
 /area/station/science/hall)
 "cRG" = (
-/obj/storage/secure/closet/security/equipment,
-/obj/decal/tile_edge/stripe/extra_big{
-	dir = 8
-	},
 /obj/machinery/light/incandescent{
 	dir = 4
 	},
-/turf/simulated/floor/neutral/corner,
-/area/station/security/main)
+/turf/simulated/floor/red,
+/area/station/security/evidence)
 "cSm" = (
 /obj/machinery/vending/pizza,
 /turf/simulated/floor/neutral/side,
@@ -9594,10 +9590,23 @@
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/exit)
 "dEu" = (
-/obj/machinery/vending/jobclothing/security,
-/obj/decal/stripe_caution,
+/obj/table/reinforced/auto,
+/obj/item/paper_bin{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/clipboard{
+	pixel_x = -12;
+	pixel_y = 4
+	},
+/obj/random_item_spawner/desk_stuff/one,
+/obj/item/chem_grenade/flashbang{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/cable,
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/main)
+/area/station/security/evidence)
 "dEH" = (
 /obj/machinery/vending/jobclothing/catering,
 /turf/simulated/floor/black,
@@ -10079,7 +10088,7 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /obj/cable,
 /turf/simulated/floor/plating,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "dXA" = (
 /obj/mapping_helper/access/telesci,
 /obj/cable{
@@ -10924,7 +10933,7 @@
 "eAY" = (
 /obj/storage/secure/crate/weapon/confiscated_items,
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/main)
+/area/station/security/evidence)
 "eBf" = (
 /obj/cable{
 	icon_state = "6-8"
@@ -12837,7 +12846,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor,
-/area/station/security/main)
+/area/station/security/evidence)
 "fWY" = (
 /obj/landmark/start/job/scientist,
 /obj/stool/chair/purple,
@@ -13750,7 +13759,7 @@
 /area/ghostdrone_factory)
 "gGN" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "gGS" = (
 /obj/mapping_helper/wingrille_spawn/auto,
 /obj/barber_pole{
@@ -14570,6 +14579,14 @@
 	},
 /turf/simulated/floor/purple,
 /area/station/science/teleporter)
+"hkp" = (
+/obj/machinery/vending/jobclothing/security,
+/obj/decal/stripe_caution,
+/obj/item/device/radio/intercom/security{
+	dir = 1
+	},
+/turf/simulated/floor/red/redblackchecker,
+/area/station/security/equipment)
 "hkD" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -15768,6 +15785,9 @@
 	},
 /turf/simulated/floor/engine/vacuum,
 /area/station/engine/proto)
+"igO" = (
+/turf/simulated/floor/red/redblackchecker,
+/area/station/security/equipment)
 "igQ" = (
 /obj/landmark/start/job/medical_doctor,
 /turf/simulated/floor/white,
@@ -16079,13 +16099,6 @@
 	},
 /turf/simulated/floor,
 /area/station/engine/inner)
-"itg" = (
-/obj/storage/secure/closet/security/equipment,
-/obj/decal/tile_edge/stripe/extra_big{
-	dir = 8
-	},
-/turf/simulated/floor,
-/area/station/security/main)
 "itJ" = (
 /obj/machinery/power/apc/autoname_south,
 /obj/cable{
@@ -16656,10 +16669,10 @@
 /turf/simulated/floor/engine,
 /area/station/turret_protected/AIsat)
 "iOd" = (
-/obj/storage/secure/closet/brig,
 /obj/decal/stripe_caution,
+/obj/machinery/weapon_stand/taser_rack/recharger/empty,
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "iOF" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 9;
@@ -16938,6 +16951,22 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
+"iYt" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	dir = null
+	},
+/obj/stool/chair/office/red{
+	dir = 1
+	},
+/obj/landmark/start/job/security_assistant,
+/turf/simulated/floor/red,
+/area/station/security/evidence)
 "iYx" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4
@@ -18604,6 +18633,16 @@
 	},
 /turf/simulated/floor/black,
 /area/station/science/lab)
+"kig" = (
+/obj/rack,
+/obj/item/storage/box/evidence{
+	pixel_x = -6
+	},
+/obj/item/storage/box/evidence{
+	pixel_x = 6
+	},
+/turf/simulated/floor/red/redblackchecker,
+/area/space)
 "kir" = (
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/baroffice)
@@ -18939,7 +18978,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "kvv" = (
 /turf/unsimulated/floor/arrival{
 	dir = 1
@@ -21111,7 +21150,7 @@
 	},
 /obj/mapping_helper/access/security,
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "mdC" = (
 /obj/machinery/door/airlock/pyro/glass,
 /obj/mapping_helper/firedoor_spawn,
@@ -21889,7 +21928,7 @@
 "mND" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
-/area/station/security/main)
+/area/station/security/evidence)
 "mNM" = (
 /obj/machinery/atmospherics/pipe/simple/insulated,
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -22712,7 +22751,7 @@
 	},
 /obj/mapping_helper/access/security,
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "nnq" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 1
@@ -23168,7 +23207,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "nFu" = (
 /obj/machinery/light/incandescent{
 	dir = 4
@@ -23290,9 +23329,13 @@
 /turf/simulated/floor/darkblue,
 /area/station/turret_protected/ai_upload)
 "nIU" = (
-/obj/submachine/weapon_vendor/security,
+/obj/machinery/computer3/generic/secure_data,
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/main)
+/area/station/security/evidence)
 "nIV" = (
 /obj/machinery/power/data_terminal,
 /obj/machinery/networked/test_apparatus/electrobox,
@@ -25864,24 +25907,11 @@
 /turf/space,
 /area/space)
 "pnv" = (
-/obj/table/reinforced/auto,
-/obj/item/paper_bin{
-	pixel_x = 6;
-	pixel_y = 4
-	},
-/obj/item/clipboard{
-	pixel_x = -12;
-	pixel_y = 4
-	},
-/obj/random_item_spawner/desk_stuff/one,
-/obj/item/chem_grenade/flashbang{
-	pixel_x = -3;
-	pixel_y = 3
-	},
 /obj/cable,
 /obj/machinery/power/apc/autoname_south,
+/obj/submachine/weapon_vendor/security,
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "por" = (
 /obj/storage/secure/closet/civilian/kitchen,
 /obj/machinery/light/incandescent{
@@ -27624,7 +27654,7 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/red,
-/area/station/security/main)
+/area/station/security/evidence)
 "quL" = (
 /obj/item/device/radio/intercom{
 	dir = 8
@@ -28407,15 +28437,6 @@
 /obj/mapping_helper/access/hydro,
 /turf/simulated/floor/black,
 /area/station/hydroponics/bay)
-"qSG" = (
-/obj/storage/secure/closet/security/equipment,
-/obj/decal/tile_edge/stripe/extra_big{
-	dir = 8
-	},
-/turf/simulated/floor/neutral/side{
-	dir = 4
-	},
-/area/station/security/main)
 "qSV" = (
 /turf/simulated/wall/auto/supernorn,
 /area/space)
@@ -30232,7 +30253,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "rUI" = (
 /turf/simulated/floor/blueblack{
 	dir = 4
@@ -31302,9 +31323,9 @@
 /turf/space,
 /area/station/solar/aisat)
 "sHH" = (
-/obj/machinery/weapon_stand/taser_rack/recharger/empty,
+/obj/machinery/computer/camera_viewer,
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/main)
+/area/station/security/evidence)
 "sHS" = (
 /obj/machinery/door/poddoor/blast/pyro/podbay_autoclose/engineering_horizontal/vertical,
 /obj/forcefield/energyshield/perma/doorlink{
@@ -31857,21 +31878,15 @@
 /turf/simulated/floor,
 /area/station/crew_quarters/courtroom)
 "sWM" = (
-/obj/machinery/computer3/generic/secure_data{
-	dir = 8
-	},
-/obj/machinery/power/data_terminal,
-/obj/cable{
-	icon_state = "0-8"
-	},
-/obj/cable{
-	icon_state = "0-4"
-	},
 /obj/machinery/light/incandescent{
 	dir = 4
 	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/storage/secure/closet/security,
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "sWY" = (
 /obj/cable/reinforced{
 	icon_state = "4-8-thick"
@@ -32135,12 +32150,6 @@
 	icon_state = "fgreen2"
 	},
 /area/station/bridge)
-"tfk" = (
-/obj/machinery/computer/camera_viewer{
-	dir = 8
-	},
-/turf/simulated/floor/red/redblackchecker,
-/area/station/security/evidence)
 "tfy" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging,
 /turf/simulated/floor/engine/vacuum,
@@ -32503,7 +32512,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "toB" = (
 /obj/machinery/light_switch{
 	name = "S light switch";
@@ -33342,13 +33351,6 @@
 	},
 /turf/space,
 /area/space)
-"tRA" = (
-/obj/landmark/start/job/security_officer,
-/obj/stool/chair/red{
-	dir = 4
-	},
-/turf/simulated/floor/red/redblackchecker,
-/area/station/security/main)
 "tRY" = (
 /obj/mesh/grille/steel,
 /turf/simulated/floor/plating/airless,
@@ -33778,8 +33780,11 @@
 /turf/simulated/floor/black,
 /area/station/crew_quarters/catering)
 "uhh" = (
-/turf/simulated/wall/auto/supernorn,
-/area/station/security/main)
+/obj/machinery/door/airlock/pyro/security,
+/obj/mapping_helper/firedoor_spawn,
+/obj/mapping_helper/access/security,
+/turf/simulated/floor/plating,
+/area/station/security/evidence)
 "uhx" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /obj/cable{
@@ -34033,6 +34038,10 @@
 "upu" = (
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/courtroom)
+"upA" = (
+/obj/storage/secure/closet/security,
+/turf/simulated/floor/red/redblackchecker,
+/area/station/security/equipment)
 "upI" = (
 /obj/warp_beacon/engineering,
 /obj/lattice{
@@ -34169,6 +34178,9 @@
 	},
 /turf/space,
 /area/station/turret_protected/AIbaseoutside)
+"usy" = (
+/turf/simulated/wall/auto/supernorn,
+/area/station/security/evidence)
 "usU" = (
 /obj/stool/chair/couch/blue{
 	dir = 4
@@ -34339,7 +34351,7 @@
 	},
 /obj/mapping_helper/access/security,
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "uDc" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 1
@@ -36409,11 +36421,10 @@
 	},
 /area/station/crew_quarters/jazz)
 "vSV" = (
-/obj/stool/chair{
-	dir = 8;
-	tag = "icon-chair (WEST)"
-	},
 /obj/landmark/start/job/security_officer,
+/obj/stool/chair/red{
+	dir = 8
+	},
 /turf/simulated/floor/red/side{
 	dir = 8
 	},
@@ -37103,15 +37114,15 @@
 	icon_state = "office_chair_red";
 	tag = "icon-office_chair_red (WEST)"
 	},
-/obj/landmark/start/job/security_assistant,
 /obj/cable{
 	icon_state = "2-8"
 	},
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/landmark/start/job/security_officer,
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "wwZ" = (
 /obj/machinery/light/incandescent,
 /turf/simulated/floor/redwhite,
@@ -37279,8 +37290,9 @@
 	pixel_y = -24
 	},
 /obj/cable,
+/obj/storage/secure/closet/brig,
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/main)
+/area/station/security/evidence)
 "wES" = (
 /obj/machinery/light{
 	dir = 1;
@@ -38710,7 +38722,7 @@
 	pixel_x = 3
 	},
 /turf/simulated/floor/red/redblackchecker,
-/area/station/security/evidence)
+/area/station/security/equipment)
 "xAb" = (
 /obj/table/auto,
 /obj/item/rods/steel/fullstack,
@@ -88983,7 +88995,7 @@ yao
 vPY
 jCy
 jaL
-qUo
+igO
 wwO
 rTM
 pnv
@@ -89277,17 +89289,17 @@ keR
 tjO
 emW
 nIU
-cOj
-tRA
+iYt
+hzu
 swD
 qyt
 xgD
 xgD
 jCy
 moE
-qUo
+igO
 nFe
-qUo
+igO
 iOd
 qQI
 qQI
@@ -89587,10 +89599,10 @@ rFm
 wQW
 nhv
 oDO
-tfk
+upA
 sWM
-hzu
-xBR
+upA
+hkp
 qQI
 kmh
 snh
@@ -89880,9 +89892,9 @@ swA
 swA
 cbD
 uhh
-itg
+qUo
 cRG
-qSG
+xBR
 swD
 rnG
 xgD
@@ -90181,7 +90193,7 @@ pEL
 pEL
 pEL
 hXm
-uhh
+usy
 swD
 swD
 swD
@@ -91998,7 +92010,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+kig
 aaa
 aaa
 spy
