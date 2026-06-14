@@ -7189,9 +7189,8 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
 "ccb" = (
-/obj/stool/chair{
-	dir = 1;
-	tag = "icon-chair (NORTH)"
+/obj/stool/chair/red{
+	dir = 1
 	},
 /turf/simulated/floor/black,
 /area/station/security/interrogation)
@@ -16435,8 +16434,8 @@
 /turf/simulated/floor/engine/vacuum,
 /area/station/science/lab)
 "iHP" = (
-/obj/stool/chair,
 /obj/machinery/portableowl/judgementowl,
+/obj/stool/chair/red,
 /turf/simulated/floor/black,
 /area/station/security/interrogation)
 "iIq" = (
