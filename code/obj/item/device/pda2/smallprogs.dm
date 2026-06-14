@@ -1433,7 +1433,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			for (var/request_id in chem_requests)
 				var/datum/chem_request/request = chem_requests[request_id]
 				src.temp += "[request.reagent_name] requested by [request.requester_name] from [request.area_name].<BR>"
-				src.temp += "STATUS:[request.state]<BR>"
+				src.temp += "STATUS: [request.state]<BR>"
 			src.temp += "<BR><A href='byond://?src=\ref[src];mainmenu=1'>OK</A>"
 
 		else if (href_list["mainmenu"])
