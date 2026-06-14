@@ -63,7 +63,7 @@
 		// Teams
 		MGT_GENETICS, MGT_ROBOTICS, MGT_CARGO, MGT_MINING, MGT_CATERING, MGT_HYDROPONICS, MGT_JANITOR, MGT_SPIRITUALAFFAIRS, MGT_AI,
 		// Alerts
-		MGA_MAIL, MGA_RADIO, MGA_CHECKPOINT, MGA_ARREST, MGA_DEATH, MGA_MEDCRIT, MGA_CLONER, MGA_ENGINE, MGA_RKIT, MGA_SALES, MGA_SHIPPING, MGA_CARGOREQUEST, MGA_CRISIS, MGA_TRACKING, MGA_SYNDICATE
+		MGA_MAIL, MGA_RADIO, MGA_CHECKPOINT, MGA_ARREST, MGA_DEATH, MGA_MEDCRIT, MGA_CLONER, MGA_ENGINE, MGA_RKIT, MGA_SALES, MGA_SHIPPING, MGA_CARGOREQUEST, MGA_CHEMREQUEST, MGA_CRISIS, MGA_TRACKING, MGA_SYNDICATE
 	)
 	var/alertgroups = list(MGA_MAIL, MGA_RADIO) // What mail groups that we're not a member of should we be able to mute?
 	var/bombproof = 0 // can't be destroyed with detomatix
@@ -87,6 +87,7 @@
 																	MGA_SALES = null,\
 																	MGA_SHIPPING = null,\
 																	MGA_CARGOREQUEST = null,\
+																	MGA_CHEMREQUEST = null,\
 																	MGA_CRISIS = null,\
 																	MGA_PLUMBING = null,\
 																	MGA_RADIO = null)
@@ -119,8 +120,8 @@
 			// Teams
 			MGT_GENETICS, MGT_ROBOTICS, MGT_CARGO, MGT_MINING, MGT_CATERING, MGT_HYDROPONICS, MGT_JANITOR, MGT_SPIRITUALAFFAIRS, MGT_AI
 		)
-		default_muted_mailgroups = list(MGA_MAIL, MGA_SALES, MGA_SHIPPING, MGA_CARGOREQUEST, MGA_RKIT)
-		alertgroups = list(MGA_MAIL, MGA_RADIO, MGA_CHECKPOINT, MGA_ARREST, MGA_DEATH, MGA_MEDCRIT, MGA_CLONER, MGA_ENGINE, MGA_RKIT, MGA_SALES, MGA_SHIPPING, MGA_CARGOREQUEST, MGA_CRISIS, MGA_PLUMBING) // keep in sync with the list of mail alert groups
+		default_muted_mailgroups = list(MGA_MAIL, MGA_SALES, MGA_SHIPPING, MGA_CARGOREQUEST, MGA_CHEMREQUEST, MGA_RKIT)
+		alertgroups = list(MGA_MAIL, MGA_RADIO, MGA_CHECKPOINT, MGA_ARREST, MGA_DEATH, MGA_MEDCRIT, MGA_CLONER, MGA_ENGINE, MGA_RKIT, MGA_SALES, MGA_SHIPPING, MGA_CARGOREQUEST, MGA_CHEMREQUEST, MGA_CRISIS, MGA_PLUMBING) // keep in sync with the list of mail alert groups
 
 	cyborg // chosen robot module registers the PDA mail/alert groups
 		icon_state = "pda-h"
