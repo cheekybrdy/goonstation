@@ -1415,7 +1415,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			O.area_name = get_area(src.master)
 			chem_requests["[O.id]"] = O
 			src.temp = {"Request sent to Chemical Request Console. The Chemists/Pharmacists will process your request as soon as possible.<BR>
-			<A href='byond://?src=\ref[src];reset=1'>Reset</A>"}
+			<A href='byond://?src=\ref[src];reset=1'>New Order</A>"}
 
 			// pda alert ////////
 			if (!antispam || (antispam < (ticker.round_elapsed_ticks)) )
