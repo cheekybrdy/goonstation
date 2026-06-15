@@ -1471,8 +1471,8 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			var/req_id = href_list["deny"]
 			var/datum/chem_request/request = chem_requests[req_id]
 			if (request)
-				request.state = "denied"
 				logTheThing(LOG_STATION, src, "[src.master.owner] denied [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
+				request.state = "denied"
 				refresh()
 
 		if (href_list["fulfil"])
