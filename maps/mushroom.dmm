@@ -10931,6 +10931,12 @@
 /area/station/medical/robotics)
 "eAY" = (
 /obj/storage/secure/crate/weapon/confiscated_items,
+/obj/blind_switch/area/north{
+	pixel_x = 5
+	},
+/obj/machinery/light_switch/north{
+	pixel_x = -5
+	},
 /turf/simulated/floor/red/redblackchecker,
 /area/station/security/evidence)
 "eBf" = (
@@ -21926,6 +21932,7 @@
 /area/station/ai_monitored/armory)
 "mND" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/window_blinds/vertical,
 /turf/simulated/floor/plating,
 /area/station/security/evidence)
 "mNM" = (
