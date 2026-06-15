@@ -257,7 +257,7 @@
 	pharmacist
 		name = "Pharmacy PDA"
 		icon_state = "pda-pha"
-		setup_default_cartridge = /obj/item/disk/data/cartridge/medical
+		setup_default_cartridge = /obj/item/disk/data/cartridge/pharma
 		mailgroups = list(MGD_MEDICAL, MGD_PARTY)
 		alertgroups = list(MGA_MAIL, MGA_RADIO, MGA_DEATH, MGA_CRISIS, MGA_MEDCRIT, MGA_CHEMREQUEST)
 

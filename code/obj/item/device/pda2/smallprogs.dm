@@ -1335,21 +1335,12 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 		var/dat = src.return_text_header()
 		if (src.temp)
 			dat += "<br>[src.temp]"
+			src.temp = null
 		else
-			dat += {"<br><B>Chemical Ordering Program</B><HR>
-			<A href='byond://?src=\ref[src];viewrequests=1'>View Requests</A><BR>
-			<A href='byond://?src=\ref[src];order=1'>Request Chemicals</A><BR>"}
-		return dat
+			dat += {"<BR><B>Please select the Chemical you would like to request:</B><BR><BR>"}
+			dat += search_snippet("background-color: #6F7961; color: #000;")
+			dat += "<BR><BR>"
 
-
-	Topic(href, href_list)
-		if(..())
-			return
-
-		if (href_list["order"])
-			src.temp = {"<B>Please select the Chemical you would like to request:</B><BR><BR>"}
-			src.temp += search_snippet("background-color: #6F7961; color: #000;")
-			src.temp += "<BR><BR>"
 			var/list/datum/reagent/chems = list()
 			for (var/id in chem_reactions_by_id)
 				var/datum/chemical_reaction/reaction = chem_reactions_by_id[id]
@@ -1390,11 +1381,17 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 
 			for(var/C in chems)
 				var/datum/reagent/chem = chems[C]
-				src.temp += {"<div class='supply-package'><A href='byond://?src=\ref[src];doorder=[chem.type]'><B><U>[chem.name]</U></B></A><BR>
+				dat += {"<div class='supply-package'><A href='byond://?src=\ref[src];doorder=[chem.type]'><B><U>[chem.name]</U></B></A><BR>
 				<B>Contents:</B> [chem.description]<BR><BR></div>"}
-			src.temp += "<BR><A href='byond://?src=\ref[src];mainmenu=1'>OK</A>"
 
-		else if (href_list["doorder"])
+		return dat
+
+	Topic(href, href_list)
+
+		if(..())
+			return
+
+		if (href_list["doorder"])
 			var/datum/chem_request/O = new/datum/chem_request ()
 			var/chemreg = href_list["doorder"]
 			var/datum/reagent/P = new chemreg ()
@@ -1405,6 +1402,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 
 			note = input("Add a Note (Optional)", "Enter Message Text", note) as text|null
 			quantity = input("Enter request amount", "Enter Amount", quantity) as num|null
+			if(!quantity) return
 			if(!isnum_safe(quantity)) return
 			quantity = min(quantity,10000)
 			quantity = max(quantity,1)
@@ -1416,7 +1414,8 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			O.note = src.note
 			O.area_name = get_area(src.master)
 			chem_requests["[O.id]"] = O
-			src.temp = "Request sent to Chemical Request Console. The Chemists/Pharmacists will process your request as soon as possible.<BR>"
+			src.temp = {"Request sent to Chemical Request Console. The Chemists/Pharmacists will process your request as soon as possible.<BR>
+			<A href='byond://?src=\ref[src];reset=1'>Reset</A>"}
 
 			// pda alert ////////
 			if (!antispam || (antispam < (ticker.round_elapsed_ticks)) )
@@ -1425,24 +1424,78 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 				pdaSignal.data = list("address_1"="00000000", "command"="text_message", "sender_name"="RESEARCH-MAILBOT",  "group"=list(MGD_RESEARCH, MGD_MEDICAL, MGA_CHEMREQUEST), "sender"="00000000", "message"="Notification: [O.reagent_name] requested by [O.requester_name] at [O.area_name].")
 				SEND_SIGNAL(src.master, COMSIG_MOVABLE_POST_RADIO_PACKET, pdaSignal, null, "pda")
 
-			//////////////////
-			src.temp += "<BR><A href='byond://?src=\ref[src];mainmenu=1'>OK</A>"
-
-		else if (href_list["viewrequests"])
-			src.temp = "<B>Current Requests:</B><BR><BR>"
-			for (var/request_id in chem_requests)
-				var/datum/chem_request/request = chem_requests[request_id]
-				src.temp += "[request.reagent_name] requested by [request.requester_name] from [request.area_name].<BR>"
-				src.temp += "STATUS: [request.state]<BR>"
-			src.temp += "<BR><A href='byond://?src=\ref[src];mainmenu=1'>OK</A>"
-
-		else if (href_list["mainmenu"])
+		else if (href_list["reset"])
 			src.temp = null
+			return_text()
 
 		src.master.add_fingerprint(usr)
 		src.master.updateSelfDialog()
 		return
+
 #undef SPAM_DELAY
+
+/datum/computer/file/pda_program/chemical_req_viewer
+	name = "Chemical Request Viewer"
+	size = 1
+	var/tmp/temp = null
+
+	init()
+		for (var/request_id in chem_requests)
+			var/datum/chem_request/request = chem_requests[request_id]
+			src.temp += "[request.volume] units of [request.reagent_name] requested by [request.requester_name] from [request.area_name].<BR>"
+			src.temp += "STATUS: [request.state]"
+			if(request.state == "pending")
+				src.temp += "<a href='byond://?src=\ref[src];deny=[request.id]'>Deny</a> <a href='byond://?src=\ref[src];fulfil=[request.id]'>Fulfil</a>"
+			src.temp += "<BR>"
+		..()
+
+	return_text()
+		if(..())
+			return
+
+		var/dat = src.return_text_header()
+		dat += "<BR><B>Current Requests:</B> <a href='byond://?src=\ref[src];refresh=1'>Refresh Requests</a><BR>"
+		if (src.temp)
+			dat += "<br>[src.temp]"
+
+		return dat
+
+	Topic(href, href_list)
+		if(..())
+			return
+
+		if (href_list["refresh"])
+			refresh()
+
+		if (href_list["deny"])
+			var/req_id = href_list["deny"]
+			var/datum/chem_request/request = chem_requests[req_id]
+			if (request)
+				request.state = "denied"
+				logTheThing(LOG_STATION, src, "[src.master.owner] denied [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
+				refresh()
+
+		if (href_list["fulfil"])
+			var/req_id = href_list["fulfil"]
+			var/datum/chem_request/request = chem_requests[req_id]
+			if (request)
+				logTheThing(LOG_STATION, src, "[src.master.owner] fulfilled [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
+				request.state = "fulfilled"
+				refresh()
+
+		src.master.add_fingerprint(usr)
+		src.master.updateSelfDialog()
+		return
+
+	proc/refresh()
+		for (var/request_id in chem_requests)
+			temp = null
+			var/datum/chem_request/request = chem_requests[request_id]
+			src.temp += "[request.volume] units of [request.reagent_name] requested by [request.requester_name] from [request.area_name].<BR>"
+			src.temp += "STATUS: [request.state]"
+			if(request.state == "pending")
+				src.temp += "<a href='byond://?src=\ref[src];deny=[request.id]'>Deny</a> <a href='byond://?src=\ref[src];fulfil=[request.id]'>Fulfil</a>"
+			src.temp += "<BR>"
 
 /datum/computer/file/pda_program/station_name
 	name = "Station Namer"
