@@ -1,4 +1,22 @@
 
+(t)mon jun 15 26
+(u)glowbold
+(p)26845
+(e)🆕🎨🔄💊📨|C-Feature, C-Sprites, C-Rework, A-Medical, A-Logistics
+(*)Medical masks can have a mini-tank attached, instantly turn on internals when equipped, do not work in low pressure environments, and automatically turn off when out of gas.
+(*)Anesthetic storage lockers contain 2 medical masks with pre-installed anesthetic mini-tanks, 2 anesthetic tanks, and 5 anesthetic mini-tanks. Morphine contents unchanged.
+(*)N2O knocks you over and prevents movement at lower volumes instead of instantly making you unconscious.
+(+)Cargo can now order a medical-equipment locked Anesthetic Crate to restock medical's anesthetic supplies.
+(t)sun jun 14 26
+(u)TekoTheTeapot
+(p)26831
+(e)|
+(+)Makes Blobfish available in RP and Starstonefish available and present in the Fish Collection.
+(u)Mr. Moriarty
+(p)26778
+(f)https://forum.ss13.co/
+(e)🆕📄⚙|C-Feature, A-UI, A-Internal
+(*)The changelog may now display PR feedback threads. Click the above "Feedback" link to be redirected to the forums! Going forward, PRs with a feedback thread will be linked here.
 (t)sat jun 13 26
 (u)glowbold
 (e)⚖💊|C-Balance, A-Medical
