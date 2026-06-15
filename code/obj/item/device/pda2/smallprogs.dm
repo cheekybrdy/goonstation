@@ -1338,7 +1338,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 		else
 			dat += {"<br><B>Chemical Ordering Program</B><HR>
 			<A href='byond://?src=\ref[src];viewrequests=1'>View Requests</A><BR>
-			<A href='byond://?src=\ref[src];order=1'>Request Items</A><BR>"}
+			<A href='byond://?src=\ref[src];order=1'>Request Chemicals</A><BR>"}
 		return dat
 
 
