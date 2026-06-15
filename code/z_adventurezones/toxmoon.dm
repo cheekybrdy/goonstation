@@ -585,10 +585,15 @@
 
 	setup_hands()
 		..()
-		var/datum/handHolder/HH = hands[0]
+		var/datum/handHolder/HH = hands[1]
 		HH.limb = new /datum/limb/gun/kinetic/spit
 		HH.icon_state = "gun"
 		HH.limb_name = "spitter arm"
+
+	area_attack(var/obj/summoned_thing)
+		for(var/turf/T in range(14))
+			if(T.!is_obstructed && !src.loc)
+				new summoned_thing(src.loc)
 	// 	src.set_dir(get_dir(src, target))
 	// 	var/obj/projectile/P1 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
 	// 	var/obj/projectile/P2 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
@@ -596,7 +601,7 @@
 	// 		P1.yo = 96
 	// 		P1.xo = 0
 	// 		P2.yo = 96
-	// 		P2.xo = 0
+	// 		`P2.xo = 0
 	// 		P1.set_loc(locate(src.x, src.y+2, src.z))
 	// 		P2.set_loc(locate(src.x+2,src.y+2, src.z))
 	// 		P1.orig_turf = P1.loc //our orig_turf was set in initialize_projectile() but that was before we moved it to the side of the ship
