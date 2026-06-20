@@ -329,7 +329,7 @@
 			holder.owner.reagents.add_reagent(reagent_id, puke_reagents[reagent_id])
 		var/turf/currentturf
 		var/turf/previousturf
-		for(var/turf/F in line_turfs)
+		for(var/turf/F in	_turfs)
 			previousturf = currentturf
 			currentturf = F
 			if(currentturf.density || istype(currentturf, /turf/space))
@@ -590,9 +590,9 @@
 		HH.icon_state = "gun"
 		HH.limb_name = "spitter arm"
 
-	area_attack(var/obj/summoned_thing)
+	area_attack(var/obj/summoned_thing, var/drop_prob)
 		for(var/turf/T in range(14))
-			if(T.!is_obstructed && !src.loc)
+			if(T.!is_obstructed && !src.loc && !rand(0,drop_prob))
 				new summoned_thing(src.loc)
 	// 	src.set_dir(get_dir(src, target))
 	// 	var/obj/projectile/P1 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
