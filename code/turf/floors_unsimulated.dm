@@ -509,6 +509,23 @@
 /turf/unsimulated/floor/orange/corner
 	icon_state = "orangecorner"
 
+/turf/unsimulated/floor/orange/checker
+	icon_state = "yellowchecker"
+
+
+/turf/unsimulated/floor/orangeblack
+	icon_state = "yellowblack"
+
+/turf/unsimulated/floor/orangeblack/corner
+	icon_state = "yellowblackcorner"
+
+
+/turf/unsimulated/floor/orangewhite
+	icon_state = "yellowwhite"
+
+/turf/unsimulated/floor/orangewhite/corner
+	icon_state = "yellowwhitecorner"
+
 /////////////////////////////////////////
 
 /turf/unsimulated/floor/caution
