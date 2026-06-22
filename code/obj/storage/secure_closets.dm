@@ -837,6 +837,13 @@
 	/obj/item/device/geiger,
 	/obj/item/device/appraisal)
 
+	New()
+		if (istype(ticker.mode, /datum/game_mode/nations))
+			icon_state = "secure_oj"
+			icon_closed = "secure_oj"
+			icon_opened = "secure_oj-open"
+		..()
+
 /obj/storage/secure/closet/engineering/cargo
 	name = "\improper Quartermaster's locker"
 	req_access = list(access_cargo)
@@ -848,6 +855,13 @@
 	/obj/item/hand_labeler,
 	/obj/item/cargotele,
 	/obj/item/device/appraisal)
+
+	New()
+		if (istype(ticker.mode, /datum/game_mode/nations))
+			icon_state = "secure_oj"
+			icon_closed = "secure_oj"
+			icon_opened = "secure_oj-open"
+		..()
 
 /* ==================== */
 /* ----- Civilian ----- */
