@@ -719,6 +719,7 @@ TYPEINFO(/obj/item/reagent_containers/food/fish/literal_swordfish)
 	rarity = ITEM_RARITY_LEGENDARY
 	force = 13
 	hit_type = DAMAGE_CUT
+	hitsound = 'sound/impact_sounds/Blade_Small_Bloody.ogg'
 	slice_product = /obj/item/material_piece/steel
 
 	New()
