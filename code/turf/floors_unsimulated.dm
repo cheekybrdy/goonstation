@@ -510,21 +510,21 @@
 	icon_state = "orangecorner"
 
 /turf/unsimulated/floor/orange/checker
-	icon_state = "yellowchecker"
+	icon_state = "orangechecker"
 
 
 /turf/unsimulated/floor/orangeblack
-	icon_state = "yellowblack"
+	icon_state = "orangeblack"
 
 /turf/unsimulated/floor/orangeblack/corner
-	icon_state = "yellowblackcorner"
+	icon_state = "orangeblackcorner"
 
 
 /turf/unsimulated/floor/orangewhite
-	icon_state = "yellowwhite"
+	icon_state = "orangewhite"
 
 /turf/unsimulated/floor/orangewhite/corner
-	icon_state = "yellowwhitecorner"
+	icon_state = "orangewhitecorner"
 
 /////////////////////////////////////////
 
