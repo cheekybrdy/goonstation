@@ -1412,6 +1412,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			O.requester_name = src.master.owner
 			O.volume = quantity
 			O.note = src.note
+			O.address = src.master.net_id
 			O.area_name = get_area(src.master)
 			chem_requests["[O.id]"] = O
 			src.temp = {"Request sent to Chemical Request Console. The Chemists/Pharmacists will process your request as soon as possible.<BR>
@@ -1473,6 +1474,10 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			if (request)
 				logTheThing(LOG_STATION, src, "[src.master.owner] denied [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
 				request.state = "denied"
+				if(request.address)
+					var/datum/signal/pdaSignal = get_free_signal()
+					pdaSignal.data = list("address_1"="00000000", "command"="text_message", "sender_name"="RESEARCH-MAILBOT",  "address_1"=request.address, "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was FULFILLED.")
+					radio_controller.get_frequency(FREQ_PDA).post_packet_without_source(pdaSignal)
 				refresh()
 
 		if (href_list["fulfil"])
@@ -1481,6 +1486,10 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			if (request)
 				logTheThing(LOG_STATION, src, "[src.master.owner] fulfilled [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
 				request.state = "fulfilled"
+				if(request.address)
+					var/datum/signal/pdaSignal = get_free_signal()
+					pdaSignal.data = list("address_1"="00000000", "command"="text_message", "sender_name"="RESEARCH-MAILBOT",  "address_1"=request.address, "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was FULFILLED.")
+					radio_controller.get_frequency(FREQ_PDA).post_packet_without_source(pdaSignal)
 				refresh()
 
 		src.master.add_fingerprint(usr)

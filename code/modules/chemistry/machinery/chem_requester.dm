@@ -9,6 +9,7 @@ var/list/datum/chem_request/chem_requests = list()
 	var/volume = 5
 	var/area_name = "Somewhere"
 	var/state = "pending"
+	var/address = null
 	var/id
 	var/static/last_id = 0
 	// the tick count this request was placed on
@@ -185,10 +186,18 @@ var/list/datum/chem_request/chem_requests = list()
 				if (request)
 					request.state = "denied"
 					logTheThing(LOG_STATION, src, "[constructTarget(ui.user)] denied [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
+					if(request.address)
+						var/datum/signal/pdaSignal = get_free_signal()
+						pdaSignal.data = list("address_1"="00000000", "command"="text_message", "sender_name"="RESEARCH-MAILBOT",  "address_1"=request.address, "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was DENIED.")
+						radio_controller.get_frequency(FREQ_PDA).post_packet_without_source(pdaSignal)
 				. = TRUE
 			if ("fulfil")
 				var/datum/chem_request/request = chem_requests["[params["id"]]"]
 				if (request)
-					logTheThing(LOG_STATION, src, "[constructTarget(ui.user)] fulfilled [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
 					request.state = "fulfilled"
+					logTheThing(LOG_STATION, src, "[constructTarget(ui.user)] fulfilled [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
+					if(request.address)
+						var/datum/signal/pdaSignal = get_free_signal()
+						pdaSignal.data = list("address_1"="00000000", "command"="text_message", "sender_name"="RESEARCH-MAILBOT",  "address_1"=request.address, "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was FULFILLED.")
+						radio_controller.get_frequency(FREQ_PDA).post_packet_without_source(pdaSignal)
 				. = TRUE
