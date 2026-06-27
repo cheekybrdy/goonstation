@@ -12360,6 +12360,27 @@
 	},
 /turf/simulated/floor/circuit/green,
 /area/station/turret_protected/Zeta)
+"iec" = (
+/obj/table/reinforced/auto,
+/obj/machinery/cashreg,
+/obj/machinery/light{
+	dir = 4;
+	layer = 9.1;
+	light_type = /obj/item/light/tube/yellowish;
+	pixel_x = 10
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/pyro/glass/windoor,
+/obj/item/paper_bin{
+	pixel_x = -12;
+	pixel_y = 4
+	},
+/obj/mapping_helper/access/cargo,
+/obj/item/stamp/qm,
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/office)
 "iej" = (
 /obj/cable{
 	icon_state = "1-4"
@@ -13447,6 +13468,17 @@
 /obj/machinery/door/airlock/pyro/security/alt,
 /turf/simulated/floor/black,
 /area/station/security/interrogation)
+"jsi" = (
+/obj/table/reinforced/auto,
+/obj/machinery/door/airlock/pyro/glass/windoor{
+	autoclose = 0;
+	dir = 4
+	},
+/obj/mapping_helper/access/security,
+/obj/item/paper_bin,
+/obj/item/stamp/law,
+/turf/simulated/floor/red,
+/area/station/security/main)
 "jst" = (
 /obj/cable{
 	icon_state = "1-8"
@@ -14787,26 +14819,6 @@
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor/purple,
 /area/station/science/artifact)
-"luG" = (
-/obj/table/reinforced/auto,
-/obj/machinery/cashreg,
-/obj/machinery/light{
-	dir = 4;
-	layer = 9.1;
-	light_type = /obj/item/light/tube/yellowish;
-	pixel_x = 10
-	},
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/pyro/glass/windoor,
-/obj/item/paper_bin{
-	pixel_x = -12;
-	pixel_y = 4
-	},
-/obj/mapping_helper/access/cargo,
-/turf/simulated/floor/yellow,
-/area/station/quartermaster/office)
 "lxx" = (
 /obj/item/device/camera_viewer/telesci{
 	pixel_y = 16;
@@ -16436,6 +16448,15 @@
 /obj/cable,
 /turf/simulated/floor/plating,
 /area/station/security/brig)
+"nAZ" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/light{
+	dir = 1;
+	layer = 9.1;
+	pixel_y = 21
+	},
+/turf/simulated/floor/lightyellow,
+/area/station/engine/gas)
 "nBy" = (
 /obj/machinery/power/data_terminal,
 /obj/cable{
@@ -19184,6 +19205,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/quartermaster/office)
+"snr" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/simulated/floor/lightyellow,
+/area/station/engine/gas)
 "sok" = (
 /turf/simulated/floor/red/redblackchecker,
 /area/station/engine/core)
@@ -19652,13 +19677,6 @@
 	dir = 8
 	},
 /area/station/hallway/primary/north)
-"sUO" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
-/obj/machinery/camera/directional/east{
-	pixel_y = 10
-	},
-/turf/simulated/floor/lightyellow,
-/area/station/engine/gas)
 "sVU" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 4
@@ -21898,16 +21916,6 @@
 	},
 /turf/simulated/floor/black,
 /area/station/turret_protected/Zeta)
-"wbj" = (
-/obj/table/reinforced/auto,
-/obj/machinery/door/airlock/pyro/glass/windoor{
-	autoclose = 0;
-	dir = 4
-	},
-/obj/mapping_helper/access/security,
-/obj/item/paper_bin,
-/turf/simulated/floor/red,
-/area/station/security/main)
 "wdb" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -22051,15 +22059,6 @@
 /obj/displaycase/captain,
 /turf/simulated/floor/blue,
 /area/station/bridge/captain)
-"wmz" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
-/obj/machinery/light{
-	dir = 1;
-	layer = 9.1;
-	pixel_y = 21
-	},
-/turf/simulated/floor/lightyellow,
-/area/station/engine/gas)
 "wnp" = (
 /obj/machinery/firealarm/directional/north,
 /obj/cable{
@@ -22765,10 +22764,6 @@
 /obj/machinery/power/data_terminal,
 /turf/simulated/floor/engine,
 /area/station/engine/power)
-"xxu" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
-/turf/simulated/floor/lightyellow,
-/area/station/engine/gas)
 "xxF" = (
 /obj/decal/poster/wallsign/stencil/left/n{
 	pixel_y = 19
@@ -23244,6 +23239,13 @@
 	},
 /turf/simulated/floor/auto/grass,
 /area/station/crew_quarters/kitchen)
+"yhR" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/camera/directional/east{
+	pixel_y = 10
+	},
+/turf/simulated/floor/lightyellow,
+/area/station/engine/gas)
 "yjT" = (
 /obj/disposalpipe/segment,
 /turf/simulated/floor/grass/leafy,
@@ -60527,8 +60529,8 @@ afn
 ajZ
 ajb
 opg
-wmz
-xxu
+nAZ
+snr
 wgo
 dPR
 dPR
@@ -60829,8 +60831,8 @@ afn
 ajZ
 mou
 opg
-sUO
-xxu
+yhR
+snr
 wGd
 frG
 frG
@@ -67469,7 +67471,7 @@ eJG
 iui
 sTu
 iFd
-luG
+iec
 fyL
 qOn
 mlP
@@ -77142,7 +77144,7 @@ tue
 ahl
 ahl
 wgy
-wbj
+jsi
 pRr
 afe
 mwK
