@@ -17040,7 +17040,7 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 4
 	},
 /area/radiostation/hallway)
@@ -17621,7 +17621,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/orange,
+/turf/simulated/floor/lightyellow,
 /area/radiostation/teleporter)
 "hnx" = (
 /obj/fakeobject/pipe{
@@ -21355,7 +21355,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 4
 	},
 /area/radiostation/hallway)

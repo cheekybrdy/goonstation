@@ -500,6 +500,17 @@
 
 /////////////////////////////////////////
 
+/turf/unsimulated/floor/lightyellow
+	icon_state = "fulllyellow"
+
+/turf/unsimulated/floor/lightyellow/side
+	icon_state = "lyellow"
+
+/turf/unsimulated/floor/lightyellow/corner
+	icon_state = "lyellowcorner"
+
+/////////////////////////////////////////
+
 /turf/unsimulated/floor/orange
 	icon_state = "fullorange"
 

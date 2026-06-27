@@ -19657,7 +19657,7 @@
 /obj/machinery/camera/directional/east{
 	pixel_y = 10
 	},
-/turf/simulated/floor/orange,
+/turf/simulated/floor/lightyellow,
 /area/station/engine/gas)
 "sVU" = (
 /obj/decal/tile_edge/stripe/extra_big{
@@ -22058,7 +22058,7 @@
 	layer = 9.1;
 	pixel_y = 21
 	},
-/turf/simulated/floor/orange,
+/turf/simulated/floor/lightyellow,
 /area/station/engine/gas)
 "wnp" = (
 /obj/machinery/firealarm/directional/north,
@@ -22767,7 +22767,7 @@
 /area/station/engine/power)
 "xxu" = (
 /obj/machinery/portable_atmospherics/canister/toxins,
-/turf/simulated/floor/orange,
+/turf/simulated/floor/lightyellow,
 /area/station/engine/gas)
 "xxF" = (
 /obj/decal/poster/wallsign/stencil/left/n{

@@ -533,6 +533,17 @@
 
 /////////////////////////////////////////
 
+/turf/simulated/floor/airless/lightyellow
+	icon_state = "fulllyellow"
+
+/turf/simulated/floor/airless/lightyellow/side
+	icon_state = "lyellow"
+
+/turf/simulated/floor/airless/lightyellow/corner
+	icon_state = "lyellowcorner"
+
+/////////////////////////////////////////
+
 /turf/simulated/floor/airless/orange
 	icon_state = "fullorange"
 

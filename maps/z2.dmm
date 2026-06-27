@@ -5789,7 +5789,7 @@
 	dir = 4;
 	name = "Surface Airlock"
 	},
-/turf/unsimulated/floor/orange,
+/turf/unsimulated/floor/lightyellow,
 /area/iomoon/base)
 "aCr" = (
 /turf/unsimulated/floor/plating/scorched,
@@ -55526,7 +55526,7 @@
 /area/moon/museum)
 "eXz" = (
 /obj/fakeobject/lightbulb_broken,
-/turf/unsimulated/floor/orange,
+/turf/unsimulated/floor/lightyellow,
 /area/iomoon/base)
 "eYl" = (
 /obj/stool/chair/comfy/red{
@@ -67675,7 +67675,7 @@
 /obj/ladder{
 	id = "iomoon"
 	},
-/turf/unsimulated/floor/orange,
+/turf/unsimulated/floor/lightyellow,
 /area/iomoon/base)
 "onV" = (
 /obj/stool/chair/dining/regal{
@@ -69735,7 +69735,7 @@
 	layer = 2.5;
 	name = "power conduit"
 	},
-/turf/unsimulated/floor/orange,
+/turf/unsimulated/floor/lightyellow,
 /area/iomoon/base)
 "pQJ" = (
 /obj/fakeobject/pipe{
@@ -74142,7 +74142,7 @@
 /obj/machinery/door/airlock/pyro{
 	dir = 4
 	},
-/turf/unsimulated/floor/orange,
+/turf/unsimulated/floor/lightyellow,
 /area/iomoon/base)
 "tma" = (
 /obj/storage/crate/bin{
@@ -78841,7 +78841,7 @@
 /turf/unsimulated/floor/plating,
 /area/iomoon/base/underground)
 "wOp" = (
-/turf/unsimulated/floor/orange,
+/turf/unsimulated/floor/lightyellow,
 /area/iomoon/base)
 "wOC" = (
 /obj/indestructible/shuttle_corner{
@@ -80614,7 +80614,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/unsimulated/floor/orange,
+/turf/unsimulated/floor/lightyellow,
 /area/iomoon/base)
 "xXx" = (
 /obj/storage/closet/coffin,

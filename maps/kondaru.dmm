@@ -231,7 +231,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/data_terminal,
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 9
 	},
 /area/station/storage/hydroponics)
@@ -13206,7 +13206,7 @@
 	dir = 4;
 	pixel_x = 12
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 5
 	},
 /area/station/storage/hydroponics)
@@ -13478,7 +13478,7 @@
 /turf/simulated/floor/specialroom/arcade,
 /area/station/janitor/supply)
 "biZ" = (
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 8
 	},
 /area/station/storage/hydroponics)
@@ -13743,7 +13743,7 @@
 /obj/disposalpipe/segment/produce{
 	dir = 4
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 4
 	},
 /area/station/storage/hydroponics)
@@ -13975,7 +13975,7 @@
 	dir = 8;
 	pixel_x = -12
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 8
 	},
 /area/station/storage/hydroponics)
@@ -13986,7 +13986,7 @@
 /obj/decal/tile_edge/floorguide/catering{
 	dir = 1
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 4
 	},
 /area/station/storage/hydroponics)
@@ -14267,7 +14267,7 @@
 /obj/decal/tile_edge/floorguide/botany{
 	dir = 4
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 10
 	},
 /area/station/storage/hydroponics)
@@ -14281,7 +14281,7 @@
 	},
 /obj/reagent_dispensers/still,
 /obj/decal/tile_edge/floorguide/botany,
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 6
 	},
 /area/station/storage/hydroponics)
@@ -21563,7 +21563,7 @@
 	name = "Research Router"
 	})
 "bSw" = (
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 1
 	},
 /area/station/routing/medsci{
@@ -21818,7 +21818,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 4
 	},
 /area/station/routing/medsci{
@@ -22034,7 +22034,7 @@
 /obj/machinery/computer/ordercomp{
 	dir = 4
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 8
 	},
 /area/station/routing/medsci{
@@ -22495,7 +22495,7 @@
 "bXO" = (
 /obj/machinery/power/apc/autoname_east,
 /obj/cable,
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 4
 	},
 /area/station/routing/medsci{
@@ -23015,7 +23015,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/reagent_dispensers/watertank/fountain,
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 8
 	},
 /area/station/routing/security)
@@ -26136,7 +26136,7 @@
 /obj/machinery/computer/ordercomp{
 	dir = 4
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 4
 	},
 /area/station/hangar/medical)
@@ -28413,7 +28413,7 @@
 	})
 "dHl" = (
 /obj/disposalpipe/segment/produce,
-/turf/simulated/floor/orange/side,
+/turf/simulated/floor/lightyellow/side,
 /area/station/storage/hydroponics)
 "dHJ" = (
 /obj/machinery/door/airlock/pyro/maintenance{
@@ -29535,7 +29535,7 @@
 	dir = 4;
 	name = "Loading Chute Cover"
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 4
 	},
 /area/station/hangar/medical)
@@ -31912,7 +31912,7 @@
 	id = "kondaflush";
 	name = "manual loading chute"
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 8
 	},
 /area/station/routing/medsci{
@@ -33513,7 +33513,7 @@
 	},
 /obj/disposalpipe/segment/transport,
 /obj/machinery/firealarm/directional/west,
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 8
 	},
 /area/station/routing/security)
@@ -39118,7 +39118,7 @@
 /area/station/security/evidence)
 "kTh" = (
 /obj/submachine/cargopad/artlab,
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 5
 	},
 /area/station/routing/medsci{
@@ -40806,7 +40806,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 1
 	},
 /area/station/storage/hydroponics)
@@ -41142,7 +41142,7 @@
 /obj/item/hand_labeler,
 /obj/machinery/atmospherics/pipe/simple,
 /obj/disposalpipe/segment/transport,
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 8
 	},
 /area/station/routing/security)
@@ -42652,7 +42652,7 @@
 /obj/decal/tile_edge/floorguide/catering{
 	dir = 4
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 4
 	},
 /area/station/storage/hydroponics)
@@ -42706,7 +42706,7 @@
 	operating = 1
 	},
 /obj/disposalpipe/trunk/north,
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 8
 	},
 /area/station/routing/medsci{
@@ -48230,7 +48230,7 @@
 	layer = 9.1;
 	pixel_x = -10
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 8
 	},
 /area/station/routing/security)
@@ -49538,7 +49538,7 @@
 /obj/cable{
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 8
 	},
 /area/station/routing/security)
@@ -50751,7 +50751,7 @@
 	name = "Chute Activator";
 	pixel_y = 24
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 9
 	},
 /area/station/routing/medsci{
@@ -56114,7 +56114,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 4
 	},
 /area/station/routing/medsci{
@@ -58323,7 +58323,7 @@
 	dir = 8
 	},
 /obj/landmark/start/job/scientist,
-/turf/simulated/floor/orange/side{
+/turf/simulated/floor/lightyellow/side{
 	dir = 1
 	},
 /area/station/routing/medsci{

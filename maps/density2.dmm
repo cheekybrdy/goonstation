@@ -1565,7 +1565,7 @@
 /obj/machinery/computer/transit_shuttle/research{
 	dir = 4
 	},
-/turf/simulated/floor/orange,
+/turf/simulated/floor/lightyellow,
 /area/station/hallway/secondary/researchshuttle)
 "jh" = (
 /turf/simulated/floor/purple,
@@ -1583,7 +1583,7 @@
 	layer = 9.1;
 	pixel_y = 21
 	},
-/turf/simulated/floor/orange,
+/turf/simulated/floor/lightyellow,
 /area/station/hallway/secondary/researchshuttle)
 "jq" = (
 /obj/machinery/computer/chem_requester{
@@ -3660,7 +3660,7 @@
 /turf/simulated/floor/carpet/red/fancy/narrow/T_north,
 /area/station/bridge)
 "yn" = (
-/turf/simulated/floor/orange,
+/turf/simulated/floor/lightyellow,
 /area/station/hallway/secondary/researchshuttle)
 "yp" = (
 /obj/cable{
