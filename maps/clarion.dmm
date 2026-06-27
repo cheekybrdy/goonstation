@@ -2225,6 +2225,7 @@
 	pixel_x = 2;
 	pixel_y = -2
 	},
+/obj/item/stamp/chap,
 /turf/simulated/floor/carpet/grime,
 /area/station/chapel/office{
 	name = "Chaplain's Office"
@@ -12292,9 +12293,9 @@
 	pixel_x = 5;
 	pixel_y = -5
 	},
-/obj/item/stamp{
-	pixel_y = 6;
-	pixel_x = -6
+/obj/item/stamp/law{
+	pixel_x = -5;
+	pixel_y = 10
 	},
 /obj/item/pen/red{
 	pixel_y = 7;
@@ -14294,13 +14295,6 @@
 /obj/item/device/radio/intercom/security{
 	dir = 8
 	},
-/obj/item/shipcomponent/secondary_system/tractor_beam{
-	pixel_x = 10;
-	pixel_y = -2
-	},
-/obj/item/shipcomponent/secondary_system/tractor_beam{
-	pixel_x = 6
-	},
 /turf/simulated/floor/black,
 /area/station/hangar/sec)
 "fwD" = (
@@ -15947,6 +15941,7 @@
 	},
 /obj/item/cargotele,
 /obj/item/cargotele,
+/obj/item/stamp/qm,
 /turf/simulated/floor,
 /area/station/quartermaster/office)
 "gwr" = (
@@ -28482,6 +28477,10 @@
 /obj/mapping_helper/access/security,
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/item/stamp/law{
+	pixel_x = -6;
+	pixel_y = -1
 	},
 /turf/simulated/floor/plating,
 /area/station/security/main)
