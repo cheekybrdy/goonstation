@@ -6209,6 +6209,11 @@
 "aIv" = (
 /turf/simulated/floor/airless/plating/damaged2,
 /area/abandonedship)
+"aIw" = (
+/obj/fakeobject/skeleton,
+/obj/item/paper/image/sstv/emerg1,
+/turf/simulated/floor/airless/plating/damaged3,
+/area/space)
 "aIx" = (
 /obj/fakeobject/shuttleengine{
 	desc = "A robotic claw, it might still work.";
@@ -15350,6 +15355,17 @@
 "bWN" = (
 /turf/simulated/wall/auto/reinforced/old,
 /area/diner/motel/chemstorage)
+"bXv" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/worn,
+/obj/machinery/light_switch{
+	name = "S light switch";
+	pixel_y = -24
+	},
+/turf/simulated/floor,
+/area/h7/storage)
 "bYk" = (
 /turf/simulated/floor/green/side{
 	dir = 8
@@ -15366,10 +15382,6 @@
 /obj/landmark/spawner/loot,
 /turf/simulated/floor/shuttlebay,
 /area/buddyfactory)
-"bZD" = (
-/obj/machinery/light_switch/directional/north,
-/turf/simulated/floor/wood/two,
-/area/radiostation/bedroom)
 "bZO" = (
 /turf/simulated/shuttle/wall,
 /area/diner/jucer_trader)
@@ -15883,6 +15895,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/helldrone)
+"dfU" = (
+/obj/blind_switch/area/north{
+	pixel_x = 4
+	},
+/obj/machinery/light_switch/north{
+	pixel_x = -4
+	},
+/turf/simulated/floor,
+/area/radiostation/press)
 "dgO" = (
 /obj/item/device/radio/beacon,
 /turf/simulated/floor/plating,
@@ -16048,6 +16069,15 @@
 	},
 /turf/simulated/floor/wood/two,
 /area/radiostation/bedroom)
+"dAE" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/decal/cleanable/cobweb2,
+/obj/machinery/light_switch/north{
+	pixel_y = 30
+	},
+/obj/decal/stripe_delivery,
+/turf/simulated/floor,
+/area/radiostation/engineering)
 "dBP" = (
 /obj/pool/perspective{
 	dir = 10;
@@ -16233,6 +16263,25 @@
 /obj/item/clothing/suit/bee,
 /turf/unsimulated/floor/honeyblocks,
 /area/space_hive)
+"ebK" = (
+/obj/machinery/light_switch/west{
+	pixel_y = -4
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/blind_switch/area/west{
+	pixel_y = 4
+	},
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 1
+	},
+/obj/decal/tile_edge/stripe{
+	dir = 9;
+	icon_state = "xtra_bigstripe-corner2"
+	},
+/turf/simulated/floor/caution,
+/area/radiostation/teleporter)
 "ebT" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -16670,6 +16719,21 @@
 	icon_state = "fred2"
 	},
 /area/radiostation/bedroom)
+"fqg" = (
+/obj/stool/chair/office/red{
+	dir = 1
+	},
+/obj/blind_switch/area/south,
+/obj/machinery/light_switch/south{
+	pixel_x = 8
+	},
+/obj/landmark/latejoin_job/radio_show_host,
+/obj/sign_switch/south{
+	id = "radio_onair";
+	pixel_x = -8
+	},
+/turf/simulated/floor/carpet/grime,
+/area/radiostation/studio)
 "fqL" = (
 /obj/indestructible/shuttle_corner{
 	dir = 1;
@@ -16714,23 +16778,6 @@
 /mob/living/critter/robotic/repairbot/helldrone,
 /turf/simulated/floor/black,
 /area/helldrone/core)
-"fxC" = (
-/obj/machinery/light_switch/directional/west,
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/blind_switch/area/west{
-	pixel_y = 4
-	},
-/obj/decal/tile_edge/stripe/extra_big{
-	dir = 1
-	},
-/obj/decal/tile_edge/stripe{
-	dir = 9;
-	icon_state = "xtra_bigstripe-corner2"
-	},
-/turf/simulated/floor/caution,
-/area/radiostation/teleporter)
 "fAh" = (
 /obj/map/light/yellowbright,
 /turf/unsimulated/floor/setpieces/hivefloor,
@@ -16917,6 +16964,12 @@
 /obj/decal/stripe_delivery,
 /turf/simulated/floor,
 /area/diner/dining)
+"fYx" = (
+/obj/machinery/light_switch/west{
+	pixel_x = -22
+	},
+/turf/simulated/floor/sanitary,
+/area/radiostation/bedroom)
 "fZa" = (
 /mob/living/critter/small_animal/cockroach,
 /turf/simulated/floor/grime,
@@ -17011,12 +17064,6 @@
 	},
 /turf/unsimulated/wall/auto/adventure/shuttle,
 /area/abandonedmedicalship)
-"ghF" = (
-/obj/decal/cleanable/oil/streak,
-/obj/machinery/light_switch/directional/north,
-/obj/machinery/macrofab/emergency_pod,
-/turf/simulated/floor/shuttlebay,
-/area/radiostation/podbay)
 "giG" = (
 /obj/decal/cleanable/gangtag{
 	icon_state = "gangtag12";
@@ -17128,13 +17175,6 @@
 	},
 /turf/space,
 /area/diner/tug)
-"grg" = (
-/obj/blind_switch/area/north{
-	pixel_x = 4
-	},
-/obj/machinery/light_switch/directional/north,
-/turf/simulated/floor,
-/area/radiostation/press)
 "grK" = (
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/green/fancy/edge/north,
@@ -17332,11 +17372,6 @@
 	},
 /turf/simulated/floor/shuttlebay,
 /area/diner/tug)
-"gOp" = (
-/obj/fakeobject/skeleton,
-/obj/item/paper/image/sstv/emerg1,
-/turf/simulated/floor/airless/plating/damaged3,
-/area/space)
 "gPt" = (
 /obj/fakeobject/shuttleengine{
 	dir = 8;
@@ -17551,6 +17586,15 @@
 	},
 /turf/simulated/floor/carpet/blue/fancy/edge/west,
 /area/diner/motel)
+"htl" = (
+/obj/machinery/light_switch/east{
+	pixel_y = 5
+	},
+/obj/blind_switch/area/east{
+	pixel_y = -4
+	},
+/turf/simulated/floor/green/checker,
+/area/radiostation/green)
 "hto" = (
 /obj/mesh/catwalk/dubious,
 /obj/cable{
@@ -17566,6 +17610,20 @@
 	dir = 6
 	},
 /area/diner/solar)
+"htN" = (
+/obj/machinery/light_switch/south{
+	pixel_x = -8
+	},
+/obj/blind_switch/area/south,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/sign_switch/south{
+	id = "tv_onair";
+	pixel_x = 8
+	},
+/turf/simulated/floor/wood/two,
+/area/radiostation/tv_set)
 "htU" = (
 /turf/simulated/floor/airless/plating/scorched,
 /area/abandonedmedicalship)
@@ -17580,13 +17638,6 @@
 	},
 /turf/simulated/floor/grime,
 /area/diner/hallway)
-"hzj" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/obj/decal/cleanable/cobweb2,
-/obj/machinery/light_switch/directional/north,
-/obj/decal/stripe_delivery,
-/turf/simulated/floor,
-/area/radiostation/engineering)
 "hzu" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -17606,20 +17657,6 @@
 	},
 /turf/space,
 /area/space)
-"hAA" = (
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/light_switch/directional/north,
-/obj/cable{
-	icon_state = "2-4"
-	},
-/obj/item/paper{
-	info = "Why the HELL is there no bathroom in the crew module? Are we seriously supposed to run all the way over to the MINING COMPLEX to relieve ourselves?";
-	name = "Paper-Complaint #9"
-	},
-/turf/simulated/floor,
-/area/h7/crew)
 "hBh" = (
 /obj/machinery/light{
 	dir = 8;
@@ -17969,6 +18006,13 @@
 /obj/item/skull,
 /turf/simulated/floor/plating,
 /area/diner/kitchen)
+"itF" = (
+/obj/machinery/light_switch{
+	name = "S light switch";
+	pixel_y = -24
+	},
+/turf/simulated/floor,
+/area/h7/control)
 "iuq" = (
 /obj/item/cable_coil/cut{
 	color = "#DD0000";
@@ -18233,13 +18277,6 @@
 /obj/decal/poster/wallsign/stencil/left/two,
 /turf/simulated/wall/auto/reinforced/old,
 /area/diner/motel)
-"jal" = (
-/obj/machinery/light_switch/directional/east,
-/obj/blind_switch/area/east{
-	pixel_y = -4
-	},
-/turf/simulated/floor/green/checker,
-/area/radiostation/green)
 "jar" = (
 /obj/mesh/catwalk,
 /obj/machinery/door/airlock/pyro/external{
@@ -18660,6 +18697,14 @@
 "jYd" = (
 /turf/simulated/floor/carpet/blue/fancy/edge/se,
 /area/diner/hallway)
+"jZd" = (
+/obj/decal/cleanable/oil/streak,
+/obj/machinery/light_switch/north{
+	pixel_y = 30
+	},
+/obj/machinery/macrofab/emergency_pod,
+/turf/simulated/floor/shuttlebay,
+/area/radiostation/podbay)
 "jZm" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -18957,13 +19002,6 @@
 /obj/landmark/spawner/loot,
 /turf/space,
 /area/abandonedship)
-"kDj" = (
-/obj/machinery/light/worn{
-	dir = 4
-	},
-/obj/machinery/light_switch/directional/south,
-/turf/simulated/floor/purple/corner,
-/area/h7)
 "kDA" = (
 /obj/fakeobject/shuttleengine{
 	icon_state = "alt_heater-M"
@@ -18989,19 +19027,6 @@
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/airless/grime,
 /area/abandonedmedicalship)
-"kIn" = (
-/obj/stool/chair/office/red{
-	dir = 1
-	},
-/obj/blind_switch/area/south,
-/obj/machinery/light_switch/directional/south,
-/obj/landmark/latejoin_job/radio_show_host,
-/obj/sign_switch/south{
-	id = "radio_onair";
-	pixel_x = -8
-	},
-/turf/simulated/floor/carpet/grime,
-/area/radiostation/studio)
 "kKc" = (
 /turf/simulated/floor/stairs/wide/other{
 	dir = 4
@@ -19694,10 +19719,6 @@
 /obj/machinery/light/small/iomoon,
 /turf/simulated/floor/plating,
 /area/helldrone)
-"mgv" = (
-/obj/machinery/light_switch/directional/west,
-/turf/simulated/floor/sanitary,
-/area/radiostation/bedroom)
 "mhn" = (
 /obj/stool/chair{
 	dir = 4
@@ -19868,6 +19889,16 @@
 	icon_state = "shuttlecock_mining"
 	},
 /area/diner/tug)
+"mGD" = (
+/obj/machinery/light/worn{
+	dir = 4
+	},
+/obj/machinery/light_switch{
+	name = "S light switch";
+	pixel_y = -24
+	},
+/turf/simulated/floor/purple/corner,
+/area/h7)
 "mGE" = (
 /obj/decal/tile_edge/stripe{
 	dir = 1
@@ -20111,6 +20142,13 @@
 	},
 /turf/unsimulated/wall/auto/adventure/shuttle,
 /area/abandonedmedicalship)
+"ngl" = (
+/obj/machinery/vehicle/miniputt,
+/obj/machinery/light_switch/north{
+	pixel_y = 30
+	},
+/turf/simulated/floor/shuttlebay,
+/area/radiostation/podbay)
 "ngu" = (
 /obj/fakeobject{
 	anchored = 1;
@@ -20197,10 +20235,6 @@
 	},
 /turf/space,
 /area/space)
-"nrr" = (
-/obj/machinery/light_switch/directional/west,
-/turf/simulated/floor,
-/area/h7)
 "nrz" = (
 /obj/fakeobject/shuttleengine{
 	dir = 8;
@@ -20386,6 +20420,24 @@
 	},
 /turf/space,
 /area/abandonedship)
+"nQz" = (
+/obj/machinery/light_switch/east{
+	dir = 4
+	},
+/obj/fakeobject{
+	anchored = 1;
+	desc = "Like conventional cables, but more burly.";
+	dir = 6;
+	icon = 'icons/obj/power_cond.dmi';
+	icon_state = "conduit";
+	layer = 2.5;
+	name = "power conduit"
+	},
+/obj/cable{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/black,
+/area/radiostation/serverroom)
 "nRd" = (
 /obj/machinery/vending/snack,
 /obj/machinery/light/incandescent/netural{
@@ -20826,14 +20878,6 @@
 	},
 /turf/space/asteroid,
 /area/space)
-"oYD" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light/worn,
-/obj/machinery/light_switch/directional/south,
-/turf/simulated/floor,
-/area/h7/storage)
 "oZB" = (
 /turf/simulated/floor/damaged2,
 /area/diner/kitchen)
@@ -21438,18 +21482,6 @@
 	},
 /turf/simulated/floor/plating/scorched,
 /area/salvage_trader)
-"qog" = (
-/obj/machinery/light_switch/directional/south,
-/obj/blind_switch/area/south,
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/sign_switch/south{
-	id = "tv_onair";
-	pixel_x = 8
-	},
-/turf/simulated/floor/wood/two,
-/area/radiostation/tv_set)
 "qoJ" = (
 /obj/decal/tile_edge/line/blue{
 	dir = 9;
@@ -21538,21 +21570,6 @@
 /obj/item/horseshoe,
 /turf/simulated/floor/airless/plating/damaged1,
 /area/abandonedship)
-"qzR" = (
-/obj/table/auto,
-/obj/machinery/light_switch/directional/west,
-/obj/fakeobject{
-	desc = "It looks like it was never even plugged in. Did this ever work?!";
-	icon = 'icons/obj/networked.dmi';
-	icon_state = "printer0";
-	name = "Broken Printer";
-	true_name = "printer?"
-	},
-/obj/cable{
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/black,
-/area/radiostation/bridge)
 "qAR" = (
 /obj/rack,
 /obj/item/clothing/mask/breath,
@@ -22421,6 +22438,23 @@
 	},
 /turf/simulated/floor/green/checker,
 /area/radiostation/green)
+"sKU" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/light_switch{
+	name = "N light switch";
+	pixel_y = 24
+	},
+/obj/cable{
+	icon_state = "2-4"
+	},
+/obj/item/paper{
+	info = "Why the HELL is there no bathroom in the crew module? Are we seriously supposed to run all the way over to the MINING COMPLEX to relieve ourselves?";
+	name = "Paper-Complaint #9"
+	},
+/turf/simulated/floor,
+/area/h7/crew)
 "sNo" = (
 /obj/machinery/door/airlock/pyro/external{
 	dir = 4
@@ -22728,6 +22762,13 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating/random,
 /area/abandonedoutpostthing)
+"tnH" = (
+/obj/machinery/light_switch{
+	name = "W light switch";
+	pixel_x = -24
+	},
+/turf/simulated/floor,
+/area/h7)
 "tnM" = (
 /obj/machinery/door/unpowered/wood/pyro{
 	dir = 1
@@ -22790,6 +22831,23 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/mining/diner)
+"tuv" = (
+/obj/table/auto,
+/obj/machinery/light_switch/west{
+	pixel_x = -22
+	},
+/obj/fakeobject{
+	desc = "It looks like it was never even plugged in. Did this ever work?!";
+	icon = 'icons/obj/networked.dmi';
+	icon_state = "printer0";
+	name = "Broken Printer";
+	true_name = "printer?"
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/black,
+/area/radiostation/bridge)
 "tux" = (
 /obj/indestructible/shuttle_corner{
 	dir = 8;
@@ -22952,10 +23010,6 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
 /area/helldrone)
-"tNu" = (
-/obj/machinery/light_switch/directional/south,
-/turf/simulated/floor,
-/area/h7/control)
 "tOV" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -23589,11 +23643,6 @@
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/carpet/blue/fancy/edge/east,
 /area/diner/motel)
-"vlx" = (
-/obj/machinery/vehicle/miniputt,
-/obj/machinery/light_switch/directional/north,
-/turf/simulated/floor/shuttlebay,
-/area/radiostation/podbay)
 "vly" = (
 /obj/landmark/spawner/loot,
 /turf/simulated/floor/plating,
@@ -24297,6 +24346,12 @@
 /mob/living/critter/small_animal/cockroach,
 /turf/simulated/floor/shuttlebay,
 /area/bee_trader)
+"wYU" = (
+/obj/machinery/light_switch/north{
+	pixel_y = 30
+	},
+/turf/simulated/floor/wood/two,
+/area/radiostation/bedroom)
 "wZs" = (
 /obj/machinery/gravity_tether/multi_area/hermera,
 /turf/simulated/floor,
@@ -24330,22 +24385,6 @@
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
 /area/diner/hallway)
-"xfy" = (
-/obj/machinery/light_switch/directional/east,
-/obj/fakeobject{
-	anchored = 1;
-	desc = "Like conventional cables, but more burly.";
-	dir = 6;
-	icon = 'icons/obj/power_cond.dmi';
-	icon_state = "conduit";
-	layer = 2.5;
-	name = "power conduit"
-	},
-/obj/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/black,
-/area/radiostation/serverroom)
 "xfN" = (
 /obj/stool/chair/comfy{
 	dir = 8;
@@ -32434,7 +32473,7 @@ aPJ
 aPI
 aQY
 aRN
-hAA
+sKU
 aTM
 aTM
 aTM
@@ -34247,7 +34286,7 @@ aaa
 aaa
 aaa
 aNY
-nrr
+tnH
 aMq
 aMu
 aNY
@@ -38470,7 +38509,7 @@ aGj
 aGj
 aGj
 aGj
-oYD
+bXv
 aFW
 aMu
 aMu
@@ -38780,7 +38819,7 @@ aTo
 aMu
 aMq
 aMu
-kDj
+mGD
 aNY
 aNY
 aNY
@@ -40879,7 +40918,7 @@ mvM
 aFJ
 aIn
 aGs
-tNu
+itF
 aFX
 biJ
 biJ
@@ -71442,7 +71481,7 @@ aaa
 aaa
 aaa
 aHZ
-gOp
+aIw
 aIT
 aaa
 aaa
@@ -106052,7 +106091,7 @@ wia
 adJ
 cbs
 adO
-vlx
+ngl
 adY
 aeW
 adO
@@ -106651,7 +106690,7 @@ eLA
 sIA
 oGD
 cug
-jal
+htl
 ffC
 kKQ
 nar
@@ -107567,7 +107606,7 @@ adg
 adg
 adg
 aga
-hzj
+dAE
 asV
 aHy
 biT
@@ -107846,7 +107885,7 @@ uiy
 aaD
 kyc
 abU
-qzR
+tuv
 ptd
 acJ
 kga
@@ -108168,7 +108207,7 @@ adx
 adK
 adW
 aen
-kIn
+fqg
 adg
 agb
 aon
@@ -108761,7 +108800,7 @@ xcG
 abB
 xcG
 lCC
-qog
+htN
 xlo
 cDc
 kWr
@@ -108775,7 +108814,7 @@ kug
 kug
 pgp
 agz
-xfy
+nQz
 ato
 aHE
 aHE
@@ -109379,7 +109418,7 @@ adg
 adg
 adg
 agJ
-bZD
+wYU
 ouf
 foM
 qvF
@@ -110273,7 +110312,7 @@ ack
 ack
 hYk
 lYq
-fxC
+ebK
 gAl
 pNC
 yeD
@@ -110287,7 +110326,7 @@ aej
 agJ
 oqc
 aGy
-mgv
+fYx
 uLu
 agJ
 bjw
@@ -110880,11 +110919,11 @@ iQm
 cLQ
 xpM
 pNC
-grg
+dfU
 hIc
 sXM
 adO
-ghF
+jZd
 aeS
 afi
 adO
