@@ -1,3 +1,22 @@
+
+(t)tue jun 30 26
+(u)Michael Warren
+(p)27013
+(e)🗺|A-Mapping
+(*)Added Syndicate hideout variant to the syndicate disposals hijacker. Now with a vibe befitting the wandering ronin you were always meant to be!
+(u)Sandwichi
+(p)26716
+(e)🆕💪|C-Feature, A-Traits
+(+)The Lunchbox trinket trait can now come packed with a Picky Eater's favourite foods.
+(u)Brainrot
+(p)27018
+(e)🗺|A-Mapping
+(*)Added a new hideout variant for Syndicates who need a more relaxing place away from the NT crew to plan their crimes.
+(u)phoi
+(p)26980
+(e)🗺|A-Mapping
+(+)Widened Visitation window and Interrogation window on Cogmap 1
+(+)Changed the area of hootys domain to actually be Visitation on Cogmap 1
 (t)mon jun 29 26
 (u)LeahTheTech
 (+)Frog tongues can now catch and eat small insects, as well as other kinds of food.
