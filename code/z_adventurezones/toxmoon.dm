@@ -592,7 +592,7 @@
 
 	area_attack(var/obj/summoned_thing, var/drop_prob)
 		for(var/turf/T in range(14))
-			if(T.!is_obstructed && !src.loc && !rand(0,drop_prob))
+			if(!src.loc && !rand(0,drop_prob))
 				new summoned_thing(src.loc)
 	// 	src.set_dir(get_dir(src, target))
 	// 	var/obj/projectile/P1 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
