@@ -456,6 +456,8 @@
 			if(shadow)
 				qdel(shadow)
 
+///// Boss AI
+
 /datum/aiHolder/noxia
 	New()
 		..()
@@ -465,64 +467,6 @@
 	..()
 	transition_tasks += holder.get_instance(/datum/aiTask/sequence/goalbased/critter/turf_attack, list(src.holder, src))
 	transition_tasks += holder.get_instance(/datum/aiTask/sequence/goalbased/critter/range_attack, list(src.holder, src))
-
-/datum/aiTask/sequence/goalbased/critter/area_attack
-	name = "attacking a turf"
-	weight = 10 // attack behaviour gets a high priority
-	distance_from_target = 0
-	max_dist = 15
-
-/datum/aiTask/sequence/goalbased/critter/turf_attack/New(parentHolder, transTask) //goalbased aitasks have an inherent movement component
-	..(parentHolder, transTask)
-	add_task(holder.get_instance(/datum/aiTask/succeedable/critter/turf_attack, list(holder)))
-
-/datum/aiTask/sequence/goalbased/critter/turf_attack/precondition()
-	var/mob/living/critter/C = holder.owner
-	return C.can_critter_attack()
-
-/datum/aiTask/sequence/goalbased/critter/turf_attack/on_reset()
-	..()
-	var/mob/living/critter/C = holder.owner
-	if(C)
-		C.set_a_intent(INTENT_HARM)
-
-/datum/aiTask/sequence/goalbased/critter/turf_attack/get_targets()
-	var/mob/living/critter/C = holder.owner
-	return C.seek_target(src.max_dist)
-
-/////////////// The aiTask/succeedable handles the behaviour to do when we're near a target
-
-/datum/aiTask/succeedable/critter/turf_attack
-	name = "turf attack subtask"
-	var/has_started = FALSE
-	/// Maximum range to engage the target from
-	var/max_range = 15
-	/// Minimum range from the target before trying to flee
-	var/min_range = 0
-
-/datum/aiTask/succeedable/critter/turf_attack/failed()
-	var/mob/living/critter/C = holder.owner
-	var/mob/T = holder.target
-	if(!has_started && !C.can_critter_attack()) //if we haven't started and can't attack, task fail.
-		return TRUE
-	if(!C || !T || BOUNDS_DIST(C, T) > src.max_range) //the tasks fails and is re-evaluated if the target is not in range
-		return TRUE
-
-/datum/aiTask/succeedable/critter/turf_attack/succeeded()
-	var/mob/living/critter/C = holder.owner
-	return has_started && C.can_critter_attack() //if we've started an attack, and can attack again, then hooray, we have completed this task
-
-/datum/aiTask/succeedable/critter/range_attack/on_tick()
-	if(!has_started)
-		var/mob/living/critter/C = holder.owner
-		var/mob/T = holder.target
-		if(C && T && BOUNDS_DIST(C, T))
-			holder.owner.set_dir(get_dir(C, T))
-			C.critter_ability_attack(T)
-			has_started = TRUE
-
-/datum/aiTask/succeedable/critter/turf_attack/on_reset()
-	has_started = FALSE
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------//
 
@@ -594,6 +538,7 @@
 		for(var/turf/T in range(14))
 			if(!src.loc && !rand(0,drop_prob))
 				new summoned_thing(src.loc)
+
 	// 	src.set_dir(get_dir(src, target))
 	// 	var/obj/projectile/P1 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
 	// 	var/obj/projectile/P2 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
