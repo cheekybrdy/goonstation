@@ -39781,7 +39781,8 @@
 /obj/mapping_helper/access/janitor,
 /obj/machinery/door/airlock/pyro{
 	dir = 4;
-	locked = 1
+	locked = 1;
+	icon_state = "door_locked"
 	},
 /obj/forcefield/energyshield/perma/doorlink{
 	dir = 4
