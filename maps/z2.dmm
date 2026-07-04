@@ -2040,6 +2040,23 @@
 /obj/item/clothing/suit/bedsheet/pink,
 /turf/unsimulated/floor/tatami/east,
 /area/centcom/offices/angel)
+"akJ" = (
+/obj/stool/chair/dining/wood{
+	dir = 4
+	},
+/obj/decal/cleanable/blood/gibs{
+	icon_state = "gibmid3"
+	},
+/obj/fakeobject/lightbulb_broken{
+	dir = 8
+	},
+/obj/machinery/light_switch/directional/north,
+/obj/machinery/light/emergency{
+	dir = 1
+	},
+/obj/mapping_helper/mob_spawn/corpse/human/owlery_security/assistant,
+/turf/unsimulated/floor/redblack/corner,
+/area/owlery/gangzone)
 "akM" = (
 /obj/fakeobject/lighttube_broken{
 	dir = 8
@@ -3470,20 +3487,6 @@
 	},
 /turf/unsimulated/floor/specialroom/freezer,
 /area/moon/museum)
-"aqY" = (
-/obj/table/reinforced/bar/auto,
-/obj/item/paper_bin,
-/obj/item/device/light/flashlight/penlight,
-/obj/machinery/light_switch/west{
-	on = 0
-	},
-/obj/machinery/light{
-	dir = 8;
-	layer = 9.1;
-	pixel_x = -10
-	},
-/turf/unsimulated/floor/green,
-/area/owlery/owleryhall)
 "aqZ" = (
 /obj/machinery/light,
 /obj/table/round,
@@ -6707,6 +6710,13 @@
 "aIe" = (
 /turf/unsimulated/wall/auto/adventure/mars,
 /area/marsoutpost)
+"aIf" = (
+/obj/machinery/light_switch/directional/west{
+	on = 0
+	},
+/obj/decal/cleanable/blood/tracks,
+/turf/unsimulated/floor,
+/area/upper_arctic/hall)
 "aIj" = (
 /turf/unsimulated/floor/setpieces/martian{
 	density = 1;
@@ -8909,6 +8919,10 @@
 	dir = 6
 	},
 /area/crater/biodome/north)
+"aPJ" = (
+/obj/machinery/light_switch/directional/south,
+/turf/unsimulated/floor/neutral/side,
+/area/crater/biodome/maint)
 "aPL" = (
 /obj/spacevine,
 /turf/unsimulated/wall/setpieces/leadwindow{
@@ -11682,19 +11696,6 @@
 	dir = 8
 	},
 /area/crater/biodome/research)
-"aZy" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light_switch{
-	name = "E light switch";
-	pixel_x = 24
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/unsimulated/floor,
-/area/crunch)
 "aZB" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -35332,18 +35333,6 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/owlery/office)
-"cGG" = (
-/obj/fakeobject{
-	anchored = 1;
-	density = 1;
-	desc = "A computer that is so completely, irreparably broken that you are in disbelief at just how destroyed it is. ";
-	dir = 8;
-	icon = 'icons/obj/computer.dmi';
-	icon_state = "offbroken";
-	name = "broken computer"
-	},
-/turf/unsimulated/floor/wood/two,
-/area/owlery/office)
 "cGH" = (
 /obj/stool/chair/office{
 	dir = 8
@@ -41769,15 +41758,6 @@
 	},
 /turf/unsimulated/wall/auto/reinforced/supernorn,
 /area/owlery/office)
-"cYJ" = (
-/obj/blind_switch{
-	id = "owl"
-	},
-/obj/cable{
-	icon_state = "4-8"
-	},
-/turf/unsimulated/wall/auto/reinforced/supernorn,
-/area/owlery/office)
 "cYK" = (
 /obj/decal/poster/wallsign/poster_sol,
 /obj/cable{
@@ -46202,6 +46182,14 @@
 "dsz" = (
 /turf/unsimulated/wall/auto/adventure/shuttle/dark,
 /area/shuttle/merchant_shuttle/right_centcom/destiny)
+"dsH" = (
+/obj/machinery/light_switch/directional/north,
+/obj/machinery/light/emergency{
+	dir = 1;
+	pixel_y = 16
+	},
+/turf/unsimulated/floor/caution/north,
+/area/owlery/Owlmait2)
 "dta" = (
 /turf/unsimulated/floor/carpet{
 	dir = 5;
@@ -47971,6 +47959,12 @@
 /area/centcom/offices{
 	icon_state = "blue"
 	})
+"dzP" = (
+/obj/machinery/light_switch/directional/west{
+	on = 0
+	},
+/turf/unsimulated/floor/carpet/grime,
+/area/upper_arctic/pod2)
 "dzV" = (
 /obj/item/device/multitool,
 /turf/unsimulated/floor/wood/two,
@@ -54242,15 +54236,6 @@
 	opacity = 0
 	},
 /area/centcom/lobby)
-"emO" = (
-/obj/machinery/light_switch{
-	name = "W light switch";
-	pixel_x = -24
-	},
-/obj/table/auto,
-/obj/item/cigpacket,
-/turf/unsimulated/floor/grime,
-/area/upper_arctic/mining)
 "emZ" = (
 /obj/decal/tile_edge/line/black{
 	dir = 8;
@@ -54353,13 +54338,6 @@
 /obj/mapping_helper/access/owlcommand,
 /turf/unsimulated/floor/white,
 /area/owlery/lab)
-"eri" = (
-/obj/machinery/light_switch{
-	name = "E light switch";
-	pixel_x = 24
-	},
-/turf/unsimulated/floor/caution/west,
-/area/crater/biodome/entry)
 "erO" = (
 /obj/disposalpipe/segment,
 /obj/item/device/radio/intercom/adventure/owlery,
@@ -55736,15 +55714,6 @@
 	icon_state = "iocrust_corner"
 	},
 /area/iomoon/caves)
-"fyf" = (
-/obj/machinery/light_switch{
-	name = "W light switch";
-	on = 0;
-	pixel_x = -24
-	},
-/obj/decal/cleanable/blood/tracks,
-/turf/unsimulated/floor,
-/area/upper_arctic/hall)
 "fyt" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -55755,6 +55724,30 @@
 /obj/tree/sakura_tree,
 /turf/unsimulated/floor/grass/leafy,
 /area/dojo/sakura)
+"fzG" = (
+/obj/table/reinforced/auto{
+	layer = 2
+	},
+/obj/item/reagent_containers/food/drinks/mug{
+	pixel_x = -4;
+	pixel_y = 2
+	},
+/obj/item/device/flash{
+	pixel_x = 7
+	},
+/obj/machinery/cell_charger{
+	layer = 2.5;
+	pixel_x = -2;
+	pixel_y = 8
+	},
+/obj/machinery/light_switch/directional/north,
+/obj/machinery/light/emergency{
+	dir = 1
+	},
+/turf/unsimulated/floor/redblack{
+	dir = 9
+	},
+/area/owlery/owleryhall)
 "fzQ" = (
 /obj/cable{
 	icon_state = "5-10"
@@ -55829,16 +55822,6 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital)
-"fAt" = (
-/obj/machinery/light_switch{
-	name = "E light switch";
-	pixel_x = 24
-	},
-/obj/machinery/sleep_console{
-	dir = 8
-	},
-/turf/unsimulated/floor/white,
-/area/upper_arctic/pod2)
 "fBq" = (
 /obj/machinery/door/airlock/pyro{
 	dir = 4
@@ -56598,14 +56581,6 @@
 	},
 /turf/unsimulated/floor,
 /area/centcom/lounge)
-"gfC" = (
-/obj/machinery/light_switch{
-	name = "W light switch";
-	on = 0;
-	pixel_x = -24
-	},
-/turf/unsimulated/floor/carpet/grime,
-/area/upper_arctic/pod2)
 "ghc" = (
 /obj/storage/cart/trash,
 /obj/item/scrap,
@@ -56769,23 +56744,6 @@
 /obj/lattice,
 /turf/unsimulated/floor/void,
 /area/void_diner)
-"glH" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light_switch{
-	name = "N light switch";
-	on = 0;
-	pixel_y = 24
-	},
-/turf/unsimulated/floor/neutral/side{
-	dir = 1
-	},
-/area/crater/biodome/research)
-"glS" = (
-/obj/machinery/light_switch/north,
-/turf/unsimulated/floor/yellowblack,
-/area/owlery/gangzone)
 "glY" = (
 /obj/disposaloutlet{
 	dir = 1;
@@ -57145,6 +57103,10 @@
 	},
 /turf/simulated/floor/white/grime,
 /area/observatory)
+"gzt" = (
+/obj/machinery/light_switch/directional/west,
+/turf/unsimulated/floor/wood/three,
+/area/afterlife/heaven/hydroponics)
 "gzH" = (
 /obj/machinery/computer/camera_viewer{
 	dir = 8
@@ -57517,14 +57479,10 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/retentioncenter)
-"gKh" = (
-/obj/machinery/light_switch/north,
-/obj/machinery/light/emergency{
-	dir = 1;
-	pixel_y = 16
-	},
-/turf/unsimulated/floor/caution/north,
-/area/owlery/Owlmait2)
+"gLq" = (
+/obj/machinery/light_switch/directional/south,
+/turf/unsimulated/floor/neutral/side,
+/area/crater/biodome/crew)
 "gLr" = (
 /obj/map/light/dimreddish,
 /obj/fakeobject/cultiststatue,
@@ -57553,15 +57511,6 @@
 	},
 /turf/unsimulated/floor/wood,
 /area/centcom/garden)
-"gMn" = (
-/obj/machinery/light_switch{
-	name = "E light switch";
-	pixel_x = 24
-	},
-/turf/unsimulated/floor/stairs{
-	dir = 1
-	},
-/area/crater/biodome/north)
 "gMF" = (
 /obj/stool/chair/dining/wood{
 	dir = 1
@@ -58488,6 +58437,10 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/iomoon/base/underground)
+"hBa" = (
+/obj/machinery/light_switch/directional/east,
+/turf/unsimulated/floor/caution/west,
+/area/crater/biodome/entry)
 "hBd" = (
 /obj/table/wood/round/auto,
 /turf/unsimulated/floor/wood/two,
@@ -58732,6 +58685,17 @@
 	icon_state = "red2"
 	},
 /area/void_diner)
+"hLX" = (
+/obj/decal/cleanable/dirt,
+/obj/machinery/light_switch/directional/east,
+/obj/machinery/sink/slim{
+	desc = "A water-filled unit intended for custodial purposes.";
+	dir = 8;
+	name = "custodial sink";
+	pixel_x = 2
+	},
+/turf/unsimulated/floor/plating,
+/area/afterlife/bar)
 "hMo" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -59226,13 +59190,6 @@
 /obj/decal/nav_danger,
 /turf/unsimulated/floor/plating,
 /area/watchful_eye_sensor)
-"ihM" = (
-/obj/machinery/light_switch{
-	name = "S light switch";
-	pixel_y = -24
-	},
-/turf/unsimulated/floor/neutral/side,
-/area/crater/biodome/crew)
 "iia" = (
 /obj/machinery/door/unpowered/wood/stall{
 	dir = 8;
@@ -59407,15 +59364,6 @@
 /obj/decal/cleanable/blood/splatter/extra,
 /turf/unsimulated/floor,
 /area/watchful_eye_sensor)
-"inq" = (
-/obj/machinery/light_switch{
-	name = "W light switch";
-	pixel_x = -24
-	},
-/turf/unsimulated/floor/stairs{
-	dir = 1
-	},
-/area/crater/biodome/north)
 "inE" = (
 /obj/fakeobject{
 	anchored = 1;
@@ -59440,19 +59388,6 @@
 	},
 /turf/unsimulated/floor/arctic/snow,
 /area/upper_arctic/exterior/surface)
-"iow" = (
-/obj/computerframe{
-	anchored = 1;
-	desc = "It is highly unlikely that this still works.";
-	icon = 'icons/obj/computer.dmi';
-	icon_state = "datamedb";
-	name = "smashed computer"
-	},
-/obj/machinery/light_switch/west,
-/turf/unsimulated/floor/blackwhite{
-	dir = 8
-	},
-/area/owlery/staffhall)
 "ioH" = (
 /obj/lattice/directional_icons{
 	dir = 9
@@ -60160,6 +60095,13 @@
 /obj/machinery/crusher/instant,
 /turf/unsimulated/floor/plating,
 /area/owlery/Owlmait)
+"iPU" = (
+/obj/machinery/light_switch/directional/east,
+/obj/machinery/sleep_console{
+	dir = 8
+	},
+/turf/unsimulated/floor/white,
+/area/upper_arctic/pod2)
 "iPZ" = (
 /obj/lattice{
 	dir = 1;
@@ -61277,6 +61219,10 @@
 	dir = 1
 	},
 /area/iomoon/base/underground)
+"jAd" = (
+/obj/machinery/light_switch/directional/east,
+/turf/unsimulated/floor/wood/three,
+/area/afterlife/heaven/hydroponics)
 "jAK" = (
 /obj/fakeobject{
 	icon = 'icons/obj/window.dmi';
@@ -62729,13 +62675,6 @@
 	icon_state = "shore-22"
 	},
 /area/titlescreen)
-"kDv" = (
-/obj/machinery/light_switch{
-	name = "S light switch";
-	pixel_y = -24
-	},
-/turf/unsimulated/floor/neutral/side,
-/area/crater/biodome/maint)
 "kDP" = (
 /obj/disposalpipe/segment{
 	dir = 4
@@ -63304,30 +63243,6 @@
 	icon_state = "shore-41"
 	},
 /area/titlescreen)
-"laC" = (
-/obj/table/reinforced/auto{
-	layer = 2
-	},
-/obj/item/reagent_containers/food/drinks/mug{
-	pixel_x = -4;
-	pixel_y = 2
-	},
-/obj/item/device/flash{
-	pixel_x = 7
-	},
-/obj/machinery/cell_charger{
-	layer = 2.5;
-	pixel_x = -2;
-	pixel_y = 8
-	},
-/obj/machinery/light_switch/north,
-/obj/machinery/light/emergency{
-	dir = 1
-	},
-/turf/unsimulated/floor/redblack{
-	dir = 9
-	},
-/area/owlery/owleryhall)
 "laI" = (
 /obj/cable/green{
 	icon_state = "2-8"
@@ -63531,6 +63446,21 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/centcom/lobby)
+"lkn" = (
+/obj/fakeobject{
+	anchored = 1;
+	density = 1;
+	desc = "A computer that is so completely, irreparably broken that you are in disbelief at just how destroyed it is. ";
+	dir = 8;
+	icon = 'icons/obj/computer.dmi';
+	icon_state = "offbroken";
+	name = "broken computer"
+	},
+/obj/blind_switch/north{
+	id = "owl"
+	},
+/turf/unsimulated/floor/wood/two,
+/area/owlery/office)
 "lkO" = (
 /obj/machinery/door/airlock/pyro/maintenance,
 /turf/unsimulated/floor/plating,
@@ -64439,13 +64369,6 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/iomoon/base/underground)
-"lVY" = (
-/obj/machinery/light_switch{
-	name = "S light switch";
-	pixel_y = -24
-	},
-/turf/unsimulated/floor,
-/area/meat_derelict/guts)
 "lWe" = (
 /turf/unsimulated/wall/auto/lead/blue,
 /area/centcom/garden)
@@ -65066,15 +64989,6 @@
 /area/centcom/offices{
 	icon_state = "blue"
 	})
-"mxy" = (
-/obj/machinery/light_switch{
-	name = "N light switch";
-	on = 0;
-	pixel_y = 24
-	},
-/obj/storage/secure/closet/research/uniform,
-/turf/unsimulated/floor/white,
-/area/upper_arctic/pod1)
 "mxS" = (
 /obj/machinery/light,
 /obj/rack,
@@ -66353,23 +66267,6 @@
 /obj/fakeobject/dreambeach/big/palm1,
 /turf/unsimulated/floor/dream/beach,
 /area/titlescreen)
-"nyB" = (
-/obj/stool/chair/dining/wood{
-	dir = 4
-	},
-/obj/decal/cleanable/blood/gibs{
-	icon_state = "gibmid3"
-	},
-/obj/fakeobject/lightbulb_broken{
-	dir = 8
-	},
-/obj/machinery/light_switch/north,
-/obj/machinery/light/emergency{
-	dir = 1
-	},
-/obj/mapping_helper/mob_spawn/corpse/human/owlery_security/assistant,
-/turf/unsimulated/floor/redblack/corner,
-/area/owlery/gangzone)
 "nyQ" = (
 /obj/spacevine,
 /turf/unsimulated/wall/auto/lead/blue,
@@ -66714,6 +66611,10 @@
 /obj/item/radio_tape,
 /turf/unsimulated/floor,
 /area/watchful_eye_sensor)
+"nMd" = (
+/obj/machinery/light_switch/directional/east,
+/turf/unsimulated/floor/stairs,
+/area/crater/biodome/south)
 "nMz" = (
 /obj/ladder{
 	icon_state = "ladder_wall";
@@ -66864,13 +66765,6 @@
 "nQU" = (
 /turf/unsimulated/floor/circuit,
 /area/crater/biodome/entry)
-"nRb" = (
-/obj/machinery/light_switch{
-	name = "E light switch";
-	pixel_x = 24
-	},
-/turf/unsimulated/floor/stairs,
-/area/crater/biodome/south)
 "nRf" = (
 /obj/item/paper{
 	burning = 0;
@@ -67228,13 +67122,6 @@
 /obj/decal/cleanable/dirt/dirt2,
 /turf/unsimulated/floor,
 /area/watchful_eye_sensor)
-"nZu" = (
-/obj/table/reinforced/auto,
-/obj/item/pen/fancy,
-/obj/machinery/light_switch/north,
-/obj/item/paper/image/businesscard,
-/turf/unsimulated/floor/white,
-/area/owlery/lab)
 "nZV" = (
 /obj/decoration/regallamp{
 	lit = 1
@@ -68142,6 +68029,12 @@
 	},
 /turf/space,
 /area/watchful_eye_sensor)
+"oOw" = (
+/obj/machinery/light_switch/directional/east,
+/turf/unsimulated/floor/stairs{
+	dir = 1
+	},
+/area/crater/biodome/north)
 "oOA" = (
 /obj/table/reinforced/bar/auto,
 /obj/machinery/computer/television/small{
@@ -68450,13 +68343,6 @@
 	icon_state = "cairngorm21"
 	},
 /area/syndicate_station/battlecruiser)
-"pbd" = (
-/obj/machinery/light_switch{
-	name = "W light switch";
-	pixel_x = -24
-	},
-/turf/unsimulated/floor/stairs,
-/area/crater/biodome/south)
 "pbV" = (
 /turf/unsimulated/wall/generic{
 	desc = "It's sealed shut.";
@@ -70288,6 +70174,13 @@
 	dir = 10
 	},
 /area/centcom)
+"qsA" = (
+/obj/machinery/light_switch/directional/north{
+	on = 0
+	},
+/obj/storage/secure/closet/research/uniform,
+/turf/unsimulated/floor/white,
+/area/upper_arctic/pod1)
 "qsO" = (
 /obj/item/stamped_bullion,
 /obj/item/stamped_bullion,
@@ -71183,6 +71076,13 @@
 /obj/item/plant/herb/grass,
 /turf/unsimulated/outdoors/grass,
 /area/void_diner)
+"qZJ" = (
+/obj/machinery/light_switch/directional/west{
+	on = 0
+	},
+/obj/machinery/vending/coffee,
+/turf/unsimulated/floor/specialroom/bar,
+/area/upper_arctic/pod2)
 "qZP" = (
 /turf/unsimulated/floor/purple/side{
 	dir = 1
@@ -71198,6 +71098,10 @@
 "rcQ" = (
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/efrem)
+"rcV" = (
+/obj/machinery/light_switch/directional/south,
+/turf/unsimulated/floor,
+/area/meat_derelict/guts)
 "rcX" = (
 /obj/decal/art_curser_sigil,
 /turf/unsimulated/wall/auto/adventure/ancient,
@@ -73355,6 +73259,10 @@
 	},
 /turf/unsimulated/outdoors/grass,
 /area/shuttle/merchant_shuttle/right_centcom/destiny)
+"sEL" = (
+/obj/machinery/light_switch/directional/west,
+/turf/unsimulated/floor/stairs,
+/area/crater/biodome/south)
 "sEV" = (
 /obj/shrub{
 	dir = 4;
@@ -73511,6 +73419,19 @@
 	},
 /turf/unsimulated/floor/martian,
 /area/crunch)
+"sLn" = (
+/obj/computerframe{
+	anchored = 1;
+	desc = "It is highly unlikely that this still works.";
+	icon = 'icons/obj/computer.dmi';
+	icon_state = "datamedb";
+	name = "smashed computer"
+	},
+/obj/machinery/light_switch/directional/west,
+/turf/unsimulated/floor/blackwhite{
+	dir = 8
+	},
+/area/owlery/staffhall)
 "sLt" = (
 /obj/table/reinforced/auto,
 /obj/item/currency/spacecash/million,
@@ -73821,14 +73742,6 @@
 /obj/machinery/vending/murderbox_armory,
 /turf/unsimulated/floor/grime,
 /area/sim/gunsim/lobby)
-"tbq" = (
-/obj/machinery/light_switch/east{
-	pixel_y = -8
-	},
-/turf/unsimulated/floor/wizard/carpet/edge{
-	dir = 6
-	},
-/area/owlery/office)
 "tbw" = (
 /obj/reagent_dispensers/watertank/fountain,
 /turf/unsimulated/floor/white/checker,
@@ -74259,25 +74172,6 @@
 	},
 /turf/unsimulated/wall/auto/reinforced/supernorn,
 /area/owlery/gangzone)
-"tvA" = (
-/obj/rack,
-/obj/machinery/light_switch{
-	name = "W light switch";
-	on = 0;
-	pixel_x = -24
-	},
-/obj/item/clothing/suit/snow,
-/obj/item/clothing/suit/snow,
-/obj/item/clothing/suit/snow,
-/obj/item/tank/air,
-/obj/item/tank/air,
-/obj/item/tank/air,
-/obj/item/clothing/mask/breath,
-/obj/item/clothing/mask/breath,
-/obj/item/clothing/mask/breath,
-/obj/decal/stripe_delivery,
-/turf/unsimulated/floor/plating,
-/area/upper_arctic/pod1)
 "tvE" = (
 /obj/table/reinforced/auto,
 /turf/unsimulated/floor/shuttle{
@@ -74377,6 +74271,13 @@
 	},
 /turf/unsimulated/floor/lava,
 /area/iomoon)
+"tzS" = (
+/obj/table/reinforced/auto,
+/obj/item/pen/fancy,
+/obj/machinery/light_switch/directional/north,
+/obj/item/paper/image/businesscard,
+/turf/unsimulated/floor/white,
+/area/owlery/lab)
 "tAi" = (
 /obj/machinery/door/airlock/pyro/external,
 /turf/unsimulated/floor/shuttle{
@@ -74393,20 +74294,6 @@
 	opacity = 0
 	},
 /area/centcom/lobby)
-"tBh" = (
-/obj/decal/cleanable/dirt,
-/obj/machinery/sink{
-	desc = "A common utility sink.";
-	name = "rusty sink"
-	},
-/obj/machinery/light_switch/west,
-/obj/item/storage/wall/random,
-/turf/unsimulated/floor/specialroom/arcade,
-/area/owlery/owllock)
-"tDv" = (
-/obj/machinery/light_switch/west,
-/turf/unsimulated/floor/wood/three,
-/area/afterlife/heaven/hydroponics)
 "tDJ" = (
 /turf/unsimulated/floor/blackwhite/whitegrime/other,
 /area/observatory)
@@ -75124,6 +75011,12 @@
 	dir = 10
 	},
 /area/centcom/gallery)
+"ukG" = (
+/obj/machinery/light_switch/directional/east,
+/turf/unsimulated/floor/redblack{
+	dir = 4
+	},
+/area/owlery/Owlopen)
 "ukK" = (
 /turf/unsimulated/floor/dream/beach{
 	icon_state = "shore-10"
@@ -75233,6 +75126,12 @@
 	},
 /turf/unsimulated/wall/auto/supernorn/wood,
 /area/wizard_station)
+"upI" = (
+/obj/machinery/light_switch/directional/west,
+/turf/unsimulated/floor/stairs{
+	dir = 1
+	},
+/area/crater/biodome/north)
 "uqj" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -75363,10 +75262,6 @@
 /obj/machinery/light/small/floor,
 /turf/unsimulated/floor/circuit/white,
 /area/centcom/offices/bilo)
-"uve" = (
-/obj/machinery/light_switch/east,
-/turf/unsimulated/floor/wood/three,
-/area/afterlife/heaven/hydroponics)
 "uvs" = (
 /turf/unsimulated/floor/carpet/red/decal,
 /area/centcom/offices/grifflez)
@@ -76230,6 +76125,16 @@
 /mob/living/critter/brullbar,
 /turf/unsimulated/floor/arctic/snow/ice,
 /area/lower_arctic/lower)
+"vdj" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light_switch/directional/east,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/unsimulated/floor,
+/area/crunch)
 "vdl" = (
 /obj/storage/closet/syndicate/nuclear,
 /turf/unsimulated/floor/redblack{
@@ -76510,6 +76415,10 @@
 	},
 /turf/unsimulated/wall/auto/lead/blue,
 /area/upper_arctic/mining)
+"vmD" = (
+/obj/machinery/light_switch/directional/north,
+/turf/unsimulated/floor/yellowblack,
+/area/owlery/gangzone)
 "vmW" = (
 /obj/noticeboard/persistent/directional/north{
 	name = "aloe's personal persistent notice board";
@@ -77302,6 +77211,23 @@
 /area/sim/tdome/tdomea{
 	name = "Thunderdome Lounge"
 	})
+"vMt" = (
+/obj/rack,
+/obj/machinery/light_switch/directional/west{
+	on = 0
+	},
+/obj/item/clothing/suit/snow,
+/obj/item/clothing/suit/snow,
+/obj/item/clothing/suit/snow,
+/obj/item/tank/air,
+/obj/item/tank/air,
+/obj/item/tank/air,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/obj/decal/stripe_delivery,
+/turf/unsimulated/floor/plating,
+/area/upper_arctic/pod1)
 "vMw" = (
 /obj/rack/lunar{
 	dir = 1;
@@ -77553,6 +77479,12 @@
 	},
 /turf/space,
 /area/syndicate_station/assault_pod)
+"vUb" = (
+/obj/machinery/light_switch/directional/west,
+/obj/table/auto,
+/obj/item/cigpacket,
+/turf/unsimulated/floor/grime,
+/area/upper_arctic/mining)
 "vUg" = (
 /obj/storage/crate/bin{
 	desc = "A large bin, for trash.";
@@ -78074,15 +78006,6 @@
 	opacity = 0
 	},
 /area/titlescreen)
-"wnM" = (
-/obj/machinery/light_switch{
-	name = "W light switch";
-	on = 0;
-	pixel_x = -24
-	},
-/obj/machinery/vending/coffee,
-/turf/unsimulated/floor/specialroom/bar,
-/area/upper_arctic/pod2)
 "wnW" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -78962,12 +78885,6 @@
 /obj/mapping_helper/access/armory,
 /turf/unsimulated/floor/plating,
 /area/hospital)
-"wTT" = (
-/obj/machinery/light_switch/east,
-/turf/unsimulated/floor/redblack{
-	dir = 4
-	},
-/area/owlery/Owlopen)
 "wUb" = (
 /obj/decal/poster/wallsign/escape_sign{
 	pixel_y = 16;
@@ -79102,17 +79019,6 @@
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/unsimulated/floor/plating,
 /area/centcom/lobby)
-"xaF" = (
-/obj/decal/cleanable/dirt,
-/obj/machinery/light_switch/east,
-/obj/machinery/sink/slim{
-	desc = "A water-filled unit intended for custodial purposes.";
-	dir = 8;
-	name = "custodial sink";
-	pixel_x = 2
-	},
-/turf/unsimulated/floor/plating,
-/area/afterlife/bar)
 "xbl" = (
 /obj/item/implant/artifact/ancient/ancient_gimmick,
 /turf/unsimulated/floor/setpieces{
@@ -79706,6 +79612,17 @@
 /obj/machinery/light/small/floor/harsh/very,
 /turf/space,
 /area/watchful_eye_sensor)
+"xuO" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light_switch/directional/north{
+	on = 0
+	},
+/turf/unsimulated/floor/neutral/side{
+	dir = 1
+	},
+/area/crater/biodome/research)
 "xuS" = (
 /obj/fakeobject/pipe{
 	color = "b4b4b4";
@@ -80169,6 +80086,14 @@
 	},
 /turf/unsimulated/floor/plating,
 /area/hospital/underground)
+"xHw" = (
+/obj/machinery/light_switch/directional/east{
+	pixel_y = -8
+	},
+/turf/unsimulated/floor/wizard/carpet/edge{
+	dir = 6
+	},
+/area/owlery/office)
 "xHH" = (
 /obj/stool/chair/dining/wood{
 	dir = 4
@@ -80444,6 +80369,16 @@
 /obj/fakeobject/lightbulb_broken,
 /turf/unsimulated/floor/lightyellow,
 /area/iomoon/base)
+"xRX" = (
+/obj/decal/cleanable/dirt,
+/obj/machinery/sink{
+	desc = "A common utility sink.";
+	name = "rusty sink"
+	},
+/obj/machinery/light_switch/directional/west,
+/obj/item/storage/wall/random,
+/turf/unsimulated/floor/specialroom/arcade,
+/area/owlery/owllock)
 "xSb" = (
 /obj/lattice{
 	dir = 4;
@@ -81028,6 +80963,20 @@
 "ykL" = (
 /turf/unsimulated/floor/marble/black,
 /area/centcom/gallery)
+"ykQ" = (
+/obj/table/reinforced/bar/auto,
+/obj/item/paper_bin,
+/obj/item/device/light/flashlight/penlight,
+/obj/machinery/light_switch/directional/west{
+	on = 0
+	},
+/obj/machinery/light{
+	dir = 8;
+	layer = 9.1;
+	pixel_x = -10
+	},
+/turf/unsimulated/floor/green,
+/area/owlery/owleryhall)
 "ylC" = (
 /obj/cable{
 	icon_state = "1-4"
@@ -85086,7 +85035,7 @@ aKX
 aXn
 aLO
 mJF
-gfC
+dzP
 aND
 aOy
 aPq
@@ -85996,7 +85945,7 @@ nDP
 aNF
 aOB
 aPs
-wnM
+qZJ
 mJF
 uJX
 uJX
@@ -86006,7 +85955,7 @@ uJX
 uJX
 aWB
 faP
-mxy
+qsA
 aZb
 aZM
 bao
@@ -86304,7 +86253,7 @@ aRH
 aSK
 aSK
 aSK
-fyf
+aIf
 aVO
 aWC
 qrW
@@ -87123,7 +87072,7 @@ cJI
 cKl
 cWm
 cUg
-aqY
+ykQ
 qoX
 cUC
 cUZ
@@ -87133,7 +87082,7 @@ cDC
 jsj
 cDC
 cDC
-laC
+fzG
 cXu
 cVM
 cDC
@@ -87372,7 +87321,7 @@ bKB
 ceO
 bRF
 cte
-aZy
+vdj
 bLn
 ceO
 bIY
@@ -87412,7 +87361,7 @@ fgU
 cCo
 cCY
 cDx
-wTT
+ukG
 cEL
 cFo
 cFU
@@ -87516,7 +87465,7 @@ aKX
 aKX
 aLq
 faP
-tvA
+vMt
 aZg
 aZP
 baq
@@ -87804,7 +87753,7 @@ aKX
 aXn
 aLN
 mJF
-fAt
+iPU
 aNK
 aOH
 aPx
@@ -91365,7 +91314,7 @@ cQt
 cQX
 cVN
 cPw
-tBh
+xRX
 cSI
 cPw
 azl
@@ -92850,8 +92799,8 @@ cJh
 cYv
 cYv
 cUL
-cYJ
-cGG
+cYI
+lkn
 cGf
 cGF
 cGF
@@ -93562,7 +93511,7 @@ aLN
 aLP
 ehJ
 qLF
-emO
+vUb
 bcy
 bcy
 ehJ
@@ -93740,7 +93689,7 @@ bRq
 ctH
 cnq
 sKu
-iow
+sLn
 cxC
 aBY
 cyA
@@ -94393,7 +94342,7 @@ cNx
 cNx
 cZl
 cPw
-gKh
+dsH
 cWf
 cXr
 xyE
@@ -97674,7 +97623,7 @@ cEm
 rFt
 cAu
 aBY
-nZu
+tzS
 cBl
 cCE
 cDP
@@ -98916,7 +98865,7 @@ cSq
 cTc
 cTW
 cGK
-glS
+vmD
 cKc
 cTI
 cGK
@@ -99499,7 +99448,7 @@ cGo
 kDP
 rXE
 ffY
-tbq
+xHw
 xWw
 xWw
 cPx
@@ -100090,7 +100039,7 @@ czz
 czn
 aBY
 teq
-nyB
+akJ
 cBr
 cCc
 cCN
@@ -108202,7 +108151,7 @@ ddz
 dTJ
 ekl
 dTH
-xaF
+hLX
 dTF
 gwr
 aaa
@@ -113783,7 +113732,7 @@ aRY
 aSW
 rtc
 aUy
-ihM
+gLq
 rtc
 aWI
 aWI
@@ -114684,7 +114633,7 @@ iOn
 aOS
 aPF
 aQr
-inq
+upI
 hjS
 aSY
 aSY
@@ -114693,7 +114642,7 @@ aVp
 aSY
 aSY
 hjS
-pbd
+sEL
 aZs
 aZs
 baD
@@ -115896,7 +115845,7 @@ aRg
 aSc
 aTb
 kAx
-glH
+xuO
 aVr
 hky
 tnk
@@ -117723,7 +117672,7 @@ aZr
 aZr
 dYP
 bdu
-eri
+hBa
 bdU
 gyu
 gyu
@@ -119516,7 +119465,7 @@ aMd
 aPf
 aPS
 aPS
-gMn
+oOw
 ekh
 aTk
 aTk
@@ -119525,7 +119474,7 @@ aVw
 aTk
 aTk
 ekh
-nRb
+nMd
 aZt
 aZt
 baN
@@ -120125,7 +120074,7 @@ aSm
 aTl
 wkV
 aUM
-kDv
+aPJ
 wkV
 aWS
 aXC
@@ -120391,7 +120340,7 @@ bNK
 bOF
 bQx
 bTd
-tDv
+gzt
 bUJ
 bUn
 lmT
@@ -124015,7 +123964,7 @@ bOE
 bQg
 bSx
 bTA
-uve
+jAd
 bZT
 bUp
 lmT
@@ -146849,7 +146798,7 @@ cag
 cay
 cay
 cay
-lVY
+rcV
 cba
 cay
 dGe

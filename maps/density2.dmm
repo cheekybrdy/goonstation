@@ -1561,30 +1561,12 @@
 	},
 /turf/simulated/floor/specialroom/freezer,
 /area/station/security/main)
-"jg" = (
-/obj/machinery/computer/transit_shuttle/research{
-	dir = 4
-	},
-/turf/simulated/floor/lightyellow,
-/area/station/hallway/secondary/researchshuttle)
 "jh" = (
 /turf/simulated/floor/purple,
 /area/station/hallway/secondary/researchshuttle)
 "jn" = (
 /turf/simulated/floor/plating,
 /area/space)
-"jo" = (
-/obj/machinery/camera/directional/north{
-	pixel_x = -10
-	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1";
-	layer = 9.1;
-	pixel_y = 21
-	},
-/turf/simulated/floor/lightyellow,
-/area/station/hallway/secondary/researchshuttle)
 "jq" = (
 /obj/machinery/computer/chem_requester{
 	dir = 4
@@ -1886,6 +1868,9 @@
 	},
 /turf/space,
 /area/space)
+"lu" = (
+/turf/simulated/floor/lightyellow,
+/area/station/hallway/secondary/researchshuttle)
 "lz" = (
 /obj/item/clothing/mask/cigarette{
 	icon_state = "cigbutt";
@@ -2995,20 +2980,6 @@
 /obj/machinery/manufacturer/mining,
 /turf/simulated/floor/airless/plating/catwalk,
 /area/station/quartermaster/magnet)
-"tE" = (
-/obj/shrub/random,
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1";
-	layer = 9.1;
-	pixel_x = -10
-	},
-/obj/blind_switch{
-	id = "ranchblinds";
-	pixel_y = 24
-	},
-/turf/simulated/floor/auto/grass/leafy,
-/area/station/ranch)
 "tF" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -3659,9 +3630,6 @@
 	},
 /turf/simulated/floor/carpet/red/fancy/narrow/T_north,
 /area/station/bridge)
-"yn" = (
-/turf/simulated/floor/lightyellow,
-/area/station/hallway/secondary/researchshuttle)
 "yp" = (
 /obj/cable{
 	icon_state = "2-8"
@@ -4729,19 +4697,6 @@
 "GK" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/maintenance/northeast)
-"GN" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1";
-	layer = 9.1;
-	pixel_x = -10
-	},
-/obj/blind_switch{
-	id = "ranchblinds";
-	pixel_y = -24
-	},
-/turf/simulated/floor/carpet/red/fancy/narrow/sw,
-/area/station/bridge)
 "GO" = (
 /turf/simulated/floor/carpet/red/fancy/narrow/T_south,
 /area/station/bridge)
@@ -5027,6 +4982,12 @@
 	},
 /turf/simulated/floor/wood/two,
 /area/station/bridge)
+"IU" = (
+/obj/machinery/computer/transit_shuttle/research{
+	dir = 4
+	},
+/turf/simulated/floor/lightyellow,
+/area/station/hallway/secondary/researchshuttle)
 "IV" = (
 /obj/cable{
 	icon_state = "2-5"
@@ -6214,6 +6175,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
+"RB" = (
+/obj/machinery/camera/directional/north{
+	pixel_x = -10
+	},
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1";
+	layer = 9.1;
+	pixel_y = 21
+	},
+/turf/simulated/floor/lightyellow,
+/area/station/hallway/secondary/researchshuttle)
 "RC" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced/crystal,
 /obj/cable{
@@ -6346,6 +6319,19 @@
 	},
 /turf/simulated/floor/sanitary,
 /area/station/crew_quarters/showers)
+"ST" = (
+/obj/shrub/random,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	layer = 9.1;
+	pixel_x = -10
+	},
+/obj/blind_switch/north{
+	id = "ranchblinds"
+	},
+/turf/simulated/floor/auto/grass/leafy,
+/area/station/ranch)
 "SU" = (
 /obj/machinery/door/airlock/pyro/external,
 /obj/forcefield/energyshield/perma/doorlink{
@@ -6591,6 +6577,18 @@
 	icon_state = "12"
 	},
 /area/shuttle/arrival/station)
+"UG" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	layer = 9.1;
+	pixel_x = -10
+	},
+/obj/blind_switch/south{
+	id = "ranchblinds"
+	},
+/turf/simulated/floor/carpet/red/fancy/narrow/sw,
+/area/station/bridge)
 "UH" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -45956,9 +45954,9 @@ rD
 zY
 CE
 ES
-GN
+UG
 sJ
-tE
+ST
 Li
 UJ
 KO
@@ -51375,7 +51373,7 @@ hH
 hH
 hH
 QD
-jg
+IU
 jh
 AS
 fL
@@ -51678,7 +51676,7 @@ hH
 hH
 iC
 AE
-yn
+lu
 AS
 mL
 uq
@@ -51979,7 +51977,7 @@ hH
 hH
 hH
 QD
-jo
+RB
 Dp
 AS
 mH
