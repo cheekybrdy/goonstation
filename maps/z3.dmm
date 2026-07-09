@@ -15754,6 +15754,15 @@
 	icon_state = "floor6"
 	},
 /area/diner/jucer_trader)
+"cKy" = (
+/obj/blind_switch/directional/north{
+	pixel_x = 4
+	},
+/obj/machinery/light_switch/directional/north{
+	pixel_x = -4
+	},
+/turf/simulated/floor,
+/area/radiostation/press)
 "cLy" = (
 /obj/decal/cleanable/fungus,
 /turf/simulated/wall/auto/reinforced/old,
@@ -16932,20 +16941,6 @@
 /obj/machinery/door/airlock/pyro,
 /turf/unsimulated/floor/black,
 /area/timewarp/ship)
-"fTp" = (
-/obj/machinery/light_switch/directional/south{
-	pixel_x = -8
-	},
-/obj/blind_switch/directional/south,
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/sign_switch/south{
-	id = "tv_onair";
-	pixel_x = 8
-	},
-/turf/simulated/floor/wood/two,
-/area/radiostation/tv_set)
 "fTH" = (
 /obj/fakeobject/shuttlethruster{
 	dir = 4
@@ -18065,15 +18060,6 @@
 	},
 /turf/simulated/floor/scorched2,
 /area/diner/bathroom)
-"iAB" = (
-/obj/machinery/light_switch/directional/east{
-	pixel_y = 5
-	},
-/obj/blind_switch/directional/east{
-	pixel_y = -4
-	},
-/turf/simulated/floor/green/checker,
-/area/radiostation/green)
 "iBq" = (
 /obj/decal/poster/wallsign/stencil/left/b,
 /obj/decal/poster/wallsign/stencil/left/i{
@@ -19951,7 +19937,24 @@
 	icon_state = "wall_3_trans"
 	},
 /area/diner/tug)
-"mMf" = (
+"mMr" = (
+/obj/storage/secure/filing_cabinet,
+/obj/machinery/light/incandescent/netural{
+	dir = 8
+	},
+/turf/simulated/floor/green/checker,
+/area/diner/arcade)
+"mMS" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/fakeobject/lightbulb_broken{
+	dir = 4
+	},
+/obj/landmark/spawner/loot,
+/turf/simulated/floor/industrial,
+/area/space)
+"mOC" = (
 /obj/machinery/light_switch/directional/west{
 	pixel_y = -4
 	},
@@ -19970,23 +19973,6 @@
 	},
 /turf/simulated/floor/caution,
 /area/radiostation/teleporter)
-"mMr" = (
-/obj/storage/secure/filing_cabinet,
-/obj/machinery/light/incandescent/netural{
-	dir = 8
-	},
-/turf/simulated/floor/green/checker,
-/area/diner/arcade)
-"mMS" = (
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/fakeobject/lightbulb_broken{
-	dir = 4
-	},
-/obj/landmark/spawner/loot,
-/turf/simulated/floor/industrial,
-/area/space)
 "mOG" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
@@ -20546,21 +20532,6 @@
 /obj/landmark/spawner/loot,
 /turf/simulated/floor/damaged2,
 /area/skeleton_trader)
-"ois" = (
-/obj/stool/chair/office/red{
-	dir = 1
-	},
-/obj/blind_switch/directional/south,
-/obj/machinery/light_switch/directional/south{
-	pixel_x = 8
-	},
-/obj/landmark/latejoin_job/radio_show_host,
-/obj/sign_switch/south{
-	id = "radio_onair";
-	pixel_x = -8
-	},
-/turf/simulated/floor/carpet/grime,
-/area/radiostation/studio)
 "ojY" = (
 /obj/decal/cleanable/machine_debris{
 	icon_state = "gib7"
@@ -21289,6 +21260,21 @@
 	dir = 4
 	},
 /area/space)
+"pQn" = (
+/obj/stool/chair/office/red{
+	dir = 1
+	},
+/obj/blind_switch/directional/south,
+/obj/machinery/light_switch/directional/south{
+	pixel_x = 8
+	},
+/obj/landmark/latejoin_job/radio_show_host,
+/obj/sign_switch/directional/south{
+	id = "radio_onair";
+	pixel_x = -8
+	},
+/turf/simulated/floor/carpet/grime,
+/area/radiostation/studio)
 "pQo" = (
 /obj/machinery/door/poddoor/blast{
 	autoclose = 1;
@@ -21657,6 +21643,15 @@
 	dir = 1
 	},
 /area/space_hive)
+"qNz" = (
+/obj/machinery/light_switch/directional/east{
+	pixel_y = 5
+	},
+/obj/blind_switch/directional/east{
+	pixel_y = -4
+	},
+/turf/simulated/floor/green/checker,
+/area/radiostation/green)
 "qNR" = (
 /obj/fakeobject/pipe{
 	dir = 4;
@@ -21848,15 +21843,6 @@
 /obj/item/device/audio_log/timewarp_00,
 /turf/unsimulated/floor/black,
 /area/timewarp/ship)
-"riA" = (
-/obj/blind_switch/directional/north{
-	pixel_x = 4
-	},
-/obj/machinery/light_switch/directional/north{
-	pixel_x = -4
-	},
-/turf/simulated/floor,
-/area/radiostation/press)
 "rjD" = (
 /obj/item/clothing/mask/breath,
 /turf/simulated/floor/airless/damaged5,
@@ -23627,6 +23613,20 @@
 "vnG" = (
 /turf/unsimulated/floor/black,
 /area/timewarp/ship)
+"vnI" = (
+/obj/machinery/light_switch/directional/south{
+	pixel_x = -8
+	},
+/obj/blind_switch/directional/south,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/sign_switch/directional/south{
+	id = "tv_onair";
+	pixel_x = 8
+	},
+/turf/simulated/floor/wood/two,
+/area/radiostation/tv_set)
 "vpl" = (
 /obj/machinery/chem_dispenser/alcohol,
 /obj/decal/cleanable/dirt,
@@ -106661,7 +106661,7 @@ eLA
 sIA
 oGD
 cug
-iAB
+qNz
 ffC
 kKQ
 nar
@@ -108178,7 +108178,7 @@ adx
 adK
 adW
 aen
-ois
+pQn
 adg
 agb
 aon
@@ -108771,7 +108771,7 @@ xcG
 abB
 xcG
 lCC
-fTp
+vnI
 xlo
 cDc
 kWr
@@ -110283,7 +110283,7 @@ ack
 ack
 hYk
 lYq
-mMf
+mOC
 gAl
 pNC
 yeD
@@ -110890,7 +110890,7 @@ iQm
 cLQ
 xpM
 pNC
-riA
+cKy
 hIc
 sXM
 adO
