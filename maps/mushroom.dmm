@@ -10851,12 +10851,6 @@
 /area/station/medical/robotics)
 "eAY" = (
 /obj/storage/secure/crate/weapon/confiscated_items,
-/obj/blind_switch/area/north{
-	pixel_x = 5
-	},
-/obj/machinery/light_switch/north{
-	pixel_x = -5
-	},
 /turf/simulated/floor/red/redblackchecker,
 /area/station/security/evidence)
 "eBf" = (
@@ -18573,16 +18567,6 @@
 	},
 /turf/simulated/floor/black,
 /area/station/science/lab)
-"kig" = (
-/obj/rack,
-/obj/item/storage/box/evidence{
-	pixel_x = -6
-	},
-/obj/item/storage/box/evidence{
-	pixel_x = 6
-	},
-/turf/simulated/floor/red/redblackchecker,
-/area/space)
 "kir" = (
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/baroffice)
@@ -91881,7 +91865,7 @@ aaa
 aaa
 aaa
 aaa
-kig
+aaa
 aaa
 aaa
 spy
