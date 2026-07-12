@@ -1323,7 +1323,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 	name = "Chemical Request"
 	size = 2
 	var/tmp/temp = null
-	var/tmp/antispam = 0
+	var/tmp/antispam = 0 /// Cooldown for PDA alert generation
 	var/tmp/note = null
 	var/tmp/quantity = 5
 	var/tmp/reagent_color = null
@@ -1392,29 +1392,28 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			return
 
 		if (href_list["doorder"])
-			var/datum/chem_request/O = new/datum/chem_request ()
+			var/datum/chem_request/new_req = new/datum/chem_request ()
 			var/chemreg = href_list["doorder"]
-			var/datum/reagent/P = new chemreg ()
+			var/datum/reagent/req_reagent = new chemreg ()
 
 			if (!dd_hasprefix(chemreg, "/datum/reagent"))
-				qdel(O)
+				qdel(new_req)
 				return
 
 			note = input("Add a Note (Optional)", "Enter Message Text", note) as text|null
 			quantity = input("Enter request amount", "Enter Amount", quantity) as num|null
 			if(!quantity) return
 			if(!isnum_safe(quantity)) return
-			quantity = min(quantity,10000)
-			quantity = max(quantity,1)
+			quantity = clamp(quantity,1,10000)
 
-			O.reagent_name = P.name
-			O.reagent_color = list(P.fluid_r, P.fluid_g, P.fluid_b)
-			O.requester_name = src.master.owner
-			O.volume = quantity
-			O.note = src.note
-			O.address = src.master.net_id
-			O.area_name = get_area(src.master)
-			chem_requests["[O.id]"] = O
+			new_req.reagent_name = req_reagent.name
+			new_req.reagent_color = list(req_reagent.fluid_r, req_reagent.fluid_g, req_reagent.fluid_b)
+			new_req.requester_name = src.master.owner
+			new_req.volume = quantity
+			new_req.note = src.note
+			new_req.address = src.master.net_id
+			new_req.area_name = get_area(src.master)
+			chem_requests["[new_req.id]"] = new_req
 			src.temp = {"Request sent to Chemical Request Console. The Chemists/Pharmacists will process your request as soon as possible.<BR>
 			<A href='byond://?src=\ref[src];reset=1'>New Order</A>"}
 
@@ -1422,7 +1421,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			if (!antispam || (antispam < (ticker.round_elapsed_ticks)) )
 				antispam = ticker.round_elapsed_ticks + SPAM_DELAY
 				var/datum/signal/pdaSignal = get_free_signal()
-				pdaSignal.data = list("address_1"="00000000", "command"="text_message", "sender_name"="RESEARCH-MAILBOT",  "group"=list(MGD_RESEARCH, MGD_MEDICAL, MGA_CHEMREQUEST), "sender"="00000000", "message"="Notification: [O.reagent_name] requested by [O.requester_name] at [O.area_name].")
+				pdaSignal.data = list("address_1"=src.master.net_id, "command"="text_message", "sender_name"="RESEARCH-MAILBOT",  "group"=list(MGD_RESEARCH, MGD_MEDICAL, MGA_CHEMREQUEST), "sender"="00000000", "message"="Notification: [new_req.reagent_name] requested by [new_req.requester_name] at [new_req.area_name].")
 				SEND_SIGNAL(src.master, COMSIG_MOVABLE_POST_RADIO_PACKET, pdaSignal, null, "pda")
 
 		else if (href_list["reset"])
@@ -1476,7 +1475,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 				request.state = "denied"
 				if(request.address)
 					var/datum/signal/pdaSignal = get_free_signal()
-					pdaSignal.data = list("address_1"=request.address, "command"="text_message", "sender_name"="RESEARCH-MAILBOT", "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was FULFILLED.")
+					pdaSignal.data = list("address_1"=request.address, "command"="text_message", "sender_name"="RESEARCH-MAILBOT", "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was DENIED.")
 					radio_controller.get_frequency(FREQ_PDA).post_packet_without_source(pdaSignal)
 				refresh()
 

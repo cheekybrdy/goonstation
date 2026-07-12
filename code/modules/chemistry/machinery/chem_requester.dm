@@ -9,7 +9,7 @@ var/list/datum/chem_request/chem_requests = list()
 	var/volume = 5
 	var/area_name = "Somewhere"
 	var/state = "pending"
-	var/address = null
+	var/address = null /// Lets a PDA message be sent to the requester if provided with one
 	var/id
 	var/static/last_id = 0
 	// the tick count this request was placed on
