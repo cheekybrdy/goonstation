@@ -5,6 +5,8 @@
 //Status display controller
 //Remote signaling program
 //Cargo orders monitor
+//Chemicals order requester
+//Chemicals order manager
 //Bicycle Horn Synth
 //Janitor mop-locating program
 //Remote door control program
@@ -1394,7 +1396,8 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 		if (href_list["doorder"])
 			var/datum/chem_request/new_req = new/datum/chem_request ()
 			var/chemreg = href_list["doorder"]
-			var/datum/reagent/req_reagent = new chemreg ()
+			var/datum/reagent/req_reagent_pre = new chemreg ()
+			var/datum/reagent/req_reagent = reagents_cache[req_reagent_pre.id]
 
 			if (!dd_hasprefix(chemreg, "/datum/reagent"))
 				qdel(new_req)
