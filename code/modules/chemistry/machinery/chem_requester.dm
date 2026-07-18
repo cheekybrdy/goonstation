@@ -46,23 +46,7 @@ var/list/datum/chem_request/chem_requests = list()
 	ui_static_data(mob/user)
 		. = list()
 		var/list/chems = list()
-		for (var/id in chem_reactions_by_id)
-			var/datum/chemical_reaction/reaction = chem_reactions_by_id[id]
-			if (reaction.hidden)
-				continue
-			//eventual_result overrides the actual result
-			var/result = reaction.eventual_result || reaction.result
-			if (!result)
-				continue
-			if (!islist(result))
-				result = list(result)
-			for (var/result_id in result)
-				var/datum/reagent/reagent = reagents_cache[result_id]
-				if (reagent && !istype(reagent, /datum/reagent/fooddrink)) //all the cocktails clog the UI
-					chems[lowertext(reagent.name)] = reagent.id
-		for (var/id in basic_elements)
-			var/datum/reagent/reagent = reagents_cache[id]
-			chems[lowertext(reagent.name)] = id
+		generate_reqchem_list(chems)
 		.["chemicals"] = chems
 		.["max_volume"] = src.max_volume
 
