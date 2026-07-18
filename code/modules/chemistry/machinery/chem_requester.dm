@@ -8,7 +8,7 @@ var/list/datum/chem_request/chem_requests = list()
 	var/note = ""
 	var/volume = 5
 	var/area_name = "Somewhere"
-	var/state = "pending"
+	var/state = CHEM::REQUSITION::STATE::PENDING
 	var/address = null /// Lets a PDA message be sent to the requester if provided with one
 	var/id
 	var/static/last_id = 0
