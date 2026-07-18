@@ -184,20 +184,20 @@ var/list/datum/chem_request/chem_requests = list()
 			if ("deny")
 				var/datum/chem_request/request = chem_requests["[params["id"]]"]
 				if (request)
-					request.state = "denied"
+					request.state = CHEM::REQUSITION::STATE::DENIED
 					logTheThing(LOG_STATION, src, "[constructTarget(ui.user)] denied [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
 					if(request.address)
 						var/datum/signal/pdaSignal = get_free_signal()
-						pdaSignal.data = list("address_1"=request.address, "command"="text_message", "sender_name"="RESEARCH-MAILBOT",  "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was DENIED.")
+						pdaSignal.data = list("address_1"=request.address, "command"="text_message", "sender_name"="RESEARCH-MAILBOT",  "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was [request.state].")
 						radio_controller.get_frequency(FREQ_PDA).post_packet_without_source(pdaSignal)
 				. = TRUE
 			if ("fulfil")
 				var/datum/chem_request/request = chem_requests["[params["id"]]"]
 				if (request)
-					request.state = "fulfilled"
+					request.state = CHEM::REQUSITION::STATE::FULFILLED
 					logTheThing(LOG_STATION, src, "[constructTarget(ui.user)] fulfilled [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
 					if(request.address)
 						var/datum/signal/pdaSignal = get_free_signal()
-						pdaSignal.data = list("address_1"=request.address, "command"="text_message", "sender_name"="RESEARCH-MAILBOT", "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was FULFILLED.")
+						pdaSignal.data = list("address_1"=request.address, "command"="text_message", "sender_name"="RESEARCH-MAILBOT", "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was [request.state].")
 						radio_controller.get_frequency(FREQ_PDA).post_packet_without_source(pdaSignal)
 				. = TRUE

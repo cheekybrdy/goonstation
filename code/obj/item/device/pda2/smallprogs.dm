@@ -1329,6 +1329,45 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 	var/tmp/note = null
 	var/tmp/quantity = 5
 	var/tmp/reagent_color = null
+	var/list/datum/reagent/chems = list()
+
+	proc/generate_list()
+		for (var/id in chem_reactions_by_id)
+			var/datum/chemical_reaction/reaction = chem_reactions_by_id[id]
+			if (reaction.hidden)
+				continue
+			//eventual_result overrides the actual result
+			var/result = reaction.eventual_result || reaction.result
+			if (!result)
+				continue
+			if (!islist(result))
+				result = list(result)
+			for (var/result_id in result)
+				var/datum/reagent/reagent = reagents_cache[result_id]
+				if (reagent && !istype(reagent, /datum/reagent/fooddrink) && !(reagent in chems)) //all the cocktails clog the UI
+					chems += reagent
+		for (var/id in basic_elements)
+			var/datum/reagent/reagent = reagents_cache[id]
+			if (!(reagent in chems))
+				chems += reagent
+		// Sort alphabetically by item name.
+		var/list/names = list()
+		var/list/namecounts = list()
+
+		if (length(chems))
+			var/list/sort = list()
+
+			for (var/datum/reagent/R in chems)
+				var/name = R.name
+				if (name in names) // Should never, ever happen, but better safe than sorry.
+					namecounts[name]++
+					name = text("[] ([])", name, namecounts[name])
+				else
+					names.Add(name)
+					namecounts[name] = 1
+
+				sort[name] = R
+			chems = sortList(sort, /proc/cmp_text_asc)
 
 	return_text()
 		if(..())
@@ -1339,47 +1378,11 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			dat += "<br>[src.temp]"
 			src.temp = null
 		else
+			if(!length(chems)) // checking if its still base value
+				src.generate_list()
 			dat += {"<BR><B>Please select the Chemical you would like to request:</B><BR><BR>"}
 			dat += search_snippet("background-color: #6F7961; color: #000;")
 			dat += "<BR><BR>"
-
-			var/list/datum/reagent/chems = list()
-			for (var/id in chem_reactions_by_id)
-				var/datum/chemical_reaction/reaction = chem_reactions_by_id[id]
-				if (reaction.hidden)
-					continue
-				//eventual_result overrides the actual result
-				var/result = reaction.eventual_result || reaction.result
-				if (!result)
-					continue
-				if (!islist(result))
-					result = list(result)
-				for (var/result_id in result)
-					var/datum/reagent/reagent = reagents_cache[result_id]
-					if (reagent && !istype(reagent, /datum/reagent/fooddrink) && !(reagent in chems)) //all the cocktails clog the UI
-						chems += reagent
-			for (var/id in basic_elements)
-				var/datum/reagent/reagent = reagents_cache[id]
-				if (!(reagent in chems))
-					chems += reagent
-	// Sort alphabetically by item name.
-			var/list/names = list()
-			var/list/namecounts = list()
-
-			if (length(chems))
-				var/list/sort = list()
-
-				for (var/datum/reagent/R in chems)
-					var/name = R.name
-					if (name in names) // Should never, ever happen, but better safe than sorry.
-						namecounts[name]++
-						name = text("[] ([])", name, namecounts[name])
-					else
-						names.Add(name)
-						namecounts[name] = 1
-
-					sort[name] = R
-				chems = sortList(sort, /proc/cmp_text_asc)
 
 			for(var/C in chems)
 				var/datum/reagent/chem = chems[C]

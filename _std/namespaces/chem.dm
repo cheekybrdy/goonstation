@@ -1,0 +1,12 @@
+
+CREATE_NAMESPACE(CHEM)
+
+/// REQUSITIONS
+CREATE_NAMESPACE(CHEM, REQUSITION)
+
+/// Ticketing levels used in ticket master app and for approving tickets
+CREATE_NAMESPACE(CHEM, REQUSITION, STATE)
+ADD_TO_NAMESPACE(CHEM, REQUSITION, STATE)(var/const/PENDING = "pending")
+ADD_TO_NAMESPACE(CHEM, REQUSITION, STATE)(var/const/DENIED = "denied")
+ADD_TO_NAMESPACE(CHEM, REQUSITION, STATE)(var/const/FULFILLED = "fulfilled")
+
