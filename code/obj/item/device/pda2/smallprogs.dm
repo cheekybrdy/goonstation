@@ -1478,7 +1478,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			var/datum/chem_request/request = chem_requests[req_id]
 			if (request)
 				logTheThing(LOG_STATION, src, "[src.master.owner] denied [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
-				request.state = "denied"
+				request.state = CHEM::REQUSITION::STATE::DENIED
 				if(request.address)
 					var/datum/signal/pdaSignal = get_free_signal()
 					pdaSignal.data = list("address_1"=request.address, "command"="text_message", "sender_name"="RESEARCH-MAILBOT", "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was DENIED.")
@@ -1490,7 +1490,7 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 			var/datum/chem_request/request = chem_requests[req_id]
 			if (request)
 				logTheThing(LOG_STATION, src, "[src.master.owner] fulfilled [request.requester_name]'s chemical request for [request.volume] units of [request.reagent_id] at [log_loc(src)]")
-				request.state = "fulfilled"
+				request.state = CHEM::REQUSITION::STATE::FULFILLED
 				if(request.address)
 					var/datum/signal/pdaSignal = get_free_signal()
 					pdaSignal.data = list("address_1"=request.address, "command"="text_message", "sender_name"="RESEARCH-MAILBOT",  "sender"="00000000", "message"="Notification: request for [request.volume]u of [request.reagent_name] was FULFILLED.")
