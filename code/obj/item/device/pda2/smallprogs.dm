@@ -1407,10 +1407,10 @@ Using electronic "Detomatix" SELF-DESTRUCT program is perhaps less simple!<br>
 				return
 
 			note = input("Add a Note (Optional)", "Enter Message Text", note) as text|null
-			quantity = input("Enter request amount (Max 400)", "Enter Amount", quantity) as num|null
+			quantity = input("Enter request amount (Max [CHEM::REQUSITION::AMOUNT::MAX])", "Enter Amount", quantity) as num|null
 			if(!quantity) return
 			if(!isnum_safe(quantity)) return
-			quantity = clamp(quantity,1,400)
+			quantity = clamp(quantity,1,CHEM::REQUSITION::AMOUNT::MAX)
 
 			new_req.reagent_name = req_reagent.name
 			new_req.reagent_color = list(req_reagent.fluid_r, req_reagent.fluid_g, req_reagent.fluid_b)

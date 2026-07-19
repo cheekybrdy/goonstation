@@ -26,7 +26,6 @@ var/list/datum/chem_request/chem_requests = list()
 	circuit_type = /obj/item/circuitboard/chem_request
 	var/datum/chem_request/request = new
 	var/obj/item/card/id/card = null
-	var/max_volume = 400
 	var/area_name = null
 
 	get_help_message(dist, mob/user)
@@ -64,7 +63,7 @@ var/list/datum/chem_request/chem_requests = list()
 			var/datum/reagent/reagent = reagents_cache[id]
 			chems[lowertext(reagent.name)] = id
 		.["chemicals"] = chems
-		.["max_volume"] = src.max_volume
+		.["max_volume"] = CHEM::REQUSITION::AMOUNT::MAX
 
 	ui_interact(mob/user, datum/tgui/ui)
 		ui = tgui_process.try_update_ui(user, src, ui)
@@ -102,7 +101,7 @@ var/list/datum/chem_request/chem_requests = list()
 			if ("set_notes")
 				src.request.note = strip_html(copytext(params["notes"], 1, 66))
 			if ("set_volume")
-				src.request.volume = clamp(params["volume"], 1, src.max_volume)
+				src.request.volume = clamp(params["volume"], 1, CHEM::REQUSITION::AMOUNT::MAX)
 				. = TRUE
 			if ("submit")
 				src.request.area_name = src.area_name || (get_area(src))?.name || src.request.area_name
