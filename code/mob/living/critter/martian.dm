@@ -139,6 +139,7 @@ TYPEINFO(/mob/living/critter/martian)
 	icon_state_dead = "martianW-dead"
 	health_brute = 100
 	health_burn = 100
+	has_genes = TRUE
 
 	New()
 		..()
@@ -199,6 +200,7 @@ TYPEINFO(/mob/living/critter/martian)
 	health_brute = 33
 	health_burn = 33
 	ai_type = /datum/aiHolder/ranged
+	has_genes = TRUE
 
 	New()
 		..()
