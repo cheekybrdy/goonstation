@@ -1029,6 +1029,10 @@
 			overlay_image = image("icon" = 'icons/effects/genetics.dmi', "icon_state" = "telekinesishead", layer = MOB_LAYER)
 		..()
 
+	martian
+		id = "telekinesisM"
+		scanner_visibility = 1
+
 /datum/bioEffect/uncontrollable_cloak
 	name = "Unstable Refraction"
 	desc = "The subject will occasionally become invisible. The subject has no control or awareness of this occurring."
