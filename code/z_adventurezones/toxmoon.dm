@@ -524,7 +524,6 @@
 
 		if (!spit.disabled && spit.cooldowncheck() && prob(10))
 			spit.handleCast(target)
-			src.ai.move_away(target,1)
 			return TRUE
 
 	setup_hands()
@@ -534,29 +533,27 @@
 		HH.icon_state = "gun"
 		HH.limb_name = "spitter arm"
 
-	area_attack(var/obj/summoned_thing, var/drop_prob)
-		for(var/turf/T in range(14))
+
+/datum/targetable/critter/aoe
+	area_attack(var/mob/summoned_thing, var/drop_prob, var/range_num=14)
+		for(var/turf/T in range(range_num))
 			if(!src.loc && !rand(0,drop_prob))
 				new summoned_thing(src.loc)
 
-	// 	src.set_dir(get_dir(src, target))
-	// 	var/obj/projectile/P1 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
-	// 	var/obj/projectile/P2 = initialize_projectile(src.loc, current_projectile, 0, 0, src)
+/datum/targetable/critter/aoe/backup_call
+	var/backup_type = null
+	if(src.area_attack)
+		var/type_modifier = rand(1,10)
+		if (type_modifier == 7 || 8)
+			backup_type = /mob/living/critter/radthing
+		else if (type_modifier == 9)
+			backup_type = /mob/living/critter/radthing/spitter
+		else if (type_modifier == 10)
+			backup_type = /mob/living/critter/radthing/neutron
+		else
+			backup_type = /mob/living/critter/zombie/radiation
+		area_attack(backup_type, 98)
 
-	// 		P1.yo = 96
-	// 		P1.xo = 0
-	// 		P2.yo = 96
-	// 		`P2.xo = 0
-	// 		P1.set_loc(locate(src.x, src.y+2, src.z))
-	// 		P2.set_loc(locate(src.x+2,src.y+2, src.z))
-	// 		P1.orig_turf = P1.loc //our orig_turf was set in initialize_projectile() but that was before we moved it to the side of the ship
-	// 		P2.orig_turf = P2.loc
-	// 	else
-	// 		P1.die()
-	// 		P2.die()
-	// 		return
-
-	// SPAWN(0)
-	// 	P1.launch()
-	// SPAWN(0)
-	// 	P2.launch()
+/datum/targetable/critter/aoe/acid
+	if(src.area_attack)
+		area_attack(/obj/decal/acid_splash)
