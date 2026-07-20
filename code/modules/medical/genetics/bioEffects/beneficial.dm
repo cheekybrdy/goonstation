@@ -1032,6 +1032,9 @@
 	martian
 		id = "telekinesisM"
 		scanner_visibility = 1
+		can_research = 1
+		can_make_injector = 1
+		can_copy = 1
 
 /datum/bioEffect/uncontrollable_cloak
 	name = "Unstable Refraction"
