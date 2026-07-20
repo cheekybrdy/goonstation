@@ -144,6 +144,7 @@ TYPEINFO(/mob/living/critter/martian)
 		..()
 		abilityHolder.addAbility(/datum/targetable/critter/slam)
 		abilityHolder.addAbility(/datum/targetable/critter/tackle)
+		src.bioHolder.AddNewPoolEffect("fitness_buff", scramble=FALSE)
 
 
 	critter_attack(var/mob/target)
@@ -204,6 +205,7 @@ TYPEINFO(/mob/living/critter/martian)
 		abilityHolder.addAbility(/datum/targetable/critter/gibstare)
 		abilityHolder.addAbility(/datum/targetable/critter/telepathy)
 		abilityHolder.addAbility(/datum/targetable/critter/scarylook)
+		src.bioHolder.AddNewPoolEffect("telekinesis", scramble=FALSE)
 
 	critter_attack(var/mob/target)
 		var/datum/targetable/critter/gibstare/gib = src.abilityHolder.getAbility(/datum/targetable/critter/gibstare)
