@@ -210,6 +210,7 @@ TYPEINFO(/mob/living/critter/martian)
 		abilityHolder.addAbility(/datum/targetable/critter/scarylook)
 		src.bioHolder.AddNewPoolEffect("telekinesisM", scramble=FALSE)
 		src.bioHolder.AddNewPoolEffect("telepathy", scramble=FALSE)
+		src.bioHolder.AddNewPoolEffect("psy_resist", scramble=FALSE)
 
 	critter_attack(var/mob/target)
 		var/datum/targetable/critter/gibstare/gib = src.abilityHolder.getAbility(/datum/targetable/critter/gibstare)
