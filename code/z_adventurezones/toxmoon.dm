@@ -556,4 +556,10 @@
 
 /datum/targetable/critter/aoe/acid
 	if(src.area_attack)
-		area_attack(/obj/decal/acid_splash)
+		area_attack(/obj/decal/acid_splash, 19) //1/10
+
+/datum/targetable/critter/aoe/radiation
+
+/obj/lead_rubble
+	name = "batiline debris"
+	desc = "Some radiation shielding that fell from a upper level. Might be useful if it doesn't fall apart first."
