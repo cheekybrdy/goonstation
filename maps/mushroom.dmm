@@ -36393,7 +36393,6 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/kitchen)
 "vZE" = (
-/obj/machinery/vending/port_a_nanomed,
 /obj/cable{
 	icon_state = "0-8"
 	},
@@ -37971,9 +37970,6 @@
 "xkP" = (
 /obj/item/remote/porter/port_a_medbay{
 	pixel_x = 5
-	},
-/obj/item/remote/porter/port_a_nanomed{
-	pixel_x = 10
 	},
 /obj/item/stamp/md{
 	rand_pos = 0;

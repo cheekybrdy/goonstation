@@ -3870,7 +3870,6 @@
 /turf/simulated/floor,
 /area/research_outpost/toxins)
 "aso" = (
-/obj/machinery/vending/port_a_nanomed,
 /obj/disposalpipe/segment/morgue,
 /turf/simulated/floor/blue/checker,
 /area/station/medical/medbay)
@@ -38162,7 +38161,6 @@
 /obj/table/reinforced/auto,
 /obj/item/device/analyzer/healthanalyzer,
 /obj/item/device/analyzer/healthanalyzer,
-/obj/item/remote/porter/port_a_nanomed,
 /obj/item/gun/implanter,
 /obj/disposalpipe/segment/mail,
 /turf/simulated/floor/white,
