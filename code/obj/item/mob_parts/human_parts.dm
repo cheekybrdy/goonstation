@@ -826,7 +826,7 @@
 
 /obj/item/parts/human_parts/arm/left/hot
 	name = "left hot arm"
-	icon_state = "arm_left"
+	icon_state = "arm_left_hot"
 	slot = "l_arm"
 	side = "left"
 	decomp_affected = FALSE
@@ -845,7 +845,7 @@
 
 /obj/item/parts/human_parts/arm/right/hot
 	name = "right hot arm"
-	icon_state = "arm_right"
+	icon_state = "arm_right_hot"
 	slot = "r_arm"
 	side = "right"
 	decomp_affected = FALSE
