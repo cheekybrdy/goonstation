@@ -1150,8 +1150,8 @@
 			return
 
 		if (isitem(target))
-			if(prob(15) && user.bodytemperature >= 237.15)
-				user.changeBodyTemp(-15 KELVIN)
+			if(prob(15) && user.bodytemperature >= T0C + 37)
+				user.changeBodyTemp(-15 KELVIN, T0C + 30)
 				var/obj/item/I = target
 				if(I.anchored)
 					return 0
