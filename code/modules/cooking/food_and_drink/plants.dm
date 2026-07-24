@@ -885,7 +885,7 @@ ABSTRACT_TYPE(/obj/item/reagent_containers/food/snacks/plant)
 	name = "sickly pear"
 	desc = "You'd definitely become terribly ill if you ate this."
 	icon_state = "pear"
-	planttype = /datum/plant/pear
+	planttype = /datum/plant/fruit/pear
 	bites_left = 1
 	heal_amt = 2
 	brew_result = list("cider"=20,"e.coli"=20) //bad
