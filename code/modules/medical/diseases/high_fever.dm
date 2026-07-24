@@ -32,6 +32,8 @@
 			boutput(affected_mob, SPAN_ALERT("You're a hundred and one!"))
 			affected_mob.changeBodyTemp(45 KELVIN)
 			var/mob/living/carbon/human/H = affected_mob
+			if(transformed)
+				H.update_burning(5)
 			if(H.limbs != null && !transformed)
 				H.limbs.replace_with("l_arm", /obj/item/parts/human_parts/arm/left/hot, null , 0)
 				H.limbs.replace_with("r_arm", /obj/item/parts/human_parts/arm/right/hot, null , 0)
