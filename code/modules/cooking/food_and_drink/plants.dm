@@ -893,7 +893,7 @@ ABSTRACT_TYPE(/obj/item/reagent_containers/food/snacks/plant)
 	planttype = /datum/plant/fruit/pear
 	bites_left = 1
 	heal_amt = 2
-	brew_result = list("cider"=20,"e.coli"=20) //bad
+	brew_result = list("cider"=20,"e.coli"=20,"too much"=10) //bad
 	food_color = "#BF7029"
 	initial_volume = 30
 
