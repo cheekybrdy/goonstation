@@ -833,7 +833,7 @@
 	skintoned = FALSE
 	streak_descriptor = "bloody"
 	limb_type = /datum/limb/hot
-	handlistPart = "hand_left"
+	handlistPart = "l_arm_hot"
 	show_on_examine = TRUE
 	limb_is_unnatural = TRUE
 	kind_of_limb = (LIMB_HOT)
@@ -852,7 +852,7 @@
 	skintoned = FALSE
 	streak_descriptor = "bloody"
 	limb_type = /datum/limb/hot
-	handlistPart = "hand_right"
+	handlistPart = "r_arm_hot"
 	show_on_examine = TRUE
 	limb_is_unnatural = TRUE
 	kind_of_limb = (LIMB_HOT)
