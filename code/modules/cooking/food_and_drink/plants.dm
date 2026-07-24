@@ -884,7 +884,8 @@ ABSTRACT_TYPE(/obj/item/reagent_containers/food/snacks/plant)
 /obj/item/reagent_containers/food/snacks/plant/pear/sickly
 	name = "sickly pear"
 	desc = "You'd definitely become terribly ill if you ate this."
-	icon_state = "pear"
+	crop_prefix = "sickly "
+	icon_state = "pear-sickly"
 	planttype = /datum/plant/fruit/pear
 	bites_left = 1
 	heal_amt = 2
