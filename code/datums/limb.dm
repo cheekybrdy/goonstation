@@ -1136,7 +1136,7 @@
 	log_name = "severed werewolf limb"
 	quality = 1
 
-/// Currently used by the High Fever disease which is obtainable from the "Too Much" chem which only shows up in sickly pears, which are currently commented out. Go there to make use of this.
+/// Currently used by the High Fever disease which is obtainable from the "Too Much" chem which only shows up in sickly pears. Go there to make use of this.
 /datum/limb/hot //because
 	attack_hand(atom/target, var/mob/living/user, var/reach, params, location, control)
 		if (!holder)
@@ -1150,17 +1150,18 @@
 			return
 
 		if (isitem(target))
-			var/obj/item/I = target
-			if(I.anchored)
-				return 0
-			var/obj/decal/cleanable/molten_item/I2 = make_cleanable(/obj/decal/cleanable/molten_item,I.loc)
-			user.visible_message(SPAN_ALERT("The [I] melts in [user]'s clutch"), SPAN_ALERT("The [I] melts in your clutch!"))
-			qdel(target)
-			I2.desc = "Looks like this was \an [I], melted by someone who was too much."
-			for(var/mob/M in AIviewers(5, target))
-				boutput(M, SPAN_ALERT("\The [I] melts."))
-			qdel(I)
-			return
+			if(prob(15) && user.bodytemperature >= 237.15)
+				var/obj/item/I = target
+				if(I.anchored)
+					return 0
+				var/obj/decal/cleanable/molten_item/I2 = make_cleanable(/obj/decal/cleanable/molten_item,I.loc)
+				user.visible_message(SPAN_ALERT("The [I] melts in [user]'s clutch"), SPAN_ALERT("The [I] melts in your clutch!"))
+				qdel(target)
+				I2.desc = "Looks like this was \an [I], melted by someone who was too much."
+				for(var/mob/M in AIviewers(5, target))
+					boutput(M, SPAN_ALERT("\The [I] melts."))
+				qdel(I)
+				return
 
 		..()
 		return
@@ -1169,6 +1170,7 @@
 		if(check_target_immunity( target ))
 			return 0
 		if (prob(15))
+			user.bodytemperature += 15
 			logTheThing(LOG_COMBAT, user, "accidentally harms [constructTarget(target,"combat")] with hot hands at [log_loc(user)].")
 			user.visible_message(SPAN_COMBAT("<b>[user] accidentally melts [target] while trying to [user.a_intent] them!</b>"), SPAN_COMBAT("<b>You accidentally melt [target] while trying to [user.a_intent] them!</b>"))
 			harm(target, user, 1)
@@ -1196,7 +1198,7 @@
 	harm(mob/target, var/mob/living/user, var/no_logs = 0)
 		if(check_target_immunity( target ))
 			return 0
-		if (no_logs != 1)
+		if (!no_logs)
 			logTheThing(LOG_COMBAT, user, "melts [constructTarget(target,"combat")] with hot hands at [log_loc(user)].")
 
 		var/datum/attackResults/msgs = user.calculate_melee_attack(target, 1, 3, 1, 0, 0, can_punch = 0, can_kick = 0)
