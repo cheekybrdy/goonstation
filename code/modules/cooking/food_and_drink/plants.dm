@@ -890,7 +890,7 @@ ABSTRACT_TYPE(/obj/item/reagent_containers/food/snacks/plant)
 	bites_left = 1
 	heal_amt = 2
 	brew_result = list("cider"=20,"e.coli"=20) //bad
-	food_color = "#3FB929"
+	food_color = "#BF7029"
 	initial_volume = 30
 
 	make_reagents()
