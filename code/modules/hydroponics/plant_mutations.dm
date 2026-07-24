@@ -180,6 +180,7 @@ ABSTRACT_TYPE(/datum/plantmutation)
 
 /datum/plantmutation/pear/sickly
 	name = "Sickly Pear"
+	name_prefix = "Sickly "
 	crop = /obj/item/reagent_containers/food/snacks/plant/pear/sickly
 	iconmod = "PearSick"
 	assoc_reagents = list("too much")
