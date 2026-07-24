@@ -1158,8 +1158,7 @@
 				user.visible_message(SPAN_ALERT("The [I] melts in [user]'s clutch"), SPAN_ALERT("The [I] melts in your clutch!"))
 				qdel(target)
 				I2.desc = "Looks like this was \an [I], melted by someone who was too much."
-				for(var/mob/M in AIviewers(5, target))
-					boutput(M, SPAN_ALERT("\The [I] melts."))
+				I2.visible_message(M, SPAN_ALERT("\The [I] melts."))
 				qdel(I)
 				return
 
