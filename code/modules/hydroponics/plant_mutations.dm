@@ -177,13 +177,14 @@ ABSTRACT_TYPE(/datum/plantmutation)
 
 // Pear Mutations
 
-/* This is cool and definitely does not belong in the trash, and should probably be legitimately attainable.
+
 /datum/plantmutation/pear/sickly
 	name = "Sickly Pear"
 	crop = /obj/item/reagent_containers/food/snacks/plant/pear/sickly
+	iconmod = "PearSick"
 	assoc_reagents = list("too much")
-
-*/
+	ENrange = list(null,10)
+	chance = 5
 
 // Melon Mutations
 
