@@ -530,6 +530,17 @@ ABSTRACT_TYPE(/obj/item/reagent_containers/food/snacks/plant)
 		..()
 		src.reagents.add_reagent("juice_grapefruit",10)
 
+/obj/item/old_grenade/stinger/cherry_bomb
+	name = "cherry bomb"
+	desc = "Rocking structral integrity since 1976."
+	icon_state = "cherrybomb"
+	planttype = /datum/plant/fruit/cherry/bomb
+	throwforce = 8
+	w_class = W_CLASS_NORMAL
+	custom_projectile_type = /datum/projectile/syringe/seed/projectile
+	pellets_to_fire = 4 // minimum
+	var/list/payload = list()
+
 /obj/item/reagent_containers/food/snacks/plant/melon
 	name = "melon"
 	desc = "You should cut it into slices first!"

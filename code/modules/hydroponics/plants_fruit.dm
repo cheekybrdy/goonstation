@@ -47,6 +47,7 @@ ABSTRACT_TYPE(/datum/plant/fruit)
 	genome = 20
 	nectarlevel = 10
 	assoc_reagents = list("juice_cherry")
+	mutation = list(/datum/plantmutation/cherry/bomb)
 	commuts = list(/datum/plant_gene_strain/metabolism_fast,/datum/plant_gene_strain/seedless)
 
 /datum/plant/fruit/orange

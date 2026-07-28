@@ -146,6 +146,12 @@ ABSTRACT_TYPE(/datum/plantmutation)
 	iconmod = "GrapeFruit"
 	assoc_reagents = list("juice_grapefruit")
 
+// Cherry Mutations
+
+/datum/plantmutation/cherry/bomb
+	name = "Cherry Bomb"
+	crop = /obj/item/reagent_containers/food/snacks/plant/cherry/bomb
+
 // Orange Mutations
 
 /datum/plantmutation/orange/blood

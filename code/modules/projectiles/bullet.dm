@@ -996,6 +996,11 @@ toxic - poisons
 	ricochets = TRUE
 	no_hit_message = TRUE
 
+/datum/projectile/bullet/stinger_ball/cherry_bomb
+	name = "cherry bomb"
+	sname = "rubberball"
+	icon_state = "seed"
+
 /datum/projectile/bullet/grenade_fragment
 	name = "grenade fragment"
 	sname = "grenade fragment"
