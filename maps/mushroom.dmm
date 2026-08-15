@@ -33507,6 +33507,10 @@
 	dir = 8
 	},
 /area/station/hallway/primary/south)
+"uke" = (
+/obj/machinery/computer/chem_request_receiver,
+/turf/space,
+/area/space)
 "ukT" = (
 /obj/table/auto,
 /obj/machinery/light/small{
@@ -36774,11 +36778,11 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/decal/tile_edge/floorguide/ai{
-	dir = 1
-	},
 /obj/decal/tile_edge/floorguide/arrow_e{
 	dir = 4
+	},
+/obj/decal/tile_edge/floorguide/science{
+	dir = 1
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary/central)
@@ -102522,7 +102526,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+uke
 aaa
 aaa
 aaa
