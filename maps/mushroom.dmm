@@ -4730,12 +4730,12 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/medical/robotics)
 "bfy" = (
-/obj/machinery/chem_heater/chemistry,
 /obj/machinery/light{
 	dir = 4;
 	pixel_x = 12;
 	tag = ""
 	},
+/obj/machinery/chem_heater,
 /turf/simulated/floor/blueblack{
 	dir = 6
 	},
@@ -7263,7 +7263,6 @@
 /area/station/security/main)
 "bWx" = (
 /obj/machinery/clonegrinder,
-/obj/machinery/light/incandescent,
 /obj/cable,
 /obj/machinery/power/apc/autoname_south,
 /obj/machinery/power/data_terminal,
@@ -10871,7 +10870,7 @@
 	dir = null
 	},
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/obj/window_blinds/cog2,
+/obj/window_blinds/cog2/right,
 /turf/simulated/floor/plating,
 /area/station/medical/robotics)
 "esX" = (
@@ -10981,7 +10980,7 @@
 	icon_state = "1-8"
 	},
 /obj/machinery/door_control{
-	id = "scienceteleporter2";
+	id = "publicscienceteleporter";
 	name = "Pad Public-Access Lockdown";
 	pixel_x = 23;
 	pixel_y = -7;
@@ -17147,6 +17146,7 @@
 "jkp" = (
 /obj/table/auto,
 /obj/machinery/defib_mount,
+/obj/machinery/light/small/floor,
 /turf/simulated/floor/redwhite{
 	dir = 10
 	},
@@ -20850,8 +20850,7 @@
 "lQq" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /obj/window_blinds/cog2/right{
-	dir = 4;
-	id = "god"
+	dir = 4
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/medical/morgue)
@@ -23444,7 +23443,6 @@
 /turf/simulated/floor/black,
 /area/station/security/hos)
 "nKM" = (
-/obj/machinery/light/incandescent,
 /obj/random_item_spawner/med_kit{
 	pixel_x = -5
 	},
@@ -24672,7 +24670,7 @@
 	name = "teleporter lockdown";
 	dir = 8
 	},
-/turf/space,
+/turf/simulated/floor/engine,
 /area/station/science/teleporter)
 "oGg" = (
 /obj/reagent_dispensers/foamtank,
@@ -25441,6 +25439,9 @@
 "pch" = (
 /obj/machinery/door/poddoor/blast/pyro/podbay_autoclose/medbay_horizontal/vertical,
 /obj/machinery/r_door_control/podbay/medbay/new_walls/north,
+/obj/forcefield/energyshield/perma/doorlink{
+	dir = 4
+	},
 /turf/simulated/floor/engine,
 /area/station/hangar/medical)
 "pcp" = (
@@ -29043,7 +29044,7 @@
 /area/station/quartermaster/office)
 "rpN" = (
 /obj/machinery/door_control/podbay/medbay/new_walls/south{
-	pixel_y = 19
+	pixel_y = 25
 	},
 /obj/table/reinforced/auto,
 /obj/item/storage/toolbox/mechanical,
@@ -29274,7 +29275,10 @@
 /area/station/maintenance/northeast)
 "rxS" = (
 /obj/machinery/traymachine/morgue,
-/obj/machinery/light_switch/west,
+/obj/machinery/light_switch/west{
+	pixel_y = -7
+	},
+/obj/blind_switch/area/west/on,
 /turf/simulated/floor/sanitary/white,
 /area/station/medical/morgue)
 "rxU" = (
@@ -31703,6 +31707,7 @@
 /obj/disposalpipe/trunk{
 	dir = 8
 	},
+/obj/machinery/light/incandescent,
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
 "tcv" = (
@@ -33149,6 +33154,9 @@
 /area/station/maintenance/east)
 "tXD" = (
 /obj/machinery/door/poddoor/blast/pyro/podbay_autoclose/medbay_horizontal/vertical,
+/obj/forcefield/energyshield/perma/doorlink{
+	dir = 4
+	},
 /turf/simulated/floor/engine,
 /area/station/hangar/medical)
 "tXF" = (
@@ -33213,7 +33221,7 @@
 	icon_state = "0-4"
 	},
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/obj/window_blinds/cog2,
+/obj/window_blinds/cog2/left,
 /turf/simulated/floor/plating,
 /area/station/medical/robotics)
 "uaO" = (
@@ -33507,10 +33515,6 @@
 	dir = 8
 	},
 /area/station/hallway/primary/south)
-"uke" = (
-/obj/machinery/computer/chem_request_receiver,
-/turf/space,
-/area/space)
 "ukT" = (
 /obj/table/auto,
 /obj/machinery/light/small{
@@ -34997,7 +35001,7 @@
 	icon_state = "0-8"
 	},
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
-/obj/window_blinds/cog2,
+/obj/window_blinds/cog2/middle,
 /turf/simulated/floor/plating,
 /area/station/medical/robotics)
 "vlk" = (
@@ -36290,7 +36294,6 @@
 "wfu" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /obj/window_blinds/cog2/left{
-	id = "capoffice";
 	dir = 4
 	},
 /turf/simulated/wall/auto/supernorn,
@@ -38808,6 +38811,7 @@
 /obj/disposalpipe/trunk{
 	dir = 8
 	},
+/obj/machinery/light,
 /turf/simulated/floor/blueblack/corner,
 /area/station/medical/robotics)
 "xTN" = (
@@ -102526,7 +102530,7 @@ aaa
 aaa
 aaa
 aaa
-uke
+aaa
 aaa
 aaa
 aaa
