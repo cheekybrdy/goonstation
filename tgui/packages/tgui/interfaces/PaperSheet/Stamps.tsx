@@ -1,9 +1,17 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Box } from 'tgui-core/components';
+import { Box, Image } from 'tgui-core/components';
 import { clamp } from 'tgui-core/math';
 
 import { resolveAsset } from '../../assets';
 import { useBackend } from '../../backend';
+import { sanitizeDefAllowTags, sanitizeText } from '../../sanitize';
+
+// Paper renders interactive <input> form fields
+const PAPER_ALLOWED_TAGS = [...sanitizeDefAllowTags, 'input'];
+// Paper needs inline `style` for color/font/width,
+// only forbid `class` and `background` for now.
+// We should fix this in the future.
+const PAPER_FORBID_ATTRS = ['class', 'background'];
 
 const WINDOW_TITLEBAR_HEIGHT = 30;
 
@@ -127,14 +135,15 @@ interface StampProps {
 }
 
 const Stamp: React.FC<StampProps> = (props) => {
-  const stampTransform = {
+  const stampTransform: React.CSSProperties = {
     left: props.image.x + 'px',
     top: props.image.y + 'px',
     transform: 'rotate(' + props.image.rotate + 'deg)',
     opacity: props.opacity || 1.0,
   };
+
   return props.image.sprite.match('stamp-.*') ? (
-    <img
+    <Image
       id={props.activeStamp ? 'stamp' : undefined}
       style={stampTransform}
       className="paper__stamp"
@@ -174,7 +183,11 @@ export const PaperSheetView = (props) => {
   const stampList = stamps || [];
   const textHtml = useMemo(
     () => ({
-      __html: `<span class="paper-text">${setInputReadonly(value, readOnly)}</span>`,
+      // `value` is untrusted server data and may contain stored XSS payloads
+      __html: `<span class="paper-text">${setInputReadonly(
+        sanitizeText(value, false, PAPER_ALLOWED_TAGS, PAPER_FORBID_ATTRS),
+        readOnly,
+      )}</span>`,
     }),
     [readOnly, value],
   );
