@@ -3399,12 +3399,18 @@
 /turf/simulated/floor/plating,
 /area/station/storage/tech)
 "aMF" = (
-/obj/cable{
-	icon_state = "2-5"
-	},
 /obj/disposalpipe/segment/mail,
 /obj/disposalpipe/segment/produce{
 	dir = 4
+	},
+/obj/cable{
+	icon_state = "0-9"
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
@@ -9115,16 +9121,10 @@
 	},
 /area/station/turret_protected/ai_upload_foyer)
 "dPc" = (
-/obj/cable{
-	icon_state = "1-10"
-	},
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
 /obj/disposalpipe/segment/food,
-/obj/cable{
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "dPr" = (
@@ -10018,7 +10018,7 @@
 /obj/disposalpipe/chicken_disposal_pipe/horizontal,
 /obj/disposalpipe/segment/food,
 /obj/cable{
-	icon_state = "1-4"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
@@ -15325,6 +15325,13 @@
 	},
 /turf/simulated/floor/black,
 /area/station/ai_monitored/armory)
+"ioK" = (
+/obj/disposalpipe/segment/produce,
+/obj/cable{
+	icon_state = "1-6"
+	},
+/turf/simulated/floor/plating/jen,
+/area/station/maintenance/southwest)
 "ioO" = (
 /obj/disposalpipe/segment/morgue{
 	name = "crematorium pipe"
@@ -32909,6 +32916,9 @@
 /obj/table/wood,
 /obj/cable{
 	icon_state = "2-4"
+	},
+/obj/item/boardgame/chess{
+	pixel_y = 4
 	},
 /turf/simulated/floor/black/corner{
 	dir = 1
@@ -79574,7 +79584,7 @@ dbP
 joQ
 tFn
 iLQ
-oQf
+ioK
 pTi
 oQf
 twR
