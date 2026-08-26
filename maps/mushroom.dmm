@@ -173,7 +173,7 @@
 "aba" = (
 /obj/landmark/antagonist/blob,
 /obj/disposalpipe/segment/food,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "abb" = (
 /obj/mesh/catwalk{
@@ -1473,7 +1473,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "alQ" = (
 /obj/lattice{
@@ -2722,7 +2722,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "auq" = (
 /obj/cable{
@@ -3406,7 +3406,7 @@
 /obj/disposalpipe/segment/produce{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "aMQ" = (
 /turf/simulated/floor/red/side{
@@ -4813,7 +4813,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "boF" = (
 /obj/cable{
@@ -5315,7 +5315,7 @@
 	icon_state = "6-9"
 	},
 /obj/disposalpipe/segment/food,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "btE" = (
 /turf/simulated/floor/neutral/corner{
@@ -5625,7 +5625,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "bED" = (
 /obj/decal/tile_edge/floorguide/arrow_n{
@@ -6978,7 +6978,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "cuK" = (
 /turf/simulated/wall/auto/supernorn,
@@ -7135,7 +7135,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "cAq" = (
 /obj/storage/secure/closet/command/medical_director,
@@ -7649,7 +7649,7 @@
 "cSj" = (
 /obj/mapping_helper/mailtag/ranch,
 /obj/disposalpipe/switch_junction/right/south,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "cSm" = (
 /obj/cable,
@@ -8341,6 +8341,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/solar/west)
+"doz" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/cable/reinforced{
+	icon_state = "1-2-thick"
+	},
+/turf/simulated/floor/plating,
+/area/station/crew_quarters/arcade)
 "doF" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -9118,7 +9125,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "dPr" = (
 /obj/table/reinforced/auto,
@@ -9324,7 +9331,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "dXh" = (
 /obj/stool/chair/couch/green{
@@ -10013,7 +10020,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "eBf" = (
 /obj/cable{
@@ -12469,7 +12476,7 @@
 /area/station/chapel/sanctuary)
 "goc" = (
 /obj/landmark/random_room/size3x5,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "goL" = (
 /obj/cable{
@@ -13282,7 +13289,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/carpet/arcade,
+/turf/simulated/floor/plating/jen,
 /area/station/crew_quarters/arcade)
 "gPk" = (
 /obj/disposalpipe/segment{
@@ -13449,7 +13456,7 @@
 /area/station/medical/medbay/lobby)
 "gXj" = (
 /obj/disposalpipe/segment/food,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "gXU" = (
 /obj/cable/reinforced{
@@ -15399,7 +15406,7 @@
 "irq" = (
 /obj/machinery/atmospherics/pipe/simple/insulated/cold,
 /obj/disposalpipe/segment/mail,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "isa" = (
 /obj/disposalpipe/segment,
@@ -15783,6 +15790,12 @@
 	},
 /turf/simulated/floor/grime,
 /area/station/science/testchamber)
+"iHA" = (
+/obj/cable/reinforced{
+	icon_state = "1-2-thick"
+	},
+/turf/simulated/floor/plating/airless,
+/area/space)
 "iHI" = (
 /obj/disposalpipe/segment/mail{
 	dir = 8;
@@ -15897,7 +15910,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "iLk" = (
 /obj/storage/closet/emergency,
@@ -15920,7 +15933,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "iMb" = (
 /obj/mapping_helper/firedoor_spawn,
@@ -16099,7 +16112,7 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "iSb" = (
 /obj/disposalpipe/segment/food,
@@ -16259,7 +16272,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "iWQ" = (
 /turf/simulated/floor/shuttlebay{
@@ -16871,7 +16884,7 @@
 /obj/cable{
 	icon_state = "2-5"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "joJ" = (
 /obj/machinery/atmospherics/unary/portables_connector,
@@ -17381,7 +17394,7 @@
 /obj/machinery/light/small/frostedred{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "jIe" = (
 /obj/landmark/gps_waypoint,
@@ -18241,7 +18254,7 @@
 /area/station/engine/proto)
 "kny" = (
 /obj/reagent_dispensers/watertank,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "knN" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
@@ -18336,6 +18349,16 @@
 	dir = 6
 	},
 /area/station/chapel/sanctuary)
+"ksL" = (
+/obj/lattice{
+	dir = 2;
+	icon_state = "lattice-dir"
+	},
+/obj/cable/reinforced{
+	icon_state = "1-2-thick"
+	},
+/turf/space,
+/area/space)
 "ksR" = (
 /obj/table/auto,
 /obj/item/storage/firstaid/regular,
@@ -19669,6 +19692,10 @@
 /obj/machinery/light/incandescent,
 /turf/simulated/floor/yellow/side,
 /area/station/hallway/primary/central)
+"loY" = (
+/obj/decal/cleanable/dirt/dirt5,
+/turf/simulated/floor/grass/random,
+/area/station/garden/owlery)
 "lpl" = (
 /turf/simulated/floor/darkblue/side,
 /area/station/turret_protected/ai_upload_foyer)
@@ -20405,7 +20432,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "lNQ" = (
 /obj/machinery/light/emergency{
@@ -20662,6 +20689,10 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
+/obj/cable/reinforced{
+	icon_state = "0-2-thick"
+	},
+/obj/cable,
 /turf/simulated/floor/carpet/arcade,
 /area/station/crew_quarters/arcade)
 "mcf" = (
@@ -21502,7 +21533,7 @@
 "mFb" = (
 /obj/disposalpipe/switch_junction/right/south,
 /obj/mapping_helper/mailtag/kitchen,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "mFj" = (
 /obj/table/wood/auto,
@@ -21745,10 +21776,6 @@
 	},
 /turf/simulated/floor/carpet/grime,
 /area/station/security/detectives_office)
-"mPL" = (
-/obj/fakeobject/birdhouse,
-/turf/simulated/floor/grass/random,
-/area/station/garden/owlery)
 "mQn" = (
 /obj/table/auto,
 /obj/item/sheet/steel/fullstack,
@@ -22087,7 +22114,7 @@
 /obj/cable{
 	icon_state = "5-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "neg" = (
 /obj/table/auto,
@@ -22594,6 +22621,9 @@
 	tag = "icon-L11"
 	},
 /area/station/hallway/secondary/entry)
+"nus" = (
+/turf/simulated/floor/plating/jen,
+/area/station/maintenance/southwest)
 "nux" = (
 /turf/simulated/floor/wood,
 /area/station/chapel/funeral_parlor)
@@ -23151,6 +23181,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/east)
+"nOx" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating/jen,
+/area/station/maintenance/southwest)
 "nOI" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -23437,7 +23473,7 @@
 /obj/machinery/atmospherics/unary/portables_connector{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "nXj" = (
 /obj/machinery/door/airlock/pyro/external,
@@ -23633,7 +23669,7 @@
 	icon_state = "1-2"
 	},
 /obj/cable,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "oeS" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
@@ -23914,7 +23950,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "omh" = (
 /obj/storage/closet/radiation,
@@ -24647,7 +24683,7 @@
 /area/station/medical/dome)
 "oQf" = (
 /obj/disposalpipe/segment/produce,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "oQi" = (
 /obj/lattice,
@@ -24670,7 +24706,7 @@
 /obj/machinery/power/apc/autoname_east{
 	areastring = "Restroom #1"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "oRw" = (
 /obj/disposalpipe/segment/mail{
@@ -24865,7 +24901,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "oYz" = (
 /obj/cable{
@@ -25992,7 +26028,7 @@
 	dir = 4;
 	level = 2
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "pNz" = (
 /turf/simulated/floor/blue/side{
@@ -26135,7 +26171,7 @@
 /area/station/science/testchamber)
 "pTi" = (
 /obj/disposalpipe/junction/right/south,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "pTA" = (
 /obj/lattice,
@@ -26574,7 +26610,7 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "qjt" = (
 /obj/machinery/door/airlock/pyro/maintenance{
@@ -27191,7 +27227,7 @@
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "qGH" = (
 /obj/landmark/gps_waypoint,
@@ -27205,7 +27241,7 @@
 	},
 /obj/landmark/pest,
 /obj/disposalpipe/segment/mail,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "qGW" = (
 /obj/lattice,
@@ -29050,7 +29086,7 @@
 /area/station/chapel/sanctuary)
 "rIm" = (
 /obj/reagent_dispensers/foamtank,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "rJr" = (
 /obj/cable{
@@ -30212,7 +30248,7 @@
 /obj/cable{
 	icon_state = "1-10"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "sxS" = (
 /obj/stool/bed/brig,
@@ -30259,7 +30295,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "syF" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
@@ -30345,7 +30381,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "sAJ" = (
 /obj/machinery/firealarm/directional/east,
@@ -31095,6 +31131,18 @@
 	dir = 4
 	},
 /area/station/science/chemistry)
+"tcs" = (
+/obj/cable/reinforced{
+	icon_state = "0-4-thick"
+	},
+/obj/cable/reinforced{
+	icon_state = "0-8-thick"
+	},
+/obj/cable/reinforced,
+/turf/simulated/floor/darkblue/checker{
+	dir = 4
+	},
+/area/station/turret_protected/ai_upload_foyer)
 "tcF" = (
 /obj/cable{
 	icon_state = "8-10"
@@ -31186,11 +31234,6 @@
 	},
 /obj/cable{
 	icon_state = "1-2"
-	},
-/obj/pool/perspective{
-	density = 0;
-	dir = 1;
-	tag = "icon-pool (NORTH)"
 	},
 /turf/simulated/floor/carpet/arcade,
 /area/station/crew_quarters/arcade)
@@ -31540,7 +31583,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "tpV" = (
 /obj/stool/chair/dining/wood,
@@ -31700,7 +31743,7 @@
 "twR" = (
 /obj/disposalpipe/segment/produce,
 /obj/machinery/firealarm/directional/west,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "twS" = (
 /obj/table/wood/auto,
@@ -33411,7 +33454,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "uyp" = (
 /obj/mapping_helper/wingrille_spawn/auto,
@@ -34784,7 +34827,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/crew_quarters/jazz)
 "vsG" = (
 /obj/landmark/start/job/janitor,
@@ -35074,6 +35117,14 @@
 	},
 /turf/space,
 /area/space)
+"vzf" = (
+/obj/cable/reinforced{
+	icon_state = "1-2-thick"
+	},
+/turf/simulated/floor/darkblue/checker{
+	dir = 4
+	},
+/area/station/turret_protected/ai_upload_foyer)
 "vzp" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -35109,7 +35160,7 @@
 	dir = 8
 	},
 /obj/disposalpipe/segment/mail,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "vAh" = (
 /obj/machinery/door/airlock/pyro{
@@ -35162,7 +35213,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "vCk" = (
 /turf/simulated/floor/black,
@@ -35174,7 +35225,7 @@
 /obj/machinery/light/small/broken{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "vCI" = (
 /obj/disposalpipe/segment,
@@ -35202,7 +35253,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "vDV" = (
 /obj/machinery/atmospherics/unary/portables_connector{
@@ -35233,7 +35284,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "vGf" = (
 /obj/cable{
@@ -35388,7 +35439,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "vNJ" = (
 /turf/space,
@@ -35458,7 +35509,7 @@
 /obj/cable{
 	icon_state = "5-10"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "vPY" = (
 /obj/machinery/floorflusher/genpop,
@@ -35622,7 +35673,7 @@
 /obj/cable{
 	icon_state = "5-10"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "vWi" = (
 /obj/machinery/manufacturer/mining,
@@ -36300,7 +36351,7 @@
 /area/station/storage/primary)
 "wAM" = (
 /obj/disposalpipe/segment/mail,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "wAX" = (
 /obj/machinery/firealarm/directional/north,
@@ -37653,7 +37704,7 @@
 /obj/cable{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "xBe" = (
 /obj/disposalpipe/segment{
@@ -38050,7 +38101,7 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/jen,
 /area/station/maintenance/southwest)
 "xNf" = (
 /obj/table/auto,
@@ -75314,7 +75365,7 @@ ryG
 ccI
 uGD
 xFS
-xFS
+loY
 xFS
 xFS
 xxo
@@ -76217,11 +76268,11 @@ kHp
 rqo
 tme
 ryG
-mPL
 xFS
 xFS
 xFS
 xFS
+loY
 xFS
 xFS
 ryG
@@ -77142,14 +77193,14 @@ kGJ
 kGJ
 teO
 mbP
-tSk
-abm
-aaa
-aaa
-aaa
-xqc
-hRk
-aWQ
+doz
+iHA
+ksL
+ksL
+ksL
+tpz
+vzf
+tcs
 hRk
 fTo
 hRk
@@ -77416,26 +77467,26 @@ uef
 iyq
 lvP
 gGS
-tip
-tip
-tip
-tip
+nus
+nus
+nus
+nus
 goc
-tip
+nus
 jHK
-ibX
-tip
-tip
-tip
-tip
-tip
-tip
-tip
-tip
-tip
-ibX
-tip
-ibX
+nOx
+nus
+nus
+nus
+nus
+nus
+nus
+nus
+nus
+nus
+nOx
+nus
+nOx
 ckv
 muA
 bqz
@@ -77718,12 +77769,12 @@ uXq
 iyq
 umj
 uef
-tip
-tip
-tip
-tip
-tip
-tip
+nus
+nus
+nus
+nus
+nus
+nus
 vFj
 qjb
 alN
@@ -78020,12 +78071,12 @@ rak
 cKS
 dgP
 uef
-tip
-tip
-tip
-tip
-tip
-tip
+nus
+nus
+nus
+nus
+nus
+nus
 vCi
 vIw
 vIw
@@ -78322,8 +78373,8 @@ xUH
 smU
 tIy
 nci
-tip
-tip
+nus
+nus
 oYe
 wAM
 wAM
@@ -78926,8 +78977,8 @@ xSu
 xSu
 cuy
 vPR
-tip
-tip
+nus
+nus
 qGy
 cuK
 cuK
@@ -79877,7 +79928,7 @@ aaa
 aaa
 aaa
 bqF
-aaa
+xen
 ngg
 hDh
 tvs
@@ -80179,15 +80230,15 @@ aaa
 aaa
 aaa
 ctu
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xen
+xen
+xen
+xen
+xen
+xen
+xen
+xen
+xen
 aaa
 aaa
 aaa
