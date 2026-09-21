@@ -129,12 +129,12 @@
 			return get_access("Syndicate Operative") + list(access_syndicate_commander)
 		// --------------------------- Heads of staff
 		if("Captain")
-			return get_all_accesses() + list(access_maxsec)
+			return get_all_accesses()
 		if("Head of Personnel")
 			return get_all_accesses() - list(access_captain, access_engineering_chief, access_medical_director, access_research_director,
 											access_securitylockers, access_brig, access_forensics_lockers, access_medical_lockers, access_engineering_power)
 		if("Head of Security")
-			return list(access_security, access_carrypermit, access_contrabandpermit, access_maxsec, access_brig, access_securitylockers,
+			return list(access_security, access_carrypermit, access_contrabandpermit, access_head_of_security, access_brig, access_securitylockers,
 						access_forensics_lockers, access_armory, access_ticket, access_tox, access_tox_storage, access_chemistry, access_medical,
 						access_morgue, access_change_ids, access_eva, access_heads, access_medical_lockers, access_medlab, access_pharmacy,
 						access_crematorium, access_kitchen, access_robotics, access_cargo, access_money,
@@ -273,7 +273,7 @@
 	return access_all_actually
 #else
 	return list(access_security, access_brig, access_forensics_lockers, access_ticket, access_fine_small, access_fine_large,
-				access_medical, access_medlab, access_morgue, access_securitylockers,
+				access_medical, access_medlab, access_morgue, access_securitylockers, access_head_of_security,
 				access_tox, access_tox_storage, access_chemistry, access_carrypermit, access_contrabandpermit,
 				access_change_ids, access_ai_upload,
 				access_teleporter, access_eva, access_heads, access_captain, access_head_of_personnel,
@@ -303,7 +303,7 @@ var/list/access_all_actually = null
 		return
 
 	access_name_lookup = list()
-	var/list/accesses = get_all_accesses() | access_armory | access_maxsec
+	var/list/accesses = get_all_accesses() | access_armory
 	for (var/accessNum in accesses)
 		access_name_lookup += "[get_access_desc(accessNum)]"
 
@@ -366,7 +366,7 @@ var/list/access_all_actually = null
 			return "Crematorium"
 		if(access_armory)
 			return "Armory"
-		if(access_maxsec)
+		if(access_head_of_security)
 			return "Head of Security's Office"
 		if(access_kitchen)
 			return "Kitchen"

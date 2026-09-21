@@ -268,7 +268,7 @@
 
 /obj/mapping_helper/access/hos
 	name = "HOS access spawn"
-	req_access = list(access_maxsec)
+	req_access = list(access_head_of_security)
 	color = HELPER_COLOR::SECURITY
 
 /obj/mapping_helper/access/armory

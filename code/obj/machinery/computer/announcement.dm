@@ -230,7 +230,7 @@
 		circuit_type = /obj/item/circuitboard/announcement/captain
 
 	security
-		req_access = list(access_maxsec)
+		req_access = list(access_head_of_security)
 		name = "Security Announcement Computer"
 		area_name = "Security"
 		circuit_type = /obj/item/circuitboard/announcement/security

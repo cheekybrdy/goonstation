@@ -47,7 +47,7 @@
 #define access_sysadmin 34 // Access to computer core and superuser access.
 #define access_hydro 35
 // Access 36 Unused
-#define access_maxsec 37 // The HoS' office
+#define access_head_of_security 37 // The HoS' office
 #define access_securitylockers 38
 #define access_carrypermit 39 // Are allowed to carry sidearms as far as guardbuddies and secbots are concerned. Contraband permit defined at 75.
 #define access_engineering 40 // General engineering area and substations.

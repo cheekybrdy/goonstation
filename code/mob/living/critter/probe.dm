@@ -193,7 +193,7 @@ TYPEINFO(/mob/living/critter/robotic/probe)
 	target_anything = TRUE
 
 	///Certain access codes are highly encrypted and can't be replicated easily.
-	var/offlimits_access = list(access_armory, access_maxsec, access_securitylockers, access_syndicate_shuttle)
+	var/offlimits_access = list(access_armory, access_securitylockers, access_syndicate_shuttle)
 
 	cast(atom/target)
 		if (..())

@@ -613,7 +613,7 @@ proc/equip_battler(mob/living/carbon/human/battler)
 	var/obj/item/card/id/gold/captains_spare/I = new /obj/item/card/id/gold/captains_spare // for whatever reason, this is neccessary
 	I.registered = "[battler.name]"
 	I.assignment = "Battler"
-	I.access |= list(access_maxsec, access_armory)
+	I.access |= list(access_armory)
 	battler.equip_if_possible(I, SLOT_WEAR_ID)
 	//battler.Equip_Bank_Purchase(battler.mind.purchased_bank_item)
 	battler.set_clothing_icon_dirty()

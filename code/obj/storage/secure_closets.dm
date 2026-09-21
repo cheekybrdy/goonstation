@@ -200,8 +200,7 @@
 
 /obj/storage/secure/closet/command/hos
 	name = "\improper Head of Security's locker"
-	reinforced = TRUE
-	req_access = list(access_maxsec)
+	req_access = list(access_head_of_security)
 	spawn_contents = list(
 		/obj/item/pet_carrier,
 		/obj/item/storage/box/id_kit,
@@ -445,7 +444,7 @@
 /obj/storage/secure/closet/iron_safe
 	name = "\improper cast iron safe"
 	desc = "An inordinately heavy and durable safe, no doubt containing something important."
-	req_access = list(access_maxsec)
+	req_access = list(access_head_of_security)
 	icon_state = "iron_safe"
 	icon_closed = "iron_safe"
 	icon_opened = "iron_safe-open"
