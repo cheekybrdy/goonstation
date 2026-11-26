@@ -276,6 +276,9 @@ var/global
 	master_mode = "traitor"
 	next_round_mode = "traitor"
 
+	// Events voted on in previous round.
+	list/chosen_events = list()
+
 	host = null
 	game_start_delayed = 0
 	game_end_delayed = 0

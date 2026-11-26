@@ -109,6 +109,17 @@
 	rustg_file_write(the_mode, "data/mode.txt")
 	next_round_mode = the_mode
 
+/world/proc/load_event()
+	var/text = file2text("data/event.txt")
+	if (text)
+		var/list/lines = splittext(text, "\n")
+		for (line in lines)
+			chosen_events[line] = lines[line]
+			logDiary("Saved events include '[chosen_events[line]]'")
+
+/world/proc/save_event(var/the_event)
+	rustg_file_append(the_event, "data/event.txt")
+	chosen_events += the_event
 
 /world/proc/load_intra_round_value(var/field) //Currently for solarium effects, could also be expanded to that pickle jar idea.
 	var/path = "data/intra_round.sav"

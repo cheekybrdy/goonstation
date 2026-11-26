@@ -72,6 +72,11 @@
 #define MIDSUMMER 1
 #endif
 
+#ifndef RP_MODE
+#if (BUILD_TIME_WEEK % 2) && (BUILD_TIME_DAY == 6)
+#define GIBFEST 1
+#endif
+
 // other toggles
 
 #define FOOTBALL_MODE 1
