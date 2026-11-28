@@ -20,7 +20,12 @@ import {
 import { capitalize } from '../../../common/string';
 import { useBackend } from '../../backend';
 import { Window } from '../../layouts';
-import { Allowed, ChemRequestReceiverData, RequestData } from './type';
+import {
+  Allowed,
+  ChemRequestReceiverData,
+  RequestData,
+  RequestState,
+} from './type';
 
 interface ChemRequestProps extends RequestData {
   interactable: Allowed;
@@ -79,7 +84,7 @@ const ChemRequest = (props: ChemRequestProps) => {
         </Flex.Item>
         <Flex.Item>
           <Box>
-            {state === 'PENDING' && (
+            {state === RequestState.Pending && (
               <>
                 <Button
                   disabled={!interactable}
@@ -106,10 +111,12 @@ const ChemRequest = (props: ChemRequestProps) => {
                 </Button>
               </>
             )}
-            {state !== 'PENDING' && (
+            {state !== RequestState.Pending && (
               <Box
                 align="center"
-                backgroundColor={state === 'DENIED' ? 'red' : 'green'}
+                backgroundColor={
+                  state === RequestState.Denied ? 'red' : 'green'
+                }
               >
                 {capitalize(state)}
               </Box>
@@ -140,8 +147,8 @@ export const ChemRequestReceiver = () => {
         <Stack wrap="wrap">
           {requests.map((request) => {
             if (
-              (request.state === 'PENDING' && tabIndex === 1) ||
-              (request.state !== 'PENDING' && tabIndex === 2)
+              (request.state === RequestState.Pending && tabIndex === 1) ||
+              (request.state !== RequestState.Pending && tabIndex === 2)
             ) {
               return (
                 <Stack.Item
